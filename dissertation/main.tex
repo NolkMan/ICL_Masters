@@ -14,6 +14,27 @@
 
 \section{Content Security Policy}
 \subsection{Overview}
-Content Security Policy functions as a protection layer with an aim to prevent Cross Site Scripting and DOM injection based attacks. 
+Content Security Policy(CSP) was introduced as a protection layer with an aim to prevent Cross Site Scripting(XSS) and DOM injection based attacks directly in the user browser.
+W3 organization recommends using CSP as a defence-in-depth tool, which can help prevent basic attacks and reduce the harm caused by malicious users.
+% https://www.w3.org/TR/CSP3/
+It works by server providing the user a whitelist of allowed endpoints from which sources can be retreived.
+In CSP sources can be additionally separated by content type and usage; scripts, stylesheets and images have their own directives. 
+This allows for more fine grained control over loaded content
+
+CSP is constantly being developed with currently 3rd version being in draft, while parts of it are already being implemented into modern browsers.
+With CSP3 \texttt{scirpt-src} directive has been further split into \texttt{script-src-elem} and \texttt{script-src-attr} directives which seperate javascript coming from \texttt{<script>} markup tags and attributes such as \texttt{onClick} event attribute.
+
+\subsection{Implementing CSP}
+
+Adding nonces may not increase security
+
+\subsection{Bypassing CSP}
+Even though CSP can prevent many basic attacks it may be unsuccessful at blocking more advanced exploits.
+A study by ?? \cite{??} done in 2016 showcases many ways in which CSP may be ineffective. 
+It also performs a comprahensive analisys on CSP directives which concludes that most of them are trivially bypassable through methods they have introduced.
+
+
+
 \subsection{Reporting}
+
 \end{document}
