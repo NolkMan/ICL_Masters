@@ -14,17 +14,60 @@
 
 \section{Content Security Policy}
 \subsection{Overview}
-Content Security Policy(CSP) was introduced as a protection layer with an aim to prevent Cross Site Scripting(XSS) and DOM injection based attacks directly in the user browser.
-W3 organization recommends using CSP as a defence-in-depth tool, which can help prevent basic attacks and reduce the harm caused by malicious users.
-% https://www.w3.org/TR/CSP3/
-It works by server providing the user a whitelist of allowed endpoints from which sources can be retreived.
-In CSP sources can be additionally separated by content type and usage; scripts, stylesheets and images have their own directives. 
-This allows for more fine grained control over loaded content
+%In today's digital landscape, ensuring the security and integrity of web applications is of paramount importance. One critical aspect of web security is protecting against various types of attacks, such as cross-site scripting (XSS), clickjacking, and data injection. Content Security Policy (CSP) emerges as a powerful defense mechanism, offering a proactive approach to mitigate the risks associated with these security threats.
+%
+%Content Security Policy is a security standard designed to control and restrict the types of content that can be executed or loaded on a web page. By defining and enforcing a set of rules, CSP enables web developers to explicitly specify the trusted sources from which their web pages can fetch resources like scripts, stylesheets, images, and fonts. This control prevents unauthorized or malicious code execution by blocking the inclusion of content from untrusted or unknown sources.
+%
+% By utilizing CSP, developers can define a security policy tailored to their specific needs, significantly reducing the risk of exploitation and enhancing overall web application security.
+%
+%CSP provides a flexible and granular level of control over the types of content that can be loaded, allowing developers to define policies at different levels: the entire website, specific pages, or individual HTML elements. These policies can specify directives such as default-src, script-src, style-src, img-src, and many others, which determine the allowed sources for each content type. Additionally, CSP supports the use of nonces, hashes, and other mechanisms to further restrict the execution of inline scripts or dynamically generated content.
+%
+%Implementing Content Security Policy effectively requires a thorough understanding of the web application's architecture and the resources it relies upon. Developers must carefully analyze and test their applications to identify potential security vulnerabilities and determine the appropriate policy directives to address them. Furthermore, CSP requires ongoing maintenance and monitoring to adapt to changing requirements and to ensure compatibility with new features and technologies.
+%
+%While CSP offers robust protection against various web-based attacks, it is not a one-size-fits-all solution. It is crucial to strike a balance between security and functionality, as overly restrictive policies can potentially hinder the proper functioning of web applications. Developers need to consider user experience and ensure that the policy does not inadvertently block legitimate resources or disrupt desired functionality.
+%
+%In conclusion, Content Security Policy provides a powerful defense mechanism against web-based attacks, allowing developers to specify and enforce a set of rules that define trusted sources for content loading and execution. By implementing CSP effectively, web applications can enhance their security posture and mitigate the risks associated with various types of threats. However, it is essential to strike a balance between security and functionality to ensure a seamless user experience.
 
-CSP is constantly being developed with currently 3rd version being in draft, while parts of it are already being implemented into modern browsers.
-With CSP3 \texttt{scirpt-src} directive has been further split into \texttt{script-src-elem} and \texttt{script-src-attr} directives which seperate javascript coming from \texttt{<script>} markup tags and attributes such as \texttt{onClick} event attribute.
+Content Security Policy(CSP) was introduced as a protection layer, which allows webhosts to control origin and type of resources loaded in the client browser. 
+W3 organization recommends using CSP as a defence-in-depth tool, which can help reduce the harm caused by malicious users, but it should not be the sole security measure taken to prevent attacks.
+% https://www.w3.org/TR/CSP3/
+%to prevent Cross Site Scripting(XSS) and DOM injection based attacks directly in the user browser.O
+CSP works by providing the user browser a list of rules, where each resource type, like scripts, stylesheets and images, have its own set of directives.
+Those can include allowed URL endpoints, hashes of expected objects or nonces which allow for otherwise unsafe inline scripts.
+
+
+CSP is constantly being developed with currently 3rd version being in draft, while major parts of it are already being implemented into modern browsers.
+With CSP3 \texttt{scirpt-src} directive has been further split into \texttt{script-src-elem} and \texttt{script-src-attr} directives which seperate rule for javascript coming from \texttt{<script>} markup tags and attributes such as \texttt{onClick} event attribute.
+Additionally it allows to specify hashes of sources allowed to load and enhancements to \texttt{sandbox} directive, which allows for more control over potentially untrusted content running in its isolated environment.
+CSP3 is designed to be backwards compatible with CSP2, which is to ensure that new features do not prevent webpages from displaying correctly on older clients.
+This allows for new features to be deployed sooner, but it may sacrifice the security of older clients.
+
+% talk about css exfil attacks
 
 \subsection{Implementing CSP}
+Implementing CSP, although potential security benefits, comes with its own fair share of problems. 
+They span multiple layers and are especially noticable when trying to add CSP to a big, long lasting project.
+
+
+
+% angular js problemsk
+
+% https://dropbox.tech/security/on-csp-reporting-and-filtering
+
+%Implementing Content Security Policy (CSP) can be a valuable addition to web application security, but it may come with its fair share of challenges. Let's explore some difficulties that developers might encounter during the implementation process and potential sources to address these challenges.
+%
+%    Existing Inline Scripts and Legacy Code: CSP discourages the use of inline scripts due to the security risks they pose. However, many existing web applications may rely heavily on inline scripts or have legacy code that is difficult to refactor. Migrating away from inline scripts can be a time-consuming process. One possible approach is to use CSP nonces or hashes to allow specific inline scripts temporarily while working on gradually removing them. The CSP Cheat Sheet by Scott Helme (scotthelme.co.uk/csp-cheat-sheet) provides guidance on using nonces and hashes effectively.
+%
+%    Third-Party Libraries and External Dependencies: Web applications often rely on various third-party libraries and external resources, such as content delivery networks (CDNs). These resources may have their own security considerations and may not adhere to the same CSP directives as the application. Careful analysis is required to identify which external resources need to be whitelisted in the CSP policy. It is recommended to review the documentation and security guidelines provided by the third-party libraries or CDNs to understand their compatibility with CSP.
+%
+%    Balancing Security and Functionality: A common challenge is finding the right balance between implementing a strict CSP policy for enhanced security and ensuring the proper functionality of the web application. Overly restrictive policies might unintentionally block legitimate resources or break desired functionality, resulting in a poor user experience. Close collaboration between developers, security teams, and stakeholders is crucial to strike the right balance and continuously refine the CSP policy based on feedback and testing.
+%
+%    Monitoring and Debugging: Once CSP is implemented, it is essential to monitor and regularly review the policy to adapt to changing requirements and address any issues that may arise. Debugging CSP-related errors can sometimes be challenging, as violations might be reported without detailed information on the specific cause. Tools like the CSP Evaluator (csp-evaluator.withgoogle.com) and browser developer tools can assist in identifying and resolving policy-related problems.
+%
+%In addition to the challenges mentioned, developers should stay updated with the latest CSP best practices and security recommendations. The CSP specification (w3.org/TR/CSP) provides comprehensive information on policy directives and their usage. The OWASP Cheat Sheet on CSP (owasp.org/www-project-cheat-sheets/cheatsheets/Content_Security_Policy_Cheat_Sheet) offers practical guidance and examples for implementing CSP effectively.
+%
+%Remember that while CSP is a powerful security measure, it is not a standalone solution. It should be implemented as part of a comprehensive security strategy, including other defensive measures such as input validation, output encoding, and secure coding practices to ensure robust protection against web-based attacks.
+
 
 Adding nonces may not increase security
 
@@ -33,8 +76,50 @@ Even though CSP can prevent many basic attacks it may be unsuccessful at blockin
 A study by ?? \cite{??} done in 2016 showcases many ways in which CSP may be ineffective. 
 It also performs a comprahensive analisys on CSP directives which concludes that most of them are trivially bypassable through methods they have introduced.
 
+A lot of the insecure CSPs in the paper are using directives that allow the execution of inline scripts.
+Inline javascript in event attributes is a big part of 
+CSP allows to bolster the security of inline scripts by adding hash and nonce based source values.
+By using hashes, the browser will allow any script that matches the hash to execute.
+And while using nonces, scripts will have to present a nonce to be able to execute. 
+Nonce is supposed to be a unique, random value, which would mean that the malicious script will be blocked.
+Both solutions have their problems, hashes may allow a specific script to be loaded multiple times, which is especially problematic if the script has side effects.
+Nonces on the other hand have been shown to be bypassable with carefully crafted payloads \cite{???}.
+
 
 
 \subsection{Reporting}
+%Advantages of CSP Report-Only Header
+%
+%Content Security Policy (CSP) provides a mechanism to enforce a set of security policies that control the loading and execution of resources on a web page. One valuable feature of CSP is the ability to use the "report-only" mode, where the CSP policy is applied without blocking any content. Instead, it generates violation reports that provide valuable insights into potential security threats. Let's explore the advantages of using the CSP report-only header.
+%
+%    Security Policy Testing: The report-only mode allows developers to test and fine-tune their CSP policies before enabling them in the blocking mode. By observing the violation reports generated in the report-only mode, developers can identify potential issues or unintended consequences that might arise when the policy is enforced. It provides an opportunity to iteratively refine the CSP policy and ensure that it does not inadvertently block legitimate resources.
+%
+%    Non-Disruptive Implementation: When introducing CSP for the first time or modifying an existing policy, there is always a risk of unintentionally blocking critical resources or breaking the functionality of the web application. By using the report-only mode initially, developers can gather information about violations without impacting the user experience. This approach allows them to analyze the reports and make necessary adjustments to the policy without causing disruptions.
+%
+%    Comprehensive Security Insights: The violation reports generated in the report-only mode provide detailed information about the attempted policy violations. These reports contain data such as the violated policy directive, the blocked resource, the source of the violation, and additional context. This information offers valuable insights into potential security vulnerabilities, malicious activities, and attempts to exploit the application. By analyzing these reports, developers can gain a better understanding of the security threats they are facing and take appropriate measures to mitigate them.
+%
+%    Compatibility and Impact Assessment: The report-only mode helps developers assess the impact of the CSP policy on different browsers and user agents. It provides visibility into how the policy directives are interpreted and enforced across various platforms. By analyzing the violation reports from different browsers, developers can identify any inconsistencies or compatibility issues and make adjustments accordingly. This information is crucial for ensuring consistent security across different user environments.
+%
+%    Continuous Monitoring and Compliance: Even after the CSP policy is enforced in blocking mode, it is essential to continuously monitor and review the violation reports. The report-only mode allows ongoing monitoring of violations, enabling developers to proactively identify and address emerging security threats. By maintaining regular oversight, developers can ensure that the CSP policy remains effective and compliant with the evolving security landscape.
+%
+%    Security Auditing and Compliance Reporting: The violation reports generated in the report-only mode can serve as an audit trail for security assessments and compliance reporting. These reports provide evidence of attempted policy violations, demonstrating the application's adherence to security guidelines and regulatory requirements. They can be valuable in demonstrating due diligence and compliance with industry standards and best practices.
+%
+%In conclusion, the CSP report-only mode offers several advantages for implementing and fine-tuning Content Security Policy. It allows developers to test and validate the policy without disrupting the user experience, provides comprehensive insights into potential security threats, aids in compatibility assessment, enables continuous monitoring and compliance reporting, and facilitates proactive security measures. By leveraging the information from violation reports, developers can enhance the effectiveness of their CSP policies and ensure robust protection against web-based attacks.
+
+%Advantages of CSP Report-Only Header
+%
+%    Testing and Fine-Tuning: The report-only mode in Content Security Policy (CSP) allows developers to test and refine their CSP policies without blocking any content. This mode provides a valuable opportunity to observe violation reports and identify potential issues or unintended consequences before enabling the policy in the blocking mode. Developers can iteratively refine the CSP policy based on the reports to ensure it aligns with their security goals. (Source: Mozilla Developer Network - Content Security Policy)
+%
+%    Non-Disruptive Implementation: The report-only mode ensures that the CSP policy does not interfere with the normal functioning of the web application. By generating violation reports instead of blocking content, developers can introduce and evaluate the policy without impacting the user experience or causing disruptions. It provides a safer and non-intrusive way to analyze the effectiveness of the CSP policy. (Source: Google Developers - Introduction to Content Security Policy)
+%
+%    Security Insights and Threat Detection: Violation reports generated in the report-only mode provide valuable insights into potential security threats and vulnerabilities. By analyzing these reports, developers can gain visibility into attempted policy violations, identify suspicious activities, and detect potential attack vectors. This information helps in understanding the security posture of the web application and facilitates proactive measures to mitigate risks. (Source: OWASP Cheat Sheet - Content Security Policy)
+%
+%    Compatibility and Impact Assessment: The report-only mode allows developers to assess the impact of the CSP policy on different browsers, user agents, and third-party integrations. By analyzing the violation reports across various platforms, developers can identify any inconsistencies or compatibility issues and make necessary adjustments to ensure consistent security across different environments. It helps in evaluating the effectiveness of the policy and making it compatible with diverse user environments. (Source: Mozilla Developer Network - Content Security Policy)
+%
+%    Compliance and Auditing: Violation reports generated in the report-only mode serve as an audit trail and evidence for compliance assessments. They can be used to demonstrate adherence to security guidelines and regulatory requirements. By maintaining and reviewing these reports, developers can provide evidence of due diligence in implementing and monitoring security measures, thus supporting compliance reporting efforts. (Source: Content-Security-Policy.com)
+%
+%    Ongoing Monitoring and Refinement: The report-only mode allows continuous monitoring of violation reports even after the CSP policy is enforced in blocking mode. By regularly analyzing these reports, developers can proactively identify emerging security threats, evaluate the effectiveness of the policy, and make necessary refinements to ensure robust protection against evolving attack vectors. It enables a proactive and iterative approach to web application security. (Source: OWASP Cheat Sheet - Content Security Policy)
+%
+%Please note that while these advantages are widely recognized, it is always recommended to refer to the latest documentation, guidelines, and best practices from reputable sources to ensure accurate and up-to-date information regarding CSP and its features.
 
 \end{document}
