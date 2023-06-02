@@ -48,7 +48,29 @@ This allows for new features to be deployed sooner, but it may sacrifice the sec
 Implementing CSP, although potential security benefits, comes with its own fair share of problems. 
 They span multiple layers and are especially noticable when trying to add CSP to a big, long lasting project.
 
+One of the hardest problems to overcome is when the web application uses inline scripts or event attributes that allow for scripting, like \texttt{onClick}.
+CSP disincetivies the usage of such javascript as it is a common entry point for XSS attacks. 
+It is possible to still use inline scripts with hashes or nonces. 
+Strong cryptographic security of hashes ensures that only allowed scripts will execute. 
+Attacker in this situation can execute the same script multiple times and abuse the sideeffects it may have.
+The other option requires that every script is accompanied with a random nonce value.
+When nonce is regenerated with every response, the attacker will be unable to execute scripts due to nonce chaning.
+Unfortunatelly, nonces have been shown to unsecure and fall to more advanced exploits. \cite{??}
+Both options have their individual problems too, hashes need to be updated with every sourcecode update, while nonces may compromise the security of the website.
 
+All the issues and methods can also be applied to stylesheets.
+More modern attacks may use stylesheets to exfiltrate data like passwords or logins.
+While those attacks are usually more complex in execution and size, they can still be mitigated by a well designed CSP as advised by \cite{??}
+
+Another big problem is enumerating legitimate dependencies of the website.
+Addition of new dependencies may go unnoticed in a quick developing environments of many webapps.
+Users may also inject their own code into webapps generating false reports.
+This behaviour is well highlighted by a blogpost by dropbox when they were developing a CSP for their application.
+The dropbox team had to create a list of strings, some of which included endpoints of other apis, to filter those reports.
+
+When deplying CSP it is important to remember that maintaining it requires constant effort from the developers.
+Unupdated CSP can make the webpage to misbehave or be completely unusable, when required sources are blocked from loading.
+This is a risk that may negatively impact user experience, which in turn can lead to loss of revanue.
 
 % angular js problemsk
 
@@ -69,6 +91,8 @@ They span multiple layers and are especially noticable when trying to add CSP to
 %Remember that while CSP is a powerful security measure, it is not a standalone solution. It should be implemented as part of a comprehensive security strategy, including other defensive measures such as input validation, output encoding, and secure coding practices to ensure robust protection against web-based attacks.
 
 
+
+
 Adding nonces may not increase security
 
 \subsection{Bypassing CSP}
@@ -87,7 +111,34 @@ Nonces on the other hand have been shown to be bypassable with carefully crafted
 
 
 
-\subsection{Reporting}
+\subsection{Report-Only Header}
+Content Security Policy offers many benefits to protect users from attacks by selectively allowing safe recources to be loaded.
+But as established it takes a lot of team effort to implement and maintain, where small errors can lead to loss of security or user experience.
+Thankfully CSP provides one more tool in form of the report only header.
+It simulates the browser enforcing the CSP and allows for all the to be violations to be reported to the specified endpoints.
+
+This tool is of major help when starting to create a new policy for a website.
+It allows for testing and fune tuning of the policy before enabling it. 
+The reports provide great insight into the structure of the application.
+Additionalyl disabling all resources from loading is a quick and dirty way of obtaing a list of all resources that are loaded by clients.
+The dropbox team used the report only feature extensively when deploying their own CSP, where they enumerated sources and tested their own CSP. 
+
+% Mozilla Developer Network - Content Security Policy
+% https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP
+
+Report only violations can give a valuable insight into attacks that are currently ongoing 
+With careful monitoring attacks may be detected quicker, allowing developers to patch the issue and limit the impact of the adversary.
+Additionally reports provide many insights into the violation, the type of the resource, the URL and even the line in which a rule was broken.
+With the \texttt{report-sample} source, the report may include the first 40 characters of inlined script or stylesheet.
+% add source for the first 40 characters as W3 document
+
+The CSP report-only header can be added to wny website without any consequences to the user experience and without modifying large pieces of code.
+This may lead to overall increase to the security by solving security issues quicker.
+It can also be deployed alongside an existing CSP to more strictly monitor sources which are known to be problematic.
+This may include external APIs which may add new features or endpoints which compromise security.
+
+
+
 %Advantages of CSP Report-Only Header
 %
 %Content Security Policy (CSP) provides a mechanism to enforce a set of security policies that control the loading and execution of resources on a web page. One valuable feature of CSP is the ability to use the "report-only" mode, where the CSP policy is applied without blocking any content. Instead, it generates violation reports that provide valuable insights into potential security threats. Let's explore the advantages of using the CSP report-only header.
