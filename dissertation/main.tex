@@ -32,13 +32,33 @@ Content Security Policy(CSP) was introduced as a protection layer, which allows 
 W3 organization recommends using CSP as a defence-in-depth tool, which can help reduce the harm caused by malicious users, but it should not be the sole security measure taken to prevent attacks.
 % https://www.w3.org/TR/CSP3/
 %to prevent Cross Site Scripting(XSS) and DOM injection based attacks directly in the user browser.O
-CSP works by providing the user browser a list of rules, where each resource type, like scripts, stylesheets and images, have its own set of directives.
-Those can include allowed URL endpoints, hashes of expected objects or nonces which allow for otherwise unsafe inline scripts.
+CSP works by providing the user browser a list of directives, where each resource type, like scripts, stylesheets and images, have its own set of rules.
+Those can include allowed URL endpoints, hashes of expected objects or nonces which may allow for otherwise unsafe inline scripts.
+
+CSP has been designed to protect against XSS based attacks. ??
+CSP has many ways to protect browser users from malitious content.
+
+To protect users from packet sniffing, developers can use \texttt{upgrade-insecure-requests}.
+Using this directive will instruct the browser that all loaded content needs to come from a TLS encrypted connection.
+
+CSPs can also protect from clickjacking and phishing attacks. 
+\texttt{frame-src}, \texttt{frame-ancestors}, \texttt{sandbox} all control what behaviours the appliction may allow.
+\begin{enumerate}
+	\item \texttt{frame-src} 
+	\item \texttt{frame-ancestors}
+	\item \texttt{sandbox} controls what the loaded website can perform as if it was loaded into an sandbox iframe. With this we can stop 
+\end{enumerate}
 
 
 CSP is constantly being developed with currently 3rd version being in draft, while major parts of it are already being implemented into modern browsers.
 With CSP3 \texttt{scirpt-src} directive has been further split into \texttt{script-src-elem} and \texttt{script-src-attr} directives which seperate rule for javascript coming from \texttt{<script>} markup tags and attributes such as \texttt{onClick} event attribute.
 Additionally it allows to specify hashes of sources allowed to load and enhancements to \texttt{sandbox} directive, which allows for more control over potentially untrusted content running in its isolated environment.
+The newest experimental feature of CSP3 are \texttt{require-trusted-types-for} and \texttt{trusted-types} directives.
+To further prevent DOM based XSS attacks, they allow developers to control data data that comes into unsafe sinks.
+This feature can limit or even block the content that is dynamically added to the website.
+
+% https://web.dev/trusted-types/
+% https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/require-trusted-types-for
 CSP3 is designed to be backwards compatible with CSP2, which is to ensure that new features do not prevent webpages from displaying correctly on older clients.
 This allows for new features to be deployed sooner, but it may sacrifice the security of older clients.
 
