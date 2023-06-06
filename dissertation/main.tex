@@ -35,19 +35,23 @@ W3 organization recommends using CSP as a defence-in-depth tool, which can help 
 CSP works by providing the user browser a list of directives, where each resource type, like scripts, stylesheets and images, have its own set of rules.
 Those can include allowed URL endpoints, hashes of expected objects or nonces which may allow for otherwise unsafe inline scripts.
 
-CSP has been designed to protect against XSS based attacks. ??
+The most common usage of CSP in literature it to limit the resources loaded to prevent attacks such as XSS.
+This method can also help with other exfiltration attacks based on CSS.
 CSP has many ways to protect browser users from malitious content.
 
 To protect users from packet sniffing, developers can use \texttt{upgrade-insecure-requests}.
-Using this directive will instruct the browser that all loaded content needs to come from a TLS encrypted connection.
+Using this directive will instruct the browser to try and send all requests by https, otherwise the resource will fail to load.
+Using CSP with \texttt{default-src https:} will instead immidiately drop all insecure requests.
 
-CSPs can also protect from clickjacking and phishing attacks. 
+CSPs can also protect from clickjacking and phishing attacks with specialized frame controls. 
 \texttt{frame-src}, \texttt{frame-ancestors}, \texttt{sandbox} all control what behaviours the appliction may allow.
 \begin{enumerate}
-	\item \texttt{frame-src} 
-	\item \texttt{frame-ancestors}
+	\item \texttt{frame-src} controls which urls can be included as frames in the website
+	\item \texttt{frame-ancestors} controls what websites can include this as the frame. 
 	\item \texttt{sandbox} controls what the loaded website can perform as if it was loaded into an sandbox iframe. With this we can stop 
 \end{enumerate}
+Paper by El analizes tendencies in CSP deployment between 2012 and 2018 and shows increased interest in deploying CSP to limit framing options of websites. \cite{osti_10173479}
+It is also theoretised this may be due to the limited control that \texttt{X-Frame-Options} provide, as CSP allows to specify frame origins and is better supported by browsers.
 
 
 CSP is constantly being developed with currently 3rd version being in draft, while major parts of it are already being implemented into modern browsers.
@@ -60,6 +64,7 @@ This feature can limit or even block the content that is dynamically added to th
 % https://web.dev/trusted-types/
 % https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/require-trusted-types-for
 CSP3 is designed to be backwards compatible with CSP2, which is to ensure that new features do not prevent webpages from displaying correctly on older clients.
+For example when nonces or hashes are included, the \texttt{unsafe-inline} rule is ignored by the browsers.
 This allows for new features to be deployed sooner, but it may sacrifice the security of older clients.
 
 % talk about css exfil attacks
@@ -136,6 +141,8 @@ Content Security Policy offers many benefits to protect users from attacks by se
 But as established it takes a lot of team effort to implement and maintain, where small errors can lead to loss of security or user experience.
 Thankfully CSP provides one more tool in form of the report only header.
 It simulates the browser enforcing the CSP and allows for all the to be violations to be reported to the specified endpoints.
+
+% paper shows little adoption of CSPRO header
 
 This tool is of major help when starting to create a new policy for a website.
 It allows for testing and fune tuning of the policy before enabling it. 
