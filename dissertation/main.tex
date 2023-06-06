@@ -3,7 +3,10 @@
 \usepackage{graphicx}
 \usepackage{subcaption}
 \usepackage{float}
+\usepackage[citestyle=alphabetic,bibstyle=authortitle]{biblatex}
 \usepackage[a4paper,  margin=1in]{geometry}
+
+\addbibresource{citations.bib}
 
 \begin{document}
 
@@ -199,5 +202,7 @@ This may include external APIs which may add new features or endpoints which com
 %    Ongoing Monitoring and Refinement: The report-only mode allows continuous monitoring of violation reports even after the CSP policy is enforced in blocking mode. By regularly analyzing these reports, developers can proactively identify emerging security threats, evaluate the effectiveness of the policy, and make necessary refinements to ensure robust protection against evolving attack vectors. It enables a proactive and iterative approach to web application security. (Source: OWASP Cheat Sheet - Content Security Policy)
 %
 %Please note that while these advantages are widely recognized, it is always recommended to refer to the latest documentation, guidelines, and best practices from reputable sources to ensure accurate and up-to-date information regarding CSP and its features.
+
+\printbibliography
 
 \end{document}
