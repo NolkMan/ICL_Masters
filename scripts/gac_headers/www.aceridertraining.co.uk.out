@@ -1,0 +1,63 @@
+*   Trying 51.38.84.136:443...
+* TCP_NODELAY set
+* Connected to www.aceridertraining.co.uk (51.38.84.136) port 443 (#0)
+* ALPN, offering h2
+* ALPN, offering http/1.1
+* successfully set certificate verify locations:
+*   CAfile: /etc/ssl/certs/ca-certificates.crt
+  CApath: /etc/ssl/certs
+} [5 bytes data]
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+} [512 bytes data]
+* TLSv1.3 (IN), TLS handshake, Server hello (2):
+{ [93 bytes data]
+* TLSv1.2 (IN), TLS handshake, Certificate (11):
+{ [5611 bytes data]
+* TLSv1.2 (IN), TLS handshake, Server key exchange (12):
+{ [333 bytes data]
+* TLSv1.2 (IN), TLS handshake, Server finished (14):
+{ [4 bytes data]
+* TLSv1.2 (OUT), TLS handshake, Client key exchange (16):
+} [70 bytes data]
+* TLSv1.2 (OUT), TLS change cipher, Change cipher spec (1):
+} [1 bytes data]
+* TLSv1.2 (OUT), TLS handshake, Finished (20):
+} [16 bytes data]
+* TLSv1.2 (IN), TLS handshake, Finished (20):
+{ [16 bytes data]
+* SSL connection using TLSv1.2 / ECDHE-RSA-AES256-GCM-SHA384
+* ALPN, server did not agree to a protocol
+* Server certificate:
+*  subject: CN=www.aceridertraining.co.uk
+*  start date: Nov 25 00:00:00 2022 GMT
+*  expire date: Nov 25 23:59:59 2023 GMT
+*  subjectAltName: host "www.aceridertraining.co.uk" matched cert's "www.aceridertraining.co.uk"
+*  issuer: C=LV; L=Riga; O=GoGetSSL; CN=GoGetSSL RSA DV CA
+*  SSL certificate verify ok.
+} [5 bytes data]
+> GET /theory.html?1686277855 HTTP/1.1
+> Host: www.aceridertraining.co.uk
+> Accept: */*
+> User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/114.0
+> Accept-Language: en-GB,en;q=0.5
+> Connection: keep-alive
+> Upgrade-Insecure-Requests: 1
+> Sec-Fetch-Dest: document
+> Sec-Fetch-Mode: navigate
+> Cache-Control: no-cache, no-store
+> Sec-Fetch-Site: cross-site
+> Sec-Fetch-User: ?1
+> 
+{ [5 bytes data]
+* Mark bundle as not supporting multiuse
+< HTTP/1.1 200 OK
+< date: Fri, 09 Jun 2023 02:30:55 GMT
+< server: Apache
+< last-modified: Sun, 20 Jun 2021 11:39:45 GMT
+< etag: "2000-5c531037a540a"
+< accept-ranges: bytes
+< content-length: 8192
+< content-type: text/html
+< 
+{ [5 bytes data]
+* Connection #0 to host www.aceridertraining.co.uk left intact

@@ -1,0 +1,9 @@
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/114.0
+Accept-Language: en-GB,en;q=0.5
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+Sec-Fetch-Dest: document
+Sec-Fetch-Mode: navigate
+Cache-Control: no-cache, no-store
+Sec-Fetch-Site: cross-site
+Sec-Fetch-User: ?1
