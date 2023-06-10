@@ -14,6 +14,7 @@ function setup_and_curl(){
 	curl -s -v --header "@$HEADER_FILE" $1 1> /dev/null 2> ./gac_headers/$host.out
 }
 
+mkdir -p gac_headers
 for website in $WEBSITES; do
 	setup_and_curl $website
 done
