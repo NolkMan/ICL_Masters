@@ -105,10 +105,43 @@ This is a risk that may negatively impact user experience, which in turn can lea
 \subsection{Bypassing CSP}
 Even though CSP can prevent many basic attacks it may be unsuccessful at blocking more advanced exploits.
 A study by Weichselbaum Et Al. done in 2016 showcases many ways in which CSP may be ineffective. \cite{weichselbaum2016csp}
-It also performs a comprahensive analisys on CSP directives which concludes that most of them are trivially bypassable through methods they have introduced.
+It shows how libraries can be used to bypass CSP policies.
+Angular, for example, allows malicious users to bypass CSP with DOM injection as it allows expression evalueation with a markup attribute.
+This behaviour may also be exploited on websites not using such libraries, as long as any CSP whitelisted endpoint exposes those sources.
 
-A lot of the insecure CSPs in the paper are using directives that allow the execution of inline scripts.
-Inline javascript in event handler attributes is a big part of DOM injection based XSS attacks.
+Another vulnerable library they highlight is jsonp which allows for callbacks.
+Those can be used to trick the enpoint in passing malicious code back to the user, disregarding CSP.
+
+They conclude that nearly all CSPs they have found are trivially bypassable and do not provide any additional security.
+
+CSP nonces also came under scrutiny, where they can also be bypassed in multiple ways.
+Here exploits are more refined and often rely on browsers trying to display incorrect html.
+Blog by XSS Jigsaw demonstrates how twitter was found to have a XSS vulnerability where nonce could be stolen from a different script tag. \cite{noncesGoBrrr}
+This blog also provides another example where a user token could be stolen with a link markup tag and a clever redirect.
+
+On his webpage, Sebastian Lekies, collected a bunch of CSP nonce bypasses in the form of internet directory with links to examples and original finders. \cite{noncesGoExtinct}
+The list contains methods which use partial markup injections (like in the twitter example), CSS and even DOM based XSS among the others.
+It also contains examples of how many major libraries (jQuerry, Angular, Ember, JSONP) can be used to bypass CSP, sometimes even providing multiple ways to achieve a bypass.
+
+Content exfiltration is also another problem which we would like to solve with content security policy.
+Unfortunatelly, 
+
+% <!doctype html>
+% <html>
+% 	<head>
+% 		<meta charset="utf=-8">
+% 		<title> SCP Workspace </title>
+% 		<script src="https://attacker.fun:4433/alert.js" integrity="sha256-acrDren6qaZiQCY/9ynh5uP2E1lj3CIyO0G0g+nD9qk=" crossorigin="anonymous"></script>
+% 		<script src="https://attacker.fun:4433/alert2.js"></script>
+% 	</head>
+% 	<body>
+% 		<h1> SCP Workspace </h1>
+% 		<p> xd </p>
+% 		<img src=https://attacker.fun/rose.jpg>
+% 	</body>
+% </html>
+
+
 % CSP allows to bolster the security of inline scripts by adding hash and nonce based source values.
 % Nonce is supposed to be a unique, random value, which would mean that the malicious script will be blocked.
 % Both solutions have their problems, hashes may allow a specific script to be loaded multiple times, which is especially problematic if the script has side effects.
