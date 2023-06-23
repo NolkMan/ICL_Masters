@@ -123,8 +123,13 @@ On his webpage, Sebastian Lekies, collected a bunch of CSP nonce bypasses in the
 The list contains methods which use partial markup injections (like in the twitter example), CSS and even DOM based XSS among the others.
 It also contains examples of how many major libraries (jQuerry, Angular, Ember, JSONP) can be used to bypass CSP, sometimes even providing multiple ways to achieve a bypass.
 
-Content exfiltration is also another problem which we would like to solve with content security policy.
-Unfortunatelly, 
+Content exfiltration is also another problem which we may like to solve with a content security policy.
+Attackers after compromising the website may be interested in exporting user data, like passwords or credit card information, to their own servers.
+Fortunatelly browsers block resources violating the CSP before sending any requests.
+This behaviour combined with a very strict CSP would disallow for any data to be exfiltrated in case of an XSS attack.
+
+Unfortunatelly, paper by Acker Et Al. presents a comprahensive analisys of 
+ 
 
 % <!doctype html>
 % <html>
