@@ -25,7 +25,8 @@ function requestHandler(req, res) {
 	})
 	req.on('end', function() {
 		console.log('report: ' + body)
-		req.socket.destroy()
+		res.statusCode = 200;
+		res.end('OK')
 	})
 }
 
