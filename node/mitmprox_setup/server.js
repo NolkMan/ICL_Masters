@@ -17,17 +17,20 @@ var cspro = ''
  */
 function requestHandler(req, res) {
 	if (req.method == 'POST') {
-		req.on('readable', () => {
-			console.log(String(req.read()))
-		});
-		res.statusCode = 200;
-		res.setHeader('Content-Type', 'text/json');
-		res.end(JSON.stringify(
-			{
-				'cspro': cspro,
-				'csp_endpoint': csp_endpoint
-			}
-		));
+		var body = ''
+		req.on('data', function(data) {
+			body += data;
+		})
+		req.on('end', function() {
+			res.statusCode = 200;
+			res.setHeader('Content-Type', 'text/json');
+			res.end(JSON.stringify(
+				{
+					'cspro': cspro,
+					'csp_endpoint': csp_endpoint
+				}
+			));
+		})
 	}
 	else {
 		res.statusCode = 404;
