@@ -8,7 +8,7 @@ const http = require('http')
 var hostname = '127.0.0.1';
 var port = 8181;
 
-var csp_endpoint = ''
+var csp_host = ''
 var cspro = ''
 
 /**
@@ -22,12 +22,14 @@ function requestHandler(req, res) {
 			body += data;
 		})
 		req.on('end', function() {
+			console.log("mitm server pinged at: ".concat(String(Date.now())))
 			res.statusCode = 200;
 			res.setHeader('Content-Type', 'text/json');
 			res.end(JSON.stringify(
 				{
 					'cspro': cspro,
-					'csp_endpoint': csp_endpoint
+					'csp_host': csp_host,
+					'refresh': Date.now() + 200
 				}
 			));
 		})
@@ -39,8 +41,8 @@ function requestHandler(req, res) {
 	}
 }
 
-function set_csp_endpoint(endpoint){
-	csp_endpoint = endpoint;
+function set_csp_host(host){
+	csp_host = host;
 }
 
 function set_cspro(new_cspro){
@@ -54,7 +56,7 @@ server.listen(port, hostname, function () {
 });
 
 module.exports = {
-	'set_csp_endpoint': set_csp_endpoint,
+	'set_csp_host': set_csp_host,
 	'set_cspro': set_cspro,
 }
 
