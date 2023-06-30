@@ -15,7 +15,7 @@ var serv = server.createServer(4333);
 serv.start()
 serv.useTerminal()
 
-test.send_mock_cspro(4333);
+//test.send_mock_cspro(4333);
 
 //const client = require('./client/client.js')
 
