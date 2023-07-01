@@ -45,20 +45,21 @@ const server_options = {
 
 const ALPHA = 100
 
-
 class CsproServer extends EventEmitter {
-	maybeAddToCsp(report, count){
+	maybeAddToCsp(report, uriCount, hostCount){
 		var effectiveDir = report['effective-directive'];
+		console.log(effectiveDir)
 		var blockedHost = url.parse(report['blocked-uri']).hostname;
 		if (['script-src', 'style-src'].includes(effectiveDir)){
 			return false; // ignore reports from older browsers
 		} else if (['script-src-elem','script-src-attr','style-src-elem','style-src-attr'].includes(effectiveDir)){
 			// TODO: hard choice
 		} else if (['font-src', 'img-src'].includes(effectiveDir)){
+			console.log('\t' + blockedHost + '\n\t' + this.host)
 			if (blockedHost === this.host){
 				return [effectiveDir, "'self'"]
 			}
-			if (count > ALPHA){
+			if (uriCount > ALPHA){
 				return [effectiveDir, blockedHost]
 			}
 		}
@@ -83,6 +84,31 @@ class CsproServer extends EventEmitter {
 		return false;
 	}
 
+	receiveReport(report){
+		this.reports.push(report)
+		var directive = report['effective-directive']
+		var blockedUri = report['blocked-uri']
+		var blockedHost = url.parse(blockedUri).hostname
+		// console.log(this.violators[report['effective-directive']]);
+		// console.log(report)
+		this.violators[directive][blockedHost] ||= {}
+		this.violators[directive][blockedHost].count ||= 0
+		this.violators[directive][blockedHost].count += 1
+		this.violators[directive][blockedHost][blockedUri] ||= 0
+		this.violators[directive][blockedHost][blockedUri] += 1
+
+		var hostCount = this.violators[directive][blockedHost].count
+		var  uriCount = this.violators[directive][blockedHost][blockedUri]
+
+		var toAdd = this.maybeAddToCsp(report, uriCount, hostCount)
+		if (toAdd) {
+			this.csproData[toAdd[0]] ||= []
+			if (!this.csproData[toAdd[0]].includes(toAdd[1])){
+				this.csproData[toAdd[0]].push(toAdd[1])
+			}
+		}
+	}
+
 	constructor(port, host){
 		super()
 		this.host = host
@@ -95,7 +121,6 @@ class CsproServer extends EventEmitter {
 		}
 		this.violators = Object.fromEntries(utils.csp_directives.map(dir => [dir, {}]))
 		
-		console.log(this.violators);
 
 		this.server = https.createServer(server_options, (req, res) => {
 			if (req.method != 'POST'){
@@ -108,24 +133,7 @@ class CsproServer extends EventEmitter {
 			req.on('end', () => {
 				var report = JSON.parse(body)
 				report = report['csp-report']
-				this.reports.push(report)
-				console.log(this.violators[report['effective-directive']]);
-				console.log(report)
-				if (this.violators[report['effective-directive']][report['blocked-uri']]) {
-					this.violators[report['effective-directive']][report['blocked-uri']] += 1
-				} else {
-					this.violators[report['effective-directive']][report['blocked-uri']] = 1
-				}
-
-				var toAdd = this.maybeAddToCsp(report, this.violators[report['effective-directive']][report['blocked-uri']])
-				if (toAdd) {
-					if (this.csproData[toAdd[0]]){
-						this.csproData[toAdd[0]].push(toAdd[1])
-					} else {
-						this.csproData[toAdd[0]] = [toAdd[1]]
-					}
-				}
-
+				this.receiveReport(report)
 				res.statusCode = 204;
 				res.end()
 			})
@@ -135,12 +143,6 @@ class CsproServer extends EventEmitter {
 	start(){
 		this.server.listen(this.port, () => {
 			console.log("Reporting server running at http://".concat('localhost', ":").concat(String(this.port), "/"));
-		});
-	}
-
-	useTerminal(){
-		term.start(() => {
-			return this.violators;
 		});
 	}
 
@@ -157,7 +159,19 @@ class CsproServer extends EventEmitter {
 				cspro = cspro + '; '
 			}
 		}
+		return cspro
 	}
+
+	useTerminal(){
+		term.start(() => {
+			return {
+				violators: this.violators,
+				csproData: this.csproData,
+				cspro: this.getCspro()
+			}
+		});
+	}
+
 }
 
 function createServer(port, for_host){

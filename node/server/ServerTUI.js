@@ -5,21 +5,30 @@ const utils = require('./ServerUtils.js')
 
 var term = null;
 var violators = null;
+var csproData = null;
+var cspro = null;
 
 var callback = null;
 
-var curr_state = 'menu';
+const STATES = {
+	menu: 1,
+	hosts: 2,
+	paths: 3
+}
+var state = STATES.menu
+var selectedDirective = utils.csp_directives[0]
+var selectedHost = ''
 
-var cursor_data = {
-	menu: {y: 0}
+var cursor = {
+	'1': {y: 0}
 };
 
 function draw_menu(){
 	var table = [[ 'csp directive' , 'websites' ]]
 	for (var k in violators){
-		table.push([k, Object.keys(violators[k]).map(u => url.parse(u).hostname).join(' ')])
+		table.push([k, Object.keys(violators[k]).join(' ')])
 	}
-	table[cursor_data.menu.y+1][0] = '^!' + table[cursor_data.menu.y+1][0]
+	table[cursor[STATES.menu].y+1][0] = '^!' + table[cursor[STATES.menu].y+1][0]
 	term.table( table , {
 			hasBorder: false ,
 			contentHasMarkup: true ,
@@ -33,12 +42,42 @@ function draw_menu(){
 			fit: false 
 		}
 	) ;
+	console.log(csproData)
+	console.log(cspro)
 }
 
 function draw_violator(){
-	var violator = curr_state;
-	var table = [[ violator ]];
-	table.push(Object.keys(violators[violator]).map(u => url.parse(u).hostname))
+	var table = [[ '  ', selectedDirective ]];
+	for (const v of Object.keys(violators[selectedDirective])){
+		if (csproData[selectedDirective] &&
+			csproData[selectedDirective].includes(v)){
+			table.push(['  ', '^G' + v])
+		} else {
+			table.push(['  ', '^R' + v])
+		}
+	}
+	table[cursor[STATES.hosts].y+1][0] = '^!' + table[cursor[STATES.hosts].y+1][0]
+	term.table( table , {
+			hasBorder: false ,
+			contentHasMarkup: true ,
+			textAttr: { bgColor: 'default' } ,
+			// firstCellTextAttr: { bgColor: 'blue' } ,
+			// firstRowTextAttr: { bgColor: 'yellow' } ,
+			firstRowTextAttr: { color: 'yellow' , inverse: true} ,
+			// firstColumnTextAttr: { color: 'yellow' } ,
+			// checkerEvenCellTextAttr: { bgColor: 'gray' } ,
+			width: term.width ,
+			height: term.height,
+			fit: false 
+		}
+	) ;
+}
+
+function draw_violator_paths(){
+	var table = [[ '  ', selectedDirective + ': ' + selectedHost ]];
+	for (const u of Object.keys(violators[selectedDirective][selectedHost])){
+		table.push(['  ', u])
+	}
 	term.table( table , {
 			hasBorder: false ,
 			contentHasMarkup: true ,
@@ -56,12 +95,17 @@ function draw_violator(){
 }
 
 function update(){
-	violators = callback();
+	var c = callback();
+	violators = c['violators']
+	csproData = c['csproData']
+	cspro = c['cspro']
 	term.clear();
-	if (curr_state === 'menu'){
+	if (state === STATES.menu){
 		draw_menu();
-	} else {
+	} else if (state === STATES.hosts) {
 		draw_violator();
+	} else {
+		draw_violator_paths();
 	}
 	setTimeout(() => {
 		update();
@@ -69,38 +113,44 @@ function update(){
 }
 
 function key_up(){
-	cursor_data[curr_state].y -= 1;
+	cursor[state].y -= 1;
 
-	if (cursor_data.menu.y < 0){
-		cursor_data.menu.y = 0;
+	if (cursor[STATES.menu].y < 0){
+		cursor[STATES.menu].y = 0;
 	}
 }
 
 function key_down(){
-	cursor_data[curr_state].y += 1;
+	cursor[state].y += 1;
 
-	if (cursor_data.menu.y >= violators.size){
-		cursor_data.menu.y = violators.size - 1;
+	if (cursor[STATES.menu].y >= violators.size){
+		cursor[STATES.menu].y = violators.size - 1;
 	}
 }
 
 function key_left(){
-	if (curr_state !== 'menu') {
-		curr_state = 'menu';
+	if (state === STATES.hosts) {
+		state = STATES.menu
+	} else {
+		state = STATES.hosts
 	}
 }
 
 function key_right(){
-	if (curr_state === 'menu') {
-		curr_state = utils.csp_directives[cursor_data.menu.y]
-	}
+	if (state === STATES.menu) {
+		state = STATES.hosts
+		cursor[state] = {y: 0}
+		selectedDirective = utils.csp_directives[cursor[STATES.menu].y]
+	} else if (state === STATES.hosts){
+		state = STATES.paths
+		selectedHost = Object.keys(violators[selectedDirective])[cursor[STATES.hosts].y]
+	} 
 }
 
 
 function start(_callback){
 	term = terminal_kit.terminal
 	callback = _callback;
-	violators = callback();
 	term.grabInput(true);
 	term.on('key', (name, matches, data) => {
 		if (name === 'j' || name === 'DOWN')
