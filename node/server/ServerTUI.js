@@ -13,11 +13,15 @@ var callback = null;
 const STATES = {
 	menu: 1,
 	hosts: 2,
-	paths: 3
+	paths: 3,
+	reports: 4,
+	details: 5
 }
 var state = STATES.menu
 var selectedDirective = utils.csp_directives[0]
 var selectedHost = ''
+var selectedUrl = ''
+var selectedReport = ''
 
 var cursor = {
 	'1': {y: 0}
@@ -25,16 +29,17 @@ var cursor = {
 
 function draw_menu(){
 	var table = [[ 'csp directive' , 'websites' ]]
-	for (var k in violators){
-		table.push([k, Object.keys(violators[k]).join(' ')])
+	for (const dir of utils.csp_directives){
+		table.push([dir, Array.from(violators.get(dir).keys()).join(' ')])
+	}
+	if (cursor[STATES.menu].y >= violators.size){
+		cursor[STATES.menu].y = violators.size - 1;
 	}
 	table[cursor[STATES.menu].y+1][0] = '^!' + table[cursor[STATES.menu].y+1][0]
 	term.table( table , {
 			hasBorder: false ,
 			contentHasMarkup: true ,
 			textAttr: { bgColor: 'default' } ,
-			// firstCellTextAttr: { bgColor: 'blue' } ,
-			// firstRowTextAttr: { bgColor: 'yellow' } ,
 			firstRowTextAttr: { color: 'yellow' , inverse: true} ,
 			firstColumnTextAttr: { color: 'yellow' } ,
 			checkerEvenCellTextAttr: { bgColor: 'gray' } ,
@@ -48,24 +53,24 @@ function draw_menu(){
 
 function draw_violator(){
 	var table = [[ '  ', selectedDirective ]];
-	for (const v of Object.keys(violators[selectedDirective])){
+	var hosts = violators.get(selectedDirective)
+	for (const host of hosts.keys()){
 		if (csproData[selectedDirective] &&
-			csproData[selectedDirective].includes(v)){
-			table.push(['  ', '^G' + v])
+			csproData[selectedDirective].includes(host)){
+			table.push(['  ', '^G' + host])
 		} else {
-			table.push(['  ', '^R' + v])
+			table.push(['  ', '^R' + host])
 		}
+	}
+	if (cursor[STATES.hosts] >= hosts.length){
+		cursor[STATES.hosts] = hosts.length-1
 	}
 	table[cursor[STATES.hosts].y+1][0] = '^!' + table[cursor[STATES.hosts].y+1][0]
 	term.table( table , {
 			hasBorder: false ,
 			contentHasMarkup: true ,
 			textAttr: { bgColor: 'default' } ,
-			// firstCellTextAttr: { bgColor: 'blue' } ,
-			// firstRowTextAttr: { bgColor: 'yellow' } ,
 			firstRowTextAttr: { color: 'yellow' , inverse: true} ,
-			// firstColumnTextAttr: { color: 'yellow' } ,
-			// checkerEvenCellTextAttr: { bgColor: 'gray' } ,
 			width: term.width ,
 			height: term.height,
 			fit: false 
@@ -75,23 +80,54 @@ function draw_violator(){
 
 function draw_violator_paths(){
 	var table = [[ '  ', selectedDirective + ': ' + selectedHost ]];
-	for (const u of Object.keys(violators[selectedDirective][selectedHost])){
+	for (const u of violators.get(selectedDirective).get(selectedHost).keys()){
 		table.push(['  ', u])
 	}
+	table[cursor[STATES.paths].y+1][0] = '^!' + table[cursor[STATES.paths].y+1][0]
 	term.table( table , {
 			hasBorder: false ,
 			contentHasMarkup: true ,
 			textAttr: { bgColor: 'default' } ,
-			// firstCellTextAttr: { bgColor: 'blue' } ,
-			// firstRowTextAttr: { bgColor: 'yellow' } ,
 			firstRowTextAttr: { color: 'yellow' , inverse: true} ,
-			// firstColumnTextAttr: { color: 'yellow' } ,
-			// checkerEvenCellTextAttr: { bgColor: 'gray' } ,
 			width: term.width ,
 			height: term.height,
 			fit: false 
 		}
 	) ;
+}
+
+function draw_reports(){
+	var table = [[ '  ', 'Source file', 'line', '  sample']];
+	for (const r of violators.get(selectedDirective).get(selectedHost).get(selectedUrl)){
+		table.push(['  ', r['source-file'], '  ' + r['line-number'], ' ' + r['script-sample']])
+	}
+	table[cursor[STATES.paths].y+1][0] = '^!' + table[cursor[STATES.paths].y+1][0]
+	term.table( table , {
+			hasBorder: false ,
+			// borderChars: 'empty',
+			contentHasMarkup: true ,
+			textAttr: { bgColor: 'default' } ,
+			firstRowTextAttr: { color: 'yellow' , inverse: true} ,
+			width: term.width ,
+			height: term.height,
+			fit: false 
+		}
+	) ;
+}
+
+function draw_details(){
+	var table = [[ '  ', selectedDirective + ': ' + selectedUrl ]];
+	term.table( table , {
+			hasBorder: false ,
+			contentHasMarkup: true ,
+			textAttr: { bgColor: 'default' } ,
+			firstRowTextAttr: { color: 'yellow' , inverse: true} ,
+			width: term.width ,
+			height: term.height,
+			fit: false 
+		}
+	) ;
+	console.log(selectedReport)
 }
 
 function update(){
@@ -100,12 +136,20 @@ function update(){
 	csproData = c['csproData']
 	cspro = c['cspro']
 	term.clear();
-	if (state === STATES.menu){
-		draw_menu();
-	} else if (state === STATES.hosts) {
-		draw_violator();
-	} else {
-		draw_violator_paths();
+	try {
+		if (state === STATES.menu){
+			draw_menu();
+		} else if (state === STATES.hosts) {
+			draw_violator();
+		} else if (state === STATES.paths) {
+			draw_violator_paths();
+		} else if (state === STATES.reports) {
+			draw_reports();
+		} else if (state === STATES.details) {
+			draw_details();
+		}
+	} catch (err) {
+		state = STATES.menu
 	}
 	setTimeout(() => {
 		update();
@@ -114,37 +158,36 @@ function update(){
 
 function key_up(){
 	cursor[state].y -= 1;
-
-	if (cursor[STATES.menu].y < 0){
-		cursor[STATES.menu].y = 0;
-	}
+	if (cursor[state].y < 0)
+		cursor[state].y = 0;
 }
 
 function key_down(){
 	cursor[state].y += 1;
-
-	if (cursor[STATES.menu].y >= violators.size){
-		cursor[STATES.menu].y = violators.size - 1;
-	}
 }
 
 function key_left(){
-	if (state === STATES.hosts) {
-		state = STATES.menu
-	} else {
-		state = STATES.hosts
+	state --;
+	if (state <= 0){
+		state = 1
 	}
 }
 
 function key_right(){
 	if (state === STATES.menu) {
 		state = STATES.hosts
-		cursor[state] = {y: 0}
 		selectedDirective = utils.csp_directives[cursor[STATES.menu].y]
 	} else if (state === STATES.hosts){
 		state = STATES.paths
-		selectedHost = Object.keys(violators[selectedDirective])[cursor[STATES.hosts].y]
-	} 
+		selectedHost = Array.from(violators.get(selectedDirective).keys())[cursor[STATES.hosts].y]
+	} else if (state === STATES.paths){
+		state = STATES.reports
+		selectedUrl  = Array.from(violators.get(selectedDirective).get(selectedHost).keys())[cursor[STATES.paths].y]
+	} else if (state === STATES.reports){
+		state = STATES.details
+		selectedReport = violators.get(selectedDirective).get(selectedHost).get(selectedUrl)[cursor[STATES.reports].y]
+	}
+	cursor[state] = {y: 0}
 }
 
 

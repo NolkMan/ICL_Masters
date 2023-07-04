@@ -43,9 +43,37 @@ const server_options = {
 	}
 */
 
+
+/* violators: Map()
+*	directive
+*	Map() - violating hostnames
+*		hostname
+*		Map() - full urls under that hostname
+*			url
+*			[] array of reports for specific url
+*/
+
 const ALPHA = 100
 
 class CsproServer extends EventEmitter {
+/*
+	'child-src',
+	'connect-src',
+	'default-src',
+	'frame-src',
+	'manifest-src',
+	'media-src',
+	'object-src',
+	'worker-src',
+	'base-uri',
+	'sandbox',
+	'form-action',
+	'frame-ancestors',
+	'navigate-to',
+	'require-trusted-types-for',
+	'trusted-types',
+	'upgrade-insecure-requests'
+*/
 	maybeAddToCsp(report, uriCount, hostCount){
 		var effectiveDir = report['effective-directive'];
 		console.log(effectiveDir)
@@ -63,24 +91,6 @@ class CsproServer extends EventEmitter {
 				return [effectiveDir, blockedHost]
 			}
 		}
-			/*
-	'child-src',
-	'connect-src',
-	'default-src',
-	'frame-src',
-	'manifest-src',
-	'media-src',
-	'object-src',
-	'worker-src',
-	'base-uri',
-	'sandbox',
-	'form-action',
-	'frame-ancestors',
-	'navigate-to',
-	'require-trusted-types-for',
-	'trusted-types',
-	'upgrade-insecure-requests'
-			*/
 		return false;
 	}
 
@@ -89,16 +99,15 @@ class CsproServer extends EventEmitter {
 		var directive = report['effective-directive']
 		var blockedUri = report['blocked-uri']
 		var blockedHost = url.parse(blockedUri).hostname
-		// console.log(this.violators[report['effective-directive']]);
-		// console.log(report)
-		this.violators[directive][blockedHost] ||= {}
-		this.violators[directive][blockedHost].count ||= 0
-		this.violators[directive][blockedHost].count += 1
-		this.violators[directive][blockedHost][blockedUri] ||= 0
-		this.violators[directive][blockedHost][blockedUri] += 1
 
-		var hostCount = this.violators[directive][blockedHost].count
-		var  uriCount = this.violators[directive][blockedHost][blockedUri]
+		if (!this.violators.get(directive).has(blockedHost))
+			this.violators.get(directive).set(blockedHost, new Map())
+		if (!this.violators.get(directive).get(blockedHost).has(blockedUri))
+			this.violators.get(directive).get(blockedHost).set(blockedUri, [])
+		this.violators.get(directive).get(blockedHost).get(blockedUri).push(report)
+
+		var hostCount = this.violators.get(directive).get(blockedHost).length
+		var  uriCount = this.violators.get(directive).get(blockedHost).get(blockedUri).length
 
 		var toAdd = this.maybeAddToCsp(report, uriCount, hostCount)
 		if (toAdd) {
@@ -119,8 +128,9 @@ class CsproServer extends EventEmitter {
 			'upgrade-insecure-requests': [],
 			'require-trusted-types-for': ['script'],
 		}
-		this.violators = Object.fromEntries(utils.csp_directives.map(dir => [dir, {}]))
-		
+		this.violators = new Map(
+			utils.csp_directives.map(dir => [dir, new Map()])
+		);
 
 		this.server = https.createServer(server_options, (req, res) => {
 			if (req.method != 'POST'){
