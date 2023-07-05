@@ -7,6 +7,7 @@ const url   = require('url');
 
 const utils = require(__dirname + '/ServerUtils.js');
 const term  = require(__dirname + '/ServerTUI.js');
+const psql	= require(__dirname + '/ServerPSQL.js');
 
 const server_options = {
 	key: fs.readFileSync(__dirname + '/ssl/reporting.project-key.pem'),
@@ -76,7 +77,6 @@ class CsproServer extends EventEmitter {
 */
 	maybeAddToCsp(report, uriCount, hostCount){
 		var effectiveDir = report['effective-directive'];
-		console.log(effectiveDir)
 		var blockedHost = url.parse(report['blocked-uri']).hostname;
 		if (['script-src', 'style-src'].includes(effectiveDir)){
 			return false; // ignore reports from older browsers
@@ -94,8 +94,7 @@ class CsproServer extends EventEmitter {
 		return false;
 	}
 
-	receiveReport(report){
-		this.reports.push(report)
+	parseReport(report){
 		var directive = report['effective-directive']
 		var blockedUri = report['blocked-uri']
 		var blockedHost = url.parse(blockedUri).hostname
@@ -118,15 +117,25 @@ class CsproServer extends EventEmitter {
 		}
 	}
 
+	receiveReport(report){
+		psql.logReport(this.host, report)
+		this.parseReport(report)
+	}
+
 	constructor(port, host){
 		super()
 		this.host = host
 		this.port = port
-		this.reports = []
 		this.csproData = {
 			'default-src': ["'none'"],
 			'upgrade-insecure-requests': [],
 			'require-trusted-types-for': ['script'],
+			'script-src': ["'report-sample'"],
+			'style-src': ["'report-sample'"],
+			'script-src-elem': ["'report-sample'"],
+			'script-src-attr': ["'report-sample'", "'unsafe-hashes'"],
+			'style-src-elem': ["'report-sample'"],
+			'style-src-attr': ["'report-sample'", "'unsafe-hashes'"],
 		}
 		this.violators = new Map(
 			utils.csp_directives.map(dir => [dir, new Map()])
@@ -150,9 +159,12 @@ class CsproServer extends EventEmitter {
 		});
 	}
 
-	start(){
-		this.server.listen(this.port, () => {
-			console.log("Reporting server running at http://".concat('localhost', ":").concat(String(this.port), "/"));
+	start(callback){
+		psql.start(() => {
+			this.server.listen(this.port, () => {
+				console.log("Reporting server running at http://".concat('localhost', ":").concat(String(this.port), "/"));
+				callback()
+			});
 		});
 	}
 
