@@ -4,15 +4,17 @@ const server = require('./server/server.js')
 const test = require('./utils/TestUtils.js')
 
 var basic_cspro = "default-src 'none'; report-uri https://reporting.project:4333";
-var current_host = 'www.westlondonmotorcycletraining.com';
+var current_host = 'mabb16.angelfire.com';
 
 mitm.set_cspro(basic_cspro)
 mitm.set_csp_host(current_host)
 
 var serv = server.createServer(4333, current_host);
 serv.start(() => {
+	serv.repeatAllReports()
 	serv.useTerminal()
-	test.send_mock_cspro(4333);
+	mitm.set_cspro(serv.getCspro())
+	//test.send_mock_cspro(4333);
 });
 
 

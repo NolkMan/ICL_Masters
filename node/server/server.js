@@ -118,8 +118,10 @@ class CsproServer extends EventEmitter {
 	}
 
 	receiveReport(report){
-		psql.logReport(this.host, report)
-		this.parseReport(report)
+		if (this.host === url.parse(report['document-uri']).hostname){
+			psql.logReport(this.host, report)
+			this.parseReport(report)
+		}
 	}
 
 	constructor(port, host){
@@ -129,7 +131,7 @@ class CsproServer extends EventEmitter {
 		this.csproData = {
 			'default-src': ["'none'"],
 			'upgrade-insecure-requests': [],
-			'require-trusted-types-for': ['script'],
+			'require-trusted-types-for': ["'script'"],
 			'script-src': ["'report-sample'"],
 			'style-src': ["'report-sample'"],
 			'script-src-elem': ["'report-sample'"],
@@ -150,12 +152,34 @@ class CsproServer extends EventEmitter {
 				body += data;
 			})
 			req.on('end', () => {
-				var report = JSON.parse(body)
-				report = report['csp-report']
+				try {
+					var report = JSON.parse(body)
+					report = report['csp-report']
+				} catch (error) {
+					res.statusCode = 204;
+					res.end()
+					return;
+				} 
 				this.receiveReport(report)
 				res.statusCode = 204;
 				res.end()
 			})
+		});
+	}
+
+	repeatAllReports(){
+		psql.getAllReports(this.host, (res) => {
+			for (const row of res.rows){
+				if (row.report) {
+					if (url.parse(row.report['blocked-uri']).hostname === 'www.westlondonmotorcycletraining.com'){
+						//console.log(row)
+					}
+					this.parseReport(row.report)
+				} else {
+					console.log(row)
+				}
+				//console.log(row.report)
+			}
 		});
 	}
 
@@ -181,7 +205,7 @@ class CsproServer extends EventEmitter {
 				cspro = cspro + '; '
 			}
 		}
-		return cspro
+		return (cspro + 'report-uri https://reporting.project:' + String(this.port))
 	}
 
 	useTerminal(){

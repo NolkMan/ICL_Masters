@@ -44,8 +44,20 @@ function end(){
 function logReport(host, report){
 	client.query('INSERT INTO cspro_reports(host, time, report)\
 		VALUES ($1, CURRENT_TIMESTAMP, $2);', [host, report], (err) => {
-			if (err)
+			if (err){
+				errLog('Log Report')
 				errLog(err)
+			}
+	});
+}
+
+function getAllReports(host, callback){
+	client.query('SELECT * FROM cspro_reports WHERE host=$1;', [host], (err, res) => {
+		if (err) {
+			errLog('Get All Reports')
+			errLog(err)
+		}
+		callback(res)
 	});
 }
 
@@ -53,4 +65,5 @@ module.exports = {
 	start: start,
 	end: end,
 	logReport: logReport,
+	getAllReports: getAllReports,
 }
