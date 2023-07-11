@@ -83,7 +83,6 @@ class CsproServer extends EventEmitter {
 		} else if (['script-src-elem','script-src-attr','style-src-elem','style-src-attr'].includes(effectiveDir)){
 			// TODO: hard choice
 		} else if (['font-src', 'img-src'].includes(effectiveDir)){
-			console.log('\t' + blockedHost + '\n\t' + this.host)
 			if (blockedHost === this.host){
 				return [effectiveDir, "'self'"]
 			}
@@ -98,6 +97,13 @@ class CsproServer extends EventEmitter {
 		var directive = report['effective-directive']
 		var blockedUri = report['blocked-uri']
 		var blockedHost = url.parse(blockedUri).hostname
+
+		/* TODO
+		if (this.malUrls.contains(blockedUri)){
+			this.malicious = this.malicious || {}
+			console.log(blockedUri)
+		}
+		*/
 
 		if (!this.violators.get(directive).has(blockedHost))
 			this.violators.get(directive).set(blockedHost, new Map())
@@ -171,19 +177,18 @@ class CsproServer extends EventEmitter {
 		psql.getAllReports(this.host, (res) => {
 			for (const row of res.rows){
 				if (row.report) {
-					if (url.parse(row.report['blocked-uri']).hostname === 'www.westlondonmotorcycletraining.com'){
-						//console.log(row)
+					if (url.parse(row.report['document-uri']).hostname === this.host){
+						this.parseReport(row.report)
+					} else {
+						// report for the wrong host: ignore
 					}
-					this.parseReport(row.report)
-				} else {
-					console.log(row)
-				}
-				//console.log(row.report)
+				} 
 			}
 		});
 	}
 
 	start(callback){
+		this.malUrls = utils.getMaliciousUrls()
 		psql.start(() => {
 			this.server.listen(this.port, () => {
 				console.log("Reporting server running at http://".concat('localhost', ":").concat(String(this.port), "/"));

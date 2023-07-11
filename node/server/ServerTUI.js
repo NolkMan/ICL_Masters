@@ -27,6 +27,26 @@ var cursor = {
 	'1': {y: 0}
 };
 
+function fit_table(table){
+	var height = term.height
+	if (table.length > height){
+		var beg = cursor[state].y - 3
+		var end = cursor[state].y - 3 + height
+		if (beg < 0){
+			end -= beg
+			beg -= beg
+		}
+		if (end > table.length){
+			beg = table.length - height
+			end = table.length
+		}
+		var newtab = table.slice(beg+1,end-1)
+		newtab.unshift(table[0])
+		return newtab
+	}
+	return table
+}
+
 function draw_menu(){
 	var table = [[ 'csp directive' , 'websites' ]]
 	for (const dir of utils.csp_directives){
@@ -66,7 +86,7 @@ function draw_violator(){
 		cursor[STATES.hosts] = hosts.length-1
 	}
 	table[cursor[STATES.hosts].y+1][0] = '^!' + table[cursor[STATES.hosts].y+1][0]
-	term.table( table , {
+	term.table( fit_table(table) , {
 			hasBorder: false ,
 			contentHasMarkup: true ,
 			textAttr: { bgColor: 'default' } ,
@@ -84,7 +104,7 @@ function draw_violator_paths(){
 		table.push(['  ', u])
 	}
 	table[cursor[STATES.paths].y+1][0] = '^!' + table[cursor[STATES.paths].y+1][0]
-	term.table( table , {
+	term.table( fit_table(table) , {
 			hasBorder: false ,
 			contentHasMarkup: true ,
 			textAttr: { bgColor: 'default' } ,
@@ -96,13 +116,25 @@ function draw_violator_paths(){
 	) ;
 }
 
+function escape_string(str){
+  return str
+    .replace(/[\\]/g, '\\\\')
+    .replace(/[\"]/g, '\\\"')
+    .replace(/[\/]/g, '\\/')
+    .replace(/[\b]/g, '\\b')
+    .replace(/[\f]/g, '\\f')
+    .replace(/[\n]/g, '\\n')
+    .replace(/[\r]/g, '\\r')
+    .replace(/[\t]/g, '\\t');
+}
+
 function draw_reports(){
 	var table = [[ '  ', 'Source file', 'line', '  sample']];
 	for (const r of violators.get(selectedDirective).get(selectedHost).get(selectedUrl)){
-		table.push(['  ', r['source-file'], '  ' + r['line-number'], ' ' + r['script-sample']])
+		table.push(['  ', r['source-file'], '  ' + r['line-number'], ' ' + escape_string(r['script-sample'])])
 	}
-	table[cursor[STATES.paths].y+1][0] = '^!' + table[cursor[STATES.paths].y+1][0]
-	term.table( table , {
+	table[cursor[STATES.reports].y+1][0] = '^!' + table[cursor[STATES.reports].y+1][0]
+	term.table( fit_table(table) , {
 			hasBorder: false ,
 			// borderChars: 'empty',
 			contentHasMarkup: true ,

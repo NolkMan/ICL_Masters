@@ -12,7 +12,7 @@ mitm.set_csp_host(current_host)
 var serv = server.createServer(4333, current_host);
 serv.start(() => {
 	serv.repeatAllReports()
-	serv.useTerminal()
+	//serv.useTerminal()
 	mitm.set_cspro(serv.getCspro())
 	//test.send_mock_cspro(4333);
 });
