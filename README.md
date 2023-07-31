@@ -21,3 +21,5 @@ sudo cp .local/share/mkcert/rootCA.pem /usr/local/share/ca-certificates/rootCA.c
 sudo update-ca-certificates
 ```
 
+## References
+https://towardsai.net/p/l/detect-malicious-javascript-code-using-machine-learning
