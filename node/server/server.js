@@ -75,6 +75,19 @@ class CsproServer extends EventEmitter {
 	'trusted-types',
 	'upgrade-insecure-requests'
 */
+	getJsEvaluation(jsuri, callback){
+		psql.getEvaluation(this.host, jsuri, (res) => {
+			if (res.rows.length > 0 && res.rows[0].evaluation){
+				callback(res.rows[0].evaluation)
+			} else {
+				this.evaluator.evaluate(jsuri, (evaluation) => {
+					psql.logEvaluation(this.host, jsuri, evaluation);
+					callback(evaluation)
+				})
+			}
+		});
+	}
+
 	maybeAddToCsp(report, uriCount, hostCount){
 		var effectiveDir = report['effective-directive'];
 		var blockedHost = url.parse(report['blocked-uri']).hostname;
@@ -98,12 +111,12 @@ class CsproServer extends EventEmitter {
 		var blockedUri = report['blocked-uri']
 		var blockedHost = url.parse(blockedUri).hostname
 
-		/* TODO
-		if (this.malUrls.contains(blockedUri)){
-			this.malicious = this.malicious || {}
-			console.log(blockedUri)
+		if (this.malUrls.has(blockedHost)){
+			if (!this.malicious.has(blockedHost)){
+				console.log('Malicious host: ' + blockedHost)
+				this.malicious.set(blockedHost, true)
+			}
 		}
-		*/
 
 		if (!this.violators.get(directive).has(blockedHost))
 			this.violators.get(directive).set(blockedHost, new Map())
@@ -130,10 +143,11 @@ class CsproServer extends EventEmitter {
 		}
 	}
 
-	constructor(port, host){
+	constructor(port, host, evaluator){
 		super()
 		this.host = host
 		this.port = port
+		this.evaluator = evaluator
 		this.csproData = {
 			'default-src': ["'none'"],
 			'upgrade-insecure-requests': [],
@@ -188,7 +202,8 @@ class CsproServer extends EventEmitter {
 	}
 
 	start(callback){
-		this.malUrls = utils.getMaliciousUrls()
+		this.malUrls = new Map(Array.from(new Set(utils.getMaliciousUrls())).map(x => [x, true]))
+		this.malicious = new Map()
 		psql.start(() => {
 			this.server.listen(this.port, () => {
 				console.log("Reporting server running at http://".concat('localhost', ":").concat(String(this.port), "/"));
@@ -225,8 +240,8 @@ class CsproServer extends EventEmitter {
 
 }
 
-function createServer(port, for_host){
-	return new CsproServer(port, for_host)
+function createServer(port, for_host, js_evaluator){
+	return new CsproServer(port, for_host, js_evaluator)
 }
 module.exports = {
 	'createServer': createServer

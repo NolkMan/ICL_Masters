@@ -5,7 +5,7 @@ import time
 import obfuscation_detection as od
 
 hostName = "localhost"
-serverPort = 8080
+serverPort = 39645
 
 class MyServer(BaseHTTPRequestHandler):
     def do_POST(self):
