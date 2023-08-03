@@ -1,6 +1,10 @@
 const http = require('http')
 const https = require('https')
 
+const url = require('url')
+const net = require('net')
+const dns = require('dns')
+
 var host = "localhost"
 var port = 39645
 
@@ -60,17 +64,41 @@ function fetchJs(jsuri, callback){
 		res.on('end', () => {
 			callback(js)
 		});
+		res.on('error', (err) => {
+			callback(null, err)
+		});
+	});
+	req.on('error', (err) => {
+		callback(null, err)
 	});
 }
 
+function fetchHost(jsuri, callback){
+	var host = url.parse(jsuri).host
+	if (net.isIP(host)){
+		dns.reverse(host, (err, addrs) => {
+			if (!err){ 
+				callback([host].concat(addrs))
+			} else {
+				callback([host])
+			}
+		});
+	} else {
+		callback([host])
+	}
+}
+
 function evaluateJs(jsuri, callback){
-	fetchJs(jsuri, (js) => {
-		if (js == null){
-			callback(null)
+	fetchJs(jsuri, (js, err) => {
+		if (err){
 		}
 		detect_obfuscation(js, (message, error) => {
-			// TODO pass the message, ask the NC db, synchronize
+			// TODO synchronize
 		})
+	});
+	
+	fetchHost(jsuri, (hosts) => {
+		// synchronize
 	});
 }
 
