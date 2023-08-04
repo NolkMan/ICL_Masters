@@ -17,7 +17,7 @@ class MyServer(BaseHTTPRequestHandler):
     
         is_obfuscated = od.predict_obfuscated(received.decode("utf-8"))
 
-        self.wfile.write(b'{obfuscated: ' + (b'true' if is_obfuscated else b'false') + b'}')
+        self.wfile.write(b'{"obfuscated": ' + (b'true' if is_obfuscated else b'false') + b'}')
 
 if __name__ == "__main__":        
     webServer = HTTPServer((hostName, serverPort), MyServer)

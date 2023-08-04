@@ -1,5 +1,6 @@
 const http = require('http')
 const https = require('https')
+const crypto = require('crypto')
 
 const url = require('url')
 const net = require('net')
@@ -25,7 +26,7 @@ function detect_obfuscation(js, callback){
 		headers: {
 			'Content-Type': 'text/javascript',
 			'Content-Length': Buffer.byteLength(js),
-		}
+		},
 	}
 	var req = http.request(options);
 
@@ -36,8 +37,8 @@ function detect_obfuscation(js, callback){
 		});
 		res.on('end', () => {
 			try {
-				//var message = JSON.parse(body)
-				maybeCallback(body, false);
+				var message = JSON.parse(body)
+				maybeCallback(message, false);
 			} catch (error) {
 				maybeCallback(null,  error);
 			}
@@ -48,7 +49,11 @@ function detect_obfuscation(js, callback){
 	});
 
 	req.on('error', (err) => {
-		maybeCallback(null, err)
+		if (err.code === 'ECONNRESET'){
+			detect_obfuscation(js, maybeCallback)
+		} else {
+			maybeCallback(null, err)
+		}
 	});
 
 	req.write(js)
@@ -56,7 +61,10 @@ function detect_obfuscation(js, callback){
 }
 
 function fetchJs(jsuri, callback){
-	var req = https.request(jsuri, (res) => {
+	var options = {
+		secureOptions: crypto.constants.SSL_OP_ALLOW_UNSAFE_LEGACY_RENEGOTIATION
+	};
+	var req = https.request(jsuri, options, (res) => {
 		var js = ''
 		res.on('data', (part) => {
 			js += part
@@ -109,12 +117,16 @@ function evaluateJs(jsuri, callback){
 			collect('eval', {'error': err, 'error_msg': 'Failed to download script'});
 			return;
 		}
+		if (js.length == 0){
+			collect('eval', {'obfuscated': 'empty'})
+			return
+		}
 		detect_obfuscation(js, (message, error) => {
 			if (error){
 				collect('eval', {'error': error, 'error_msg': 'Failed to connect to evaluator'});
 				return
 			}
-			collect('eval', {'message': message});
+			collect('eval', message);
 		})
 	});
 	
