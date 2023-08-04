@@ -56,6 +56,17 @@ const server_options = {
 
 const ALPHA = 100
 
+function isJsReport(report) {
+	var effectiveDir = report['effective-directive'];
+	if (['script-src', 
+		'script-src-elem',
+		'script-src-attr',
+		].includes(effectiveDir)){
+		return true;
+	}
+	return false;
+}
+
 class CsproServer extends EventEmitter {
 /*
 	'child-src',
@@ -116,6 +127,12 @@ class CsproServer extends EventEmitter {
 				console.log('Malicious host: ' + blockedHost)
 				this.malicious.set(blockedHost, true)
 			}
+		}
+
+		if (directive == 'script-src-elem' && blockedUri !== 'inline'){
+			this.getJsEvaluation(blockedUri, (evaluation) => {
+				console.log(evaluation)
+			});
 		}
 
 		if (!this.violators.get(directive).has(blockedHost))

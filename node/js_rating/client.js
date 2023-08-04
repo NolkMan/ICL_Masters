@@ -36,8 +36,8 @@ function detect_obfuscation(js, callback){
 		});
 		res.on('end', () => {
 			try {
-				var message = JSON.parse(body)
-				maybeCallback(message, false);
+				//var message = JSON.parse(body)
+				maybeCallback(body, false);
 			} catch (error) {
 				maybeCallback(null,  error);
 			}
@@ -71,6 +71,7 @@ function fetchJs(jsuri, callback){
 	req.on('error', (err) => {
 		callback(null, err)
 	});
+	req.end()
 }
 
 function fetchHost(jsuri, callback){
@@ -78,27 +79,47 @@ function fetchHost(jsuri, callback){
 	if (net.isIP(host)){
 		dns.reverse(host, (err, addrs) => {
 			if (!err){ 
-				callback([host].concat(addrs))
+				callback([host, jsuri].concat(addrs))
 			} else {
-				callback([host])
+				callback([host, jsuri])
 			}
 		});
 	} else {
-		callback([host])
+		callback([host, jsuri])
 	}
 }
 
+function getCollector(toCollect, callback){
+	var collected = {}
+	return (what, data) => {
+		collected[what] = data;
+		for (const c of toCollect){
+			if (!(c in collected)){
+				return
+			}
+		}
+		callback(collected);
+	};
+}
+
 function evaluateJs(jsuri, callback){
+	var collect = getCollector(['eval', 'hosts'], callback);
 	fetchJs(jsuri, (js, err) => {
 		if (err){
+			collect('eval', {'error': err, 'error_msg': 'Failed to download script'});
+			return;
 		}
 		detect_obfuscation(js, (message, error) => {
-			// TODO synchronize
+			if (error){
+				collect('eval', {'error': error, 'error_msg': 'Failed to connect to evaluator'});
+				return
+			}
+			collect('eval', {'message': message});
 		})
 	});
 	
 	fetchHost(jsuri, (hosts) => {
-		// synchronize
+		collect('hosts', hosts);
 	});
 }
 
