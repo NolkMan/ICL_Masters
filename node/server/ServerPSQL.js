@@ -75,9 +75,9 @@ function getAllReports(host, callback){
 
 function logEvaluation(host, jsuri, evaluation){
 	client.query('INSERT INTO js_evaluation(host, jsuri, time, evaluation)\
-		VALUES ($1, CURRENT_TIMESTAMP, $2, $3);', [host, jsuri, evaluation], (err) => {
+		VALUES ($1, $2, CURRENT_TIMESTAMP, $3);', [host, jsuri, evaluation], (err) => {
 			if (err){
-				errLog('Log Report')
+				errLog('Log Evaluation')
 				errLog(err)
 			}
 		}
@@ -85,7 +85,7 @@ function logEvaluation(host, jsuri, evaluation){
 }
 
 function getEvaluation(host, jsuri, callback){
-	client.query('SELECT * FROM js_evaluation WHERE host=$1 AND jsuri = $2;', [host, jsuri], (err, res) => {
+	client.query('SELECT * FROM js_evaluation WHERE host=$1 AND jsuri=$2;', [host, jsuri], (err, res) => {
 		if (err) {
 			errLog('Get Evaluation')
 			errLog(err)

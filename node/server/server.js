@@ -88,7 +88,8 @@ class CsproServer extends EventEmitter {
 */
 	getJsEvaluation(jsuri, callback){
 		psql.getEvaluation(this.host, jsuri, (res) => {
-			if (res.rows.length > 0 && res.rows[0].evaluation){
+			console.log(res.rows)
+			if (res.rowCount > 0 && res.rows[0].evaluation){
 				callback(res.rows[0].evaluation)
 			} else {
 				this.evaluator.evaluate(jsuri, (evaluation) => {
@@ -131,7 +132,8 @@ class CsproServer extends EventEmitter {
 
 		if (directive == 'script-src-elem' && blockedUri !== 'inline'){
 			this.getJsEvaluation(blockedUri, (evaluation) => {
-				console.log(evaluation)
+				console.log((evaluation.eval.obfuscated ? "XXX  " : "     ") + evaluation.hosts[0] 
+					+ "  " + evaluation.hosts[1]);
 			});
 		}
 
