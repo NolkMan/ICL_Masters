@@ -1,3 +1,9 @@
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
+}
+
 const mitm = require('./mitmprox_setup/server.js')
 const server = require('./server/server.js')
 const js_evaluator = require('./js_rating/client.js')
@@ -17,13 +23,16 @@ var PICKED_HOSTS = [
 	{good: true, top: 7153, host: 'https://www.professormesser.com'},
 ]
 
-var basic_cspro = "default-src 'none'; report-uri https://reporting.project:4333";
-var current_host = 'mabb16.angelfire.com';
+var picked = PICKED_HOSTS[0];
+var current_host = picked.host;
+
+var port = getRandomInt(2000, 65500)
+var basic_cspro = "default-src 'none'; report-uri https://reporting.project:" + String(port);
 
 mitm.set_cspro(basic_cspro)
 mitm.set_csp_host(current_host)
 
-var serv = server.createServer(4333, current_host, js_evaluator);
+var serv = server.createServer(port, current_host, js_evaluator);
 serv.start(() => {
 	serv.repeatAllReports()
 	//serv.useTerminal()
