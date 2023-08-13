@@ -23,7 +23,7 @@ var PICKED_HOSTS = [
 	{good: true, top: 7153, host: 'https://www.professormesser.com'},
 ]
 
-var picked = PICKED_HOSTS[0];
+var picked = PICKED_HOSTS[1];
 var current_host = picked.host;
 
 var port = getRandomInt(2000, 65500)
@@ -32,6 +32,7 @@ var basic_cspro = "default-src 'none'; report-uri https://reporting.project:" + 
 mitm.set_cspro(basic_cspro)
 mitm.set_csp_host(current_host)
 
+/*
 var serv = server.createServer(port, current_host, js_evaluator);
 serv.start(() => {
 	serv.repeatAllReports()
@@ -39,8 +40,10 @@ serv.start(() => {
 	mitm.set_cspro(serv.getCspro())
 	//test.send_mock_cspro(4333);
 });
+*/
 
 
-//const client = require('./client/client.js')
+const client = require('./client/client.js')
+client.browse(current_host)
 
 

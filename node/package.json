@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "@cloudflare/puppeteer": "^0.0.5",
     "@types/node": "^20.3.1",
     "dotenv": "^16.3.1",
     "https": "^1.0.0",
