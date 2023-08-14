@@ -3,6 +3,37 @@ const fs = require('fs');
 
 const url = require('url');
 
+async function acceptCookies(context){
+	var result = await (async() => {
+		var [button] = await context.$x("//button[contains(., 'I Agree')]");
+		if (button) {
+			await button.click()
+			return true;
+		}
+		[button] = await context.$x("//button[contains(., 'Continue with Recommended Cookies')]");
+		if (button) {
+			await button.click()
+			return true;
+		}
+		[button] = await context.$x("//button[contains(., 'ACCEPT')]");
+		if (button) {
+			await button.click()
+			return true;
+		}
+		[button] = await context.$x("//button[contains(., 'Acepto')]");
+		if (button) {
+			await button.click()
+			return true;
+		}
+		return false;
+	})();
+	if (result){
+		console.log('Successfully accepted cookies');
+	} else {
+		console.log('Failed to accept cookies');
+	}
+	return result;
+}
 
 function browse(host){
 	var hostname = url.parse(host).hostname
@@ -39,12 +70,16 @@ function browse(host){
 		await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/116.0');
 		await page.goto(host);
 		  
-		await new Promise(r => setTimeout(r, 4000));
+		await new Promise(r => setTimeout(r, 10000));
 
-		const consent = page.frames().find(f => f.url().includes('consent'));
-		const [button] = await consent.$x("//button[contains(., 'I Agree')]");
-		if (button) {
-			await button.click()
+		const consentFrame = page.frames().find(f => 
+			f.url().includes('consent') || 
+			f.url().includes('cp_userState=anon')
+		);
+		if (consentFrame){
+			await acceptCookies(consentFrame);
+		} else {
+			await acceptCookies(page);
 		}
 
 		await new Promise(r => setTimeout(r, 1000));

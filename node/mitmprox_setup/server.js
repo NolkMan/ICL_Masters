@@ -22,7 +22,6 @@ function requestHandler(req, res) {
 			body += data;
 		})
 		req.on('end', function() {
-			console.log("mitm server pinged at: ".concat(String(Date.now())))
 			res.statusCode = 200;
 			res.setHeader('Content-Type', 'text/json');
 			res.end(JSON.stringify(

@@ -88,7 +88,6 @@ class CsproServer extends EventEmitter {
 */
 	getJsEvaluation(jsuri, callback){
 		psql.getEvaluation(this.host, jsuri, (res) => {
-			console.log(res.rows)
 			if (res.rowCount > 0 && res.rows[0].evaluation){
 				callback(res.rows[0].evaluation)
 			} else {
@@ -151,6 +150,7 @@ class CsproServer extends EventEmitter {
 			this.csproData[toAdd[0]] ||= []
 			if (!this.csproData[toAdd[0]].includes(toAdd[1])){
 				this.csproData[toAdd[0]].push(toAdd[1])
+				this.emit('cspro-change')
 			}
 		}
 	}
@@ -164,7 +164,7 @@ class CsproServer extends EventEmitter {
 
 	constructor(port, host, evaluator){
 		super()
-		this.host = host
+		this.host = url.parse(host).hostname
 		this.port = port
 		this.evaluator = evaluator
 		this.csproData = {
