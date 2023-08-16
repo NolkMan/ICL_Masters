@@ -121,11 +121,13 @@ function evaluateJs(jsuri, callback){
 			collect('eval', {'obfuscated': 'empty'})
 			return
 		}
+		var sha = "'sha256-" + crypto.createHash('sha256').update(js).digest('base64') + "'";
 		detect_obfuscation(js, (message, error) => {
 			if (error){
-				collect('eval', {'error': error, 'error_msg': 'Failed to connect to evaluator'});
+				collect('eval', {'error': error, 'error_msg': 'Failed to connect to evaluator', hash: sha});
 				return
 			}
+			message['hash'] = sha
 			collect('eval', message);
 		})
 	});

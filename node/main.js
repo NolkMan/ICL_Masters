@@ -57,4 +57,10 @@ if (updateCspro) {
 	});
 }
 
+serv.on('violation', (report) => {
+	console.log('violation:   ' + String(report));
+});
 
+serv.on('warning', (report) => {
+	console.log('warning:     ' + String(report));
+});

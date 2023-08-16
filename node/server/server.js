@@ -1,6 +1,7 @@
 const EventEmitter = require('events');
 
 const https = require('https');
+const crypto = require('crypto')
 const fs    = require('fs');
 
 const url   = require('url');
@@ -104,17 +105,40 @@ class CsproServer extends EventEmitter {
 		var blockedHost = url.parse(report['blocked-uri']).hostname;
 		if (['script-src', 'style-src'].includes(effectiveDir)){
 			return false; // ignore reports from older browsers
-		} else if (['script-src-elem','script-src-attr','style-src-elem','style-src-attr'].includes(effectiveDir)){
-			// TODO: hard choice
-		} else if (['font-src', 'img-src'].includes(effectiveDir)){
+		} else if ('script-src-attr' === effectiveDir){
+			if (report['script-sample'].length < 40){
+				this.emit('warning', report)
+				var hash = "'sha256-" + crypto.createHash('sha256').update(report['script-sample']).digest('base64') + "'";
+				return [effectiveDir, hash, 1000*60*2]
+			} else {
+				this.emit('violation', report)
+				return false;
+			}
+		} else if (['font-src', 'img-src', 'style-src-elem', 'style-src-attr'].includes(effectiveDir)){
 			if (blockedHost === this.host){
 				return [effectiveDir, "'self'"]
 			}
 			if (uriCount > ALPHA){
 				return [effectiveDir, blockedHost]
 			}
+		} else if (effectiveDir === 'frame-src'){
+			this.emit('warning', report)
+			return [effectiveDir, blockedHost]
+		} else if (effectiveDir ===  'frame-ancestors'){
+			this.emit('violation', report)
 		}
 		return false;
+	}
+
+	addScriptToCspro(evaluation) {
+		const min = 1000*60;
+		if (!evaluation.eval.hash)
+			return;
+		if (evaluation.eval.obfuscated) {
+			this.csproData['script-src-elem'][evaluation.eval.hash] = Date.now() + 2*min;
+		} else {
+			this.csproData['script-src-elem'][evaluation.eval.hash] = Date.now() + 15*min;
+		}
 	}
 
 	parseReport(report){
@@ -131,6 +155,11 @@ class CsproServer extends EventEmitter {
 
 		if (directive == 'script-src-elem' && blockedUri !== 'inline'){
 			this.getJsEvaluation(blockedUri, (evaluation) => {
+				this.addScriptToCspro(evaluation);
+				if (evaluation.eval.obfuscated) {
+					this.emit('violation', evaluation)
+					return;
+				}
 				console.log((evaluation.eval.obfuscated ? "XXX  " : "     ") + evaluation.hosts[0] 
 					+ "  " + evaluation.hosts[1]);
 			});
@@ -147,9 +176,10 @@ class CsproServer extends EventEmitter {
 
 		var toAdd = this.maybeAddToCsp(report, uriCount, hostCount)
 		if (toAdd) {
-			this.csproData[toAdd[0]] ||= []
-			if (!this.csproData[toAdd[0]].includes(toAdd[1])){
-				this.csproData[toAdd[0]].push(toAdd[1])
+			var timeout = (toAdd.length >= 3 ? toAdd[3] : -1);
+			this.csproData[toAdd[0]] ||= {}
+			if (!(toAdd[1] in this.csproData[toAdd[0]])){
+				this.csproData[toAdd[0]][toAdd[1]] = Date.now() + timeout;
 				this.emit('cspro-change')
 			}
 		}
@@ -162,21 +192,36 @@ class CsproServer extends EventEmitter {
 		}
 	}
 
+	cleanup_cspro(){
+		const curtime = Date.now()
+		for (const [dire, sources] of Object.entries(this.csproData)){
+			var toclean = Object.entries(sources)
+			var cleanedup = sources.filter(([src, timeout]) => {
+				return (timeout == -1 ? true : timeout > curtime)
+			});
+			this.csproData[dire] = Object.fromEntries(cleanedup)
+		}
+		this.emit('cspro-change');
+		setTimeout(() => {
+			this.cleanup_cspro()
+		}, 10000);
+	}
+
 	constructor(port, host, evaluator){
 		super()
 		this.host = url.parse(host).hostname
 		this.port = port
 		this.evaluator = evaluator
 		this.csproData = {
-			'default-src': ["'none'"],
-			'upgrade-insecure-requests': [],
-			'require-trusted-types-for': ["'script'"],
-			'script-src': ["'report-sample'"],
-			'style-src': ["'report-sample'"],
-			'script-src-elem': ["'report-sample'"],
-			'script-src-attr': ["'report-sample'", "'unsafe-hashes'"],
-			'style-src-elem': ["'report-sample'"],
-			'style-src-attr': ["'report-sample'", "'unsafe-hashes'"],
+			'default-src': {"'none'": -1},
+			'upgrade-insecure-requests': {},
+			'require-trusted-types-for': {"'script'": -1},
+			'script-src': {"'report-sample'": -1},
+			'style-src': {"'report-sample'": -1},
+			'script-src-elem': {"'report-sample'": -1},
+			'script-src-attr': {"'report-sample'": -1, "'unsafe-hashes'": -1},
+			'style-src-elem': {"'report-sample'": -1},
+			'style-src-attr': {"'report-sample'": -1, "'unsafe-hashes'": -1},
 		}
 		this.violators = new Map(
 			utils.csp_directives.map(dir => [dir, new Map()])
@@ -229,6 +274,7 @@ class CsproServer extends EventEmitter {
 				callback()
 			});
 		});
+		this.cleanup_cspro()
 	}
 
 	getCspro(){
