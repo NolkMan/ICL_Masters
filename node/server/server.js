@@ -102,25 +102,26 @@ class CsproServer extends EventEmitter {
 
 	maybeAddToCsp(report, uriCount, hostCount){
 		var effectiveDir = report['effective-directive'];
-		var blockedHost = url.parse(report['blocked-uri']).hostname;
+		var blockedHost = url.parse(report['blocked-uri']).hostname; // null when inline
 		if (['script-src', 'style-src'].includes(effectiveDir)){
 			return false; // ignore reports from older browsers
 		} else if ('script-src-attr' === effectiveDir){
 			if (report['script-sample'].length < 40){
 				this.emit('warning', report)
 				var hash = "'sha256-" + crypto.createHash('sha256').update(report['script-sample']).digest('base64') + "'";
-				return [effectiveDir, hash, 1000*60*2]
+				return [effectiveDir, hash, 1000*60*4]
 			} else {
 				this.emit('violation', report)
 				return false;
 			}
-		} else if (['font-src', 'img-src', 'style-src-elem', 'style-src-attr'].includes(effectiveDir)){
+		} else if (['font-src', 'img-src', 'style-src-elem'].includes(effectiveDir)){
 			if (blockedHost === this.host){
 				return [effectiveDir, "'self'"]
 			}
-			if (uriCount > ALPHA){
+			if (uriCount > ALPHA && blockedHost){
 				return [effectiveDir, blockedHost]
 			}
+		} else if (effectiveDir === 'style-src-attr') {
 		} else if (effectiveDir === 'frame-src'){
 			this.emit('warning', report)
 			return [effectiveDir, blockedHost]
@@ -176,10 +177,10 @@ class CsproServer extends EventEmitter {
 
 		var toAdd = this.maybeAddToCsp(report, uriCount, hostCount)
 		if (toAdd) {
-			var timeout = (toAdd.length >= 3 ? toAdd[3] : -1);
+			var timeout = (toAdd.length >= 3 ? Date.now() + toAdd[3] : -1);
 			this.csproData[toAdd[0]] ||= {}
 			if (!(toAdd[1] in this.csproData[toAdd[0]])){
-				this.csproData[toAdd[0]][toAdd[1]] = Date.now() + timeout;
+				this.csproData[toAdd[0]][toAdd[1]] = timeout;
 				this.emit('cspro-change')
 			}
 		}
@@ -196,7 +197,7 @@ class CsproServer extends EventEmitter {
 		const curtime = Date.now()
 		for (const [dire, sources] of Object.entries(this.csproData)){
 			var toclean = Object.entries(sources)
-			var cleanedup = sources.filter(([src, timeout]) => {
+			var cleanedup = toclean.filter(([src, timeout]) => {
 				return (timeout == -1 ? true : timeout > curtime)
 			});
 			this.csproData[dire] = Object.fromEntries(cleanedup)
@@ -284,7 +285,7 @@ class CsproServer extends EventEmitter {
 				cspro = cspro + dir + '; '
 			} else {
 				cspro = cspro + dir + ' '
-				for (const src of this.csproData[dir]){
+				for (const src of Object.keys(this.csproData[dir])){
 					cspro = cspro + src + ' '
 				}
 				cspro = cspro + '; '

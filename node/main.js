@@ -24,7 +24,7 @@ var PICKED_HOSTS = [
 ]
 
 const updateCspro = false;
-const dryRun = false;
+const dryRun = true;
 const pickNum = 9;
 
 var picked = PICKED_HOSTS[pickNum];
