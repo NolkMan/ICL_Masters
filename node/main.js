@@ -64,3 +64,22 @@ serv.on('violation', (report) => {
 serv.on('warning', (report) => {
 	console.log('warning:     ' + String(report));
 });
+
+var mitmLastPrint = Date.now()
+mitm.on('mitm-request', (data) => {
+	var now = Date.now()
+	if (mitmLastPrint + 10*1000 < now){
+		mitmLastPrint = now
+		console.log('Total: ' + String(Math.round(data['total-transfered']/1000)) + 'kB' + 
+			'Added: ' + String(Math.round(data['additional-bytes']/1000)) + 'kB' +
+			'Percentage: ' + String(data['additional-bytes'] / (data['additional-bytes'] + data['total-transfered'])) + '%'
+		);
+		/*
+		 * {
+		 * 'url': flow.request.pretty_url, 
+		 * 'additional-bytes': self.total_bytes_ott, 
+		 * 'total-transfered': self.total_bytes_sent
+		 * })
+		 */
+	}
+})

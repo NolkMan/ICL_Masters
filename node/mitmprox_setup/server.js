@@ -4,12 +4,15 @@
  */
 
 const http = require('http')
+const EventEmitter = require('events')
 
 var hostname = '127.0.0.1';
 var port = 8181;
 
 var csp_host = ''
 var cspro = ''
+
+const emitter = new EventEmitter();
 
 /**
  * @param req {http.IncomingMessage}
@@ -31,6 +34,10 @@ function requestHandler(req, res) {
 					'refresh': Date.now() + 200
 				}
 			));
+			var response = JSON.parse(body);
+			
+
+			emitter.emit('mitm-request', response)
 		})
 	}
 	else {
@@ -48,6 +55,8 @@ function set_cspro(new_cspro){
 	cspro = new_cspro;
 }
 
+
+
 var server = http.createServer(requestHandler);
 
 server.listen(port, hostname, function () {
@@ -57,5 +66,6 @@ server.listen(port, hostname, function () {
 module.exports = {
 	'set_csp_host': set_csp_host,
 	'set_cspro': set_cspro,
+	'on': emitter.on,
 }
 
