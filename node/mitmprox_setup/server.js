@@ -36,7 +36,6 @@ function requestHandler(req, res) {
 			));
 			var response = JSON.parse(body);
 			
-
 			emitter.emit('mitm-request', response)
 		})
 	}
@@ -55,6 +54,9 @@ function set_cspro(new_cspro){
 	cspro = new_cspro;
 }
 
+function get_emitter(){
+	return emitter;
+}
 
 
 var server = http.createServer(requestHandler);
@@ -66,6 +68,6 @@ server.listen(port, hostname, function () {
 module.exports = {
 	'set_csp_host': set_csp_host,
 	'set_cspro': set_cspro,
-	'on': emitter.on,
+	'get_emitter': get_emitter,
 }
 

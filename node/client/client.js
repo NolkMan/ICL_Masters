@@ -98,7 +98,7 @@ function browse(host){
 		}
 
 		var chosenRefs = same_host_refs.sort(() => 0.5 - Math.random()).slice(0,5);
-		console.log(chosenRefs)
+		//console.log(chosenRefs)
 
 		const func = async(ref) => {
 			// sometimes thay may stall but I do not care enough

@@ -55,7 +55,7 @@ const server_options = {
 *			[] array of reports for specific url
 */
 
-const ALPHA = 100
+const ALPHA = 1
 
 function isJsReport(report) {
 	var effectiveDir = report['effective-directive'];
@@ -114,14 +114,13 @@ class CsproServer extends EventEmitter {
 				this.emit('violation', report)
 				return false;
 			}
-		} else if (['font-src', 'img-src', 'style-src-elem'].includes(effectiveDir)){
+		} else if (['connect-src', 'font-src', 'img-src', 'media-src', 'style-src-attr', 'style-src-elem'].includes(effectiveDir)){
 			if (blockedHost === this.host){
 				return [effectiveDir, "'self'"]
 			}
 			if (uriCount > ALPHA && blockedHost){
 				return [effectiveDir, blockedHost]
 			}
-		} else if (effectiveDir === 'style-src-attr') {
 		} else if (effectiveDir === 'frame-src'){
 			this.emit('warning', report)
 			return [effectiveDir, blockedHost]
@@ -136,9 +135,9 @@ class CsproServer extends EventEmitter {
 		if (!evaluation.eval.hash)
 			return;
 		if (evaluation.eval.obfuscated) {
-			this.csproData['script-src-elem'][evaluation.eval.hash] = Date.now() + 2*min;
+			this.csproData['script-src-elem'][evaluation.eval.hash] = Date.now() + 8*min;
 		} else {
-			this.csproData['script-src-elem'][evaluation.eval.hash] = Date.now() + 15*min;
+			this.csproData['script-src-elem'][evaluation.eval.hash] = Date.now() + 30*min;
 		}
 	}
 
@@ -157,12 +156,11 @@ class CsproServer extends EventEmitter {
 		if (directive == 'script-src-elem' && blockedUri !== 'inline'){
 			this.getJsEvaluation(blockedUri, (evaluation) => {
 				this.addScriptToCspro(evaluation);
+				this.emit('cspro-change')
 				if (evaluation.eval.obfuscated) {
-					this.emit('violation', evaluation)
+					this.emit('violation', report, evaluation)
 					return;
 				}
-				console.log((evaluation.eval.obfuscated ? "XXX  " : "     ") + evaluation.hosts[0] 
-					+ "  " + evaluation.hosts[1]);
 			});
 		}
 
@@ -216,13 +214,13 @@ class CsproServer extends EventEmitter {
 		this.csproData = {
 			'default-src': {"'none'": -1},
 			'upgrade-insecure-requests': {},
-			'require-trusted-types-for': {"'script'": -1},
+			//'require-trusted-types-for': {"'script'": -1},
 			'script-src': {"'report-sample'": -1},
 			'style-src': {"'report-sample'": -1},
-			'script-src-elem': {"'report-sample'": -1},
+			'script-src-elem': {"'report-sample'": -1, "'unsafe-inline'": -1, "'self'": -1},
 			'script-src-attr': {"'report-sample'": -1, "'unsafe-hashes'": -1},
-			'style-src-elem': {"'report-sample'": -1},
-			'style-src-attr': {"'report-sample'": -1, "'unsafe-hashes'": -1},
+			'style-src-elem': {"'report-sample'": -1, "'unsafe-inline'": -1},
+			'style-src-attr': {"'report-sample'": -1, "'unsafe-inline'": -1, "'unsafe-hashes'": -1},
 		}
 		this.violators = new Map(
 			utils.csp_directives.map(dir => [dir, new Map()])
@@ -252,17 +250,16 @@ class CsproServer extends EventEmitter {
 		});
 	}
 
-	repeatAllReports(){
+	repeatAllReports(callback){
 		psql.getAllReports(this.host, (res) => {
 			for (const row of res.rows){
 				if (row.report) {
 					if (url.parse(row.report['document-uri']).hostname === this.host){
 						this.parseReport(row.report)
-					} else {
-						// report for the wrong host: ignore
 					}
 				} 
 			}
+			callback()
 		});
 	}
 

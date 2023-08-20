@@ -36,15 +36,19 @@ class AddCSPReportOnly:
         if self.__s_host in self.api_data and \
                 self.__s_cspro in self.api_data:
             if self.api_data[self.__s_host] in flow.request.pretty_host:
-                flow.response.headers["Content-Security-Policy-Report-Only"] = \
-                    self.api_data[self.__s_cspro];
+                try:
+                    if flow.response.headers['content-type'].find('html') != -1:
+                        flow.response.headers["Content-Security-Policy-Report-Only"] = self.api_data[self.__s_cspro];
+                        bytes_added = len("Content-Security-Policy-Report-Only") + len(self.api_data[self.__s_cspro])
+                        self.total_bytes_ott += bytes_added
+                        self.total_bytes_sent -= bytes_added
+                except:
+                    pass
                 if 'content-length' in flow.response.headers:
                     self.total_bytes_sent += int(flow.response.headers['content-length'])
+                    #print('Added content len')
                 for key, value in flow.response.headers.items():
                     self.total_bytes_sent += len(key) + len(value)
-                bytes_added = len("Content-Security-Policy-Report-Only") + len(self.api_data[self.__s_cspro])
-                self.total_bytes_ott += bytes_added
-                self.total_bytes_sent -= bytes_added
 
 addons = [AddCSPReportOnly()]
         

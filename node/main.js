@@ -23,9 +23,10 @@ var PICKED_HOSTS = [
 	{good: true, top: 7153, host: 'https://www.professormesser.com'}, // no cookies
 ]
 
-const updateCspro = false;
-const dryRun = true;
-const pickNum = 9;
+const updateCspro = true;
+const dryRun = false;
+const preTrain = true;
+const pickNum = 4;
 
 var picked = PICKED_HOSTS[pickNum];
 var current_host = picked.host;
@@ -44,10 +45,19 @@ serv.start(() => {
 		serv.repeatAllReports()
 		serv.useTerminal()
 	} else {
-		setTimeout(() => {
-			const client = require('./client/client.js')
-			client.browse(current_host)
-		}, 3000);
+		if (preTrain) {
+			serv.repeatAllReports(() => {
+				setTimeout(() => {
+					const client = require('./client/client.js')
+					client.browse(current_host)
+				}, 3000);
+			});
+		} else {
+			setTimeout(() => {
+				const client = require('./client/client.js')
+				client.browse(current_host)
+			}, 3000);
+		}
 	}
 });
 
@@ -57,18 +67,18 @@ if (updateCspro) {
 	});
 }
 
-serv.on('violation', (report) => {
-	console.log('violation:   ' + String(report));
+serv.on('violation', (report, evaluation) => {
+	console.log('violation:   ' + String(report['blocked-url']));
 });
 
-serv.on('warning', (report) => {
-	console.log('warning:     ' + String(report));
+serv.on('warning', (report, evaluation) => {
+	console.log('warning:     ' + String(report['blocked-url']));
 });
 
 var mitmLastPrint = Date.now()
-mitm.on('mitm-request', (data) => {
+mitm.get_emitter().on('mitm-request', (data) => {
 	var now = Date.now()
-	if (mitmLastPrint + 10*1000 < now){
+	if (mitmLastPrint + 1000 < now){
 		mitmLastPrint = now
 		console.log('Total: ' + String(Math.round(data['total-transfered']/1000)) + 'kB' + 
 			'Added: ' + String(Math.round(data['additional-bytes']/1000)) + 'kB' +
@@ -82,4 +92,4 @@ mitm.on('mitm-request', (data) => {
 		 * })
 		 */
 	}
-})
+});
