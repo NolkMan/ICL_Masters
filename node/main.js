@@ -21,12 +21,13 @@ var PICKED_HOSTS = [
 	{good: true, top: 5524, host: 'https://www.flashscore.es'}, // spanish doesn't care about cookies enough
 	{good: true, top: 5686, host: 'https://quran.com'}, // in hebrew, gives a lot of malicious script flags as they are sending raw binary data to decode in js files
 	{good: true, top: 7153, host: 'https://www.professormesser.com'}, // no cookies
+	{good: true, top: -1,   host: 'https://www.caixabank.es'}, // custom picked bank without CSP that does not have ad scripts
 ]
 
 const updateCspro = true;
 const dryRun = false;
 const preTrain = true;
-const pickNum = 4;
+const pickNum = 10;
 
 var picked = PICKED_HOSTS[pickNum];
 var current_host = picked.host;
@@ -42,8 +43,8 @@ serv.start(() => {
 	mitm.set_cspro(serv.getCspro())
 	
 	if (dryRun) {
-		serv.repeatAllReports()
-		serv.useTerminal()
+		serv.repeatAllReports(() => {})
+		// serv.useTerminal()
 	} else {
 		if (preTrain) {
 			serv.repeatAllReports(() => {
@@ -80,16 +81,9 @@ mitm.get_emitter().on('mitm-request', (data) => {
 	var now = Date.now()
 	if (mitmLastPrint + 1000 < now){
 		mitmLastPrint = now
-		console.log('Total: ' + String(Math.round(data['total-transfered']/1000)) + 'kB' + 
-			'Added: ' + String(Math.round(data['additional-bytes']/1000)) + 'kB' +
+		console.log('Total: ' + String(Math.round(data['total-transfered']/1000)) + 'kB' + '\t' +
+			'Added: ' + String(Math.round(data['additional-bytes']/1000)) + 'kB' + '\t' + 
 			'Percentage: ' + String(data['additional-bytes'] / (data['additional-bytes'] + data['total-transfered'])) + '%'
 		);
-		/*
-		 * {
-		 * 'url': flow.request.pretty_url, 
-		 * 'additional-bytes': self.total_bytes_ott, 
-		 * 'total-transfered': self.total_bytes_sent
-		 * })
-		 */
 	}
 });

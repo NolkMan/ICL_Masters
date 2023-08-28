@@ -84,8 +84,8 @@ function logEvaluation(host, jsuri, evaluation){
 	);
 }
 
-function getEvaluation(host, jsuri, callback){
-	client.query('SELECT * FROM js_evaluation WHERE host=$1 AND jsuri=$2;', [host, jsuri], (err, res) => {
+function getEvaluation(host, jsuri, callback, ){
+	client.query('SELECT * FROM js_evaluation WHERE host=$1 AND jsuri=$2 ORDER BY time DESC LIMIT 1;', [host, jsuri], (err, res) => {
 		if (err) {
 			errLog('Get Evaluation')
 			errLog(err)

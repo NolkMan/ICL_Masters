@@ -9,11 +9,14 @@ const url   = require('url');
 const utils = require(__dirname + '/ServerUtils.js');
 const term  = require(__dirname + '/ServerTUI.js');
 const psql	= require(__dirname + '/ServerPSQL.js');
+const common= require(__dirname + '/CommonScripts.js');
 
 const server_options = {
 	key: fs.readFileSync(__dirname + '/ssl/reporting.project-key.pem'),
 	cert: fs.readFileSync(__dirname + '/ssl/reporting.project.pem'),
 }
+
+const timeMatters = false
 
 /*
 {
@@ -90,13 +93,33 @@ class CsproServer extends EventEmitter {
 	getJsEvaluation(jsuri, callback){
 		psql.getEvaluation(this.host, jsuri, (res) => {
 			if (res.rowCount > 0 && res.rows[0].evaluation){
-				callback(res.rows[0].evaluation)
-			} else {
-				this.evaluator.evaluate(jsuri, (evaluation) => {
-					psql.logEvaluation(this.host, jsuri, evaluation);
-					callback(evaluation)
-				})
+				var timeAdded = Date.parse(res.rows[0].time)
+				if ((!timeMatters) || timeAdded + 1000*60*60 > Date.now()){
+					callback(res.rows[0].evaluation)
+					return;
+				}
+			} 
+			this.evaluator.evaluate(jsuri, (evaluation) => {
+				psql.logEvaluation(this.host, jsuri, evaluation);
+				callback(evaluation)
+			})
+		});
+	}
+
+	getInlineJsEvaluation(jsuri, callback){
+		psql.getEvaluation(this.host, jsuri, (res) => {
+			if (res.rowCount > 0 && res.rows[0].evaluation){
+				var timeAdded = Date.parse(res.rows[0].time)
+				if ((!timeMatters) || timeAdded + 1000*60*60 > Date.now()){
+					callback(res.rows[0].evaluation)
+					return;
+				}
 			}
+			var colon = jsuri.indexOf(':')
+			this.evaluator.evaluateInline(jsuri.slice(colon+1), Number(jsuri.slice(0, colon)), (evaluation) => {
+				psql.logEvaluation(this.host, jsuri, evaluation);
+				callback(evaluation)
+			})
 		});
 	}
 
@@ -114,11 +137,16 @@ class CsproServer extends EventEmitter {
 				this.emit('violation', report)
 				return false;
 			}
+		} else if ('script-src-elem' === effectiveDir){
+			var rule
+			if ((rule = common.has(blockedHost))){
+				return [effectiveDir, rule];
+			}
 		} else if (['connect-src', 'font-src', 'img-src', 'media-src', 'style-src-attr', 'style-src-elem'].includes(effectiveDir)){
 			if (blockedHost === this.host){
 				return [effectiveDir, "'self'"]
 			}
-			if (uriCount > ALPHA && blockedHost){
+			if (blockedHost){
 				return [effectiveDir, blockedHost]
 			}
 		} else if (effectiveDir === 'frame-src'){
@@ -155,6 +183,18 @@ class CsproServer extends EventEmitter {
 
 		if (directive == 'script-src-elem' && blockedUri !== 'inline'){
 			this.getJsEvaluation(blockedUri, (evaluation) => {
+				this.addScriptToCspro(evaluation);
+				this.emit('cspro-change')
+				if (evaluation.eval.obfuscated) {
+					this.emit('violation', report, evaluation)
+					return;
+				}
+			});
+		}
+		if (directive == 'script-src-elem' && blockedUri === 'inline'){
+			var source = report['source-file']
+			var line   = report['line-number']
+			this.getInlineJsEvaluation(String(line) + ':' + source, (evaluation) => {
 				this.addScriptToCspro(evaluation);
 				this.emit('cspro-change')
 				if (evaluation.eval.obfuscated) {
@@ -222,6 +262,7 @@ class CsproServer extends EventEmitter {
 			'style-src-elem': {"'report-sample'": -1, "'unsafe-inline'": -1},
 			'style-src-attr': {"'report-sample'": -1, "'unsafe-inline'": -1, "'unsafe-hashes'": -1},
 		}
+		this.csproData['script-src-elem']['https://' + this.host] = -1;
 		this.violators = new Map(
 			utils.csp_directives.map(dir => [dir, new Map()])
 		);
@@ -303,8 +344,8 @@ class CsproServer extends EventEmitter {
 
 }
 
-function createServer(port, for_host, js_evaluator){
-	return new CsproServer(port, for_host, js_evaluator)
+function createServer(port, host, js_evaluator){
+	return new CsproServer(port, host, js_evaluator)
 }
 module.exports = {
 	'createServer': createServer

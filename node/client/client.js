@@ -20,7 +20,22 @@ async function acceptCookies(context){
 			await button.click()
 			return true;
 		}
+		[button] = await context.$x("//button[contains(., 'Aceptar')]");
+		if (button) {
+			await button.click()
+			return true;
+		}
 		[button] = await context.$x("//button[contains(., 'Acepto')]");
+		if (button) {
+			await button.click()
+			return true;
+		}
+		[button] = await context.$x("//a[contains(., 'Accept')]");
+		if (button) {
+			await button.click()
+			return true;
+		}
+		[button] = await context.$x("//a[contains(., 'Aceptar')]");
 		if (button) {
 			await button.click()
 			return true;

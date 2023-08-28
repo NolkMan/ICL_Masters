@@ -60,11 +60,11 @@ function detect_obfuscation(js, callback){
 	req.end()
 }
 
-function fetchJs(jsuri, callback){
+function fetchUri(uri, callback){
 	var options = {
 		secureOptions: crypto.constants.SSL_OP_ALLOW_UNSAFE_LEGACY_RENEGOTIATION
 	};
-	var req = https.request(jsuri, options, (res) => {
+	var req = https.request(uri, options, (res) => {
 		var js = ''
 		res.on('data', (part) => {
 			js += part
@@ -112,7 +112,7 @@ function getCollector(toCollect, callback){
 
 function evaluateJs(jsuri, callback){
 	var collect = getCollector(['eval', 'hosts'], callback);
-	fetchJs(jsuri, (js, err) => {
+	fetchUri(jsuri, (js, err) => {
 		if (err){
 			collect('eval', {'error': err, 'error_msg': 'Failed to download script'});
 			return;
@@ -137,6 +137,39 @@ function evaluateJs(jsuri, callback){
 	});
 }
 
+function extractJs(js, lineNumber){
+	lineNumber--;
+	var i = 0; 
+	for (i = 0; lineNumber > 0 && i !== -1; lineNumber--) { 
+		i = js.indexOf('\n', i); 
+		i++;
+	} 
+	const jsStartTag = '<script>'
+	const jsEndTag = '</script>'
+	var s = js.indexOf(jsStartTag, i)
+	var e = js.indexOf(jsEndTag, i)
+	return js.slice(s+jsStartTag.length, e)
+}
+
+function evaluateInline(source, lineNumber, callback){
+	fetchUri(source, (page, err) => {
+		if (err) {
+			return;
+		}
+		var js = extractJs(page, lineNumber)
+		var sha = "'sha256-" + crypto.createHash('sha256').update(js).digest('base64') + "'";
+		detect_obfuscation(js, (message, error) => {
+			if (error){
+				callback({'eval': {'hash': sha}});
+				return;
+			}
+			message['hash'] = sha;
+			callback({'eval': message});
+		})
+	});
+}
+
 module.exports = {
 	evaluate: evaluateJs,
+	evaluateInline: evaluateInline
 }
