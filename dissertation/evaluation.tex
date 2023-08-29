@@ -82,7 +82,52 @@ It supports scripting, which I use to automatically insert \texttt{content-secur
 In this way, the browser sees the modified response as if it was sent directly from the server directly emulating the scenario where I would deploy my policy maker on the host.
 
 To further ... I use Puppeteer
-Puppeteer is a Node.js module designed to simulate user interaction in a chromium client using chromes 
+Puppeteer is a Node.js module designed to simulate user interaction in a chromium client.
+I use it to automatically load webapps 
+
+\section{Results}
+
+\subsection{Evaluation}
+
+To try to provide most accurate results I have tried to deploy my solution on 10 randomly selected hosts from top 100,000 
+
+Some hosts work very bad
+
+Some host work not bad
+
+But it is very hard to find really good hosts randomly
+But there are some hosts which do not have an already functioning CSP that could benefit from this solution wihtout changing anythign
+
+
+\section{Things to improve}
+
+My approach shows to be a promising and new way to improve the security of particular websites.
+Main applicability issues stem from the quickly expanding and untamed environment of front end development.
+
+Things that could dramatically imporve the performance of my policy maker would require changing the CSP standard.
+Allowing for more control over the report template could reduce the data transfered back to the CSP reporting endpoint by at least 90\%.
+This comes from each report containing the current policy used when loading the page, which is responsible for most of the traffic.
+
+I would like to have more control over the report where I could specify the browser to pass the script hash back to me.
+I believe it could be implemented in a similar way to \texttt{report-sample} source, where \texttt{report-hash} would send the hash of the script as received by the browser.
+This would speed up the recognision of changes resources. 
+Currently my server caches the resources and it would recheck and reevaluate the source only after a certain period of time has passed.
+If a hash were to be passed alongside the \texttt{blocked-uri} field I could immidiately recognise any changes.
+This would further improve the security as timeouts may be troublesome to adjust between possibly not seeing every change and unnecesarely retriving the same file over and over again.
+
+Within my own approach, futher development of an oracle to judge scripts is crucial to reap full benefits of this system.
+I do not introduce new breakthroughs in script detection, but merely use what I have found to be fit for my purpose.
+The oracle that I am using very often tags ad scripts as malicious, as they do load variable content onto the website and due to that use many functions commonly found in malicious scripts.
+
+Within my work I try to show that improving the defence of websites is feasible by introducing an automatically generated policy, but I never implement it on any website with real users.
+The next big step in proving the functionality of this approach would be to test it on a real host.
+There many issues would need to be resolved similar to the issues that relate to deploying a standard CSP.
+Users may embed or block scripts by using external plugins. 
+My server could detect those by knowing from the development environment which scripts are expected to be loaded by the endusers. 
+
+Through my tests I have also used only a single browser.
+Although all browsers available to my Linux testing environment have functionally identical reporting, I have not tested on outdated and mobile browsers.
+Testing my solution in the wild would also resurface many issues related to the complexity of end environments.k
 
 % From what I have gathered 15\% of websites from those use CSP policies, but only 4\% use any reporting directives.
 % With report-to and report-uri not being supported in meta html tags those sites have little control over violations.
