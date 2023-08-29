@@ -14,3 +14,13 @@ select
 	order by host, viol
 ;
 
+select 
+	sum(total) as total, 
+	sum(policy) as justPolicy 
+	from (
+		select 
+			length(report::varchar) as total, 
+			length(report->>'original-policy'::varchar) as policy 
+			from cspro_reports where host = 'www.caixabank.es'
+	) as sub
+;

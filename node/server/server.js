@@ -257,7 +257,7 @@ class CsproServer extends EventEmitter {
 			//'require-trusted-types-for': {"'script'": -1},
 			'script-src': {"'report-sample'": -1},
 			'style-src': {"'report-sample'": -1},
-			'script-src-elem': {"'report-sample'": -1, "'unsafe-inline'": -1, "'self'": -1},
+			'script-src-elem': {"'report-sample'": -1, "'unsafe-inline'": -1, "'self'": -1, "'strict-dynamic'": -1},
 			'script-src-attr': {"'report-sample'": -1, "'unsafe-hashes'": -1},
 			'style-src-elem': {"'report-sample'": -1, "'unsafe-inline'": -1},
 			'style-src-attr': {"'report-sample'": -1, "'unsafe-inline'": -1, "'unsafe-hashes'": -1},
