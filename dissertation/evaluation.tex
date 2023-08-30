@@ -1,0 +1,166 @@
+\section{CSP reporting analisys}
+
+Part of my work was to evaluate the use of reporting within websites policies.
+
+To aid me in my task NetCraft has provided me with a list of top 1 million sites.
+I have requested their main pages and stored their CSP and CSPRO headers.
+Later, I have scanned all policies for inclusion of reporting sources.
+\texttt{report-to} and \texttt{report-uri} allow for CSP violations to be sent to the dedicated server.
+Crucially their declaration is not supported in \texttt{<meta>} html tags within the source code of sites using CSP.
+
+\subsection{Analisys Results}
+
+From my analisys I observed that 14\% of websites that responded with a 200 OK response code were using some form of a CSP policy.
+This shows a steady increase of CSP adoption by hosts compared to other studies and reports.
+Unfortunatelly, through my analisys of the policies for reporting sources, I have observed that only 4\% of all policies allow for any form of reporting.
+
+Similarly I have checked report only headers. 
+Only 1\% of websites used a CSPRO header and out of those only 50\% included reporting endpoints.
+Reporting only header does not change any behaviours of browsers. 
+Knowing this, 50\% of hosts using a CSPRO header have it without getting any benefits of such header.
+
+Out of 1 million sites tested, only 2881 sites reported using both active and reporting policies at the same time.
+Many of those sites were various endpoints of the biggest hosts on the internet.
+Through manual analisys, polices used here can be roughly split into 3 groups.
+
+Similar, but with small changes.
+For example, \texttt{instagram.com} report only policy disallows images to be loaded from \texttt{*.whatsapp.com}, which is allowed in the enforcement policy.
+This method allows for sites to function as expected by users, but all occurances of a specific media will be reported.
+Using reporting only header in this way may allow for eventual removal of a dependency from the site.
+
+There were significant number of host using encforcement mode for \texttt{frame-src} and \texttt{upgrade-insecure-requests} sources and report-only header for other uses of CSP like scripts, styles or images.
+This approach allows for quick deployment of low cost directives which prevent data leaks through insecure connections and clickjacking, two big attack vectors that CSP can help prevent.
+While those basic security measures are in place, developers can focus on much more advanced and harder to properly create policy that included all the other directives.
+
+Last group, most dissapointing, had identical policies for both enforcement and report only modes.
+Here I have observed this behaviour in 11\% of all servers running both headers.
+This may be due to developers keeping the old report only header when moving to enforcement mode after creating a policy for their website.
+
+\section{Automated policy maker}
+
+With such low usage of \texttt{content-security-policy-report-only} header I decided to create an automated policy maker which would allow webhosts to increase their security.
+
+\subsection{Ideology}
+
+Although report only header does not limit any resources from being loaded it can still be a good tool to monitor resources being loaded and aid in quick response.
+Specifically when creating a report only policy I do not need to adhere to constraints of standard enforcing policies.
+
+
+When using report only header I do not need the policy to contain all the loaded resources.
+As the policy is not enforced and I do not risk breaking the application I may periodically remove certain sources to check whether they are still used.
+In this way I always keep an up to date list of all resources used by the website.
+
+By using report only I also do not need to make the policy work with possible updates.
+Contrarly, I would like to get informed about changes to scripts used as soon as possible.
+I can accomplish this when using hashes as sources instead of standard url style allowlists.
+As hashes are unique to the file, users will report to my server as soon as anything changes, allowing me to be immidiately notified about potential threats.
+
+\subsection{Development}
+
+The server is written in JavaScript and uses Node as runtime.
+This combination was used as it gives a lot of freedom during development, privides an extensive http server implementation with built-in modules and interfaces well with other software.
+The server functions as a module exposing functions allowing to start a new server, which allows for communication through events.
+
+To function it requires an oracle, which would rate scripts and provide hashes of specific resource files.
+This allows for modular design, where an oracle could be improved or developed for a specific purpose without modifying the server itself.
+An oracle is included in the source code which uses a machine learning model created by ??? to rate the maliciousness of the files.
+I have adapted the model for my use and created a server out of it to allow my JavaScript codebase to communicate with natively Python code.
+
+The server additionaly uses PostgreSQL to store reports and responses from the oracle.
+Data is logged in the database for safe-keeping, post-deployment analisys and debugging.
+Additionally the collected reports can be reused to repeat the experiments on the same data, it also reduces the strain this project exerts on websites I am using to test my algorithm.
+
+% talk about the terminal interface
+
+\subsection{Testing Environment}
+
+Throughout the development of the policy maker I was never able to deploy it on a particular host.
+Although it would provide a valuable insight for the real impact of the server, such option was not available.
+
+Instead I have opted to use mitmproxy, an interactive https proxy allowing me to intercept, read and modify traffic coming through it.
+It supports scripting, which I use to automatically insert \texttt{content-security-policy-report-only} header before it is sent to the browser.
+In this way, the browser sees the modified response as if it was sent directly from the server directly emulating the scenario where I would deploy my policy maker on the host.
+
+To further ... I use Puppeteer
+Puppeteer is a Node.js module designed to simulate user interaction in a chromium client.
+I use it to automatically load webapps 
+
+\section{Results}
+
+\subsection{Evaluation}
+
+To try to provide most accurate results I have tried to deploy my solution on 10 randomly selected hosts from top 100,000 
+
+Some hosts work very bad
+
+Some host work not bad
+
+But it is very hard to find really good hosts randomly
+But there are some hosts which do not have an already functioning CSP that could benefit from this solution wihtout changing anythign
+
+
+\section{Things to improve}
+
+My approach shows to be a promising and new way to improve the security of particular websites.
+Main applicability issues stem from the quickly expanding and untamed environment of front end development.
+
+Things that could dramatically imporve the performance of my policy maker would require changing the CSP standard.
+Allowing for more control over the report template could reduce the data transfered back to the CSP reporting endpoint by at least 90\%.
+This comes from each report containing the current policy used when loading the page, which is responsible for most of the traffic.
+
+I would like to have more control over the report where I could specify the browser to pass the script hash back to me.
+I believe it could be implemented in a similar way to \texttt{report-sample} source, where \texttt{report-hash} would send the hash of the script as received by the browser.
+This would speed up the recognision of changes resources. 
+Currently my server caches the resources and it would recheck and reevaluate the source only after a certain period of time has passed.
+If a hash were to be passed alongside the \texttt{blocked-uri} field I could immidiately recognise any changes.
+This would further improve the security as timeouts may be troublesome to adjust between possibly not seeing every change and unnecesarely retriving the same file over and over again.
+
+Within my own approach, futher development of an oracle to judge scripts is crucial to reap full benefits of this system.
+I do not introduce new breakthroughs in script detection, but merely use what I have found to be fit for my purpose.
+The oracle that I am using very often tags ad scripts as malicious, as they do load variable content onto the website and due to that use many functions commonly found in malicious scripts.
+
+Within my work I try to show that improving the defence of websites is feasible by introducing an automatically generated policy, but I never implement it on any website with real users.
+The next big step in proving the functionality of this approach would be to test it on a real host.
+There many issues would need to be resolved similar to the issues that relate to deploying a standard CSP.
+Users may embed or block scripts by using external plugins. 
+My server could detect those by knowing from the development environment which scripts are expected to be loaded by the endusers. 
+
+Through my tests I have also used only a single browser.
+Although all browsers available to my Linux testing environment have functionally identical reporting, I have not tested on outdated and mobile browsers.
+Testing my solution in the wild would also resurface many issues related to the complexity of end environments.k
+
+% From what I have gathered 15\% of websites from those use CSP policies, but only 4\% use any reporting directives.
+% With report-to and report-uri not being supported in meta html tags those sites have little control over violations.
+% Most used directive is frame-ancestors (47\%) which stops other websites from iframe-ing the site removing a lot of attack vectors with minimal effort.
+% Very high is also upgrade-insecure-requests and default-src https: blocking all insecure connections
+% script-src is also widely used (34\%) but as a third of those use some form of a wildcard which nullifies the directive.
+% 
+% 
+% When it comes to reporting only csp, only 1\% of websites use it and 50\% of them are not reporting violations anywhere.
+% Here 70\% of policies limit script sources and wildcards are nearly nonexistant.
+% 
+% 
+% Also there were only 2800 sites that used both csp and cspro headers.
+% Those are the most interesting to look at, but those are carefully crafted policies of the biggest websites.
+% 
+% 
+% Seeing those statistics I started writing an automated policy maker for the report-only header.
+% This approach allows me to be more aggressive with the policies which would otherwise break the webapp:
+%  > I can use hashes instead of hosts, which allows me to immidiately receive reports when a script updates to reanalize it
+%  > I can periodically remove sources from my policy to check if they are still being used, keeping an up to date resource tree
+% 
+% My development stack consists of:
+%  > node in which I have developed my server
+%  > an oracle to analize the script reports. Here I have trained a basic ml model from another paper
+%  > mitm-proxy which allows me to intercept and modify responses, which simulates me controlling the hosting server
+%  > puppeteer to automate the process even more
+%  > postgres to makee it easier to aggregate the data and allow me to repeat the execution on the same data
+% 
+% When creating the server I have been focusing on 4 directives I deem are the most critical to the security of websites: 
+%  > upgrade-insecure-requests (default-src https:; for reporting purposes) to check and report all insecure connections from the client. From my findings and what was expected websites generally do not use insecure protocols anymore.
+%  > frame-src, websites use limited amount of frames, which could be enumerated and labeled as safe/unsafe (I have not progressed it much further as I did not want to move this project into big data and scraping)
+%  > script-src-attr and script-src-elem to monitor the usage of scripts, here I have found that websites berely use attribute scripts and heavily rely on inline scripts which are hard to single out and thus reliably analize
+%  > require-trusted-types-for which would be the holy grail of XSS prevention, but without modification in code it generates too many reports, none of which can be supressed with directives
+% 
+% Now I am testing my server on random websites within top 10,000 to measure the footprint and fine-tune the behaviour.
+
