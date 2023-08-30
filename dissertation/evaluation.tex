@@ -1,4 +1,4 @@
-\section{CSP reporting analisys}
+\section{CSP reporting analysis}
 
 Part of my work was to evaluate the use of reporting within websites policies.
 
@@ -6,13 +6,13 @@ To aid me in my task NetCraft has provided me with a list of top 1 million sites
 I have requested their main pages and stored their CSP and CSPRO headers.
 Later, I have scanned all policies for inclusion of reporting sources.
 \texttt{report-to} and \texttt{report-uri} allow for CSP violations to be sent to the dedicated server.
-Crucially their declaration is not supported in \texttt{<meta>} html tags within the source code of sites using CSP.
+Crucially their declaration is not supported in \texttt{<meta>} HTML tags within the source code of sites using CSP.
 
-\subsection{Analisys Results}
+\subsection{Analysis Results}
 
-From my analisys I observed that 14\% of websites that responded with a 200 OK response code were using some form of a CSP policy.
+From my analysis I observed that 14\% of websites that responded with a 200 OK response code were using some form of a CSP policy.
 This shows a steady increase of CSP adoption by hosts compared to other studies and reports.
-Unfortunatelly, through my analisys of the policies for reporting sources, I have observed that only 4\% of all policies allow for any form of reporting.
+Unfortunately, through my analysis of the policies for reporting sources, I have observed that only 4\% of all policies allow for any form of reporting.
 
 Similarly I have checked report only headers. 
 Only 1\% of websites used a CSPRO header and out of those only 50\% included reporting endpoints.
@@ -21,29 +21,29 @@ Knowing this, 50\% of hosts using a CSPRO header have it without getting any ben
 
 Out of 1 million sites tested, only 2881 sites reported using both active and reporting policies at the same time.
 Many of those sites were various endpoints of the biggest hosts on the internet.
-Through manual analisys, polices used here can be roughly split into 3 groups.
+Through manual analysis, polices used here can be roughly split into 3 groups.
 
 Similar, but with small changes.
 For example, \texttt{instagram.com} report only policy disallows images to be loaded from \texttt{*.whatsapp.com}, which is allowed in the enforcement policy.
-This method allows for sites to function as expected by users, but all occurances of a specific media will be reported.
+This method allows for sites to function as expected by users, but all occurrences of a specific media will be reported.
 Using reporting only header in this way may allow for eventual removal of a dependency from the site.
 
-There were significant number of host using encforcement mode for \texttt{frame-src} and \texttt{upgrade-insecure-requests} sources and report-only header for other uses of CSP like scripts, styles or images.
-This approach allows for quick deployment of low cost directives which prevent data leaks through insecure connections and clickjacking, two big attack vectors that CSP can help prevent.
+There were significant number of host using enforcement mode for \texttt{frame-src} and \texttt{upgrade-insecure-requests} sources and report-only header for other uses of CSP like scripts, styles or images.
+This approach allows for quick deployment of low cost directives which prevent data leaks through insecure connections and click jacking, two big attack vectors that CSP can help prevent.
 While those basic security measures are in place, developers can focus on much more advanced and harder to properly create policy that included all the other directives.
 
-Last group, most dissapointing, had identical policies for both enforcement and report only modes.
+Last group, most disappointing, had identical policies for both enforcement and report only modes.
 Here I have observed this behaviour in 11\% of all servers running both headers.
 This may be due to developers keeping the old report only header when moving to enforcement mode after creating a policy for their website.
 
 \section{Automated policy maker}
 
-With such low usage of \texttt{content-security-policy-report-only} header I decided to create an automated policy maker which would allow for increased utilitization of this header leading to an increase in security.
+With such low usage of \texttt{content-security-policy-report-only} header I decided to create an automated policy maker which would allow for increased utilization of this header leading to an increase in security.
 
 \subsection{Ideology}
 
 Although report only header does not limit any resources from being loaded, it can be used very well for monitoring purposes.
-When using the standard \texttt{content-security-policy} header any attack bypassing the policy will never be reported as enforcing and reporting go hand in hand, leading to untracable attacks.
+When using the standard \texttt{content-security-policy} header any attack bypassing the policy will never be reported as enforcing and reporting go hand in hand, leading to untraceable attacks.
 In my approach I make a tool that is \"bypassable\" by default as it is not enforced, but instead it will always report on any potentially malicious script.
 To help me develop my policy maker, which will be using the report only mode, it is critical to realize that I do not need to adhere to constraints of standard enforcing policies.
 
@@ -52,23 +52,23 @@ As the policy is not enforced and I do not risk breaking the application I may p
 In this way I always keep an up to date list of all resources used by the website.
 
 Additionally, by using report only I do not need to make the policy work with possible updates.
-Contrarly, I would like to get informed about any changes to scripts used as soon as possible.
-I can accomplish this by using hashes as sources instead of standard url style allowlists.
-As hashes are unique to the file, users will report to my server as soon as anything changes, allowing me to be immidiately notified about potential threats.
+Contrarily, I would like to get informed about any changes to scripts used as soon as possible.
+I can accomplish this by using hashes as sources instead of standard url style allow lists.
+As hashes are unique to the file, users will report to my server as soon as anything changes, allowing me to be immediately notified about potential threats.
 
 \subsection{Development}
 
 The server is written in JavaScript and uses Node as runtime.
-This combination was used as it gives a lot of freedom during development, privides an extensive http server implementation with built-in modules and interfaces well with other software.
+This combination was used as it gives a lot of freedom during development, provides an extensive http server implementation with built-in modules and interfaces well with other software.
 The server functions as a module exposing functions allowing to start a new server, which allows for communication through events.
 
 To function it requires an oracle, which would rate scripts and provide hashes of specific resource files.
 This allows for modular design, where an oracle could be improved or developed for a specific purpose without modifying the server itself.
 An oracle is included in the source code which uses a machine learning model created by ??? to rate the maliciousness of the files.
-I have adapted the model for my use and created a server out of it to allow my JavaScript codebase to communicate with natively Python code.
+I have adapted the model for my use and created a server out of it to allow my JavaScript code base to communicate with natively Python code.
 
-The server additionaly uses PostgreSQL to store reports and responses from the oracle.
-Data is logged in the database for safe-keeping, post-deployment analisys and debugging.
+The server additionally uses PostgreSQL to store reports and responses from the oracle.
+Data is logged in the database for safe-keeping, post-deployment analysis and debugging.
 Additionally the collected reports can be reused to repeat the experiments on the same data, it also reduces the strain this project exerts on websites I am using to test my algorithm.
 
 % talk about the terminal interface
@@ -84,7 +84,7 @@ In this way, the browser sees the modified response as if it was sent directly f
 
 To further ... I use Puppeteer
 Puppeteer is a Node.js module designed to simulate user interaction in a chromium client.
-I use it to automatically load webapps 
+I use it to automatically load web-apps 
 
 \section{Results}
 
@@ -96,13 +96,13 @@ In this paper I present results gathered from 4 websites, which I believe provid
 
 \subsection{www.libertatea.ro}
 
-\texttt{www.libertatea.ro} is a romanian news website which I have found to be possibly the worst webapp to deploy my server on.
-They are dynamically loading many scripts, making it near impossible to retreive the executed scripts.
-With this behavious I am unable to rate the scripts as well as assign the hash that is being used to add to my \texttt{CSPRO} header.
+\texttt{www.libertatea.ro} is a Romanian news website which I have found to be possibly the worst web-app to deploy my server on.
+They are dynamically loading many scripts, making it near impossible to retrieve the executed scripts.
+With this behaviour I am unable to rate the scripts as well as assign the hash that is being used to add to my \texttt{CSPRO} header.
 
 Due to those dynamically loaded scripts, the site transfers 9 times more data in reports back to my server than what was originally sent from \texttt{www.libertatea.ro}.
 
-I could prevent this behaviour by using \texttt{'strict-dynamic'} source in scripts directive, which would result in all loaded scripts to be allowed to run, as long as the laoder is allowed by the hash.
+I could prevent this behaviour by using \texttt{'strict-dynamic'} source in scripts directive, which would result in all loaded scripts to be allowed to run, as long as the loader is allowed by the hash.
 This solution although would reduce the amount of reports sent, would instead result in drastic reduction in security as my server no longer has a proper worldview on the application.
 In such case, if one of the loader sites became compromised and started sending malicious scripts to load, I would be unable to detect such change.
 
@@ -111,18 +111,15 @@ In such case, if one of the loader sites became compromised and started sending 
 \texttt{quran.com} is a digital provider of Quran. 
 This website is another example of a host that would be troublesome to implement my server on.
 The application sends a unique JavaScript file for each verse of Quran, as those files contain the data to be shown to the user.
-In this case my policy will grow to unmaintainable size, which is only made worse by the fact that each report contains the currently deployed policy resulting in unnecesarely large reports.
+In this case my policy will grow to unmaintainable size, which is only made worse by the fact that each report contains the currently deployed policy resulting in unnecessarily large reports.
 
 \subsection{www.caixabank.es}
-
-\texttt{
-
 
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=\textwidth]./imgs/netword_usage_plot.png}
-	\caption{Percentage of bandwidth dedicated to additial trafic generated by my policymaker}
+	\includegraphics[width=\textwidth]{imgs/netword_usage_plot.png}
+	\caption{Percentage of bandwidth dedicated to additional traffic generated by my policymaker}
 \end{figure}
 
 
@@ -131,18 +128,18 @@ In this case my policy will grow to unmaintainable size, which is only made wors
 My approach shows to be a promising and new way to improve the security of particular websites.
 Main applicability issues stem from the quickly expanding and untamed environment of front end development.
 
-Things that could dramatically imporve the performance of my policy maker would require changing the CSP standard.
-Allowing for more control over the report template could reduce the data transfered back to the CSP reporting endpoint by at least 90\%.
+Things that could dramatically improve the performance of my policy maker would require changing the CSP standard.
+Allowing for more control over the report template could reduce the data transferred back to the CSP reporting endpoint by at least 90\%.
 This comes from each report containing the current policy used when loading the page, which is responsible for most of the traffic.
 
 I would like to have more control over the report where I could specify the browser to pass the script hash back to me.
 I believe it could be implemented in a similar way to \texttt{report-sample} source, where \texttt{report-hash} would send the hash of the script as received by the browser.
-This would speed up the recognision of changes resources. 
+This would speed up the recognition of changes resources. 
 Currently my server caches the resources and it would recheck and reevaluate the source only after a certain period of time has passed.
-If a hash were to be passed alongside the \texttt{blocked-uri} field I could immidiately recognise any changes.
-This would further improve the security as timeouts may be troublesome to adjust between possibly not seeing every change and unnecesarely retriving the same file over and over again.
+If a hash were to be passed alongside the \texttt{blocked-uri} field I could immediately recognise any changes.
+This would further improve the security as timeouts may be troublesome to adjust between possibly not seeing every change and unnecessarily retrieving the same file over and over again.
 
-Within my own approach, futher development of an oracle to judge scripts is crucial to reap full benefits of this system.
+Within my own approach, further development of an oracle to judge scripts is crucial to reap full benefits of this system.
 I do not introduce new breakthroughs in script detection, but merely use what I have found to be fit for my purpose.
 The oracle that I am using very often tags ad scripts as malicious, as they do load variable content onto the website and due to that use many functions commonly found in malicious scripts.
 
@@ -150,7 +147,7 @@ Within my work I try to show that improving the defence of websites is feasible 
 The next big step in proving the functionality of this approach would be to test it on a real host.
 There many issues would need to be resolved similar to the issues that relate to deploying a standard CSP.
 Users may embed or block scripts by using external plugins. 
-My server could detect those by knowing from the development environment which scripts are expected to be loaded by the endusers. 
+My server could detect those by knowing from the development environment which scripts are expected to be loaded by the end users. 
 
 Through my tests I have also used only a single browser.
 Although all browsers available to my Linux testing environment have functionally identical reporting, I have not tested on outdated and mobile browsers.
