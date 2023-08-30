@@ -144,7 +144,7 @@ class CsproServer extends EventEmitter {
 			}
 		} else if (['connect-src', 'font-src', 'img-src', 'media-src', 'style-src-attr', 'style-src-elem'].includes(effectiveDir)){
 			if (blockedHost === this.host){
-				return [effectiveDir, "'self'"]
+				return [effectiveDir, this.host]
 			}
 			if (blockedHost){
 				return [effectiveDir, blockedHost]
@@ -176,7 +176,7 @@ class CsproServer extends EventEmitter {
 
 		if (this.malUrls.has(blockedHost)){
 			if (!this.malicious.has(blockedHost)){
-				console.log('Malicious host: ' + blockedHost)
+				//console.log('Malicious host: ' + blockedHost)
 				this.malicious.set(blockedHost, true)
 			}
 		}
@@ -192,7 +192,7 @@ class CsproServer extends EventEmitter {
 			});
 		}
 		if (directive == 'script-src-elem' && blockedUri === 'inline'){
-			var source = report['source-file']
+			var source = report['source-file'] || ( 'https://' + this.host );
 			var line   = report['line-number']
 			this.getInlineJsEvaluation(String(line) + ':' + source, (evaluation) => {
 				this.addScriptToCspro(evaluation);
@@ -257,12 +257,14 @@ class CsproServer extends EventEmitter {
 			//'require-trusted-types-for': {"'script'": -1},
 			'script-src': {"'report-sample'": -1},
 			'style-src': {"'report-sample'": -1},
-			'script-src-elem': {"'report-sample'": -1, "'unsafe-inline'": -1, "'self'": -1, "'strict-dynamic'": -1},
+			'script-src-elem': {"'report-sample'": -1, 
+				//"'unsafe-inline'": -1, "'self'": -1, "'strict-dynamic'": -1
+			},
 			'script-src-attr': {"'report-sample'": -1, "'unsafe-hashes'": -1},
 			'style-src-elem': {"'report-sample'": -1, "'unsafe-inline'": -1},
 			'style-src-attr': {"'report-sample'": -1, "'unsafe-inline'": -1, "'unsafe-hashes'": -1},
 		}
-		this.csproData['script-src-elem']['https://' + this.host] = -1;
+		//this.csproData['script-src-elem']['https://' + this.host] = -1;
 		this.violators = new Map(
 			utils.csp_directives.map(dir => [dir, new Map()])
 		);

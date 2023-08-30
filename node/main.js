@@ -27,7 +27,7 @@ var PICKED_HOSTS = [
 const updateCspro = true;
 const dryRun = false;
 const preTrain = true;
-const pickNum = 10;
+const pickNum = 8;
 
 var picked = PICKED_HOSTS[pickNum];
 var current_host = picked.host;
@@ -69,11 +69,11 @@ if (updateCspro) {
 }
 
 serv.on('violation', (report, evaluation) => {
-	console.log('violation:   ' + String(report['blocked-url']));
+	console.log('violation:   ' + String(report['blocked-uri']));
 });
 
 serv.on('warning', (report, evaluation) => {
-	console.log('warning:     ' + String(report['blocked-url']));
+	console.log('warning:     ' + String(report['blocked-uri']));
 });
 
 var mitmLastPrint = Date.now()

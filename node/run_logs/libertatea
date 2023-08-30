@@ -1,0 +1,383 @@
+Mitm communication server running at http://127.0.0.1:8181/
+PSQL started
+Reporting server running at http://localhost:43049/
+screenshots will be in: screenshots/www_libertatea_ro
+Total: 0kB	Added: 0kB	Percentage: NaN%
+Total: 2kB	Added: 0kB	Percentage: 0.17765310892940628%
+Total: 3kB	Added: 16kB	Percentage: 0.8381285706932935%
+Total: 72kB	Added: 33kB	Percentage: 0.31238149956908934%
+Total: 73kB	Added: 54kB	Percentage: 0.4214563007409857%
+Total: 78kB	Added: 69kB	Percentage: 0.471077193292986%
+Total: 78kB	Added: 82kB	Percentage: 0.5129940953025688%
+violation:   inline
+Total: 78kB	Added: 112kB	Percentage: 0.5901955819988607%
+Total: 78kB	Added: 140kB	Percentage: 0.6431029017928919%
+warning:     https://cdn.cxense.com
+violation:   https://comcluster.cxense.com/public/clearid?ngc=1&callback=cXJsonpCB1
+Total: 78kB	Added: 208kB	Percentage: 0.7284992923662922%
+violation:   https://id.cxense.com/public/user/id?json=%7B%22identities%22%3A%5B%7B%22type%22%3A%22ckp%22%2C%22id%22%3A%22llwzj8bbjwrpx8ak%22%7D%2C%7B%22type%22%3A%22cst%22%2C%22id%22%3A%224m2iu83pcpm323r44g4t372z%22%7D%5D%2C%22siteId%22%3A%221136227972865927410%22%2C%22location%22%3A%22https%3A%2F%2Fwww.libertatea.ro%2F%22%7D&callback=cXJsonpCB2
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxUr9ifotclDybRMlTftIxDryIlGgjJ52W46Oh8wOonH0qWR3fJ8bSyVzx-Y0uBq5szXGKaChz60Qn8IyKaDFee7FvN1Mwoj_PYHZLzb9FFF6p52XfPL-rYT6_7q1VZgscIWjcx_kV5YPJ4lBFgzwoL_Mqhgjx4y34NyKvFTWHXOUAX1yaF9Vzpdwyai/_/ad_parts./adshow-/ads/contextual.-text-ads.&adserv=
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxUakz82F-K6VibEocoCFNdTeQVfJgGCigkHROloV4NLd_rA4cqM0Ju0CNguwWaFqYL9c8slS-Au3OBOVkRPfb-aPlXav-jp_s5ALgCrYvMWHPlZobotUEPuHoZAhWCbyJKxRaKK4A==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNjkzMzU0NDgwLDMyOTAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzcsNl0sbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMV0sImh0dHBzOi8vd3d3LmxpYmVydGF0ZWEucm8vIixudWxsLFtbOCwiQkplZUlaRThUZzAiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiMTMiXSxbMTEsIltbXSxbXSxbXV0iXSxbMTksIjIiXSxbMTcsIlswXSJdXV0
+Total: 78kB	Added: 238kB	Percentage: 0.7539725263937883%
+Successfully accepted cookies
+Total: 78kB	Added: 245kB	Percentage: 0.759242158497208%
+violation:   https://api.cxense.com/profile/user/segment?callback=cXJsonpCB3&persisted=1fddcc372e9d925847138dc1fedc5e0af235b9fa&json=%7B%22identities%22%3A%5B%7B%22id%22%3A%22llwzj8bbjwrpx8ak%22%2C%22type%22%3A%22cx%22%7D%5D%7D
+Total: 78kB	Added: 259kB	Percentage: 0.7691505450785454%
+Total: 78kB	Added: 268kB	Percentage: 0.7752358470097116%
+Total: 78kB	Added: 283kB	Percentage: 0.7843636292988363%
+Total: 78kB	Added: 290kB	Percentage: 0.7885319390424139%
+Total: 82kB	Added: 314kB	Percentage: 0.7934480591749128%
+Total: 82kB	Added: 330kB	Percentage: 0.8013755144831871%
+Total: 82kB	Added: 339kB	Percentage: 0.8055886782234426%
+Total: 82kB	Added: 348kB	Percentage: 0.8093740829245797%
+Total: 82kB	Added: 357kB	Percentage: 0.8134602367130931%
+Total: 82kB	Added: 365kB	Percentage: 0.8169480608070782%
+Total: 82kB	Added: 377kB	Percentage: 0.8215361938362108%
+Total: 82kB	Added: 382kB	Percentage: 0.8235465323097023%
+Total: 84kB	Added: 392kB	Percentage: 0.8238709419461823%
+Total: 84kB	Added: 397kB	Percentage: 0.8257864960388991%
+Total: 84kB	Added: 407kB	Percentage: 0.8294952655682133%
+Total: 84kB	Added: 416kB	Percentage: 0.8323504903531825%
+Total: 84kB	Added: 428kB	Percentage: 0.8363096926112883%
+violation:   https://trc.taboola.com/1404265/trc/3/json?tim=1693354487890&data=%7B%22id%22%3A848%2C%22ii%22%3A%22%2F%22%2C%22it%22%3A%22video%22%2C%22sd%22%3Anull%2C%22ui%22%3Anull%2C%22vi%22%3A1693354487879%2C%22cv%22%3A%2220230827-9-RELEASE%22%2C%22uiv%22%3A%22default%22%2C%22u%22%3A%22https%3A%2F%2Fwww.libertatea.ro%2F%22%2C%22e%22%3Anull%2C%22cb%22%3A%22TFASC.trkCallback%22%2C%22qs%22%3A%22%22%2C%22r%22%3A%5B%7B%22li%22%3A%22rbox-tracking%22%2C%22s%22%3A0%2C%22uim%22%3A%22rbox-tracking%3Apub%3Dtdg-ringier2729adv1%3Aabp%3D0%22%2C%22uip%22%3A%22rbox-tracking%22%2C%22orig_uip%22%3A%22rbox-tracking%22%7D%5D%2C%22mpv%22%3Atrue%2C%22supv%22%3Atrue%2C%22mpvd%22%3A%7B%22en%22%3A%22page_view%22%2C%22tim%22%3A1693354487888%2C%22ref%22%3Anull%2C%22item-url%22%3A%22https%3A%2F%2Fwww.libertatea.ro%2F%22%2C%22tos%22%3A0%2C%22ssd%22%3A1%2C%22scd%22%3A0%2C%22supv%22%3Atrue%7D%7D&pubit=i
+Total: 84kB	Added: 432kB	Percentage: 0.8377610340369194%
+violation:   https://googleads.g.doubleclick.net/pagead/viewthroughconversion/10963632302/?random=1693354488141&cv=11&fst=1693354488141&bg=ffffff&guid=ON&async=1&gtm=45be38n0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.libertatea.ro%2F&hn=www.googleadservices.com&frm=0&tiba=Ziar%20Online%20-%20Site%20cu%20%C8%98tiri%20de%20Top%20din%20Rom%C3%A2nia%20%7C%20Libertatea&auid=346435034.1693354488&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+Total: 84kB	Added: 439kB	Percentage: 0.83977701714487%
+warning:     https://td.doubleclick.net
+Total: 84kB	Added: 452kB	Percentage: 0.8437102020847105%
+Total: 84kB	Added: 452kB	Percentage: 0.8437102020847105%
+Total: 84kB	Added: 506kB	Percentage: 0.8581779485823895%
+Total: 84kB	Added: 530kB	Percentage: 0.8637137102092591%
+Total: 84kB	Added: 552kB	Percentage: 0.8682645663540752%
+Total: 84kB	Added: 565kB	Percentage: 0.8710532235153465%
+Total: 84kB	Added: 593kB	Percentage: 0.8763042617213594%
+Total: 84kB	Added: 616kB	Percentage: 0.8803662653908937%
+Total: 84kB	Added: 644kB	Percentage: 0.8849824098504837%
+Total: 84kB	Added: 676kB	Percentage: 0.8897740457492497%
+violation:   https://api.cxense.com/profile/user/segment?callback=cXJsonpCB4&persisted=993f7e91f41899181a61f3b6fa338bd436cdd1b7&json=%7B%22identities%22%3A%5B%7B%22id%22%3A%22llwzj8bbjwrpx8ak%22%2C%22type%22%3A%22cx%22%7D%5D%7D
+warning:     https://ads.pubmatic.com
+Total: 84kB	Added: 685kB	Percentage: 0.8911053401266725%
+warning:     https://td.doubleclick.net
+warning:     https://acdn.adnxs.com
+Total: 84kB	Added: 689kB	Percentage: 0.8916849680798334%
+Total: 84kB	Added: 698kB	Percentage: 0.8929791203409487%
+Total: 84kB	Added: 710kB	Percentage: 0.8942819559046594%
+Mitm communication server running at http://127.0.0.1:8181/
+PSQL started
+Reporting server running at http://localhost:44492/
+violation:   inline
+warning:     https://cdn.cxense.com
+warning:     https://td.doubleclick.net
+warning:     https://ads.pubmatic.com
+warning:     https://td.doubleclick.net
+warning:     https://acdn.adnxs.com
+violation:   https://comcluster.cxense.com/public/clearid?ngc=1&callback=cXJsonpCB1
+violation:   https://id.cxense.com/public/user/id?json=%7B%22identities%22%3A%5B%7B%22type%22%3A%22ckp%22%2C%22id%22%3A%22llwzj8bbjwrpx8ak%22%7D%2C%7B%22type%22%3A%22cst%22%2C%22id%22%3A%224m2iu83pcpm323r44g4t372z%22%7D%5D%2C%22siteId%22%3A%221136227972865927410%22%2C%22location%22%3A%22https%3A%2F%2Fwww.libertatea.ro%2F%22%7D&callback=cXJsonpCB2
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxUr9ifotclDybRMlTftIxDryIlGgjJ52W46Oh8wOonH0qWR3fJ8bSyVzx-Y0uBq5szXGKaChz60Qn8IyKaDFee7FvN1Mwoj_PYHZLzb9FFF6p52XfPL-rYT6_7q1VZgscIWjcx_kV5YPJ4lBFgzwoL_Mqhgjx4y34NyKvFTWHXOUAX1yaF9Vzpdwyai/_/ad_parts./adshow-/ads/contextual.-text-ads.&adserv=
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxUakz82F-K6VibEocoCFNdTeQVfJgGCigkHROloV4NLd_rA4cqM0Ju0CNguwWaFqYL9c8slS-Au3OBOVkRPfb-aPlXav-jp_s5ALgCrYvMWHPlZobotUEPuHoZAhWCbyJKxRaKK4A==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNjkzMzU0NDgwLDMyOTAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzcsNl0sbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMV0sImh0dHBzOi8vd3d3LmxpYmVydGF0ZWEucm8vIixudWxsLFtbOCwiQkplZUlaRThUZzAiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiMTMiXSxbMTEsIltbXSxbXSxbXV0iXSxbMTksIjIiXSxbMTcsIlswXSJdXV0
+violation:   https://api.cxense.com/profile/user/segment?callback=cXJsonpCB3&persisted=1fddcc372e9d925847138dc1fedc5e0af235b9fa&json=%7B%22identities%22%3A%5B%7B%22id%22%3A%22llwzj8bbjwrpx8ak%22%2C%22type%22%3A%22cx%22%7D%5D%7D
+violation:   https://trc.taboola.com/1404265/trc/3/json?tim=1693354487890&data=%7B%22id%22%3A848%2C%22ii%22%3A%22%2F%22%2C%22it%22%3A%22video%22%2C%22sd%22%3Anull%2C%22ui%22%3Anull%2C%22vi%22%3A1693354487879%2C%22cv%22%3A%2220230827-9-RELEASE%22%2C%22uiv%22%3A%22default%22%2C%22u%22%3A%22https%3A%2F%2Fwww.libertatea.ro%2F%22%2C%22e%22%3Anull%2C%22cb%22%3A%22TFASC.trkCallback%22%2C%22qs%22%3A%22%22%2C%22r%22%3A%5B%7B%22li%22%3A%22rbox-tracking%22%2C%22s%22%3A0%2C%22uim%22%3A%22rbox-tracking%3Apub%3Dtdg-ringier2729adv1%3Aabp%3D0%22%2C%22uip%22%3A%22rbox-tracking%22%2C%22orig_uip%22%3A%22rbox-tracking%22%7D%5D%2C%22mpv%22%3Atrue%2C%22supv%22%3Atrue%2C%22mpvd%22%3A%7B%22en%22%3A%22page_view%22%2C%22tim%22%3A1693354487888%2C%22ref%22%3Anull%2C%22item-url%22%3A%22https%3A%2F%2Fwww.libertatea.ro%2F%22%2C%22tos%22%3A0%2C%22ssd%22%3A1%2C%22scd%22%3A0%2C%22supv%22%3Atrue%7D%7D&pubit=i
+violation:   https://googleads.g.doubleclick.net/pagead/viewthroughconversion/10963632302/?random=1693354488141&cv=11&fst=1693354488141&bg=ffffff&guid=ON&async=1&gtm=45be38n0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.libertatea.ro%2F&hn=www.googleadservices.com&frm=0&tiba=Ziar%20Online%20-%20Site%20cu%20%C8%98tiri%20de%20Top%20din%20Rom%C3%A2nia%20%7C%20Libertatea&auid=346435034.1693354488&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+violation:   https://api.cxense.com/profile/user/segment?callback=cXJsonpCB4&persisted=993f7e91f41899181a61f3b6fa338bd436cdd1b7&json=%7B%22identities%22%3A%5B%7B%22id%22%3A%22llwzj8bbjwrpx8ak%22%2C%22type%22%3A%22cx%22%7D%5D%7D
+screenshots will be in: screenshots/www_libertatea_ro
+Total: 84kB	Added: 714kB	Percentage: 0.8947196879097626%
+Total: 85kB	Added: 719kB	Percentage: 0.8945366562783149%
+Total: 86kB	Added: 719kB	Percentage: 0.893416916209534%
+Total: 86kB	Added: 775kB	Percentage: 0.8996987574324293%
+Total: 156kB	Added: 787kB	Percentage: 0.8346929247485251%
+Total: 156kB	Added: 833kB	Percentage: 0.8424196202704494%
+Total: 157kB	Added: 868kB	Percentage: 0.8464532260376634%
+violation:   https://comcluster.cxense.com/public/clearid?ngc=1&callback=cXJsonpCB1
+Total: 158kB	Added: 920kB	Percentage: 0.8533188641707361%
+Total: 162kB	Added: 932kB	Percentage: 0.8521095325037412%
+violation:   https://id.cxense.com/public/user/id?json=%7B%22identities%22%3A%5B%7B%22type%22%3A%22ckp%22%2C%22id%22%3A%22llwzkmp53as4l2gt%22%7D%2C%7B%22type%22%3A%22cst%22%2C%22id%22%3A%221g65coji6yprr3it7w62r3995p%22%7D%5D%2C%22siteId%22%3A%221136227972865927410%22%2C%22location%22%3A%22https%3A%2F%2Fwww.libertatea.ro%2F%22%7D&callback=cXJsonpCB2
+Total: 162kB	Added: 949kB	Percentage: 0.854428077504862%
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxV0gGhp8mzZzId4Cxm2rDOxftHtcUcjTDe7KBm2lpA5uIZ-8lSJjxHyGrXro5JjvVLEoxAjyJJ33s3AxGNAhGzTSO4bEw61lXWYN9sQAt7QSNMqYOmAmOtoivrHgq4r8VXzcCk2qTR8HFEpG1nBQtSzNhRSbVrc6r1riYglVSzm0wjvWiyVLeVow0tG/_/ads5./yesbaby./600_120_?ad_size=/adifyids.
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxUzB2uu8EXxpjYXs8EgCVe8a37NdhZ6YqDoguBSqmE6UNwqME7ahvOcME149wgW8o9p9mXZGtGF6hHEFdo9K7OS93HZCmqE1Z31Fg1ZlMVkv5WMGbUqWjTtbnrDv3l6IxjwSN4C3A==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNjkzMzU0NTQ1LDc3NjAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzcsNl0sbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMV0sImh0dHBzOi8vd3d3LmxpYmVydGF0ZWEucm8vIixudWxsLFtbOCwiQkplZUlaRThUZzAiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiNyJdLFsxMSwiW1tdLFtdLFtdXSJdLFsxOSwiMiJdLFsxNywiWzBdIl1dXQ
+Total: 162kB	Added: 973kB	Percentage: 0.8574696674104172%
+Total: 162kB	Added: 973kB	Percentage: 0.8574696674104172%
+Successfully accepted cookies
+Total: 162kB	Added: 990kB	Percentage: 0.8596263660508314%
+violation:   https://api.cxense.com/profile/user/segment?callback=cXJsonpCB3&persisted=1fddcc372e9d925847138dc1fedc5e0af235b9fa&json=%7B%22identities%22%3A%5B%7B%22id%22%3A%22llwzkmp53as4l2gt%22%2C%22type%22%3A%22cx%22%7D%5D%7D
+Total: 162kB	Added: 1002kB	Percentage: 0.8610360710746373%
+Total: 162kB	Added: 1065kB	Percentage: 0.8682083846197739%
+Total: 163kB	Added: 1076kB	Percentage: 0.8685320510026683%
+Total: 167kB	Added: 1103kB	Percentage: 0.8688158460503789%
+Total: 167kB	Added: 1127kB	Percentage: 0.8712630104887646%
+Total: 167kB	Added: 1164kB	Percentage: 0.8747629909526824%
+Total: 167kB	Added: 1217kB	Percentage: 0.8795948813729856%
+Total: 167kB	Added: 1246kB	Percentage: 0.882085455129757%
+violation:   https://trc.taboola.com/1404265/trc/3/json?tim=1693354554603&data=%7B%22id%22%3A801%2C%22ii%22%3A%22%2F%22%2C%22it%22%3A%22video%22%2C%22sd%22%3Anull%2C%22ui%22%3Anull%2C%22vi%22%3A1693354554591%2C%22cv%22%3A%2220230827-9-RELEASE%22%2C%22uiv%22%3A%22default%22%2C%22u%22%3A%22https%3A%2F%2Fwww.libertatea.ro%2F%22%2C%22e%22%3Anull%2C%22cb%22%3A%22TFASC.trkCallback%22%2C%22qs%22%3A%22%22%2C%22r%22%3A%5B%7B%22li%22%3A%22rbox-tracking%22%2C%22s%22%3A0%2C%22uim%22%3A%22rbox-tracking%3Apub%3Dtdg-ringier2729adv1%3Aabp%3D0%22%2C%22uip%22%3A%22rbox-tracking%22%2C%22orig_uip%22%3A%22rbox-tracking%22%7D%5D%2C%22mpv%22%3Atrue%2C%22supv%22%3Atrue%2C%22mpvd%22%3A%7B%22en%22%3A%22page_view%22%2C%22tim%22%3A1693354554600%2C%22ref%22%3Anull%2C%22item-url%22%3A%22https%3A%2F%2Fwww.libertatea.ro%2F%22%2C%22tos%22%3A4%2C%22ssd%22%3A1%2C%22scd%22%3A0%2C%22supv%22%3Atrue%7D%7D&pubit=i
+warning:     https://www.youtube.com
+Total: 167kB	Added: 1300kB	Percentage: 0.8864414902355906%
+violation:   inline
+violation:   inline
+violation:   inline
+violation:   inline
+Total: 167kB	Added: 1356kB	Percentage: 0.8905761339309233%
+Total: 167kB	Added: 1374kB	Percentage: 0.8918911201191028%
+Total: 167kB	Added: 1411kB	Percentage: 0.8944173272714251%
+Total: 168kB	Added: 1411kB	Percentage: 0.8936351166675743%
+Total: 168kB	Added: 1485kB	Percentage: 0.8983855891828123%
+violation:   https://collector.brandmetrics.com/c.js?siteid=6e02183c-e1a8-4694-98e5-858d7d5e3c66&toploc=www.libertatea.ro&rnd=348432
+Total: 168kB	Added: 1521kB	Percentage: 0.90054694119716%
+Total: 168kB	Added: 1558kB	Percentage: 0.9026783572464095%
+warning:     https://gum.criteo.com
+violation:   inline
+Total: 168kB	Added: 1593kB	Percentage: 0.9044918339323088%
+Total: 168kB	Added: 1630kB	Percentage: 0.9064544843456973%
+violation:   https://api.cxense.com/profile/user/segment?callback=cXJsonpCB1&persisted=1fddcc372e9d925847138dc1fedc5e0af235b9fa&json=%7B%22identities%22%3A%5B%7B%22id%22%3A%22llwzkmp53as4l2gt%22%2C%22type%22%3A%22cx%22%7D%5D%7D
+Total: 168kB	Added: 1685kB	Percentage: 0.9092384235820746%
+violation:   https://api.cxense.com/profile/user/segment?callback=cXJsonpCB1&persisted=1fddcc372e9d925847138dc1fedc5e0af235b9fa&json=%7B%22identities%22%3A%5B%7B%22id%22%3A%22llwzkmp53as4l2gt%22%2C%22type%22%3A%22cx%22%7D%5D%7D
+violation:   https://api.cxense.com/profile/user/segment?callback=cXJsonpCB1&persisted=1fddcc372e9d925847138dc1fedc5e0af235b9fa&json=%7B%22identities%22%3A%5B%7B%22id%22%3A%22llwzkmp53as4l2gt%22%2C%22type%22%3A%22cx%22%7D%5D%7D
+violation:   https://api.cxense.com/profile/user/segment?callback=cXJsonpCB1&persisted=1fddcc372e9d925847138dc1fedc5e0af235b9fa&json=%7B%22identities%22%3A%5B%7B%22id%22%3A%22llwzkmp53as4l2gt%22%2C%22type%22%3A%22cx%22%7D%5D%7D
+Total: 168kB	Added: 1735kB	Percentage: 0.9115870752935773%
+Total: 168kB	Added: 1753kB	Percentage: 0.9124076761006633%
+Total: 168kB	Added: 1792kB	Percentage: 0.914174524909175%
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxVi5FpT-i8HsNzzuNcJLUiSB--s9ZN6-uKu9ti9f8xFghXoUgbOpbgOBz9evOowyom_bW9iP_-QqeynTdTP3GDTwidNmX8M0eokGy3waETFQuEr5aZQVyQ1dPNStPGu6X6LDneM2qHv4vBBQ3Qi4oLCUjGKJ59Zw4r6oXZFri3Vwto1igQVr0MggyG3/_/adtechscript./adserver-/bottom-ad-/ads/smi24-/advertwebapp.
+Total: 168kB	Added: 1829kB	Percentage: 0.9157492080628863%
+warning:     https://googleads.g.doubleclick.net
+Total: 168kB	Added: 1891kB	Percentage: 0.9183022499669808%
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxX9jnfJwaABp26s0djPZuRDwKWtuMW5ugd32RVdIJPmAKcLwMYCE1Ear7DonfNwEe69ZXUaQ2ZWFYSMOwAB8pyi079iJT80ParEYHEAz0YTFy_o7li6L8Wr6XnZDTbrZEQ6Aa0DiQ==?fccs=W1siQUtzUm9sOXVTaUJ4MWtGa2dpb0Z3SUxTa2xSWER2WWs3Wkd2RUtTNEVJaVZYMEVnYnpvUEhFWXNUa3cyc29tWU9FLVVEdkU3UmFPM2gxYk1BVFBGNzBfU3hfMzJPd2tfZ3ZxN0RTdDRKMkhZNllqXzJWeEJKUzAwUUVnNTR4Y1JodzlJbWthczVMVGo1a0JtLWl0NXNNdU1jcGRod2hUY3V3PT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTMzNTQ1NzYsOTEzMDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9saWZlc3R5bGUvc2ZhbnR1bC1hbGV4YW5kcnUtbWVzYWplLXNpLXVyYXJpLTI3MzE4NjUiLG51bGwsW1s4LCJCSmVlSVpFOFRnMCJdLFs5LCJlbi1HQiJdLFsxNiwiWzEsMSwxXSJdLFs3LCI3Il0sWzExLCJbW10sW10sW11dIl0sWzE5LCIyIl0sWzE3LCJbMF0iXV1d
+Total: 168kB	Added: 1897kB	Percentage: 0.9185413563029514%
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxVrON4RNFWlYf3FipBfDeNgLnVbjgXnqD99z2yNa5DSj82E9w1fVeJdmuRaRKFh1LypUnX8O4mDx_3mNbbj6rkAOacpBRzMv2KI7DdruOCaKviSP7W0KHShiiwNq4QgVKOy-k6IRZrgPOiMMfXqahSZiUc-J38BGN1I2BGzvPBqfCZGor7Xav7SN4AV/_.ads1.-ad_injector//bookads.-native-ad./content_ad_
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxVJHNqrLpwZUFQpOOkaMTzT1MTcQON_ECTfyrpCpz0vCf3X8FXZO1W6BhZkL9P4fCdRUTwYGRwJiuXBY8C1b85-CcZ3BJCRBPCIuZtp-8SDfkyR8Xt7pcruw83DTFJzFSqP4bRakGra1dSeLSWZHnvLSxSfwDwWGi0HMPymnWeyoFCs6_F51UEb2f_1/_/ad300s.-advertising_.ads-lazy.-feed-ads./ad-bucket.
+Total: 168kB	Added: 1935kB	Percentage: 0.9199873500794187%
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxUD1fjotTKDeyxWuwCzQVMqXe8nkbYX0w0echJqMN9oYpk8ECd6ob3oOoQIqyRWJKYmkykCg9MekwbFlzToAgaqd0D1jyoLUGRJbxCHnMKqAcDQqD474EiLSEo4r5nBCd4vL_qKjQ==?fccs=W1siQUtzUm9sOGUtX2EycndmN0IyRExDcEdORUpaa0VuYzlKb2Etam5yQlVWZU82UGhjNjBZRndVdTVTR2xKY2EyNUNRWk8tT1FVMURTb3cyRHJZRThya2FQNVI4bHc4a3FUXzFkN1BqTW5EMEJfbDBzSU9KNmZ4akdoOXlHc3hDQW5IcHJWdjNzMkt2NzAyQ2FGelgxcUJpMmtwUGszd0ZIUmtBPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTMzNTQ1ODAsODY5MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9zdGlyaS9ydXNpYS1yZWNydXRhcmUtcmF6Ym9pLTQ2NDYxNjUiLG51bGwsW1s4LCJCSmVlSVpFOFRnMCJdLFs5LCJlbi1HQiJdLFsxNiwiWzEsMSwxXSJdLFs3LCI3Il0sWzExLCJbW10sW10sW11dIl0sWzE5LCIyIl0sWzE3LCJbMF0iXV1d
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxU09Or13jcM7UKFYirhk807N9QpvSi35ZTPKALi9Xwg82KLUMhXLWkW9kAPdAHBdkY-UAbWacS0rHJuxzb_Xg6TEMt2Dru0CSRXHR2Lg0AzfqR6AH1kDj60f6Jwq-0mLJQBePkaRg==?fccs=W1siQUtzUm9sOGUtX2EycndmN0IyRExDcEdORUpaa0VuYzlKb2Etam5yQlVWZU82UGhjNjBZRndVdTVTR2xKY2EyNUNRWk8tT1FVMURTb3cyRHJZRThya2FQNVI4bHc4a3FUXzFkN1BqTW5EMEJfbDBzSU9KNmZ4akdoOXlHc3hDQW5IcHJWdjNzMkt2NzAyQ2FGelgxcUJpMmtwUGszd0ZIUmtBPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTMzNTQ1ODAsODY4MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9zdGlyaS9wZXN0ZS02MC1kZS1wZXJzb2FuZS1hcmVzdGF0ZS1sYS1vLW51bnRhLWdheS1pbi1uaWdlcmlhLWxlZ2VhLWNhcmUtaW50ZXJ6aWNlLWNhc2F0b3JpaWxlLWludHJlLXBlcnNvYW5lbGUtbGdidC1wcmV2ZWRlLTEwLWFuaS1kZS1pbmNoaXNvYXJlLTQ2NDc0NDkiLG51bGwsW1s4LCJCSmVlSVpFOFRnMCJdLFs5LCJlbi1HQiJdLFsxNiwiWzEsMSwxXSJdLFs3LCI3Il0sWzExLCJbW10sW10sW11dIl0sWzE5LCIyIl0sWzE3LCJbMF0iXV1d
+Total: 168kB	Added: 1960kB	Percentage: 0.9209632163206174%
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxUPbcboWbA73SFJ1ogsNUukxTDlJgpIqE-5PpGY96ZvRtGK6HIpotR5_U-P6gofmgveshpgULHFq_NaVuaNOgtKPg0JDYkG5cnngryPJVXHxvst8Ffd1GLsi67bgYvS9dWxfGY8j1g4wdlkdimb-nqerMzGBmIaePpgGMQsoBYcv8y_cp73pI7JtnR6/_/wpproads./adiframe7./728x901./matomyads./kads-ajax.
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxWvYT3vmLcWQYRxkNLGclgTu500u0B_dbLXXj_VWVIstwW8pdsa4ly-MYFB-73alOmxYCALstPWhzKmGgd5gGNP0W_17J7hzg6xOWckGPZ3gkJ4AX2npm6U_oDmwE9Ac12Ij47Z3-PQimfEDRFnrvxi99ix5EKIXvG47JMzNGZTEX3ByuLdvau1W4mv/__115x220._320x250_/gafsads?/img-advert-/adscalecontentad.
+Total: 168kB	Added: 1999kB	Percentage: 0.9223747873656315%
+Total: 168kB	Added: 2005kB	Percentage: 0.9225917494506627%
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxXbfjIiryVLwdt-35rBc1z6d-z6ZaYUA3heBnGQuR9TjTu5ghTPziMqqvFWTu4ntdP5GoHa-GBdSxVeoO-hEH7aK9onsakvpA8qoaV_VnwmX6yKvUpfzv2vDoJ5WNUYhatiBa9a2Q==?fccs=W1siQUtzUm9sODZiUVpTbEFKb1BFM2dlNnlmU3U4SWZDdng2dUMzb2FRNGJXZi1Nd2NUT21MOWRCc3NlSF9QQUZsaFJETHYtVEZCbnpyZ0toVjNPTlZhS2xfM25EREFYWVRiVTR3MVo5RHBVcktqWHQ1dUdkdTRsc05oakxuTEdNc2tZRjRyOUVTc0MtMjEzOU1YTFlLbjVpU1l4TzVwT2FzRWtnPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTMzNTQ1ODQsNjkyMDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9zdGlyaS9taXJjZWEtcmFkdS1yZXZpbmUtcGUtbWljaWxlLWVjcmFuZS1jZS1lbWlzaXVuZS12YS1wcmV6ZW50YS00NjQ2ODc5IixudWxsLFtbOCwiQkplZUlaRThUZzAiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiNyJdLFsxMSwiW1tdLFtdLFtdXSJdLFsxOSwiMiJdLFsxNywiWzBdIl1dXQ
+Total: 170kB	Added: 2062kB	Percentage: 0.923954531093499%
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxW3vTf1JGpFVo8xVWH3nuI8exZOwe91k8Ts4SUWOvkGDakgBxwQukoy0W-xnb-RQ0Vp0Y39y5xbY02rBsQQKlY4Sr_JCGLHDzHhO-z4zMY7ZW-RZp0pzX-F5PigGT9CHJTkHVMw4Q==?fccs=W1siQUtzUm9sOW5WWUwtejdpT09vRF80bk5wMjFFWEhXcGhqdm1YdE1lSVJkRWtsajF3bEdELWFXU1ZjX0ZvNFhkbVpBX1NaNUxxOWRabVc4bjVSRHVCMURhZklUY2x2WWFkVk03a2V3NVN5bk40Y1ZtdGdjTklYX2gyT3dVN0E1dkNEamdzNGZibFJGdjAtWWV6RHhBT0Noa3FOc1EzZktRMGdnPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTMzNTQ1ODUsMTU5MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9zdGlyaS9ldmdoZW5pLXByaWdvamluLWlubW9ybWFudGFyZS1kZXRlY3RvYXJlLW1ldGFsLXN0cGV0ZXJzYnVyZy00NjQ2NzM0IixudWxsLFtbOCwiQkplZUlaRThUZzAiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiNyJdLFsxMSwiW1tdLFtdLFtdXSJdLFsxOSwiMiJdLFsxNywiWzBdIl1dXQ
+Total: 170kB	Added: 2112kB	Percentage: 0.9255102362784436%
+Mitm communication server running at http://127.0.0.1:8181/
+PSQL started
+Reporting server running at http://localhost:55388/
+violation:   inline
+warning:     https://cdn.cxense.com
+warning:     https://www.youtube.com
+violation:   inline
+violation:   inline
+violation:   inline
+violation:   inline
+warning:     https://gum.criteo.com
+violation:   inline
+warning:     https://td.doubleclick.net
+warning:     https://ads.pubmatic.com
+warning:     https://td.doubleclick.net
+warning:     https://acdn.adnxs.com
+warning:     https://googleads.g.doubleclick.net
+violation:   https://comcluster.cxense.com/public/clearid?ngc=1&callback=cXJsonpCB1
+violation:   https://id.cxense.com/public/user/id?json=%7B%22identities%22%3A%5B%7B%22type%22%3A%22ckp%22%2C%22id%22%3A%22llwzkmp53as4l2gt%22%7D%2C%7B%22type%22%3A%22cst%22%2C%22id%22%3A%221g65coji6yprr3it7w62r3995p%22%7D%5D%2C%22siteId%22%3A%221136227972865927410%22%2C%22location%22%3A%22https%3A%2F%2Fwww.libertatea.ro%2F%22%7D&callback=cXJsonpCB2
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxV0gGhp8mzZzId4Cxm2rDOxftHtcUcjTDe7KBm2lpA5uIZ-8lSJjxHyGrXro5JjvVLEoxAjyJJ33s3AxGNAhGzTSO4bEw61lXWYN9sQAt7QSNMqYOmAmOtoivrHgq4r8VXzcCk2qTR8HFEpG1nBQtSzNhRSbVrc6r1riYglVSzm0wjvWiyVLeVow0tG/_/ads5./yesbaby./600_120_?ad_size=/adifyids.
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxUzB2uu8EXxpjYXs8EgCVe8a37NdhZ6YqDoguBSqmE6UNwqME7ahvOcME149wgW8o9p9mXZGtGF6hHEFdo9K7OS93HZCmqE1Z31Fg1ZlMVkv5WMGbUqWjTtbnrDv3l6IxjwSN4C3A==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNjkzMzU0NTQ1LDc3NjAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzcsNl0sbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMV0sImh0dHBzOi8vd3d3LmxpYmVydGF0ZWEucm8vIixudWxsLFtbOCwiQkplZUlaRThUZzAiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiNyJdLFsxMSwiW1tdLFtdLFtdXSJdLFsxOSwiMiJdLFsxNywiWzBdIl1dXQ
+violation:   https://api.cxense.com/profile/user/segment?callback=cXJsonpCB3&persisted=1fddcc372e9d925847138dc1fedc5e0af235b9fa&json=%7B%22identities%22%3A%5B%7B%22id%22%3A%22llwzkmp53as4l2gt%22%2C%22type%22%3A%22cx%22%7D%5D%7D
+violation:   https://comcluster.cxense.com/public/clearid?ngc=1&callback=cXJsonpCB1
+violation:   https://trc.taboola.com/1404265/trc/3/json?tim=1693354554603&data=%7B%22id%22%3A801%2C%22ii%22%3A%22%2F%22%2C%22it%22%3A%22video%22%2C%22sd%22%3Anull%2C%22ui%22%3Anull%2C%22vi%22%3A1693354554591%2C%22cv%22%3A%2220230827-9-RELEASE%22%2C%22uiv%22%3A%22default%22%2C%22u%22%3A%22https%3A%2F%2Fwww.libertatea.ro%2F%22%2C%22e%22%3Anull%2C%22cb%22%3A%22TFASC.trkCallback%22%2C%22qs%22%3A%22%22%2C%22r%22%3A%5B%7B%22li%22%3A%22rbox-tracking%22%2C%22s%22%3A0%2C%22uim%22%3A%22rbox-tracking%3Apub%3Dtdg-ringier2729adv1%3Aabp%3D0%22%2C%22uip%22%3A%22rbox-tracking%22%2C%22orig_uip%22%3A%22rbox-tracking%22%7D%5D%2C%22mpv%22%3Atrue%2C%22supv%22%3Atrue%2C%22mpvd%22%3A%7B%22en%22%3A%22page_view%22%2C%22tim%22%3A1693354554600%2C%22ref%22%3Anull%2C%22item-url%22%3A%22https%3A%2F%2Fwww.libertatea.ro%2F%22%2C%22tos%22%3A4%2C%22ssd%22%3A1%2C%22scd%22%3A0%2C%22supv%22%3Atrue%7D%7D&pubit=i
+violation:   https://id.cxense.com/public/user/id?json=%7B%22identities%22%3A%5B%7B%22type%22%3A%22ckp%22%2C%22id%22%3A%22llwzj8bbjwrpx8ak%22%7D%2C%7B%22type%22%3A%22cst%22%2C%22id%22%3A%224m2iu83pcpm323r44g4t372z%22%7D%5D%2C%22siteId%22%3A%221136227972865927410%22%2C%22location%22%3A%22https%3A%2F%2Fwww.libertatea.ro%2F%22%7D&callback=cXJsonpCB2
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxUr9ifotclDybRMlTftIxDryIlGgjJ52W46Oh8wOonH0qWR3fJ8bSyVzx-Y0uBq5szXGKaChz60Qn8IyKaDFee7FvN1Mwoj_PYHZLzb9FFF6p52XfPL-rYT6_7q1VZgscIWjcx_kV5YPJ4lBFgzwoL_Mqhgjx4y34NyKvFTWHXOUAX1yaF9Vzpdwyai/_/ad_parts./adshow-/ads/contextual.-text-ads.&adserv=
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxUakz82F-K6VibEocoCFNdTeQVfJgGCigkHROloV4NLd_rA4cqM0Ju0CNguwWaFqYL9c8slS-Au3OBOVkRPfb-aPlXav-jp_s5ALgCrYvMWHPlZobotUEPuHoZAhWCbyJKxRaKK4A==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNjkzMzU0NDgwLDMyOTAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzcsNl0sbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMV0sImh0dHBzOi8vd3d3LmxpYmVydGF0ZWEucm8vIixudWxsLFtbOCwiQkplZUlaRThUZzAiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiMTMiXSxbMTEsIltbXSxbXSxbXV0iXSxbMTksIjIiXSxbMTcsIlswXSJdXV0
+violation:   https://api.cxense.com/profile/user/segment?callback=cXJsonpCB3&persisted=1fddcc372e9d925847138dc1fedc5e0af235b9fa&json=%7B%22identities%22%3A%5B%7B%22id%22%3A%22llwzj8bbjwrpx8ak%22%2C%22type%22%3A%22cx%22%7D%5D%7D
+violation:   https://collector.brandmetrics.com/c.js?siteid=6e02183c-e1a8-4694-98e5-858d7d5e3c66&toploc=www.libertatea.ro&rnd=348432
+violation:   https://trc.taboola.com/1404265/trc/3/json?tim=1693354487890&data=%7B%22id%22%3A848%2C%22ii%22%3A%22%2F%22%2C%22it%22%3A%22video%22%2C%22sd%22%3Anull%2C%22ui%22%3Anull%2C%22vi%22%3A1693354487879%2C%22cv%22%3A%2220230827-9-RELEASE%22%2C%22uiv%22%3A%22default%22%2C%22u%22%3A%22https%3A%2F%2Fwww.libertatea.ro%2F%22%2C%22e%22%3Anull%2C%22cb%22%3A%22TFASC.trkCallback%22%2C%22qs%22%3A%22%22%2C%22r%22%3A%5B%7B%22li%22%3A%22rbox-tracking%22%2C%22s%22%3A0%2C%22uim%22%3A%22rbox-tracking%3Apub%3Dtdg-ringier2729adv1%3Aabp%3D0%22%2C%22uip%22%3A%22rbox-tracking%22%2C%22orig_uip%22%3A%22rbox-tracking%22%7D%5D%2C%22mpv%22%3Atrue%2C%22supv%22%3Atrue%2C%22mpvd%22%3A%7B%22en%22%3A%22page_view%22%2C%22tim%22%3A1693354487888%2C%22ref%22%3Anull%2C%22item-url%22%3A%22https%3A%2F%2Fwww.libertatea.ro%2F%22%2C%22tos%22%3A0%2C%22ssd%22%3A1%2C%22scd%22%3A0%2C%22supv%22%3Atrue%7D%7D&pubit=i
+violation:   https://googleads.g.doubleclick.net/pagead/viewthroughconversion/10963632302/?random=1693354488141&cv=11&fst=1693354488141&bg=ffffff&guid=ON&async=1&gtm=45be38n0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.libertatea.ro%2F&hn=www.googleadservices.com&frm=0&tiba=Ziar%20Online%20-%20Site%20cu%20%C8%98tiri%20de%20Top%20din%20Rom%C3%A2nia%20%7C%20Libertatea&auid=346435034.1693354488&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+violation:   https://api.cxense.com/profile/user/segment?callback=cXJsonpCB4&persisted=993f7e91f41899181a61f3b6fa338bd436cdd1b7&json=%7B%22identities%22%3A%5B%7B%22id%22%3A%22llwzj8bbjwrpx8ak%22%2C%22type%22%3A%22cx%22%7D%5D%7D
+violation:   https://api.cxense.com/profile/user/segment?callback=cXJsonpCB1&persisted=1fddcc372e9d925847138dc1fedc5e0af235b9fa&json=%7B%22identities%22%3A%5B%7B%22id%22%3A%22llwzkmp53as4l2gt%22%2C%22type%22%3A%22cx%22%7D%5D%7D
+violation:   https://api.cxense.com/profile/user/segment?callback=cXJsonpCB1&persisted=1fddcc372e9d925847138dc1fedc5e0af235b9fa&json=%7B%22identities%22%3A%5B%7B%22id%22%3A%22llwzkmp53as4l2gt%22%2C%22type%22%3A%22cx%22%7D%5D%7D
+violation:   https://api.cxense.com/profile/user/segment?callback=cXJsonpCB1&persisted=1fddcc372e9d925847138dc1fedc5e0af235b9fa&json=%7B%22identities%22%3A%5B%7B%22id%22%3A%22llwzkmp53as4l2gt%22%2C%22type%22%3A%22cx%22%7D%5D%7D
+violation:   https://api.cxense.com/profile/user/segment?callback=cXJsonpCB1&persisted=1fddcc372e9d925847138dc1fedc5e0af235b9fa&json=%7B%22identities%22%3A%5B%7B%22id%22%3A%22llwzkmp53as4l2gt%22%2C%22type%22%3A%22cx%22%7D%5D%7D
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxVi5FpT-i8HsNzzuNcJLUiSB--s9ZN6-uKu9ti9f8xFghXoUgbOpbgOBz9evOowyom_bW9iP_-QqeynTdTP3GDTwidNmX8M0eokGy3waETFQuEr5aZQVyQ1dPNStPGu6X6LDneM2qHv4vBBQ3Qi4oLCUjGKJ59Zw4r6oXZFri3Vwto1igQVr0MggyG3/_/adtechscript./adserver-/bottom-ad-/ads/smi24-/advertwebapp.
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxX9jnfJwaABp26s0djPZuRDwKWtuMW5ugd32RVdIJPmAKcLwMYCE1Ear7DonfNwEe69ZXUaQ2ZWFYSMOwAB8pyi079iJT80ParEYHEAz0YTFy_o7li6L8Wr6XnZDTbrZEQ6Aa0DiQ==?fccs=W1siQUtzUm9sOXVTaUJ4MWtGa2dpb0Z3SUxTa2xSWER2WWs3Wkd2RUtTNEVJaVZYMEVnYnpvUEhFWXNUa3cyc29tWU9FLVVEdkU3UmFPM2gxYk1BVFBGNzBfU3hfMzJPd2tfZ3ZxN0RTdDRKMkhZNllqXzJWeEJKUzAwUUVnNTR4Y1JodzlJbWthczVMVGo1a0JtLWl0NXNNdU1jcGRod2hUY3V3PT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTMzNTQ1NzYsOTEzMDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9saWZlc3R5bGUvc2ZhbnR1bC1hbGV4YW5kcnUtbWVzYWplLXNpLXVyYXJpLTI3MzE4NjUiLG51bGwsW1s4LCJCSmVlSVpFOFRnMCJdLFs5LCJlbi1HQiJdLFsxNiwiWzEsMSwxXSJdLFs3LCI3Il0sWzExLCJbW10sW10sW11dIl0sWzE5LCIyIl0sWzE3LCJbMF0iXV1d
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxVrON4RNFWlYf3FipBfDeNgLnVbjgXnqD99z2yNa5DSj82E9w1fVeJdmuRaRKFh1LypUnX8O4mDx_3mNbbj6rkAOacpBRzMv2KI7DdruOCaKviSP7W0KHShiiwNq4QgVKOy-k6IRZrgPOiMMfXqahSZiUc-J38BGN1I2BGzvPBqfCZGor7Xav7SN4AV/_.ads1.-ad_injector//bookads.-native-ad./content_ad_
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxVJHNqrLpwZUFQpOOkaMTzT1MTcQON_ECTfyrpCpz0vCf3X8FXZO1W6BhZkL9P4fCdRUTwYGRwJiuXBY8C1b85-CcZ3BJCRBPCIuZtp-8SDfkyR8Xt7pcruw83DTFJzFSqP4bRakGra1dSeLSWZHnvLSxSfwDwWGi0HMPymnWeyoFCs6_F51UEb2f_1/_/ad300s.-advertising_.ads-lazy.-feed-ads./ad-bucket.
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxUD1fjotTKDeyxWuwCzQVMqXe8nkbYX0w0echJqMN9oYpk8ECd6ob3oOoQIqyRWJKYmkykCg9MekwbFlzToAgaqd0D1jyoLUGRJbxCHnMKqAcDQqD474EiLSEo4r5nBCd4vL_qKjQ==?fccs=W1siQUtzUm9sOGUtX2EycndmN0IyRExDcEdORUpaa0VuYzlKb2Etam5yQlVWZU82UGhjNjBZRndVdTVTR2xKY2EyNUNRWk8tT1FVMURTb3cyRHJZRThya2FQNVI4bHc4a3FUXzFkN1BqTW5EMEJfbDBzSU9KNmZ4akdoOXlHc3hDQW5IcHJWdjNzMkt2NzAyQ2FGelgxcUJpMmtwUGszd0ZIUmtBPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTMzNTQ1ODAsODY5MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9zdGlyaS9ydXNpYS1yZWNydXRhcmUtcmF6Ym9pLTQ2NDYxNjUiLG51bGwsW1s4LCJCSmVlSVpFOFRnMCJdLFs5LCJlbi1HQiJdLFsxNiwiWzEsMSwxXSJdLFs3LCI3Il0sWzExLCJbW10sW10sW11dIl0sWzE5LCIyIl0sWzE3LCJbMF0iXV1d
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxU09Or13jcM7UKFYirhk807N9QpvSi35ZTPKALi9Xwg82KLUMhXLWkW9kAPdAHBdkY-UAbWacS0rHJuxzb_Xg6TEMt2Dru0CSRXHR2Lg0AzfqR6AH1kDj60f6Jwq-0mLJQBePkaRg==?fccs=W1siQUtzUm9sOGUtX2EycndmN0IyRExDcEdORUpaa0VuYzlKb2Etam5yQlVWZU82UGhjNjBZRndVdTVTR2xKY2EyNUNRWk8tT1FVMURTb3cyRHJZRThya2FQNVI4bHc4a3FUXzFkN1BqTW5EMEJfbDBzSU9KNmZ4akdoOXlHc3hDQW5IcHJWdjNzMkt2NzAyQ2FGelgxcUJpMmtwUGszd0ZIUmtBPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTMzNTQ1ODAsODY4MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9zdGlyaS9wZXN0ZS02MC1kZS1wZXJzb2FuZS1hcmVzdGF0ZS1sYS1vLW51bnRhLWdheS1pbi1uaWdlcmlhLWxlZ2VhLWNhcmUtaW50ZXJ6aWNlLWNhc2F0b3JpaWxlLWludHJlLXBlcnNvYW5lbGUtbGdidC1wcmV2ZWRlLTEwLWFuaS1kZS1pbmNoaXNvYXJlLTQ2NDc0NDkiLG51bGwsW1s4LCJCSmVlSVpFOFRnMCJdLFs5LCJlbi1HQiJdLFsxNiwiWzEsMSwxXSJdLFs3LCI3Il0sWzExLCJbW10sW10sW11dIl0sWzE5LCIyIl0sWzE3LCJbMF0iXV1d
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxUPbcboWbA73SFJ1ogsNUukxTDlJgpIqE-5PpGY96ZvRtGK6HIpotR5_U-P6gofmgveshpgULHFq_NaVuaNOgtKPg0JDYkG5cnngryPJVXHxvst8Ffd1GLsi67bgYvS9dWxfGY8j1g4wdlkdimb-nqerMzGBmIaePpgGMQsoBYcv8y_cp73pI7JtnR6/_/wpproads./adiframe7./728x901./matomyads./kads-ajax.
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxWvYT3vmLcWQYRxkNLGclgTu500u0B_dbLXXj_VWVIstwW8pdsa4ly-MYFB-73alOmxYCALstPWhzKmGgd5gGNP0W_17J7hzg6xOWckGPZ3gkJ4AX2npm6U_oDmwE9Ac12Ij47Z3-PQimfEDRFnrvxi99ix5EKIXvG47JMzNGZTEX3ByuLdvau1W4mv/__115x220._320x250_/gafsads?/img-advert-/adscalecontentad.
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxXbfjIiryVLwdt-35rBc1z6d-z6ZaYUA3heBnGQuR9TjTu5ghTPziMqqvFWTu4ntdP5GoHa-GBdSxVeoO-hEH7aK9onsakvpA8qoaV_VnwmX6yKvUpfzv2vDoJ5WNUYhatiBa9a2Q==?fccs=W1siQUtzUm9sODZiUVpTbEFKb1BFM2dlNnlmU3U4SWZDdng2dUMzb2FRNGJXZi1Nd2NUT21MOWRCc3NlSF9QQUZsaFJETHYtVEZCbnpyZ0toVjNPTlZhS2xfM25EREFYWVRiVTR3MVo5RHBVcktqWHQ1dUdkdTRsc05oakxuTEdNc2tZRjRyOUVTc0MtMjEzOU1YTFlLbjVpU1l4TzVwT2FzRWtnPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTMzNTQ1ODQsNjkyMDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9zdGlyaS9taXJjZWEtcmFkdS1yZXZpbmUtcGUtbWljaWxlLWVjcmFuZS1jZS1lbWlzaXVuZS12YS1wcmV6ZW50YS00NjQ2ODc5IixudWxsLFtbOCwiQkplZUlaRThUZzAiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiNyJdLFsxMSwiW1tdLFtdLFtdXSJdLFsxOSwiMiJdLFsxNywiWzBdIl1dXQ
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxW3vTf1JGpFVo8xVWH3nuI8exZOwe91k8Ts4SUWOvkGDakgBxwQukoy0W-xnb-RQ0Vp0Y39y5xbY02rBsQQKlY4Sr_JCGLHDzHhO-z4zMY7ZW-RZp0pzX-F5PigGT9CHJTkHVMw4Q==?fccs=W1siQUtzUm9sOW5WWUwtejdpT09vRF80bk5wMjFFWEhXcGhqdm1YdE1lSVJkRWtsajF3bEdELWFXU1ZjX0ZvNFhkbVpBX1NaNUxxOWRabVc4bjVSRHVCMURhZklUY2x2WWFkVk03a2V3NVN5bk40Y1ZtdGdjTklYX2gyT3dVN0E1dkNEamdzNGZibFJGdjAtWWV6RHhBT0Noa3FOc1EzZktRMGdnPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTMzNTQ1ODUsMTU5MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9zdGlyaS9ldmdoZW5pLXByaWdvamluLWlubW9ybWFudGFyZS1kZXRlY3RvYXJlLW1ldGFsLXN0cGV0ZXJzYnVyZy00NjQ2NzM0IixudWxsLFtbOCwiQkplZUlaRThUZzAiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiNyJdLFsxMSwiW1tdLFtdLFtdXSJdLFsxOSwiMiJdLFsxNywiWzBdIl1dXQ
+screenshots will be in: screenshots/www_libertatea_ro
+Total: 170kB	Added: 2130kB	Percentage: 0.9261055025810059%
+Total: 172kB	Added: 2138kB	Percentage: 0.9256324249140211%
+violation:   inline
+Total: 172kB	Added: 2250kB	Percentage: 0.9290733101035511%
+Total: 220kB	Added: 2266kB	Percentage: 0.9115581641696952%
+Total: 243kB	Added: 2347kB	Percentage: 0.9060059396857805%
+violation:   https://comcluster.cxense.com/public/clearid?ngc=1&callback=cXJsonpCB1
+Total: 248kB	Added: 2403kB	Percentage: 0.9065570875900677%
+Total: 248kB	Added: 2435kB	Percentage: 0.9076894349238674%
+violation:   https://id.cxense.com/public/user/id?json=%7B%22identities%22%3A%5B%7B%22type%22%3A%22ckp%22%2C%22id%22%3A%22llwzmmzu2kmccrpq%22%7D%2C%7B%22type%22%3A%22cst%22%2C%22id%22%3A%2217kun3uz3vkqh3c5b7wyonltz5%22%7D%5D%2C%22siteId%22%3A%221136227972865927410%22%2C%22location%22%3A%22https%3A%2F%2Fwww.libertatea.ro%2F%22%7D&callback=cXJsonpCB2
+Total: 248kB	Added: 2451kB	Percentage: 0.9082337693326328%
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxUh5riv2KEh2hPrbM5XVtiEo3zFBz_ZivJJKMfWQQi-SA3Hnf7wfVAsGUuhrQzpGASjRMP9kaSa-Uyvcvp1I3PvlQR7x4aN9CJJcJGJuZWj3HvBufSpuWiQvKJ8nA7iYA-MgZUhecDEmzIVnAWIHB8v16EkLfj8b2KUWtGnylnfbbnXJarMM3saEIHt/_/sponsored-content-/adsense_/toggleAds./ad-ina./ads9.
+Total: 248kB	Added: 2476kB	Percentage: 0.9090535541567429%
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxVWg2dPZQoq0HI7aefQ88eEV4aKCdpjTDMqhceMarea_VZahIb6DtUum4cdET4G7lP1N1oI3zdlDCRJHOsRg_GxSqWqO4h0IuLFzfGUDC8Dgfl6gjs_cumyssav_o7F6Pj3GjlbMQ==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNjkzMzU0NjM5LDg4MTAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzcsNl0sbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMV0sImh0dHBzOi8vd3d3LmxpYmVydGF0ZWEucm8vIixudWxsLFtbOCwiQkplZUlaRThUZzAiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiMTUiXSxbMTEsIltbXSxbXSxbXV0iXSxbMTksIjIiXSxbMTcsIlswXSJdXV0
+Total: 248kB	Added: 2484kB	Percentage: 0.9093349450198667%
+Successfully accepted cookies
+Total: 248kB	Added: 2508kB	Percentage: 0.9101320310325721%
+violation:   https://api.cxense.com/profile/user/segment?callback=cXJsonpCB3&persisted=1fddcc372e9d925847138dc1fedc5e0af235b9fa&json=%7B%22identities%22%3A%5B%7B%22id%22%3A%22llwzmmzu2kmccrpq%22%2C%22type%22%3A%22cx%22%7D%5D%7D
+Total: 248kB	Added: 2549kB	Percentage: 0.9114296963760599%
+Total: 248kB	Added: 2589kB	Percentage: 0.9126796763445978%
+Total: 248kB	Added: 2628kB	Percentage: 0.9138882794727273%
+Total: 250kB	Added: 2691kB	Percentage: 0.9151022723061141%
+violation:   https://trc.taboola.com/1404265/trc/3/json?tim=1693354648707&data=%7B%22id%22%3A512%2C%22ii%22%3A%22%2F%22%2C%22it%22%3A%22video%22%2C%22sd%22%3Anull%2C%22ui%22%3Anull%2C%22vi%22%3A1693354648692%2C%22cv%22%3A%2220230827-9-RELEASE%22%2C%22uiv%22%3A%22default%22%2C%22u%22%3A%22https%3A%2F%2Fwww.libertatea.ro%2F%22%2C%22e%22%3Anull%2C%22cb%22%3A%22TFASC.trkCallback%22%2C%22qs%22%3A%22%22%2C%22r%22%3A%5B%7B%22li%22%3A%22rbox-tracking%22%2C%22s%22%3A0%2C%22uim%22%3A%22rbox-tracking%3Apub%3Dtdg-ringier2729adv1%3Aabp%3D0%22%2C%22uip%22%3A%22rbox-tracking%22%2C%22orig_uip%22%3A%22rbox-tracking%22%7D%5D%2C%22mpv%22%3Atrue%2C%22supv%22%3Atrue%2C%22mpvd%22%3A%7B%22en%22%3A%22page_view%22%2C%22tim%22%3A1693354648703%2C%22ref%22%3Anull%2C%22item-url%22%3A%22https%3A%2F%2Fwww.libertatea.ro%2F%22%2C%22tos%22%3A0%2C%22ssd%22%3A1%2C%22scd%22%3A0%2C%22supv%22%3Atrue%7D%7D&pubit=i
+Total: 252kB	Added: 2773kB	Percentage: 0.9167448889882258%
+violation:   https://api.cxense.com/profile/user/segment?callback=cXJsonpCB4&persisted=993f7e91f41899181a61f3b6fa338bd436cdd1b7&json=%7B%22identities%22%3A%5B%7B%22id%22%3A%22llwzmmzu2kmccrpq%22%2C%22type%22%3A%22cx%22%7D%5D%7D
+Total: 252kB	Added: 2830kB	Percentage: 0.9182980769605152%
+Total: 252kB	Added: 2888kB	Percentage: 0.9197971334574043%
+Total: 252kB	Added: 2977kB	Percentage: 0.9220204538951218%
+warning:     https://ap.lijit.com
+Total: 252kB	Added: 3018kB	Percentage: 0.9229879000428483%
+Total: 255kB	Added: 3066kB	Percentage: 0.9232856978096814%
+violation:   inline
+Total: 274kB	Added: 3108kB	Percentage: 0.9189709821824569%
+violation:   inline
+violation:   inline
+Total: 274kB	Added: 3209kB	Percentage: 0.9213100472291902%
+Total: 274kB	Added: 3259kB	Percentage: 0.9224246963736953%
+violation:   https://collector.brandmetrics.com/c.js?siteid=6e02183c-e1a8-4694-98e5-858d7d5e3c66&toploc=www.libertatea.ro&rnd=6134591
+Total: 275kB	Added: 3308kB	Percentage: 0.9231719558550742%
+Total: 443kB	Added: 3366kB	Percentage: 0.8837903909080861%
+Total: 443kB	Added: 3416kB	Percentage: 0.8852934506971989%
+Total: 443kB	Added: 3433kB	Percentage: 0.8857831559101869%
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxV10xhI6wLKGUjyL-ZbGppV1Locu31oH7EywlDl8mxJgbwFi6IMBdmCQO3MTfcsxB4C4Cc8KtSNSfqArDS3Uv3idcrfWNCcrWjxEzvSTtXV7KP6tE8qfW2jSkZAvPyfcL9O4jmkO8XM3q4nPCdM7-6leWpBY2_x5mA-gAV9K5qlQ2i4i7hjz5m8GNVH/_/728x90-/src/ads_/adtable_/adpoint./leftbottomads.
+Total: 443kB	Added: 3508kB	Percentage: 0.8879686807497322%
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxV3QME06kMmubVWlwJnH2-Cr9LtCqSFBrjU_pqhOvQ6mBB36K9aoQdY5-oEpaC0CayxP26U-Nabt0fVwuO8zuHdCCWybYhiBn9VfKkrazFoBP1iVE5K_5X1bD7x9TqbfMJvtyCDevgSIHFilFFal8r57NKFD58OIoFgXUZZ9ikTh2OAe4Tdq5Htl85V/_-ads-init&/tabunder/pop..net/noidadx/_600x160./gam_ads.
+Total: 443kB	Added: 3550kB	Percentage: 0.8891421618597121%
+Total: 443kB	Added: 3550kB	Percentage: 0.8891421618597121%
+Total: 443kB	Added: 3550kB	Percentage: 0.8891421618597121%
+Total: 443kB	Added: 3550kB	Percentage: 0.8891421618597121%
+Total: 443kB	Added: 3550kB	Percentage: 0.8891421618597121%
+Total: 443kB	Added: 3550kB	Percentage: 0.8891421618597121%
+Total: 443kB	Added: 3550kB	Percentage: 0.8891421618597121%
+Total: 443kB	Added: 3550kB	Percentage: 0.8891421618597121%
+Total: 443kB	Added: 3550kB	Percentage: 0.8891421618597121%
+Total: 443kB	Added: 3550kB	Percentage: 0.8891421618597121%
+Total: 443kB	Added: 3550kB	Percentage: 0.8891421618597121%
+Total: 443kB	Added: 3550kB	Percentage: 0.8891421618597121%
+Total: 443kB	Added: 3550kB	Percentage: 0.8891421618597121%
+Mitm communication server running at http://127.0.0.1:8181/
+PSQL started
+Reporting server running at http://localhost:55743/
+violation:   inline
+warning:     https://cdn.cxense.com
+warning:     https://www.youtube.com
+violation:   inline
+violation:   inline
+violation:   inline
+violation:   inline
+warning:     https://gum.criteo.com
+violation:   inline
+warning:     https://td.doubleclick.net
+warning:     https://ads.pubmatic.com
+warning:     https://td.doubleclick.net
+warning:     https://acdn.adnxs.com
+warning:     https://googleads.g.doubleclick.net
+violation:   inline
+warning:     https://ap.lijit.com
+violation:   inline
+violation:   inline
+violation:   inline
+violation:   https://comcluster.cxense.com/public/clearid?ngc=1&callback=cXJsonpCB1
+violation:   https://id.cxense.com/public/user/id?json=%7B%22identities%22%3A%5B%7B%22type%22%3A%22ckp%22%2C%22id%22%3A%22llwzkmp53as4l2gt%22%7D%2C%7B%22type%22%3A%22cst%22%2C%22id%22%3A%221g65coji6yprr3it7w62r3995p%22%7D%5D%2C%22siteId%22%3A%221136227972865927410%22%2C%22location%22%3A%22https%3A%2F%2Fwww.libertatea.ro%2F%22%7D&callback=cXJsonpCB2
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxV0gGhp8mzZzId4Cxm2rDOxftHtcUcjTDe7KBm2lpA5uIZ-8lSJjxHyGrXro5JjvVLEoxAjyJJ33s3AxGNAhGzTSO4bEw61lXWYN9sQAt7QSNMqYOmAmOtoivrHgq4r8VXzcCk2qTR8HFEpG1nBQtSzNhRSbVrc6r1riYglVSzm0wjvWiyVLeVow0tG/_/ads5./yesbaby./600_120_?ad_size=/adifyids.
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxUzB2uu8EXxpjYXs8EgCVe8a37NdhZ6YqDoguBSqmE6UNwqME7ahvOcME149wgW8o9p9mXZGtGF6hHEFdo9K7OS93HZCmqE1Z31Fg1ZlMVkv5WMGbUqWjTtbnrDv3l6IxjwSN4C3A==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNjkzMzU0NTQ1LDc3NjAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzcsNl0sbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMV0sImh0dHBzOi8vd3d3LmxpYmVydGF0ZWEucm8vIixudWxsLFtbOCwiQkplZUlaRThUZzAiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiNyJdLFsxMSwiW1tdLFtdLFtdXSJdLFsxOSwiMiJdLFsxNywiWzBdIl1dXQ
+violation:   https://api.cxense.com/profile/user/segment?callback=cXJsonpCB3&persisted=1fddcc372e9d925847138dc1fedc5e0af235b9fa&json=%7B%22identities%22%3A%5B%7B%22id%22%3A%22llwzkmp53as4l2gt%22%2C%22type%22%3A%22cx%22%7D%5D%7D
+violation:   https://comcluster.cxense.com/public/clearid?ngc=1&callback=cXJsonpCB1
+violation:   https://trc.taboola.com/1404265/trc/3/json?tim=1693354554603&data=%7B%22id%22%3A801%2C%22ii%22%3A%22%2F%22%2C%22it%22%3A%22video%22%2C%22sd%22%3Anull%2C%22ui%22%3Anull%2C%22vi%22%3A1693354554591%2C%22cv%22%3A%2220230827-9-RELEASE%22%2C%22uiv%22%3A%22default%22%2C%22u%22%3A%22https%3A%2F%2Fwww.libertatea.ro%2F%22%2C%22e%22%3Anull%2C%22cb%22%3A%22TFASC.trkCallback%22%2C%22qs%22%3A%22%22%2C%22r%22%3A%5B%7B%22li%22%3A%22rbox-tracking%22%2C%22s%22%3A0%2C%22uim%22%3A%22rbox-tracking%3Apub%3Dtdg-ringier2729adv1%3Aabp%3D0%22%2C%22uip%22%3A%22rbox-tracking%22%2C%22orig_uip%22%3A%22rbox-tracking%22%7D%5D%2C%22mpv%22%3Atrue%2C%22supv%22%3Atrue%2C%22mpvd%22%3A%7B%22en%22%3A%22page_view%22%2C%22tim%22%3A1693354554600%2C%22ref%22%3Anull%2C%22item-url%22%3A%22https%3A%2F%2Fwww.libertatea.ro%2F%22%2C%22tos%22%3A4%2C%22ssd%22%3A1%2C%22scd%22%3A0%2C%22supv%22%3Atrue%7D%7D&pubit=i
+violation:   https://id.cxense.com/public/user/id?json=%7B%22identities%22%3A%5B%7B%22type%22%3A%22ckp%22%2C%22id%22%3A%22llwzj8bbjwrpx8ak%22%7D%2C%7B%22type%22%3A%22cst%22%2C%22id%22%3A%224m2iu83pcpm323r44g4t372z%22%7D%5D%2C%22siteId%22%3A%221136227972865927410%22%2C%22location%22%3A%22https%3A%2F%2Fwww.libertatea.ro%2F%22%7D&callback=cXJsonpCB2
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxUr9ifotclDybRMlTftIxDryIlGgjJ52W46Oh8wOonH0qWR3fJ8bSyVzx-Y0uBq5szXGKaChz60Qn8IyKaDFee7FvN1Mwoj_PYHZLzb9FFF6p52XfPL-rYT6_7q1VZgscIWjcx_kV5YPJ4lBFgzwoL_Mqhgjx4y34NyKvFTWHXOUAX1yaF9Vzpdwyai/_/ad_parts./adshow-/ads/contextual.-text-ads.&adserv=
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxUakz82F-K6VibEocoCFNdTeQVfJgGCigkHROloV4NLd_rA4cqM0Ju0CNguwWaFqYL9c8slS-Au3OBOVkRPfb-aPlXav-jp_s5ALgCrYvMWHPlZobotUEPuHoZAhWCbyJKxRaKK4A==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNjkzMzU0NDgwLDMyOTAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzcsNl0sbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMV0sImh0dHBzOi8vd3d3LmxpYmVydGF0ZWEucm8vIixudWxsLFtbOCwiQkplZUlaRThUZzAiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiMTMiXSxbMTEsIltbXSxbXSxbXV0iXSxbMTksIjIiXSxbMTcsIlswXSJdXV0
+violation:   https://api.cxense.com/profile/user/segment?callback=cXJsonpCB3&persisted=1fddcc372e9d925847138dc1fedc5e0af235b9fa&json=%7B%22identities%22%3A%5B%7B%22id%22%3A%22llwzj8bbjwrpx8ak%22%2C%22type%22%3A%22cx%22%7D%5D%7D
+violation:   https://collector.brandmetrics.com/c.js?siteid=6e02183c-e1a8-4694-98e5-858d7d5e3c66&toploc=www.libertatea.ro&rnd=348432
+violation:   https://trc.taboola.com/1404265/trc/3/json?tim=1693354487890&data=%7B%22id%22%3A848%2C%22ii%22%3A%22%2F%22%2C%22it%22%3A%22video%22%2C%22sd%22%3Anull%2C%22ui%22%3Anull%2C%22vi%22%3A1693354487879%2C%22cv%22%3A%2220230827-9-RELEASE%22%2C%22uiv%22%3A%22default%22%2C%22u%22%3A%22https%3A%2F%2Fwww.libertatea.ro%2F%22%2C%22e%22%3Anull%2C%22cb%22%3A%22TFASC.trkCallback%22%2C%22qs%22%3A%22%22%2C%22r%22%3A%5B%7B%22li%22%3A%22rbox-tracking%22%2C%22s%22%3A0%2C%22uim%22%3A%22rbox-tracking%3Apub%3Dtdg-ringier2729adv1%3Aabp%3D0%22%2C%22uip%22%3A%22rbox-tracking%22%2C%22orig_uip%22%3A%22rbox-tracking%22%7D%5D%2C%22mpv%22%3Atrue%2C%22supv%22%3Atrue%2C%22mpvd%22%3A%7B%22en%22%3A%22page_view%22%2C%22tim%22%3A1693354487888%2C%22ref%22%3Anull%2C%22item-url%22%3A%22https%3A%2F%2Fwww.libertatea.ro%2F%22%2C%22tos%22%3A0%2C%22ssd%22%3A1%2C%22scd%22%3A0%2C%22supv%22%3Atrue%7D%7D&pubit=i
+violation:   https://googleads.g.doubleclick.net/pagead/viewthroughconversion/10963632302/?random=1693354488141&cv=11&fst=1693354488141&bg=ffffff&guid=ON&async=1&gtm=45be38n0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.libertatea.ro%2F&hn=www.googleadservices.com&frm=0&tiba=Ziar%20Online%20-%20Site%20cu%20%C8%98tiri%20de%20Top%20din%20Rom%C3%A2nia%20%7C%20Libertatea&auid=346435034.1693354488&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+violation:   https://api.cxense.com/profile/user/segment?callback=cXJsonpCB4&persisted=993f7e91f41899181a61f3b6fa338bd436cdd1b7&json=%7B%22identities%22%3A%5B%7B%22id%22%3A%22llwzj8bbjwrpx8ak%22%2C%22type%22%3A%22cx%22%7D%5D%7D
+violation:   https://api.cxense.com/profile/user/segment?callback=cXJsonpCB1&persisted=1fddcc372e9d925847138dc1fedc5e0af235b9fa&json=%7B%22identities%22%3A%5B%7B%22id%22%3A%22llwzkmp53as4l2gt%22%2C%22type%22%3A%22cx%22%7D%5D%7D
+violation:   https://api.cxense.com/profile/user/segment?callback=cXJsonpCB1&persisted=1fddcc372e9d925847138dc1fedc5e0af235b9fa&json=%7B%22identities%22%3A%5B%7B%22id%22%3A%22llwzkmp53as4l2gt%22%2C%22type%22%3A%22cx%22%7D%5D%7D
+violation:   https://api.cxense.com/profile/user/segment?callback=cXJsonpCB1&persisted=1fddcc372e9d925847138dc1fedc5e0af235b9fa&json=%7B%22identities%22%3A%5B%7B%22id%22%3A%22llwzkmp53as4l2gt%22%2C%22type%22%3A%22cx%22%7D%5D%7D
+violation:   https://api.cxense.com/profile/user/segment?callback=cXJsonpCB1&persisted=1fddcc372e9d925847138dc1fedc5e0af235b9fa&json=%7B%22identities%22%3A%5B%7B%22id%22%3A%22llwzkmp53as4l2gt%22%2C%22type%22%3A%22cx%22%7D%5D%7D
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxVi5FpT-i8HsNzzuNcJLUiSB--s9ZN6-uKu9ti9f8xFghXoUgbOpbgOBz9evOowyom_bW9iP_-QqeynTdTP3GDTwidNmX8M0eokGy3waETFQuEr5aZQVyQ1dPNStPGu6X6LDneM2qHv4vBBQ3Qi4oLCUjGKJ59Zw4r6oXZFri3Vwto1igQVr0MggyG3/_/adtechscript./adserver-/bottom-ad-/ads/smi24-/advertwebapp.
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxX9jnfJwaABp26s0djPZuRDwKWtuMW5ugd32RVdIJPmAKcLwMYCE1Ear7DonfNwEe69ZXUaQ2ZWFYSMOwAB8pyi079iJT80ParEYHEAz0YTFy_o7li6L8Wr6XnZDTbrZEQ6Aa0DiQ==?fccs=W1siQUtzUm9sOXVTaUJ4MWtGa2dpb0Z3SUxTa2xSWER2WWs3Wkd2RUtTNEVJaVZYMEVnYnpvUEhFWXNUa3cyc29tWU9FLVVEdkU3UmFPM2gxYk1BVFBGNzBfU3hfMzJPd2tfZ3ZxN0RTdDRKMkhZNllqXzJWeEJKUzAwUUVnNTR4Y1JodzlJbWthczVMVGo1a0JtLWl0NXNNdU1jcGRod2hUY3V3PT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTMzNTQ1NzYsOTEzMDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9saWZlc3R5bGUvc2ZhbnR1bC1hbGV4YW5kcnUtbWVzYWplLXNpLXVyYXJpLTI3MzE4NjUiLG51bGwsW1s4LCJCSmVlSVpFOFRnMCJdLFs5LCJlbi1HQiJdLFsxNiwiWzEsMSwxXSJdLFs3LCI3Il0sWzExLCJbW10sW10sW11dIl0sWzE5LCIyIl0sWzE3LCJbMF0iXV1d
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxVrON4RNFWlYf3FipBfDeNgLnVbjgXnqD99z2yNa5DSj82E9w1fVeJdmuRaRKFh1LypUnX8O4mDx_3mNbbj6rkAOacpBRzMv2KI7DdruOCaKviSP7W0KHShiiwNq4QgVKOy-k6IRZrgPOiMMfXqahSZiUc-J38BGN1I2BGzvPBqfCZGor7Xav7SN4AV/_.ads1.-ad_injector//bookads.-native-ad./content_ad_
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxVJHNqrLpwZUFQpOOkaMTzT1MTcQON_ECTfyrpCpz0vCf3X8FXZO1W6BhZkL9P4fCdRUTwYGRwJiuXBY8C1b85-CcZ3BJCRBPCIuZtp-8SDfkyR8Xt7pcruw83DTFJzFSqP4bRakGra1dSeLSWZHnvLSxSfwDwWGi0HMPymnWeyoFCs6_F51UEb2f_1/_/ad300s.-advertising_.ads-lazy.-feed-ads./ad-bucket.
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxUD1fjotTKDeyxWuwCzQVMqXe8nkbYX0w0echJqMN9oYpk8ECd6ob3oOoQIqyRWJKYmkykCg9MekwbFlzToAgaqd0D1jyoLUGRJbxCHnMKqAcDQqD474EiLSEo4r5nBCd4vL_qKjQ==?fccs=W1siQUtzUm9sOGUtX2EycndmN0IyRExDcEdORUpaa0VuYzlKb2Etam5yQlVWZU82UGhjNjBZRndVdTVTR2xKY2EyNUNRWk8tT1FVMURTb3cyRHJZRThya2FQNVI4bHc4a3FUXzFkN1BqTW5EMEJfbDBzSU9KNmZ4akdoOXlHc3hDQW5IcHJWdjNzMkt2NzAyQ2FGelgxcUJpMmtwUGszd0ZIUmtBPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTMzNTQ1ODAsODY5MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9zdGlyaS9ydXNpYS1yZWNydXRhcmUtcmF6Ym9pLTQ2NDYxNjUiLG51bGwsW1s4LCJCSmVlSVpFOFRnMCJdLFs5LCJlbi1HQiJdLFsxNiwiWzEsMSwxXSJdLFs3LCI3Il0sWzExLCJbW10sW10sW11dIl0sWzE5LCIyIl0sWzE3LCJbMF0iXV1d
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxU09Or13jcM7UKFYirhk807N9QpvSi35ZTPKALi9Xwg82KLUMhXLWkW9kAPdAHBdkY-UAbWacS0rHJuxzb_Xg6TEMt2Dru0CSRXHR2Lg0AzfqR6AH1kDj60f6Jwq-0mLJQBePkaRg==?fccs=W1siQUtzUm9sOGUtX2EycndmN0IyRExDcEdORUpaa0VuYzlKb2Etam5yQlVWZU82UGhjNjBZRndVdTVTR2xKY2EyNUNRWk8tT1FVMURTb3cyRHJZRThya2FQNVI4bHc4a3FUXzFkN1BqTW5EMEJfbDBzSU9KNmZ4akdoOXlHc3hDQW5IcHJWdjNzMkt2NzAyQ2FGelgxcUJpMmtwUGszd0ZIUmtBPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTMzNTQ1ODAsODY4MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9zdGlyaS9wZXN0ZS02MC1kZS1wZXJzb2FuZS1hcmVzdGF0ZS1sYS1vLW51bnRhLWdheS1pbi1uaWdlcmlhLWxlZ2VhLWNhcmUtaW50ZXJ6aWNlLWNhc2F0b3JpaWxlLWludHJlLXBlcnNvYW5lbGUtbGdidC1wcmV2ZWRlLTEwLWFuaS1kZS1pbmNoaXNvYXJlLTQ2NDc0NDkiLG51bGwsW1s4LCJCSmVlSVpFOFRnMCJdLFs5LCJlbi1HQiJdLFsxNiwiWzEsMSwxXSJdLFs3LCI3Il0sWzExLCJbW10sW10sW11dIl0sWzE5LCIyIl0sWzE3LCJbMF0iXV1d
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxUPbcboWbA73SFJ1ogsNUukxTDlJgpIqE-5PpGY96ZvRtGK6HIpotR5_U-P6gofmgveshpgULHFq_NaVuaNOgtKPg0JDYkG5cnngryPJVXHxvst8Ffd1GLsi67bgYvS9dWxfGY8j1g4wdlkdimb-nqerMzGBmIaePpgGMQsoBYcv8y_cp73pI7JtnR6/_/wpproads./adiframe7./728x901./matomyads./kads-ajax.
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxWvYT3vmLcWQYRxkNLGclgTu500u0B_dbLXXj_VWVIstwW8pdsa4ly-MYFB-73alOmxYCALstPWhzKmGgd5gGNP0W_17J7hzg6xOWckGPZ3gkJ4AX2npm6U_oDmwE9Ac12Ij47Z3-PQimfEDRFnrvxi99ix5EKIXvG47JMzNGZTEX3ByuLdvau1W4mv/__115x220._320x250_/gafsads?/img-advert-/adscalecontentad.
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxXbfjIiryVLwdt-35rBc1z6d-z6ZaYUA3heBnGQuR9TjTu5ghTPziMqqvFWTu4ntdP5GoHa-GBdSxVeoO-hEH7aK9onsakvpA8qoaV_VnwmX6yKvUpfzv2vDoJ5WNUYhatiBa9a2Q==?fccs=W1siQUtzUm9sODZiUVpTbEFKb1BFM2dlNnlmU3U4SWZDdng2dUMzb2FRNGJXZi1Nd2NUT21MOWRCc3NlSF9QQUZsaFJETHYtVEZCbnpyZ0toVjNPTlZhS2xfM25EREFYWVRiVTR3MVo5RHBVcktqWHQ1dUdkdTRsc05oakxuTEdNc2tZRjRyOUVTc0MtMjEzOU1YTFlLbjVpU1l4TzVwT2FzRWtnPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTMzNTQ1ODQsNjkyMDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9zdGlyaS9taXJjZWEtcmFkdS1yZXZpbmUtcGUtbWljaWxlLWVjcmFuZS1jZS1lbWlzaXVuZS12YS1wcmV6ZW50YS00NjQ2ODc5IixudWxsLFtbOCwiQkplZUlaRThUZzAiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiNyJdLFsxMSwiW1tdLFtdLFtdXSJdLFsxOSwiMiJdLFsxNywiWzBdIl1dXQ
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxW3vTf1JGpFVo8xVWH3nuI8exZOwe91k8Ts4SUWOvkGDakgBxwQukoy0W-xnb-RQ0Vp0Y39y5xbY02rBsQQKlY4Sr_JCGLHDzHhO-z4zMY7ZW-RZp0pzX-F5PigGT9CHJTkHVMw4Q==?fccs=W1siQUtzUm9sOW5WWUwtejdpT09vRF80bk5wMjFFWEhXcGhqdm1YdE1lSVJkRWtsajF3bEdELWFXU1ZjX0ZvNFhkbVpBX1NaNUxxOWRabVc4bjVSRHVCMURhZklUY2x2WWFkVk03a2V3NVN5bk40Y1ZtdGdjTklYX2gyT3dVN0E1dkNEamdzNGZibFJGdjAtWWV6RHhBT0Noa3FOc1EzZktRMGdnPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTMzNTQ1ODUsMTU5MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9zdGlyaS9ldmdoZW5pLXByaWdvamluLWlubW9ybWFudGFyZS1kZXRlY3RvYXJlLW1ldGFsLXN0cGV0ZXJzYnVyZy00NjQ2NzM0IixudWxsLFtbOCwiQkplZUlaRThUZzAiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiNyJdLFsxMSwiW1tdLFtdLFtdXSJdLFsxOSwiMiJdLFsxNywiWzBdIl1dXQ
+violation:   https://comcluster.cxense.com/public/clearid?ngc=1&callback=cXJsonpCB1
+violation:   https://id.cxense.com/public/user/id?json=%7B%22identities%22%3A%5B%7B%22type%22%3A%22ckp%22%2C%22id%22%3A%22llwzmmzu2kmccrpq%22%7D%2C%7B%22type%22%3A%22cst%22%2C%22id%22%3A%2217kun3uz3vkqh3c5b7wyonltz5%22%7D%5D%2C%22siteId%22%3A%221136227972865927410%22%2C%22location%22%3A%22https%3A%2F%2Fwww.libertatea.ro%2F%22%7D&callback=cXJsonpCB2
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxUh5riv2KEh2hPrbM5XVtiEo3zFBz_ZivJJKMfWQQi-SA3Hnf7wfVAsGUuhrQzpGASjRMP9kaSa-Uyvcvp1I3PvlQR7x4aN9CJJcJGJuZWj3HvBufSpuWiQvKJ8nA7iYA-MgZUhecDEmzIVnAWIHB8v16EkLfj8b2KUWtGnylnfbbnXJarMM3saEIHt/_/sponsored-content-/adsense_/toggleAds./ad-ina./ads9.
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxVWg2dPZQoq0HI7aefQ88eEV4aKCdpjTDMqhceMarea_VZahIb6DtUum4cdET4G7lP1N1oI3zdlDCRJHOsRg_GxSqWqO4h0IuLFzfGUDC8Dgfl6gjs_cumyssav_o7F6Pj3GjlbMQ==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNjkzMzU0NjM5LDg4MTAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzcsNl0sbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMV0sImh0dHBzOi8vd3d3LmxpYmVydGF0ZWEucm8vIixudWxsLFtbOCwiQkplZUlaRThUZzAiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiMTUiXSxbMTEsIltbXSxbXSxbXV0iXSxbMTksIjIiXSxbMTcsIlswXSJdXV0
+violation:   https://api.cxense.com/profile/user/segment?callback=cXJsonpCB3&persisted=1fddcc372e9d925847138dc1fedc5e0af235b9fa&json=%7B%22identities%22%3A%5B%7B%22id%22%3A%22llwzmmzu2kmccrpq%22%2C%22type%22%3A%22cx%22%7D%5D%7D
+violation:   https://trc.taboola.com/1404265/trc/3/json?tim=1693354648707&data=%7B%22id%22%3A512%2C%22ii%22%3A%22%2F%22%2C%22it%22%3A%22video%22%2C%22sd%22%3Anull%2C%22ui%22%3Anull%2C%22vi%22%3A1693354648692%2C%22cv%22%3A%2220230827-9-RELEASE%22%2C%22uiv%22%3A%22default%22%2C%22u%22%3A%22https%3A%2F%2Fwww.libertatea.ro%2F%22%2C%22e%22%3Anull%2C%22cb%22%3A%22TFASC.trkCallback%22%2C%22qs%22%3A%22%22%2C%22r%22%3A%5B%7B%22li%22%3A%22rbox-tracking%22%2C%22s%22%3A0%2C%22uim%22%3A%22rbox-tracking%3Apub%3Dtdg-ringier2729adv1%3Aabp%3D0%22%2C%22uip%22%3A%22rbox-tracking%22%2C%22orig_uip%22%3A%22rbox-tracking%22%7D%5D%2C%22mpv%22%3Atrue%2C%22supv%22%3Atrue%2C%22mpvd%22%3A%7B%22en%22%3A%22page_view%22%2C%22tim%22%3A1693354648703%2C%22ref%22%3Anull%2C%22item-url%22%3A%22https%3A%2F%2Fwww.libertatea.ro%2F%22%2C%22tos%22%3A0%2C%22ssd%22%3A1%2C%22scd%22%3A0%2C%22supv%22%3Atrue%7D%7D&pubit=i
+violation:   https://api.cxense.com/profile/user/segment?callback=cXJsonpCB4&persisted=993f7e91f41899181a61f3b6fa338bd436cdd1b7&json=%7B%22identities%22%3A%5B%7B%22id%22%3A%22llwzmmzu2kmccrpq%22%2C%22type%22%3A%22cx%22%7D%5D%7D
+violation:   https://collector.brandmetrics.com/c.js?siteid=6e02183c-e1a8-4694-98e5-858d7d5e3c66&toploc=www.libertatea.ro&rnd=6134591
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxV10xhI6wLKGUjyL-ZbGppV1Locu31oH7EywlDl8mxJgbwFi6IMBdmCQO3MTfcsxB4C4Cc8KtSNSfqArDS3Uv3idcrfWNCcrWjxEzvSTtXV7KP6tE8qfW2jSkZAvPyfcL9O4jmkO8XM3q4nPCdM7-6leWpBY2_x5mA-gAV9K5qlQ2i4i7hjz5m8GNVH/_/728x90-/src/ads_/adtable_/adpoint./leftbottomads.
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxV3QME06kMmubVWlwJnH2-Cr9LtCqSFBrjU_pqhOvQ6mBB36K9aoQdY5-oEpaC0CayxP26U-Nabt0fVwuO8zuHdCCWybYhiBn9VfKkrazFoBP1iVE5K_5X1bD7x9TqbfMJvtyCDevgSIHFilFFal8r57NKFD58OIoFgXUZZ9ikTh2OAe4Tdq5Htl85V/_-ads-init&/tabunder/pop..net/noidadx/_600x160./gam_ads.
+screenshots will be in: screenshots/www_libertatea_ro
+Total: 443kB	Added: 3550kB	Percentage: 0.8891421618597121%
+Total: 443kB	Added: 3558kB	Percentage: 0.8891975308641975%
+Total: 444kB	Added: 3602kB	Percentage: 0.8901669769818089%
+violation:   inline
+Total: 449kB	Added: 3681kB	Percentage: 0.8912384124832726%
+Total: 514kB	Added: 3752kB	Percentage: 0.8794163769804342%
+Total: 516kB	Added: 3761kB	Percentage: 0.879332520756141%
+violation:   https://comcluster.cxense.com/public/clearid?ngc=1&callback=cXJsonpCB1
+Total: 520kB	Added: 3823kB	Percentage: 0.8801915336507907%
+violation:   https://id.cxense.com/public/user/id?json=%7B%22identities%22%3A%5B%7B%22type%22%3A%22ckp%22%2C%22id%22%3A%22llwzor6dq8ili0de%22%7D%2C%7B%22type%22%3A%22cst%22%2C%22id%22%3A%222uofw8zttm15u1zt7f9ev4nnxy%22%7D%5D%2C%22siteId%22%3A%221136227972865927410%22%2C%22location%22%3A%22https%3A%2F%2Fwww.libertatea.ro%2F%22%7D&callback=cXJsonpCB2
+Total: 520kB	Added: 3867kB	Percentage: 0.8813986736393223%
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxXgKNsdHO7rqJ5s54laSsa5oGZUDdlu6H08vXDD9-pWW5uOgH60BB3diW--jJKQOZB1QQM_fXS2b6fxiGlr9hg--P8rMfmIM87Zma1L4G6G3fzkvBVQa1xj0nkgXf-ksikIuRGbAzuGAZPNAAoDM0otvZqNusATKou6zaXbR-fkyWKAG0Lk7RrYu0Hi/__ad_serving./googlead160./static/ad_/adfiles./showindex-ad-
+Total: 520kB	Added: 3902kB	Percentage: 0.8823489907694284%
+violation:   https://fundingchoicesmessages.google.com/f/AGSKWxVi5vWAWvoFjJ3otECQzRnGyCI5gHDVW1yKIYNcPk-NhMQBy1TjhL_MNQH0AS3C5Tsnv2szAp-c61uGuKLa3z22vDY1clP5QqJDNbbpZvA_wmZn3lij_8azoUoSRJTZbhU4HvYnTg==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNjkzMzU0NzM3LDgxOTAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzcsNl0sbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMV0sImh0dHBzOi8vd3d3LmxpYmVydGF0ZWEucm8vIixudWxsLFtbOCwiQkplZUlaRThUZzAiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiNSJdLFsxMSwiW1tdLFtdLFtdXSJdLFsxOSwiMiJdLFsxNywiWzBdIl1dXQ
+Total: 520kB	Added: 3911kB	Percentage: 0.882593759773342%
+Successfully accepted cookies
+Total: 520kB	Added: 3947kB	Percentage: 0.883522802317236%
+violation:   https://api.cxense.com/profile/user/segment?callback=cXJsonpCB3&persisted=1fddcc372e9d925847138dc1fedc5e0af235b9fa&json=%7B%22identities%22%3A%5B%7B%22id%22%3A%22llwzor6dq8ili0de%22%2C%22type%22%3A%22cx%22%7D%5D%7D
+Total: 520kB	Added: 3973kB	Percentage: 0.8842133161952126%
+Total: 520kB	Added: 4026kB	Percentage: 0.8855540874608558%
+Total: 520kB	Added: 4053kB	Percentage: 0.8862177605252218%
+Total: 522kB	Added: 4095kB	Percentage: 0.8868776595168747%
+violation:   https://trc.taboola.com/1404265/trc/3/json?tim=1693354746123&data=%7B%22id%22%3A994%2C%22ii%22%3A%22%2F%22%2C%22it%22%3A%22video%22%2C%22sd%22%3Anull%2C%22ui%22%3Anull%2C%22vi%22%3A1693354746111%2C%22cv%22%3A%2220230827-9-RELEASE%22%2C%22uiv%22%3A%22default%22%2C%22u%22%3A%22https%3A%2F%2Fwww.libertatea.ro%2F%22%2C%22e%22%3Anull%2C%22cb%22%3A%22TFASC.trkCallback%22%2C%22qs%22%3A%22%22%2C%22r%22%3A%5B%7B%22li%22%3A%22rbox-tracking%22%2C%22s%22%3A0%2C%22uim%22%3A%22rbox-tracking%3Apub%3Dtdg-ringier2729adv1%3Aabp%3D0%22%2C%22uip%22%3A%22rbox-tracking%22%2C%22orig_uip%22%3A%22rbox-tracking%22%7D%5D%2C%22mpv%22%3Atrue%2C%22supv%22%3Atrue%2C%22mpvd%22%3A%7B%22en%22%3A%22page_view%22%2C%22tim%22%3A1693354746118%2C%22ref%22%3Anull%2C%22item-url%22%3A%22https%3A%2F%2Fwww.libertatea.ro%2F%22%2C%22tos%22%3A3%2C%22ssd%22%3A1%2C%22scd%22%3A0%2C%22supv%22%3Atrue%7D%7D&pubit=i
+warning:     https://www.facebook.com
+Total: 525kB	Added: 4175kB	Percentage: 0.8882845468693653%
+Total: 525kB	Added: 4256kB	Percentage: 0.8901770941154842%
+Total: 525kB	Added: 4310kB	Percentage: 0.8914079534073136%
+Total: 525kB	Added: 4393kB	Percentage: 0.8932311835948247%
+Total: 525kB	Added: 4411kB	Percentage: 0.8936229480598227%
+violation:   https://api.cxense.com/profile/user/segment?callback=cXJsonpCB4&persisted=993f7e91f41899181a61f3b6fa338bd436cdd1b7&json=%7B%22identities%22%3A%5B%7B%22id%22%3A%22llwzor6dq8ili0de%22%2C%22type%22%3A%22cx%22%7D%5D%7D
+violation:   https://collector.brandmetrics.com/c.js?siteid=6e02183c-e1a8-4694-98e5-858d7d5e3c66&toploc=www.libertatea.ro&rnd=6421947
+Total: 559kB	Added: 4474kB	Percentage: 0.888986434338047%
+violation:   inline
+violation:   inline
+Total: 560kB	Added: 4520kB	Percentage: 0.8897645019016677%
+Total: 560kB	Added: 4593kB	Percentage: 0.8913313280521169%
+Total: 560kB	Added: 4638kB	Percentage: 0.8922788767792242%
+violation:   inline
+Total: 560kB	Added: 4748kB	Percentage: 0.8945141280498339%
+violation:   inline
+Total: 561kB	Added: 4804kB	Percentage: 0.8954955119531192%
+violation:   https://api.cxense.com/profile/user/segment?callback=cXJsonpCB1&persisted=1fddcc372e9d925847138dc1fedc5e0af235b9fa&json=%7B%22identities%22%3A%5B%7B%22id%22%3A%22llwzor6dq8ili0de%22%2C%22type%22%3A%22cx%22%7D%5D%7D
+Total: 561kB	Added: 4886kB	Percentage: 0.8970715240941161%
+Total: 561kB	Added: 4941kB	Percentage: 0.8980942998042313%
+Total: 561kB	Added: 5005kB	Percentage: 0.8992652015978909%
+Total: 561kB	Added: 5061kB	Percentage: 0.900266827770226%
+Total: 561kB	Added: 5097kB	Percentage: 0.9009168789284333%
+Total: 562kB	Added: 5135kB	Percentage: 0.9013832760852228%
+Total: 562kB	Added: 5210kB	Percentage: 0.9026640196385552%
+Total: 562kB	Added: 5266kB	Percentage: 0.9036056489123065%
+Total: 562kB	Added: 5322kB	Percentage: 0.9045290393847985%
+Total: 562kB	Added: 5379kB	Percentage: 0.9054352729672224%
+Total: 562kB	Added: 5416kB	Percentage: 0.9060299098462555%
+Total: 562kB	Added: 5464kB	Percentage: 0.9067773771914016%
+violation:   https://collector.brandmetrics.com/c.js?siteid=6e02183c-e1a8-4694-98e5-858d7d5e3c66&toploc=www.libertatea.ro&rnd=1470077
+Total: 562kB	Added: 5531kB	Percentage: 0.9077931092552559%
+Total: 562kB	Added: 5577kB	Percentage: 0.908487815208184%
+Total: 562kB	Added: 5625kB	Percentage: 0.9091991584789261%
+warning:     https://ads.eu.criteo.com
+Total: 562kB	Added: 5681kB	Percentage: 0.9100122333064704%
