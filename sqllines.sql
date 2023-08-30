@@ -15,15 +15,18 @@ select
 ;
 
 select 
+	host,
 	sum(total) as total, 
 	sum(policy) as justPolicy ,
-	(sum(policy)*100) / sum(total) as percentage,
+	(sum(policy)*100) / sum(total) as percentage
 	from (
 		select 
 			length(report::varchar) as total, 
-			length(report->>'original-policy'::varchar) as policy 
-			from cspro_reports where host = 'www.caixabank.es'
+			length(report->>'original-policy'::varchar) as policy,
+			host
+			from cspro_reports
 	) as sub
+	group by host
 ;
 
 select

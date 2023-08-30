@@ -11,6 +11,7 @@ const url = require('url')
 const test = require('./utils/TestUtils.js')
 
 var PICKED_HOSTS = [
+	{good: true, top: 732 , host: 'https://www.caixabank.es'}, // custom picked bank without CSP that does not have ad scripts
 	{good: true, top: 878 , host: 'https://codepen.io'}, // cloudflare doesnt even allow access
 	{good: true, top: 2589, host: 'https://www.pcworld.com'}, // cloudflare sometimes blocks
 	{good: true, top: 2650, host: 'https://computingforgeeks.com'}, // cloudflare blocks 
@@ -21,7 +22,6 @@ var PICKED_HOSTS = [
 	{good: true, top: 5524, host: 'https://www.flashscore.es'}, // spanish doesn't care about cookies enough
 	{good: true, top: 5686, host: 'https://quran.com'}, // in hebrew, gives a lot of malicious script flags as they are sending raw binary data to decode in js files
 	{good: true, top: 7153, host: 'https://www.professormesser.com'}, // no cookies
-	{good: true, top: -1,   host: 'https://www.caixabank.es'}, // custom picked bank without CSP that does not have ad scripts
 ]
 
 const updateCspro = true;
