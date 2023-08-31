@@ -27,7 +27,8 @@ var PICKED_HOSTS = [
 const updateCspro = true;
 const dryRun = false;
 const preTrain = true;
-const pickNum = 8;
+const longTest = true;
+const pickNum = 10;
 
 var picked = PICKED_HOSTS[pickNum];
 var current_host = picked.host;
@@ -46,18 +47,20 @@ serv.start(() => {
 		serv.repeatAllReports(() => {})
 		// serv.useTerminal()
 	} else {
+		var after = () => {
+			const client = require('./client/client.js')
+			if (longTest){
+				client.longBrowse(current_host)
+			} else {
+				client.browse(current_host)
+			}
+		}
 		if (preTrain) {
 			serv.repeatAllReports(() => {
-				setTimeout(() => {
-					const client = require('./client/client.js')
-					client.browse(current_host)
-				}, 3000);
+				setTimeout(after, 3000);
 			});
 		} else {
-			setTimeout(() => {
-				const client = require('./client/client.js')
-				client.browse(current_host)
-			}, 3000);
+			setTimeout(after, 3000);
 		}
 	}
 });
@@ -83,7 +86,8 @@ mitm.get_emitter().on('mitm-request', (data) => {
 		mitmLastPrint = now
 		console.log('Total: ' + String(Math.round(data['total-transfered']/1000)) + 'kB' + '\t' +
 			'Added: ' + String(Math.round(data['additional-bytes']/1000)) + 'kB' + '\t' + 
-			'Percentage: ' + String(data['additional-bytes'] / (data['additional-bytes'] + data['total-transfered'])) + '%'
+			'Fraction: ' + String(data['additional-bytes'] / (data['additional-bytes'] + data['total-transfered'])) + '\t' +
+			'Now: ' + String(Date.now())
 		);
 	}
 });

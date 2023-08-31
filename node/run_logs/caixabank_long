@@ -1,0 +1,849 @@
+Mitm communication server running at http://127.0.0.1:8181/
+PSQL started
+Reporting server running at http://localhost:5476/
+warning:     https://caixa.demdex.net
+warning:     https://td.doubleclick.net
+warning:     https://www.facebook.com
+warning:     https://insight.adsrvr.org
+warning:     https://www.facebook.com
+warning:     https://www.facebook.com
+warning:     https://insight.adsrvr.org
+warning:     https://insight.adsrvr.org
+warning:     https://players.brightcove.net
+warning:     https://match.adsrvr.org
+violation:   inline
+violation:   https://js.pp.caixabank.es/static/js/d3d3LmNhaXhhYmFuay5lcw==/8c49b4d0/bcaptcha.js
+violation:   https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+violation:   https://metrics.caixabank.es/b/ss/lacaixaes/10/JS-2.9.0/s22008259653556?AQB=1&ndh=1&pf=1&callback=s_c_il[1].doPostbacks&et=1&t=30%2F7%2F2023%201%3A10%3A3%203%20-60&d.&nsid=0&jsonv=1&.d&fid=4D030F6B9D62C29C-27D32A6DDA2EF11F&ce=UTF-8&ns=lacaixa&pageName=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&g=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fhome%2Fparticulares_es.html%23&r=https%3A%2F%2Fwww.caixabank.es%2Findex_es.html&cc=EUR&events=event42&c19=https%3A%2F%2Fwww.caixabank.es%2Findex_es.html&v19=D%3Dc19&v50=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&v84=boton%20pulsado%3APOLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON%2Ccookies%20aceptadas%3AAA%7CAT%7CDBCK%7CYTB%7CGOOG%7CAC%7CTIQ%7CNCP%7CCEXTLO%7CFB%7CAAM%7CLK%7CTD%7CSIZMEK&pe=lnk_o&pev2=GDPR%3APOLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON%3AAA%7CAT%7CDBCK%7CYTB%7CGOOG%7CAC%7CTIQ%7CNCP%7CCEXTLO%7CFB%7CAAM%7CLK%7CTD%7CSIZMEK&s=1920x969&c=24&j=1.6&v=N&k=Y&bw=1920&bh=947&AQE=1
+violation:   https://metrics.caixabank.es/b/ss/lacaixaes/10/JS-2.9.0/s22008259653556?AQB=1&ndh=1&pf=1&callback=s_c_il[1].doPostbacks&et=1&t=30%2F7%2F2023%201%3A10%3A3%203%20-60&d.&nsid=0&jsonv=1&.d&fid=4D030F6B9D62C29C-27D32A6DDA2EF11F&ce=UTF-8&ns=lacaixa&pageName=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&g=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fhome%2Fparticulares_es.html%23&r=https%3A%2F%2Fwww.caixabank.es%2Findex_es.html&cc=EUR&events=event42&c19=https%3A%2F%2Fwww.caixabank.es%2Findex_es.html&v19=D%3Dc19&v50=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&v84=boton%20pulsado%3APOLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON%2Ccookies%20aceptadas%3AAA%7CAT%7CDBCK%7CYTB%7CGOOG%7CAC%7CTIQ%7CNCP%7CCEXTLO%7CFB%7CAAM%7CLK%7CTD%7CSIZMEK&pe=lnk_o&pev2=GDPR%3APOLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON%3AAA%7CAT%7CDBCK%7CYTB%7CGOOG%7CAC%7CTIQ%7CNCP%7CCEXTLO%7CFB%7CAAM%7CLK%7CTD%7CSIZMEK&s=1920x969&c=24&j=1.6&v=N&k=Y&bw=1920&bh=947&AQE=1
+violation:   inline
+violation:   https://metrics.caixabank.es/b/ss/lacaixaes/10/JS-2.9.0/s26838624219773?AQB=1&ndh=1&pf=1&callback=s_c_il[1].doPostbacks&et=1&t=30%2F7%2F2023%201%3A10%3A4%203%20-60&d.&nsid=0&jsonv=1&.d&sdid=76144EDD12170BB4-355F430500914C2B&mid=74405510084204767161894610988799679547&aamlh=6&fid=4D030F6B9D62C29C-27D32A6DDA2EF11F&ce=UTF-8&ns=lacaixa&pageName=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&g=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fhome%2Fparticulares_es.html%23&r=https%3A%2F%2Fwww.caixabank.es%2Findex_es.html&c.&cm.&ssf=1&.cm&.c&cc=EUR&ch=caixabankes&server=www.caixabank.es&events=event29&aamb=6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y&c1=particulares&h1=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&c2=homes&c6=homeparticulares&c8=74405510084204767161894610988799679547&v8=74405510084204767161894610988799679547&v10=D%3DpageName&c11=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fhome%2Fparticulares_es.html&v11=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fhome%2Fparticulares_es.html&c12=New&v12=New&c14=01&v14=01&c15=01%3A10&c17=es&v17=es&c18=no%20logado&v18=no%20logado&c19=https%3A%2F%2Fwww.caixabank.es%2Findex_es.html&v19=D%3Dc19&v28=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&c31=event29&v31=true&c32=D%3Ds_vi&v32=true&c33=D%3Ds_fid&v34=true&v36=true&v37=true&v38=true&c44=20150903v1&v50=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&c74=caixabank-web&v110=produccion&v140=false&v141=false&v142=false&v171=false&v191=true&v192=true&s=1920x969&c=24&j=1.6&v=N&k=Y&bw=1920&bh=947&mcorgid=3A3F337B54E77B700A4C98A1%40AdobeOrg&AQE=1
+violation:   inline
+violation:   https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+violation:   https://js.pp.caixabank.es/static/js/d3d3LmNhaXhhYmFuay5lcw==/8c49b4d0/bcaptcha.js
+violation:   https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+violation:   https://js.pp.caixabank.es/static/js/d3d3LmNhaXhhYmFuay5lcw==/8c49b4d0/bcaptcha.js
+violation:   https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+violation:   https://js.pp.caixabank.es/static/js/d3d3LmNhaXhhYmFuay5lcw==/8c49b4d0/bcaptcha.js
+violation:   inline
+violation:   inline
+violation:   inline
+violation:   https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+violation:   https://js.pp.caixabank.es/static/js/d3d3LmNhaXhhYmFuay5lcw==/8c49b4d0/bcaptcha.js
+violation:   https://js.pp.caixabank.es/static/js/d3d3LmNhaXhhYmFuay5lcw==/8c49b4d0/bcaptcha.js
+violation:   https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+violation:   https://js.pp.caixabank.es/static/js/d3d3LmNhaXhhYmFuay5lcw==/8c49b4d0/bcaptcha.js
+violation:   https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+violation:   https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+violation:   https://js.pp.caixabank.es/static/js/d3d3LmNhaXhhYmFuay5lcw==/8c49b4d0/bcaptcha.js
+violation:   https://metrics.caixabank.es/b/ss/lacaixaes/10/JS-2.9.0/s29390498943268?AQB=1&ndh=1&pf=1&callback=s_c_il[1].doPostbacks&et=1&t=30%2F7%2F2023%201%3A10%3A11%203%20-60&d.&nsid=0&jsonv=1&.d&sdid=3901432B38813E06-30E86BFC76D99094&mid=74405510084204767161894610988799679547&aamlh=6&ce=UTF-8&ns=lacaixa&pageName=caixabankes%3Aempresas%3Ahome%3Ahomeempresas&g=https%3A%2F%2Fwww.caixabank.es%2Fempresa%2Fhome%2Fempresas_es.html&c.&cm.&ssf=1&.cm&.c&cc=EUR&ch=caixabankes&server=www.caixabank.es&events=event29&aamb=6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y&c1=empresas&h1=caixabankes%3Aempresas%3Ahome%3Ahomeempresas&c2=home&c6=homeempresas&c8=74405510084204767161894610988799679547&v8=74405510084204767161894610988799679547&v10=D%3DpageName&c11=https%3A%2F%2Fwww.caixabank.es%2Fempresa%2Fhome%2Fempresas_es.html&v11=https%3A%2F%2Fwww.caixabank.es%2Fempresa%2Fhome%2Fempresas_es.html&c12=New&v12=New&c14=01&v14=01&c15=01%3A10&c17=es&v17=es&c18=no%20logado&v18=no%20logado&v19=D%3Dc19&c31=event29&v31=true&c32=D%3Ds_vi&v32=true&c33=D%3Ds_fid&v34=true&v36=true&v37=true&v38=true&c44=20150903v1&v50=caixabankes%3Aempresas%3Ahome%3Ahomeempresas&c74=caixabank-web&v110=produccion&v140=false&v141=false&v142=false&v171=false&v191=true&v192=true&s=1920x969&c=24&j=1.6&v=N&k=Y&bw=1920&bh=947&mcorgid=3A3F337B54E77B700A4C98A1%40AdobeOrg&AQE=1
+violation:   https://metrics.caixabank.es/b/ss/lacaixaes/10/JS-2.9.0/s27843929483987?AQB=1&ndh=1&pf=1&callback=s_c_il[1].doPostbacks&et=1&t=30%2F7%2F2023%201%3A10%3A11%203%20-60&d.&nsid=0&jsonv=1&.d&sdid=2981BABDB776B38C-5D05791DBD16D9A3&mid=74405510084204767161894610988799679547&aamlh=6&ce=UTF-8&ns=lacaixa&pageName=caixabankes%3Aparticulares%3Aseguros%3Aseguroshogar&g=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fseguros%2Fseguros-hogar.html&c.&cm.&ssf=0&.cm&.c&cc=EUR&ch=caixabankes&server=www.caixabank.es&events=event29&aamb=6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y&c1=particulares&h1=caixabankes%3Aparticulares%3Aseguros%3Aseguroshogar&c2=seguros&c6=seguroshogar&c8=74405510084204767161894610988799679547&v8=74405510084204767161894610988799679547&v10=D%3DpageName&c11=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fseguros%2Fseguros-hogar.html&v11=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fseguros%2Fseguros-hogar.html&c12=New&v12=New&c14=01&v14=01&c15=01%3A10&c17=es&v17=es&c18=no%20logado&v18=no%20logado&v19=D%3Dc19&c31=event29&v31=true&c32=D%3Ds_vi&v32=true&c33=D%3Ds_fid&v34=true&v36=true&v37=true&v38=true&c44=20150903v1&v50=caixabankes%3Aparticulares%3Aseguros%3Aseguroshogar&c74=caixabank-web&v110=produccion&v140=false&v141=false&v142=false&v171=false&v191=true&v192=true&s=1920x969&c=24&j=1.6&v=N&k=Y&bw=1920&bh=947&mcorgid=3A3F337B54E77B700A4C98A1%40AdobeOrg&AQE=1
+violation:   https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693354214200&cv=9&fst=1693354214200&num=1&guid=ON&resp=GooglemKTybQhCsO&eid=466465925&u_h=969&u_w=1920&u_ah=969&u_aw=1920&u_cd=24&u_his=2&u_tz=60&u_java=false&u_nplug=5&u_nmime=2&sendb=1&ig=1&frm=0&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fseguros%2Fseguros-hogar.html&tiba=Seguros%20de%20hogar%20%7C%20Contrata%20tu%20seguro%20online%20%7C%20Particulares%20%7C%20CaixaBank&hn=www.googleadservices.com&async=1&rfmt=3&fmt=4
+violation:   https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693354214475&cv=11&fst=1693354214475&bg=ffffff&guid=ON&async=1&gtm=45be38n0h1&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fseguros%2Fseguros-hogar.html&hn=www.googleadservices.com&frm=0&tiba=Seguros%20de%20hogar%20%7C%20Contrata%20tu%20seguro%20online%20%7C%20Particulares%20%7C%20CaixaBank&auid=1643909797.1693354214&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+violation:   https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693354214508&cv=11&fst=1693354214508&bg=ffffff&guid=ON&async=1&gtm=45be38n0h1&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fseguros%2Fseguros-hogar.html&hn=www.googleadservices.com&frm=0&tiba=Seguros%20de%20hogar%20%7C%20Contrata%20tu%20seguro%20online%20%7C%20Particulares%20%7C%20CaixaBank&auid=1643909797.1693354214&fledge=1&uamb=0&uaw=0&data=event%3Dpage_view&rfmt=3&fmt=4
+violation:   https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693354214518&cv=11&fst=1693354214518&bg=ffffff&guid=ON&async=1&gtm=45be38n0h1&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fseguros%2Fseguros-hogar.html&hn=www.googleadservices.com&frm=0&tiba=Seguros%20de%20hogar%20%7C%20Contrata%20tu%20seguro%20online%20%7C%20Particulares%20%7C%20CaixaBank&auid=1643909797.1693354214&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+violation:   https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693354214536&cv=11&fst=1693354214536&bg=ffffff&guid=ON&async=1&gtm=45be38n0h1&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fseguros%2Fseguros-hogar.html&hn=www.googleadservices.com&frm=0&tiba=Seguros%20de%20hogar%20%7C%20Contrata%20tu%20seguro%20online%20%7C%20Particulares%20%7C%20CaixaBank&auid=1643909797.1693354214&fledge=1&uamb=0&uaw=0&data=event%3Dpage_view&rfmt=3&fmt=4
+violation:   https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693354214554&cv=11&fst=1693354214554&bg=ffffff&guid=ON&async=1&gtm=45be38n0h1&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fseguros%2Fseguros-hogar.html&hn=www.googleadservices.com&frm=0&tiba=Seguros%20de%20hogar%20%7C%20Contrata%20tu%20seguro%20online%20%7C%20Particulares%20%7C%20CaixaBank&auid=1643909797.1693354214&fledge=1&uamb=0&uaw=0&data=event%3Dpage_view&rfmt=3&fmt=4
+violation:   https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693354214542&cv=11&fst=1693354214542&bg=ffffff&guid=ON&async=1&gtm=45be38n0h1&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fseguros%2Fseguros-hogar.html&hn=www.googleadservices.com&frm=0&tiba=Seguros%20de%20hogar%20%7C%20Contrata%20tu%20seguro%20online%20%7C%20Particulares%20%7C%20CaixaBank&auid=1643909797.1693354214&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+violation:   https://metrics.caixabank.es/b/ss/lacaixaes/10/JS-2.9.0/s29831044230375?AQB=1&ndh=1&pf=1&callback=s_c_il[1].doPostbacks&et=1&t=30%2F7%2F2023%201%3A10%3A15%203%20-60&d.&nsid=0&jsonv=1&.d&sdid=559532CC8670752A-7DCDF6E816AC4033&mid=74405510084204767161894610988799679547&aamlh=6&ce=UTF-8&ns=lacaixa&pageName=caixabankes%3Aparticulares%3Aseguros%3Asegurossalud&g=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fseguros%2Fseguros-salud-dentales.html&c.&cm.&ssf=0&.cm&.c&cc=EUR&ch=caixabankes&server=www.caixabank.es&events=event29&aamb=6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y&c1=particulares&h1=caixabankes%3Aparticulares%3Aseguros%3Asegurossalud&c2=seguros&c6=segurossalud&c8=74405510084204767161894610988799679547&v8=74405510084204767161894610988799679547&v10=D%3DpageName&c11=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fseguros%2Fseguros-salud-dentales.html&v11=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fseguros%2Fseguros-salud-dentales.html&c12=New&v12=New&c14=01&v14=01&c15=01%3A10&c17=es&v17=es&c18=no%20logado&v18=no%20logado&v19=D%3Dc19&c31=event29&v31=true&c32=D%3Ds_vi&v32=true&c33=D%3Ds_fid&v34=true&v36=true&v37=true&v38=true&c44=20150903v1&v50=caixabankes%3Aparticulares%3Aseguros%3Asegurossalud&c74=caixabank-web&v110=produccion&v140=false&v141=false&v142=false&v171=false&v191=true&v192=true&s=1920x969&c=24&j=1.6&v=N&k=Y&bw=1920&bh=947&mcorgid=3A3F337B54E77B700A4C98A1%40AdobeOrg&AQE=1
+violation:   https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693354216010&cv=9&fst=1693354216010&num=1&guid=ON&resp=GooglemKTybQhCsO&eid=466465926&u_h=969&u_w=1920&u_ah=969&u_aw=1920&u_cd=24&u_his=2&u_tz=60&u_java=false&u_nplug=5&u_nmime=2&sendb=1&ig=1&frm=0&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fseguros%2Fseguros-salud-dentales.html&tiba=Seguros%20de%20Salud%20%7C%20Seguros%20%7C%20Particulares%20%7C%20CaixaBank&hn=www.googleadservices.com&async=1&rfmt=3&fmt=4
+violation:   https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEOVideoHtmlTranslation.js
+violation:   https://metrics.caixabank.es/b/ss/lacaixaes/10/JS-2.9.0/s23926753425168?AQB=1&ndh=1&pf=1&callback=s_c_il[1].doPostbacks&et=1&t=30%2F7%2F2023%201%3A10%3A16%203%20-60&d.&nsid=0&jsonv=1&.d&sdid=39868938D3F2D05A-4EE3F602218881F2&mid=74405510084204767161894610988799679547&aamlh=6&ce=UTF-8&ns=lacaixa&pageName=caixabankes%3Aparticulares%3Acuentas%3Acuentasincomisiones&g=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fcuentas%2Fcuenta-sin-comisiones.html%3Floce%3Dhomepart-1-terrat-Cuentasbancarias-cuentaonline-NA&c.&cm.&ssf=0&.cm&.c&cc=EUR&ch=caixabankes&server=www.caixabank.es&events=event29&aamb=6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y&c1=particulares&h1=caixabankes%3Aparticulares%3Acuentas%3Acuentasincomisiones&l1=loce%3Dhomepart-1-terrat-Cuentasbancarias-cuentaonline-NA&c2=cuentas&v3=homepart-1-terrat-Cuentasbancarias-cuentaonline-NA&c6=cuentasincomisiones&c8=74405510084204767161894610988799679547&v8=74405510084204767161894610988799679547&v10=D%3DpageName&c11=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fcuentas%2Fcuenta-sin-comisiones.html&v11=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fcuentas%2Fcuenta-sin-comisiones.html&c12=New&v12=New&c14=01&v14=01&c15=01%3A10&c17=es&v17=es&c18=no%20logado&v18=no%20logado&v19=D%3Dc19&c31=event29&v31=true&c32=D%3Ds_vi&v32=true&c33=D%3Ds_fid&v34=true&v36=true&v37=true&v38=true&c44=20150903v1&v50=caixabankes%3Aparticulares%3Acuentas%3Acuentasincomisiones&c74=caixabank-web&v110=produccion&v140=false&v141=false&v142=false&v171=false&v191=true&v192=true&s=1920x969&c=24&j=1.6&v=N&k=Y&bw=1920&bh=947&mcorgid=3A3F337B54E77B700A4C98A1%40AdobeOrg&AQE=1
+violation:   https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+violation:   https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+violation:   https://js.pp.caixabank.es/static/js/d3d3LmNhaXhhYmFuay5lcw==/8c49b4d0/bcaptcha.js
+violation:   https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+violation:   https://metrics.caixabank.es/b/ss/lacaixaes/10/JS-2.9.0/s2969981387896?AQB=1&ndh=1&pf=1&callback=s_c_il[1].doPostbacks&et=1&t=30%2F7%2F2023%201%3A11%3A18%203%20-60&d.&nsid=0&jsonv=1&.d&fid=5CE8B461A14E13C7-0796D58F238E9582&ce=UTF-8&ns=lacaixa&pageName=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&g=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fhome%2Fparticulares_es.html%23&r=https%3A%2F%2Fwww.caixabank.es%2Findex_es.html&cc=EUR&events=event42&c19=https%3A%2F%2Fwww.caixabank.es%2Findex_es.html&v19=D%3Dc19&v50=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&v84=boton%20pulsado%3APOLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON%2Ccookies%20aceptadas%3AAA%7CAT%7CDBCK%7CYTB%7CGOOG%7CAC%7CTIQ%7CNCP%7CCEXTLO%7CFB%7CAAM%7CLK%7CTD%7CSIZMEK&pe=lnk_o&pev2=GDPR%3APOLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON%3AAA%7CAT%7CDBCK%7CYTB%7CGOOG%7CAC%7CTIQ%7CNCP%7CCEXTLO%7CFB%7CAAM%7CLK%7CTD%7CSIZMEK&s=1920x969&c=24&j=1.6&v=N&k=Y&bw=1920&bh=947&AQE=1
+violation:   https://metrics.caixabank.es/b/ss/lacaixaes/10/JS-2.9.0/s2969981387896?AQB=1&ndh=1&pf=1&callback=s_c_il[1].doPostbacks&et=1&t=30%2F7%2F2023%201%3A11%3A18%203%20-60&d.&nsid=0&jsonv=1&.d&fid=5CE8B461A14E13C7-0796D58F238E9582&ce=UTF-8&ns=lacaixa&pageName=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&g=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fhome%2Fparticulares_es.html%23&r=https%3A%2F%2Fwww.caixabank.es%2Findex_es.html&cc=EUR&events=event42&c19=https%3A%2F%2Fwww.caixabank.es%2Findex_es.html&v19=D%3Dc19&v50=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&v84=boton%20pulsado%3APOLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON%2Ccookies%20aceptadas%3AAA%7CAT%7CDBCK%7CYTB%7CGOOG%7CAC%7CTIQ%7CNCP%7CCEXTLO%7CFB%7CAAM%7CLK%7CTD%7CSIZMEK&pe=lnk_o&pev2=GDPR%3APOLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON%3AAA%7CAT%7CDBCK%7CYTB%7CGOOG%7CAC%7CTIQ%7CNCP%7CCEXTLO%7CFB%7CAAM%7CLK%7CTD%7CSIZMEK&s=1920x969&c=24&j=1.6&v=N&k=Y&bw=1920&bh=947&AQE=1
+violation:   https://metrics.caixabank.es/b/ss/lacaixaes/10/JS-2.9.0/s28414162240682?AQB=1&ndh=1&pf=1&callback=s_c_il[1].doPostbacks&et=1&t=30%2F7%2F2023%201%3A11%3A18%203%20-60&d.&nsid=0&jsonv=1&.d&sdid=4098766D78F0ED05-6199542C995DD2EB&mid=26210650354106201091395294775475815085&aamlh=6&fid=5CE8B461A14E13C7-0796D58F238E9582&ce=UTF-8&ns=lacaixa&pageName=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&g=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fhome%2Fparticulares_es.html%23&r=https%3A%2F%2Fwww.caixabank.es%2Findex_es.html&c.&cm.&ssf=1&.cm&.c&cc=EUR&ch=caixabankes&server=www.caixabank.es&events=event29&aamb=6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y&c1=particulares&h1=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&c2=homes&c6=homeparticulares&c8=26210650354106201091395294775475815085&v8=26210650354106201091395294775475815085&v10=D%3DpageName&c11=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fhome%2Fparticulares_es.html&v11=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fhome%2Fparticulares_es.html&c12=New&v12=New&c14=01&v14=01&c15=01%3A11&c17=es&v17=es&c18=no%20logado&v18=no%20logado&c19=https%3A%2F%2Fwww.caixabank.es%2Findex_es.html&v19=D%3Dc19&v28=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&c31=event29&v31=true&c32=D%3Ds_vi&v32=true&c33=D%3Ds_fid&v34=true&v36=true&v37=true&v38=true&c44=20150903v1&v50=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&c74=caixabank-web&v110=produccion&v140=false&v141=false&v142=false&v171=false&v191=true&v192=true&s=1920x969&c=24&j=1.6&v=N&k=Y&bw=1920&bh=947&mcorgid=3A3F337B54E77B700A4C98A1%40AdobeOrg&AQE=1
+violation:   https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+violation:   inline
+violation:   inline
+violation:   inline
+violation:   https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+violation:   https://js.pp.caixabank.es/static/js/d3d3LmNhaXhhYmFuay5lcw==/8c49b4d0/bcaptcha.js
+violation:   https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+violation:   https://js.pp.caixabank.es/static/js/d3d3LmNhaXhhYmFuay5lcw==/8c49b4d0/bcaptcha.js
+violation:   https://js.pp.caixabank.es/static/js/d3d3LmNhaXhhYmFuay5lcw==/8c49b4d0/bcaptcha.js
+violation:   https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+violation:   https://metrics.caixabank.es/b/ss/lacaixaes/10/JS-2.9.0/s28135179805207?AQB=1&ndh=1&pf=1&callback=s_c_il[1].doPostbacks&et=1&t=30%2F7%2F2023%201%3A11%3A30%203%20-60&d.&nsid=0&jsonv=1&.d&sdid=037060860D1567ED-296773F34195B50A&mid=26210650354106201091395294775475815085&aamlh=6&ce=UTF-8&ns=lacaixa&pageName=caixabankes%3Aparticulares%3Abancadistancia%3Aintouch&g=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fbanca-digital%2Fgestor-personal-intouch.html&c.&cm.&ssf=0&.cm&.c&cc=EUR&ch=caixabankes&server=www.caixabank.es&events=event29&aamb=6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y&c1=particulares&h1=caixabankes%3Aparticulares%3Abancadistancia%3Aintouch&c2=bancadistancia&c6=intouch&c8=26210650354106201091395294775475815085&v8=26210650354106201091395294775475815085&v10=D%3DpageName&c11=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fbanca-digital%2Fgestor-personal-intouch.html&v11=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fbanca-digital%2Fgestor-personal-intouch.html&c12=New&v12=New&c14=01&v14=01&c15=01%3A11&c17=es&v17=es&c18=no%20logado&v18=no%20logado&v19=D%3Dc19&c31=event29&v31=true&c32=D%3Ds_vi&v32=true&c33=D%3Ds_fid&v34=true&v36=true&v37=true&v38=true&c44=20150903v1&v50=caixabankes%3Aparticulares%3Abancadistancia%3Aintouch&c74=caixabank-web&v110=produccion&v140=false&v141=false&v142=false&v171=false&v191=true&v192=true&s=1920x969&c=24&j=1.6&v=N&k=Y&bw=1920&bh=947&mcorgid=3A3F337B54E77B700A4C98A1%40AdobeOrg&AQE=1
+violation:   https://js.pp.caixabank.es/static/js/d3d3LmNhaXhhYmFuay5lcw==/8c49b4d0/bcaptcha.js
+violation:   https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+violation:   https://metrics.caixabank.es/b/ss/lacaixaes/10/JS-2.9.0/s26017683107666?AQB=1&ndh=1&pf=1&callback=s_c_il[1].doPostbacks&et=1&t=30%2F7%2F2023%201%3A12%3A23%203%20-60&d.&nsid=0&jsonv=1&.d&fid=7608282C913C5A3B-20D7BF40B1A68E70&ce=UTF-8&ns=lacaixa&pageName=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&g=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fhome%2Fparticulares_es.html%23&r=https%3A%2F%2Fwww.caixabank.es%2Findex_es.html&cc=EUR&events=event42&c19=https%3A%2F%2Fwww.caixabank.es%2Findex_es.html&v19=D%3Dc19&v50=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&v84=boton%20pulsado%3APOLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON%2Ccookies%20aceptadas%3AAA%7CAT%7CDBCK%7CYTB%7CGOOG%7CAC%7CTIQ%7CNCP%7CCEXTLO%7CFB%7CAAM%7CLK%7CTD%7CSIZMEK&pe=lnk_o&pev2=GDPR%3APOLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON%3AAA%7CAT%7CDBCK%7CYTB%7CGOOG%7CAC%7CTIQ%7CNCP%7CCEXTLO%7CFB%7CAAM%7CLK%7CTD%7CSIZMEK&s=1920x969&c=24&j=1.6&v=N&k=Y&bw=1920&bh=947&AQE=1
+violation:   https://metrics.caixabank.es/b/ss/lacaixaes/10/JS-2.9.0/s26017683107666?AQB=1&ndh=1&pf=1&callback=s_c_il[1].doPostbacks&et=1&t=30%2F7%2F2023%201%3A12%3A23%203%20-60&d.&nsid=0&jsonv=1&.d&fid=7608282C913C5A3B-20D7BF40B1A68E70&ce=UTF-8&ns=lacaixa&pageName=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&g=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fhome%2Fparticulares_es.html%23&r=https%3A%2F%2Fwww.caixabank.es%2Findex_es.html&cc=EUR&events=event42&c19=https%3A%2F%2Fwww.caixabank.es%2Findex_es.html&v19=D%3Dc19&v50=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&v84=boton%20pulsado%3APOLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON%2Ccookies%20aceptadas%3AAA%7CAT%7CDBCK%7CYTB%7CGOOG%7CAC%7CTIQ%7CNCP%7CCEXTLO%7CFB%7CAAM%7CLK%7CTD%7CSIZMEK&pe=lnk_o&pev2=GDPR%3APOLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON%3AAA%7CAT%7CDBCK%7CYTB%7CGOOG%7CAC%7CTIQ%7CNCP%7CCEXTLO%7CFB%7CAAM%7CLK%7CTD%7CSIZMEK&s=1920x969&c=24&j=1.6&v=N&k=Y&bw=1920&bh=947&AQE=1
+violation:   https://metrics.caixabank.es/b/ss/lacaixaes/10/JS-2.9.0/s24681506966202?AQB=1&ndh=1&pf=1&callback=s_c_il[1].doPostbacks&et=1&t=30%2F7%2F2023%201%3A12%3A23%203%20-60&d.&nsid=0&jsonv=1&.d&sdid=5163207DCEC683E2-6D561F11775B3DBD&mid=27835287771214458072391870279464500136&aamlh=6&fid=7608282C913C5A3B-20D7BF40B1A68E70&ce=UTF-8&ns=lacaixa&pageName=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&g=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fhome%2Fparticulares_es.html%23&r=https%3A%2F%2Fwww.caixabank.es%2Findex_es.html&c.&cm.&ssf=1&.cm&.c&cc=EUR&ch=caixabankes&server=www.caixabank.es&events=event29&aamb=6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y&c1=particulares&h1=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&c2=homes&c6=homeparticulares&c8=27835287771214458072391870279464500136&v8=27835287771214458072391870279464500136&v10=D%3DpageName&c11=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fhome%2Fparticulares_es.html&v11=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fhome%2Fparticulares_es.html&c12=New&v12=New&c14=01&v14=01&c15=01%3A12&c17=es&v17=es&c18=no%20logado&v18=no%20logado&c19=https%3A%2F%2Fwww.caixabank.es%2Findex_es.html&v19=D%3Dc19&v28=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&c31=event29&v31=true&c32=D%3Ds_vi&v32=true&c33=D%3Ds_fid&v34=true&v36=true&v37=true&v38=true&c44=20150903v1&v50=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&c74=caixabank-web&v110=produccion&v140=false&v141=false&v142=false&v171=false&v191=true&v192=true&s=1920x969&c=24&j=1.6&v=N&k=Y&bw=1920&bh=947&mcorgid=3A3F337B54E77B700A4C98A1%40AdobeOrg&AQE=1
+violation:   inline
+violation:   inline
+violation:   inline
+violation:   https://js.pp.caixabank.es/static/js/d3d3LmNhaXhhYmFuay5lcw==/8c49b4d0/bcaptcha.js
+violation:   https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+violation:   https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+violation:   https://js.pp.caixabank.es/static/js/d3d3LmNhaXhhYmFuay5lcw==/8c49b4d0/bcaptcha.js
+violation:   https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+violation:   https://js.pp.caixabank.es/static/js/d3d3LmNhaXhhYmFuay5lcw==/8c49b4d0/bcaptcha.js
+violation:   https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+violation:   https://js.pp.caixabank.es/static/js/d3d3LmNhaXhhYmFuay5lcw==/8c49b4d0/bcaptcha.js
+violation:   https://metrics.caixabank.es/b/ss/lacaixaes/10/JS-2.9.0/s28427075894704?AQB=1&ndh=1&pf=1&callback=s_c_il[1].doPostbacks&et=1&t=30%2F7%2F2023%201%3A12%3A34%203%20-60&d.&nsid=0&jsonv=1&.d&sdid=3664F69279CC1BFC-56E13F7F11FC9B66&mid=27835287771214458072391870279464500136&aamlh=6&ce=UTF-8&ns=lacaixa&pageName=caixabankes%3Aempresas%3Adayone&g=https%3A%2F%2Fwww.caixabank.es%2Fempresa%2Fdayone_es.html&c.&cm.&ssf=0&.cm&.c&cc=EUR&ch=caixabankes&server=www.caixabank.es&events=event29&aamb=6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y&c1=empresas&h1=caixabankes%3Aempresas%3Adayone&c6=dayone&c8=27835287771214458072391870279464500136&v8=27835287771214458072391870279464500136&v10=D%3DpageName&c11=https%3A%2F%2Fwww.caixabank.es%2Fempresa%2Fdayone_es.html&v11=https%3A%2F%2Fwww.caixabank.es%2Fempresa%2Fdayone_es.html&c12=New&v12=New&c14=01&v14=01&c15=01%3A12&c17=es&v17=es&c18=no%20logado&v18=no%20logado&v19=D%3Dc19&c31=event29&v31=true&c32=D%3Ds_vi&v32=true&c33=D%3Ds_fid&v34=true&v36=true&v37=true&v38=true&c44=20150903v1&v50=caixabankes%3Aempresas%3Adayone&c74=caixabank-web&v110=produccion&v140=false&v141=false&v142=false&v171=false&v191=true&v192=true&s=1920x969&c=24&j=1.6&v=N&k=Y&bw=1920&bh=947&mcorgid=3A3F337B54E77B700A4C98A1%40AdobeOrg&AQE=1
+violation:   https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+violation:   https://metrics.caixabank.es/b/ss/lacaixaes/10/JS-2.9.0/s27904201142868?AQB=1&ndh=1&pf=1&callback=s_c_il[1].doPostbacks&et=1&t=30%2F7%2F2023%201%3A13%3A20%203%20-60&d.&nsid=0&jsonv=1&.d&fid=1DBCDCE10029590F-122B35BFA5D622DC&ce=UTF-8&ns=lacaixa&pageName=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&g=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fhome%2Fparticulares_es.html%23&r=https%3A%2F%2Fwww.caixabank.es%2Findex_es.html&cc=EUR&events=event42&c19=https%3A%2F%2Fwww.caixabank.es%2Findex_es.html&v19=D%3Dc19&v50=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&v84=boton%20pulsado%3APOLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON%2Ccookies%20aceptadas%3AAA%7CAT%7CDBCK%7CYTB%7CGOOG%7CAC%7CTIQ%7CNCP%7CCEXTLO%7CFB%7CAAM%7CLK%7CTD%7CSIZMEK&pe=lnk_o&pev2=GDPR%3APOLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON%3AAA%7CAT%7CDBCK%7CYTB%7CGOOG%7CAC%7CTIQ%7CNCP%7CCEXTLO%7CFB%7CAAM%7CLK%7CTD%7CSIZMEK&s=1920x969&c=24&j=1.6&v=N&k=Y&bw=1920&bh=947&AQE=1
+violation:   https://metrics.caixabank.es/b/ss/lacaixaes/10/JS-2.9.0/s29882674691792?AQB=1&ndh=1&pf=1&callback=s_c_il[1].doPostbacks&et=1&t=30%2F7%2F2023%201%3A13%3A20%203%20-60&d.&nsid=0&jsonv=1&.d&sdid=7310D9760AB823A1-44D9ACA2E7331323&mid=45587747524791302970294801448794622656&aamlh=6&fid=1DBCDCE10029590F-122B35BFA5D622DC&ce=UTF-8&ns=lacaixa&pageName=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&g=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fhome%2Fparticulares_es.html%23&r=https%3A%2F%2Fwww.caixabank.es%2Findex_es.html&c.&cm.&ssf=1&.cm&.c&cc=EUR&ch=caixabankes&server=www.caixabank.es&events=event29&aamb=6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y&c1=particulares&h1=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&c2=homes&c6=homeparticulares&c8=45587747524791302970294801448794622656&v8=45587747524791302970294801448794622656&v10=D%3DpageName&c11=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fhome%2Fparticulares_es.html&v11=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fhome%2Fparticulares_es.html&c12=New&v12=New&c14=01&v14=01&c15=01%3A13&c17=es&v17=es&c18=no%20logado&v18=no%20logado&c19=https%3A%2F%2Fwww.caixabank.es%2Findex_es.html&v19=D%3Dc19&v28=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&c31=event29&v31=true&c32=D%3Ds_vi&v32=true&c33=D%3Ds_fid&v34=true&v36=true&v37=true&v38=true&c44=20150903v1&v50=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&c74=caixabank-web&v110=produccion&v140=false&v141=false&v142=false&v171=false&v191=true&v192=true&s=1920x969&c=24&j=1.6&v=N&k=Y&bw=1920&bh=947&mcorgid=3A3F337B54E77B700A4C98A1%40AdobeOrg&AQE=1
+violation:   inline
+violation:   inline
+violation:   https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+violation:   https://js.pp.caixabank.es/static/js/d3d3LmNhaXhhYmFuay5lcw==/8c49b4d0/bcaptcha.js
+violation:   https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+violation:   https://js.pp.caixabank.es/static/js/d3d3LmNhaXhhYmFuay5lcw==/8c49b4d0/bcaptcha.js
+violation:   inline
+violation:   https://js.pp.caixabank.es/static/js/d3d3LmNhaXhhYmFuay5lcw==/8c49b4d0/bcaptcha.js
+violation:   https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+violation:   https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEOVideoHtmlTranslation.js
+violation:   https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+violation:   https://js.pp.caixabank.es/static/js/d3d3LmNhaXhhYmFuay5lcw==/8c49b4d0/bcaptcha.js
+violation:   https://js.pp.caixabank.es/static/js/d3d3LmNhaXhhYmFuay5lcw==/8c49b4d0/bcaptcha.js
+violation:   https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+violation:   https://metrics.caixabank.es/b/ss/lacaixaes/10/JS-2.9.0/s92738419800099?AQB=1&ndh=1&pf=1&callback=s_c_il[1].doPostbacks&et=1&t=30%2F7%2F2023%2022%3A28%3A17%203%20-60&d.&nsid=0&jsonv=1&.d&fid=251C0ADE6C064B8F-36F06AEC2804243D&ce=UTF-8&ns=lacaixa&pageName=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&g=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fhome%2Fparticulares_es.html%23&r=https%3A%2F%2Fwww.caixabank.es%2Findex_es.html&cc=EUR&events=event42&c19=https%3A%2F%2Fwww.caixabank.es%2Findex_es.html&v19=D%3Dc19&v50=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&v84=boton%20pulsado%3APOLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON%2Ccookies%20aceptadas%3AAA%7CAT%7CDBCK%7CYTB%7CGOOG%7CAC%7CTIQ%7CNCP%7CCEXTLO%7CFB%7CAAM%7CLK%7CTD%7CSIZMEK&pe=lnk_o&pev2=GDPR%3APOLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON%3AAA%7CAT%7CDBCK%7CYTB%7CGOOG%7CAC%7CTIQ%7CNCP%7CCEXTLO%7CFB%7CAAM%7CLK%7CTD%7CSIZMEK&s=1920x969&c=24&j=1.6&v=N&k=Y&bw=1920&bh=947&AQE=1
+violation:   https://metrics.caixabank.es/b/ss/lacaixaes/10/JS-2.9.0/s98697844343645?AQB=1&ndh=1&pf=1&callback=s_c_il[1].doPostbacks&et=1&t=30%2F7%2F2023%2022%3A28%3A17%203%20-60&d.&nsid=0&jsonv=1&.d&sdid=6227FFF4073FAAAF-58E94968E5414D4E&mid=69471009196480735961180369915078803371&aamlh=6&fid=251C0ADE6C064B8F-36F06AEC2804243D&ce=UTF-8&ns=lacaixa&pageName=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&g=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fhome%2Fparticulares_es.html%23&r=https%3A%2F%2Fwww.caixabank.es%2Findex_es.html&c.&cm.&ssf=1&.cm&.c&cc=EUR&ch=caixabankes&server=www.caixabank.es&events=event29&aamb=6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y&c1=particulares&h1=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&c2=homes&c6=homeparticulares&c8=69471009196480735961180369915078803371&v8=69471009196480735961180369915078803371&v10=D%3DpageName&c11=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fhome%2Fparticulares_es.html&v11=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fhome%2Fparticulares_es.html&c12=New&v12=New&c14=22&v14=22&c15=22%3A28&c17=es&v17=es&c18=no%20logado&v18=no%20logado&c19=https%3A%2F%2Fwww.caixabank.es%2Findex_es.html&v19=D%3Dc19&v28=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&c31=event29&v31=true&c32=D%3Ds_vi&v32=true&c33=D%3Ds_fid&v34=true&v36=true&v37=true&v38=true&c44=20150903v1&v50=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&c74=caixabank-web&v110=produccion&v140=false&v141=false&v142=false&v171=false&v191=true&v192=true&s=1920x969&c=24&j=1.6&v=N&k=Y&bw=1920&bh=947&mcorgid=3A3F337B54E77B700A4C98A1%40AdobeOrg&AQE=1
+violation:   inline
+violation:   https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+violation:   https://js.pp.caixabank.es/static/js/d3d3LmNhaXhhYmFuay5lcw==/8c49b4d0/bcaptcha.js
+violation:   https://metrics.caixabank.es/b/ss/lacaixaes/10/JS-2.9.0/s99879920193507?AQB=1&ndh=1&pf=1&callback=s_c_il[1].doPostbacks&et=1&t=30%2F7%2F2023%2022%3A29%3A51%203%20-60&d.&nsid=0&jsonv=1&.d&fid=68D4BB218646DFC1-38350EC6C6DFFE6C&ce=UTF-8&ns=lacaixa&pageName=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&g=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fhome%2Fparticulares_es.html%23&r=https%3A%2F%2Fwww.caixabank.es%2Findex_es.html&cc=EUR&events=event42&c19=https%3A%2F%2Fwww.caixabank.es%2Findex_es.html&v19=D%3Dc19&v50=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&v84=boton%20pulsado%3APOLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON%2Ccookies%20aceptadas%3AAA%7CAT%7CDBCK%7CYTB%7CGOOG%7CAC%7CTIQ%7CNCP%7CCEXTLO%7CFB%7CAAM%7CLK%7CTD%7CSIZMEK&pe=lnk_o&pev2=GDPR%3APOLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON%3AAA%7CAT%7CDBCK%7CYTB%7CGOOG%7CAC%7CTIQ%7CNCP%7CCEXTLO%7CFB%7CAAM%7CLK%7CTD%7CSIZMEK&s=1920x969&c=24&j=1.6&v=N&k=Y&bw=1920&bh=947&AQE=1
+violation:   inline
+violation:   https://js.pp.caixabank.es/static/js/d3d3LmNhaXhhYmFuay5lcw==/8c49b4d0/bcaptcha.js
+violation:   https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+violation:   https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEOVideoHtmlTranslation.js
+violation:   inline
+violation:   inline
+violation:   https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEOVideoHtmlTranslation.js
+violation:   inline
+violation:   inline
+violation:   inline
+violation:   https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+violation:   inline
+violation:   inline
+violation:   inline
+violation:   https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+violation:   inline
+violation:   inline
+violation:   inline
+violation:   https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEOVideoHtmlTranslation.js
+violation:   https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js
+violation:   https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEOVideoHtmlTranslation.js
+violation:   inline
+violation:   https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEOVideoHtmlTranslation.js
+violation:   inline
+violation:   inline
+violation:   inline
+Total: 0kB	Added: 0kB	Fraction: NaN	Now: 1693434068473
+Total: 1kB	Added: 40kB	Fraction: 0.9865728261954677	Now: 1693434069659
+Total: 117kB	Added: 101kB	Fraction: 0.46255997140618343	Now: 1693434070826
+violation:   https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+Total: 272kB	Added: 254kB	Fraction: 0.48314512708439133	Now: 1693434072104
+Total: 404kB	Added: 378kB	Fraction: 0.48367681669481266	Now: 1693434073155
+Total: 578kB	Added: 398kB	Fraction: 0.40792367217547615	Now: 1693434074385
+Total: 844kB	Added: 419kB	Fraction: 0.33160919995249594	Now: 1693434075740
+Total: 886kB	Added: 428kB	Fraction: 0.3258170068865432	Now: 1693434078340
+Total: 886kB	Added: 428kB	Fraction: 0.3258170068865432	Now: 1693434081468
+Successfully accepted cookies
+Total: 963kB	Added: 428kB	Fraction: 0.3079396002343528	Now: 1693434086213
+Total: 967kB	Added: 572kB	Fraction: 0.3717351167301909	Now: 1693434087670
+Total: 989kB	Added: 717kB	Fraction: 0.4202900504636927	Now: 1693434088821
+Total: 1108kB	Added: 768kB	Fraction: 0.40932497191803424	Now: 1693434089966
+violation:   inline
+Total: 1211kB	Added: 830kB	Fraction: 0.406636905534953	Now: 1693434091114
+violation:   https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+violation:   https://js.pp.caixabank.es/static/js/d3d3LmNhaXhhYmFuay5lcw==/8c49b4d0/bcaptcha.js
+Total: 1214kB	Added: 1026kB	Fraction: 0.45796714519466664	Now: 1693434092332
+Total: 1309kB	Added: 1067kB	Fraction: 0.44921078160082656	Now: 1693434093361
+Total: 1468kB	Added: 1088kB	Fraction: 0.42575734100807694	Now: 1693434094429
+violation:   https://metrics.caixabank.es/b/ss/lacaixaes/10/JS-2.9.0/s9987871480290?AQB=1&ndh=1&pf=1&callback=s_c_il[1].doPostbacks&et=1&t=30%2F7%2F2023%2023%3A21%3A34%203%20-60&d.&nsid=0&jsonv=1&.d&sdid=3054F653F892A6E7-7709643CE46D0B5A&mid=08815339742865481521471773332740054382&aamlh=6&ce=UTF-8&ns=lacaixa&pageName=caixabankes%3Aparticulares%3Abancadistancia&g=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fbanca-distancia.html%3Floce%3Dhomepart-1-1-destacado-BancaDigital-BancaDigital-NA&c.&cm.&ssf=0&.cm&.c&cc=EUR&ch=caixabankes&server=www.caixabank.es&events=event29&aamb=6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y&c1=particulares&h1=caixabankes%3Aparticulares%3Abancadistancia&l1=loce%3Dhomepart-1-1-destacado-BancaDigital-BancaDigital-NA&v3=homepart-1-1-destacado-BancaDigital-BancaDigital-NA&c6=bancadistancia&c8=08815339742865481521471773332740054382&v8=08815339742865481521471773332740054382&v10=D%3DpageName&c11=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fbanca-distancia.html&v11=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fbanca-distancia.html&c12=New&v12=New&c14=23&v14=23&c15=23%3A21&c17=es&v17=es&c18=no%20logado&v18=no%20logado&v19=D%3Dc19&v28=caixabankes%3Aparticulares%3Abancadistancia&c31=event29&v31=true&c32=D%3Ds_vi&v32=true&c33=D%3Ds_fid&v34=true&v36=true&v37=true&v38=true&c44=20150903v1&v50=caixabankes%3Aparticulares%3Abancadistancia&c74=caixabank-web&v110=produccion&v140=false&v141=false&v142=false&v171=false&v191=true&v192=true&s=1920x969&c=24&j=1.6&v=N&k=Y&bw=1920&bh=947&mcorgid=3A3F337B54E77B700A4C98A1%40AdobeOrg&AQE=1
+Total: 1495kB	Added: 1100kB	Fraction: 0.4238680384470451	Now: 1693434095545
+Total: 1951kB	Added: 1110kB	Fraction: 0.36255525850575054	Now: 1693434096865
+Total: 1951kB	Added: 1110kB	Fraction: 0.36255525850575054	Now: 1693434105008
+Total: 1951kB	Added: 1110kB	Fraction: 0.36255525850575054	Now: 1693434107939
+Total: 2051kB	Added: 1276kB	Fraction: 0.38347981583911117	Now: 1693434109078
+Total: 2357kB	Added: 1306kB	Fraction: 0.3565236166545743	Now: 1693434110284
+Total: 2360kB	Added: 1326kB	Fraction: 0.35975654248666167	Now: 1693434121066
+Total: 2406kB	Added: 1534kB	Fraction: 0.3893350950899326	Now: 1693434122103
+Total: 2542kB	Added: 1566kB	Fraction: 0.3811615716845324	Now: 1693434123386
+Total: 2862kB	Added: 1586kB	Fraction: 0.3565538190052758	Now: 1693434124595
+Total: 3290kB	Added: 1596kB	Fraction: 0.32664882220407765	Now: 1693434125686
+Total: 4247kB	Added: 1607kB	Fraction: 0.27449013410779877	Now: 1693434126713
+Total: 4250kB	Added: 1616kB	Fraction: 0.27554166003274966	Now: 1693434135287
+Total: 4250kB	Added: 1616kB	Fraction: 0.27554166003274966	Now: 1693434137530
+Total: 4310kB	Added: 1804kB	Fraction: 0.2950242112038051	Now: 1693434138669
+violation:   https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEOVideoHtmlTranslation.js
+Total: 4789kB	Added: 1846kB	Fraction: 0.2782339166337073	Now: 1693434139908
+Total: 4793kB	Added: 1888kB	Fraction: 0.28258346266783546	Now: 1693434141203
+Total: 4795kB	Added: 1888kB	Fraction: 0.282473439140835	Now: 1693434145638
+Total: 4795kB	Added: 1888kB	Fraction: 0.282473439140835	Now: 1693434152120
+Total: 4875kB	Added: 2107kB	Fraction: 0.3018362260417374	Now: 1693434153212
+violation:   inline
+Total: 4886kB	Added: 2118kB	Fraction: 0.3023782462445193	Now: 1693434155131
+Total: 5172kB	Added: 2160kB	Fraction: 0.2945526042813973	Now: 1693434156396
+Total: 6504kB	Added: 2160kB	Fraction: 0.2492654516593607	Now: 1693434157733
+Total: 6504kB	Added: 2169kB	Fraction: 0.25009857280414377	Now: 1693434165677
+Total: 6504kB	Added: 2169kB	Fraction: 0.25009857280414377	Now: 1693434168972
+Total: 6537kB	Added: 2327kB	Fraction: 0.26254182978930785	Now: 1693434170181
+Total: 6614kB	Added: 2359kB	Fraction: 0.2628875520953308	Now: 1693434171320
+Total: 6932kB	Added: 2390kB	Fraction: 0.25637644165313994	Now: 1693434172479
+Total: 7175kB	Added: 2390kB	Fraction: 0.24987501095157075	Now: 1693434173588
+Total: 7523kB	Added: 2401kB	Fraction: 0.24192022973070068	Now: 1693434174789
+Total: 8139kB	Added: 2401kB	Fraction: 0.22776792575151206	Now: 1693434175826
+Total: 8320kB	Added: 2410kB	Fraction: 0.2246357666502181	Now: 1693434179289
+Total: 8320kB	Added: 2410kB	Fraction: 0.2246357666502181	Now: 1693434187041
+Total: 8320kB	Added: 2420kB	Fraction: 0.22533720789599646	Now: 1693434188086
+Total: 8320kB	Added: 2420kB	Fraction: 0.22533720789599646	Now: 1693434189284
+Total: 8328kB	Added: 2420kB	Fraction: 0.22517192149689744	Now: 1693434190483
+Total: 8348kB	Added: 2420kB	Fraction: 0.22475732230628875	Now: 1693434191514
+Total: 8349kB	Added: 2420kB	Fraction: 0.2247348659166064	Now: 1693434192586
+Total: 8670kB	Added: 2420kB	Fraction: 0.21823705920867006	Now: 1693434194174
+Total: 8685kB	Added: 2420kB	Fraction: 0.21793876178603472	Now: 1693434195404
+Total: 8707kB	Added: 2420kB	Fraction: 0.21750410971805878	Now: 1693434196531
+Total: 8708kB	Added: 2420kB	Fraction: 0.2174795029322347	Now: 1693434198398
+Total: 8708kB	Added: 2420kB	Fraction: 0.2174795029322347	Now: 1693434199400
+Total: 8749kB	Added: 2420kB	Fraction: 0.2166788932377721	Now: 1693434200413
+Total: 9283kB	Added: 2420kB	Fraction: 0.2067949613471155	Now: 1693434201599
+Total: 9285kB	Added: 2420kB	Fraction: 0.20677167562179177	Now: 1693434212027
+Total: 9354kB	Added: 2504kB	Fraction: 0.2111513022851173	Now: 1693434213143
+violation:   inline
+Total: 9560kB	Added: 2546kB	Fraction: 0.21031700337698808	Now: 1693434214296
+Total: 9794kB	Added: 2577kB	Fraction: 0.2083233978713997	Now: 1693434215538
+Total: 9795kB	Added: 2588kB	Fraction: 0.20898157843798404	Now: 1693434216653
+Total: 9977kB	Added: 2588kB	Fraction: 0.20596991333555176	Now: 1693434217910
+Total: 12557kB	Added: 2628kB	Fraction: 0.17307453467276457	Now: 1693434219110
+Total: 12557kB	Added: 2628kB	Fraction: 0.17307453467276457	Now: 1693434229568
+Total: 12587kB	Added: 2882kB	Fraction: 0.18632258149594863	Now: 1693434240797
+Total: 12810kB	Added: 2977kB	Fraction: 0.18857885877524327	Now: 1693434242261
+Total: 13073kB	Added: 3009kB	Fraction: 0.187126259641846	Now: 1693434243599
+Total: 13073kB	Added: 3019kB	Fraction: 0.18762056257335044	Now: 1693434254675
+Total: 13216kB	Added: 3201kB	Fraction: 0.19497950023305435	Now: 1693434255949
+Total: 13217kB	Added: 3244kB	Fraction: 0.19707178618090548	Now: 1693434257232
+Total: 13217kB	Added: 3244kB	Fraction: 0.19707178618090548	Now: 1693434260010
+Total: 13219kB	Added: 3285kB	Fraction: 0.19902633121874688	Now: 1693434270546
+Total: 13237kB	Added: 3528kB	Fraction: 0.2104591377210364	Now: 1693434271783
+Total: 13239kB	Added: 3549kB	Fraction: 0.21140709483306538	Now: 1693434274113
+Total: 13239kB	Added: 3549kB	Fraction: 0.21140709483306538	Now: 1693434283255
+violation:   https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEOVideoHtmlTranslation.js
+Total: 13293kB	Added: 3708kB	Fraction: 0.21810690511456723	Now: 1693434284534
+violation:   inline
+Total: 13448kB	Added: 3868kB	Fraction: 0.22337207405990617	Now: 1693434285786
+Total: 13449kB	Added: 3889kB	Fraction: 0.2242910813058313	Now: 1693434286842
+Total: 13449kB	Added: 3889kB	Fraction: 0.2242910813058313	Now: 1693434297074
+Total: 13535kB	Added: 4040kB	Fraction: 0.22986631186584677	Now: 1693434298253
+Total: 13702kB	Added: 4073kB	Fraction: 0.22914314381545622	Now: 1693434299329
+Total: 13976kB	Added: 4083kB	Fraction: 0.2260930991356297	Now: 1693434304413
+Total: 13976kB	Added: 4083kB	Fraction: 0.2260930991356297	Now: 1693434310095
+Total: 14035kB	Added: 4290kB	Fraction: 0.23409514862252032	Now: 1693434311121
+Total: 14274kB	Added: 4366kB	Fraction: 0.23421967797553844	Now: 1693434312190
+Total: 14507kB	Added: 4388kB	Fraction: 0.232222256152696	Now: 1693434313216
+Total: 14784kB	Added: 4399kB	Fraction: 0.22931436053877266	Now: 1693434315458
+Total: 14784kB	Added: 4399kB	Fraction: 0.22931436053877266	Now: 1693434317547
+Total: 14784kB	Added: 4409kB	Fraction: 0.2297167570194638	Now: 1693434328227
+Total: 14802kB	Added: 4637kB	Fraction: 0.23855351219385476	Now: 1693434329652
+Total: 14804kB	Added: 4659kB	Fraction: 0.23936001068704055	Now: 1693434334725
+Total: 14804kB	Added: 4659kB	Fraction: 0.23936001068704055	Now: 1693434339795
+Total: 14806kB	Added: 4811kB	Fraction: 0.2452491869901915	Now: 1693434340810
+Total: 15026kB	Added: 4843kB	Fraction: 0.2437652205200354	Now: 1693434342048
+Total: 15973kB	Added: 4865kB	Fraction: 0.2334542728366593	Now: 1693434353647
+Total: 15992kB	Added: 4984kB	Fraction: 0.2376124162304042	Now: 1693434354925
+Total: 15997kB	Added: 5039kB	Fraction: 0.239552477659369	Now: 1693434356248
+Total: 16242kB	Added: 5082kB	Fraction: 0.23831787358963055	Now: 1693434357425
+Total: 16445kB	Added: 5093kB	Fraction: 0.2364634394680416	Now: 1693434359836
+Total: 18093kB	Added: 5093kB	Fraction: 0.21965591974942764	Now: 1693434361186
+Total: 18625kB	Added: 5103kB	Fraction: 0.21507126005806873	Now: 1693434365216
+Total: 18625kB	Added: 5103kB	Fraction: 0.21507126005806873	Now: 1693434372538
+Total: 18643kB	Added: 5322kB	Fraction: 0.22207359492331394	Now: 1693434373631
+Total: 18697kB	Added: 5333kB	Fraction: 0.2219345089645494	Now: 1693434374750
+Total: 18698kB	Added: 5343kB	Fraction: 0.22226428472460502	Now: 1693434385259
+Total: 18700kB	Added: 5575kB	Fraction: 0.22966666847920028	Now: 1693434386285
+Total: 18726kB	Added: 5619kB	Fraction: 0.23081481306221682	Now: 1693434395482
+Total: 18726kB	Added: 5619kB	Fraction: 0.23081481306221682	Now: 1693434397615
+Total: 18744kB	Added: 5841kB	Fraction: 0.23758570296002113	Now: 1693434398923
+Total: 18745kB	Added: 5852kB	Fraction: 0.23792139165277468	Now: 1693434400195
+Total: 18803kB	Added: 5863kB	Fraction: 0.23768659934064845	Now: 1693434410882
+Total: 18821kB	Added: 6086kB	Fraction: 0.2443395117012687	Now: 1693434412099
+Total: 18821kB	Added: 6120kB	Fraction: 0.24536506526196603	Now: 1693434413165
+Total: 18823kB	Added: 6141kB	Fraction: 0.24600435378498695	Now: 1693434424088
+Total: 18826kB	Added: 6343kB	Fraction: 0.2520184514160389	Now: 1693434425188
+violation:   inline
+Total: 18843kB	Added: 6387kB	Fraction: 0.25315838401429697	Now: 1693434426491
+Total: 18844kB	Added: 6398kB	Fraction: 0.25346385198501264	Now: 1693434437611
+violation:   https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+Total: 18849kB	Added: 6566kB	Fraction: 0.25835097985772054	Now: 1693434438869
+violation:   https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEOVideoHtmlTranslation.js
+Total: 18860kB	Added: 6679kB	Fraction: 0.2615261326983316	Now: 1693434439947
+Total: 18926kB	Added: 6735kB	Fraction: 0.2624511307929802	Now: 1693434441312
+Total: 19459kB	Added: 6746kB	Fraction: 0.2574292370480186	Now: 1693434446234
+Total: 19461kB	Added: 6757kB	Fraction: 0.2577101254264798	Now: 1693434447727
+Total: 19461kB	Added: 6757kB	Fraction: 0.2577101254264798	Now: 1693434456199
+Total: 19462kB	Added: 6835kB	Fraction: 0.2599196752450069	Now: 1693434457300
+Total: 19491kB	Added: 6846kB	Fraction: 0.25994485841659026	Now: 1693434458387
+Total: 19706kB	Added: 6891kB	Fraction: 0.25909163575976973	Now: 1693434459389
+Total: 19968kB	Added: 6913kB	Fraction: 0.257166738698927	Now: 1693434470293
+Total: 19980kB	Added: 7048kB	Fraction: 0.26076679790070917	Now: 1693434471312
+Total: 20062kB	Added: 7048kB	Fraction: 0.25997845264177194	Now: 1693434472419
+Total: 20351kB	Added: 7081kB	Fraction: 0.25813919934991825	Now: 1693434473506
+Total: 21510kB	Added: 7103kB	Fraction: 0.24825656116716163	Now: 1693434484944
+Total: 21516kB	Added: 7226kB	Fraction: 0.25141809940774473	Now: 1693434485992
+Total: 21533kB	Added: 7305kB	Fraction: 0.2533114189138159	Now: 1693434496463
+Total: 21663kB	Added: 7497kB	Fraction: 0.25709115102214386	Now: 1693434497584
+Total: 21757kB	Added: 7531kB	Fraction: 0.25713506058848057	Now: 1693434498633
+Total: 22067kB	Added: 7542kB	Fraction: 0.2547313970769893	Now: 1693434502409
+Total: 22070kB	Added: 7553kB	Fraction: 0.25496578192182284	Now: 1693434507356
+Total: 22070kB	Added: 7553kB	Fraction: 0.25496578192182284	Now: 1693434513024
+Total: 22168kB	Added: 7699kB	Fraction: 0.2577843993205456	Now: 1693434514237
+Total: 22180kB	Added: 7722kB	Fraction: 0.2582464384399842	Now: 1693434515266
+Total: 22182kB	Added: 7734kB	Fraction: 0.25851928289705256	Now: 1693434516310
+Total: 22182kB	Added: 7744kB	Fraction: 0.25877897206890516	Now: 1693434517550
+Total: 22182kB	Added: 7744kB	Fraction: 0.25877897206890516	Now: 1693434526730
+Total: 22182kB	Added: 7755kB	Fraction: 0.25904053545742295	Now: 1693434527913
+Total: 22182kB	Added: 7755kB	Fraction: 0.25904053545742295	Now: 1693434528964
+Total: 22182kB	Added: 7755kB	Fraction: 0.25904053545742295	Now: 1693434566951
+Total: 22191kB	Added: 7894kB	Fraction: 0.26238310169450396	Now: 1693434568166
+Total: 22310kB	Added: 7911kB	Fraction: 0.26175662090118734	Now: 1693434569167
+Total: 24107kB	Added: 7928kB	Fraction: 0.24747990183316756	Now: 1693434570409
+Total: 24107kB	Added: 7928kB	Fraction: 0.24747990183316756	Now: 1693434572493
+Total: 24111kB	Added: 7936kB	Fraction: 0.24763767978327075	Now: 1693434574609
+Total: 24111kB	Added: 7936kB	Fraction: 0.24763767978327075	Now: 1693434583957
+Total: 24206kB	Added: 8090kB	Fraction: 0.2504964993847925	Now: 1693434585019
+Total: 24224kB	Added: 8124kB	Fraction: 0.2511420018261642	Now: 1693434586430
+Total: 24224kB	Added: 8124kB	Fraction: 0.2511420018261642	Now: 1693434596815
+violation:   inline
+Total: 24288kB	Added: 8294kB	Fraction: 0.2545637681138514	Now: 1693434597842
+Total: 24289kB	Added: 8311kB	Fraction: 0.25492695106041136	Now: 1693434599115
+Total: 24289kB	Added: 8311kB	Fraction: 0.25492695106041136	Now: 1693434609572
+violation:   inline
+Total: 24362kB	Added: 8422kB	Fraction: 0.2568886927204337	Now: 1693434610665
+violation:   https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEOVideoHtmlTranslation.js
+Total: 24897kB	Added: 8533kB	Fraction: 0.25524029798242065	Now: 1693434611673
+Total: 24899kB	Added: 8533kB	Fraction: 0.25523023540867684	Now: 1693434612876
+Total: 24899kB	Added: 8533kB	Fraction: 0.25523023540867684	Now: 1693434615535
+Total: 24899kB	Added: 8533kB	Fraction: 0.25523023540867684	Now: 1693434617201
+Total: 25045kB	Added: 8533kB	Fraction: 0.25412039483837473	Now: 1693434621913
+Total: 25186kB	Added: 8688kB	Fraction: 0.25647192780520467	Now: 1693434623075
+Total: 25306kB	Added: 8705kB	Fraction: 0.25595081441977363	Now: 1693434624474
+Total: 25746kB	Added: 8722kB	Fraction: 0.253042675574114	Now: 1693434627744
+Total: 25746kB	Added: 8722kB	Fraction: 0.253042675574114	Now: 1693434635868
+Total: 25802kB	Added: 8868kB	Fraction: 0.2557869259367625	Now: 1693434637122
+Total: 25803kB	Added: 8868kB	Fraction: 0.25578045581420167	Now: 1693434638214
+Total: 25924kB	Added: 8868kB	Fraction: 0.254890143224764	Now: 1693434639345
+Total: 25924kB	Added: 8868kB	Fraction: 0.254890143224764	Now: 1693434640740
+Total: 26745kB	Added: 8893kB	Fraction: 0.24954849050873232	Now: 1693434641950
+Total: 28384kB	Added: 8902kB	Fraction: 0.2387496860802877	Now: 1693434642998
+Total: 29518kB	Added: 8902kB	Fraction: 0.23170755831038295	Now: 1693434644221
+Total: 29813kB	Added: 8910kB	Fraction: 0.23009447305280467	Now: 1693434655440
+violation:   inline
+Total: 29832kB	Added: 9093kB	Fraction: 0.2336031241011499	Now: 1693434656748
+Total: 29835kB	Added: 9134kB	Fraction: 0.23440366379204158	Now: 1693434658423
+Total: 29835kB	Added: 9134kB	Fraction: 0.23440366379204158	Now: 1693434668079
+Total: 29835kB	Added: 9221kB	Fraction: 0.23609605890739296	Now: 1693434669126
+Total: 30332kB	Added: 9290kB	Fraction: 0.2344722426210458	Now: 1693434670324
+Total: 31515kB	Added: 9307kB	Fraction: 0.22799503960377582	Now: 1693434681746
+violation:   https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEOVideoHtmlTranslation.js
+Total: 31533kB	Added: 9490kB	Fraction: 0.23133775266304746	Now: 1693434682798
+Total: 31534kB	Added: 9534kB	Fraction: 0.23215601331659932	Now: 1693434684014
+Total: 31535kB	Added: 9542kB	Fraction: 0.23230392564991326	Now: 1693434688704
+Total: 31535kB	Added: 9542kB	Fraction: 0.23230392564991326	Now: 1693434695086
+Total: 31535kB	Added: 9682kB	Fraction: 0.23490914343781477	Now: 1693434696208
+Total: 31554kB	Added: 9770kB	Fraction: 0.23641857032233085	Now: 1693434697412
+Total: 31555kB	Added: 9778kB	Fraction: 0.2365636861800089	Now: 1693434698442
+Total: 31555kB	Added: 9778kB	Fraction: 0.2365636861800089	Now: 1693434708603
+Total: 31555kB	Added: 9786kB	Fraction: 0.23671013356949067	Now: 1693434709769
+Total: 31559kB	Added: 9786kB	Fraction: 0.23668446748681338	Now: 1693434710910
+Total: 31559kB	Added: 9786kB	Fraction: 0.23668446748681338	Now: 1693434711944
+Total: 31560kB	Added: 9794kB	Fraction: 0.236829333582887	Now: 1693434722511
+Total: 31560kB	Added: 9854kB	Fraction: 0.23794163678024857	Now: 1693434723575
+Total: 31660kB	Added: 9889kB	Fraction: 0.23800392511271384	Now: 1693434724725
+Total: 32058kB	Added: 9914kB	Fraction: 0.23620872581329014	Now: 1693434736219
+Total: 32061kB	Added: 10125kB	Fraction: 0.24000254117587935	Now: 1693434737403
+Total: 32061kB	Added: 10125kB	Fraction: 0.24000254117587935	Now: 1693434738497
+Total: 32061kB	Added: 10125kB	Fraction: 0.24000254117587935	Now: 1693434748771
+Total: 32061kB	Added: 10221kB	Fraction: 0.24173150173865707	Now: 1693434750006
+Total: 32067kB	Added: 10247kB	Fraction: 0.24217648731883865	Now: 1693434751256
+Total: 32313kB	Added: 10265kB	Fraction: 0.24107601323362124	Now: 1693434752278
+Total: 33851kB	Added: 10282kB	Fraction: 0.2329849556376751	Now: 1693434753700
+Total: 33851kB	Added: 10290kB	Fraction: 0.23312337631813093	Now: 1693434764242
+Total: 33919kB	Added: 10415kB	Fraction: 0.23491425895745285	Now: 1693434765601
+Total: 33998kB	Added: 10450kB	Fraction: 0.23510319295853593	Now: 1693434766740
+Total: 34007kB	Added: 10494kB	Fraction: 0.23582136701482473	Now: 1693434767934
+Total: 34007kB	Added: 10494kB	Fraction: 0.23582136701482473	Now: 1693434771541
+Total: 35083kB	Added: 10494kB	Fraction: 0.2302547219666491	Now: 1693434772755
+Total: 37896kB	Added: 10494kB	Fraction: 0.21687004557677245	Now: 1693434773829
+Total: 37896kB	Added: 10503kB	Fraction: 0.21700003785209682	Now: 1693434784283
+Total: 37897kB	Added: 10635kB	Fraction: 0.219125929396103	Now: 1693434785288
+violation:   https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+violation:   inline
+violation:   https://js.pp.caixabank.es/static/js/d3d3LmNhaXhhYmFuay5lcw==/8c49b4d0/bcaptcha.js
+Total: 37897kB	Added: 10688kB	Fraction: 0.2199832846890864	Now: 1693434786290
+Total: 38071kB	Added: 10723kB	Fraction: 0.21976140488138704	Now: 1693434787363
+Total: 38675kB	Added: 10749kB	Fraction: 0.21749019421539642	Now: 1693434798515
+Total: 38693kB	Added: 10984kB	Fraction: 0.2211015846460612	Now: 1693434799738
+Total: 38694kB	Added: 10993kB	Fraction: 0.2212389791956582	Now: 1693434800850
+Total: 38695kB	Added: 11001kB	Fraction: 0.22136650817618553	Now: 1693434811560
+violation:   inline
+Total: 38714kB	Added: 11208kB	Fraction: 0.22450609683093553	Now: 1693434812653
+Total: 38767kB	Added: 11243kB	Fraction: 0.22482043101674867	Now: 1693434814562
+Total: 38767kB	Added: 11243kB	Fraction: 0.22482043101674867	Now: 1693434823841
+violation:   https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEOVideoHtmlTranslation.js
+Total: 38837kB	Added: 11389kB	Fraction: 0.22675409807081587	Now: 1693434825157
+Total: 38837kB	Added: 11397kB	Fraction: 0.22688095637887	Now: 1693434826201
+Total: 38853kB	Added: 11460kB	Fraction: 0.2277796671375038	Now: 1693434827532
+Total: 39553kB	Added: 11470kB	Fraction: 0.2247956906332375	Now: 1693434828604
+Total: 40244kB	Added: 11470kB	Fraction: 0.22178969501423904	Now: 1693434831355
+Total: 40246kB	Added: 11478kB	Fraction: 0.22190816214496392	Now: 1693434842118
+Total: 40280kB	Added: 11596kB	Fraction: 0.223539073977226	Now: 1693434843241
+Total: 41314kB	Added: 11632kB	Fraction: 0.21970205278193583	Now: 1693434844298
+Total: 41314kB	Added: 11641kB	Fraction: 0.21982357954103396	Now: 1693434855030
+Total: 41400kB	Added: 11777kB	Fraction: 0.22147037200328754	Now: 1693434856651
+Total: 41451kB	Added: 11822kB	Fraction: 0.2219174881871528	Now: 1693434857768
+Total: 41977kB	Added: 11832kB	Fraction: 0.21988472202050263	Now: 1693434861246
+Total: 41978kB	Added: 11840kB	Fraction: 0.22000160616159561	Now: 1693434862393
+Total: 41978kB	Added: 11840kB	Fraction: 0.22000160616159561	Now: 1693434871875
+violation:   https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEOVideoHtmlTranslation.js
+Total: 41999kB	Added: 12022kB	Fraction: 0.22254483290657365	Now: 1693434873121
+Total: 42034kB	Added: 12068kB	Fraction: 0.2230553691040087	Now: 1693434874486
+Total: 42034kB	Added: 12076kB	Fraction: 0.22317375002030587	Now: 1693434884992
+Total: 42036kB	Added: 12222kB	Fraction: 0.22525608503998332	Now: 1693434886033
+Total: 42072kB	Added: 12249kB	Fraction: 0.22549009067732373	Now: 1693434887086
+Total: 42452kB	Added: 12258kB	Fraction: 0.2240535469418571	Now: 1693434888233
+Total: 42452kB	Added: 12258kB	Fraction: 0.2240535469418571	Now: 1693434889833
+Total: 44417kB	Added: 12267kB	Fraction: 0.21640408107084974	Now: 1693434901306
+Total: 44435kB	Added: 12449kB	Fraction: 0.21885327990535497	Now: 1693434902448
+Total: 44489kB	Added: 12468kB	Fraction: 0.21890063315446995	Now: 1693434903705
+Total: 44489kB	Added: 12476kB	Fraction: 0.2190144688491329	Now: 1693434905386
+Total: 44489kB	Added: 12476kB	Fraction: 0.2190144688491329	Now: 1693434914933
+Total: 44551kB	Added: 12687kB	Fraction: 0.22165190210286606	Now: 1693434916058
+violation:   inline
+Total: 44674kB	Added: 12750kB	Fraction: 0.22203728150013427	Now: 1693434917246
+Total: 44696kB	Added: 12787kB	Fraction: 0.22245443177674668	Now: 1693434918487
+Total: 44697kB	Added: 12796kB	Fraction: 0.22256777199225422	Now: 1693434929236
+Total: 44740kB	Added: 13043kB	Fraction: 0.22571948196609656	Now: 1693434930484
+Total: 44762kB	Added: 13117kB	Fraction: 0.22662271561883965	Now: 1693434931561
+Total: 44762kB	Added: 13117kB	Fraction: 0.22662271561883965	Now: 1693434935659
+Total: 44762kB	Added: 13117kB	Fraction: 0.22662271561883965	Now: 1693434941919
+Total: 44781kB	Added: 13374kB	Fraction: 0.22997541795976856	Now: 1693434943101
+Total: 44783kB	Added: 13393kB	Fraction: 0.23021357750284563	Now: 1693434944257
+Total: 44783kB	Added: 13393kB	Fraction: 0.23021357750284563	Now: 1693434954506
+Total: 44783kB	Added: 13479kB	Fraction: 0.23134661339920468	Now: 1693434955716
+Total: 44801kB	Added: 13565kB	Fraction: 0.23241177437310556	Now: 1693434956920
+Total: 44803kB	Added: 13583kB	Fraction: 0.23264905670925223	Now: 1693434965936
+Total: 44803kB	Added: 13583kB	Fraction: 0.23264905670925223	Now: 1693434968029
+Total: 44820kB	Added: 13776kB	Fraction: 0.23509907170144267	Now: 1693434969201
+Total: 44822kB	Added: 13833kB	Fraction: 0.2358416219456473	Now: 1693434970547
+Total: 44823kB	Added: 13842kB	Fraction: 0.23595590483598788	Now: 1693434981922
+Total: 44823kB	Added: 13851kB	Fraction: 0.23607094355793762	Now: 1693434983417
+Total: 44824kB	Added: 13851kB	Fraction: 0.23606879507719963	Now: 1693434984910
+Total: 44824kB	Added: 13851kB	Fraction: 0.2360666466355679	Now: 1693434986197
+Total: 44826kB	Added: 13851kB	Fraction: 0.2360601934992147	Now: 1693434987583
+Total: 44829kB	Added: 13851kB	Fraction: 0.23604689407048426	Now: 1693434988602
+Total: 44829kB	Added: 13851kB	Fraction: 0.23604689407048426	Now: 1693434990074
+Total: 44829kB	Added: 13851kB	Fraction: 0.23604689407048426	Now: 1693434991238
+Total: 44848kB	Added: 13851kB	Fraction: 0.23597192476060447	Now: 1693434992277
+Total: 44848kB	Added: 13851kB	Fraction: 0.23596977004189762	Now: 1693434993312
+Total: 44851kB	Added: 13851kB	Fraction: 0.23595805645738738	Now: 1693435004823
+Total: 44869kB	Added: 14005kB	Fraction: 0.2378800047450062	Now: 1693435005845
+Total: 44871kB	Added: 14015kB	Fraction: 0.23800125670960778	Now: 1693435006935
+Total: 44871kB	Added: 14024kB	Fraction: 0.23811474740403094	Now: 1693435018235
+Total: 44933kB	Added: 14228kB	Fraction: 0.24050051328567637	Now: 1693435019648
+Total: 44935kB	Added: 14238kB	Fraction: 0.2406221138696661	Now: 1693435020655
+Total: 44935kB	Added: 14247kB	Fraction: 0.2407346350226218	Now: 1693435031240
+Total: 44936kB	Added: 14334kB	Fraction: 0.24184009735104964	Now: 1693435032379
+Total: 45024kB	Added: 14373kB	Fraction: 0.24197831247482388	Now: 1693435033380
+Total: 45332kB	Added: 14401kB	Fraction: 0.24109182377875055	Now: 1693435034749
+Total: 46776kB	Added: 14411kB	Fraction: 0.23552276517187687	Now: 1693435035782
+Total: 46776kB	Added: 14411kB	Fraction: 0.23552276517187687	Now: 1693435038677
+Total: 46781kB	Added: 14420kB	Fraction: 0.2356146095282847	Now: 1693435049554
+Total: 46854kB	Added: 14545kB	Fraction: 0.23689805374072065	Now: 1693435050682
+Total: 46908kB	Added: 14574kB	Fraction: 0.23704335714441047	Now: 1693435052018
+Total: 46910kB	Added: 14602kB	Fraction: 0.23738990737392995	Now: 1693435053024
+Total: 46910kB	Added: 14602kB	Fraction: 0.23738990737392995	Now: 1693435063167
+violation:   https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEOVideoHtmlTranslation.js
+Total: 46912kB	Added: 14814kB	Fraction: 0.24000143082312814	Now: 1693435064222
+Total: 46930kB	Added: 14853kB	Fraction: 0.24040460255943089	Now: 1693435066051
+Total: 46930kB	Added: 14853kB	Fraction: 0.24040460255943089	Now: 1693435075423
+Total: 46932kB	Added: 15018kB	Fraction: 0.24241910725684104	Now: 1693435076658
+Total: 46932kB	Added: 15028kB	Fraction: 0.2425391525659832	Now: 1693435077777
+Total: 46932kB	Added: 15028kB	Fraction: 0.2425391525659832	Now: 1693435079045
+Total: 46932kB	Added: 15028kB	Fraction: 0.2425391525659832	Now: 1693435089444
+violation:   inline
+Total: 46936kB	Added: 15211kB	Fraction: 0.2447619148914362	Now: 1693435090531
+Total: 46936kB	Added: 15250kB	Fraction: 0.2452332055820181	Now: 1693435092383
+Total: 46936kB	Added: 15250kB	Fraction: 0.2452332055820181	Now: 1693435096408
+Total: 46936kB	Added: 15250kB	Fraction: 0.2452332055820181	Now: 1693435103417
+violation:   https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEOVideoHtmlTranslation.js
+Total: 46955kB	Added: 15452kB	Fraction: 0.24759928436012943	Now: 1693435104581
+Total: 46984kB	Added: 15491kB	Fraction: 0.24795599704546067	Now: 1693435105724
+Total: 46984kB	Added: 15500kB	Fraction: 0.24806276421952836	Now: 1693435108327
+Total: 46984kB	Added: 15500kB	Fraction: 0.24806276421952836	Now: 1693435116345
+Total: 46999kB	Added: 15675kB	Fraction: 0.25010564113783657	Now: 1693435117531
+Total: 47056kB	Added: 15705kB	Fraction: 0.2502319703823594	Now: 1693435118708
+Total: 47057kB	Added: 15714kB	Fraction: 0.25033790396215155	Now: 1693435126766
+Total: 47057kB	Added: 15714kB	Fraction: 0.25033790396215155	Now: 1693435129685
+warning:     https://www.caixabank.es/aplnr/videoagent/index_es.html?idReferencia=153&prod=seguros&pos=D&serv=1
+Total: 47180kB	Added: 15831kB	Fraction: 0.25124330403768985	Now: 1693435130845
+Total: 47280kB	Added: 15831kB	Fraction: 0.2508439210580802	Now: 1693435131851
+Total: 47434kB	Added: 15889kB	Fraction: 0.250917553161879	Now: 1693435133048
+Total: 47771kB	Added: 16018kB	Fraction: 0.251103942368687	Now: 1693435134098
+Total: 47772kB	Added: 16027kB	Fraction: 0.251205671749003	Now: 1693435144848
+Total: 47791kB	Added: 16212kB	Fraction: 0.2532995439384785	Now: 1693435146084
+Total: 47792kB	Added: 16231kB	Fraction: 0.2535133738255491	Now: 1693435157084
+Total: 47808kB	Added: 16416kB	Fraction: 0.2556101028718941	Now: 1693435158288
+Total: 47813kB	Added: 16495kB	Fraction: 0.2564952602255976	Now: 1693435159462
+Total: 47841kB	Added: 16495kB	Fraction: 0.2563853473996153	Now: 1693435160561
+Total: 47850kB	Added: 16495kB	Fraction: 0.25634866963344943	Now: 1693435171527
+Total: 47869kB	Added: 16715kB	Fraction: 0.2588171581312646	Now: 1693435172750
+Total: 47870kB	Added: 16735kB	Fraction: 0.2590336053353511	Now: 1693435183546
+Total: 47962kB	Added: 16915kB	Fraction: 0.2607307016305888	Now: 1693435184737
+Total: 48015kB	Added: 16935kB	Fraction: 0.26073980841667704	Now: 1693435187378
+Total: 48015kB	Added: 16935kB	Fraction: 0.26073980841667704	Now: 1693435195902
+violation:   https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEOVideoHtmlTranslation.js
+Total: 48033kB	Added: 17167kB	Fraction: 0.2632991125890702	Now: 1693435196918
+Total: 48035kB	Added: 17217kB	Fraction: 0.2638561924908902	Now: 1693435198124
+Total: 48035kB	Added: 17217kB	Fraction: 0.2638561924908902	Now: 1693435208473
+Total: 48037kB	Added: 17369kB	Fraction: 0.26555438538799975	Now: 1693435209859
+Total: 48252kB	Added: 17388kB	Fraction: 0.2649029497492003	Now: 1693435210924
+Total: 48614kB	Added: 17409kB	Fraction: 0.2636795450953012	Now: 1693435211974
+Total: 49042kB	Added: 17428kB	Fraction: 0.2621970361528121	Now: 1693435217650
+Total: 49042kB	Added: 17428kB	Fraction: 0.2621970361528121	Now: 1693435223128
+Total: 49060kB	Added: 17650kB	Fraction: 0.2645797407073406	Now: 1693435224282
+Total: 49062kB	Added: 17670kB	Fraction: 0.26478869068879446	Now: 1693435236007
+Total: 49080kB	Added: 17882kB	Fraction: 0.26704267932314435	Now: 1693435237156
+Total: 49082kB	Added: 17901kB	Fraction: 0.26725061792296756	Now: 1693435247921
+Total: 49083kB	Added: 17993kB	Fraction: 0.2682481102158133	Now: 1693435249062
+Total: 49222kB	Added: 18055kB	Fraction: 0.2683628100821358	Now: 1693435250259
+Total: 49336kB	Added: 18135kB	Fraction: 0.2687885435302419	Now: 1693435251398
+Total: 49494kB	Added: 18155kB	Fraction: 0.26837334582122957	Now: 1693435252437
+Total: 49518kB	Added: 18155kB	Fraction: 0.2682776534761285	Now: 1693435255090
+Total: 55114kB	Added: 18165kB	Fraction: 0.24788650461661146	Now: 1693435266272
+Total: 55114kB	Added: 18174kB	Fraction: 0.24798351114500808	Now: 1693435267647
+Total: 55114kB	Added: 18174kB	Fraction: 0.24798351114500808	Now: 1693435268837
+Total: 55114kB	Added: 18174kB	Fraction: 0.24798351114500808	Now: 1693435269957
+Total: 55114kB	Added: 18174kB	Fraction: 0.24798351114500808	Now: 1693435271154
+Total: 55117kB	Added: 18174kB	Fraction: 0.24797365496652696	Now: 1693435272404
+Total: 55134kB	Added: 18174kB	Fraction: 0.24791832198176006	Now: 1693435273478
+Total: 55134kB	Added: 18174kB	Fraction: 0.24791635036693496	Now: 1693435274581
+Total: 55136kB	Added: 18174kB	Fraction: 0.24791028015456193	Now: 1693435285672
+violation:   inline
+violation:   https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEOVideoHtmlTranslation.js
+Total: 55302kB	Added: 18368kB	Fraction: 0.24932870833744686	Now: 1693435286730
+Total: 55362kB	Added: 18450kB	Fraction: 0.249955884117178	Now: 1693435287950
+Total: 55362kB	Added: 18480kB	Fraction: 0.2502670569779334	Now: 1693435289149
+Total: 55362kB	Added: 18490kB	Fraction: 0.2503715697626672	Now: 1693435290427
+Total: 55362kB	Added: 18490kB	Fraction: 0.2503715697626672	Now: 1693435292206
+Total: 55364kB	Added: 18500kB	Fraction: 0.25046059815897204	Now: 1693435293669
+Total: 55364kB	Added: 18500kB	Fraction: 0.25046059815897204	Now: 1693435303323
+Total: 55364kB	Added: 18510kB	Fraction: 0.2505564941645982	Now: 1693435304543
+Total: 55364kB	Added: 18510kB	Fraction: 0.2505564941645982	Now: 1693435305991
+Total: 55364kB	Added: 18510kB	Fraction: 0.2505564941645982	Now: 1693435307092
+Total: 55366kB	Added: 18510kB	Fraction: 0.2505525463235632	Now: 1693435308207
+Total: 55366kB	Added: 18510kB	Fraction: 0.2505525463235632	Now: 1693435309601
+Total: 55383kB	Added: 18510kB	Fraction: 0.2504952996554965	Now: 1693435310958
+Total: 55383kB	Added: 18510kB	Fraction: 0.2504952996554965	Now: 1693435312087
+Total: 55386kB	Added: 18510kB	Fraction: 0.25048490630711173	Now: 1693435313109
+Total: 55386kB	Added: 18510kB	Fraction: 0.25048490630711173	Now: 1693435314153
+Total: 55386kB	Added: 18510kB	Fraction: 0.25048490630711173	Now: 1693435324866
+Total: 55421kB	Added: 18622kB	Fraction: 0.25150227331547026	Now: 1693435325990
+Total: 55488kB	Added: 18633kB	Fraction: 0.2513817243473014	Now: 1693435327155
+Total: 55829kB	Added: 18642kB	Fraction: 0.2503263330063804	Now: 1693435328281
+Total: 56942kB	Added: 18673kB	Fraction: 0.246951234511116	Now: 1693435329568
+Total: 56943kB	Added: 18683kB	Fraction: 0.24704353031565543	Now: 1693435340304
+Total: 56961kB	Added: 18880kB	Fraction: 0.24893658490995785	Now: 1693435341514
+Total: 56963kB	Added: 18910kB	Fraction: 0.24923385526246145	Now: 1693435342682
+Total: 56963kB	Added: 18910kB	Fraction: 0.24923385526246145	Now: 1693435352886
+Total: 56963kB	Added: 18982kB	Fraction: 0.2499456092249388	Now: 1693435354043
+Total: 57033kB	Added: 18993kB	Fraction: 0.24981958832043513	Now: 1693435355203
+Total: 57325kB	Added: 19044kB	Fraction: 0.24937024333638255	Now: 1693435356459
+Total: 57631kB	Added: 19065kB	Fraction: 0.24858020369120637	Now: 1693435357510
+Total: 58572kB	Added: 19076kB	Fraction: 0.24566869671123354	Now: 1693435358522
+Total: 58573kB	Added: 19085kB	Fraction: 0.24576081840877892	Now: 1693435369341
+Total: 58670kB	Added: 19199kB	Fraction: 0.2465545794439403	Now: 1693435370436
+violation:   inline
+Total: 58694kB	Added: 19293kB	Fraction: 0.24738925911854653	Now: 1693435371847
+Total: 59665kB	Added: 19303kB	Fraction: 0.2444390177719388	Now: 1693435372984
+Total: 59665kB	Added: 19303kB	Fraction: 0.2444390177719388	Now: 1693435382586
+Total: 59667kB	Added: 19514kB	Fraction: 0.24644762155759067	Now: 1693435383664
+Total: 59683kB	Added: 19556kB	Fraction: 0.24679204733143315	Now: 1693435384876
+Total: 59685kB	Added: 19597kB	Fraction: 0.24718332927842518	Now: 1693435386935
+Total: 59685kB	Added: 19597kB	Fraction: 0.24718332927842518	Now: 1693435396302
+Total: 59704kB	Added: 19839kB	Fraction: 0.24941616647994327	Now: 1693435397392
+Total: 59705kB	Added: 19850kB	Fraction: 0.24951255841565337	Now: 1693435398445
+Total: 59705kB	Added: 19860kB	Fraction: 0.2496035096243281	Now: 1693435409034
+Total: 59884kB	Added: 20006kB	Fraction: 0.2504145254862467	Now: 1693435410209
+Total: 59898kB	Added: 20048kB	Fraction: 0.2507689683979137	Now: 1693435411214
+Total: 59899kB	Added: 20058kB	Fraction: 0.25085724533442283	Now: 1693435417209
+Total: 59899kB	Added: 20058kB	Fraction: 0.25085724533442283	Now: 1693435422182
+Total: 59917kB	Added: 20227kB	Fraction: 0.25238525574750187	Now: 1693435423333
+Total: 59919kB	Added: 20280kB	Fraction: 0.252872320188619	Now: 1693435424516
+Total: 59919kB	Added: 20280kB	Fraction: 0.252872320188619	Now: 1693435434849
+Total: 59937kB	Added: 20470kB	Fraction: 0.25457829471630894	Now: 1693435435932
+Total: 59939kB	Added: 20490kB	Fraction: 0.25476319207903203	Now: 1693435447049
+Total: 59957kB	Added: 20691kB	Fraction: 0.2565625862847224	Now: 1693435448241
+Total: 59959kB	Added: 20712kB	Fraction: 0.25674663942185433	Now: 1693435459333
+Total: 59964kB	Added: 20870kB	Fraction: 0.25818459828407975	Now: 1693435460386
+Total: 59992kB	Added: 20870kB	Fraction: 0.25809657283671744	Now: 1693435461589
+Total: 59992kB	Added: 20870kB	Fraction: 0.25809657283671744	Now: 1693435471800
+Total: 60010kB	Added: 21082kB	Fraction: 0.2599722022536872	Now: 1693435473036
+Total: 60011kB	Added: 21092kB	Fraction: 0.2600658021759557	Now: 1693435475823
+Total: 60011kB	Added: 21092kB	Fraction: 0.2600658021759557	Now: 1693435477802
+Total: 60011kB	Added: 21092kB	Fraction: 0.2600658021759557	Now: 1693435479390
+Total: 60011kB	Added: 21092kB	Fraction: 0.2600658021759557	Now: 1693435480737
+Total: 60012kB	Added: 21102kB	Fraction: 0.26015416642004807	Now: 1693435491383
+Total: 60019kB	Added: 21207kB	Fraction: 0.2610916461413149	Now: 1693435492384
+Total: 60172kB	Added: 21218kB	Fraction: 0.2606962134658479	Now: 1693435493597
+Total: 60582kB	Added: 21260kB	Fraction: 0.2597682695664992	Now: 1693435494862
+Total: 62667kB	Added: 21260kB	Fraction: 0.2533154953187484	Now: 1693435496146
+Total: 62675kB	Added: 21270kB	Fraction: 0.25337992351514643	Now: 1693435506657
+Total: 62815kB	Added: 21364kB	Fraction: 0.2537932667948531	Now: 1693435507878
+Total: 62834kB	Added: 21375kB	Fraction: 0.2538310421999232	Now: 1693435508890
+Total: 62934kB	Added: 21395kB	Fraction: 0.25371266731819425	Now: 1693435510072
+Total: 64093kB	Added: 21417kB	Fraction: 0.25045838103671175	Now: 1693435511192
+Total: 64095kB	Added: 21427kB	Fraction: 0.2505414474973749	Now: 1693435522024
+Total: 64113kB	Added: 21596kB	Fraction: 0.25196496318520467	Now: 1693435523272
+Total: 64115kB	Added: 21648kB	Fraction: 0.252419466305031	Now: 1693435524287
+Total: 64115kB	Added: 21648kB	Fraction: 0.252419466305031	Now: 1693435533717
+Total: 64164kB	Added: 21796kB	Fraction: 0.25356335467377256	Now: 1693435534912
+Total: 64544kB	Added: 21828kB	Fraction: 0.2527174459215399	Now: 1693435536139
+Total: 64839kB	Added: 21838kB	Fraction: 0.25194883331544143	Now: 1693435537217
+Total: 64898kB	Added: 21859kB	Fraction: 0.25195730997663923	Now: 1693435541469
+Total: 64898kB	Added: 21859kB	Fraction: 0.25195730997663923	Now: 1693435548003
+Total: 64900kB	Added: 21997kB	Fraction: 0.2531366245415031	Now: 1693435549009
+Total: 64900kB	Added: 21997kB	Fraction: 0.2531366245415031	Now: 1693435550056
+Total: 64900kB	Added: 21997kB	Fraction: 0.2531366245415031	Now: 1693435560275
+Total: 64930kB	Added: 22232kB	Fraction: 0.2550694953816962	Now: 1693435561456
+Total: 64961kB	Added: 22275kB	Fraction: 0.2553414298097365	Now: 1693435562716
+Total: 65415kB	Added: 22296kB	Fraction: 0.254203411480186	Now: 1693435563988
+Total: 66449kB	Added: 22296kB	Fraction: 0.2512408971904022	Now: 1693435565104
+Total: 67051kB	Added: 22306kB	Fraction: 0.24962998240155834	Now: 1693435571773
+Total: 67051kB	Added: 22306kB	Fraction: 0.24962998240155834	Now: 1693435575938
+Total: 67109kB	Added: 22445kB	Fraction: 0.2506258914466989	Now: 1693435577114
+Total: 67125kB	Added: 22445kB	Fraction: 0.2505831836193655	Now: 1693435578122
+Total: 67404kB	Added: 22487kB	Fraction: 0.2501568550900151	Now: 1693435579140
+Total: 68593kB	Added: 22497kB	Fraction: 0.24697134071724072	Now: 1693435590377
+Total: 68612kB	Added: 22709kB	Fraction: 0.24867564852935567	Now: 1693435591733
+Total: 68613kB	Added: 22730kB	Fraction: 0.2488414078463882	Now: 1693435602064
+Total: 68613kB	Added: 22730kB	Fraction: 0.2488414078463882	Now: 1693435603129
+Total: 68632kB	Added: 22922kB	Fraction: 0.2503662031643055	Now: 1693435604243
+Total: 68633kB	Added: 22998kB	Fraction: 0.2509799135965261	Now: 1693435605411
+Total: 68634kB	Added: 23008kB	Fraction: 0.2510600380469456	Now: 1693435616561
+Total: 68636kB	Added: 23222kB	Fraction: 0.25280268880721485	Now: 1693435617867
+Total: 68636kB	Added: 23222kB	Fraction: 0.25280268880721485	Now: 1693435619404
+Total: 68636kB	Added: 23222kB	Fraction: 0.25280268880721485	Now: 1693435630024
+violation:   https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEOVideoHtmlTranslation.js
+Total: 68646kB	Added: 23447kB	Fraction: 0.25460285478176725	Now: 1693435631231
+Total: 68659kB	Added: 23501kB	Fraction: 0.25500163318258084	Now: 1693435632367
+Total: 68660kB	Added: 23522kB	Fraction: 0.25516834874019684	Now: 1693435643380
+Total: 68662kB	Added: 23725kB	Fraction: 0.2568017430265451	Now: 1693435644423
+Total: 68675kB	Added: 23735kB	Fraction: 0.25684632630807286	Now: 1693435645729
+Total: 68678kB	Added: 23735kB	Fraction: 0.25683697946881295	Now: 1693435647061
+Total: 68678kB	Added: 23757kB	Fraction: 0.257010840856483	Now: 1693435651983
+Total: 68680kB	Added: 23757kB	Fraction: 0.25700739871113504	Now: 1693435654411
+Total: 68680kB	Added: 23768kB	Fraction: 0.25709421376351027	Now: 1693435655533
+Total: 68680kB	Added: 23778kB	Fraction: 0.2571733714797825	Now: 1693435662902
+Total: 68680kB	Added: 23778kB	Fraction: 0.2571733714797825	Now: 1693435666548
+Total: 68698kB	Added: 23981kB	Fraction: 0.2587555892303996	Now: 1693435667590
+Total: 68700kB	Added: 24025kB	Fraction: 0.2590992123825286	Now: 1693435668689
+Total: 68700kB	Added: 24035kB	Fraction: 0.25917833695796083	Now: 1693435679922
+Total: 68718kB	Added: 24218kB	Fraction: 0.2605884734638245	Now: 1693435680930
+Total: 68720kB	Added: 24239kB	Fraction: 0.26075066578490586	Now: 1693435682248
+Total: 68720kB	Added: 24239kB	Fraction: 0.26075066578490586	Now: 1693435692461
+Total: 68721kB	Added: 24325kB	Fraction: 0.26143343020392135	Now: 1693435693906
+Total: 68739kB	Added: 24390kB	Fraction: 0.2618958351726374	Now: 1693435694927
+Total: 68740kB	Added: 24411kB	Fraction: 0.2620573741380861	Now: 1693435706085
+Total: 68755kB	Added: 24583kB	Fraction: 0.2633774340216722	Now: 1693435707246
+Total: 68760kB	Added: 24638kB	Fraction: 0.2637931395195429	Now: 1693435708308
+Total: 68760kB	Added: 24659kB	Fraction: 0.2639571546627882	Now: 1693435719486
+Total: 68779kB	Added: 24875kB	Fraction: 0.26560697183749626	Now: 1693435720683
+Total: 68780kB	Added: 24897kB	Fraction: 0.2657749928968642	Now: 1693435721947
+Total: 68780kB	Added: 24907kB	Fraction: 0.26585255830423876	Now: 1693435724809
+Total: 68780kB	Added: 24907kB	Fraction: 0.26585255830423876	Now: 1693435732866
+Total: 68795kB	Added: 25091kB	Fraction: 0.26725136162382845	Now: 1693435734082
+Total: 68976kB	Added: 25101kB	Fraction: 0.26681373736607555	Now: 1693435735129
+Total: 69049kB	Added: 25123kB	Fraction: 0.2667794690884803	Now: 1693435736640
+Total: 69050kB	Added: 25134kB	Fraction: 0.2668610289686235	Now: 1693435737688
+Total: 69874kB	Added: 25134kB	Fraction: 0.26454727715482085	Now: 1693435739342
+Total: 71259kB	Added: 25144kB	Fraction: 0.2608215293210101	Now: 1693435740672
+Total: 71259kB	Added: 25144kB	Fraction: 0.2608215293210101	Now: 1693435750344
+Total: 71278kB	Added: 25305kB	Fraction: 0.26200698347507767	Now: 1693435751390
+Total: 71279kB	Added: 25349kB	Fraction: 0.2623372232729407	Now: 1693435752549
+Total: 71279kB	Added: 25359kB	Fraction: 0.2624127968004853	Now: 1693435755091
+Total: 71279kB	Added: 25359kB	Fraction: 0.2624127968004853	Now: 1693435763072
+Total: 71299kB	Added: 25619kB	Fraction: 0.2643393282466818	Now: 1693435764410
+Total: 71301kB	Added: 25640kB	Fraction: 0.2644930502693493	Now: 1693435775969
+Total: 71303kB	Added: 25858kB	Fraction: 0.2661339222998926	Now: 1693435777184
+Total: 71303kB	Added: 25869kB	Fraction: 0.2662167704444488	Now: 1693435778236
+Total: 71303kB	Added: 25869kB	Fraction: 0.2662167704444488	Now: 1693435785396
+Total: 71303kB	Added: 25869kB	Fraction: 0.2662167704444488	Now: 1693435789068
+violation:   https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEOVideoHtmlTranslation.js
+Total: 71390kB	Added: 26053kB	Fraction: 0.2673669783709007	Now: 1693435790874
+Total: 71391kB	Added: 26108kB	Fraction: 0.2677738937122837	Now: 1693435792085
+Total: 71392kB	Added: 26118kB	Fraction: 0.2678490128668902	Now: 1693435802719
+Total: 71410kB	Added: 26336kB	Fraction: 0.2694323305918403	Now: 1693435803785
+Total: 71411kB	Added: 26380kB	Fraction: 0.26975651802525946	Now: 1693435804786
+Total: 71413kB	Added: 26390kB	Fraction: 0.2698282382502515	Now: 1693435815667
+Total: 71431kB	Added: 26608kB	Fraction: 0.27140539082937154	Now: 1693435816709
+Total: 71432kB	Added: 26675kB	Fraction: 0.27189253392254975	Now: 1693435818070
+Total: 71433kB	Added: 26685kB	Fraction: 0.2719671390065864	Now: 1693435828640
+Total: 71451kB	Added: 26815kB	Fraction: 0.2728846470664911	Now: 1693435829686
+Total: 71453kB	Added: 26892kB	Fraction: 0.27344639916037583	Now: 1693435830794
+Total: 71453kB	Added: 26892kB	Fraction: 0.27344639916037583	Now: 1693435840410
+Total: 71471kB	Added: 27100kB	Fraction: 0.2749266663212642	Now: 1693435841448
+Total: 71472kB	Added: 27111kB	Fraction: 0.27500455198755247	Now: 1693435842514
+Total: 71473kB	Added: 27121kB	Fraction: 0.2750788540955354	Now: 1693435845960
+Total: 71473kB	Added: 27121kB	Fraction: 0.2750788540955354	Now: 1693435853045
+Total: 71491kB	Added: 27352kB	Fraction: 0.27671921936299976	Now: 1693435855019
+Total: 71493kB	Added: 27385kB	Fraction: 0.27695980186588937	Now: 1693435856029
+Total: 71494kB	Added: 27395kB	Fraction: 0.27703177832931447	Now: 1693435867053
+Total: 71509kB	Added: 27608kB	Fraction: 0.2785386267578134	Now: 1693435868092
+Total: 71513kB	Added: 27629kB	Fraction: 0.2786822072958299	Now: 1693435869212
+Total: 71514kB	Added: 27639kB	Fraction: 0.2787529399954057	Now: 1693435876275
+Total: 71514kB	Added: 27639kB	Fraction: 0.2787529399954057	Now: 1693435880082
+violation:   https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEOVideoHtmlTranslation.js
+Total: 71533kB	Added: 27865kB	Fraction: 0.28033697353493975	Now: 1693435881220
+Total: 71533kB	Added: 27891kB	Fraction: 0.28052854355421947	Now: 1693435882244
+Total: 71562kB	Added: 27908kB	Fraction: 0.280567689101588	Now: 1693435893020
+Total: 71634kB	Added: 28050kB	Fraction: 0.28138549409304203	Now: 1693435894090
+Total: 71787kB	Added: 28067kB	Fraction: 0.2810760343589416	Now: 1693435895250
+Total: 71862kB	Added: 28084kB	Fraction: 0.2809955084703842	Now: 1693435896304
+Total: 72743kB	Added: 28084kB	Fraction: 0.27853967428608134	Now: 1693435898036
+Total: 74587kB	Added: 28093kB	Fraction: 0.27359559907481495	Now: 1693435906544
+Total: 74587kB	Added: 28093kB	Fraction: 0.27359559907481495	Now: 1693435909121
+Total: 74605kB	Added: 28304kB	Fraction: 0.27503906125876226	Now: 1693435910273
+Total: 74606kB	Added: 28313kB	Fraction: 0.2750985852684112	Now: 1693435911285
+Total: 74607kB	Added: 28321kB	Fraction: 0.27515415638379365	Now: 1693435921894
+violation:   inline
+violation:   https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEOVideoHtmlTranslation.js
+Total: 74686kB	Added: 28471kB	Fraction: 0.2759964484981828	Now: 1693435923079
+Total: 74994kB	Added: 28515kB	Fraction: 0.27548253224407593	Now: 1693435924258
+Total: 74994kB	Added: 28515kB	Fraction: 0.27548253224407593	Now: 1693435925493
+Total: 74996kB	Added: 28548kB	Fraction: 0.2757122631262688	Now: 1693435936264
+Total: 75014kB	Added: 28782kB	Fraction: 0.27729036206146257	Now: 1693435937437
+Total: 75016kB	Added: 28799kB	Fraction: 0.2774066288801852	Now: 1693435948447
+violation:   https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEOVideoHtmlTranslation.js
+Total: 75038kB	Added: 28951kB	Fraction: 0.2784054947424077	Now: 1693435949595
+Total: 75038kB	Added: 28951kB	Fraction: 0.2784054947424077	Now: 1693435950744
+Total: 75424kB	Added: 29005kB	Fraction: 0.27774756624588715	Now: 1693435951912
+Total: 76410kB	Added: 29023kB	Fraction: 0.2752749583959274	Now: 1693435954390
+Total: 76410kB	Added: 29031kB	Fraction: 0.27533104604184555	Now: 1693435965064
+Total: 76410kB	Added: 29040kB	Fraction: 0.2753877484166062	Now: 1693435967420
+Total: 76410kB	Added: 29040kB	Fraction: 0.2753877484166062	Now: 1693435997695
+Total: 76410kB	Added: 29040kB	Fraction: 0.2753877484166062	Now: 1693436005234
+Total: 76429kB	Added: 29248kB	Fraction: 0.276770653914861	Now: 1693436006315
+Total: 76430kB	Added: 29267kB	Fraction: 0.27689323201675403	Now: 1693436007400
+Total: 76430kB	Added: 29267kB	Fraction: 0.27689323201675403	Now: 1693436010317
+Total: 76430kB	Added: 29275kB	Fraction: 0.27694941320235017	Now: 1693436021504
+Total: 76474kB	Added: 29411kB	Fraction: 0.27776528043287985	Now: 1693436022586
+violation:   inline
+Total: 76524kB	Added: 29429kB	Fraction: 0.27775744917156847	Now: 1693436025865
+Total: 76524kB	Added: 29439kB	Fraction: 0.2778198292445158	Now: 1693436027119
+Total: 76524kB	Added: 29439kB	Fraction: 0.2778198292445158	Now: 1693436028269
+Total: 76528kB	Added: 29439kB	Fraction: 0.27781101219824916	Now: 1693436029601
+Total: 76540kB	Added: 29439kB	Fraction: 0.27777873761678334	Now: 1693436031856
+Total: 76540kB	Added: 29447kB	Fraction: 0.27783469495351704	Now: 1693436033609
+Total: 76542kB	Added: 29502kB	Fraction: 0.27820418762956367	Now: 1693436038154
+Total: 76542kB	Added: 29502kB	Fraction: 0.27820418762956367	Now: 1693436039436
+Total: 76543kB	Added: 29502kB	Fraction: 0.27820093979785687	Now: 1693436040520
+Total: 76543kB	Added: 29502kB	Fraction: 0.27820093979785687	Now: 1693436041551
+Total: 76544kB	Added: 29511kB	Fraction: 0.27826204861040554	Now: 1693436043630
+Total: 76544kB	Added: 29511kB	Fraction: 0.27826204861040554	Now: 1693436044922
+Total: 76544kB	Added: 29511kB	Fraction: 0.27826204861040554	Now: 1693436047142
+Total: 76544kB	Added: 29519kB	Fraction: 0.2783179249791609	Now: 1693436050572
+Total: 76544kB	Added: 29519kB	Fraction: 0.2783179249791609	Now: 1693436064464
+Total: 76545kB	Added: 29583kB	Fraction: 0.27874718209916083	Now: 1693436069562
+Total: 76545kB	Added: 29592kB	Fraction: 0.27880954460036234	Now: 1693436072285
+violation:   inline
+Total: 76546kB	Added: 29675kB	Fraction: 0.2793675261598087	Now: 1693436073503
+Total: 76546kB	Added: 29675kB	Fraction: 0.2793675261598087	Now: 1693436074608
+Total: 76563kB	Added: 29702kB	Fraction: 0.27950798846413494	Now: 1693436076210
+Total: 76565kB	Added: 29719kB	Fraction: 0.2796222491376278	Now: 1693436085872
+Total: 76565kB	Added: 29792kB	Fraction: 0.28011186912427194	Now: 1693436087312
+Total: 76586kB	Added: 29892kB	Fraction: 0.280738213758389	Now: 1693436088578
+Total: 76586kB	Added: 29901kB	Fraction: 0.28079366070022127	Now: 1693436099224
+violation:   inline
+Total: 76604kB	Added: 30046kB	Fraction: 0.28172676054354456	Now: 1693436101603
+Total: 76604kB	Added: 30065kB	Fraction: 0.2818506664358722	Now: 1693436105327
+Total: 76604kB	Added: 30074kB	Fraction: 0.2819128961652169	Now: 1693436107816
+Total: 76604kB	Added: 30083kB	Fraction: 0.28197522279318865	Now: 1693436110573
+Total: 76606kB	Added: 30083kB	Fraction: 0.2819719508024119	Now: 1693436114682
+Total: 76606kB	Added: 30083kB	Fraction: 0.2819719508024119	Now: 1693436116350
+Total: 76606kB	Added: 30093kB	Fraction: 0.28203409794944534	Now: 1693436117420
+Total: 76606kB	Added: 30093kB	Fraction: 0.28203409794944534	Now: 1693436118490
+Total: 76606kB	Added: 30093kB	Fraction: 0.28203268379739066	Now: 1693436119957
+Total: 76607kB	Added: 30101kB	Fraction: 0.2820882711832487	Now: 1693436130863
+Total: 76607kB	Added: 30109kB	Fraction: 0.2821444811059814	Now: 1693436145055
+Total: 76607kB	Added: 30109kB	Fraction: 0.2821444811059814	Now: 1693436170772
+Total: 76609kB	Added: 30255kB	Fraction: 0.28311722441650666	Now: 1693436171833
+Total: 76609kB	Added: 30255kB	Fraction: 0.28311722441650666	Now: 1693436172914
+Total: 76609kB	Added: 30255kB	Fraction: 0.28311722441650666	Now: 1693436175339
+Total: 76609kB	Added: 30255kB	Fraction: 0.28311722441650666	Now: 1693436182023
+Total: 76609kB	Added: 30318kB	Fraction: 0.2835383528335763	Now: 1693436183103
+Total: 76611kB	Added: 30428kB	Fraction: 0.2842682133513061	Now: 1693436184163
+Total: 76611kB	Added: 30428kB	Fraction: 0.2842682133513061	Now: 1693436185305
+Total: 76611kB	Added: 30464kB	Fraction: 0.28451217910067444	Now: 1693436186329
+Total: 76611kB	Added: 30464kB	Fraction: 0.28451217910067444	Now: 1693436197076
+Total: 76612kB	Added: 30527kB	Fraction: 0.28493235437263287	Now: 1693436198087
+Total: 76612kB	Added: 30527kB	Fraction: 0.28493235437263287	Now: 1693436199279
+Total: 76643kB	Added: 30555kB	Fraction: 0.2850314991398742	Now: 1693436200757
+Total: 76791kB	Added: 30555kB	Fraction: 0.28463726537330697	Now: 1693436201922
+Total: 76791kB	Added: 30564kB	Fraction: 0.2846984363386407	Now: 1693436203992
+Total: 76820kB	Added: 30564kB	Fraction: 0.2846231017974162	Now: 1693436206044
+Total: 76836kB	Added: 30591kB	Fraction: 0.2847649257822286	Now: 1693436207672
+Total: 76837kB	Added: 30637kB	Fraction: 0.28506099220482356	Now: 1693436208729
+Total: 76838kB	Added: 30645kB	Fraction: 0.285115207590218	Now: 1693436219568
+Total: 76838kB	Added: 30653kB	Fraction: 0.2851700480895274	Now: 1693436238429
+Total: 76838kB	Added: 30653kB	Fraction: 0.2851700480895274	Now: 1693436268738
+Total: 76838kB	Added: 30653kB	Fraction: 0.2851700480895274	Now: 1693436299015
+Total: 76838kB	Added: 30653kB	Fraction: 0.2851700480895274	Now: 1693436329290
+Total: 76838kB	Added: 30653kB	Fraction: 0.2851700480895274	Now: 1693436359615
+Total: 76838kB	Added: 30653kB	Fraction: 0.2851700480895274	Now: 1693436389901
+Total: 76838kB	Added: 30653kB	Fraction: 0.2851700480895274	Now: 1693436423483
+Total: 76838kB	Added: 30653kB	Fraction: 0.2851700480895274	Now: 1693436439863
+Total: 76838kB	Added: 30732kB	Fraction: 0.2856892933356398	Now: 1693436442075
+Total: 77050kB	Added: 30794kB	Fraction: 0.2855401748540275	Now: 1693436443219
+Total: 77467kB	Added: 30819kB	Fraction: 0.2846096515993859	Now: 1693436444246
+Total: 78081kB	Added: 30837kB	Fraction: 0.28312262406187594	Now: 1693436445529
+Total: 78082kB	Added: 30845kB	Fraction: 0.28317100935272227	Now: 1693436453892
+Total: 78082kB	Added: 30845kB	Fraction: 0.28317100935272227	Now: 1693436456607
+Total: 78137kB	Added: 30977kB	Fraction: 0.2838992007434433	Now: 1693436457773
+Total: 78154kB	Added: 31039kB	Fraction: 0.28425738363612774	Now: 1693436458887
+Total: 78155kB	Added: 31047kB	Fraction: 0.2843072945181313	Now: 1693436470323
+violation:   https://js.pp.caixabank.es/static/js/d3d3LmNhaXhhYmFuay5lcw==/8c49b4d0/bcaptcha.js
+violation:   https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+Total: 78158kB	Added: 31283kB	Fraction: 0.2858429323122363	Now: 1693436471528
+Total: 78176kB	Added: 31318kB	Fraction: 0.2860227407656846	Now: 1693436482871
+Total: 78178kB	Added: 31441kB	Fraction: 0.286823949559406	Now: 1693436483949
+Total: 78513kB	Added: 31458kB	Fraction: 0.2860555706944617	Now: 1693436484993
+Total: 78666kB	Added: 31503kB	Fraction: 0.2859497611646992	Now: 1693436486890
+Total: 78720kB	Added: 31584kB	Fraction: 0.2863352382710649	Now: 1693436488077
+Total: 78720kB	Added: 31592kB	Fraction: 0.2863869126893622	Now: 1693436499175
+violation:   inline
+Total: 78722kB	Added: 31770kB	Fraction: 0.28753058697579714	Now: 1693436500324
+Total: 78888kB	Added: 31788kB	Fraction: 0.28721642235344125	Now: 1693436501445
+Total: 79703kB	Added: 31850kB	Fraction: 0.2855144845902895	Now: 1693436502568
+Total: 79706kB	Added: 31867kB	Fraction: 0.2856175216237058	Now: 1693436506986
+Total: 79706kB	Added: 31867kB	Fraction: 0.2856175216237058	Now: 1693436513476
+Total: 79724kB	Added: 32027kB	Fraction: 0.2865928778929129	Now: 1693436514746
+Total: 79726kB	Added: 32036kB	Fraction: 0.28664727410709084	Now: 1693436515769
+Total: 79727kB	Added: 32044kB	Fraction: 0.28669687766328583	Now: 1693436526593
+Total: 79727kB	Added: 32142kB	Fraction: 0.2873183816929971	Now: 1693436527789
+Total: 79799kB	Added: 32168kB	Fraction: 0.28730088526676345	Now: 1693436528882
+Total: 79901kB	Added: 32186kB	Fraction: 0.2871529672283518	Now: 1693436529969
+Total: 80725kB	Added: 32195kB	Fraction: 0.2851151759176469	Now: 1693436532513
+Total: 81797kB	Added: 32204kB	Fraction: 0.28248638219745204	Now: 1693436543634
+Total: 81803kB	Added: 32311kB	Fraction: 0.28314531082657096	Now: 1693436544794
+Total: 82169kB	Added: 32354kB	Fraction: 0.28251262316459197	Now: 1693436545862
+Total: 82173kB	Added: 32481kB	Fraction: 0.28329498828349575	Now: 1693436547074
+Total: 82175kB	Added: 32599kB	Fraction: 0.2840294965740921	Now: 1693436548275
+Total: 82176kB	Added: 32608kB	Fraction: 0.284079332839342	Now: 1693436566866
+Total: 82176kB	Added: 32669kB	Fraction: 0.2844622577908659	Now: 1693436571826
+Total: 82246kB	Added: 32794kB	Fraction: 0.2850653283622609	Now: 1693436572956
+Total: 82246kB	Added: 32812kB	Fraction: 0.2851756750870194	Now: 1693436574189
+Total: 82246kB	Added: 32812kB	Fraction: 0.2851756750870194	Now: 1693436575277
+Total: 82246kB	Added: 32812kB	Fraction: 0.2851756750870194	Now: 1693436576451
+Total: 82247kB	Added: 32820kB	Fraction: 0.2852256373158724	Now: 1693436587261
+violation:   inline
+Total: 82249kB	Added: 32963kB	Fraction: 0.2861070596441136	Now: 1693436588269
+Total: 82266kB	Added: 33025kB	Fraction: 0.28645012635325046	Now: 1693436589452
+Total: 82268kB	Added: 33034kB	Fraction: 0.2864985611894335	Now: 1693436601380
+Total: 82286kB	Added: 33258kB	Fraction: 0.28783842368089413	Now: 1693436602438
+Total: 82286kB	Added: 33276kB	Fraction: 0.28794978801141735	Now: 1693436603897
+Total: 82288kB	Added: 33303kB	Fraction: 0.2881122051818338	Now: 1693436605174

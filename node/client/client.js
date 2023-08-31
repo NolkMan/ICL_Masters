@@ -50,6 +50,79 @@ async function acceptCookies(context){
 	return result;
 }
 
+function longBrowse(host){
+	var hostname = url.parse(host).hostname
+
+	var isSameHost = function (h){
+		try{
+			if (url.parse(h).hostname == hostname){
+				return true;
+			}
+			return false
+		} catch {
+			return false
+		}
+		return false
+	};
+
+	(async() => {
+		const browser = await puppeteer.launch({
+			headless: false,
+			defaultViewport: {
+				width: 1920,
+				height: 947,
+			},
+			args: [ '--proxy-server=127.0.0.1:8080',
+			]
+		});
+		const page = await browser.newPage();
+		await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/116.0');
+		await page.goto(host);
+		  
+		await new Promise(r => setTimeout(r, 10000));
+
+		const consentFrame = page.frames().find(f => 
+			f.url().includes('consent') || 
+			f.url().includes('cp_userState=anon')
+		);
+		if (consentFrame){
+			await acceptCookies(consentFrame);
+		} else {
+			await acceptCookies(page);
+		}
+
+		await new Promise(r => setTimeout(r, 1000));
+
+		const allSameHostRefs = []
+
+		for (var i = 0; i < 150; i++){
+			try {
+				const hrefs = await page.$$eval('a', as => as.map(a => a.href));
+				const same_host_refs = [...hrefs.filter(isSameHost)];
+				if (same_host_refs.includes(host)){
+					same_host_refs.splice(same_host_refs.indexOf(host), 1);
+				}
+				allSameHostRefs.push(...same_host_refs)
+			} catch (e){
+			}
+
+
+			var chosenRef = allSameHostRefs.sort(() => 0.5 - Math.random())[0];
+
+			if (!chosenRef){
+				chosenRef = host
+			}
+
+			try {
+				await page.goto(chosenRef)
+			} catch (e){}
+			await new Promise(r => setTimeout(r, 10000));
+		}
+
+		await browser.close();
+	})();
+}
+
 function browse(host){
 	var hostname = url.parse(host).hostname
 	var screenshotPath = 'screenshots/' + hostname.replace(/\./g, '_');
@@ -84,6 +157,7 @@ function browse(host){
 		const page = await browser.newPage();
 		await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/116.0');
 		await page.goto(host);
+		await page.setCacheEnabled(false)
 		  
 		await new Promise(r => setTimeout(r, 10000));
 
@@ -148,4 +222,5 @@ function browse(host){
 
 module.exports = {
 	browse: browse,
+	longBrowse: longBrowse,
 }
