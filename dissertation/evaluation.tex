@@ -73,6 +73,54 @@ Additionally the collected reports can be reused to repeat the experiments on th
 
 % talk about the terminal interface
 
+\section{Initial Content-Security-Policy}
+
+During development of the server I have faces multiple choices relating to the initial CSPRO header, which is set before any report is even received.
+There are a few sources which dramatically change the behaviour of browsers enforcing the security policy, which impact security or the threat surface that I may protect against.
+
+\subsection{unsafe-inline}
+
+\texttt{unsafe-inline} allows all inline scripts to execute. 
+This source is disincentivized by Mozilla Docs \cite{unsafeinlinebad2} and CSP Quick Reference Guide \cite{unsafeinlinebad1}.
+It is also shown to be insecure in multiple papers \cite{weichselbaum2016csp} \cite{osti_10173479}.
+
+This is largely due to the fact that it allows for dynamic execution of scripts, by inserting them directly into the website code.
+It also prevents any reports to be generated in case of a DOM injection attack.
+
+I was considering using \texttt{unsafe-inline}, as my oracle uses a best effort approach to extracting inline scripts.
+This leads to many scripts being unable to be extracted without executing the loader script.
+I have decided that executing unknown scripts is very unsafe and consequently my server will never be able to know the source code or the hash.
+It means that the browser will always send a report to my server whenever a script is loaded in this way, impacting the performance.
+
+In the end I believe that although there are practical implications to including \texttt{unsafe-inline} source into the CSP, it has too severe negative implications.
+The CSP becomes easily bypassable and 
+
+\subsection{self}
+
+Adding \texttt{'self'} to the source list of scripts would allow for all scripts coming from the host to be executed without sending the report.
+It still sends a report for every inline script and it  may be a good option for a host that employs many security measures towards its own code.
+When used it reduces the amount of reports and reduces the average size of the report as none of sites own scripts will need a hash to execute.
+This method successfully changes the threat surface from all scripts used on a web application to monitoring changes only in external scripts.
+
+In my experiments I do not use \texttt{'self'} source as I my aim was to develop a policy maker that is as secure as possible.
+The change is the threat surface is big enough where a fully automatic system should be able to protect agains insider threat.
+
+\subsection{strict-dynamic}
+
+\texttt{strict-dynamic} is a successor to \texttt{unsafe-inline}, where it will allow dynamically loaded scripts as long as they are loaded from a script that is allowed by a nonce of a hash.
+It also changes the behaviour of the policy where it instructs the browser to ignore \texttt{unsafe-inline}, \texttt{'self'}, \texttt{unsafe-eval} or many other wildcard statements.
+
+When using \texttt{strict-dynamic} I am still unable to gather hashes for dynamically loaded scripts, but in this case, those scripts will not send reports about an inline script being used, partially mitigating the issue.
+Similarly, non-inline dynamically added scripts will also not generate a report, which I would be able to retrieve, evaluate and generate a hash for.
+For this reason I do not use \texttt{strict-dynamic} source as it still undermines the security of my solution.
+
+\subsection{unsafe-hashes}
+
+Adding \texttt{unsafe-hashes} to the source list allow for hashes to be used for inline scritp attributes such as \texttt{onClick} or \texttt{onLoad}.
+It uses the prefix {\it unsafe}, but hashes in \texttt{script-src-attr} directive by default are ignored as they will never have a valid target to allow.
+As such I only use \texttt{unsafe-hashes} for this specific directive. 
+Also I only use it for scripts that fully fit in the 40 character limit dedicated to the script sample field in the report and I always generate a violation event for such a report.
+
 \subsection{Testing Environment}
 
 Throughout the development of the policy maker I was never able to deploy it on a particular host.
@@ -114,6 +162,8 @@ The application sends a unique JavaScript file for each verse of Quran, as those
 In this case my policy will grow to unmaintainable size, which is only made worse by the fact that each report contains the currently deployed policy resulting in unnecessarily large reports.
 
 \subsection{www.caixabank.es}
+
+\subsection{www.professormesser.com}
 
 
 \begin{figure}[h]
