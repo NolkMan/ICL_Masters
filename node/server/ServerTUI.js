@@ -23,9 +23,16 @@ var selectedHost = ''
 var selectedUrl = ''
 var selectedReport = ''
 
+var lastViolations = []
+
 var cursor = {
 	'1': {y: 0}
 };
+
+function addViolation(type, report, evaluation){
+	var str = (type+':').padEnd(14, ' ') + report["effective-directive"] + '    ' + String(report['blocked-uri']);
+	lastViolations = [str, ...lastViolations.slice(0, 4)];
+}
 
 function fit_table(table){
 	var height = term.height
@@ -69,6 +76,10 @@ function draw_menu(){
 	) ;
 	console.log(csproData)
 	console.log(cspro)
+
+	for (var v of lastViolations){
+		console.log(v)
+	}
 }
 
 function draw_violator(){
@@ -247,6 +258,7 @@ function end(){
 }
 
 module.exports = {
-	'start': start
+	'start': start,
+	'addViolation': addViolation
 }
 

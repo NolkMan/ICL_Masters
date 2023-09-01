@@ -16,7 +16,9 @@ const server_options = {
 	cert: fs.readFileSync(__dirname + '/ssl/reporting.project.pem'),
 }
 
-const timeMatters = false
+const timeMatters = true
+const timeOut = 1000*15 // miliseconds
+const timeOutMulitplier = 1 // remove later if script is good
 
 /*
 {
@@ -94,7 +96,7 @@ class CsproServer extends EventEmitter {
 		psql.getEvaluation(this.host, jsuri, (res) => {
 			if (res.rowCount > 0 && res.rows[0].evaluation){
 				var timeAdded = Date.parse(res.rows[0].time)
-				if ((!timeMatters) || timeAdded + 1000*60*60 > Date.now()){
+				if ((!timeMatters) || timeAdded + timeOut > Date.now()){
 					callback(res.rows[0].evaluation)
 					return;
 				}
@@ -110,7 +112,7 @@ class CsproServer extends EventEmitter {
 		psql.getEvaluation(this.host, jsuri, (res) => {
 			if (res.rowCount > 0 && res.rows[0].evaluation){
 				var timeAdded = Date.parse(res.rows[0].time)
-				if ((!timeMatters) || timeAdded + 1000*60*60 > Date.now()){
+				if ((!timeMatters) || timeAdded + timeOut > Date.now()){
 					callback(res.rows[0].evaluation)
 					return;
 				}
@@ -132,7 +134,7 @@ class CsproServer extends EventEmitter {
 			if (report['script-sample'].length < 40){
 				this.emit('warning', report)
 				var hash = "'sha256-" + crypto.createHash('sha256').update(report['script-sample']).digest('base64') + "'";
-				return [effectiveDir, hash, 1000*60*4]
+				return [effectiveDir, hash, timeOut]
 			} else {
 				this.emit('violation', report)
 				return false;
@@ -159,13 +161,12 @@ class CsproServer extends EventEmitter {
 	}
 
 	addScriptToCspro(evaluation) {
-		const min = 1000*60;
 		if (!evaluation.eval.hash)
 			return;
 		if (evaluation.eval.obfuscated) {
-			this.csproData['script-src-elem'][evaluation.eval.hash] = Date.now() + 8*min;
+			this.csproData['script-src-elem'][evaluation.eval.hash] = Date.now() + timeOut;
 		} else {
-			this.csproData['script-src-elem'][evaluation.eval.hash] = Date.now() + 30*min;
+			this.csproData['script-src-elem'][evaluation.eval.hash] = Date.now() + (timeOut*timeOutMulitplier);
 		}
 	}
 
@@ -253,16 +254,12 @@ class CsproServer extends EventEmitter {
 		this.evaluator = evaluator
 		this.csproData = {
 			'default-src': {"'none'": -1},
-			'upgrade-insecure-requests': {},
 			//'require-trusted-types-for': {"'script'": -1},
 			'script-src': {"'report-sample'": -1},
-			'style-src': {"'report-sample'": -1},
 			'script-src-elem': {"'report-sample'": -1, 
 				//"'unsafe-inline'": -1, "'self'": -1, "'strict-dynamic'": -1
 			},
 			'script-src-attr': {"'report-sample'": -1, "'unsafe-hashes'": -1},
-			'style-src-elem': {"'report-sample'": -1, "'unsafe-inline'": -1},
-			'style-src-attr': {"'report-sample'": -1, "'unsafe-inline'": -1, "'unsafe-hashes'": -1},
 		}
 		//this.csproData['script-src-elem']['https://' + this.host] = -1;
 		this.violators = new Map(
@@ -341,6 +338,12 @@ class CsproServer extends EventEmitter {
 				csproData: this.csproData,
 				cspro: this.getCspro()
 			}
+		});
+		this.on('violation', (report, evaluation) => {
+			term.addViolation('violation', report, evaluation);
+		});
+		this.on('warning', (report, evaluation) => {
+			term.addViolation('warning', report, evaluation);
 		});
 	}
 
