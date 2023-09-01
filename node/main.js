@@ -22,13 +22,17 @@ var PICKED_HOSTS = [
 	{good: true, top: 5524, host: 'https://www.flashscore.es'}, // spanish doesn't care about cookies enough
 	{good: true, top: 5686, host: 'https://quran.com'}, // in hebrew, gives a lot of malicious script flags as they are sending raw binary data to decode in js files
 	{good: true, top: 7153, host: 'https://www.professormesser.com'}, // no cookies
+
+	{good:false, top: -1,	host: 'https://testing.site'}, // my own testing site
 ]
 
 const updateCspro = true;
 const dryRun = false;
-const preTrain = true;
-const longTest = true;
-const pickNum = 10;
+const preTrain = false;
+const runClient = false;
+const longTest = false;
+const pickNum = 11;
+const useTerminal = true;
 
 var picked = PICKED_HOSTS[pickNum];
 var current_host = picked.host;
@@ -45,14 +49,21 @@ serv.start(() => {
 	
 	if (dryRun) {
 		serv.repeatAllReports(() => {})
-		// serv.useTerminal()
+		if (useTerminal){
+			serv.useTerminal()
+		}
 	} else {
 		var after = () => {
-			const client = require('./client/client.js')
-			if (longTest){
-				client.longBrowse(current_host)
-			} else {
-				client.browse(current_host)
+			if (runClient){
+				const client = require('./client/client.js')
+				if (longTest){
+					client.longBrowse(current_host)
+				} else {
+					client.browse(current_host)
+				}
+			}
+			if (useTerminal){
+				serv.useTerminal()
 			}
 		}
 		if (preTrain) {
@@ -72,11 +83,11 @@ if (updateCspro) {
 }
 
 serv.on('violation', (report, evaluation) => {
-	console.log('violation:   ' + String(report['blocked-uri']));
+	console.log('violation:   ' + report["effective-directive"] + '    ' + String(report['blocked-uri']));
 });
 
 serv.on('warning', (report, evaluation) => {
-	console.log('warning:     ' + String(report['blocked-uri']));
+	console.log('warning:     ' + report["effective-directive"] + '    ' + String(report['blocked-uri']));
 });
 
 var mitmLastPrint = Date.now()
