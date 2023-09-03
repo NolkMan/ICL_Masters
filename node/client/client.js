@@ -95,7 +95,7 @@ function longBrowse(host){
 
 		const allSameHostRefs = []
 
-		for (var i = 0; i < 150; i++){
+		for (var i = 0; i < 170; i++){
 			try {
 				const hrefs = await page.$$eval('a', as => as.map(a => a.href));
 				const same_host_refs = [...hrefs.filter(isSameHost)];

@@ -17,8 +17,9 @@ const server_options = {
 }
 
 const timeMatters = true
-const timeOut = 1000*15 // miliseconds
+const timeOut = 1000*60*10// 1000*15 // miliseconds
 const timeOutMulitplier = 1 // remove later if script is good
+const allowBypass = false; // 
 
 /*
 {
@@ -94,7 +95,11 @@ class CsproServer extends EventEmitter {
 */
 	getJsEvaluation(jsuri, callback){
 		psql.getEvaluation(this.host, jsuri, (res) => {
+			var isNew = true;
+			var old = {}
 			if (res.rowCount > 0 && res.rows[0].evaluation){
+				isNew = false;
+				old = res.rows[0].evaluation
 				var timeAdded = Date.parse(res.rows[0].time)
 				if ((!timeMatters) || timeAdded + timeOut > Date.now()){
 					callback(res.rows[0].evaluation)
@@ -103,6 +108,13 @@ class CsproServer extends EventEmitter {
 			} 
 			this.evaluator.evaluate(jsuri, (evaluation) => {
 				psql.logEvaluation(this.host, jsuri, evaluation);
+				if (isNew) {
+					this.emit('new', jsuri, evaluation)
+				} else {
+					if (old.eval.hash !== evaluation.eval.hash){
+						this.emit('changed', jsuri, evaluation)
+					}
+				}
 				callback(evaluation)
 			})
 		});
@@ -141,7 +153,7 @@ class CsproServer extends EventEmitter {
 			}
 		} else if ('script-src-elem' === effectiveDir){
 			var rule
-			if ((rule = common.has(blockedHost))){
+			if (allowBypass && (rule = common.has(blockedHost))){
 				return [effectiveDir, rule];
 			}
 		} else if (['connect-src', 'font-src', 'img-src', 'media-src', 'style-src-attr', 'style-src-elem'].includes(effectiveDir)){
@@ -160,13 +172,13 @@ class CsproServer extends EventEmitter {
 		return false;
 	}
 
-	addScriptToCspro(evaluation) {
-		if (!evaluation.eval.hash)
+	addScriptToCspro(evaluation, signature) {
+		if (!signature)
 			return;
 		if (evaluation.eval.obfuscated) {
-			this.csproData['script-src-elem'][evaluation.eval.hash] = Date.now() + timeOut;
+			this.csproData['script-src-elem'][signature] = Date.now() + timeOut;
 		} else {
-			this.csproData['script-src-elem'][evaluation.eval.hash] = Date.now() + (timeOut*timeOutMulitplier);
+			this.csproData['script-src-elem'][signature] = Date.now() + (timeOut*timeOutMulitplier);
 		}
 	}
 
@@ -184,7 +196,7 @@ class CsproServer extends EventEmitter {
 
 		if (directive == 'script-src-elem' && blockedUri !== 'inline'){
 			this.getJsEvaluation(blockedUri, (evaluation) => {
-				this.addScriptToCspro(evaluation);
+				this.addScriptToCspro(evaluation, blockedUri);
 				this.emit('cspro-change')
 				if (evaluation.eval.obfuscated) {
 					this.emit('violation', report, evaluation)
@@ -196,7 +208,7 @@ class CsproServer extends EventEmitter {
 			var source = report['source-file'] || ( 'https://' + this.host );
 			var line   = report['line-number']
 			this.getInlineJsEvaluation(String(line) + ':' + source, (evaluation) => {
-				this.addScriptToCspro(evaluation);
+				this.addScriptToCspro(evaluation, evaluation.eval.hash);
 				this.emit('cspro-change')
 				if (evaluation.eval.obfuscated) {
 					this.emit('violation', report, evaluation)
@@ -344,6 +356,12 @@ class CsproServer extends EventEmitter {
 		});
 		this.on('warning', (report, evaluation) => {
 			term.addViolation('warning', report, evaluation);
+		});
+		this.on('new', (uri) => {
+			term.addNew('new', uri)
+		});
+		this.on('changed', (uri) => {
+			term.addNew('changed', uri)
 		});
 	}
 
