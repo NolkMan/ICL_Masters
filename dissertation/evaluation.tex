@@ -147,16 +147,39 @@ This project consists of multiple modules which all work together to achieve a b
 Oracle is a module that is used to generate hashes of loaded resources and communicate to the python evaluation server.
 When tested on a local server, it can successfully fetch files from it and generate hashes equal to the ones that are generated with system tools on file data.
 After receiving line and file information it is sometimes able to extract data from inline scripts embeded in the html of the page.
-Ocasionally, due to formatting, encoding or other issues related to dynamic inclusion of data into the page, it may be unsuccessfull in retreiving a correct hash.
-Due to security concerns my oracle does not dynamically execute scripts and change html code, which would happen within the browser.
+Ocasionally, due to formatting, encoding or other issues related to dynamic inclusion of data into the page, it may return no or a wrong hash.
+Due to security concerns my oracle does not dynamically execute scripts and change html code, which does happen within the browser.
 Most notably a script may change the inner html of a page to one with another script.
-In this case the oracle will be unable to generate the script that was included.
+In this case the oracle will be unable to generate the script that was included as it is not included in the retreived html.
 Throughout testing of this project, different scripts responsible for ads and user tagging were found to use this technique.
+The influence that those scripts have on the effectiveness of this project will be clearly seen when the impact of the cps server is estimated.
 
-The second role of the oracle is to pass the 
+The second role of the oracle is to pass the script extracted as just described and pass it to the evaluation server.
+The evaluation server in this case is an adapted python script of ???, which is designed to detect obfuscated scripts.
+Due to the feature selection it is also moderately helpful to detect malicious unobfuscated scripts.
+This work focuses mainly on developing the policy maker for CSPRO header and this small, but reliable evaluator is a good way to demonstrate the servers inner working.
 The oracle may work without the script grading server in which case it will only send the hash back to the policy making server.
+The policy maker server in that case will only report on new or changed scripts it encounters.
 
 The server which is the main outcome of this project uses the oracle extensively.
+Each script that is reported will go through the oracle, then depending on the evalutaion it is added to the policy for a specific amount of time.
+Eventually after enough time has passed the server succesfully removes the entry from its policy.
+When a new report for the same resource arrives it compares the new evaluation from the oracle to the previous one and does emit events related to the result.
+Each time the CSPRO value is changed it is communicated out of the server and subseqently embedded into html responses by mitmproxy.
+
+During testing this result is eaily observable in the browser connected to the proxy.
+When loading the host page on a newly created server, multiple reports are generated back to the server.
+On the server multiple new events can be seen and in a case where there is a script deemeed malicious a violation is observed too.
+Subseqeunt refreshes of the page in the browser no longer produce reports until the scripts present are removed from the policy.
+Even if there are more reports arriving the server will not generate new events unless a scripts is changed.
+
+The server also keeps node of other resources loaded on the page with a lower level of detail.
+It stores only hosts of those resources, which are added to the policy of the server and they are not removed over time.
+When a new source is added only the update of the CSPRO is triggered, but no additional event is emitted.
+
+The only exception to this rule the \texttt{frame-src} directive. 
+When a report about a violation to the frame-src is received a new warning is emmited.
+As previously described iframes can be used in clickjacking attacks and due to lower amount of iframes used on pages it is important to verify that no malicious iframes are running.
 
 \subsection{Impact estimation}
 
@@ -225,3 +248,5 @@ My server could detect those by knowing from the development environment which s
 Through my tests I have also used only a single browser.
 Although all browsers available to my Linux testing environment have functionally identical reporting, I have not tested on outdated and mobile browsers.
 Testing my solution in the wild would also resurface many issues related to the complexity of end environments.k
+
+% talk about malicious iframe detection
