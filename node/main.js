@@ -29,10 +29,10 @@ var PICKED_HOSTS = [
 const updateCspro = true;
 const dryRun = false;
 const preTrain = false;
-const runClient = false;
-const longTest = false;
-const pickNum = 11;
-const useTerminal = true;
+const runClient = true;
+const longTest = true;
+const pickNum = 6;
+const useTerminal = false;
 
 var picked = PICKED_HOSTS[pickNum];
 var current_host = picked.host;
@@ -90,13 +90,20 @@ serv.on('warning', (report, evaluation) => {
 	console.log('warning:     ' + report["effective-directive"] + '    ' + String(report['blocked-uri']));
 });
 
+serv.on('new', (uri) => {
+	console.log('new:         ' + uri);
+});
+serv.on('changed', (uri) => {
+	console.log('changed:     ' + uri);
+});
+
 var mitmLastPrint = Date.now()
 mitm.get_emitter().on('mitm-request', (data) => {
 	var now = Date.now()
 	if (mitmLastPrint + 1000 < now){
 		mitmLastPrint = now
-		console.log('Total: ' + String(Math.round(data['total-transfered']/1000)) + 'kB' + '\t' +
-			'Added: ' + String(Math.round(data['additional-bytes']/1000)) + 'kB' + '\t' + 
+		console.log('Total: ' + String(data['total-transfered']) + 'B' + '\t' +
+			'Added: ' + String(data['additional-bytes']) + 'B' + '\t' + 
 			'Fraction: ' + String(data['additional-bytes'] / (data['additional-bytes'] + data['total-transfered'])) + '\t' +
 			'Now: ' + String(Date.now())
 		);

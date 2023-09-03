@@ -29,6 +29,11 @@ var cursor = {
 	'1': {y: 0}
 };
 
+function addNew(type, uri){
+	var str = (type+':').padEnd(14, ' ') + uri;
+	lastViolations = [str, ...lastViolations.slice(0,4)];
+}
+
 function addViolation(type, report, evaluation){
 	var str = (type+':').padEnd(14, ' ') + report["effective-directive"] + '    ' + String(report['blocked-uri']);
 	lastViolations = [str, ...lastViolations.slice(0, 4)];
@@ -259,6 +264,7 @@ function end(){
 
 module.exports = {
 	'start': start,
-	'addViolation': addViolation
+	'addViolation': addViolation,
+	'addNew': addNew
 }
 

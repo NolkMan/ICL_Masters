@@ -1,0 +1,916 @@
+Mitm communication server running at http://127.0.0.1:8181/
+PSQL started
+Reporting server running at http://localhost:21822/
+Total: 0B	Added: 0B	Fraction: NaN	Now: 1693696231064
+Total: 538B	Added: 2353B	Fraction: 0.8139052231061916	Now: 1693696232140
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/common.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/modernizr-custom.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/jquery-3.6.3.min.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/jquery.unveil.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEO-R2016-Prehome.js
+new:         https://www.caixabank.es/deployedfiles/common/JavaScript/js.cookie.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/jquery.cookie.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Bibliotecas/Estaticos/js/lib/jquery.colorbox.js
+violation:   script-src-elem    inline
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/cookiecaixaes.js
+new:         https://www.caixabank.es/deployedfiles/common/js/prebid-ads.js
+new:         https://js.pp.caixabank.es/static/js/d3d3LmNhaXhhYmFuay5lcw==/8c49b4d0/bcaptcha.js
+violation:   script-src-elem    https://js.pp.caixabank.es/static/js/d3d3LmNhaXhhYmFuay5lcw==/8c49b4d0/bcaptcha.js
+new:         https://www.caixabank.es/deployedfiles/common/JavaScript/aplnr/cookie/cookie-policy.js
+Total: 125404B	Added: 35588B	Fraction: 0.2210544623335321	Now: 1693696233358
+new:         https://www.caixabank.es/deployedfiles/common/JavaScript/aplnr/cookie/neo-cookie-policy.js
+new:         https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+violation:   script-src-elem    https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NeoThirdParty2.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/mustache.min.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEO-R2016-Home.min.js
+violation:   script-src-elem    https://js.pp.caixabank.es/static/js/d3d3LmNhaXhhYmFuay5lcw==/8c49b4d0/bcaptcha.js
+violation:   script-src-elem    https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/NeoThirdParty.js
+violation:   script-src-elem    inline
+Total: 279110B	Added: 76890B	Fraction: 0.21598314606741573	Now: 1693696234436
+new:         https://www.caixabank.es/deployedfiles/particulares/Estaticos/Javascript/s_code_basic.js
+new:         https://www.caixabank.es/deployedfiles/common/JavaScript/aplnr/cookie/cookies-banner.js
+new:         https://tags.caixabank.es/caixabank-web/prod/utag.js
+Total: 384312B	Added: 114477B	Fraction: 0.22950987291219332	Now: 1693696235584
+new:         https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/lolopo.js
+Total: 512624B	Added: 164447B	Fraction: 0.24287999338326408	Now: 1693696236817
+new:         https://loapp.caixabank.es/js/lomilu/errorControl.js
+Total: 870305B	Added: 197783B	Fraction: 0.1851748170562725	Now: 1693696237841
+Total: 878924B	Added: 208261B	Fraction: 0.19155985411866425	Now: 1693696243280
+Successfully accepted cookies
+Total: 955252B	Added: 208261B	Fraction: 0.17899327295870351	Now: 1693696248143
+new:         https://www.caixabank.es/deployedfiles/common/JavaScript/NEOVideo.js
+Total: 979776B	Added: 318532B	Fraction: 0.24534393995877712	Now: 1693696249345
+warning:     frame-src    https://caixa.demdex.net
+new:         https://tags.caixabank.es/caixabank-web/prod/utag.126.js?utv=ut4.46.202307170952
+new:         https://metrics.caixabank.es/b/ss/lacaixaes/10/JS-2.9.0/s39009751095640?AQB=1&ndh=1&pf=1&callback=s_c_il[1].doPostbacks&et=1&t=3%2F8%2F2023%200%3A10%3A49%200%20-60&d.&nsid=0&jsonv=1&.d&fid=3D18D034203E2482-179A6125B4EEA0CA&ce=UTF-8&ns=lacaixa&pageName=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&g=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fhome%2Fparticulares_es.html%23&r=https%3A%2F%2Fwww.caixabank.es%2Findex_es.html&cc=EUR&events=event42&c19=https%3A%2F%2Fwww.caixabank.es%2Findex_es.html&v19=D%3Dc19&v50=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&v84=boton%20pulsado%3APOLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON%2Ccookies%20aceptadas%3AAA%7CAT%7CDBCK%7CYTB%7CGOOG%7CAC%7CTIQ%7CNCP%7CCEXTLO%7CFB%7CAAM%7CLK%7CTD%7CSIZMEK&pe=lnk_o&pev2=GDPR%3APOLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON%3AAA%7CAT%7CDBCK%7CYTB%7CGOOG%7CAC%7CTIQ%7CNCP%7CCEXTLO%7CFB%7CAAM%7CLK%7CTD%7CSIZMEK&s=1920x969&c=24&j=1.6&v=N&k=Y&bw=1920&bh=947&AQE=1
+violation:   script-src-elem    https://metrics.caixabank.es/b/ss/lacaixaes/10/JS-2.9.0/s39009751095640?AQB=1&ndh=1&pf=1&callback=s_c_il[1].doPostbacks&et=1&t=3%2F8%2F2023%200%3A10%3A49%200%20-60&d.&nsid=0&jsonv=1&.d&fid=3D18D034203E2482-179A6125B4EEA0CA&ce=UTF-8&ns=lacaixa&pageName=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&g=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fhome%2Fparticulares_es.html%23&r=https%3A%2F%2Fwww.caixabank.es%2Findex_es.html&cc=EUR&events=event42&c19=https%3A%2F%2Fwww.caixabank.es%2Findex_es.html&v19=D%3Dc19&v50=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&v84=boton%20pulsado%3APOLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON%2Ccookies%20aceptadas%3AAA%7CAT%7CDBCK%7CYTB%7CGOOG%7CAC%7CTIQ%7CNCP%7CCEXTLO%7CFB%7CAAM%7CLK%7CTD%7CSIZMEK&pe=lnk_o&pev2=GDPR%3APOLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON%3AAA%7CAT%7CDBCK%7CYTB%7CGOOG%7CAC%7CTIQ%7CNCP%7CCEXTLO%7CFB%7CAAM%7CLK%7CTD%7CSIZMEK&s=1920x969&c=24&j=1.6&v=N&k=Y&bw=1920&bh=947&AQE=1
+Total: 1041293B	Added: 413505B	Fraction: 0.28423533713958915	Now: 1693696250540
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NeoThirdParty.InternalPages.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEO-R2016.min.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEO-R2016-Longtail.min.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NeoThirdParty.InternalPages2.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NeoThirdParty.InternalPages3.js
+violation:   script-src-elem    inline
+Total: 2304802B	Added: 457722B	Fraction: 0.16568978224261582	Now: 1693696251628
+Total: 2375011B	Added: 528333B	Fraction: 0.1819739583046308	Now: 1693696252819
+new:         https://js.adsrvr.org/up_loader.1.1.0.js
+new:         https://www.googletagmanager.com/gtag/js?id=AW-993560679
+new:         https://connect.facebook.net/en_US/fbevents.js
+Total: 2728402B	Added: 597633B	Fraction: 0.1796833166217433	Now: 1693696254018
+new:         https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693696254038&cv=11&fst=1693696254038&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fholabank%2Fparticulares_en.html&hn=www.googleadservices.com&frm=0&tiba=HolaBank%20%7C%20Private%20individuals%20%7C%20CaixaBank&auid=900674219.1693696254&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+violation:   script-src-elem    https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693696254038&cv=11&fst=1693696254038&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fholabank%2Fparticulares_en.html&hn=www.googleadservices.com&frm=0&tiba=HolaBank%20%7C%20Private%20individuals%20%7C%20CaixaBank&auid=900674219.1693696254&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+new:         https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693696254079&cv=11&fst=1693696254079&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fholabank%2Fparticulares_en.html&hn=www.googleadservices.com&frm=0&tiba=HolaBank%20%7C%20Private%20individuals%20%7C%20CaixaBank&auid=900674219.1693696254&fledge=1&uamb=0&uaw=0&data=event%3Dpage_view&rfmt=3&fmt=4
+violation:   script-src-elem    https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693696254079&cv=11&fst=1693696254079&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fholabank%2Fparticulares_en.html&hn=www.googleadservices.com&frm=0&tiba=HolaBank%20%7C%20Private%20individuals%20%7C%20CaixaBank&auid=900674219.1693696254&fledge=1&uamb=0&uaw=0&data=event%3Dpage_view&rfmt=3&fmt=4
+new:         https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693696254091&cv=11&fst=1693696254091&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fholabank%2Fparticulares_en.html&hn=www.googleadservices.com&frm=0&tiba=HolaBank%20%7C%20Private%20individuals%20%7C%20CaixaBank&auid=900674219.1693696254&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+violation:   script-src-elem    https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693696254091&cv=11&fst=1693696254091&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fholabank%2Fparticulares_en.html&hn=www.googleadservices.com&frm=0&tiba=HolaBank%20%7C%20Private%20individuals%20%7C%20CaixaBank&auid=900674219.1693696254&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+new:         https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693696254110&cv=11&fst=1693696254110&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fholabank%2Fparticulares_en.html&hn=www.googleadservices.com&frm=0&tiba=HolaBank%20%7C%20Private%20individuals%20%7C%20CaixaBank&auid=900674219.1693696254&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+violation:   script-src-elem    https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693696254110&cv=11&fst=1693696254110&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fholabank%2Fparticulares_en.html&hn=www.googleadservices.com&frm=0&tiba=HolaBank%20%7C%20Private%20individuals%20%7C%20CaixaBank&auid=900674219.1693696254&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+warning:     frame-src    https://td.doubleclick.net
+new:         https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693696254100&cv=11&fst=1693696254100&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fholabank%2Fparticulares_en.html&hn=www.googleadservices.com&frm=0&tiba=HolaBank%20%7C%20Private%20individuals%20%7C%20CaixaBank&auid=900674219.1693696254&fledge=1&uamb=0&uaw=0&data=event%3Dpage_view&rfmt=3&fmt=4
+violation:   script-src-elem    https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693696254100&cv=11&fst=1693696254100&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fholabank%2Fparticulares_en.html&hn=www.googleadservices.com&frm=0&tiba=HolaBank%20%7C%20Private%20individuals%20%7C%20CaixaBank&auid=900674219.1693696254&fledge=1&uamb=0&uaw=0&data=event%3Dpage_view&rfmt=3&fmt=4
+new:         https://connect.facebook.net/signals/config/1919777298239854?v=2.9.125&r=stable&domain=www.caixabank.es
+new:         https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693696254120&cv=11&fst=1693696254120&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fholabank%2Fparticulares_en.html&hn=www.googleadservices.com&frm=0&tiba=HolaBank%20%7C%20Private%20individuals%20%7C%20CaixaBank&auid=900674219.1693696254&fledge=1&uamb=0&uaw=0&data=event%3Dpage_view&rfmt=3&fmt=4
+violation:   script-src-elem    https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693696254120&cv=11&fst=1693696254120&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fholabank%2Fparticulares_en.html&hn=www.googleadservices.com&frm=0&tiba=HolaBank%20%7C%20Private%20individuals%20%7C%20CaixaBank&auid=900674219.1693696254&fledge=1&uamb=0&uaw=0&data=event%3Dpage_view&rfmt=3&fmt=4
+Total: 2985728B	Added: 633297B	Fraction: 0.17499105422040467	Now: 1693696255027
+Total: 3011024B	Added: 685196B	Fraction: 0.18537749376389934	Now: 1693696265300
+Total: 3011024B	Added: 685196B	Fraction: 0.18537749376389934	Now: 1693696290271
+new:         https://www.caixabank.es/deployedfiles/particulares/Estaticos/Javascript/scrollto.js
+new:         https://www.caixabank.es/deployedfiles/particulares/Bibliotecas/scrollablefn.js
+violation:   script-src-elem    inline
+Total: 3057016B	Added: 808562B	Fraction: 0.2091697541738907	Now: 1693696291272
+Total: 3268699B	Added: 925169B	Fraction: 0.2206004099318338	Now: 1693696292312
+new:         https://tags.caixabank.es/caixabank-web/prod/utag.360.js?utv=ut4.46.202306061125
+new:         https://tags.caixabank.es/caixabank-web/prod/utag.180.js?utv=ut4.46.202302241039
+new:         https://tags.caixabank.es/caixabank-web/prod/utag.179.js?utv=ut4.46.202106081525
+new:         https://tags.caixabank.es/caixabank-web/prod/utag.198.js?utv=ut4.46.202103181349
+new:         https://tags.caixabank.es/caixabank-web/prod/utag.44.js?utv=ut4.46.202006081001
+new:         https://tags.caixabank.es/caixabank-web/prod/utag.199.js?utv=ut4.46.202202211618
+warning:     frame-src    https://www.facebook.com
+new:         https://www.googleadservices.com/pagead/conversion_async.js
+Total: 3274175B	Added: 941741B	Fraction: 0.22337755306320145	Now: 1693696293555
+Total: 3274175B	Added: 941741B	Fraction: 0.22337755306320145	Now: 1693696295613
+Total: 3274175B	Added: 941741B	Fraction: 0.22337755306320145	Now: 1693696302255
+warning:     frame-src    https://insight.adsrvr.org
+warning:     frame-src    https://match.adsrvr.org
+Total: 3277321B	Added: 966565B	Fraction: 0.22775470406132492	Now: 1693696303318
+Total: 3277913B	Added: 966565B	Fraction: 0.22772293789719253	Now: 1693696313384
+Total: 3278171B	Added: 974986B	Fraction: 0.22923818706904073	Now: 1693696314630
+Total: 3289610B	Added: 974986B	Fraction: 0.2286232974940651	Now: 1693696315647
+Total: 3289610B	Added: 974986B	Fraction: 0.2286232974940651	Now: 1693696317029
+Total: 3345382B	Added: 974986B	Fraction: 0.2256719797943138	Now: 1693696318100
+Total: 3363942B	Added: 974986B	Fraction: 0.2247066556531936	Now: 1693696319245
+Total: 3370665B	Added: 974986B	Fraction: 0.22435902008697892	Now: 1693696320462
+Total: 3385670B	Added: 974986B	Fraction: 0.22358700158875178	Now: 1693696321560
+Total: 3386205B	Added: 974986B	Fraction: 0.22355957352016914	Now: 1693696328509
+violation:   script-src-elem    inline
+Total: 3468021B	Added: 1122429B	Fraction: 0.24451393654216907	Now: 1693696329535
+Total: 3702302B	Added: 1158897B	Fraction: 0.23839735834718964	Now: 1693696330780
+Total: 3731394B	Added: 1175955B	Fraction: 0.23963141810374602	Now: 1693696341444
+violation:   script-src-elem    inline
+Total: 3750290B	Added: 1397904B	Fraction: 0.2715328909516619	Now: 1693696342688
+Total: 3822103B	Added: 1415897B	Fraction: 0.27031252386407023	Now: 1693696353719
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEO-R2016.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/picturefill.min.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/pf.mutation.min.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/rwd-table.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEO-R2016-Longtail.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/dropdown.js
+Total: 3904259B	Added: 1584373B	Fraction: 0.2886644613812695	Now: 1693696354727
+violation:   script-src-elem    inline
+Total: 4885513B	Added: 1669190B	Fraction: 0.2546553215302051	Now: 1693696355846
+new:         https://players.brightcove.net/1039301536001/HkoikgMhf_default/index.min.js
+new:         https://vjs.zencdn.net/vttjs/0.15.3/vtt.global.min.js
+Total: 4891997B	Added: 1755476B	Fraction: 0.2640817044311425	Now: 1693696356915
+Total: 4894477B	Added: 1803740B	Fraction: 0.2692865877591007	Now: 1693696359414
+Total: 4894477B	Added: 1813848B	Fraction: 0.2703876153883421	Now: 1693696367621
+Total: 4894748B	Added: 1823312B	Fraction: 0.27140454238277123	Now: 1693696368782
+Total: 4903708B	Added: 1823312B	Fraction: 0.2710430472928578	Now: 1693696369812
+Total: 4914514B	Added: 1823312B	Fraction: 0.27060835349562307	Now: 1693696370832
+Total: 5219046B	Added: 1823312B	Fraction: 0.25890646286371694	Now: 1693696371842
+Total: 5249822B	Added: 1823312B	Fraction: 0.25777993178130093	Now: 1693696372891
+Total: 5266638B	Added: 1823312B	Fraction: 0.25716852728157463	Now: 1693696373999
+Total: 5798629B	Added: 1823312B	Fraction: 0.23921885514464097	Now: 1693696375322
+Total: 5846258B	Added: 1823312B	Fraction: 0.23773327578990738	Now: 1693696376363
+Total: 5846258B	Added: 1823312B	Fraction: 0.23773327578990738	Now: 1693696407771
+violation:   script-src-elem    inline
+new:         https://www.caixabank.es/deployedfiles/imaginbank/Estaticos/Javascript/jquery.validate.js
+new:         https://www.caixabank.es/deployedfiles/particulares/Estaticos/Javascript/custom.forms.jquery.js
+new:         https://www.caixabank.es/deployedfiles/particulares/Estaticos/Javascript/additional-methods.js
+Total: 5880076B	Added: 1997883B	Fraction: 0.2536041378230072	Now: 1693696409111
+Total: 6148709B	Added: 2059386B	Fraction: 0.25089694990128647	Now: 1693696410269
+Total: 8268961B	Added: 2069742B	Fraction: 0.20019358327635486	Now: 1693696411281
+Total: 8271434B	Added: 2079595B	Fraction: 0.20090707890007845	Now: 1693696421534
+Total: 8271434B	Added: 2079595B	Fraction: 0.20090707890007845	Now: 1693696431908
+violation:   script-src-elem    inline
+Total: 8336505B	Added: 2206798B	Fraction: 0.20930803183784058	Now: 1693696432954
+Total: 8396938B	Added: 2258727B	Fraction: 0.2119742878553333	Now: 1693696439095
+Total: 8396938B	Added: 2258727B	Fraction: 0.2119742878553333	Now: 1693696444064
+Total: 8416510B	Added: 2471184B	Fraction: 0.22697037591247513	Now: 1693696445255
+Total: 8417555B	Added: 2491880B	Fraction: 0.228415128739481	Now: 1693696456145
+Total: 8434891B	Added: 2780365B	Fraction: 0.24790918727133826	Now: 1693696457322
+Total: 8440537B	Added: 2811967B	Fraction: 0.2498970007031324	Now: 1693696467741
+violation:   script-src-elem    inline
+Total: 8507594B	Added: 3025837B	Fraction: 0.26235358758378147	Now: 1693696468926
+Total: 8535979B	Added: 3046751B	Fraction: 0.26304256423140315	Now: 1693696470972
+Total: 8664830B	Added: 3056820B	Fraction: 0.2607841046269083	Now: 1693696481617
+Total: 8665101B	Added: 3066889B	Fraction: 0.2614125139895278	Now: 1693696482830
+Total: 8665101B	Added: 3066889B	Fraction: 0.2614125139895278	Now: 1693696483975
+Total: 8665101B	Added: 3066889B	Fraction: 0.2614125139895278	Now: 1693696485236
+Total: 8665101B	Added: 3066889B	Fraction: 0.2614125139895278	Now: 1693696521753
+violation:   script-src-elem    inline
+Total: 8772246B	Added: 3229585B	Fraction: 0.2690910245278408	Now: 1693696522840
+Total: 8776485B	Added: 3261703B	Fraction: 0.2709463417584108	Now: 1693696527522
+Total: 8776485B	Added: 3261703B	Fraction: 0.2709463417584108	Now: 1693696533699
+violation:   script-src-elem    inline
+Total: 9450413B	Added: 3469212B	Fraction: 0.26852265448881063	Now: 1693696534901
+Total: 9947783B	Added: 3490527B	Fraction: 0.25974449168087355	Now: 1693696545919
+violation:   script-src-elem    inline
+Total: 9966117B	Added: 3688335B	Fraction: 0.270119591763917	Now: 1693696546958
+Total: 9968400B	Added: 3732097B	Fraction: 0.2724059572437409	Now: 1693696552966
+Total: 9968400B	Added: 3732097B	Fraction: 0.2724059572437409	Now: 1693696558399
+new:         https://www.caixabank.es/deployedfiles/particulares/Estaticos/Javascript/headingsid.js
+violation:   script-src-elem    inline
+Total: 10122158B	Added: 3898969B	Fraction: 0.2780781459293536	Now: 1693696559504
+Total: 10187957B	Added: 3920785B	Fraction: 0.27789756166779433	Now: 1693696560542
+Total: 10739611B	Added: 3965054B	Fraction: 0.26964599329532496	Now: 1693696571663
+violation:   script-src-elem    inline
+Total: 11018958B	Added: 4134323B	Fraction: 0.27283352034453795	Now: 1693696572829
+Total: 11046808B	Added: 4156445B	Fraction: 0.2733918195007345	Now: 1693696574428
+Total: 11047318B	Added: 4167141B	Fraction: 0.27389347199266173	Now: 1693696583228
+Total: 11047318B	Added: 4167141B	Fraction: 0.27389347199266173	Now: 1693696585132
+new:         https://www.caixabank.es/deployedfiles/caixabank_es/Migration/Estaticos/Javascript/cotizacion-talks.js
+violation:   script-src-elem    inline
+new:         https://tags.caixabank.es/caixabank-web/prod/utag.sync.js
+Total: 11655604B	Added: 4372658B	Fraction: 0.27280924157591135	Now: 1693696586351
+Total: 11826176B	Added: 4498031B	Fraction: 0.2755436144616397	Now: 1693696597499
+warning:     frame-src    https://www.caixabank.es/aplnr/videoagent/index_es.html?idReferencia=162&prod=seguros&origen=f:org_e:por_p:distrib_tc:na_m:na_nc:na&pos=D&serv=1
+violation:   script-src-elem    inline
+Total: 12036378B	Added: 4685389B	Fraction: 0.2801970031037988	Now: 1693696598888
+Total: 12268109B	Added: 4754916B	Fraction: 0.27932262332928487	Now: 1693696599912
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/jquery-1.12.4.min.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/html5shiv.min.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/rem.min.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/jcf.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/respond.min.js
+Total: 12684264B	Added: 4897885B	Fraction: 0.2785714647282309	Now: 1693696600924
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/jcf.checkbox.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEO-R2016-CMN.js
+Total: 12738703B	Added: 4909558B	Fraction: 0.2781893354818359	Now: 1693696612017
+Total: 12760755B	Added: 5133321B	Fraction: 0.2868726499205659	Now: 1693696613237
+Total: 12790960B	Added: 5181009B	Fraction: 0.2882827696842789	Now: 1693696624506
+violation:   script-src-elem    inline
+Total: 13066313B	Added: 5343109B	Fraction: 0.2902377380452249	Now: 1693696625555
+Total: 13169126B	Added: 5404438B	Fraction: 0.29097474238116067	Now: 1693696636283
+violation:   script-src-elem    inline
+Total: 13171275B	Added: 5517413B	Fraction: 0.29522741243259026	Now: 1693696637361
+Total: 13171275B	Added: 5517413B	Fraction: 0.29522741243259026	Now: 1693696643941
+Total: 13171275B	Added: 5517413B	Fraction: 0.29522741243259026	Now: 1693696647965
+violation:   script-src-elem    inline
+Total: 13402509B	Added: 5617446B	Fraction: 0.2953448628033032	Now: 1693696649053
+Total: 13572390B	Added: 5667606B	Fraction: 0.2945741776661492	Now: 1693696659747
+Total: 13575062B	Added: 5830649B	Fraction: 0.3004604675396846	Now: 1693696660804
+violation:   script-src-elem    inline
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEOVideoHtmlTranslation.js
+violation:   script-src-elem    https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEOVideoHtmlTranslation.js
+Total: 14180378B	Added: 5919341B	Fraction: 0.29449869423547664	Now: 1693696661805
+new:         https://players.brightcove.net/1039301536001/FfrKiSuN_default/index.min.js
+Total: 14182741B	Added: 6020183B	Fraction: 0.29798572721453587	Now: 1693696662976
+Total: 14182741B	Added: 6020183B	Fraction: 0.29798572721453587	Now: 1693696664435
+Total: 14182741B	Added: 6020183B	Fraction: 0.29798572721453587	Now: 1693696667426
+Total: 14328750B	Added: 6020183B	Fraction: 0.29584760046140995	Now: 1693696672075
+Total: 14346574B	Added: 6110411B	Fraction: 0.2986955800182676	Now: 1693696673132
+new:         https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js
+new:         https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js
+violation:   script-src-elem    https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js
+Total: 14351243B	Added: 6305245B	Fraction: 0.30524283702050414	Now: 1693696674229
+Total: 14351753B	Added: 6317630B	Fraction: 0.30565160072751085	Now: 1693696684937
+Total: 14370087B	Added: 6580902B	Fraction: 0.3141093721160371	Now: 1693696686005
+Total: 14372370B	Added: 6606565B	Fraction: 0.314914222290121	Now: 1693696697139
+new:         https://www.caixabank.es/deployedfiles/particulares/Estaticos/Javascript/hazteclientev2.js
+violation:   script-src-elem    inline
+new:         https://www.caixabank.es/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+Total: 14493574B	Added: 6776890B	Fraction: 0.3186056495993693	Now: 1693696698384
+Total: 14807175B	Added: 6816319B	Fraction: 0.31522745584039286	Now: 1693696700405
+Total: 14807827B	Added: 6829510B	Fraction: 0.31563542223333674	Now: 1693696704499
+Total: 14807827B	Added: 6829510B	Fraction: 0.31563542223333674	Now: 1693696711097
+violation:   script-src-elem    inline
+Total: 15084312B	Added: 7017363B	Fraction: 0.31750367336412283	Now: 1693696712144
+Total: 15508633B	Added: 7084161B	Fraction: 0.3135584292938713	Now: 1693696713317
+Total: 15510337B	Added: 7096941B	Fraction: 0.3139228437850855	Now: 1693696724275
+violation:   script-src-elem    inline
+Total: 15695382B	Added: 7258395B	Fraction: 0.316217893029108	Now: 1693696725292
+Total: 15959513B	Added: 7285639B	Fraction: 0.3134261716163439	Now: 1693696726343
+Total: 18026760B	Added: 7285639B	Fraction: 0.28782886205294095	Now: 1693696727444
+Total: 18027270B	Added: 7298527B	Fraction: 0.28818548138879896	Now: 1693696734770
+Total: 18027270B	Added: 7298527B	Fraction: 0.28818548138879896	Now: 1693696737962
+violation:   script-src-elem    inline
+Total: 18267775B	Added: 7529687B	Fraction: 0.2918770458892429	Now: 1693696739135
+Total: 18270058B	Added: 7556456B	Fraction: 0.2925852091381748	Now: 1693696750502
+violation:   script-src-elem    inline
+Total: 18272418B	Added: 7624750B	Fraction: 0.2944240852899437	Now: 1693696751549
+Total: 18280594B	Added: 7638625B	Fraction: 0.29470891850560776	Now: 1693696752575
+Total: 18988831B	Added: 7693351B	Fraction: 0.2883329032085907	Now: 1693696753690
+Total: 19671877B	Added: 7706455B	Fraction: 0.28148007701857075	Now: 1693696764658
+new:         https://www.caixabank.es/deployedfiles/particulares/Estaticos/Javascript/aplnr/AltaClienteOnline/custom.forms.jquery.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/slick.min.js
+Total: 19685369B	Added: 7788874B	Fraction: 0.283497310553743	Now: 1693696765766
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/jquery.gray.min.js
+violation:   script-src-elem    inline
+Total: 19720524B	Added: 7830185B	Fraction: 0.284209927229096	Now: 1693696766948
+Total: 19729750B	Added: 7830185B	Fraction: 0.28411478474096546	Now: 1693696777525
+violation:   script-src-elem    inline
+Total: 19832364B	Added: 8042987B	Fraction: 0.2885340170245749	Now: 1693696778650
+Total: 20594862B	Added: 8099410B	Fraction: 0.2822657427935443	Now: 1693696779747
+Total: 20822697B	Added: 8099410B	Fraction: 0.28004218364865324	Now: 1693696789784
+violation:   script-src-elem    inline
+Total: 20840567B	Added: 8198756B	Fraction: 0.2823328904740651	Now: 1693696791069
+Total: 20918125B	Added: 8242109B	Fraction: 0.2826489321039056	Now: 1693696792167
+Total: 20922458B	Added: 8255773B	Fraction: 0.2829428898551115	Now: 1693696796160
+Total: 20922458B	Added: 8255773B	Fraction: 0.2829428898551115	Now: 1693696802662
+Total: 20946164B	Added: 8528116B	Fraction: 0.28934094403663124	Now: 1693696803789
+Total: 20947801B	Added: 8528116B	Fraction: 0.28932487494791087	Now: 1693696813922
+Total: 20968462B	Added: 8757117B	Fraction: 0.2945987023499189	Now: 1693696815490
+Total: 20996778B	Added: 8798943B	Fraction: 0.2953089472142661	Now: 1693696826435
+Total: 20997049B	Added: 8812607B	Fraction: 0.2956292752925428	Now: 1693696827774
+Total: 20998657B	Added: 8812607B	Fraction: 0.295613329243604	Now: 1693696828898
+Total: 21000801B	Added: 8812607B	Fraction: 0.2955920705207536	Now: 1693696829932
+Total: 21001337B	Added: 8812607B	Fraction: 0.29558675631778203	Now: 1693696831019
+Total: 21002409B	Added: 8812607B	Fraction: 0.295576128485056	Now: 1693696866599
+Total: 21026683B	Added: 8895278B	Fraction: 0.2972825878624733	Now: 1693696867752
+new:         https://www.caixabank.es/deployedfiles/banca_privada/BancaPrivada2017/BibliotecasJSyCSS/js/slider-bpr.js
+violation:   script-src-elem    inline
+Total: 21075518B	Added: 8940805B	Fraction: 0.29786476511463444	Now: 1693696868862
+Total: 21131120B	Added: 8963733B	Fraction: 0.2978493697909074	Now: 1693696870199
+Total: 21254486B	Added: 8994751B	Fraction: 0.29735464071374756	Now: 1693696871475
+Total: 21519158B	Added: 9002416B	Fraction: 0.2949525473358615	Now: 1693696872982
+Total: 21700229B	Added: 9002416B	Fraction: 0.2932130440227544	Now: 1693696874053
+Total: 22192496B	Added: 9002416B	Fraction: 0.2885860360817815	Now: 1693696875184
+Total: 24278186B	Added: 9010058B	Fraction: 0.27066786701034756	Now: 1693696876318
+Total: 24281013B	Added: 9041711B	Fraction: 0.2713376913604062	Now: 1693696887104
+violation:   script-src-elem    https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+violation:   script-src-elem    inline
+violation:   script-src-elem    https://js.pp.caixabank.es/static/js/d3d3LmNhaXhhYmFuay5lcw==/8c49b4d0/bcaptcha.js
+Total: 24359885B	Added: 9137648B	Fraction: 0.272785700367845	Now: 1693696888559
+Total: 24377161B	Added: 9234013B	Fraction: 0.27473045124814743	Now: 1693696889570
+Total: 24377696B	Added: 9234013B	Fraction: 0.27472607834371054	Now: 1693696890802
+Total: 24379510B	Added: 9242332B	Fraction: 0.2748907094382277	Now: 1693696899218
+Total: 24379510B	Added: 9242332B	Fraction: 0.2748907094382277	Now: 1693696901464
+Total: 24381412B	Added: 9316142B	Fraction: 0.2764634489494401	Now: 1693696902466
+violation:   script-src-elem    inline
+new:         https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693696903111&cv=9&fst=1693696903111&num=1&guid=ON&resp=GooglemKTybQhCsO&eid=466465925&u_h=969&u_w=1920&u_ah=969&u_aw=1920&u_cd=24&u_his=45&u_tz=60&u_java=false&u_nplug=5&u_nmime=2&sendb=1&ig=1&frm=0&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Ftarjetas%2Ftarjetas-de-credito.html&tiba=Tarjetas%20de%20cr%C3%A9dito%20-%20Tarjetas%20Bancarias%20%7C%20CaixaBank&hn=www.googleadservices.com&async=1&rfmt=3&fmt=4
+violation:   script-src-elem    https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693696903111&cv=9&fst=1693696903111&num=1&guid=ON&resp=GooglemKTybQhCsO&eid=466465925&u_h=969&u_w=1920&u_ah=969&u_aw=1920&u_cd=24&u_his=45&u_tz=60&u_java=false&u_nplug=5&u_nmime=2&sendb=1&ig=1&frm=0&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Ftarjetas%2Ftarjetas-de-credito.html&tiba=Tarjetas%20de%20cr%C3%A9dito%20-%20Tarjetas%20Bancarias%20%7C%20CaixaBank&hn=www.googleadservices.com&async=1&rfmt=3&fmt=4
+Total: 24623133B	Added: 9416610B	Fraction: 0.27663575485866626	Now: 1693696903597
+new:         https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693696903183&cv=11&fst=1693696903183&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Ftarjetas%2Ftarjetas-de-credito.html&hn=www.googleadservices.com&frm=0&tiba=Tarjetas%20de%20cr%C3%A9dito%20-%20Tarjetas%20Bancarias%20%7C%20CaixaBank&auid=900674219.1693696254&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+violation:   script-src-elem    https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693696903183&cv=11&fst=1693696903183&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Ftarjetas%2Ftarjetas-de-credito.html&hn=www.googleadservices.com&frm=0&tiba=Tarjetas%20de%20cr%C3%A9dito%20-%20Tarjetas%20Bancarias%20%7C%20CaixaBank&auid=900674219.1693696254&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+new:         https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693696903231&cv=11&fst=1693696903231&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Ftarjetas%2Ftarjetas-de-credito.html&hn=www.googleadservices.com&frm=0&tiba=Tarjetas%20de%20cr%C3%A9dito%20-%20Tarjetas%20Bancarias%20%7C%20CaixaBank&auid=900674219.1693696254&fledge=1&uamb=0&uaw=0&data=event%3Dpage_view&rfmt=3&fmt=4
+violation:   script-src-elem    https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693696903231&cv=11&fst=1693696903231&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Ftarjetas%2Ftarjetas-de-credito.html&hn=www.googleadservices.com&frm=0&tiba=Tarjetas%20de%20cr%C3%A9dito%20-%20Tarjetas%20Bancarias%20%7C%20CaixaBank&auid=900674219.1693696254&fledge=1&uamb=0&uaw=0&data=event%3Dpage_view&rfmt=3&fmt=4
+Total: 24624906B	Added: 9433295B	Fraction: 0.2769757275200766	Now: 1693696904790
+Total: 24625416B	Added: 9442603B	Fraction: 0.2771691245094116	Now: 1693696915716
+Total: 24643750B	Added: 9633179B	Fraction: 0.28103973375211067	Now: 1693696916893
+Total: 24645523B	Added: 9653490B	Fraction: 0.28145095603771453	Now: 1693696918075
+Total: 24646033B	Added: 9663010B	Fraction: 0.28164615375602287	Now: 1693696929124
+Total: 24664367B	Added: 9867509B	Fraction: 0.28575073650791516	Now: 1693696930247
+Total: 24666140B	Added: 9877855B	Fraction: 0.285949989281784	Now: 1693696931260
+Total: 24666650B	Added: 9887429B	Fraction: 0.2861436127410602	Now: 1693696942208
+Total: 24684984B	Added: 10111452B	Fraction: 0.2905887258108848	Now: 1693696943347
+Total: 24686222B	Added: 10162597B	Fraction: 0.29161955244451754	Now: 1693696944414
+Total: 24687267B	Added: 10172296B	Fraction: 0.29180790361600345	Now: 1693696955488
+violation:   script-src-elem    inline
+Total: 24702951B	Added: 10316627B	Fraction: 0.29459598285279165	Now: 1693696956701
+Total: 24917985B	Added: 10346526B	Fraction: 0.2933976881176659	Now: 1693696957754
+Total: 25039261B	Added: 10356936B	Fraction: 0.29260024742206064	Now: 1693696958870
+Total: 26228959B	Added: 10356936B	Fraction: 0.2830854896402015	Now: 1693696960265
+Total: 26230541B	Added: 10365994B	Fraction: 0.2832506957284344	Now: 1693696970738
+Total: 26232690B	Added: 10453980B	Fraction: 0.28495309059121476	Now: 1693696972005
+Total: 26232690B	Added: 10453980B	Fraction: 0.28495309059121476	Now: 1693696973061
+Total: 26232690B	Added: 10453980B	Fraction: 0.28495309059121476	Now: 1693696983329
+violation:   script-src-elem    inline
+Total: 26251024B	Added: 10640699B	Fraction: 0.28843052410428216	Now: 1693696984499
+Total: 26253307B	Added: 10679844B	Fraction: 0.28916687882926645	Now: 1693696990828
+Total: 26253307B	Added: 10679844B	Fraction: 0.28916687882926645	Now: 1693696995227
+new:         https://www.caixabank.es/deployedfiles/particulares/Estaticos/Javascript/aplnr/AltaClienteOnline/JQuery3.x/jquery.mailtip.js
+violation:   script-src-elem    inline
+Total: 26271537B	Added: 10842438B	Fraction: 0.29213895843816245	Now: 1693696996404
+changed:     https://www.googletagmanager.com/gtag/js?id=AW-993560679
+Total: 26326091B	Added: 10852670B	Fraction: 0.2919051014099152	Now: 1693696997920
+Total: 26349743B	Added: 10872694B	Fraction: 0.29210054140195063	Now: 1693696999266
+new:         https://www.youtube.com/s/player/0a835141/www-widgetapi.vflset/www-widgetapi.js
+Total: 26621696B	Added: 10893189B	Fraction: 0.29036978255431145	Now: 1693697000294
+Total: 26884612B	Added: 10903438B	Fraction: 0.28854195969360685	Now: 1693697001346
+Total: 28013677B	Added: 10903438B	Fraction: 0.2801707680541068	Now: 1693697002464
+Total: 28013677B	Added: 10903438B	Fraction: 0.2801707680541068	Now: 1693697003750
+Total: 28013677B	Added: 10903438B	Fraction: 0.2801707680541068	Now: 1693697005029
+violation:   script-src-attr    inline
+violation:   script-src-attr    inline
+Total: 28014839B	Added: 10933704B	Fraction: 0.28072177180029556	Now: 1693697006992
+Total: 28014839B	Added: 10933704B	Fraction: 0.28072177180029556	Now: 1693697014997
+Total: 28015133B	Added: 10954217B	Fraction: 0.2810982733866487	Now: 1693697016355
+Total: 28124402B	Added: 11007332B	Fraction: 0.2812891450197428	Now: 1693697017404
+Total: 28487004B	Added: 11049365B	Fraction: 0.27947343874699265	Now: 1693697018734
+Total: 28813772B	Added: 11113199B	Fraction: 0.27833814390778605	Now: 1693697019872
+Total: 28814817B	Added: 11123207B	Fraction: 0.27851170102957523	Now: 1693697021270
+Total: 28814817B	Added: 11123207B	Fraction: 0.27851170102957523	Now: 1693697031801
+Total: 28816966B	Added: 11262601B	Fraction: 0.28100605478098106	Now: 1693697032847
+Total: 28833151B	Added: 11337360B	Fraction: 0.28223091311932774	Now: 1693697034137
+Total: 28834389B	Added: 11348187B	Fraction: 0.2824156171570484	Now: 1693697035155
+Total: 28834924B	Added: 11348187B	Fraction: 0.2824118570610424	Now: 1693697036219
+Total: 28834924B	Added: 11348187B	Fraction: 0.2824118570610424	Now: 1693697037280
+Total: 28834924B	Added: 11348187B	Fraction: 0.2824118570610424	Now: 1693697038453
+Total: 28835434B	Added: 11358194B	Fraction: 0.2825869314409737	Now: 1693697048945
+Total: 28838119B	Added: 11506258B	Fraction: 0.28520103309564054	Now: 1693697050189
+Total: 28838119B	Added: 11527748B	Fraction: 0.2855815781189588	Now: 1693697051409
+Total: 28838119B	Added: 11527748B	Fraction: 0.2855815781189588	Now: 1693697052796
+Total: 28838119B	Added: 11581206B	Fraction: 0.2865264573319817	Now: 1693697054932
+Total: 28838119B	Added: 11581206B	Fraction: 0.2865264573319817	Now: 1693697056135
+Total: 28838119B	Added: 11581206B	Fraction: 0.2865264573319817	Now: 1693697057591
+Total: 28838119B	Added: 11591965B	Fraction: 0.28671632242960465	Now: 1693697069187
+Total: 28838413B	Added: 11666148B	Fraction: 0.2880206009392374	Now: 1693697070324
+Total: 28856453B	Added: 11708335B	Fraction: 0.2886329641362849	Now: 1693697071471
+Total: 28858736B	Added: 11728997B	Fraction: 0.2889788646239493	Now: 1693697082856
+violation:   script-src-elem    inline
+Total: 28859030B	Added: 11824049B	Fraction: 0.2906380070200685	Now: 1693697084830
+Total: 28950610B	Added: 11887757B	Fraction: 0.29109285883052083	Now: 1693697086158
+Total: 28950610B	Added: 11887757B	Fraction: 0.29109285883052083	Now: 1693697087557
+Total: 29052003B	Added: 11887757B	Fraction: 0.2903719269482772	Now: 1693697088743
+Total: 29682734B	Added: 11919130B	Fraction: 0.286504710462012	Now: 1693697089968
+Total: 30183717B	Added: 11929822B	Fraction: 0.2832775939348151	Now: 1693697091059
+Total: 30674230B	Added: 11939790B	Fraction: 0.28018454959189487	Now: 1693697102313
+Total: 30692564B	Added: 12088660B	Fraction: 0.28256928787264246	Now: 1693697103339
+Total: 30696188B	Added: 12174304B	Fraction: 0.28397863966665	Now: 1693697104440
+Total: 30748110B	Added: 12228611B	Fraction: 0.28454034452744775	Now: 1693697105500
+Total: 30748620B	Added: 12238668B	Fraction: 0.28470435259837745	Now: 1693697116355
+Total: 30748914B	Added: 12313777B	Fraction: 0.2859500118095267	Now: 1693697117376
+violation:   script-src-elem    inline
+Total: 30766954B	Added: 12356518B	Fraction: 0.28653810620814574	Now: 1693697118638
+Total: 30788810B	Added: 12377514B	Fraction: 0.286740052268523	Now: 1693697130214
+violation:   script-src-elem    inline
+Total: 30875526B	Added: 12516459B	Fraction: 0.2884509431868581	Now: 1693697131375
+Total: 30877299B	Added: 12591693B	Fraction: 0.2896706921568368	Now: 1693697132666
+Total: 30877809B	Added: 12601837B	Fraction: 0.2898330174997285	Now: 1693697143209
+Total: 30896143B	Added: 12784327B	Fraction: 0.29267832969745977	Now: 1693697144527
+Total: 30897381B	Added: 12816940B	Fraction: 0.2931977371900618	Now: 1693697145725
+Total: 30898426B	Added: 12826976B	Fraction: 0.2933529576240374	Now: 1693697146806
+Total: 30927728B	Added: 12826976B	Fraction: 0.2931565026699758	Now: 1693697149166
+Total: 30927728B	Added: 12826976B	Fraction: 0.2931565026699758	Now: 1693697156599
+Total: 30946062B	Added: 12997648B	Fraction: 0.29577948698459916	Now: 1693697157981
+Total: 30950221B	Added: 13149053B	Fraction: 0.29816937575888436	Now: 1693697159194
+Total: 30950221B	Added: 13149053B	Fraction: 0.29816937575888436	Now: 1693697160227
+Total: 30950731B	Added: 13159089B	Fraction: 0.29832561094105575	Now: 1693697170765
+changed:     https://www.caixabank.es/deployedfiles/particulares/Estaticos/Javascript/additional-methods.js
+violation:   script-src-elem    inline
+Total: 30952880B	Added: 13297015B	Fraction: 0.30049822717093455	Now: 1693697171962
+Total: 30970303B	Added: 13403695B	Fraction: 0.3020619192347735	Now: 1693697173160
+Total: 30970838B	Added: 13403695B	Fraction: 0.3020582774358437	Now: 1693697174201
+Total: 30971348B	Added: 13414168B	Fraction: 0.30221948979933005	Now: 1693697179441
+Total: 30971348B	Added: 13414168B	Fraction: 0.30221948979933005	Now: 1693697184865
+violation:   script-src-elem    inline
+Total: 30971642B	Added: 13502420B	Fraction: 0.3036021310578737	Now: 1693697185891
+Total: 31455355B	Added: 13568390B	Fraction: 0.30136075975021626	Now: 1693697187581
+Total: 31456593B	Added: 13601863B	Fraction: 0.3018714844556591	Now: 1693697188636
+Total: 31457638B	Added: 13612013B	Fraction: 0.3020217085772419	Now: 1693697199593
+violation:   script-src-elem    inline
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEO-R2016-Home.js
+Total: 31493487B	Added: 13709517B	Fraction: 0.30328774167309763	Now: 1693697200649
+Total: 31558404B	Added: 13797049B	Fraction: 0.3041982405070455	Now: 1693697201933
+Total: 31684198B	Added: 13807336B	Fraction: 0.303514407757716	Now: 1693697209719
+Total: 31684198B	Added: 13807336B	Fraction: 0.303514407757716	Now: 1693697212193
+violation:   script-src-elem    inline
+Total: 31780661B	Added: 13900406B	Fraction: 0.30429249824659305	Now: 1693697213221
+Total: 32005405B	Added: 13983301B	Fraction: 0.304059457554644	Now: 1693697214434
+Total: 32006450B	Added: 14003481B	Fraction: 0.30435779179934	Now: 1693697225733
+violation:   script-src-elem    inline
+Total: 32006744B	Added: 14086013B	Fraction: 0.3056014418924865	Now: 1693697227067
+Total: 32032855B	Added: 14117279B	Fraction: 0.30589898178843855	Now: 1693697228304
+Total: 32176455B	Added: 14147828B	Fraction: 0.3054084614758096	Now: 1693697229340
+Total: 32544317B	Added: 14158294B	Fraction: 0.30315851077362677	Now: 1693697232160
+Total: 32548087B	Added: 14167890B	Fraction: 0.3032771850195919	Now: 1693697234348
+Total: 32548087B	Added: 14167890B	Fraction: 0.3032771850195919	Now: 1693697240016
+Total: 32548087B	Added: 14167890B	Fraction: 0.3032771850195919	Now: 1693697242677
+Total: 32548354B	Added: 14177486B	Fraction: 0.30341853672400537	Now: 1693697243811
+Total: 32548354B	Added: 14177486B	Fraction: 0.30341853672400537	Now: 1693697244972
+Total: 32552837B	Added: 14177486B	Fraction: 0.30338942874415825	Now: 1693697246138
+Total: 32552837B	Added: 14177486B	Fraction: 0.30338942874415825	Now: 1693697247369
+Total: 32553368B	Added: 14187028B	Fraction: 0.3035281943268089	Now: 1693697257512
+violation:   script-src-elem    inline
+Total: 32555517B	Added: 14278863B	Fraction: 0.30487994076146624	Now: 1693697258657
+Total: 32866706B	Added: 14350809B	Fraction: 0.30392978114159547	Now: 1693697259729
+Total: 33064716B	Added: 14381103B	Fraction: 0.30310580158812306	Now: 1693697260854
+Total: 33122735B	Added: 14401051B	Fraction: 0.3030282772504699	Now: 1693697270309
+Total: 33122735B	Added: 14401051B	Fraction: 0.3030282772504699	Now: 1693697272087
+violation:   script-src-elem    inline
+Total: 33231185B	Added: 14491590B	Fraction: 0.3036619308076699	Now: 1693697273455
+Total: 33539270B	Added: 14562046B	Fraction: 0.30273695630281716	Now: 1693697274694
+Total: 33820629B	Added: 14562046B	Fraction: 0.3009764548983701	Now: 1693697275815
+Total: 33821674B	Added: 14581681B	Fraction: 0.3012535184802789	Now: 1693697286803
+Total: 33821945B	Added: 14590963B	Fraction: 0.3013857998366882	Now: 1693697300608
+Total: 33821945B	Added: 14590963B	Fraction: 0.3013857998366882	Now: 1693697330882
+Total: 33821945B	Added: 14590963B	Fraction: 0.3013857998366882	Now: 1693697361159
+Total: 33821945B	Added: 14590963B	Fraction: 0.3013857998366882	Now: 1693697391424
+Total: 33821945B	Added: 14590963B	Fraction: 0.3013857998366882	Now: 1693697421682
+Total: 33821945B	Added: 14590963B	Fraction: 0.3013857998366882	Now: 1693697451965
+Total: 33821945B	Added: 14590963B	Fraction: 0.3013857998366882	Now: 1693697482227
+Total: 33821945B	Added: 14590963B	Fraction: 0.3013857998366882	Now: 1693697506953
+violation:   script-src-elem    inline
+violation:   script-src-elem    https://js.pp.caixabank.es/static/js/d3d3LmNhaXhhYmFuay5lcw==/8c49b4d0/bcaptcha.js
+violation:   script-src-elem    https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+Total: 33824094B	Added: 14735843B	Fraction: 0.3034567981420569	Now: 1693697508237
+Total: 33841517B	Added: 14887509B	Fraction: 0.3055162440554424	Now: 1693697509388
+Total: 33842543B	Added: 14893424B	Fraction: 0.3055941005541144	Now: 1693697512523
+Total: 33842543B	Added: 14893424B	Fraction: 0.3055941005541144	Now: 1693697520269
+Total: 33843373B	Added: 14984861B	Fraction: 0.3068892682049488	Now: 1693697521279
+violation:   script-src-elem    inline
+Total: 34682957B	Added: 15017619B	Fraction: 0.3021618703171569	Now: 1693697522307
+Total: 35462630B	Added: 15030507B	Fraction: 0.29767425620634347	Now: 1693697533520
+new:         https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693697534137&cv=11&fst=1693697534137&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fmovilidad%2Fsubhome-movilidad.html%3Floce%3Dhomepart-1-10-destacado-Movilidad-DisfrutarVida-NA&hn=www.googleadservices.com&frm=0&tiba=Movilidad%20%7C%20Particulares%20%7C%20CaixaBank&auid=900674219.1693696254&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+violation:   script-src-elem    https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693697534137&cv=11&fst=1693697534137&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fmovilidad%2Fsubhome-movilidad.html%3Floce%3Dhomepart-1-10-destacado-Movilidad-DisfrutarVida-NA&hn=www.googleadservices.com&frm=0&tiba=Movilidad%20%7C%20Particulares%20%7C%20CaixaBank&auid=900674219.1693696254&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+Total: 35480964B	Added: 15204453B	Fraction: 0.29997687500528997	Now: 1693697534525
+Total: 35482202B	Added: 15218548B	Fraction: 0.30016415930730805	Now: 1693697535597
+Total: 35483247B	Added: 15225434B	Fraction: 0.30025300796129956	Now: 1693697536632
+Total: 35483247B	Added: 15225434B	Fraction: 0.30025300796129956	Now: 1693697542783
+Total: 35483247B	Added: 15225434B	Fraction: 0.30025300796129956	Now: 1693697546861
+Total: 35488825B	Added: 15353924B	Fraction: 0.30198847037165516	Now: 1693697548083
+violation:   script-src-elem    inline
+Total: 35516921B	Added: 15368748B	Fraction: 0.30202507507565635	Now: 1693697549252
+Total: 35516921B	Added: 15368748B	Fraction: 0.30202507507565635	Now: 1693697559796
+violation:   script-src-elem    inline
+Total: 35588723B	Added: 15582221B	Fraction: 0.3045130650706776	Now: 1693697560985
+Total: 35592403B	Added: 15673182B	Fraction: 0.30572521507362105	Now: 1693697562036
+violation:   script-src-elem    https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js
+Total: 35644300B	Added: 15681340B	Fraction: 0.30552643863768675	Now: 1693697573018
+violation:   script-src-elem    inline
+Total: 35644594B	Added: 15752182B	Fraction: 0.3064819085150399	Now: 1693697574220
+Total: 35665005B	Added: 15813563B	Fraction: 0.3071873133689344	Now: 1693697575442
+Total: 35717485B	Added: 15821775B	Fraction: 0.30698490820395946	Now: 1693697586717
+violation:   script-src-elem    inline
+Total: 35860106B	Added: 15919880B	Fraction: 0.30745238131196095	Now: 1693697587835
+Total: 35868362B	Added: 15954890B	Fraction: 0.30787126211222715	Now: 1693697588909
+Total: 35873838B	Added: 16026397B	Fraction: 0.30879237830040657	Now: 1693697590719
+Total: 36949688B	Added: 16026397B	Fraction: 0.30252135468296687	Now: 1693697591998
+Total: 39763079B	Added: 16034429B	Fraction: 0.28736819214220105	Now: 1693697603082
+Total: 39781413B	Added: 16202144B	Fraction: 0.28940897771108043	Now: 1693697604133
+Total: 39783696B	Added: 16218389B	Fraction: 0.28960330673402607	Now: 1693697605159
+Total: 39783696B	Added: 16218389B	Fraction: 0.28960330673402607	Now: 1693697615473
+violation:   script-src-elem    inline
+Total: 39802619B	Added: 16419251B	Fraction: 0.2920438434367267	Now: 1693697616687
+Total: 39830477B	Added: 16427731B	Fraction: 0.29200594160411225	Now: 1693697617852
+Total: 39830987B	Added: 16435423B	Fraction: 0.29210008244705854	Now: 1693697628432
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/app-carousel-home.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/applications_jcarousel.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/jcarousel.basic.js
+Total: 39857143B	Added: 16482544B	Fraction: 0.2925565418920414	Now: 1693697629799
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/jquery.carouFredSel.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/jquery.mCustomScrollbar.min.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/jquery.jcarousel-store-version.js
+new:         https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.min.js
+new:         https://www.caixabank.es/deployedfiles/particulares/Estaticos/Javascript/wapicon.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/caixamovilStore.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/caixamovilstore-web.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/jquery.colorbox-store-version.js
+violation:   script-src-elem    inline
+Total: 40239259B	Added: 16602987B	Fraction: 0.2920888629207227	Now: 1693697631006
+Total: 40278981B	Added: 16627188B	Fraction: 0.29218603698309054	Now: 1693697632162
+Total: 40280150B	Added: 16635476B	Fraction: 0.29228310692743675	Now: 1693697635029
+Total: 40280150B	Added: 16635476B	Fraction: 0.29228310692743675	Now: 1693697642600
+changed:     https://www.googletagmanager.com/gtag/js?id=AW-993560679
+Total: 40298484B	Added: 16832235B	Fraction: 0.29462669636627536	Now: 1693697643772
+Total: 40300768B	Added: 16849660B	Fraction: 0.2948299879748932	Now: 1693697644844
+Total: 40300768B	Added: 16849660B	Fraction: 0.2948299879748932	Now: 1693697655088
+Total: 40319102B	Added: 17058548B	Fraction: 0.29730300909849044	Now: 1693697656191
+Total: 40321383B	Added: 17076091B	Fraction: 0.29750596690021586	Now: 1693697665357
+Total: 40321383B	Added: 17076091B	Fraction: 0.29750596690021586	Now: 1693697667662
+Total: 40321677B	Added: 17157654B	Fraction: 0.29850128213913973	Now: 1693697669025
+Total: 40340955B	Added: 17239367B	Fraction: 0.2993968495000775	Now: 1693697670197
+Total: 40341465B	Added: 17256910B	Fraction: 0.29960758441535895	Now: 1693697681014
+Total: 40359560B	Added: 17456730B	Fraction: 0.3019344548050385	Now: 1693697682037
+Total: 40389009B	Added: 17518555B	Fraction: 0.3025261950235033	Now: 1693697683173
+Total: 40389519B	Added: 17527019B	Fraction: 0.30262546079670716	Now: 1693697693593
+Total: 40408459B	Added: 17699474B	Fraction: 0.3045965169678295	Now: 1693697694780
+Total: 40436819B	Added: 17734681B	Fraction: 0.3048688962808248	Now: 1693697705802
+violation:   script-src-elem    https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEOVideoHtmlTranslation.js
+violation:   script-src-elem    inline
+Total: 40455153B	Added: 17954127B	Fraction: 0.30738483679305756	Now: 1693697707723
+Total: 40456391B	Added: 17990867B	Fraction: 0.307813704451285	Now: 1693697708970
+Total: 40456901B	Added: 17999388B	Fraction: 0.30791191688545266	Now: 1693697719524
+violation:   script-src-elem    inline
+Total: 40542357B	Added: 18138452B	Fraction: 0.309103645793295	Now: 1693697720593
+Total: 40981578B	Added: 18175209B	Fraction: 0.30723793366262436	Now: 1693697721804
+Total: 40982088B	Added: 18183853B	Fraction: 0.30733649617775877	Now: 1693697725968
+Total: 40982088B	Added: 18183853B	Fraction: 0.30733649617775877	Now: 1693697732290
+Total: 41000422B	Added: 18444631B	Fraction: 0.3102803356908438	Now: 1693697733333
+Total: 41002170B	Added: 18472548B	Fraction: 0.31059496574662193	Now: 1693697744515
+Total: 41007203B	Added: 18617699B	Fraction: 0.31224703732007814	Now: 1693697745578
+Total: 41034772B	Added: 18617699B	Fraction: 0.31210272915601434	Now: 1693697746670
+Total: 41034772B	Added: 18617699B	Fraction: 0.31210272915601434	Now: 1693697756229
+Total: 41035066B	Added: 18686956B	Fraction: 0.3128989169187875	Now: 1693697757544
+violation:   script-src-elem    inline
+Total: 41250311B	Added: 18775646B	Fraction: 0.3127921142515062	Now: 1693697758580
+Total: 41258397B	Added: 18857524B	Fraction: 0.3136860200478339	Now: 1693697759905
+Total: 41258907B	Added: 18866793B	Fraction: 0.31378916170622545	Now: 1693697770449
+violation:   script-src-elem    inline
+Total: 41278419B	Added: 19024410B	Fraction: 0.3154812189656973	Now: 1693697771545
+Total: 41331038B	Added: 19054389B	Fraction: 0.3155461499013661	Now: 1693697772558
+Total: 41331548B	Added: 19063658B	Fraction: 0.3156485301167778	Now: 1693697783039
+Total: 41349882B	Added: 19240942B	Fraction: 0.31755537769217335	Now: 1693697784152
+Total: 41351120B	Added: 19250394B	Fraction: 0.3176553311852902	Now: 1693697785345
+Total: 41351630B	Added: 19259031B	Fraction: 0.31774989221780636	Now: 1693697786505
+Total: 41351630B	Added: 19259031B	Fraction: 0.31774989221780636	Now: 1693697795839
+violation:   script-src-elem    inline
+Total: 41387539B	Added: 19418133B	Fraction: 0.3193473957495281	Now: 1693697796928
+Total: 41533175B	Added: 19418133B	Fraction: 0.3185843526114321	Now: 1693697798145
+Total: 42233350B	Added: 19445693B	Fraction: 0.3152722878660747	Now: 1693697799165
+Total: 42926610B	Added: 19463781B	Fraction: 0.311967607319531	Now: 1693697810275
+Total: 42944944B	Added: 19639363B	Fraction: 0.31380651063213016	Now: 1693697811279
+Total: 42946692B	Added: 19657206B	Fraction: 0.31399332354672227	Now: 1693697812434
+Total: 42946692B	Added: 19657206B	Fraction: 0.31399332354672227	Now: 1693697816766
+Total: 42946692B	Added: 19657206B	Fraction: 0.31399332354672227	Now: 1693697821635
+new:         https://tags.caixabank.es/caixabank-web/prod/utag.328.js?utv=ut4.46.202302091127
+new:         https://tags.caixabank.es/caixabank-web/prod/utag.326.js?utv=ut4.46.202306271441
+Total: 42948841B	Added: 19836952B	Fraction: 0.3159465071978943	Now: 1693697823254
+Total: 42966774B	Added: 19892809B	Fraction: 0.31646422153325454	Now: 1693697834623
+violation:   script-src-elem    inline
+Total: 43071817B	Added: 20064777B	Fraction: 0.31779948408366787	Now: 1693697835694
+Total: 43073565B	Added: 20083447B	Fraction: 0.317992355306486	Now: 1693697846478
+violation:   script-src-elem    inline
+Total: 43162861B	Added: 20201283B	Fraction: 0.3188125290542866	Now: 1693697847528
+Total: 43353226B	Added: 20258574B	Fraction: 0.3184719501727667	Now: 1693697848645
+Total: 43360244B	Added: 20460610B	Fraction: 0.32059442513884256	Now: 1693697849653
+Total: 43360754B	Added: 20469818B	Fraction: 0.3206898725582469	Now: 1693697860668
+violation:   script-src-elem    inline
+Total: 43494060B	Added: 20589040B	Fraction: 0.3212865794569863	Now: 1693697862598
+Total: 43742270B	Added: 20617617B	Fraction: 0.3203488688536697	Now: 1693697863735
+Total: 43961761B	Added: 20739150B	Fraction: 0.3205387633568251	Now: 1693697864750
+Total: 43963991B	Added: 20748412B	Fraction: 0.3206249658199217	Now: 1693697875293
+violation:   script-src-elem    inline
+Total: 44361460B	Added: 20905769B	Fraction: 0.32031035054360896	Now: 1693697876473
+Total: 44363208B	Added: 20924913B	Fraction: 0.3205010755325613	Now: 1693697877696
+Total: 44363208B	Added: 20924913B	Fraction: 0.3205010755325613	Now: 1693697887581
+violation:   script-src-elem    inline
+Total: 44429540B	Added: 21053025B	Fraction: 0.32150580845451	Now: 1693697888686
+Total: 44929155B	Added: 21172413B	Fraction: 0.32030122190142296	Now: 1693697889780
+Total: 44929665B	Added: 21222287B	Fraction: 0.3208111984359887	Now: 1693697891171
+Total: 44930317B	Added: 21222287B	Fraction: 0.32080803652113227	Now: 1693697900893
+violation:   script-src-elem    inline
+Total: 44948651B	Added: 21440850B	Fraction: 0.32295543236572904	Now: 1693697901989
+Total: 44950399B	Added: 21460124B	Fraction: 0.3231434271342811	Now: 1693697907967
+Total: 44950399B	Added: 21460124B	Fraction: 0.3231434271342811	Now: 1693697912782
+violation:   script-src-elem    inline
+Total: 44970469B	Added: 21619600B	Fraction: 0.3246670310553365	Now: 1693697913877
+Total: 45025187B	Added: 21668953B	Fraction: 0.32490040354369965	Now: 1693697924931
+Total: 45025473B	Added: 21678559B	Fraction: 0.3249962311123861	Now: 1693697925978
+Total: 45025473B	Added: 21678559B	Fraction: 0.3249962311123861	Now: 1693697927571
+Total: 45025473B	Added: 21678559B	Fraction: 0.3249962311123861	Now: 1693697928890
+Total: 45026004B	Added: 21688165B	Fraction: 0.3250908364008851	Now: 1693697938975
+Total: 45041535B	Added: 21885490B	Fraction: 0.32700527178669603	Now: 1693697940131
+Total: 45108336B	Added: 21936184B	Fraction: 0.3271883220284074	Now: 1693697951564
+violation:   script-src-elem    inline
+Total: 45202861B	Added: 22082442B	Fraction: 0.32819116531287673	Now: 1693697953529
+Total: 45219046B	Added: 22165881B	Fraction: 0.3289442014235617	Now: 1693697955669
+Total: 45220284B	Added: 22176422B	Fraction: 0.3290431137687946	Now: 1693697957227
+Total: 48707829B	Added: 22176422B	Fraction: 0.3128540075848442	Now: 1693697958963
+Total: 57167001B	Added: 22186237B	Fraction: 0.2795883011100316	Now: 1693697970331
+violation:   script-src-elem    inline
+changed:     https://www.caixabank.es/deployedfiles/particulares/Estaticos/Javascript/additional-methods.js
+Total: 57172513B	Added: 22441479B	Fraction: 0.2818785798355646	Now: 1693697971334
+Total: 57188181B	Added: 22473145B	Fraction: 0.2821085980918771	Now: 1693697973363
+Total: 57188691B	Added: 22483383B	Fraction: 0.28219904254030087	Now: 1693697983910
+violation:   script-src-elem    inline
+Total: 57346884B	Added: 22625275B	Fraction: 0.28291439524597556	Now: 1693697985033
+Total: 57498829B	Added: 22647434B	Fraction: 0.28257629429334713	Now: 1693697986067
+Total: 58181040B	Added: 22668855B	Fraction: 0.28038199678552456	Now: 1693697997202
+violation:   script-src-elem    inline
+Total: 58308851B	Added: 22857292B	Fraction: 0.2816111639061129	Now: 1693697998297
+Total: 58310599B	Added: 22879032B	Fraction: 0.2817974625355792	Now: 1693698001483
+Total: 58310599B	Added: 22879032B	Fraction: 0.2817974625355792	Now: 1693698009511
+Total: 58330569B	Added: 23080881B	Fraction: 0.28350902729284394	Now: 1693698010570
+Total: 58358419B	Added: 23102797B	Fraction: 0.2836048629571157	Now: 1693698012135
+Total: 58358929B	Added: 23113338B	Fraction: 0.28369577588899053	Now: 1693698022616
+violation:   script-src-elem    inline
+Total: 58434559B	Added: 23248865B	Fraction: 0.28462157756756135	Now: 1693698023639
+Total: 58799077B	Added: 23293758B	Fraction: 0.28374897760565826	Now: 1693698024863
+Total: 59452099B	Added: 23372927B	Fraction: 0.282196434203353	Now: 1693698026009
+Total: 60836003B	Added: 23372927B	Fraction: 0.2775587695984262	Now: 1693698027018
+Total: 60837165B	Added: 23383684B	Fraction: 0.2776472129840439	Now: 1693698031763
+Total: 60837165B	Added: 23383684B	Fraction: 0.2776472129840439	Now: 1693698037863
+violation:   script-src-elem    inline
+Total: 60855499B	Added: 23567046B	Fraction: 0.2791558344989481	Now: 1693698039083
+Total: 60857247B	Added: 23589553B	Fraction: 0.27934217756031016	Now: 1693698040146
+Total: 60857247B	Added: 23589553B	Fraction: 0.27934217756031016	Now: 1693698050301
+violation:   script-src-elem    inline
+Total: 60910523B	Added: 23729242B	Fraction: 0.2803557169611707	Now: 1693698051913
+Total: 61634536B	Added: 23775522B	Fraction: 0.2783691119844457	Now: 1693698053136
+Total: 61635046B	Added: 23786549B	Fraction: 0.27846060472179196	Now: 1693698062043
+Total: 61635046B	Added: 23786549B	Fraction: 0.27846060472179196	Now: 1693698063705
+violation:   script-src-elem    inline
+Total: 61654558B	Added: 23985769B	Fraction: 0.2800756353954604	Now: 1693698064919
+Total: 61707687B	Added: 24091085B	Fraction: 0.28078589516409397	Now: 1693698066086
+Total: 61707687B	Added: 24102888B	Fraction: 0.28088482101419315	Now: 1693698075683
+violation:   script-src-elem    inline
+Total: 61763793B	Added: 24259093B	Fraction: 0.2820074299762507	Now: 1693698076885
+Total: 61811339B	Added: 24307249B	Fraction: 0.2822532227304981	Now: 1693698077970
+Total: 62406907B	Added: 24342850B	Fraction: 0.28061000793350926	Now: 1693698079181
+Total: 64290668B	Added: 24354954B	Fraction: 0.27474514195410576	Now: 1693698080975
+Total: 64291178B	Added: 24366326B	Fraction: 0.27483658912842845	Now: 1693698091844
+Total: 64310750B	Added: 24595903B	Fraction: 0.2766486215604135	Now: 1693698093046
+Total: 64311260B	Added: 24607275B	Fraction: 0.27673954592256833	Now: 1693698104228
+violation:   script-src-elem    inline
+Total: 64523254B	Added: 24776574B	Fraction: 0.27745377068363447	Now: 1693698105406
+Total: 64525028B	Added: 24849876B	Fraction: 0.2780408692802624	Now: 1693698106516
+Total: 64525538B	Added: 24861302B	Fraction: 0.2781315683606222	Now: 1693698117385
+Total: 64642692B	Added: 25025538B	Fraction: 0.27909035340610605	Now: 1693698118394
+Total: 64645744B	Added: 25102504B	Fraction: 0.2796990978587125	Now: 1693698119563
+Total: 64645744B	Added: 25102504B	Fraction: 0.2796990978587125	Now: 1693698122725
+Total: 64645744B	Added: 25102504B	Fraction: 0.2796990978587125	Now: 1693698129135
+violation:   script-src-elem    inline
+Total: 64747491B	Added: 25257100B	Fraction: 0.2806201296998283	Now: 1693698130952
+Total: 64786103B	Added: 25323133B	Fraction: 0.2810270525432043	Now: 1693698132155
+Total: 64810760B	Added: 25333882B	Fraction: 0.28103591558996927	Now: 1693698133875
+Total: 70406546B	Added: 25344631B	Fraction: 0.2646926314023273	Now: 1693698145268
+violation:   script-src-elem    inline
+violation:   script-src-elem    https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+Total: 70410804B	Added: 25452250B	Fraction: 0.2655063545127615	Now: 1693698146311
+new:         https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693698146101&cv=11&fst=1693698146101&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fprestamos-personales.html&hn=www.googleadservices.com&frm=0&tiba=Pr%C3%A9stamos%20personales%20%7C%20Pr%C3%A9stamos%20online%20%7C%20CaixaBank&auid=900674219.1693696254&fledge=1&uamb=0&uaw=0&data=event%3Dpage_view&rfmt=3&fmt=4
+violation:   script-src-elem    https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693698146101&cv=11&fst=1693698146101&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fprestamos-personales.html&hn=www.googleadservices.com&frm=0&tiba=Pr%C3%A9stamos%20personales%20%7C%20Pr%C3%A9stamos%20online%20%7C%20CaixaBank&auid=900674219.1693696254&fledge=1&uamb=0&uaw=0&data=event%3Dpage_view&rfmt=3&fmt=4
+new:         https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693698146044&cv=11&fst=1693698146044&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fprestamos-personales.html&hn=www.googleadservices.com&frm=0&tiba=Pr%C3%A9stamos%20personales%20%7C%20Pr%C3%A9stamos%20online%20%7C%20CaixaBank&auid=900674219.1693696254&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+violation:   script-src-elem    https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693698146044&cv=11&fst=1693698146044&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fprestamos-personales.html&hn=www.googleadservices.com&frm=0&tiba=Pr%C3%A9stamos%20personales%20%7C%20Pr%C3%A9stamos%20online%20%7C%20CaixaBank&auid=900674219.1693696254&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+Total: 70841158B	Added: 25496876B	Fraction: 0.2646605389518329	Now: 1693698148328
+Total: 71649977B	Added: 25540779B	Fraction: 0.2627902081551871	Now: 1693698149625
+Total: 71649977B	Added: 25540779B	Fraction: 0.2627902081551871	Now: 1693698152997
+Total: 71649977B	Added: 25540779B	Fraction: 0.2627902081551871	Now: 1693698159853
+new:         https://www.caixabank.es/deployedfiles/particulares/Estaticos/Javascript/wapicon_prov.js
+violation:   script-src-elem    inline
+violation:   script-src-elem    https://js.pp.caixabank.es/static/js/d3d3LmNhaXhhYmFuay5lcw==/8c49b4d0/bcaptcha.js
+Total: 71653168B	Added: 25663822B	Fraction: 0.26371368452723415	Now: 1693698160931
+Total: 72280497B	Added: 25775916B	Fraction: 0.2628682327998272	Now: 1693698162108
+Total: 72280497B	Added: 25787210B	Fraction: 0.2629531248242604	Now: 1693698163178
+Total: 72282984B	Added: 25797894B	Fraction: 0.2630267441121398	Now: 1693698173930
+Total: 72302407B	Added: 25983018B	Fraction: 0.2643628798471391	Now: 1693698174980
+Total: 72330257B	Added: 26013650B	Fraction: 0.26451715000503284	Now: 1693698176009
+Total: 72330767B	Added: 26023370B	Fraction: 0.26458846362507354	Now: 1693698183275
+Total: 72330767B	Added: 26023370B	Fraction: 0.26458846362507354	Now: 1693698186516
+Total: 72349101B	Added: 26304551B	Fraction: 0.2666353496979514	Now: 1693698187745
+Total: 72349101B	Added: 26315064B	Fraction: 0.2667134921782392	Now: 1693698189021
+Total: 72350849B	Added: 26387423B	Fraction: 0.2672461494971271	Now: 1693698200523
+violation:   script-src-elem    inline
+Total: 72618460B	Added: 26553935B	Fraction: 0.2677553063027267	Now: 1693698201612
+Total: 72620208B	Added: 26574229B	Fraction: 0.26790039647082226	Now: 1693698202827
+Total: 72620208B	Added: 26574229B	Fraction: 0.26790039647082226	Now: 1693698213027
+new:         https://www.caixabank.es/deployedfiles/banca_personal/BancaPremier2017/Estaticos/JavaScript/scrollTop.js
+violation:   script-src-elem    inline
+Total: 72742667B	Added: 26688869B	Fraction: 0.26841452997366955	Now: 1693698214046
+Total: 73007357B	Added: 26772431B	Fraction: 0.2683151722070205	Now: 1693698215320
+Total: 73007357B	Added: 26782963B	Fraction: 0.26839239517420127	Now: 1693698216412
+Total: 73010063B	Added: 26833995B	Fraction: 0.2687590582506172	Now: 1693698227384
+Total: 73013820B	Added: 27058111B	Fraction: 0.2703866182016614	Now: 1693698228594
+violation:   script-src-elem    inline
+new:         https://www.caixabank.es/deployedfiles/common/JavaScript/aplnr/cookie/cookies-form.js
+Total: 73016177B	Added: 27068798B	Fraction: 0.27045815818008645	Now: 1693698229921
+Total: 73044273B	Added: 27090456B	Fraction: 0.2705400640770696	Now: 1693698230937
+Total: 73044273B	Added: 27090456B	Fraction: 0.2705400640770696	Now: 1693698241412
+Total: 73063785B	Added: 27311937B	Fraction: 0.2720970415535342	Now: 1693698242535
+Total: 73116404B	Added: 27354520B	Fraction: 0.27226304796400597	Now: 1693698243754
+Total: 73116914B	Added: 27364416B	Fraction: 0.2723333379444719	Now: 1693698254277
+violation:   script-src-elem    inline
+Total: 73135248B	Added: 27603809B	Fraction: 0.27401297790587814	Now: 1693698255466
+Total: 73136996B	Added: 27634640B	Fraction: 0.27423033997383944	Now: 1693698266672
+violation:   script-src-elem    inline
+Total: 73206337B	Added: 27750113B	Fraction: 0.27487211564986685	Now: 1693698267805
+Total: 73268480B	Added: 27812826B	Fraction: 0.27515301395096736	Now: 1693698268844
+Total: 73422597B	Added: 27833307B	Fraction: 0.27488083065260077	Now: 1693698270349
+Total: 74622182B	Added: 27843908B	Fraction: 0.27173778173832924	Now: 1693698272196
+Total: 74623996B	Added: 27853776B	Fraction: 0.2718030989198321	Now: 1693698274667
+Total: 74623996B	Added: 27853776B	Fraction: 0.2718030989198321	Now: 1693698282909
+violation:   script-src-elem    inline
+Total: 74627323B	Added: 28002040B	Fraction: 0.2728462808445961	Now: 1693698283967
+Total: 74679214B	Added: 28012099B	Fraction: 0.27277963618986933	Now: 1693698294560
+Total: 74705621B	Added: 28173364B	Fraction: 0.27384955246205045	Now: 1693698295721
+Total: 74707905B	Added: 28194299B	Fraction: 0.2739912062524919	Now: 1693698304946
+Total: 74707905B	Added: 28194299B	Fraction: 0.2739912062524919	Now: 1693698306053
+Total: 74726318B	Added: 28366126B	Fraction: 0.27515232833164766	Now: 1693698307075
+Total: 74788122B	Added: 28419452B	Fraction: 0.2753620775932588	Now: 1693698308204
+Total: 74788632B	Added: 28429257B	Fraction: 0.27542955272026537	Now: 1693698318997
+violation:   script-src-elem    inline
+violation:   script-src-elem    https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEOVideoHtmlTranslation.js
+Total: 74806966B	Added: 28618808B	Fraction: 0.276708666449042	Now: 1693698320246
+Total: 74808204B	Added: 28692712B	Fraction: 0.2772218170513583	Now: 1693698321448
+Total: 74808714B	Added: 28702751B	Fraction: 0.2772905494091886	Now: 1693698332043
+violation:   script-src-elem    inline
+Total: 74828286B	Added: 28904642B	Fraction: 0.27864480987175066	Now: 1693698334105
+Total: 74828796B	Added: 28978566B	Fraction: 0.2791571372365671	Now: 1693698335237
+Total: 74828796B	Added: 28978566B	Fraction: 0.2791571372365671	Now: 1693698345110
+Total: 74847130B	Added: 29192936B	Fraction: 0.2805932091584794	Now: 1693698346337
+Total: 74848878B	Added: 29212840B	Fraction: 0.28072609756452416	Now: 1693698347341
+Total: 74848878B	Added: 29212840B	Fraction: 0.28072609756452416	Now: 1693698357499
+violation:   script-src-elem    inline
+Total: 74868450B	Added: 29385214B	Fraction: 0.2818626499304619	Now: 1693698358723
+Total: 74868960B	Added: 29404951B	Fraction: 0.2819972006228864	Now: 1693698359943
+Total: 74868960B	Added: 29404951B	Fraction: 0.2819972006228864	Now: 1693698365493
+Total: 74868960B	Added: 29404951B	Fraction: 0.2819972006228864	Now: 1693698370153
+Total: 74952708B	Added: 29535771B	Fraction: 0.28267012098051497	Now: 1693698371348
+Total: 75478912B	Added: 29606772B	Fraction: 0.2817393471026938	Now: 1693698372447
+Total: 75478912B	Added: 29606772B	Fraction: 0.2817393471026938	Now: 1693698373469
+Total: 75480074B	Added: 29616625B	Fraction: 0.28180357025295344	Now: 1693698383982
+new:         https://www.caixabank.es/deployedfiles/particulares/Estaticos/Javascript/aplnr/Simulador_hipoteca/jquery-ui.min.js
+Total: 75595191B	Added: 29784838B	Fraction: 0.2826421503452044	Now: 1693698385026
+new:         https://www.caixabank.es/deployedfiles/particulares/Estaticos/Javascript/aplnr/Recomendador_planes_2017/recomendador_planes.js
+new:         https://www.caixabank.es/deployedfiles/particulares/Estaticos/Javascript/aplnr/Simulador_hipoteca/jquery.mCustomScrollbar.min.js
+new:         https://www.caixabank.es/deployedfiles/particulares/Estaticos/Javascript/aplnr/Simulador_hipoteca/custom.forms.jquery.js
+new:         https://www.caixabank.es/deployedfiles/particulares/Estaticos/Javascript/aplnr/Simulador_hipoteca/jquery.ui.touch-punch.js
+violation:   script-src-elem    inline
+Total: 75678203B	Added: 29858090B	Fraction: 0.28291774470418435	Now: 1693698386117
+Total: 75678713B	Added: 29868623B	Fraction: 0.28298793822707186	Now: 1693698387598
+Total: 75678713B	Added: 29868623B	Fraction: 0.28298793822707186	Now: 1693698395774
+Total: 75678713B	Added: 29868623B	Fraction: 0.28298793822707186	Now: 1693698397043
+Total: 75698285B	Added: 30070851B	Fraction: 0.28430648237497186	Now: 1693698398310
+Total: 75698795B	Added: 30081330B	Fraction: 0.28437601108903965	Now: 1693698409169
+violation:   script-src-elem    inline
+Total: 75918265B	Added: 30294838B	Fraction: 0.2852269366426476	Now: 1693698410199
+Total: 77628797B	Added: 30328110B	Fraction: 0.28092792617706247	Now: 1693698411395
+Total: 78409604B	Added: 30350043B	Fraction: 0.27905610065100706	Now: 1693698422371
+violation:   script-src-elem    inline
+Total: 78462705B	Added: 30562033B	Fraction: 0.2803220036171974	Now: 1693698423671
+Total: 78529495B	Added: 30562033B	Fraction: 0.2801503797801787	Now: 1693698424934
+Total: 78655277B	Added: 30562033B	Fraction: 0.2798277397602999	Now: 1693698426211
+Total: 80774514B	Added: 30584040B	Fraction: 0.2746447300312466	Now: 1693698427387
+Total: 82366823B	Added: 30617055B	Fraction: 0.27098605165597167	Now: 1693698428522
+Total: 82366823B	Added: 30617055B	Fraction: 0.27098605165597167	Now: 1693698439113
+Total: 82385157B	Added: 30806253B	Fraction: 0.2721606966465035	Now: 1693698440118
+Total: 82386905B	Added: 30828010B	Fraction: 0.27229636660505374	Now: 1693698451536
+violation:   script-src-elem    inline
+Total: 82602024B	Added: 31029053B	Fraction: 0.2730683701959456	Now: 1693698452723
+new:         https://players.brightcove.net/1039301536001/78VPVpZxu_default/index.min.js
+Total: 82665189B	Added: 31119042B	Fraction: 0.27349169323823086	Now: 1693698453743
+Total: 82666351B	Added: 31129795B	Fraction: 0.27355755088577427	Now: 1693698456769
+Total: 82666351B	Added: 31129795B	Fraction: 0.27355755088577427	Now: 1693698464556
+Total: 82684685B	Added: 31367038B	Fraction: 0.2750246745505107	Now: 1693698465839
+Total: 82686433B	Added: 31389093B	Fraction: 0.27516062472506153	Now: 1693698476752
+Total: 82686704B	Added: 31399630B	Fraction: 0.275226917187119	Now: 1693698477813
+Total: 82686704B	Added: 31399630B	Fraction: 0.275226917187119	Now: 1693698478994
+Total: 82686704B	Added: 31399630B	Fraction: 0.275226917187119	Now: 1693698480232
+Total: 82686704B	Added: 31399630B	Fraction: 0.275226917187119	Now: 1693698516945
+Total: 82705038B	Added: 31653696B	Fraction: 0.27679299073038005	Now: 1693698518009
+Total: 82706786B	Added: 31685928B	Fraction: 0.2769925364302485	Now: 1693698519088
+Total: 82706786B	Added: 31685928B	Fraction: 0.2769925364302485	Now: 1693698529598
+Total: 82707196B	Added: 31685928B	Fraction: 0.2769915436525713	Now: 1693698540110
+violation:   script-src-elem    inline
+Total: 82968266B	Added: 31890089B	Fraction: 0.27764709846314617	Now: 1693698541269
+Total: 82970666B	Added: 31911110B	Fraction: 0.277773473836268	Now: 1693698547930
+Total: 82970666B	Added: 31911110B	Fraction: 0.277773473836268	Now: 1693698552352
+violation:   script-src-elem    inline
+Total: 83256591B	Added: 32061937B	Fraction: 0.2780293640237933	Now: 1693698553632
+Total: 83533960B	Added: 32104683B	Fraction: 0.27762936477903843	Now: 1693698554842
+Total: 84547727B	Added: 32115556B	Fraction: 0.2752841783134116	Now: 1693698557769
+Total: 84548889B	Added: 32125607B	Fraction: 0.27534386778066733	Now: 1693698568292
+violation:   script-src-elem    inline
+Total: 84555311B	Added: 32211570B	Fraction: 0.27586221130630356	Now: 1693698569852
+Total: 84711280B	Added: 32275988B	Fraction: 0.27589316813518544	Now: 1693698571059
+Total: 85723986B	Added: 32308658B	Fraction: 0.2737264616388666	Now: 1693698572066
+Total: 86394731B	Added: 32318817B	Fraction: 0.272242027506414	Now: 1693698578205
+Total: 86394731B	Added: 32318817B	Fraction: 0.272242027506414	Now: 1693698583130
+violation:   script-src-elem    inline
+Total: 86414303B	Added: 32568875B	Fraction: 0.2737267195872008	Now: 1693698584309
+Total: 86414813B	Added: 32578665B	Fraction: 0.2737852993926272	Now: 1693698594877
+Total: 86433147B	Added: 32807810B	Fraction: 0.2751387679654399	Now: 1693698595948
+Total: 86434895B	Added: 32838471B	Fraction: 0.27532107209919776	Now: 1693698607231
+Total: 86454977B	Added: 33097571B	Fraction: 0.2768453835044988	Now: 1693698608456
+Total: 86454977B	Added: 33097571B	Fraction: 0.2768453835044988	Now: 1693698618397
+Total: 86473311B	Added: 33377634B	Fraction: 0.2784928729598252	Now: 1693698619411
+Total: 86475059B	Added: 33397744B	Fraction: 0.2786098528120678	Now: 1693698630600
+violation:   script-src-elem    inline
+Total: 86823100B	Added: 33559720B	Fraction: 0.2787749946379392	Now: 1693698631606
+Total: 87142504B	Added: 33559720B	Fraction: 0.2780372961479152	Now: 1693698632850
+Total: 88155102B	Added: 33579500B	Fraction: 0.2758418678692522	Now: 1693698638972
+Total: 88155102B	Added: 33579500B	Fraction: 0.2758418678692522	Now: 1693698643982
+violation:   script-src-elem    inline
+Total: 88250315B	Added: 33765079B	Fraction: 0.2767280249900271	Now: 1693698645211
+Total: 88250315B	Added: 33765079B	Fraction: 0.2767280249900271	Now: 1693698655439
+violation:   script-src-elem    inline
+Total: 88301793B	Added: 33969232B	Fraction: 0.27781914807698715	Now: 1693698656758
+Total: 88301793B	Added: 33969232B	Fraction: 0.27781914807698715	Now: 1693698666871
+violation:   script-src-elem    inline
+Total: 88648493B	Added: 34110990B	Fraction: 0.2778684722873914	Now: 1693698668062
+Total: 88892587B	Added: 34213250B	Fraction: 0.2779173663390144	Now: 1693698669174
+Total: 88893097B	Added: 34222648B	Fraction: 0.27797133502298993	Now: 1693698670236
+Total: 88893097B	Added: 34222648B	Fraction: 0.27797133502298993	Now: 1693698679650
+Total: 88911961B	Added: 34422613B	Fraction: 0.2790994599778648	Now: 1693698680694
+Total: 88913709B	Added: 34442176B	Fraction: 0.27920983259128657	Now: 1693698692090
+violation:   script-src-elem    inline
+changed:     https://www.googletagmanager.com/gtag/js?id=AW-993560679
+Total: 88932043B	Added: 34654966B	Fraction: 0.2804094563045862	Now: 1693698693232
+Total: 88933791B	Added: 34675007B	Fraction: 0.28052215991939344	Now: 1693698699567
+Total: 88933791B	Added: 34675007B	Fraction: 0.28052215991939344	Now: 1693698704430
+Total: 88953363B	Added: 34863918B	Fraction: 0.2815755419471697	Now: 1693698705769
+Total: 88954409B	Added: 34873717B	Fraction: 0.28163001513888697	Now: 1693698716361
+violation:   script-src-elem    inline
+Total: 88956558B	Added: 35031408B	Fraction: 0.2825387747710935	Now: 1693698718308
+Total: 88973981B	Added: 35083627B	Fraction: 0.2828010918927278	Now: 1693698719524
+Total: 88974491B	Added: 35093534B	Fraction: 0.282857198702083	Now: 1693698729868
+Total: 88976640B	Added: 35254910B	Fraction: 0.28378386971747516	Now: 1693698730984
+Total: 88994573B	Added: 35355840B	Fraction: 0.28432426677987793	Now: 1693698732143
+Total: 88994573B	Added: 35355840B	Fraction: 0.28432426677987793	Now: 1693698741902
+violation:   script-src-elem    inline
+Total: 89156304B	Added: 35581196B	Fraction: 0.2852485900390821	Now: 1693698743075
+Total: 89159449B	Added: 35623630B	Fraction: 0.285484460597418	Now: 1693698744117
+Total: 89211370B	Added: 35677894B	Fraction: 0.2856762291432833	Now: 1693698745141
+Total: 89211370B	Added: 35677894B	Fraction: 0.2856762291432833	Now: 1693698746342
+Total: 89211880B	Added: 35688355B	Fraction: 0.28573489073099023	Now: 1693698756944
+violation:   script-src-elem    https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+Total: 89230214B	Added: 35938891B	Fraction: 0.2871226969306843	Now: 1693698758101
+Total: 89231962B	Added: 35958432B	Fraction: 0.287229961110275	Now: 1693698760135
+Total: 89231962B	Added: 35958432B	Fraction: 0.287229961110275	Now: 1693698769138
+violation:   script-src-elem    https://js.pp.caixabank.es/static/js/d3d3LmNhaXhhYmFuay5lcw==/8c49b4d0/bcaptcha.js
+violation:   script-src-elem    inline
+Total: 89250296B	Added: 36176580B	Fraction: 0.2884276572430936	Now: 1693698770157
+Total: 89251534B	Added: 36256062B	Fraction: 0.28887543985783937	Now: 1693698771810
+Total: 89252044B	Added: 36265616B	Fraction: 0.2889283946179366	Now: 1693698782681
+Total: 89253955B	Added: 36326186B	Fraction: 0.2892669629985525	Now: 1693698783727
+violation:   script-src-elem    inline
+warning:     frame-src    https://players.brightcove.net
+Total: 89279561B	Added: 36407544B	Fraction: 0.28966809284055034	Now: 1693698784963
+Total: 89281871B	Added: 36438393B	Fraction: 0.28983707033895506	Now: 1693698786963
+Total: 89281871B	Added: 36438393B	Fraction: 0.28983707033895506	Now: 1693698788049
+Total: 89281871B	Added: 36448646B	Fraction: 0.28989498229773447	Now: 1693698789068
+Total: 89285524B	Added: 36487491B	Fraction: 0.2901058784350522	Now: 1693698790452
+Total: 89285524B	Added: 36487491B	Fraction: 0.2901058784350522	Now: 1693698800478
+Total: 89285818B	Added: 36558700B	Fraction: 0.29050689359388704	Now: 1693698802111
+violation:   script-src-elem    inline
+Total: 89296069B	Added: 36558700B	Fraction: 0.29048323150948696	Now: 1693698803253
+Total: 89614133B	Added: 36630427B	Fraction: 0.2901544985383925	Now: 1693698804398
+Total: 89615371B	Added: 36651150B	Fraction: 0.2902681542956268	Now: 1693698805519
+Total: 89615371B	Added: 36661501B	Fraction: 0.29032633149164483	Now: 1693698806531
+Total: 89617837B	Added: 36671385B	Fraction: 0.2903762048672689	Now: 1693698817550
+violation:   script-src-elem    inline
+Total: 89619986B	Added: 36784289B	Fraction: 0.2910051024777445	Now: 1693698820412
+new:         https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693698821010&cv=9&fst=1693698821010&num=1&guid=ON&resp=GooglemKTybQhCsO&eid=466465926&u_h=969&u_w=1920&u_ah=969&u_aw=1920&u_cd=24&u_his=50&u_tz=60&u_java=false&u_nplug=5&u_nmime=2&sendb=1&ig=1&frm=0&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fgeneral%2Finfoclientes_es.html&tiba=Informaci%C3%B3n%20a%20clientes%20%7C%20General%20%7C%20Particulares%20%7C%20CaixaBank&hn=www.googleadservices.com&async=1&rfmt=3&fmt=4
+violation:   script-src-elem    https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693698821010&cv=9&fst=1693698821010&num=1&guid=ON&resp=GooglemKTybQhCsO&eid=466465926&u_h=969&u_w=1920&u_ah=969&u_aw=1920&u_cd=24&u_his=50&u_tz=60&u_java=false&u_nplug=5&u_nmime=2&sendb=1&ig=1&frm=0&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fgeneral%2Finfoclientes_es.html&tiba=Informaci%C3%B3n%20a%20clientes%20%7C%20General%20%7C%20Particulares%20%7C%20CaixaBank&hn=www.googleadservices.com&async=1&rfmt=3&fmt=4
+Total: 89636171B	Added: 36887430B	Fraction: 0.2915458436880879	Now: 1693698821551
+new:         https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693698821228&cv=11&fst=1693698821228&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fgeneral%2Finfoclientes_es.html&hn=www.googleadservices.com&frm=0&tiba=Informaci%C3%B3n%20a%20clientes%20%7C%20General%20%7C%20Particulares%20%7C%20CaixaBank&auid=900674219.1693696254&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+violation:   script-src-elem    https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693698821228&cv=11&fst=1693698821228&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fgeneral%2Finfoclientes_es.html&hn=www.googleadservices.com&frm=0&tiba=Informaci%C3%B3n%20a%20clientes%20%7C%20General%20%7C%20Particulares%20%7C%20CaixaBank&auid=900674219.1693696254&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+new:         https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693698821360&cv=11&fst=1693698821360&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fgeneral%2Finfoclientes_es.html&hn=www.googleadservices.com&frm=0&tiba=Informaci%C3%B3n%20a%20clientes%20%7C%20General%20%7C%20Particulares%20%7C%20CaixaBank&auid=900674219.1693696254&fledge=1&uamb=0&uaw=0&data=event%3Dpage_view&rfmt=3&fmt=4
+violation:   script-src-elem    https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693698821360&cv=11&fst=1693698821360&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fgeneral%2Finfoclientes_es.html&hn=www.googleadservices.com&frm=0&tiba=Informaci%C3%B3n%20a%20clientes%20%7C%20General%20%7C%20Particulares%20%7C%20CaixaBank&auid=900674219.1693696254&fledge=1&uamb=0&uaw=0&data=event%3Dpage_view&rfmt=3&fmt=4
+Total: 89637409B	Added: 36919300B	Fraction: 0.29172139740138153	Now: 1693698822853
+Total: 89637409B	Added: 36919300B	Fraction: 0.29172139740138153	Now: 1693698824186
+Total: 89637919B	Added: 36930491B	Fraction: 0.29178284692049145	Now: 1693698834735
+Total: 89638213B	Added: 37013537B	Fraction: 0.2922465500871484	Now: 1693698836659
+violation:   script-src-elem    inline
+Total: 89656253B	Added: 37096816B	Fraction: 0.292669962886658	Now: 1693698837921
+Total: 89657491B	Added: 37096816B	Fraction: 0.2926671044006418	Now: 1693698839307
+Total: 89657491B	Added: 37096816B	Fraction: 0.2926671044006418	Now: 1693698840993
+Total: 89657491B	Added: 37108835B	Fraction: 0.29273416822066767	Now: 1693698842092
+Total: 89657491B	Added: 37108835B	Fraction: 0.29273416822066767	Now: 1693698844282
+Total: 89658001B	Added: 37119132B	Fraction: 0.29279043563794743	Now: 1693698852361
+Total: 89658001B	Added: 37119132B	Fraction: 0.29279043563794743	Now: 1693698855227
+violation:   script-src-elem    inline
+Total: 89660150B	Added: 37239179B	Fraction: 0.2934544988807624	Now: 1693698856262
+Total: 89660150B	Added: 37272150B	Fraction: 0.29363802593981203	Now: 1693698859531
+Total: 89663513B	Added: 37305072B	Fraction: 0.2938134027405283	Now: 1693698862658
+Total: 89675825B	Added: 37305072B	Fraction: 0.29378491474981466	Now: 1693698864619
+Total: 89677573B	Added: 37392340B	Fraction: 0.2942658818063407	Now: 1693698865771
+Total: 89677573B	Added: 37392340B	Fraction: 0.2942658818063407	Now: 1693698866894
+Total: 89678083B	Added: 37402507B	Fraction: 0.2943211626574916	Now: 1693698877406
+Total: 89696417B	Added: 37585457B	Fraction: 0.29529308312981	Now: 1693698878520
+Total: 89698675B	Added: 37627432B	Fraction: 0.29552016382626073	Now: 1693698879709
+Total: 89699166B	Added: 37648437B	Fraction: 0.2956352229103205	Now: 1693698882641
+Total: 89699166B	Added: 37648437B	Fraction: 0.2956352229103205	Now: 1693698889961
+Total: 89717500B	Added: 37828983B	Fraction: 0.2965897773911963	Now: 1693698891015
