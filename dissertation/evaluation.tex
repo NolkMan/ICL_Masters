@@ -134,13 +134,36 @@ To further ... I use Puppeteer
 Puppeteer is a Node.js module designed to simulate user interaction in a chromium client.
 I use it to automatically load web-apps 
 
-\section{Results}
+\section{Evaluation}
 
-\subsection{Evaluation}
+The automated policy maker is evaluated in this work by the methods of empirical tests, which show that the program is working correctly.
+This work also aims to estimate the impact of deploying the solution in the real world.
+This set of tests compares the network impact of the solution to the loads that the hosts are already experiencing in their normal operation.
+
+\subsection{Empirical tests}
+
+This project consists of multiple modules which all work together to achieve a bigger goal.
+
+Oracle is a module that is used to generate hashes of loaded resources and communicate to the python evaluation server.
+When tested on a local server, it can successfully fetch files from it and generate hashes equal to the ones that are generated with system tools on file data.
+After receiving line and file information it is sometimes able to extract data from inline scripts embeded in the html of the page.
+Ocasionally, due to formatting, encoding or other issues related to dynamic inclusion of data into the page, it may be unsuccessfull in retreiving a correct hash.
+Due to security concerns my oracle does not dynamically execute scripts and change html code, which would happen within the browser.
+Most notably a script may change the inner html of a page to one with another script.
+In this case the oracle will be unable to generate the script that was included.
+Throughout testing of this project, different scripts responsible for ads and user tagging were found to use this technique.
+
+The second role of the oracle is to pass the 
+The oracle may work without the script grading server in which case it will only send the hash back to the policy making server.
+
+The server which is the main outcome of this project uses the oracle extensively.
+
+\subsection{Impact estimation}
 
 To try to provide most accurate results I have tried to deploy my solution on a mixture of randomly selected hosts from top 10,000 hosts and a few which would most likely be interested in deploying such protection method.
 
 In this paper I present results gathered from 4 websites, which I believe provide a broad range of results as well as demonstrate some issues where my solution is unlikely to be beneficial.
+
 
 \subsection{www.libertatea.ro}
 
