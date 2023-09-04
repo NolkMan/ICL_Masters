@@ -1,0 +1,2013 @@
+Mitm communication server running at http://127.0.0.1:8181/
+PSQL started
+Reporting server running at http://localhost:16326/
+Total: 0B	Added: 0B	Fraction: NaN	Now: 1693847415177
+Total: 538B	Added: 1551B	Fraction: 0.7424605074198181	Now: 1693847416274
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/common.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/modernizr-custom.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/jquery-3.6.3.min.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Bibliotecas/Estaticos/js/lib/jquery.colorbox.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/jquery.unveil.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEO-R2016-Prehome.js
+new:         https://www.caixabank.es/deployedfiles/common/JavaScript/js.cookie.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/jquery.cookie.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/cookiecaixaes.js
+new:         https://www.caixabank.es/deployedfiles/common/js/prebid-ads.js
+violation:   script-src-elem    inline
+new:         https://js.pp.caixabank.es/static/js/d3d3LmNhaXhhYmFuay5lcw==/8c49b4d0/bcaptcha.js
+violation:   script-src-elem    https://js.pp.caixabank.es/static/js/d3d3LmNhaXhhYmFuay5lcw==/8c49b4d0/bcaptcha.js
+new:         https://www.caixabank.es/deployedfiles/common/JavaScript/aplnr/cookie/cookie-policy.js
+new:         https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+violation:   script-src-elem    https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+new:         https://www.caixabank.es/deployedfiles/common/JavaScript/aplnr/cookie/neo-cookie-policy.js
+Total: 124891B	Added: 32603B	Fraction: 0.2070110607388218	Now: 1693847417548
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEO-R2016-Home.min.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NeoThirdParty2.js
+Total: 271736B	Added: 58247B	Fraction: 0.1765151538109539	Now: 1693847418688
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/NeoThirdParty.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/mustache.min.js
+violation:   script-src-elem    inline
+new:         https://www.caixabank.es/deployedfiles/particulares/Estaticos/Javascript/s_code_basic.js
+new:         https://www.caixabank.es/deployedfiles/common/JavaScript/aplnr/cookie/cookies-banner.js
+new:         https://tags.caixabank.es/caixabank-web/prod/utag.js
+Total: 374481B	Added: 106893B	Fraction: 0.22205810866394946	Now: 1693847419891
+new:         https://www.caixabank.es/deployedfiles/common/JavaScript/NEOVideo.js
+new:         https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/lolopo.js
+violation:   script-src    eval
+violation:   script-src    eval
+new:         https://loapp.caixabank.es/js/lomilu/errorControl.js
+Total: 631612B	Added: 158205B	Fraction: 0.20030589364371748	Now: 1693847421036
+violation:   script-src    eval
+Total: 872847B	Added: 165982B	Fraction: 0.1597779807841329	Now: 1693847427597
+Successfully accepted cookies
+Total: 980103B	Added: 165982B	Fraction: 0.14482520929948478	Now: 1693847432267
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 1004626B	Added: 276990B	Fraction: 0.21612557895656734	Now: 1693847433481
+warning:     frame-src    https://caixa.demdex.net
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+new:         https://metrics.caixabank.es/b/ss/lacaixaes/10/JS-2.9.0/s72559747762758?AQB=1&ndh=1&pf=1&callback=s_c_il[1].doPostbacks&et=1&t=4%2F8%2F2023%2018%3A10%3A33%201%20-60&d.&nsid=0&jsonv=1&.d&fid=2F289B20F48D6E1A-299FA165074803D1&ce=UTF-8&ns=lacaixa&pageName=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&g=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fhome%2Fparticulares_es.html%23&r=https%3A%2F%2Fwww.caixabank.es%2Findex_es.html&cc=EUR&events=event42&c19=https%3A%2F%2Fwww.caixabank.es%2Findex_es.html&v19=D%3Dc19&v50=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&v84=boton%20pulsado%3APOLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON%2Ccookies%20aceptadas%3AAA%7CAT%7CDBCK%7CYTB%7CGOOG%7CAC%7CTIQ%7CNCP%7CCEXTLO%7CFB%7CAAM%7CLK%7CTD%7CSIZMEK&pe=lnk_o&pev2=GDPR%3APOLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON%3AAA%7CAT%7CDBCK%7CYTB%7CGOOG%7CAC%7CTIQ%7CNCP%7CCEXTLO%7CFB%7CAAM%7CLK%7CTD%7CSIZMEK&s=1920x969&c=24&j=1.6&v=N&k=Y&bw=1920&bh=947&AQE=1
+violation:   script-src-elem    https://metrics.caixabank.es/b/ss/lacaixaes/10/JS-2.9.0/s72559747762758?AQB=1&ndh=1&pf=1&callback=s_c_il[1].doPostbacks&et=1&t=4%2F8%2F2023%2018%3A10%3A33%201%20-60&d.&nsid=0&jsonv=1&.d&fid=2F289B20F48D6E1A-299FA165074803D1&ce=UTF-8&ns=lacaixa&pageName=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&g=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fhome%2Fparticulares_es.html%23&r=https%3A%2F%2Fwww.caixabank.es%2Findex_es.html&cc=EUR&events=event42&c19=https%3A%2F%2Fwww.caixabank.es%2Findex_es.html&v19=D%3Dc19&v50=caixabankes%3Aparticulares%3Ahomes%3Ahomeparticulares&v84=boton%20pulsado%3APOLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON%2Ccookies%20aceptadas%3AAA%7CAT%7CDBCK%7CYTB%7CGOOG%7CAC%7CTIQ%7CNCP%7CCEXTLO%7CFB%7CAAM%7CLK%7CTD%7CSIZMEK&pe=lnk_o&pev2=GDPR%3APOLITICA-COOKIES-ACEPTAR-NAVEGANDO-FALDON%3AAA%7CAT%7CDBCK%7CYTB%7CGOOG%7CAC%7CTIQ%7CNCP%7CCEXTLO%7CFB%7CAAM%7CLK%7CTD%7CSIZMEK&s=1920x969&c=24&j=1.6&v=N&k=Y&bw=1920&bh=947&AQE=1
+new:         https://tags.caixabank.es/caixabank-web/prod/utag.126.js?utv=ut4.46.202307170952
+Total: 1131850B	Added: 341770B	Fraction: 0.2319254624665789	Now: 1693847434575
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/rwd-table.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/jquery-1.12.4.min.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/picturefill.min.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEO-R2016.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/jquery.gray.min.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/dropdown.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/pf.mutation.min.js
+new:         https://www.caixabank.es/deployedfiles/particulares/Estaticos/Javascript/aplnr/AltaClienteOnline/custom.forms.jquery.js
+violation:   script-src    eval
+violation:   script-src    eval
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/slick.min.js
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+new:         https://tags.caixabank.es/caixabank-web/prod/utag.198.js?utv=ut4.46.202103181349
+new:         https://tags.caixabank.es/caixabank-web/prod/utag.179.js?utv=ut4.46.202106081525
+new:         https://metrics.caixabank.es/b/ss/lacaixaes/10/JS-2.9.0/s71883247299429?AQB=1&ndh=1&pf=1&callback=s_c_il[1].doPostbacks&et=1&t=4%2F8%2F2023%2018%3A10%3A35%201%20-60&d.&nsid=0&jsonv=1&.d&sdid=7815138305B1FC0F-4F6BC21ED5BF5855&mid=48776775018515464430672397460014158332&aamlh=6&ce=UTF-8&ns=lacaixa&pageName=caixabankes%3Aparticulares%3Acookies&g=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fgeneral%2Fcookies_es.html&c.&cm.&ssf=0&.cm&.c&cc=EUR&ch=caixabankes&server=www.caixabank.es&events=event29&aamb=6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y&c1=particulares&h1=caixabankes%3Aparticulares%3Acookies&c6=cookies&c8=48776775018515464430672397460014158332&v8=48776775018515464430672397460014158332&v10=D%3DpageName&c11=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fgeneral%2Fcookies_es.html&v11=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fgeneral%2Fcookies_es.html&c12=New&v12=New&c14=18&v14=18&c15=18%3A10&c17=es&v17=es&c18=no%20logado&v18=no%20logado&v19=D%3Dc19&v28=caixabankes%3Aparticulares%3Acookies&c31=event29&v31=true&c32=D%3Ds_vi&v32=true&c33=D%3Ds_fid&v34=true&v36=true&v37=true&v38=true&c44=20150903v1&v50=caixabankes%3Aparticulares%3Acookies&c74=caixabank-web&v110=produccion&v140=false&v141=false&v142=false&v171=false&v191=true&v192=true&s=1920x969&c=24&j=1.6&v=N&k=Y&bw=1920&bh=947&mcorgid=3A3F337B54E77B700A4C98A1%40AdobeOrg&AQE=1
+violation:   script-src-elem    https://metrics.caixabank.es/b/ss/lacaixaes/10/JS-2.9.0/s71883247299429?AQB=1&ndh=1&pf=1&callback=s_c_il[1].doPostbacks&et=1&t=4%2F8%2F2023%2018%3A10%3A35%201%20-60&d.&nsid=0&jsonv=1&.d&sdid=7815138305B1FC0F-4F6BC21ED5BF5855&mid=48776775018515464430672397460014158332&aamlh=6&ce=UTF-8&ns=lacaixa&pageName=caixabankes%3Aparticulares%3Acookies&g=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fgeneral%2Fcookies_es.html&c.&cm.&ssf=0&.cm&.c&cc=EUR&ch=caixabankes&server=www.caixabank.es&events=event29&aamb=6G1ynYcLPuiQxYZrsz_pkqfLG9yMXBpb2zX5dvJdYQJzPXImdj0y&c1=particulares&h1=caixabankes%3Aparticulares%3Acookies&c6=cookies&c8=48776775018515464430672397460014158332&v8=48776775018515464430672397460014158332&v10=D%3DpageName&c11=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fgeneral%2Fcookies_es.html&v11=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fgeneral%2Fcookies_es.html&c12=New&v12=New&c14=18&v14=18&c15=18%3A10&c17=es&v17=es&c18=no%20logado&v18=no%20logado&v19=D%3Dc19&v28=caixabankes%3Aparticulares%3Acookies&c31=event29&v31=true&c32=D%3Ds_vi&v32=true&c33=D%3Ds_fid&v34=true&v36=true&v37=true&v38=true&c44=20150903v1&v50=caixabankes%3Aparticulares%3Acookies&c74=caixabank-web&v110=produccion&v140=false&v141=false&v142=false&v171=false&v191=true&v192=true&s=1920x969&c=24&j=1.6&v=N&k=Y&bw=1920&bh=947&mcorgid=3A3F337B54E77B700A4C98A1%40AdobeOrg&AQE=1
+Total: 1210448B	Added: 489557B	Fraction: 0.287973858900415	Now: 1693847435736
+new:         https://js.adsrvr.org/up_loader.1.1.0.js
+new:         https://tags.caixabank.es/caixabank-web/prod/utag.44.js?utv=ut4.46.202006081001
+new:         https://www.googletagmanager.com/gtag/js?id=AW-993560679
+new:         https://tags.caixabank.es/caixabank-web/prod/utag.199.js?utv=ut4.46.202202211618
+new:         https://connect.facebook.net/en_US/fbevents.js
+new:         https://tags.caixabank.es/caixabank-web/prod/utag.180.js?utv=ut4.46.202302241039
+new:         https://www.googleadservices.com/pagead/conversion_async.js
+new:         https://www.caixabank.es/deployedfiles/common/JavaScript/aplnr/cookie/cookies-form.js
+new:         https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693847436232&cv=11&fst=1693847436232&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fgeneral%2Fcookies_es.html&hn=www.googleadservices.com&frm=0&tiba=Cookies%20%7C%20General%20%7C%20Particulares%20%7C%20CaixaBank&auid=512512929.1693847436&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+violation:   script-src-elem    https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693847436232&cv=11&fst=1693847436232&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fgeneral%2Fcookies_es.html&hn=www.googleadservices.com&frm=0&tiba=Cookies%20%7C%20General%20%7C%20Particulares%20%7C%20CaixaBank&auid=512512929.1693847436&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+warning:     frame-src    https://td.doubleclick.net
+new:         https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693847436279&cv=11&fst=1693847436279&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fgeneral%2Fcookies_es.html&hn=www.googleadservices.com&frm=0&tiba=Cookies%20%7C%20General%20%7C%20Particulares%20%7C%20CaixaBank&auid=512512929.1693847436&fledge=1&uamb=0&uaw=0&data=event%3Dpage_view&rfmt=3&fmt=4
+violation:   script-src-elem    https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693847436279&cv=11&fst=1693847436279&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fgeneral%2Fcookies_es.html&hn=www.googleadservices.com&frm=0&tiba=Cookies%20%7C%20General%20%7C%20Particulares%20%7C%20CaixaBank&auid=512512929.1693847436&fledge=1&uamb=0&uaw=0&data=event%3Dpage_view&rfmt=3&fmt=4
+new:         https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693847436309&cv=11&fst=1693847436309&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fgeneral%2Fcookies_es.html&hn=www.googleadservices.com&frm=0&tiba=Cookies%20%7C%20General%20%7C%20Particulares%20%7C%20CaixaBank&auid=512512929.1693847436&fledge=1&uamb=0&uaw=0&data=event%3Dpage_view&rfmt=3&fmt=4
+violation:   script-src-elem    https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693847436309&cv=11&fst=1693847436309&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fgeneral%2Fcookies_es.html&hn=www.googleadservices.com&frm=0&tiba=Cookies%20%7C%20General%20%7C%20Particulares%20%7C%20CaixaBank&auid=512512929.1693847436&fledge=1&uamb=0&uaw=0&data=event%3Dpage_view&rfmt=3&fmt=4
+new:         https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693847436321&cv=11&fst=1693847436321&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fgeneral%2Fcookies_es.html&hn=www.googleadservices.com&frm=0&tiba=Cookies%20%7C%20General%20%7C%20Particulares%20%7C%20CaixaBank&auid=512512929.1693847436&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+violation:   script-src-elem    https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693847436321&cv=11&fst=1693847436321&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fgeneral%2Fcookies_es.html&hn=www.googleadservices.com&frm=0&tiba=Cookies%20%7C%20General%20%7C%20Particulares%20%7C%20CaixaBank&auid=512512929.1693847436&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+new:         https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693847436410&cv=9&fst=1693847436410&num=1&guid=ON&resp=GooglemKTybQhCsO&eid=466465926&u_h=969&u_w=1920&u_ah=969&u_aw=1920&u_cd=24&u_his=4&u_tz=60&u_java=false&u_nplug=5&u_nmime=2&sendb=1&ig=1&frm=0&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fgeneral%2Fcookies_es.html&tiba=Cookies%20%7C%20General%20%7C%20Particulares%20%7C%20CaixaBank&hn=www.googleadservices.com&uaa=&uab=&uam=&uap=&uapv=&uaw=0&uafvl=&async=1&rfmt=3&fmt=4
+violation:   script-src-elem    https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693847436410&cv=9&fst=1693847436410&num=1&guid=ON&resp=GooglemKTybQhCsO&eid=466465926&u_h=969&u_w=1920&u_ah=969&u_aw=1920&u_cd=24&u_his=4&u_tz=60&u_java=false&u_nplug=5&u_nmime=2&sendb=1&ig=1&frm=0&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fgeneral%2Fcookies_es.html&tiba=Cookies%20%7C%20General%20%7C%20Particulares%20%7C%20CaixaBank&hn=www.googleadservices.com&uaa=&uab=&uam=&uap=&uapv=&uaw=0&uafvl=&async=1&rfmt=3&fmt=4
+new:         https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693847436292&cv=11&fst=1693847436292&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fgeneral%2Fcookies_es.html&hn=www.googleadservices.com&frm=0&tiba=Cookies%20%7C%20General%20%7C%20Particulares%20%7C%20CaixaBank&auid=512512929.1693847436&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+violation:   script-src-elem    https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693847436292&cv=11&fst=1693847436292&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fgeneral%2Fcookies_es.html&hn=www.googleadservices.com&frm=0&tiba=Cookies%20%7C%20General%20%7C%20Particulares%20%7C%20CaixaBank&auid=512512929.1693847436&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+new:         https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693847436350&cv=11&fst=1693847436350&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fgeneral%2Fcookies_es.html&hn=www.googleadservices.com&frm=0&tiba=Cookies%20%7C%20General%20%7C%20Particulares%20%7C%20CaixaBank&auid=512512929.1693847436&fledge=1&uamb=0&uaw=0&data=event%3Dpage_view&rfmt=3&fmt=4
+violation:   script-src-elem    https://googleads.g.doubleclick.net/pagead/viewthroughconversion/993560679/?random=1693847436350&cv=11&fst=1693847436350&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.caixabank.es%2Fparticular%2Fgeneral%2Fcookies_es.html&hn=www.googleadservices.com&frm=0&tiba=Cookies%20%7C%20General%20%7C%20Particulares%20%7C%20CaixaBank&auid=512512929.1693847436&fledge=1&uamb=0&uaw=0&data=event%3Dpage_view&rfmt=3&fmt=4
+Total: 1290412B	Added: 529724B	Fraction: 0.29103539515728494	Now: 1693847436753
+new:         https://connect.facebook.net/signals/config/1919777298239854?v=2.9.125&r=stable&domain=www.caixabank.es
+warning:     frame-src    https://www.facebook.com
+Total: 1290412B	Added: 588735B	Fraction: 0.31329906601239815	Now: 1693847437922
+warning:     frame-src    https://insight.adsrvr.org
+warning:     frame-src    https://match.adsrvr.org
+Total: 1297645B	Added: 595931B	Fraction: 0.31471195241173316	Now: 1693847439111
+Total: 1302258B	Added: 595931B	Fraction: 0.3139471359279819	Now: 1693847449357
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NeoThirdParty.InternalPages.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NeoThirdParty.InternalPages2.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEO-R2016.min.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEO-R2016-Longtail.min.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NeoThirdParty.InternalPages3.js
+violation:   script-src-elem    inline
+Total: 1772248B	Added: 753451B	Fraction: 0.29831385291754875	Now: 1693847450714
+violation:   script-src    eval
+Total: 1793653B	Added: 798778B	Fraction: 0.30811929034948277	Now: 1693847451828
+violation:   script-src    eval
+violation:   script-src    eval
+new:         https://players.brightcove.net/1039301536001/HkoikgMhf_default/index.min.js
+violation:   script-src    eval
+new:         https://vjs.zencdn.net/vttjs/0.15.3/vtt.global.min.js
+Total: 2559577B	Added: 911527B	Fraction: 0.26260434720480863	Now: 1693847453071
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 4073542B	Added: 980707B	Fraction: 0.19403614661644095	Now: 1693847454094
+Total: 4073542B	Added: 980707B	Fraction: 0.19403614661644095	Now: 1693847455265
+Total: 4077345B	Added: 1004057B	Fraction: 0.19759448278250766	Now: 1693847466002
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEO-R2016-Longtail.js
+new:         https://www.caixabank.es/deployedfiles/particulares/Estaticos/Javascript/aplnr/Simulador_hipoteca/jquery-ui.min.js
+new:         https://www.caixabank.es/deployedfiles/particulares/Estaticos/Javascript/aplnr/Simulador_hipoteca/jquery.ui.touch-punch.js
+Total: 4185095B	Added: 1112518B	Fraction: 0.21000363748729853	Now: 1693847467166
+new:         https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.12/jquery.mousewheel.min.js
+new:         https://www.caixabank.es/deployedfiles/particulares/Estaticos/Javascript/aplnr/Simulador_hipoteca/custom.forms.jquery.js
+new:         https://www.caixabank.es/deployedfiles/particulares/Estaticos/Javascript/aplnr/Simulador_hipoteca/jquery.mCustomScrollbar.min.js
+new:         https://www.caixabank.es/deployedfiles/particulares/Estaticos/Javascript/aplnr/Recomendador_planes_2017/recomendador_planes.js
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 4377929B	Added: 1185541B	Fraction: 0.21309380656317012	Now: 1693847468355
+Total: 4386525B	Added: 1197668B	Fraction: 0.2144746787942322	Now: 1693847469667
+Total: 4387184B	Added: 1197668B	Fraction: 0.21444937126355362	Now: 1693847479485
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 4423093B	Added: 1352251B	Fraction: 0.23414207015201172	Now: 1693847480493
+Total: 4623662B	Added: 1352251B	Fraction: 0.22628358210703536	Now: 1693847481682
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 5646621B	Added: 1390445B	Fraction: 0.1975887393979252	Now: 1693847482721
+violation:   script-src    eval
+Total: 6015166B	Added: 1415622B	Fraction: 0.19050765544650178	Now: 1693847494020
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 6049100B	Added: 1634886B	Fraction: 0.2127653538150642	Now: 1693847495081
+violation:   script-src    eval
+Total: 6054115B	Added: 1660244B	Fraction: 0.2152147702744972	Now: 1693847506097
+new:         https://www.caixabank.es/deployedfiles/particulares/Estaticos/Javascript/scrollto.js
+new:         https://www.caixabank.es/deployedfiles/particulares/Bibliotecas/scrollablefn.js
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 6064438B	Added: 1856338B	Fraction: 0.23436314825719096	Now: 1693847507105
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 6248213B	Added: 1895261B	Fraction: 0.23273372027712005	Now: 1693847508297
+violation:   script-src    eval
+Total: 8143041B	Added: 1920993B	Fraction: 0.1908770379750307	Now: 1693847511793
+Total: 8143041B	Added: 1920993B	Fraction: 0.1908770379750307	Now: 1693847519735
+violation:   script-src-elem    inline
+violation:   script-src    eval
+Total: 8485923B	Added: 2053804B	Fraction: 0.19486311172955428	Now: 1693847520881
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+new:         https://tags.caixabank.es/caixabank-web/prod/utag.360.js?utv=ut4.46.202306061125
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 9772959B	Added: 2133399B	Fraction: 0.17918149277890014	Now: 1693847522103
+Total: 9773469B	Added: 2146096B	Fraction: 0.180048181288495	Now: 1693847532601
+new:         https://www.caixabank.es/deployedfiles/particulares/Estaticos/Javascript/hazteclientev2.js
+new:         https://www.caixabank.es/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+violation:   script-src    eval
+Total: 9923906B	Added: 2334059B	Fraction: 0.19041162215751145	Now: 1693847533623
+Total: 10208286B	Added: 2347434B	Fraction: 0.186961321214554	Now: 1693847534705
+Total: 10208286B	Added: 2347434B	Fraction: 0.186961321214554	Now: 1693847535819
+Total: 10208945B	Added: 2347434B	Fraction: 0.18695150887051115	Now: 1693847542074
+Total: 10208945B	Added: 2347434B	Fraction: 0.18695150887051115	Now: 1693847546521
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 10439624B	Added: 2511283B	Fraction: 0.19390788614264623	Now: 1693847547531
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 10857045B	Added: 2552752B	Fraction: 0.19036470127027277	Now: 1693847548732
+violation:   script-src    eval
+Total: 11666071B	Added: 2565790B	Fraction: 0.18028492549217562	Now: 1693847559634
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 11862073B	Added: 2757884B	Fraction: 0.1886383113165107	Now: 1693847561053
+violation:   script-src    eval
+Total: 12443859B	Added: 2784893B	Fraction: 0.1828707303132916	Now: 1693847572244
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+Total: 12515965B	Added: 2950699B	Fraction: 0.19077798547896302	Now: 1693847573434
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 12533388B	Added: 3033769B	Fraction: 0.19488266226132364	Now: 1693847574487
+Total: 12534047B	Added: 3033769B	Fraction: 0.19487441269860847	Now: 1693847584832
+violation:   script-src    eval
+warning:     frame-src    https://www.caixabank.es/aplnr/videoagent/index_es.html?idReferencia=153&prod=seguros&pos=D&serv=1
+violation:   script-src-elem    inline
+violation:   script-src    eval
+Total: 12636925B	Added: 3202380B	Fraction: 0.2021793254186342	Now: 1693847585836
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 12941854B	Added: 3272021B	Fraction: 0.20180376375172498	Now: 1693847586841
+violation:   script-src    eval
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/html5shiv.min.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/respond.min.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/jcf.checkbox.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/rem.min.js
+new:         https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js
+new:         https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js
+violation:   script-src-elem    https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/jcf.js
+Total: 13206928B	Added: 3443911B	Fraction: 0.2068310792026756	Now: 1693847588153
+Total: 13210074B	Added: 3458030B	Fraction: 0.20746390831254713	Now: 1693847598773
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+Total: 13502649B	Added: 3621361B	Fraction: 0.2114785613883664	Now: 1693847599843
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 13550708B	Added: 3694803B	Fraction: 0.21424723222176484	Now: 1693847600908
+Total: 13551367B	Added: 3694803B	Fraction: 0.2142390455388066	Now: 1693847603522
+Total: 13551367B	Added: 3694803B	Fraction: 0.2142390455388066	Now: 1693847611236
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 13609596B	Added: 3889185B	Fraction: 0.22225462447927086	Now: 1693847612249
+violation:   script-src    eval
+Total: 13611344B	Added: 3918681B	Fraction: 0.22354109591971488	Now: 1693847623126
+Total: 13611608B	Added: 3933070B	Fraction: 0.22417453315472646	Now: 1693847624312
+Total: 13616090B	Added: 3933070B	Fraction: 0.2241172796874608	Now: 1693847625553
+Total: 13616090B	Added: 3933070B	Fraction: 0.2241172796874608	Now: 1693847628619
+Total: 13616090B	Added: 3933070B	Fraction: 0.2241172796874608	Now: 1693847636680
+violation:   script-src    eval
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 13691151B	Added: 4219723B	Fraction: 0.23559559405085426	Now: 1693847637833
+violation:   script-src    eval
+Total: 13700985B	Added: 4249542B	Fraction: 0.23673633648750256	Now: 1693847649198
+violation:   script-src    eval
+violation:   script-src-elem    inline
+violation:   script-src    eval
+Total: 13712931B	Added: 4371807B	Fraction: 0.2417401346925789	Now: 1693847650229
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 13930668B	Added: 4432725B	Fraction: 0.2413892138560668	Now: 1693847651452
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 15293107B	Added: 4448143B	Fraction: 0.22532225669600456	Now: 1693847653003
+Total: 15294921B	Added: 4462778B	Fraction: 0.22587539166377624	Now: 1693847663477
+violation:   script-src    eval
+violation:   script-src-elem    inline
+violation:   script-src    eval
+Total: 15616879B	Added: 4660971B	Fraction: 0.22985528544692854	Now: 1693847664661
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 15618627B	Added: 4722064B	Fraction: 0.2321486521770573	Now: 1693847667890
+Total: 15618627B	Added: 4722064B	Fraction: 0.2321486521770573	Now: 1693847675841
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 15692862B	Added: 4891509B	Fraction: 0.23763218220270127	Now: 1693847677169
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 16427680B	Added: 4952875B	Fraction: 0.23165324754198383	Now: 1693847678364
+Total: 16428190B	Added: 4967672B	Fraction: 0.23217910079995843	Now: 1693847680370
+Total: 16428190B	Added: 4967672B	Fraction: 0.23217910079995843	Now: 1693847688745
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 16864674B	Added: 5153159B	Fraction: 0.23404478542461468	Now: 1693847689937
+violation:   script-src    eval
+violation:   script-src    eval
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEOVideoHtmlTranslation.js
+violation:   script-src-elem    https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEOVideoHtmlTranslation.js
+new:         https://players.brightcove.net/1039301536001/FfrKiSuN_default/index.min.js
+Total: 17088210B	Added: 5231157B	Fraction: 0.23437748032907924	Now: 1693847691033
+Total: 17090038B	Added: 5246175B	Fraction: 0.23487307360473325	Now: 1693847695325
+Total: 17090038B	Added: 5246175B	Fraction: 0.23487307360473325	Now: 1693847696420
+Total: 17236047B	Added: 5246175B	Fraction: 0.23334770913657912	Now: 1693847698192
+Total: 17236047B	Added: 5246175B	Fraction: 0.23334770913657912	Now: 1693847700957
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 17346447B	Added: 5466336B	Fraction: 0.23961723565248483	Now: 1693847702004
+violation:   script-src    eval
+Total: 17348847B	Added: 5497271B	Fraction: 0.24062166710335647	Now: 1693847712553
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 17367181B	Added: 5749534B	Fraction: 0.24871760542101246	Now: 1693847713733
+violation:   script-src    eval
+Total: 17368929B	Added: 5780503B	Fraction: 0.2497038804235024	Now: 1693847724654
+violation:   script-src-elem    inline
+Total: 17386197B	Added: 5922247B	Fraction: 0.254081610938937	Now: 1693847725829
+violation:   script-src    eval
+Total: 17545499B	Added: 5953323B	Fraction: 0.25334559323867384	Now: 1693847726845
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 18563732B	Added: 6001008B	Fraction: 0.24429356874935376	Now: 1693847727995
+Total: 19970479B	Added: 6016188B	Fraction: 0.23151056655322516	Now: 1693847729115
+Total: 19971131B	Added: 6016188B	Fraction: 0.23150475814761806	Now: 1693847739381
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 20070119B	Added: 6191102B	Fraction: 0.23575072918353643	Now: 1693847740525
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 20849937B	Added: 6270410B	Fraction: 0.23120684997135177	Now: 1693847741698
+Total: 21063387B	Added: 6270410B	Fraction: 0.2294013524721794	Now: 1693847754919
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 21192730B	Added: 6529086B	Fraction: 0.23552158343450516	Now: 1693847755977
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 21193968B	Added: 6561731B	Fraction: 0.2364102233562916	Now: 1693847757188
+violation:   script-src    eval
+Total: 21193968B	Added: 6578043B	Fraction: 0.23685872081787668	Now: 1693847759159
+Total: 21195130B	Added: 6593439B	Fraction: 0.2372716277689578	Now: 1693847760198
+Total: 21195789B	Added: 6593439B	Fraction: 0.2372660010562366	Now: 1693847763206
+Total: 21195789B	Added: 6593439B	Fraction: 0.2372660010562366	Now: 1693847770532
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 21306499B	Added: 6867075B	Fraction: 0.24374170632380543	Now: 1693847771700
+violation:   script-src    eval
+Total: 21307737B	Added: 6883298B	Fraction: 0.24416620390134666	Now: 1693847774714
+Total: 24795282B	Added: 6883298B	Fraction: 0.2172855601482137	Now: 1693847776736
+Total: 33254454B	Added: 6898748B	Fraction: 0.17181065659470943	Now: 1693847788112
+violation:   script-src-elem    inline
+Total: 33265136B	Added: 7011622B	Fraction: 0.1740860572740239	Now: 1693847789258
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 33649491B	Added: 7075992B	Fraction: 0.1737485102386631	Now: 1693847790274
+violation:   script-src    eval
+Total: 33651891B	Added: 7107775B	Fraction: 0.1743825624086321	Now: 1693847800722
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 33723764B	Added: 7431947B	Fraction: 0.1805811834960159	Now: 1693847801903
+violation:   script-src    eval
+Total: 33725512B	Added: 7463910B	Fraction: 0.18120938914850518	Now: 1693847813189
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+new:         https://tags.caixabank.es/caixabank-web/prod/utag.326.js?utv=ut4.46.202306271441
+new:         https://tags.caixabank.es/caixabank-web/prod/utag.328.js?utv=ut4.46.202302091127
+Total: 33743846B	Added: 7757795B	Fraction: 0.18692742776122998	Now: 1693847814366
+violation:   script-src    eval
+Total: 33745594B	Added: 7790064B	Fraction: 0.1875512360969459	Now: 1693847820165
+Total: 33745594B	Added: 7790064B	Fraction: 0.1875512360969459	Now: 1693847825272
+violation:   script-src    eval
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 33765676B	Added: 8020568B	Fraction: 0.19194278385011104	Now: 1693847826390
+violation:   script-src    eval
+Total: 33765676B	Added: 8037227B	Fraction: 0.19226480515001554	Now: 1693847836450
+Total: 33768893B	Added: 8269834B	Fraction: 0.19671942016702837	Now: 1693847837531
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 33786316B	Added: 8369048B	Fraction: 0.1985286617380412	Now: 1693847838626
+Total: 33786826B	Added: 8384984B	Fraction: 0.19882912305637343	Now: 1693847849553
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 33793995B	Added: 8651095B	Fraction: 0.20381850998548948	Now: 1693847850912
+Total: 33821564B	Added: 8651095B	Fraction: 0.20368621140484752	Now: 1693847862198
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 34221351B	Added: 8883585B	Fraction: 0.20609205869137587	Now: 1693847863220
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 34364262B	Added: 8933145B	Fraction: 0.20632055402301575	Now: 1693847874310
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 34386919B	Added: 9150630B	Fraction: 0.21017788576017452	Now: 1693847875538
+violation:   script-src    eval
+Total: 34445523B	Added: 9183552B	Fraction: 0.2104915586681588	Now: 1693847880682
+Total: 34445523B	Added: 9183552B	Fraction: 0.2104915586681588	Now: 1693847886875
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 34652297B	Added: 9367269B	Fraction: 0.2127978499379117	Now: 1693847888099
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 35255027B	Added: 9434022B	Fraction: 0.21110366434515088	Now: 1693847889291
+violation:   script-src    eval
+Total: 35866744B	Added: 9450120B	Fraction: 0.20853428869217427	Now: 1693847900141
+violation:   script-src-elem    inline
+violation:   script-src    eval
+Total: 35877177B	Added: 9533727B	Fraction: 0.2099435633344802	Now: 1693847901362
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 36217412B	Added: 9583734B	Fraction: 0.20924659832747416	Now: 1693847902392
+violation:   script-src    eval
+Total: 37408330B	Added: 9616803B	Fraction: 0.20450347264302263	Now: 1693847910976
+Total: 37408330B	Added: 9616803B	Fraction: 0.20450347264302263	Now: 1693847913667
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 37559026B	Added: 9835649B	Fraction: 0.20752645734990272	Now: 1693847915074
+violation:   script-src    eval
+Total: 37560774B	Added: 9868892B	Fraction: 0.20807424619013762	Now: 1693847916095
+Total: 37560774B	Added: 9868892B	Fraction: 0.20807424619013762	Now: 1693847926302
+violation:   script-src-elem    inline
+violation:   script-src    eval
+Total: 37652630B	Added: 10021630B	Fraction: 0.2102104993344417	Now: 1693847927360
+violation:   script-src    eval
+Total: 37714724B	Added: 10038730B	Fraction: 0.21021997696752992	Now: 1693847928653
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 38270009B	Added: 10089303B	Fraction: 0.20863206242470944	Now: 1693847929745
+violation:   script-src    eval
+Total: 39375220B	Added: 10106395B	Fraction: 0.20424545561012913	Now: 1693847931659
+Total: 39375730B	Added: 10122763B	Fraction: 0.20450648871269678	Now: 1693847933333
+Total: 39375730B	Added: 10122763B	Fraction: 0.20450648871269678	Now: 1693847941247
+Total: 39375730B	Added: 10122763B	Fraction: 0.20450648871269678	Now: 1693847952320
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 39394064B	Added: 10361621B	Fraction: 0.2082499919355949	Now: 1693847953384
+violation:   script-src    eval
+Total: 39395812B	Added: 10395191B	Fraction: 0.20877649321504932	Now: 1693847964842
+new:         https://www.caixabank.es/deployedfiles/particulares/Estaticos/Javascript/headingsid.js
+violation:   script-src-elem    inline
+Total: 39397222B	Added: 10548619B	Fraction: 0.21120114886042263	Now: 1693847965928
+violation:   script-src    eval
+Total: 39405615B	Added: 10565815B	Fraction: 0.21143711516760677	Now: 1693847966969
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 39694764B	Added: 10633909B	Fraction: 0.21128927838013928	Now: 1693847968026
+Total: 41321118B	Added: 10633909B	Fraction: 0.20467526655312873	Now: 1693847970584
+Total: 41323584B	Added: 10650418B	Fraction: 0.2049181819787516	Now: 1693847977363
+Total: 41323584B	Added: 10650418B	Fraction: 0.2049181819787516	Now: 1693847981142
+Total: 41324770B	Added: 10736087B	Fraction: 0.2062218645382653	Now: 1693847982240
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 41792400B	Added: 10787339B	Fraction: 0.2051615166823099	Now: 1693847983358
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 42306683B	Added: 10822023B	Fraction: 0.20369445850986848	Now: 1693847986167
+Total: 42307845B	Added: 10838586B	Fraction: 0.20393817225469008	Now: 1693847991055
+Total: 42307845B	Added: 10838586B	Fraction: 0.20393817225469008	Now: 1693847996627
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+Total: 42309994B	Added: 10959332B	Fraction: 0.2057343845499378	Now: 1693847997992
+Total: 42309994B	Added: 10959332B	Fraction: 0.2057343845499378	Now: 1693848001814
+Total: 42309994B	Added: 10959332B	Fraction: 0.2057343845499378	Now: 1693848008385
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 42312143B	Added: 11097921B	Fraction: 0.20778707548450046	Now: 1693848009396
+Total: 42312143B	Added: 11097921B	Fraction: 0.20778707548450046	Now: 1693848020669
+new:         https://www.caixabank.es/deployedfiles/particulares/Estaticos/Javascript/custom.forms.jquery.js
+violation:   script-src-elem    inline
+new:         https://www.caixabank.es/deployedfiles/particulares/Estaticos/Javascript/additional-methods.js
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 42342223B	Added: 11358229B	Fraction: 0.2115108640053905	Now: 1693848021694
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 42426793B	Added: 11404238B	Fraction: 0.2118524908059071	Now: 1693848022852
+violation:   script-src    eval
+Total: 43651682B	Added: 11419652B	Fraction: 0.20736109279648102	Now: 1693848023908
+Total: 44735965B	Added: 11434812B	Fraction: 0.20357225964668427	Now: 1693848032078
+Total: 44735965B	Added: 11434812B	Fraction: 0.20357225964668427	Now: 1693848034751
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 44754299B	Added: 11685293B	Fraction: 0.2070407064601034	Now: 1693848035893
+violation:   script-src    eval
+Total: 44756047B	Added: 11716120B	Fraction: 0.2074671581134827	Now: 1693848046913
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 44946317B	Added: 11867183B	Fraction: 0.20887963248171648	Now: 1693848048131
+violation:   script-src    eval
+Total: 45881234B	Added: 11883940B	Fraction: 0.20572845500300926	Now: 1693848059150
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+changed:     https://js.pp.caixabank.es/static/js/d3d3LmNhaXhhYmFuay5lcw==/8c49b4d0/bcaptcha.js
+violation:   script-src-elem    https://js.pp.caixabank.es/static/js/d3d3LmNhaXhhYmFuay5lcw==/8c49b4d0/bcaptcha.js
+violation:   script-src-elem    inline
+violation:   script-src-elem    https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+Total: 45909795B	Added: 12019644B	Fraction: 0.20748766443258668	Now: 1693848060216
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 47560115B	Added: 12053574B	Fraction: 0.202194734165839	Now: 1693848061538
+Total: 47561277B	Added: 12061652B	Fraction: 0.20229888404174173	Now: 1693848072007
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+violation:   script-src    eval
+Total: 47683243B	Added: 12196735B	Fraction: 0.2036863640798265	Now: 1693848073174
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 47709823B	Added: 12237019B	Fraction: 0.20413117007898432	Now: 1693848084548
+violation:   script-src-elem    inline
+violation:   script-src    eval
+Total: 47712256B	Added: 12355358B	Fraction: 0.20569084032537066	Now: 1693848085959
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 47985558B	Added: 12389140B	Fraction: 0.2052041734436502	Now: 1693848087046
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 48117858B	Added: 12440474B	Fraction: 0.205429601330499	Now: 1693848088091
+Total: 49102540B	Added: 12440474B	Fraction: 0.20214274848482397	Now: 1693848090802
+Total: 49103050B	Added: 12448677B	Fraction: 0.20224740404115712	Now: 1693848092626
+Total: 49103050B	Added: 12448677B	Fraction: 0.20224740404115712	Now: 1693848101590
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+Total: 49103344B	Added: 12580107B	Fraction: 0.2039462253822342	Now: 1693848102888
+violation:   script-src    eval
+Total: 49242105B	Added: 12588972B	Fraction: 0.2036026640778067	Now: 1693848104064
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 50108146B	Added: 12623760B	Fraction: 0.20123348396269036	Now: 1693848105066
+Total: 50404790B	Added: 12631956B	Fraction: 0.2003903564438431	Now: 1693848115882
+violation:   script-src    eval
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 50423124B	Added: 12823508B	Fraction: 0.20275400593663231	Now: 1693848116889
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 50424872B	Added: 12840348B	Fraction: 0.20296061564316065	Now: 1693848118023
+Total: 50424872B	Added: 12840348B	Fraction: 0.20296061564316065	Now: 1693848123279
+Total: 50424872B	Added: 12840348B	Fraction: 0.20296061564316065	Now: 1693848128301
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 50559026B	Added: 12989580B	Fraction: 0.20440385427179944	Now: 1693848129441
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 50702322B	Added: 13024690B	Fraction: 0.20438256229556157	Now: 1693848130609
+violation:   script-src    eval
+Total: 51668200B	Added: 13041962B	Fraction: 0.20154426440780662	Now: 1693848141769
+Total: 51668458B	Added: 13050087B	Fraction: 0.20164370197135922	Now: 1693848142858
+Total: 51670878B	Added: 13050087B	Fraction: 0.20163616225437925	Now: 1693848143918
+Total: 51670878B	Added: 13050087B	Fraction: 0.20163616225437925	Now: 1693848144992
+Total: 51671461B	Added: 13050087B	Fraction: 0.20163434595229396	Now: 1693848146466
+Total: 51742367B	Added: 13050087B	Fraction: 0.20141368622957234	Now: 1693848147587
+Total: 51742950B	Added: 13050087B	Fraction: 0.2014118739333055	Now: 1693848148605
+Total: 51751443B	Added: 13050087B	Fraction: 0.20138547654661856	Now: 1693848149616
+Total: 51766957B	Added: 13050087B	Fraction: 0.20133727480691652	Now: 1693848159694
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 51771722B	Added: 13191239B	Fraction: 0.20305784707073313	Now: 1693848160699
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 51989781B	Added: 13225941B	Fraction: 0.20280295294438355	Now: 1693848161880
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 52215290B	Added: 13260720B	Fraction: 0.2025279182405892	Now: 1693848162903
+Total: 53651689B	Added: 13276916B	Fraction: 0.19837431244831713	Now: 1693848174111
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 53670023B	Added: 13435198B	Fraction: 0.2002109195050561	Now: 1693848175126
+violation:   script-src    eval
+Total: 53671771B	Added: 13452212B	Fraction: 0.2004084292792935	Now: 1693848186595
+Total: 53671771B	Added: 13452212B	Fraction: 0.2004084292792935	Now: 1693848188166
+Total: 53671771B	Added: 13452212B	Fraction: 0.2004084292792935	Now: 1693848194880
+Total: 53671771B	Added: 13452212B	Fraction: 0.2004084292792935	Now: 1693848198696
+violation:   script-src-elem    inline
+violation:   script-src    eval
+Total: 53739778B	Added: 13569414B	Fraction: 0.20159823044674197	Now: 1693848199705
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 53931990B	Added: 13585171B	Fraction: 0.2012106373963206	Now: 1693848200832
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 54503257B	Added: 13615917B	Fraction: 0.19988376547255257	Now: 1693848202010
+Total: 55405529B	Added: 13622897B	Fraction: 0.19735198655695843	Now: 1693848212932
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 55423863B	Added: 13792503B	Fraction: 0.19926650006445007	Now: 1693848214129
+violation:   script-src    eval
+Total: 55425611B	Added: 13807373B	Fraction: 0.19943345212449604	Now: 1693848225161
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+violation:   script-src    eval
+Total: 55470901B	Added: 13915062B	Fraction: 0.20054577897837925	Now: 1693848226371
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 55893606B	Added: 13937653B	Fraction: 0.19959045847934662	Now: 1693848227579
+violation:   script-src    eval
+Total: 56470519B	Added: 13952441B	Fraction: 0.19812346711924633	Now: 1693848230251
+Total: 56470519B	Added: 13952441B	Fraction: 0.19812346711924633	Now: 1693848238600
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 56488853B	Added: 14184719B	Fraction: 0.20070754312517272	Now: 1693848239637
+violation:   script-src    eval
+Total: 56490601B	Added: 14199724B	Fraction: 0.20087224100327733	Now: 1693848250806
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 56508935B	Added: 14384238B	Fraction: 0.20290018617166422	Now: 1693848251981
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 56510683B	Added: 14406849B	Fraction: 0.20314932843404646	Now: 1693848260528
+Total: 56510683B	Added: 14406849B	Fraction: 0.20314932843404646	Now: 1693848263538
+Total: 56510977B	Added: 14453365B	Fraction: 0.20367080977091284	Now: 1693848264564
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 56720343B	Added: 14531722B	Fraction: 0.20394808206611276	Now: 1693848265594
+violation:   script-src    eval
+Total: 56727032B	Added: 14546746B	Fraction: 0.2040967436860159	Now: 1693848276404
+Total: 56727299B	Added: 14553772B	Fraction: 0.2041744294218026	Now: 1693848277591
+Total: 56727299B	Added: 14553772B	Fraction: 0.2041744294218026	Now: 1693848278842
+Total: 56727299B	Added: 14553772B	Fraction: 0.2041744294218026	Now: 1693848279907
+Total: 56727830B	Added: 14560798B	Fraction: 0.20425134286495175	Now: 1693848289972
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 56746243B	Added: 14706573B	Fraction: 0.20582216101881834	Now: 1693848291326
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 56801007B	Added: 14743750B	Fraction: 0.206077295083971	Now: 1693848302806
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 56819341B	Added: 14985510B	Fraction: 0.20869773826283686	Now: 1693848303941
+violation:   script-src    eval
+Total: 56820579B	Added: 14993146B	Fraction: 0.20877828019643876	Now: 1693848305212
+Total: 56821089B	Added: 15000111B	Fraction: 0.20885352792768708	Now: 1693848315789
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+Total: 56970946B	Added: 15137468B	Fraction: 0.20992651426226072	Now: 1693848316816
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 57334689B	Added: 15159995B	Fraction: 0.2091187127596832	Now: 1693848318053
+Total: 57334689B	Added: 15159995B	Fraction: 0.2091187127596832	Now: 1693848321712
+Total: 57334689B	Added: 15159995B	Fraction: 0.2091187127596832	Now: 1693848328527
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 57336838B	Added: 15284420B	Fraction: 0.21046757410894754	Now: 1693848329556
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 57354771B	Added: 15329971B	Fraction: 0.21091044114870766	Now: 1693848330899
+Total: 57354771B	Added: 15329971B	Fraction: 0.21091044114870766	Now: 1693848341052
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 57424492B	Added: 15512948B	Fraction: 0.2126884080384505	Now: 1693848342082
+violation:   script-src    eval
+Total: 57426240B	Added: 15527727B	Fraction: 0.21284280538164566	Now: 1693848351997
+Total: 57426240B	Added: 15527727B	Fraction: 0.21284280538164566	Now: 1693848353621
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 57449384B	Added: 15673288B	Fraction: 0.21434238617538484	Now: 1693848354795
+violation:   script-src    eval
+Total: 57451132B	Added: 15688061B	Fraction: 0.21449595431002363	Now: 1693848365896
+violation:   script-src-elem    inline
+Total: 57584076B	Added: 15772185B	Fraction: 0.21500802774012706	Now: 1693848367423
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEOVideoHtmlTranslation.js
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 58040688B	Added: 15841400B	Fraction: 0.21441462239128922	Now: 1693848368555
+violation:   script-src    eval
+Total: 58041926B	Added: 15849165B	Fraction: 0.2144935848896858	Now: 1693848371522
+Total: 58042436B	Added: 15856310B	Fraction: 0.21456805234557025	Now: 1693848382077
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 58252841B	Added: 15951311B	Fraction: 0.21496520841583097	Now: 1693848383237
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 58453004B	Added: 16087376B	Fraction: 0.21582095503135348	Now: 1693848384468
+violation:   script-src    eval
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEO-R2016-CMN.js
+Total: 58504391B	Added: 16087376B	Fraction: 0.21567227385832005	Now: 1693848385658
+Total: 58504901B	Added: 16095275B	Fraction: 0.21575384755124438	Now: 1693848396193
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 58523235B	Added: 16283994B	Fraction: 0.21767941705206056	Now: 1693848397208
+violation:   script-src    eval
+Total: 58524983B	Added: 16300679B	Fraction: 0.21784877760252894	Now: 1693848398492
+Total: 58524983B	Added: 16300679B	Fraction: 0.21784877760252894	Now: 1693848408378
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+Total: 58527132B	Added: 16493002B	Fraction: 0.21984767449229028	Now: 1693848409389
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 58545065B	Added: 16535773B	Fraction: 0.22023959029333157	Now: 1693848413202
+Total: 58545065B	Added: 16535773B	Fraction: 0.22023959029333157	Now: 1693848420650
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 58687679B	Added: 16673108B	Fraction: 0.22124381477067112	Now: 1693848421727
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 59307404B	Added: 16724221B	Fraction: 0.2199640083978213	Now: 1693848422879
+Total: 59307404B	Added: 16724221B	Fraction: 0.2199640083978213	Now: 1693848426127
+Total: 59307914B	Added: 16732120B	Fraction: 0.22004356284217338	Now: 1693848436726
+Total: 59387416B	Added: 16809220B	Fraction: 0.22060317728462447	Now: 1693848437903
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 59569209B	Added: 16955579B	Fraction: 0.22156976116026614	Now: 1693848439097
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 60009230B	Added: 16989623B	Fraction: 0.22064774133713394	Now: 1693848440216
+Total: 60009230B	Added: 16989623B	Fraction: 0.22064774133713394	Now: 1693848443459
+Total: 60009230B	Added: 16989623B	Fraction: 0.22064774133713394	Now: 1693848450418
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 60027564B	Added: 17153326B	Fraction: 0.22224835707388188	Now: 1693848451624
+violation:   script-src    eval
+Total: 60029312B	Added: 17169876B	Fraction: 0.22241005954622217	Now: 1693848463801
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+Total: 60340643B	Added: 17340434B	Fraction: 0.22322597303845312	Now: 1693848465305
+violation:   script-src    eval
+Total: 60342391B	Added: 17356993B	Fraction: 0.22338649428675006	Now: 1693848473738
+Total: 60342391B	Added: 17356993B	Fraction: 0.22338649428675006	Now: 1693848476051
+new:         https://www.caixabank.es/deployedfiles/banca_privada/BancaPrivada2017/BibliotecasJSyCSS/js/slider-bpr.js
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+warning:     frame-src    https://players.brightcove.net
+Total: 60657869B	Added: 17485979B	Fraction: 0.22376654653607536	Now: 1693848477081
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 61033801B	Added: 17528878B	Fraction: 0.2231196571084344	Now: 1693848478132
+Total: 62013039B	Added: 17528878B	Fraction: 0.22037283813514327	Now: 1693848479406
+Total: 63614075B	Added: 17545082B	Fraction: 0.2161811759577542	Now: 1693848480700
+violation:   script-src    eval
+Total: 63614585B	Added: 17561882B	Fraction: 0.21634203420062614	Now: 1693848490931
+violation:   script-src-elem    inline
+Total: 63616734B	Added: 17631775B	Fraction: 0.21701044384703724	Now: 1693848492167
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 63634667B	Added: 17692351B	Fraction: 0.21754579763394252	Now: 1693848493399
+Total: 63634667B	Added: 17692351B	Fraction: 0.21754579763394252	Now: 1693848503748
+new:         https://www.caixabank.es/deployedfiles/particulares/Estaticos/Javascript/wapicon_prov.js
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 63756721B	Added: 17833335B	Fraction: 0.218572407892452	Now: 1693848504880
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 63859673B	Added: 17877383B	Fraction: 0.2187182151507879	Now: 1693848505914
+violation:   script-src    eval
+Total: 65114649B	Added: 17886325B	Fraction: 0.21549536274116493	Now: 1693848508904
+Total: 65116463B	Added: 17894570B	Fraction: 0.2155685738786072	Now: 1693848519688
+Total: 65116757B	Added: 17938704B	Fraction: 0.21598464187682975	Now: 1693848520734
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 65135886B	Added: 18000030B	Fraction: 0.21651328169644513	Now: 1693848521945
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 65189621B	Added: 18026224B	Fraction: 0.2166200920029112	Now: 1693848523032
+Total: 65190131B	Added: 18034361B	Fraction: 0.21669535693891648	Now: 1693848533566
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+violation:   script-src    eval
+Total: 65195753B	Added: 18192923B	Fraction: 0.21817018656106257	Now: 1693848534750
+Total: 65249407B	Added: 18192923B	Fraction: 0.21802990160989033	Now: 1693848545806
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 65394201B	Added: 18345917B	Fraction: 0.21908157569111616	Now: 1693848546951
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 65449024B	Added: 18355635B	Fraction: 0.21902881318328615	Now: 1693848547955
+violation:   script-src    eval
+Total: 65687994B	Added: 18365341B	Fraction: 0.2184962797728371	Now: 1693848549791
+Total: 65726569B	Added: 18374148B	Fraction: 0.21847789954038085	Now: 1693848560578
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 65732081B	Added: 18565527B	Fraction: 0.22023788622804102	Now: 1693848561612
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 65746141B	Added: 18603372B	Fraction: 0.2205510303301929	Now: 1693848562682
+Total: 65746651B	Added: 18612321B	Fraction: 0.220632382765404	Now: 1693848566061
+Total: 65746651B	Added: 18612321B	Fraction: 0.220632382765404	Now: 1693848573288
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 65850016B	Added: 18726887B	Fraction: 0.22141845274235214	Now: 1693848574495
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 66117806B	Added: 18755058B	Fraction: 0.22097826226295367	Now: 1693848575532
+violation:   script-src    eval
+Total: 66118316B	Added: 18773564B	Fraction: 0.22114675749906823	Now: 1693848586380
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+Total: 66247818B	Added: 18927370B	Fraction: 0.2222169442114997	Now: 1693848588128
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 66408245B	Added: 18955701B	Fraction: 0.22205745971490118	Now: 1693848589187
+violation:   script-src    eval
+Total: 66512218B	Added: 18965398B	Fraction: 0.22187560776145185	Now: 1693848590363
+Total: 68476705B	Added: 18974260B	Fraction: 0.2169702758568759	Now: 1693848596334
+Total: 68476705B	Added: 18974260B	Fraction: 0.2169702758568759	Now: 1693848601241
+violation:   script-src    eval
+Total: 68498682B	Added: 19126458B	Fraction: 0.218275919445036	Now: 1693848602369
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 68528942B	Added: 19163476B	Fraction: 0.21853059177818543	Now: 1693848603530
+Total: 68528942B	Added: 19163476B	Fraction: 0.21853059177818543	Now: 1693848613844
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 68547276B	Added: 19363965B	Fraction: 0.22026722384683434	Now: 1693848615142
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 68548514B	Added: 19383294B	Fraction: 0.2204355220354391	Now: 1693848616316
+violation:   script-src    eval
+Total: 68549024B	Added: 19401901B	Fraction: 0.2205991693663256	Now: 1693848626624
+Total: 68549024B	Added: 19401901B	Fraction: 0.2205991693663256	Now: 1693848627627
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 68567358B	Added: 19585900B	Fraction: 0.22218010365538618	Now: 1693848628795
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 68568596B	Added: 19615315B	Fraction: 0.2224364374131694	Now: 1693848629832
+Total: 68569106B	Added: 19624268B	Fraction: 0.2225140859221465	Now: 1693848640909
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 68574618B	Added: 19814023B	Fraction: 0.2241693364195972	Now: 1693848642124
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 68588678B	Added: 19840815B	Fraction: 0.2243687521763808	Now: 1693848643253
+Total: 68589188B	Added: 19849577B	Fraction: 0.2244443033549824	Now: 1693848654011
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 68607522B	Added: 20027986B	Fraction: 0.22595894638523423	Now: 1693848655125
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 68608760B	Added: 20063972B	Fraction: 0.22626992027267187	Now: 1693848656262
+Total: 68608760B	Added: 20063972B	Fraction: 0.22626992027267187	Now: 1693848657426
+Total: 68609270B	Added: 20072165B	Fraction: 0.226340101510536	Now: 1693848668276
+violation:   script-src-elem    https://js.pp.caixabank.es/static/js/d3d3LmNhaXhhYmFuay5lcw==/8c49b4d0/bcaptcha.js
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 68627604B	Added: 20291433B	Fraction: 0.22820122309691682	Now: 1693848669530
+violation:   script-src-elem    https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 68628842B	Added: 20308510B	Fraction: 0.22834624084602834	Now: 1693848670550
+Total: 68629352B	Added: 20316595B	Fraction: 0.2284150732579192	Now: 1693848681667
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 68680513B	Added: 20457853B	Fraction: 0.2295067087049812	Now: 1693848682747
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 69111364B	Added: 20474223B	Fraction: 0.22854371652440028	Now: 1693848683927
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 69412029B	Added: 20498991B	Fraction: 0.22799197473235205	Now: 1693848688008
+Total: 69412029B	Added: 20498991B	Fraction: 0.22799197473235205	Now: 1693848695179
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 69430363B	Added: 20671757B	Fraction: 0.22942586700512707	Now: 1693848697152
+violation:   script-src    eval
+Total: 69432111B	Added: 20687777B	Fraction: 0.22955839669929462	Now: 1693848708390
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 69450462B	Added: 20847586B	Fraction: 0.23087526764698169	Now: 1693848709529
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 69479411B	Added: 20880032B	Fraction: 0.23107747576531654	Now: 1693848710769
+Total: 69479411B	Added: 20880032B	Fraction: 0.23107747576531654	Now: 1693848718307
+Total: 69479411B	Added: 20880032B	Fraction: 0.23107747576531654	Now: 1693848721146
+Total: 69479411B	Added: 20880032B	Fraction: 0.23107747576531654	Now: 1693848725120
+Total: 69479411B	Added: 20880032B	Fraction: 0.23107747576531654	Now: 1693848732760
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 69553942B	Added: 21072635B	Fraction: 0.23252158138997128	Now: 1693848733850
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 69555715B	Added: 21080430B	Fraction: 0.23258303847764045	Now: 1693848735077
+Total: 69556225B	Added: 21088021B	Fraction: 0.23264599718773105	Now: 1693848745699
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/app-carousel-home.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/applications_jcarousel.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/jcarousel.basic.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/caixamovilstore-web.js
+Total: 69624876B	Added: 21221218B	Fraction: 0.23359527158096638	Now: 1693848746792
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/jquery.carouFredSel.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/jquery.jcarousel-store-version.js
+violation:   script-src    eval
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/caixamovilStore.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/jquery.mCustomScrollbar.min.js
+new:         https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/lib/jquery.colorbox-store-version.js
+violation:   script-src-elem    inline
+Total: 69896529B	Added: 21271653B	Fraction: 0.23332321138091797	Now: 1693848748060
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 70036261B	Added: 21305560B	Fraction: 0.23325087858714794	Now: 1693848749088
+violation:   script-src    eval
+Total: 70063840B	Added: 21322622B	Fraction: 0.23332364043155537	Now: 1693848760110
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 70082174B	Added: 21512203B	Fraction: 0.23486379518690323	Now: 1693848761160
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 70083947B	Added: 21559972B	Fraction: 0.2352580753339455	Now: 1693848762355
+Total: 70084457B	Added: 21568792B	Fraction: 0.23533035910161787	Now: 1693848773571
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 70102791B	Added: 21776962B	Fraction: 0.2370158962007658	Now: 1693848774630
+violation:   script-src    eval
+Total: 70105074B	Added: 21795402B	Fraction: 0.23716310239785918	Now: 1693848779093
+Total: 70105074B	Added: 21795402B	Fraction: 0.23716310239785918	Now: 1693848785872
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+violation:   script-src    eval
+Total: 70123408B	Added: 22045223B	Fraction: 0.23918357862991368	Now: 1693848787058
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 70124646B	Added: 22074359B	Fraction: 0.239420794183191	Now: 1693848788241
+Total: 70125691B	Added: 22083287B	Fraction: 0.23949172281250097	Now: 1693848791016
+Total: 70125691B	Added: 22083287B	Fraction: 0.23949172281250097	Now: 1693848799374
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+violation:   script-src    eval
+Total: 70144555B	Added: 22266272B	Fraction: 0.24094873645054599	Now: 1693848800471
+violation:   script-src    eval
+Total: 70146838B	Added: 22285591B	Fraction: 0.24110143205259704	Now: 1693848801543
+Total: 70146838B	Added: 22285591B	Fraction: 0.24110143205259704	Now: 1693848809375
+Total: 70146838B	Added: 22285591B	Fraction: 0.24110143205259704	Now: 1693848811952
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 70165172B	Added: 22470034B	Fraction: 0.24256473289431665	Now: 1693848813239
+violation:   script-src    eval
+Total: 70167455B	Added: 22490052B	Fraction: 0.24272239485139613	Now: 1693848824437
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 70169604B	Added: 22633418B	Fraction: 0.24388664843263402	Now: 1693848825499
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 70239076B	Added: 22664435B	Fraction: 0.24395671117316545	Now: 1693848826864
+Total: 70239586B	Added: 22674316B	Fraction: 0.24403577410837832	Now: 1693848837141
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 70257920B	Added: 22853477B	Fraction: 0.24544231679823256	Now: 1693848838416
+violation:   script-src    eval
+Total: 70259158B	Added: 22874765B	Fraction: 0.245611526532604	Now: 1693848840986
+Total: 70259693B	Added: 22874765B	Fraction: 0.24561011564591914	Now: 1693848842140
+Total: 70260203B	Added: 22884533B	Fraction: 0.24568788299534178	Now: 1693848852737
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 70278537B	Added: 23126185B	Fraction: 0.24759117638613604	Now: 1693848853934
+violation:   script-src    eval
+Total: 70280820B	Added: 23147016B	Fraction: 0.24775288598143277	Now: 1693848865008
+violation:   script-src-elem    inline
+Total: 70458957B	Added: 23266479B	Fraction: 0.24824081906644851	Now: 1693848866086
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 70770663B	Added: 23331096B	Fraction: 0.24793474901994128	Now: 1693848867232
+violation:   script-src    eval
+Total: 70773105B	Added: 23420894B	Fraction: 0.24864528790204565	Now: 1693848868372
+violation:   script-src-elem    https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js
+Total: 70825002B	Added: 23431326B	Fraction: 0.24859154284049767	Now: 1693848871700
+Total: 70825002B	Added: 23431326B	Fraction: 0.24859154284049767	Now: 1693848879832
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 70911039B	Added: 23587548B	Fraction: 0.24960741476483664	Now: 1693848880937
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 71199531B	Added: 23654670B	Fraction: 0.2493792552213897	Now: 1693848882130
+Total: 71200066B	Added: 23654670B	Fraction: 0.24937784867167834	Now: 1693848883829
+Total: 71200576B	Added: 23665406B	Fraction: 0.24946145605703002	Now: 1693848894684
+Total: 71200870B	Added: 23733368B	Fraction: 0.24999798281416657	Now: 1693848896104
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 71274861B	Added: 23790047B	Fraction: 0.2502505656451064	Now: 1693848897299
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 71275906B	Added: 23835134B	Fraction: 0.2506032317594256	Now: 1693848901972
+Total: 71275906B	Added: 23835134B	Fraction: 0.2506032317594256	Now: 1693848908101
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 71278565B	Added: 24005710B	Fraction: 0.2519377935131479	Now: 1693848909145
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 71295478B	Added: 24028751B	Fraction: 0.2520739087226187	Now: 1693848910192
+violation:   script-src    eval
+Total: 71296523B	Added: 24050891B	Fraction: 0.25224481704349105	Now: 1693848921390
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+Total: 71314857B	Added: 24230336B	Fraction: 0.2536007855465842	Now: 1693848922410
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 71317140B	Added: 24252260B	Fraction: 0.2537659543745174	Now: 1693848923594
+Total: 71317140B	Added: 24252260B	Fraction: 0.2537659543745174	Now: 1693848932257
+Total: 71317140B	Added: 24252260B	Fraction: 0.2537659543745174	Now: 1693848933903
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 71335474B	Added: 24477286B	Fraction: 0.2554700021166283	Now: 1693848935009
+violation:   script-src    eval
+Total: 71337757B	Added: 24499288B	Fraction: 0.2556348434991918	Now: 1693848945746
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 71356091B	Added: 24703781B	Fraction: 0.2571706633129805	Now: 1693848946751
+Total: 71357329B	Added: 24703781B	Fraction: 0.25716734899274013	Now: 1693848947944
+violation:   script-src    eval
+Total: 71358374B	Added: 24726009B	Fraction: 0.2573363977369767	Now: 1693848958895
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 71376708B	Added: 24962473B	Fraction: 0.2591102886789125	Now: 1693848960110
+violation:   script-src    eval
+Total: 71378991B	Added: 24984612B	Fraction: 0.2592743652393321	Now: 1693848962527
+Total: 71378991B	Added: 24984612B	Fraction: 0.2592743652393321	Now: 1693848970971
+changed:     https://www.caixabank.es/deployedfiles/particulares/Estaticos/Javascript/additional-methods.js
+new:         https://www.caixabank.es/deployedfiles/imaginbank/Estaticos/Javascript/jquery.validate.js
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 71397325B	Added: 25175554B	Fraction: 0.2606896911502452	Now: 1693848972017
+violation:   script-src    eval
+Total: 71399608B	Added: 25197802B	Fraction: 0.26085380550058224	Now: 1693848973137
+Total: 71399608B	Added: 25197802B	Fraction: 0.26085380550058224	Now: 1693848983397
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    https://www.caixabank.es/deployedfiles/common/R2016/Estaticos/js/NEOVideoHtmlTranslation.js
+violation:   script-src-elem    inline
+Total: 71401757B	Added: 25360790B	Fraction: 0.26209303895235414	Now: 1693848984653
+Total: 71401757B	Added: 25360790B	Fraction: 0.26209303895235414	Now: 1693848985692
+Total: 71401757B	Added: 25360790B	Fraction: 0.26209303895235414	Now: 1693848992798
+Total: 71401757B	Added: 25360790B	Fraction: 0.26209303895235414	Now: 1693848995815
+Total: 71402028B	Added: 25371082B	Fraction: 0.2621707827721978	Now: 1693848997127
+Total: 71410988B	Added: 25371082B	Fraction: 0.2621465112287844	Now: 1693848998341
+Total: 71414393B	Added: 25371082B	Fraction: 0.26213728867890557	Now: 1693848999386
+Total: 71749613B	Added: 25371082B	Fraction: 0.26123250044699536	Now: 1693849000683
+Total: 71749613B	Added: 25371082B	Fraction: 0.26123250044699536	Now: 1693849001762
+Total: 71763753B	Added: 25371082B	Fraction: 0.2611944726111904	Now: 1693849002882
+Total: 72296657B	Added: 25371082B	Fraction: 0.2597693185054688	Now: 1693849003923
+Total: 72300994B	Added: 25371082B	Fraction: 0.25975778379073255	Now: 1693849005040
+Total: 72306666B	Added: 25371082B	Fraction: 0.2597427000466882	Now: 1693849015725
+violation:   script-src    eval
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 72325000B	Added: 25563264B	Fraction: 0.2611473833063379	Now: 1693849016825
+violation:   script-src    eval
+Total: 72327283B	Added: 25584160B	Fraction: 0.26129897809799413	Now: 1693849018046
+Total: 72327283B	Added: 25584160B	Fraction: 0.26129897809799413	Now: 1693849023124
+Total: 72327283B	Added: 25584160B	Fraction: 0.26129897809799413	Now: 1693849028289
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 72333305B	Added: 25844701B	Fraction: 0.2632432868925857	Now: 1693849029538
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 72347925B	Added: 25866611B	Fraction: 0.26336845902321426	Now: 1693849030744
+Total: 72348970B	Added: 25876909B	Fraction: 0.2634428855556487	Now: 1693849041317
+violation:   script-src    eval
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 72449257B	Added: 26083725B	Fraction: 0.2647207510679013	Now: 1693849042377
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 72451005B	Added: 26094002B	Fraction: 0.26479273576996143	Now: 1693849043684
+Total: 72452192B	Added: 26094002B	Fraction: 0.2647895463116516	Now: 1693849052872
+Total: 72452192B	Added: 26094002B	Fraction: 0.2647895463116516	Now: 1693849054072
+Total: 72452723B	Added: 26104279B	Fraction: 0.2648647835290282	Now: 1693849064806
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 72510436B	Added: 26269440B	Fraction: 0.26593918785644155	Now: 1693849065829
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 72674914B	Added: 26313113B	Fraction: 0.26582116845302917	Now: 1693849066953
+Total: 72675424B	Added: 26323552B	Fraction: 0.2658972149368494	Now: 1693849077467
+Total: 72675424B	Added: 26323552B	Fraction: 0.2658972149368494	Now: 1693849078801
+Total: 72675955B	Added: 26333883B	Fraction: 0.26597238751163294	Now: 1693849088814
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 72694368B	Added: 26485501B	Fraction: 0.26704512989425305	Now: 1693849089905
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 72731411B	Added: 26539305B	Fraction: 0.26734273781202506	Now: 1693849090945
+Total: 72757217B	Added: 26549531B	Fraction: 0.2673487102809972	Now: 1693849096274
+Total: 72757217B	Added: 26549531B	Fraction: 0.2673487102809972	Now: 1693849102029
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+Total: 73030715B	Added: 26702382B	Fraction: 0.2677384218801508	Now: 1693849103119
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 73135390B	Added: 26766953B	Fraction: 0.2679311835559252	Now: 1693849114310
+Total: 73135684B	Added: 26820729B	Fraction: 0.26832424448844516	Now: 1693849115401
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 73207362B	Added: 26939777B	Fraction: 0.26900196320136516	Now: 1693849116625
+violation:   script-src    eval
+Total: 73261701B	Added: 27049919B	Fraction: 0.2696588790012563	Now: 1693849126556
+Total: 73261701B	Added: 27049919B	Fraction: 0.2696588790012563	Now: 1693849128066
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 73280035B	Added: 27258768B	Fraction: 0.27112684044985097	Now: 1693849129189
+violation:   script-src    eval
+Total: 73282318B	Added: 27281420B	Fraction: 0.27128486413263597	Now: 1693849140589
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 73300652B	Added: 27513579B	Fraction: 0.27291364251937805	Now: 1693849141689
+violation:   script-src    eval
+Total: 73302935B	Added: 27535630B	Fraction: 0.27306646023770764	Now: 1693849153100
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 73321269B	Added: 27732865B	Fraction: 0.27443572966544844	Now: 1693849154249
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 73324114B	Added: 27777023B	Fraction: 0.27474491211706153	Now: 1693849155350
+Total: 73325156B	Added: 27787378B	Fraction: 0.27481635461732173	Now: 1693849156825
+Total: 73325156B	Added: 27787378B	Fraction: 0.27481635461732173	Now: 1693849166144
+violation:   script-src    eval
+violation:   script-src-elem    inline
+Total: 73461389B	Added: 27930751B	Fraction: 0.27547254649127634	Now: 1693849167178
+violation:   script-src    eval
+violation:   script-src    eval
+new:         https://players.brightcove.net/1039301536001/78VPVpZxu_default/index.min.js
+Total: 73607012B	Added: 27963638B	Fraction: 0.27531218910187144	Now: 1693849168313
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 73608785B	Added: 28008236B	Fraction: 0.27562543877368734	Now: 1693849169414
+Total: 73608785B	Added: 28008236B	Fraction: 0.27562543877368734	Now: 1693849170601
+Total: 73609954B	Added: 28018722B	Fraction: 0.27569700898199245	Now: 1693849181300
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 73681575B	Added: 28197592B	Fraction: 0.27677485820040126	Now: 1693849182486
+violation:   script-src    eval
+Total: 73682085B	Added: 28219326B	Fraction: 0.276927725760343	Now: 1693849187122
+Total: 73682085B	Added: 28219326B	Fraction: 0.276927725760343	Now: 1693849192970
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 73701612B	Added: 28387110B	Fraction: 0.2780631341432602	Now: 1693849193989
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 74411760B	Added: 28442713B	Fraction: 0.2765335543549963	Now: 1693849195038
+Total: 74412805B	Added: 28453253B	Fraction: 0.2766048738836672	Now: 1693849205886
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 74432377B	Added: 28644377B	Fraction: 0.27789366553005734	Now: 1693849207091
+violation:   script-src-elem    inline
+Total: 74433422B	Added: 28654971B	Fraction: 0.277965056648036	Now: 1693849217398
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 74451756B	Added: 28835514B	Fraction: 0.27917781155412474	Now: 1693849218505
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 74506598B	Added: 28903051B	Fraction: 0.27950052320552793	Now: 1693849219616
+Total: 74506598B	Added: 28903051B	Fraction: 0.27950052320552793	Now: 1693849229718
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 74511631B	Added: 29049557B	Fraction: 0.28050621628635625	Now: 1693849231319
+Total: 74539200B	Added: 29049557B	Fraction: 0.2804315626646625	Now: 1693849232497
+Total: 74539200B	Added: 29049557B	Fraction: 0.2804315626646625	Now: 1693849242702
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 74561917B	Added: 29247805B	Fraction: 0.28174437265133995	Now: 1693849243854
+Total: 74567368B	Added: 29258813B	Fraction: 0.2818057326022615	Now: 1693849247669
+Total: 74567368B	Added: 29258813B	Fraction: 0.2818057326022615	Now: 1693849255187
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 74586880B	Added: 29461669B	Fraction: 0.28315309807924377	Now: 1693849256237
+violation:   script-src    eval
+Total: 74640544B	Added: 29484013B	Fraction: 0.2831609934244426	Now: 1693849267463
+violation:   script-src    eval
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 74697246B	Added: 29648148B	Fraction: 0.2841347074696943	Now: 1693849268539
+Total: 74753256B	Added: 29648148B	Fraction: 0.28398227288207734	Now: 1693849269703
+Total: 74964879B	Added: 29659318B	Fraction: 0.28348430717226913	Now: 1693849270880
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 75572860B	Added: 29682945B	Fraction: 0.2820076764412186	Now: 1693849272216
+violation:   script-src    eval
+Total: 77563835B	Added: 29694748B	Fraction: 0.27685195132589063	Now: 1693849273378
+Total: 78709442B	Added: 29705551B	Fraction: 0.2739985511044584	Now: 1693849277962
+Total: 78709442B	Added: 29705551B	Fraction: 0.2739985511044584	Now: 1693849284842
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 78727776B	Added: 29924290B	Fraction: 0.27541390699372437	Now: 1693849285942
+violation:   script-src    eval
+Total: 78730059B	Added: 29946910B	Fraction: 0.2755589365029126	Now: 1693849296690
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    https://js.pp.caixabank.es/static/js/d3d3LmNhaXhhYmFuay5lcw==/8c49b4d0/bcaptcha.js
+violation:   script-src-elem    https://www.caixabank.es/deployedfiles/common/JavaScript/lolopo/aplnr/loader_prelogin_caixaES.js
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 78750141B	Added: 30196617B	Fraction: 0.27716856888940195	Now: 1693849297883
+Total: 78750676B	Added: 30196617B	Fraction: 0.2771672078167192	Now: 1693849307889
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 78772806B	Added: 30413028B	Fraction: 0.27854371657773846	Now: 1693849309126
+violation:   script-src    eval
+Total: 78801701B	Added: 30446941B	Fraction: 0.2786939996929207	Now: 1693849320386
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 78866179B	Added: 30671060B	Fraction: 0.2800057795869768	Now: 1693849321541
+violation:   script-src    eval
+Total: 78868745B	Added: 30728058B	Fraction: 0.2803736711188555	Now: 1693849332584
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 78888317B	Added: 30955095B	Fraction: 0.28181112036104633	Now: 1693849333775
+violation:   script-src    eval
+Total: 78888852B	Added: 30979162B	Fraction: 0.2819670700518897	Now: 1693849335205
+Total: 78889362B	Added: 31002604B	Fraction: 0.28211893124197995	Now: 1693849338884
+Total: 78889362B	Added: 31002604B	Fraction: 0.28211893124197995	Now: 1693849345822
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 78908206B	Added: 31220330B	Fraction: 0.28348992126799905	Now: 1693849347048
+violation:   script-src    eval
+Total: 78909979B	Added: 31231922B	Fraction: 0.28356076766824645	Now: 1693849357000
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 78928313B	Added: 31462816B	Fraction: 0.28501217702012993	Now: 1693849358119
+violation:   script-src    eval
+Total: 78930596B	Added: 31484368B	Fraction: 0.28514584309423857	Now: 1693849359296
+Total: 78930596B	Added: 31484368B	Fraction: 0.28514584309423857	Now: 1693849369182
+violation:   script-src-elem    inline
+violation:   script-src    eval
+Total: 78932745B	Added: 31606805B	Fraction: 0.2859320939880794	Now: 1693849370425
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 79121203B	Added: 31673945B	Fraction: 0.2858784483955922	Now: 1693849371596
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 79780814B	Added: 31706683B	Fraction: 0.28439676065200387	Now: 1693849372791
+violation:   script-src    eval
+Total: 81402968B	Added: 31717914B	Fraction: 0.28038955707576607	Now: 1693849373916
+Total: 81403478B	Added: 31728169B	Fraction: 0.28045352331872264	Now: 1693849384752
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 81405627B	Added: 31880134B	Fraction: 0.2814134249404919	Now: 1693849386350
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 81423585B	Added: 31923764B	Fraction: 0.28164544015934595	Now: 1693849387469
+Total: 81424095B	Added: 31934487B	Fraction: 0.28171212480410174	Now: 1693849398075
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+violation:   script-src    eval
+Total: 81738311B	Added: 32116926B	Fraction: 0.2820856277344537	Now: 1693849399327
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 81740084B	Added: 32128445B	Fraction: 0.2821538600889452	Now: 1693849400643
+Total: 81740084B	Added: 32128445B	Fraction: 0.2821538600889452	Now: 1693849403312
+Total: 81783491B	Added: 32138629B	Fraction: 0.2821105242774625	Now: 1693849412253
+Total: 81783491B	Added: 32138629B	Fraction: 0.2821105242774625	Now: 1693849413782
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 81785916B	Added: 32367836B	Fraction: 0.283545967021741	Now: 1693849414789
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 81831435B	Added: 32465268B	Fraction: 0.2840437838351295	Now: 1693849415819
+Total: 81832480B	Added: 32475614B	Fraction: 0.2841059881551345	Now: 1693849426809
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 81948044B	Added: 32629952B	Fraction: 0.2847837555127077	Now: 1693849427937
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 82145048B	Added: 32673480B	Fraction: 0.28456626791104656	Now: 1693849429670
+violation:   script-src    eval
+Total: 82935588B	Added: 32684572B	Fraction: 0.2826892126770971	Now: 1693849430813
+Total: 82937416B	Added: 32694993B	Fraction: 0.2827493890575262	Now: 1693849441372
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 83007631B	Added: 32899883B	Fraction: 0.2838459894843401	Now: 1693849442379
+violation:   script-src    eval
+Total: 83015507B	Added: 32920958B	Fraction: 0.2839568896636619	Now: 1693849453477
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 83033841B	Added: 33116718B	Fraction: 0.2851188860830192	Now: 1693849454505
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 83036124B	Added: 33170721B	Fraction: 0.28544550021988807	Now: 1693849455646
+Total: 83036124B	Added: 33170721B	Fraction: 0.28544550021988807	Now: 1693849460373
+Total: 83036124B	Added: 33170721B	Fraction: 0.28544550021988807	Now: 1693849465960
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+violation:   script-src    eval
+Total: 83054985B	Added: 33357733B	Fraction: 0.2865471537224996	Now: 1693849467144
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 83084327B	Added: 33378837B	Fraction: 0.2866042433811948	Now: 1693849468152
+Total: 83084837B	Added: 33388704B	Fraction: 0.28666342341218937	Now: 1693849478680
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 83209888B	Added: 33522309B	Fraction: 0.2871727754768464	Now: 1693849479799
+violation:   script-src    eval
+Total: 83263552B	Added: 33542384B	Fraction: 0.28716335101325674	Now: 1693849480891
+Total: 83263552B	Added: 33542384B	Fraction: 0.28716335101325674	Now: 1693849490634
+violation:   script-src    eval
+violation:   script-src-elem    inline
+Total: 83263846B	Added: 33642345B	Fraction: 0.28777214202454	Now: 1693849492722
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 83386475B	Added: 33692048B	Fraction: 0.2877730871271753	Now: 1693849493898
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 84548002B	Added: 33722417B	Fraction: 0.28512976689462816	Now: 1693849495159
+Total: 84548512B	Added: 33731761B	Fraction: 0.2851850113670265	Now: 1693849505680
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 84566846B	Added: 33982344B	Fraction: 0.2866518446899553	Now: 1693849506871
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 84568619B	Added: 33992465B	Fraction: 0.2867084531717001	Now: 1693849507897
+Total: 84569129B	Added: 34001943B	Fraction: 0.2867642370645009	Now: 1693849518363
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 84590608B	Added: 34234740B	Fraction: 0.28810973900955883	Now: 1693849519628
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 84596787B	Added: 34255184B	Fraction: 0.2882172143363108	Now: 1693849520632
+Total: 84597832B	Added: 34264608B	Fraction: 0.2882711140710219	Now: 1693849531368
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 84616166B	Added: 34507096B	Fraction: 0.28967554632612397	Now: 1693849532481
+violation:   script-src    eval
+Total: 84618449B	Added: 34527068B	Fraction: 0.28978906524867404	Now: 1693849543778
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 84636783B	Added: 34724078B	Fraction: 0.2909167855282143	Now: 1693849545848
+violation:   script-src    eval
+Total: 84655598B	Added: 34744320B	Fraction: 0.29099115461704084	Now: 1693849551262
+Total: 84655598B	Added: 34744320B	Fraction: 0.29099115461704084	Now: 1693849557030
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 84673932B	Added: 34972863B	Fraction: 0.29230087609116484	Now: 1693849558037
+violation:   script-src    eval
+Total: 84676215B	Added: 34993131B	Fraction: 0.2924151603535963	Now: 1693849569498
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 84678364B	Added: 35191201B	Fraction: 0.29357911660061503	Now: 1693849570676
+Total: 84678364B	Added: 35191201B	Fraction: 0.29357911660061503	Now: 1693849581542
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+Total: 84793619B	Added: 35334606B	Fraction: 0.2941407483545187	Now: 1693849582662
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 85070504B	Added: 35384694B	Fraction: 0.29375813238047227	Now: 1693849583820
+Total: 85070504B	Added: 35384694B	Fraction: 0.29375813238047227	Now: 1693849594329
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 85088838B	Added: 35604945B	Fraction: 0.29500231175950464	Now: 1693849595411
+violation:   script-src    eval
+Total: 85091121B	Added: 35624701B	Fraction: 0.29511211049037134	Now: 1693849606577
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 85111203B	Added: 35852785B	Fraction: 0.2963922204681281	Now: 1693849607760
+Total: 85111738B	Added: 35852785B	Fraction: 0.29639090958925207	Now: 1693849611804
+Total: 85111738B	Added: 35852785B	Fraction: 0.29639090958925207	Now: 1693849618072
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 85130072B	Added: 36084457B	Fraction: 0.29769085684439694	Now: 1693849619208
+Total: 85130072B	Added: 36084457B	Fraction: 0.29769085684439694	Now: 1693849620225
+violation:   script-src    eval
+Total: 85132355B	Added: 36105003B	Fraction: 0.2978042708584923	Now: 1693849631328
+violation:   script-src    eval
+violation:   script-src-elem    inline
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 85151927B	Added: 36299618B	Fraction: 0.29888148396959463	Now: 1693849632329
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 85152972B	Added: 36309201B	Fraction: 0.2989342286836907	Now: 1693849633437
+Total: 85152972B	Added: 36309201B	Fraction: 0.2989342286836907	Now: 1693849642102
+Total: 85153266B	Added: 36381058B	Fraction: 0.29934800970300374	Now: 1693849643233
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+Total: 85172544B	Added: 36525809B	Fraction: 0.3001339631934049	Now: 1693849644432
+violation:   script-src    eval
+Total: 85173589B	Added: 36535580B	Fraction: 0.300187572556674	Now: 1693849655533
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src-elem    inline
+Total: 85178622B	Added: 36743294B	Fraction: 0.30136742601715677	Now: 1693849656717
+Total: 85206191B	Added: 36743294B	Fraction: 0.30129929617988954	Now: 1693849667686
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 85225703B	Added: 36947090B	Fraction: 0.30241667635444824	Now: 1693849668879
+violation:   script-src    eval
+Total: 85322096B	Added: 36968029B	Fraction: 0.30229774480973015	Now: 1693849672396

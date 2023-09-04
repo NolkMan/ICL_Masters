@@ -19,7 +19,7 @@ const server_options = {
 const timeMatters = true
 const timeOut = 1000*60*10// 1000*15 // miliseconds
 const timeOutMulitplier = 1 // remove later if script is good
-const allowBypass = false; // 
+const allowBypass = true; // allows some hosts which very often change url to reduce load
 
 /*
 {
