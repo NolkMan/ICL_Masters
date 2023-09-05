@@ -4,12 +4,12 @@ import numpy as np
 
 INPUT_DIR = '../../node/run_logs'
 OUTPUT_DIR = '../imgs'
-OUTPUT_FILE = '/netword_usage_long_plot.png'
+OUTPUT_FILE = '/netword_usage_long_bypass.png'
 
 files = {
-    'caixabank_fixed_long': 'www.caixabank.es',
-    'professormesser_fixed_long': 'www.professormesser.com',
-    'quran_fixed_long': 'quran.com',
+    'caixabank_fixed_long_bypass': 'www.caixabank.es',
+    'professormesser_fixed_long_bypass': 'www.professormesser.com',
+    'quran_fixed_long_bypass': 'quran.com',
 }
 
 fig, ax = plt.subplots()
