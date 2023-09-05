@@ -19,7 +19,7 @@ const server_options = {
 const timeMatters = true
 const timeOut = 1000*60*10// 1000*15 // miliseconds
 const timeOutMulitplier = 1 // remove later if script is good
-const allowBypass = false; // 
+const allowBypass = true; // allows some hosts which very often change url to reduce load
 
 /*
 {
@@ -139,9 +139,13 @@ class CsproServer extends EventEmitter {
 
 	maybeAddToCsp(report, uriCount, hostCount){
 		var effectiveDir = report['effective-directive'];
-		var blockedHost = url.parse(report['blocked-uri']).hostname; // null when inline
-		if (['script-src', 'style-src'].includes(effectiveDir)){
+		var blockedHost = url.parse(report['blocked-uri']).host; // null when inline
+		if (effectiveDir === 'style-src'){
 			return false; // ignore reports from older browsers
+		} else if (effectiveDir === 'script-src'){
+			if (report['blocked-uri'] === 'eval'){
+				this.emit('violation', report);
+			}
 		} else if ('script-src-attr' === effectiveDir){
 			if (report['script-sample'].length < 40){
 				this.emit('warning', report)
@@ -156,7 +160,8 @@ class CsproServer extends EventEmitter {
 			if (allowBypass && (rule = common.has(blockedHost))){
 				return [effectiveDir, rule];
 			}
-		} else if (['connect-src', 'font-src', 'img-src', 'media-src', 'style-src-attr', 'style-src-elem'].includes(effectiveDir)){
+			// default-src as a violated directive is a result of prefetching
+		} else if (['default-src', 'connect-src', 'font-src', 'img-src', 'media-src', 'style-src-attr', 'style-src-elem'].includes(effectiveDir)){
 			if (blockedHost === this.host){
 				return [effectiveDir, this.host]
 			}
@@ -272,6 +277,9 @@ class CsproServer extends EventEmitter {
 				//"'unsafe-inline'": -1, "'self'": -1, "'strict-dynamic'": -1
 			},
 			'script-src-attr': {"'report-sample'": -1, "'unsafe-hashes'": -1},
+			'style-src-elem': { "'unsafe-inline'": -1, "'self'": -1
+			},
+			'style-src-attr': {"'unsafe-inline'": -1},
 		}
 		//this.csproData['script-src-elem']['https://' + this.host] = -1;
 		this.violators = new Map(

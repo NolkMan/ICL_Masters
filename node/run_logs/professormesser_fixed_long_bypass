@@ -1,0 +1,1272 @@
+Mitm communication server running at http://127.0.0.1:8181/
+PSQL started
+Reporting server running at http://localhost:54773/
+Total: 0B	Added: 0B	Fraction: NaN	Now: 1693861924880
+Total: 0B	Added: 0B	Fraction: NaN	Now: 1693861925949
+new:         https://www.professormesser.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.4
+new:         https://www.googletagmanager.com/gtag/js?id=UA-350313-2
+new:         https://www.professormesser.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.0
+Total: 134240B	Added: 9606B	Fraction: 0.06677975056657814	Now: 1693861927151
+new:         https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0449569413228608&host=ca-host-pub-2644536267352236
+Total: 318307B	Added: 28428B	Fraction: 0.08198768511976005	Now: 1693861928175
+new:         https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
+new:         https://www.professormesser.com/wp-content/plugins/social-icons-widget-by-wpzoom/assets/js/social-icons-widget-frontend.js?ver=1687610336
+new:         https://www.professormesser.com/wp-content/themes/astra/assets/js/minified/frontend.min.js?ver=4.1.5
+new:         https://www.professormesser.com/wp-content/uploads/astra-addon/astra-addon-6496ea52e11173-11317434.js?ver=4.1.5
+warning:     frame-src    https://googleads.g.doubleclick.net
+new:         https://www.google-analytics.com/analytics.js
+Total: 318307B	Added: 49921B	Fraction: 0.13557089629251443	Now: 1693861929196
+warning:     frame-src    https://td.doubleclick.net
+new:         https://www.googletagmanager.com/gtag/js?id=AW-1059031979&l=dataLayer&cx=c
+new:         https://www.googletagmanager.com/gtag/js?id=G-G8ZTVGDWZD&l=dataLayer&cx=c
+new:         https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1059031979/?random=1693861928576&cv=11&fst=1693861928576&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.professormesser.com%2F&hn=www.googleadservices.com&frm=0&tiba=Home%20-%20Professor%20Messer%20IT%20Certification%20Training%20-%20CompTIA%20A%2B%2C%20Network%2B%2C%20Security%2B&did=dZTNiMT&gdid=dZTNiMT&auid=146748642.1693861929&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+violation:   script-src-elem    https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1059031979/?random=1693861928576&cv=11&fst=1693861928576&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.professormesser.com%2F&hn=www.googleadservices.com&frm=0&tiba=Home%20-%20Professor%20Messer%20IT%20Certification%20Training%20-%20CompTIA%20A%2B%2C%20Network%2B%2C%20Security%2B&did=dZTNiMT&gdid=dZTNiMT&auid=146748642.1693861929&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+new:         https://partner.googleadservices.com/gampad/cookie.js?domain=www.professormesser.com&callback=_gfp_s_&client=ca-pub-0449569413228608
+violation:   script-src-elem    https://partner.googleadservices.com/gampad/cookie.js?domain=www.professormesser.com&callback=_gfp_s_&client=ca-pub-0449569413228608
+new:         https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202308290101/show_ads_impl_with_ama_fy2021.js?client=ca-pub-0449569413228608&plah=www.professormesser.com
+Total: 318307B	Added: 57616B	Fraction: 0.15326542935654375	Now: 1693861930357
+new:         https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202308290101/reactive_library_fy2021.js
+Total: 318307B	Added: 58802B	Fraction: 0.1559283920564081	Now: 1693861931511
+Total: 318307B	Added: 58802B	Fraction: 0.1559283920564081	Now: 1693861932683
+new:         https://tpc.googlesyndication.com/sodar/sodar2.js
+warning:     frame-src    https://tpc.googlesyndication.com
+warning:     frame-src    https://www.google.com
+Total: 330941B	Added: 63975B	Fraction: 0.16199647519978932	Now: 1693861933799
+Total: 330941B	Added: 67588B	Fraction: 0.16959368076099857	Now: 1693861935965
+Failed to accept cookies
+Total: 330941B	Added: 67588B	Fraction: 0.16959368076099857	Now: 1693861947441
+warning:     frame-src    https://player.vimeo.com
+warning:     frame-src    https://player.vimeo.com
+new:         https://www.professormesser.com/wp-content/plugins/stackable-ultimate-gutenberg-blocks-premium/dist/deprecated/frontend_blocks_deprecated_v2__premium_only.js?ver=3.9.0
+Total: 413266B	Added: 109729B	Fraction: 0.2098088891863211	Now: 1693861948475
+new:         https://www.professormesser.com/wp-content/plugins/stackable-ultimate-gutenberg-blocks-premium/dist/deprecated/frontend_blocks_deprecated_v2.js?ver=3.9.0
+Total: 445856B	Added: 123850B	Fraction: 0.2173928306881093	Now: 1693861949673
+Total: 445856B	Added: 123850B	Fraction: 0.2173928306881093	Now: 1693861950973
+Total: 445856B	Added: 123850B	Fraction: 0.2173928306881093	Now: 1693861952131
+Total: 445856B	Added: 123850B	Fraction: 0.2173928306881093	Now: 1693861954460
+Total: 445856B	Added: 126959B	Fraction: 0.22164049474961375	Now: 1693861960849
+Total: 445856B	Added: 143955B	Fraction: 0.2440697104665732	Now: 1693861961864
+new:         https://partner.googleadservices.com/gampad/cookie.js?domain=www.professormesser.com&callback=_gfp_s_&client=ca-pub-0449569413228608&cookie=ID%3D5bb1ab4c98c1fb48-22de890055e0007a%3AT%3D1693861929%3ART%3D1693861929%3AS%3DALNI_MYm2Dhs2X956KlqjaUPYoavOXS3rw&gpic=UID%3D00000c9d676f31ce%3AT%3D1693861929%3ART%3D1693861929%3AS%3DALNI_MaLe66QaEBrE3gA55a0rnIjEsnATA
+warning:     frame-src    https://googleads.g.doubleclick.net
+new:         https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1059031979/?random=1693861960598&cv=11&fst=1693861960598&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.professormesser.com%2F&hn=www.googleadservices.com&frm=0&tiba=Home%20-%20Professor%20Messer%20IT%20Certification%20Training%20-%20CompTIA%20A%2B%2C%20Network%2B%2C%20Security%2B&did=dZTNiMT&gdid=dZTNiMT&auid=146748642.1693861929&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+violation:   script-src-elem    https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1059031979/?random=1693861960598&cv=11&fst=1693861960598&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.professormesser.com%2F&hn=www.googleadservices.com&frm=0&tiba=Home%20-%20Professor%20Messer%20IT%20Certification%20Training%20-%20CompTIA%20A%2B%2C%20Network%2B%2C%20Security%2B&did=dZTNiMT&gdid=dZTNiMT&auid=146748642.1693861929&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+warning:     frame-src    https://td.doubleclick.net
+Total: 445856B	Added: 173831B	Fraction: 0.28051419506944636	Now: 1693861962998
+Total: 445856B	Added: 179039B	Fraction: 0.2865105337696733	Now: 1693861964161
+Total: 445856B	Added: 179039B	Fraction: 0.2865105337696733	Now: 1693861965204
+Total: 445856B	Added: 180200B	Fraction: 0.2878336762206576	Now: 1693861966273
+warning:     frame-src    https://tpc.googlesyndication.com
+warning:     frame-src    https://www.google.com
+Total: 445856B	Added: 185375B	Fraction: 0.29367220557925705	Now: 1693861967471
+Total: 445856B	Added: 186782B	Fraction: 0.2952430932065415	Now: 1693861976250
+Total: 445856B	Added: 186782B	Fraction: 0.2952430932065415	Now: 1693861977499
+Total: 446102B	Added: 204689B	Fraction: 0.31452340305873927	Now: 1693861978611
+warning:     frame-src    https://googleads.g.doubleclick.net
+new:         https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1059031979/?random=1693861977734&cv=11&fst=1693861977734&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.professormesser.com%2F&hn=www.googleadservices.com&frm=0&tiba=Home%20-%20Professor%20Messer%20IT%20Certification%20Training%20-%20CompTIA%20A%2B%2C%20Network%2B%2C%20Security%2B&did=dZTNiMT&gdid=dZTNiMT&auid=146748642.1693861929&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+violation:   script-src-elem    https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1059031979/?random=1693861977734&cv=11&fst=1693861977734&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.professormesser.com%2F&hn=www.googleadservices.com&frm=0&tiba=Home%20-%20Professor%20Messer%20IT%20Certification%20Training%20-%20CompTIA%20A%2B%2C%20Network%2B%2C%20Security%2B&did=dZTNiMT&gdid=dZTNiMT&auid=146748642.1693861929&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+warning:     frame-src    https://td.doubleclick.net
+Total: 446102B	Added: 236961B	Fraction: 0.34690943587926737	Now: 1693861979965
+Total: 446102B	Added: 236961B	Fraction: 0.34690943587926737	Now: 1693861981021
+warning:     frame-src    https://tpc.googlesyndication.com
+warning:     frame-src    https://www.google.com
+Total: 446102B	Added: 244270B	Fraction: 0.35382373560920777	Now: 1693861982578
+Total: 446102B	Added: 245676B	Fraction: 0.3551370526382741	Now: 1693861984872
+Total: 446102B	Added: 245676B	Fraction: 0.3551370526382741	Now: 1693861991558
+Total: 446102B	Added: 245676B	Fraction: 0.3551370526382741	Now: 1693861992755
+Total: 521541B	Added: 281742B	Fraction: 0.35073815828294636	Now: 1693861993972
+Total: 569553B	Added: 281742B	Fraction: 0.33095695381741935	Now: 1693861995062
+Total: 569553B	Added: 281742B	Fraction: 0.33095695381741935	Now: 1693861996069
+Total: 569553B	Added: 281742B	Fraction: 0.33095695381741935	Now: 1693861999583
+Total: 569553B	Added: 283857B	Fraction: 0.3326150384926354	Now: 1693862015723
+warning:     frame-src    https://googleads.g.doubleclick.net
+Total: 569553B	Added: 309555B	Fraction: 0.3521239711161768	Now: 1693862016859
+new:         https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1059031979/?random=1693862015639&cv=11&fst=1693862015639&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.professormesser.com%2F&hn=www.googleadservices.com&frm=0&tiba=Home%20-%20Professor%20Messer%20IT%20Certification%20Training%20-%20CompTIA%20A%2B%2C%20Network%2B%2C%20Security%2B&did=dZTNiMT&gdid=dZTNiMT&auid=146748642.1693861929&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+violation:   script-src-elem    https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1059031979/?random=1693862015639&cv=11&fst=1693862015639&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.professormesser.com%2F&hn=www.googleadservices.com&frm=0&tiba=Home%20-%20Professor%20Messer%20IT%20Certification%20Training%20-%20CompTIA%20A%2B%2C%20Network%2B%2C%20Security%2B&did=dZTNiMT&gdid=dZTNiMT&auid=146748642.1693861929&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+warning:     frame-src    https://td.doubleclick.net
+Total: 569553B	Added: 332020B	Fraction: 0.36826746142575256	Now: 1693862018080
+Total: 569553B	Added: 332020B	Fraction: 0.36826746142575256	Now: 1693862019092
+Total: 569553B	Added: 336176B	Fraction: 0.3711662097603146	Now: 1693862020245
+warning:     frame-src    https://www.google.com
+warning:     frame-src    https://tpc.googlesyndication.com
+Total: 569553B	Added: 339739B	Fraction: 0.37363025298803904	Now: 1693862022814
+Total: 569553B	Added: 339739B	Fraction: 0.37363025298803904	Now: 1693862030169
+Total: 581722B	Added: 379801B	Fraction: 0.3949993915902168	Now: 1693862031444
+Total: 659548B	Added: 391504B	Fraction: 0.3724877551253411	Now: 1693862032643
+Total: 659548B	Added: 391504B	Fraction: 0.3724877551253411	Now: 1693862033802
+Total: 659548B	Added: 391504B	Fraction: 0.3724877551253411	Now: 1693862034883
+Total: 659548B	Added: 391504B	Fraction: 0.3724877551253411	Now: 1693862038001
+Total: 659548B	Added: 391504B	Fraction: 0.3724877551253411	Now: 1693862046644
+Total: 715086B	Added: 407909B	Fraction: 0.36323313995164713	Now: 1693862047662
+new:         https://www.google.com/recaptcha/api.js?hl=en&ver=b76bb73a3266f6ebc4b86e86cd2b1cc4
+new:         https://www.professormesser.com/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.7.10
+Total: 763040B	Added: 487896B	Fraction: 0.3900247494675987	Now: 1693862048842
+new:         https://www.professormesser.com/wp-content/plugins/gravityforms/assets/js/dist/utils.min.js?ver=1329f9a0886f2ff3fb51c6f17277eb75
+warning:     frame-src    https://securepubads.g.doubleclick.net
+new:         https://www.professormesser.com/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2
+new:         https://www.gstatic.com/recaptcha/releases/0hCdE87LyjzAkFO5Ff-v7Hj1/recaptcha__en.js
+new:         https://www.professormesser.com/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.7.10
+new:         https://www.professormesser.com/wp-content/plugins/gravityforms/assets/js/dist/vendor-theme.min.js?ver=4ef53fe41c14a48b294541d9fc37387e
+Total: 763040B	Added: 505105B	Fraction: 0.39830224461713765	Now: 1693862050205
+new:         https://www.professormesser.com/wp-content/plugins/gravityforms/assets/js/dist/scripts-theme.min.js?ver=443293948084ca0fe29518ebcd01dc6b
+Total: 763040B	Added: 505105B	Fraction: 0.39830224461713765	Now: 1693862051242
+Total: 763040B	Added: 505105B	Fraction: 0.39830224461713765	Now: 1693862052420
+Total: 763040B	Added: 505105B	Fraction: 0.39830224461713765	Now: 1693862053664
+Total: 763040B	Added: 505105B	Fraction: 0.39830224461713765	Now: 1693862054901
+Total: 763040B	Added: 505105B	Fraction: 0.39830224461713765	Now: 1693862058329
+Total: 763040B	Added: 505105B	Fraction: 0.39830224461713765	Now: 1693862063967
+Total: 763040B	Added: 505105B	Fraction: 0.39830224461713765	Now: 1693862065407
+Total: 763683B	Added: 523833B	Fraction: 0.4068555264555936	Now: 1693862066642
+warning:     frame-src    https://www.youtube.com
+Total: 763683B	Added: 571543B	Fraction: 0.4280496335451826	Now: 1693862067784
+Total: 763683B	Added: 571543B	Fraction: 0.4280496335451826	Now: 1693862069186
+Total: 763683B	Added: 571543B	Fraction: 0.4280496335451826	Now: 1693862070282
+Total: 763683B	Added: 571543B	Fraction: 0.4280496335451826	Now: 1693862071678
+Total: 763683B	Added: 571543B	Fraction: 0.4280496335451826	Now: 1693862072784
+Total: 763683B	Added: 571543B	Fraction: 0.4280496335451826	Now: 1693862074041
+Total: 763683B	Added: 571543B	Fraction: 0.4280496335451826	Now: 1693862075488
+Total: 763683B	Added: 571543B	Fraction: 0.4280496335451826	Now: 1693862076571
+Total: 763683B	Added: 571543B	Fraction: 0.4280496335451826	Now: 1693862084397
+Total: 763683B	Added: 571543B	Fraction: 0.4280496335451826	Now: 1693862088305
+Total: 859817B	Added: 617915B	Fraction: 0.41815092317145464	Now: 1693862089463
+Total: 1111466B	Added: 617915B	Fraction: 0.3573041452404068	Now: 1693862090634
+Total: 1111466B	Added: 617915B	Fraction: 0.3573041452404068	Now: 1693862092041
+Total: 1111466B	Added: 617915B	Fraction: 0.3573041452404068	Now: 1693862093233
+Total: 1111466B	Added: 617915B	Fraction: 0.3573041452404068	Now: 1693862094453
+Total: 1111466B	Added: 617915B	Fraction: 0.3573041452404068	Now: 1693862097004
+Total: 1111466B	Added: 617915B	Fraction: 0.3573041452404068	Now: 1693862099042
+Total: 1111466B	Added: 617915B	Fraction: 0.3573041452404068	Now: 1693862100177
+Total: 1111466B	Added: 617915B	Fraction: 0.3573041452404068	Now: 1693862101378
+new:         https://www.professormesser.com/wp-content/plugins/gravityformsquiz/js/gquiz.js?ver=4.1
+Total: 1128668B	Added: 719699B	Fraction: 0.38937018460078543	Now: 1693862103307
+Total: 1128668B	Added: 719699B	Fraction: 0.38937018460078543	Now: 1693862104440
+Total: 1128668B	Added: 719699B	Fraction: 0.38937018460078543	Now: 1693862105451
+Total: 1128668B	Added: 719699B	Fraction: 0.38937018460078543	Now: 1693862106473
+new:         https://www.professormesser.com/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.11
+new:         https://www.professormesser.com/wp-includes/js/dist/hooks.min.js?ver=4169d3cf8e8d95a3d6d5
+Total: 1128668B	Added: 719699B	Fraction: 0.38937018460078543	Now: 1693862108682
+Total: 1128668B	Added: 719699B	Fraction: 0.38937018460078543	Now: 1693862115532
+Total: 1128668B	Added: 719699B	Fraction: 0.38937018460078543	Now: 1693862125529
+Total: 1128668B	Added: 719699B	Fraction: 0.38937018460078543	Now: 1693862126915
+Total: 1149582B	Added: 775636B	Fraction: 0.40288216711042596	Now: 1693862128091
+new:         https://www.professormesser.com/wp-content/plugins/kadence-blocks/includes/assets/js/kt-tabs.min.js?ver=3.1.13
+Total: 1151365B	Added: 782729B	Fraction: 0.4047005988333556	Now: 1693862129131
+Total: 1151365B	Added: 782729B	Fraction: 0.4047005988333556	Now: 1693862130289
+Total: 1151365B	Added: 782729B	Fraction: 0.4047005988333556	Now: 1693862139772
+Total: 1151365B	Added: 782729B	Fraction: 0.4047005988333556	Now: 1693862141145
+Total: 1223427B	Added: 862458B	Fraction: 0.41347341775793006	Now: 1693862142318
+Total: 1283727B	Added: 862458B	Fraction: 0.4018563171394824	Now: 1693862143540
+Total: 1283727B	Added: 862458B	Fraction: 0.4018563171394824	Now: 1693862144608
+Total: 1283727B	Added: 862458B	Fraction: 0.4018563171394824	Now: 1693862145649
+Total: 1283727B	Added: 862458B	Fraction: 0.4018563171394824	Now: 1693862146822
+Total: 1283727B	Added: 862458B	Fraction: 0.4018563171394824	Now: 1693862148075
+Total: 1283727B	Added: 862458B	Fraction: 0.4018563171394824	Now: 1693862150195
+Total: 1283727B	Added: 862458B	Fraction: 0.4018563171394824	Now: 1693862157568
+Total: 1283727B	Added: 862458B	Fraction: 0.4018563171394824	Now: 1693862158837
+new:         https://www.worldtimebuddy.com/clock_widget.js?h=4174715&bc=999999&cn=Messer+Studios&wt=c2
+Total: 1284009B	Added: 912354B	Fraction: 0.41539308393011537	Now: 1693862160135
+warning:     frame-src    https://calendar.google.com
+warning:     frame-src    https://www.worldtimebuddy.com
+Total: 1284009B	Added: 955714B	Fraction: 0.42671080307698767	Now: 1693862161362
+Total: 1284009B	Added: 955714B	Fraction: 0.42671080307698767	Now: 1693862162687
+Total: 1284009B	Added: 955714B	Fraction: 0.42671080307698767	Now: 1693862163964
+Total: 1284009B	Added: 955714B	Fraction: 0.42671080307698767	Now: 1693862165550
+Total: 1284009B	Added: 955714B	Fraction: 0.42671080307698767	Now: 1693862173512
+Total: 1284009B	Added: 955714B	Fraction: 0.42671080307698767	Now: 1693862175328
+Total: 1284291B	Added: 1014205B	Fraction: 0.4412472329732138	Now: 1693862176548
+Total: 1321926B	Added: 1014205B	Fraction: 0.43413875334902025	Now: 1693862177670
+Total: 1321926B	Added: 1014205B	Fraction: 0.43413875334902025	Now: 1693862180892
+Total: 1321926B	Added: 1055288B	Fraction: 0.44391796447438053	Now: 1693862187294
+new:         https://www.professormesser.com/wp-includes/js/dist/i18n.min.js?ver=9e794f35a71bb98672ae
+new:         https://www.professormesser.com/wp-includes/js/dist/a11y.min.js?ver=ecce20f002eda4c19664
+new:         https://www.professormesser.com/wp-includes/js/dist/dom-ready.min.js?ver=392bdd43726760d1f3ca
+new:         https://www.professormesser.com/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0
+Total: 1321926B	Added: 1123447B	Fraction: 0.45941743856663175	Now: 1693862188615
+Total: 1321926B	Added: 1123447B	Fraction: 0.45941743856663175	Now: 1693862189639
+Total: 1321926B	Added: 1123447B	Fraction: 0.45941743856663175	Now: 1693862190785
+Total: 1321926B	Added: 1123447B	Fraction: 0.45941743856663175	Now: 1693862191792
+Total: 1321926B	Added: 1123447B	Fraction: 0.45941743856663175	Now: 1693862192894
+Total: 1321926B	Added: 1123447B	Fraction: 0.45941743856663175	Now: 1693862193999
+Total: 1321926B	Added: 1123447B	Fraction: 0.45941743856663175	Now: 1693862195457
+Total: 1321926B	Added: 1123447B	Fraction: 0.45941743856663175	Now: 1693862202309
+Total: 1321926B	Added: 1123447B	Fraction: 0.45941743856663175	Now: 1693862203400
+Total: 1321926B	Added: 1123447B	Fraction: 0.45941743856663175	Now: 1693862204740
+Total: 1400799B	Added: 1193193B	Fraction: 0.45998329987139513	Now: 1693862205883
+Total: 1481532B	Added: 1193193B	Fraction: 0.4460993186215405	Now: 1693862206901
+Total: 1481532B	Added: 1193193B	Fraction: 0.4460993186215405	Now: 1693862208021
+Total: 1481532B	Added: 1193193B	Fraction: 0.4460993186215405	Now: 1693862209178
+Total: 1481532B	Added: 1193193B	Fraction: 0.4460993186215405	Now: 1693862210239
+Total: 1481532B	Added: 1193193B	Fraction: 0.4460993186215405	Now: 1693862211268
+Total: 1481532B	Added: 1193193B	Fraction: 0.4460993186215405	Now: 1693862212867
+Total: 1481532B	Added: 1193193B	Fraction: 0.4460993186215405	Now: 1693862219643
+Total: 1481532B	Added: 1193193B	Fraction: 0.4460993186215405	Now: 1693862220721
+Total: 1481532B	Added: 1193193B	Fraction: 0.4460993186215405	Now: 1693862221837
+Total: 1507604B	Added: 1231300B	Fraction: 0.4495593857981149	Now: 1693862222985
+new:         https://www.professormesser.com/wp-content/plugins/stackable-ultimate-gutenberg-blocks-premium/dist/frontend_block_accordion.js?ver=3.9.0
+Total: 1621406B	Added: 1254641B	Fraction: 0.43623800306462307	Now: 1693862224485
+Total: 1621406B	Added: 1254641B	Fraction: 0.43623800306462307	Now: 1693862225980
+Total: 1621406B	Added: 1254641B	Fraction: 0.43623800306462307	Now: 1693862229279
+Total: 1621406B	Added: 1276350B	Fraction: 0.44046151573838516	Now: 1693862235021
+warning:     frame-src    https://calendar.google.com
+warning:     frame-src    https://www.worldtimebuddy.com
+Total: 1621406B	Added: 1341415B	Fraction: 0.45274925484867296	Now: 1693862236132
+Total: 1621406B	Added: 1341415B	Fraction: 0.45274925484867296	Now: 1693862237270
+Total: 1621406B	Added: 1341415B	Fraction: 0.45274925484867296	Now: 1693862238480
+Total: 1621406B	Added: 1341415B	Fraction: 0.45274925484867296	Now: 1693862239646
+Total: 1621406B	Added: 1341415B	Fraction: 0.45274925484867296	Now: 1693862240682
+Total: 1621406B	Added: 1341415B	Fraction: 0.45274925484867296	Now: 1693862241762
+Total: 1621406B	Added: 1341415B	Fraction: 0.45274925484867296	Now: 1693862250130
+Total: 1621406B	Added: 1395886B	Fraction: 0.46262874126866077	Now: 1693862251153
+Total: 1621406B	Added: 1395886B	Fraction: 0.46262874126866077	Now: 1693862252187
+Total: 1621406B	Added: 1395886B	Fraction: 0.46262874126866077	Now: 1693862253314
+Total: 1621406B	Added: 1395886B	Fraction: 0.46262874126866077	Now: 1693862254798
+Total: 1621406B	Added: 1395886B	Fraction: 0.46262874126866077	Now: 1693862257527
+Total: 1621406B	Added: 1395886B	Fraction: 0.46262874126866077	Now: 1693862263556
+Total: 1621652B	Added: 1450357B	Fraction: 0.47212003610666503	Now: 1693862265749
+Total: 1621652B	Added: 1450357B	Fraction: 0.47212003610666503	Now: 1693862267032
+Total: 1621652B	Added: 1450357B	Fraction: 0.47212003610666503	Now: 1693862271075
+Total: 1621652B	Added: 1450357B	Fraction: 0.47212003610666503	Now: 1693862277100
+Total: 1621898B	Added: 1478743B	Fraction: 0.47691525720004346	Now: 1693862278258
+new:         https://partner.googleadservices.com/gampad/cookie.js?domain=www.professormesser.com&callback=_gfp_s_&client=ca-pub-0449569413228608&cookie=ID%3D5bb1ab4c98c1fb48-22de890055e0007a%3AT%3D1693861929%3ART%3D1693862235%3AS%3DALNI_MYm2Dhs2X956KlqjaUPYoavOXS3rw&gpic=UID%3D00000c9d676f31ce%3AT%3D1693861929%3ART%3D1693862235%3AS%3DALNI_MaLe66QaEBrE3gA55a0rnIjEsnATA
+warning:     frame-src    https://googleads.g.doubleclick.net
+new:         https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1059031979/?random=1693862277306&cv=11&fst=1693862277306&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.professormesser.com%2F&hn=www.googleadservices.com&frm=0&tiba=Home%20-%20Professor%20Messer%20IT%20Certification%20Training%20-%20CompTIA%20A%2B%2C%20Network%2B%2C%20Security%2B&did=dZTNiMT&gdid=dZTNiMT&auid=146748642.1693861929&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+violation:   script-src-elem    https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1059031979/?random=1693862277306&cv=11&fst=1693862277306&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.professormesser.com%2F&hn=www.googleadservices.com&frm=0&tiba=Home%20-%20Professor%20Messer%20IT%20Certification%20Training%20-%20CompTIA%20A%2B%2C%20Network%2B%2C%20Security%2B&did=dZTNiMT&gdid=dZTNiMT&auid=146748642.1693861929&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+warning:     frame-src    https://td.doubleclick.net
+Total: 1621898B	Added: 1505783B	Fraction: 0.4814375251184504	Now: 1693862279372
+Total: 1621898B	Added: 1505783B	Fraction: 0.4814375251184504	Now: 1693862280564
+warning:     frame-src    https://tpc.googlesyndication.com
+warning:     frame-src    https://www.google.com
+Total: 1621898B	Added: 1512101B	Fraction: 0.48248292357464057	Now: 1693862281893
+Total: 1621898B	Added: 1512101B	Fraction: 0.48248292357464057	Now: 1693862283297
+Total: 1621898B	Added: 1513508B	Fraction: 0.4827151571439233	Now: 1693862291002
+Total: 1621898B	Added: 1513508B	Fraction: 0.4827151571439233	Now: 1693862292356
+Total: 1622252B	Added: 1521471B	Fraction: 0.48397107505973014	Now: 1693862295336
+Total: 1622768B	Added: 1590837B	Fraction: 0.4950319034231027	Now: 1693862297155
+Total: 1622768B	Added: 1590837B	Fraction: 0.4950319034231027	Now: 1693862298181
+Total: 1622768B	Added: 1590837B	Fraction: 0.4950319034231027	Now: 1693862299420
+Total: 1622768B	Added: 1590837B	Fraction: 0.4950319034231027	Now: 1693862300600
+Total: 1622768B	Added: 1590837B	Fraction: 0.4950319034231027	Now: 1693862301803
+Total: 1622768B	Added: 1590837B	Fraction: 0.4950319034231027	Now: 1693862303382
+Total: 1622768B	Added: 1590837B	Fraction: 0.4950319034231027	Now: 1693862310324
+Total: 1622768B	Added: 1590837B	Fraction: 0.4950319034231027	Now: 1693862313029
+Total: 1701987B	Added: 1642518B	Fraction: 0.4911094466894204	Now: 1693862314223
+new:         https://www.professormesser.com/amember/application/default/views/public/js/vendors-user.js?87053287
+violation:   script-src-elem    https://www.professormesser.com/amember/application/default/views/public/js/vendors-user.js?87053287
+new:         https://www.professormesser.com/amember/application/default/views/public/js/vendors-admin-user.js?87053287
+new:         https://www.professormesser.com/amember/application/default/views/public/js/user.js?87053287
+Total: 1703747B	Added: 1703991B	Fraction: 0.500035800874363	Now: 1693862315485
+violation:   script-src-elem    inline
+Total: 1704122B	Added: 1712295B	Fraction: 0.5011961361859515	Now: 1693862326958
+Total: 1733532B	Added: 1784735B	Fraction: 0.507276735961199	Now: 1693862328777
+Total: 1733532B	Added: 1784735B	Fraction: 0.507276735961199	Now: 1693862339463
+Total: 1733778B	Added: 1921343B	Fraction: 0.5256578373192022	Now: 1693862340668
+Total: 1733778B	Added: 1921343B	Fraction: 0.5256578373192022	Now: 1693862341968
+Total: 1733778B	Added: 1921343B	Fraction: 0.5256578373192022	Now: 1693862343037
+Total: 1733778B	Added: 1921343B	Fraction: 0.5256578373192022	Now: 1693862344257
+Total: 1733778B	Added: 1921343B	Fraction: 0.5256578373192022	Now: 1693862345500
+Total: 1733778B	Added: 1921343B	Fraction: 0.5256578373192022	Now: 1693862353232
+Total: 1733778B	Added: 1921343B	Fraction: 0.5256578373192022	Now: 1693862356524
+Total: 1734296B	Added: 1957182B	Fraction: 0.5301892629456277	Now: 1693862357571
+Total: 1847670B	Added: 1993962B	Fraction: 0.5190403453532249	Now: 1693862358775
+Total: 1847670B	Added: 2012258B	Fraction: 0.5213200867995466	Now: 1693862360040
+Total: 1847670B	Added: 2012258B	Fraction: 0.5213200867995466	Now: 1693862361263
+Total: 1847670B	Added: 2021410B	Fraction: 0.522452365937122	Now: 1693862363695
+Total: 1847670B	Added: 2021410B	Fraction: 0.522452365937122	Now: 1693862370687
+Total: 1847670B	Added: 2021410B	Fraction: 0.522452365937122	Now: 1693862372131
+Total: 1847952B	Added: 2094914B	Fraction: 0.5313175745764629	Now: 1693862373250
+Total: 1925762B	Added: 2094914B	Fraction: 0.5210352686961098	Now: 1693862374405
+Total: 1965906B	Added: 2094914B	Fraction: 0.515884476534296	Now: 1693862375535
+Total: 1965906B	Added: 2094914B	Fraction: 0.515884476534296	Now: 1693862376573
+Total: 1965906B	Added: 2094914B	Fraction: 0.515884476534296	Now: 1693862377762
+Total: 1965906B	Added: 2094914B	Fraction: 0.515884476534296	Now: 1693862378973
+Total: 1965906B	Added: 2094914B	Fraction: 0.515884476534296	Now: 1693862380841
+Total: 1965906B	Added: 2094914B	Fraction: 0.515884476534296	Now: 1693862387611
+Total: 1965906B	Added: 2157683B	Fraction: 0.5232536511276948	Now: 1693862388784
+Total: 1965906B	Added: 2157683B	Fraction: 0.5232536511276948	Now: 1693862389931
+Total: 1965906B	Added: 2157683B	Fraction: 0.5232536511276948	Now: 1693862391271
+Total: 1965906B	Added: 2157683B	Fraction: 0.5232536511276948	Now: 1693862392640
+Total: 1965906B	Added: 2157683B	Fraction: 0.5232536511276948	Now: 1693862393814
+Total: 1965906B	Added: 2157683B	Fraction: 0.5232536511276948	Now: 1693862395795
+Total: 1965906B	Added: 2157683B	Fraction: 0.5232536511276948	Now: 1693862397419
+Total: 1965906B	Added: 2157683B	Fraction: 0.5232536511276948	Now: 1693862402032
+Total: 1965906B	Added: 2157683B	Fraction: 0.5232536511276948	Now: 1693862403183
+Total: 1965906B	Added: 2157683B	Fraction: 0.5232536511276948	Now: 1693862404626
+Total: 1966278B	Added: 2166120B	Fraction: 0.5241799071628628	Now: 1693862408007
+Total: 1966796B	Added: 2239530B	Fraction: 0.5324195033860903	Now: 1693862409124
+Total: 1966796B	Added: 2239530B	Fraction: 0.5324195033860903	Now: 1693862410459
+Total: 1966796B	Added: 2239530B	Fraction: 0.5324195033860903	Now: 1693862411581
+Total: 1966796B	Added: 2239530B	Fraction: 0.5324195033860903	Now: 1693862412788
+Total: 1966796B	Added: 2239530B	Fraction: 0.5324195033860903	Now: 1693862413794
+Total: 1966796B	Added: 2239530B	Fraction: 0.5324195033860903	Now: 1693862415082
+Total: 1966796B	Added: 2239530B	Fraction: 0.5324195033860903	Now: 1693862422394
+Total: 1966796B	Added: 2239530B	Fraction: 0.5324195033860903	Now: 1693862423825
+Total: 1967435B	Added: 2265699B	Fraction: 0.5352296903428996	Now: 1693862425071
+Total: 1967435B	Added: 2321475B	Fraction: 0.5412738901026135	Now: 1693862426278
+Total: 1967435B	Added: 2321475B	Fraction: 0.5412738901026135	Now: 1693862427395
+Total: 1967435B	Added: 2321475B	Fraction: 0.5412738901026135	Now: 1693862428568
+Total: 1967435B	Added: 2321475B	Fraction: 0.5412738901026135	Now: 1693862431705
+Total: 1967435B	Added: 2348931B	Fraction: 0.5441918039387763	Now: 1693862438688
+Total: 1967435B	Added: 2390023B	Fraction: 0.5484901977253711	Now: 1693862440322
+Total: 1967435B	Added: 2390023B	Fraction: 0.5484901977253711	Now: 1693862441557
+Total: 1967435B	Added: 2390023B	Fraction: 0.5484901977253711	Now: 1693862442647
+Total: 1967435B	Added: 2390023B	Fraction: 0.5484901977253711	Now: 1693862443758
+Total: 1967435B	Added: 2390023B	Fraction: 0.5484901977253711	Now: 1693862444841
+Total: 1967435B	Added: 2390023B	Fraction: 0.5484901977253711	Now: 1693862446811
+Total: 1967435B	Added: 2390023B	Fraction: 0.5484901977253711	Now: 1693862453363
+Total: 1967435B	Added: 2390023B	Fraction: 0.5484901977253711	Now: 1693862455319
+Total: 2050001B	Added: 2482398B	Fraction: 0.5477006768380277	Now: 1693862456949
+Total: 2073506B	Added: 2482398B	Fraction: 0.544874957856882	Now: 1693862458040
+Total: 2073506B	Added: 2482398B	Fraction: 0.544874957856882	Now: 1693862459068
+Total: 2073506B	Added: 2482398B	Fraction: 0.544874957856882	Now: 1693862460262
+Total: 2073506B	Added: 2482398B	Fraction: 0.544874957856882	Now: 1693862461457
+Total: 2073506B	Added: 2482398B	Fraction: 0.544874957856882	Now: 1693862462770
+Total: 2073506B	Added: 2490243B	Fraction: 0.5456573093743762	Now: 1693862470360
+Total: 2073506B	Added: 2545167B	Fraction: 0.5510602287713375	Now: 1693862471598
+Total: 2073506B	Added: 2545167B	Fraction: 0.5510602287713375	Now: 1693862472838
+Total: 2073506B	Added: 2545167B	Fraction: 0.5510602287713375	Now: 1693862473976
+Total: 2073506B	Added: 2545167B	Fraction: 0.5510602287713375	Now: 1693862475008
+Total: 2073506B	Added: 2545167B	Fraction: 0.5510602287713375	Now: 1693862476020
+Total: 2073506B	Added: 2545167B	Fraction: 0.5510602287713375	Now: 1693862477262
+Total: 2073506B	Added: 2545167B	Fraction: 0.5510602287713375	Now: 1693862479753
+Total: 2073506B	Added: 2545167B	Fraction: 0.5510602287713375	Now: 1693862486380
+Total: 2073506B	Added: 2545167B	Fraction: 0.5510602287713375	Now: 1693862487531
+Total: 2073788B	Added: 2684244B	Fraction: 0.5641500519542534	Now: 1693862488588
+Total: 2073788B	Added: 2684244B	Fraction: 0.5641500519542534	Now: 1693862489831
+Total: 2073788B	Added: 2684244B	Fraction: 0.5641500519542534	Now: 1693862490893
+Total: 2073788B	Added: 2684244B	Fraction: 0.5641500519542534	Now: 1693862492074
+Total: 2073788B	Added: 2684244B	Fraction: 0.5641500519542534	Now: 1693862493080
+Total: 2073788B	Added: 2684244B	Fraction: 0.5641500519542534	Now: 1693862494297
+Total: 2073788B	Added: 2684244B	Fraction: 0.5641500519542534	Now: 1693862495534
+Total: 2073788B	Added: 2684244B	Fraction: 0.5641500519542534	Now: 1693862496719
+Total: 2073788B	Added: 2684244B	Fraction: 0.5641500519542534	Now: 1693862504004
+Total: 2074034B	Added: 2705527B	Fraction: 0.5660618203219919	Now: 1693862505102
+Total: 2074034B	Added: 2740919B	Fraction: 0.5692514547909399	Now: 1693862506180
+Total: 2074034B	Added: 2740919B	Fraction: 0.5692514547909399	Now: 1693862507293
+Total: 2074034B	Added: 2740919B	Fraction: 0.5692514547909399	Now: 1693862510469
+Total: 2074034B	Added: 2740919B	Fraction: 0.5692514547909399	Now: 1693862516330
+Total: 2074034B	Added: 2740919B	Fraction: 0.5692514547909399	Now: 1693862519705
+warning:     frame-src    https://widget.spreaker.com
+Total: 2107594B	Added: 2843557B	Fraction: 0.5743224151313503	Now: 1693862520928
+Total: 2107594B	Added: 2843557B	Fraction: 0.5743224151313503	Now: 1693862522655
+Total: 2107594B	Added: 2843557B	Fraction: 0.5743224151313503	Now: 1693862523668
+Total: 2107594B	Added: 2843557B	Fraction: 0.5743224151313503	Now: 1693862524932
+Total: 2107594B	Added: 2843557B	Fraction: 0.5743224151313503	Now: 1693862526209
+Total: 2107594B	Added: 2843557B	Fraction: 0.5743224151313503	Now: 1693862527359
+Total: 2107594B	Added: 2843557B	Fraction: 0.5743224151313503	Now: 1693862528370
+Total: 2107594B	Added: 2843557B	Fraction: 0.5743224151313503	Now: 1693862537064
+Total: 2107594B	Added: 2907639B	Fraction: 0.5797614986183095	Now: 1693862538078
+Total: 2107594B	Added: 2907639B	Fraction: 0.5797614986183095	Now: 1693862539255
+Total: 2107594B	Added: 2907639B	Fraction: 0.5797614986183095	Now: 1693862542236
+Total: 2107594B	Added: 2935102B	Fraction: 0.5820501572968111	Now: 1693862548320
+Total: 2107594B	Added: 2971741B	Fraction: 0.5850649740566433	Now: 1693862549460
+Total: 2107594B	Added: 2971741B	Fraction: 0.5850649740566433	Now: 1693862553686
+Total: 2107594B	Added: 2971741B	Fraction: 0.5850649740566433	Now: 1693862560228
+Total: 2266103B	Added: 3047049B	Fraction: 0.5734917803970223	Now: 1693862561900
+Total: 2266103B	Added: 3047049B	Fraction: 0.5734917803970223	Now: 1693862563253
+Total: 2266103B	Added: 3047049B	Fraction: 0.5734917803970223	Now: 1693862564430
+Total: 2266103B	Added: 3047049B	Fraction: 0.5734917803970223	Now: 1693862567273
+Total: 2266103B	Added: 3047049B	Fraction: 0.5734917803970223	Now: 1693862575098
+Total: 2266349B	Added: 3108452B	Fraction: 0.5783380631208486	Now: 1693862576221
+Total: 2266349B	Added: 3108452B	Fraction: 0.5783380631208486	Now: 1693862577313
+Total: 2266349B	Added: 3108452B	Fraction: 0.5783380631208486	Now: 1693862578580
+Total: 2266349B	Added: 3108452B	Fraction: 0.5783380631208486	Now: 1693862579781
+Total: 2266349B	Added: 3108452B	Fraction: 0.5783380631208486	Now: 1693862581010
+Total: 2266349B	Added: 3108452B	Fraction: 0.5783380631208486	Now: 1693862582011
+Total: 2266349B	Added: 3108452B	Fraction: 0.5783380631208486	Now: 1693862583896
+Total: 2266349B	Added: 3108452B	Fraction: 0.5783380631208486	Now: 1693862590741
+Total: 2266349B	Added: 3108452B	Fraction: 0.5783380631208486	Now: 1693862594747
+Total: 2266867B	Added: 3205547B	Fraction: 0.585764710053004	Now: 1693862596285
+Total: 2266867B	Added: 3205547B	Fraction: 0.585764710053004	Now: 1693862597382
+Total: 2266867B	Added: 3205547B	Fraction: 0.585764710053004	Now: 1693862598502
+Total: 2266867B	Added: 3205547B	Fraction: 0.585764710053004	Now: 1693862599616
+Total: 2266867B	Added: 3205547B	Fraction: 0.585764710053004	Now: 1693862600634
+Total: 2266867B	Added: 3205547B	Fraction: 0.585764710053004	Now: 1693862601736
+Total: 2266867B	Added: 3205547B	Fraction: 0.585764710053004	Now: 1693862604120
+Total: 2266867B	Added: 3205547B	Fraction: 0.585764710053004	Now: 1693862608894
+Total: 2266867B	Added: 3205547B	Fraction: 0.585764710053004	Now: 1693862611118
+Total: 2267259B	Added: 3212244B	Fraction: 0.586229079535133	Now: 1693862612489
+Total: 2267541B	Added: 3272014B	Fraction: 0.5906636904949947	Now: 1693862613736
+Total: 2267541B	Added: 3272014B	Fraction: 0.5906636904949947	Now: 1693862615316
+Total: 2267541B	Added: 3272014B	Fraction: 0.5906636904949947	Now: 1693862616449
+Total: 2267541B	Added: 3272014B	Fraction: 0.5906636904949947	Now: 1693862617564
+Total: 2267541B	Added: 3272014B	Fraction: 0.5906636904949947	Now: 1693862619149
+Total: 2267541B	Added: 3272014B	Fraction: 0.5906636904949947	Now: 1693862621096
+Total: 2267541B	Added: 3272014B	Fraction: 0.5906636904949947	Now: 1693862622284
+Total: 2267541B	Added: 3272014B	Fraction: 0.5906636904949947	Now: 1693862626117
+Total: 2267541B	Added: 3272014B	Fraction: 0.5906636904949947	Now: 1693862628109
+Total: 2267541B	Added: 3272014B	Fraction: 0.5906636904949947	Now: 1693862630243
+Total: 2267925B	Added: 3277863B	Fraction: 0.5910545083944788	Now: 1693862633447
+Total: 2268443B	Added: 3330737B	Fraction: 0.5948615690154629	Now: 1693862634453
+Total: 2268443B	Added: 3330737B	Fraction: 0.5948615690154629	Now: 1693862635462
+Total: 2268443B	Added: 3330737B	Fraction: 0.5948615690154629	Now: 1693862636493
+Total: 2268443B	Added: 3330737B	Fraction: 0.5948615690154629	Now: 1693862637534
+Total: 2268443B	Added: 3330737B	Fraction: 0.5948615690154629	Now: 1693862638781
+Total: 2268443B	Added: 3330737B	Fraction: 0.5948615690154629	Now: 1693862639870
+Total: 2268443B	Added: 3330737B	Fraction: 0.5948615690154629	Now: 1693862642102
+Total: 2268443B	Added: 3330737B	Fraction: 0.5948615690154629	Now: 1693862647317
+Total: 2268443B	Added: 3330737B	Fraction: 0.5948615690154629	Now: 1693862649100
+Total: 2268443B	Added: 3394819B	Fraction: 0.5994458670638936	Now: 1693862650255
+Total: 2268443B	Added: 3394819B	Fraction: 0.5994458670638936	Now: 1693862651707
+Total: 2268443B	Added: 3394819B	Fraction: 0.5994458670638936	Now: 1693862664553
+Total: 2268961B	Added: 3451337B	Fraction: 0.6033491611800644	Now: 1693862665736
+Total: 2268961B	Added: 3451337B	Fraction: 0.6033491611800644	Now: 1693862670061
+Total: 2268961B	Added: 3451337B	Fraction: 0.6033491611800644	Now: 1693862676770
+Total: 2361531B	Added: 3518223B	Fraction: 0.5983622784218523	Now: 1693862678192
+Total: 2428777B	Added: 3518223B	Fraction: 0.5915962670253909	Now: 1693862679430
+Total: 2428777B	Added: 3518223B	Fraction: 0.5915962670253909	Now: 1693862681036
+Total: 2428777B	Added: 3518223B	Fraction: 0.5915962670253909	Now: 1693862682057
+Total: 2428777B	Added: 3518223B	Fraction: 0.5915962670253909	Now: 1693862683218
+Total: 2428777B	Added: 3518223B	Fraction: 0.5915962670253909	Now: 1693862684308
+Total: 2428777B	Added: 3518223B	Fraction: 0.5915962670253909	Now: 1693862688330
+Total: 2428777B	Added: 3518223B	Fraction: 0.5915962670253909	Now: 1693862692588
+Total: 2428777B	Added: 3518223B	Fraction: 0.5915962670253909	Now: 1693862693799
+Total: 2429023B	Added: 3598221B	Fraction: 0.596992754897595	Now: 1693862694985
+Total: 2429023B	Added: 3603999B	Fraction: 0.5973787266149535	Now: 1693862696209
+Total: 2429023B	Added: 3603999B	Fraction: 0.5973787266149535	Now: 1693862697420
+Total: 2429023B	Added: 3603999B	Fraction: 0.5973787266149535	Now: 1693862698497
+Total: 2429023B	Added: 3603999B	Fraction: 0.5973787266149535	Now: 1693862699701
+Total: 2429023B	Added: 3603999B	Fraction: 0.5973787266149535	Now: 1693862701247
+Total: 2429023B	Added: 3616326B	Fraction: 0.5981997069151839	Now: 1693862709406
+Total: 2429023B	Added: 3665627B	Fraction: 0.6014499602110047	Now: 1693862710472
+Total: 2429023B	Added: 3665627B	Fraction: 0.6014499602110047	Now: 1693862711478
+Total: 2429023B	Added: 3665627B	Fraction: 0.6014499602110047	Now: 1693862712673
+Total: 2429023B	Added: 3665627B	Fraction: 0.6014499602110047	Now: 1693862713888
+Total: 2429023B	Added: 3665627B	Fraction: 0.6014499602110047	Now: 1693862716906
+Total: 2429023B	Added: 3665627B	Fraction: 0.6014499602110047	Now: 1693862724370
+Total: 2458498B	Added: 3718067B	Fraction: 0.6019635509381023	Now: 1693862725878
+Total: 2458498B	Added: 3718067B	Fraction: 0.6019635509381023	Now: 1693862726924
+Total: 2458498B	Added: 3718067B	Fraction: 0.6019635509381023	Now: 1693862730186
+Total: 2458498B	Added: 3774051B	Fraction: 0.6055389215552096	Now: 1693862735988
+Total: 2458498B	Added: 3792718B	Fraction: 0.6067168371721597	Now: 1693862737247
+Total: 2458498B	Added: 3792718B	Fraction: 0.6067168371721597	Now: 1693862738253
+Total: 2458498B	Added: 3792718B	Fraction: 0.6067168371721597	Now: 1693862739406
+Total: 2458498B	Added: 3792718B	Fraction: 0.6067168371721597	Now: 1693862742700
+Total: 2458498B	Added: 3792718B	Fraction: 0.6067168371721597	Now: 1693862749272
+Total: 2458744B	Added: 3838623B	Fraction: 0.609559995471123	Now: 1693862750288
+Total: 2458744B	Added: 3844354B	Fraction: 0.6099149973552688	Now: 1693862751992
+Total: 2458744B	Added: 3844354B	Fraction: 0.6099149973552688	Now: 1693862755439
+Total: 2458744B	Added: 3844354B	Fraction: 0.6099149973552688	Now: 1693862761685
+changed:     https://www.googletagmanager.com/gtag/js?id=UA-350313-2
+changed:     https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0449569413228608&host=ca-host-pub-2644536267352236
+warning:     frame-src    https://googleads.g.doubleclick.net
+changed:     https://www.googletagmanager.com/gtag/js?id=AW-1059031979&l=dataLayer&cx=c
+new:         https://partner.googleadservices.com/gampad/cookie.js?domain=www.professormesser.com&callback=_gfp_s_&client=ca-pub-0449569413228608&cookie=ID%3D5bb1ab4c98c1fb48-22de890055e0007a%3AT%3D1693861929%3ART%3D1693862537%3AS%3DALNI_MYm2Dhs2X956KlqjaUPYoavOXS3rw&gpic=UID%3D00000c9d676f31ce%3AT%3D1693861929%3ART%3D1693862537%3AS%3DALNI_MaLe66QaEBrE3gA55a0rnIjEsnATA
+changed:     https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202308290101/show_ads_impl_with_ama_fy2021.js?client=ca-pub-0449569413228608&plah=www.professormesser.com
+changed:     https://www.googletagmanager.com/gtag/js?id=G-G8ZTVGDWZD&l=dataLayer&cx=c
+Total: 2458990B	Added: 3882936B	Fraction: 0.6122644761228687	Now: 1693862762901
+changed:     https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
+new:         https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1059031979/?random=1693862761934&cv=11&fst=1693862761934&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.professormesser.com%2F&hn=www.googleadservices.com&frm=0&tiba=Home%20-%20Professor%20Messer%20IT%20Certification%20Training%20-%20CompTIA%20A%2B%2C%20Network%2B%2C%20Security%2B&did=dZTNiMT&gdid=dZTNiMT&auid=146748642.1693861929&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+violation:   script-src-elem    https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1059031979/?random=1693862761934&cv=11&fst=1693862761934&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.professormesser.com%2F&hn=www.googleadservices.com&frm=0&tiba=Home%20-%20Professor%20Messer%20IT%20Certification%20Training%20-%20CompTIA%20A%2B%2C%20Network%2B%2C%20Security%2B&did=dZTNiMT&gdid=dZTNiMT&auid=146748642.1693861929&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+warning:     frame-src    https://td.doubleclick.net
+Total: 2458990B	Added: 3897275B	Fraction: 0.6131391627001077	Now: 1693862764272
+changed:     https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202308290101/reactive_library_fy2021.js
+Total: 2458990B	Added: 3899878B	Fraction: 0.6132975240247164	Now: 1693862765577
+Total: 2458990B	Added: 3899878B	Fraction: 0.6132975240247164	Now: 1693862766855
+warning:     frame-src    https://tpc.googlesyndication.com
+warning:     frame-src    https://www.google.com
+Total: 2458990B	Added: 3904034B	Fraction: 0.6135500981923061	Now: 1693862767989
+Total: 2458990B	Added: 3907605B	Fraction: 0.613766856537914	Now: 1693862769720
+Total: 2458990B	Added: 3907605B	Fraction: 0.613766856537914	Now: 1693862777524
+Total: 2458990B	Added: 3907605B	Fraction: 0.613766856537914	Now: 1693862780930
+Total: 2459508B	Added: 3967001B	Fraction: 0.617287083858437	Now: 1693862782232
+Total: 2459508B	Added: 3967001B	Fraction: 0.617287083858437	Now: 1693862783265
+Total: 2459508B	Added: 3967001B	Fraction: 0.617287083858437	Now: 1693862784473
+Total: 2459508B	Added: 3967001B	Fraction: 0.617287083858437	Now: 1693862785776
+Total: 2459508B	Added: 3967001B	Fraction: 0.617287083858437	Now: 1693862787169
+Total: 2459508B	Added: 3967001B	Fraction: 0.617287083858437	Now: 1693862790717
+Total: 2459508B	Added: 3967001B	Fraction: 0.617287083858437	Now: 1693862794872
+Total: 2459508B	Added: 3967001B	Fraction: 0.617287083858437	Now: 1693862796156
+Total: 2459508B	Added: 3967001B	Fraction: 0.617287083858437	Now: 1693862797229
+Total: 2471820B	Added: 4033230B	Fraction: 0.620015218945281	Now: 1693862798286
+Total: 2477002B	Added: 4033230B	Fraction: 0.6195217006091335	Now: 1693862799423
+Total: 2477002B	Added: 4033230B	Fraction: 0.6195217006091335	Now: 1693862800487
+Total: 2477002B	Added: 4033230B	Fraction: 0.6195217006091335	Now: 1693862801682
+Total: 2477002B	Added: 4033230B	Fraction: 0.6195217006091335	Now: 1693862802823
+Total: 2477002B	Added: 4033230B	Fraction: 0.6195217006091335	Now: 1693862804036
+Total: 2477002B	Added: 4033230B	Fraction: 0.6195217006091335	Now: 1693862805827
+Total: 2477002B	Added: 4033230B	Fraction: 0.6195217006091335	Now: 1693862807120
+Total: 2477002B	Added: 4033230B	Fraction: 0.6195217006091335	Now: 1693862812065
+Total: 2477002B	Added: 4033230B	Fraction: 0.6195217006091335	Now: 1693862816298
+Total: 2477002B	Added: 4033230B	Fraction: 0.6195217006091335	Now: 1693862821952
+Total: 2477002B	Added: 4033230B	Fraction: 0.6195217006091335	Now: 1693862823707
+Total: 2477002B	Added: 4033230B	Fraction: 0.6195217006091335	Now: 1693862824836
+Total: 2477248B	Added: 4094633B	Fraction: 0.6230534302127504	Now: 1693862826250
+Total: 2477248B	Added: 4094633B	Fraction: 0.6230534302127504	Now: 1693862827310
+Total: 2477248B	Added: 4094633B	Fraction: 0.6230534302127504	Now: 1693862829301
+Total: 2477248B	Added: 4094633B	Fraction: 0.6230534302127504	Now: 1693862830377
+Total: 2477248B	Added: 4094633B	Fraction: 0.6230534302127504	Now: 1693862831560
+Total: 2477248B	Added: 4094633B	Fraction: 0.6230534302127504	Now: 1693862832845
+Total: 2477248B	Added: 4094633B	Fraction: 0.6230534302127504	Now: 1693862839672
+Total: 2477248B	Added: 4094633B	Fraction: 0.6230534302127504	Now: 1693862841857
+Total: 2477616B	Added: 4101194B	Fraction: 0.6233945044772535	Now: 1693862845082
+Total: 2513603B	Added: 4152146B	Fraction: 0.6229076432370916	Now: 1693862846388
+Total: 2513603B	Added: 4152146B	Fraction: 0.6229076432370916	Now: 1693862848060
+Total: 2513603B	Added: 4152146B	Fraction: 0.6229076432370916	Now: 1693862859755
+Total: 2513997B	Added: 4232169B	Fraction: 0.6273443315803376	Now: 1693862871253
+Total: 2514243B	Added: 4312817B	Fraction: 0.6317239045797166	Now: 1693862873095
+Total: 2514243B	Added: 4312817B	Fraction: 0.6317239045797166	Now: 1693862874157
+Total: 2514243B	Added: 4312817B	Fraction: 0.6317239045797166	Now: 1693862875420
+Total: 2514243B	Added: 4312817B	Fraction: 0.6317239045797166	Now: 1693862876591
+Total: 2514243B	Added: 4312817B	Fraction: 0.6317239045797166	Now: 1693862878352
+Total: 2514243B	Added: 4312817B	Fraction: 0.6317239045797166	Now: 1693862879454
+Total: 2514243B	Added: 4312817B	Fraction: 0.6317239045797166	Now: 1693862881448
+Total: 2514243B	Added: 4312817B	Fraction: 0.6317239045797166	Now: 1693862882643
+Total: 2514243B	Added: 4312817B	Fraction: 0.6317239045797166	Now: 1693862887195
+Total: 2514525B	Added: 4324957B	Fraction: 0.6323515435818092	Now: 1693862888357
+Total: 2514525B	Added: 4389986B	Fraction: 0.6358141800338938	Now: 1693862889666
+Total: 2514525B	Added: 4389986B	Fraction: 0.6358141800338938	Now: 1693862891528
+Total: 2514525B	Added: 4389986B	Fraction: 0.6358141800338938	Now: 1693862892809
+Total: 2514525B	Added: 4389986B	Fraction: 0.6358141800338938	Now: 1693862893900
+Total: 2514525B	Added: 4389986B	Fraction: 0.6358141800338938	Now: 1693862895520
+Total: 2514525B	Added: 4389986B	Fraction: 0.6358141800338938	Now: 1693862897207
+Total: 2514525B	Added: 4389986B	Fraction: 0.6358141800338938	Now: 1693862903776
+Total: 2514525B	Added: 4389986B	Fraction: 0.6358141800338938	Now: 1693862905680
+Total: 2515140B	Added: 4414717B	Fraction: 0.6370574457741336	Now: 1693862906880
+Total: 2515140B	Added: 4447599B	Fraction: 0.6387714662290228	Now: 1693862908521
+Total: 2515140B	Added: 4447599B	Fraction: 0.6387714662290228	Now: 1693862909712
+Total: 2515140B	Added: 4447599B	Fraction: 0.6387714662290228	Now: 1693862910955
+Total: 2515140B	Added: 4447599B	Fraction: 0.6387714662290228	Now: 1693862913485
+Total: 2515140B	Added: 4447599B	Fraction: 0.6387714662290228	Now: 1693862914855
+Total: 2515140B	Added: 4462264B	Fraction: 0.6395306907841369	Now: 1693862919696
+Total: 2515140B	Added: 4520917B	Fraction: 0.6425355849163814	Now: 1693862920869
+Total: 2515140B	Added: 4520917B	Fraction: 0.6425355849163814	Now: 1693862922038
+Total: 2515140B	Added: 4520917B	Fraction: 0.6425355849163814	Now: 1693862923256
+Total: 2515140B	Added: 4520917B	Fraction: 0.6425355849163814	Now: 1693862924848
+Total: 2515140B	Added: 4520917B	Fraction: 0.6425355849163814	Now: 1693862926080
+Total: 2515140B	Added: 4520917B	Fraction: 0.6425355849163814	Now: 1693862927236
+Total: 2515140B	Added: 4520917B	Fraction: 0.6425355849163814	Now: 1693862929907
+Total: 2515140B	Added: 4520917B	Fraction: 0.6425355849163814	Now: 1693862934941
+Total: 2515140B	Added: 4520917B	Fraction: 0.6425355849163814	Now: 1693862935952
+Total: 2515386B	Added: 4534228B	Fraction: 0.643188123491584	Now: 1693862937020
+Total: 2515386B	Added: 4567519B	Fraction: 0.6448652071431143	Now: 1693862938308
+Total: 2515386B	Added: 4567519B	Fraction: 0.6448652071431143	Now: 1693862939386
+Total: 2515386B	Added: 4567519B	Fraction: 0.6448652071431143	Now: 1693862942440
+Total: 2515386B	Added: 4567519B	Fraction: 0.6448652071431143	Now: 1693862949413
+Total: 2526797B	Added: 4625172B	Fraction: 0.6466991118110271	Now: 1693862950480
+Total: 2609404B	Added: 4642725B	Fraction: 0.6401878675903311	Now: 1693862951691
+Total: 2609404B	Added: 4642725B	Fraction: 0.6401878675903311	Now: 1693862952888
+Total: 2609404B	Added: 4642725B	Fraction: 0.6401878675903311	Now: 1693862953990
+Total: 2609404B	Added: 4642725B	Fraction: 0.6401878675903311	Now: 1693862956700
+Total: 2609404B	Added: 4642725B	Fraction: 0.6401878675903311	Now: 1693862964415
+Total: 2658144B	Added: 4695576B	Fraction: 0.6385307028279564	Now: 1693862965468
+Total: 2668270B	Added: 4695576B	Fraction: 0.6376526613946027	Now: 1693862966532
+Total: 2690110B	Added: 4695576B	Fraction: 0.6357670770189797	Now: 1693862968422
+Total: 2733397B	Added: 4695576B	Fraction: 0.6320626013851444	Now: 1693862969756
+Total: 2733397B	Added: 4695576B	Fraction: 0.6320626013851444	Now: 1693862970953
+Total: 2733397B	Added: 4695576B	Fraction: 0.6320626013851444	Now: 1693862972092
+Total: 2733397B	Added: 4695576B	Fraction: 0.6320626013851444	Now: 1693862973114
+Total: 2733397B	Added: 4695576B	Fraction: 0.6320626013851444	Now: 1693862974292
+Total: 2733397B	Added: 4695576B	Fraction: 0.6320626013851444	Now: 1693862975642
+Total: 2733397B	Added: 4695576B	Fraction: 0.6320626013851444	Now: 1693862981903
+Total: 2733397B	Added: 4695576B	Fraction: 0.6320626013851444	Now: 1693862982978
+Total: 2733643B	Added: 4756979B	Fraction: 0.6350579431187423	Now: 1693862984001
+Total: 2733643B	Added: 4756979B	Fraction: 0.6350579431187423	Now: 1693862985121
+Total: 2733643B	Added: 4756979B	Fraction: 0.6350579431187423	Now: 1693862986134
+Total: 2733643B	Added: 4756979B	Fraction: 0.6350579431187423	Now: 1693862987320
+Total: 2733643B	Added: 4756979B	Fraction: 0.6350579431187423	Now: 1693862988669
+Total: 2733643B	Added: 4756979B	Fraction: 0.6350579431187423	Now: 1693862990046
+Total: 2733643B	Added: 4756979B	Fraction: 0.6350579431187423	Now: 1693862997540
+Total: 2733643B	Added: 4756979B	Fraction: 0.6350579431187423	Now: 1693862998790
+Total: 2733889B	Added: 4813663B	Fraction: 0.6377780504195267	Now: 1693862999934
+Total: 2733889B	Added: 4813663B	Fraction: 0.6377780504195267	Now: 1693863001064
+Total: 2733889B	Added: 4813663B	Fraction: 0.6377780504195267	Now: 1693863002337
+Total: 2733889B	Added: 4813663B	Fraction: 0.6377780504195267	Now: 1693863004392
+Total: 2733889B	Added: 4813663B	Fraction: 0.6377780504195267	Now: 1693863010531
+Total: 2733889B	Added: 4813663B	Fraction: 0.6377780504195267	Now: 1693863011712
+Total: 2734171B	Added: 4841921B	Fraction: 0.6391053593330176	Now: 1693863012951
+Total: 2734171B	Added: 4859395B	Fraction: 0.6399358351530756	Now: 1693863014579
+Total: 2734171B	Added: 4859395B	Fraction: 0.6399358351530756	Now: 1693863017159
+Total: 2734171B	Added: 4859395B	Fraction: 0.6399358351530756	Now: 1693863024350
+Total: 2734417B	Added: 4913866B	Fraction: 0.6424796258192852	Now: 1693863025723
+Total: 2734417B	Added: 4913866B	Fraction: 0.6424796258192852	Now: 1693863026830
+Total: 2734417B	Added: 4922994B	Fraction: 0.6429058071977591	Now: 1693863028461
+Total: 2734417B	Added: 4922994B	Fraction: 0.6429058071977591	Now: 1693863031151
+Total: 2734417B	Added: 4922994B	Fraction: 0.6429058071977591	Now: 1693863037113
+Total: 2734663B	Added: 4998986B	Fraction: 0.6463942183049683	Now: 1693863038288
+Total: 2734663B	Added: 4998986B	Fraction: 0.6463942183049683	Now: 1693863039485
+Total: 2734663B	Added: 4998986B	Fraction: 0.6463942183049683	Now: 1693863040717
+Total: 2734663B	Added: 4998986B	Fraction: 0.6463942183049683	Now: 1693863043756
+Total: 2734663B	Added: 4998986B	Fraction: 0.6463942183049683	Now: 1693863050823
+Total: 2734663B	Added: 4998986B	Fraction: 0.6463942183049683	Now: 1693863051994
+Total: 2734909B	Added: 5060614B	Fraction: 0.6491692731841083	Now: 1693863053371
+Total: 2734909B	Added: 5060614B	Fraction: 0.6491692731841083	Now: 1693863054444
+Total: 2734909B	Added: 5060614B	Fraction: 0.6491692731841083	Now: 1693863055981
+Total: 2734909B	Added: 5060614B	Fraction: 0.6491692731841083	Now: 1693863057134
+Total: 2734909B	Added: 5060614B	Fraction: 0.6491692731841083	Now: 1693863058321
+Total: 2734909B	Added: 5060614B	Fraction: 0.6491692731841083	Now: 1693863059414
+Total: 2734909B	Added: 5060614B	Fraction: 0.6491692731841083	Now: 1693863062918
+Total: 2734909B	Added: 5060614B	Fraction: 0.6491692731841083	Now: 1693863064125
+Total: 2734909B	Added: 5060614B	Fraction: 0.6491692731841083	Now: 1693863068433
+Total: 2734909B	Added: 5060614B	Fraction: 0.6491692731841083	Now: 1693863069880
+Total: 2735191B	Added: 5118821B	Fraction: 0.6517460121018405	Now: 1693863071020
+Total: 2787113B	Added: 5118821B	Fraction: 0.6474656884309937	Now: 1693863072552
+Total: 2787113B	Added: 5118821B	Fraction: 0.6474656884309937	Now: 1693863073657
+Total: 2787113B	Added: 5118821B	Fraction: 0.6474656884309937	Now: 1693863074676
+Total: 2787113B	Added: 5118821B	Fraction: 0.6474656884309937	Now: 1693863075806
+Total: 2787113B	Added: 5118821B	Fraction: 0.6474656884309937	Now: 1693863077345
+Total: 2787113B	Added: 5118821B	Fraction: 0.6474656884309937	Now: 1693863079249
+Total: 2787113B	Added: 5118821B	Fraction: 0.6474656884309937	Now: 1693863084547
+Total: 2787113B	Added: 5175505B	Fraction: 0.649975297069381	Now: 1693863085889
+Total: 2787113B	Added: 5175505B	Fraction: 0.649975297069381	Now: 1693863087378
+Total: 2787113B	Added: 5175505B	Fraction: 0.649975297069381	Now: 1693863090169
+Total: 2787113B	Added: 5175505B	Fraction: 0.649975297069381	Now: 1693863096406
+Total: 2787464B	Added: 5180545B	Fraction: 0.6501680658242228	Now: 1693863100067
+Total: 2787982B	Added: 5226793B	Fraction: 0.6521446952659308	Now: 1693863101811
+Total: 2787982B	Added: 5226793B	Fraction: 0.6521446952659308	Now: 1693863102958
+Total: 2787982B	Added: 5226793B	Fraction: 0.6521446952659308	Now: 1693863104107
+Total: 2787982B	Added: 5226793B	Fraction: 0.6521446952659308	Now: 1693863105146
+Total: 2787982B	Added: 5226793B	Fraction: 0.6521446952659308	Now: 1693863106289
+Total: 2787982B	Added: 5226793B	Fraction: 0.6521446952659308	Now: 1693863107996
+Total: 2787982B	Added: 5226793B	Fraction: 0.6521446952659308	Now: 1693863109811
+Total: 2787982B	Added: 5226793B	Fraction: 0.6521446952659308	Now: 1693863112892
+Total: 2787982B	Added: 5226793B	Fraction: 0.6521446952659308	Now: 1693863115029
+Total: 2787982B	Added: 5226793B	Fraction: 0.6521446952659308	Now: 1693863116299
+Total: 2788228B	Added: 5267552B	Fraction: 0.6538847883134842	Now: 1693863117490
+Total: 2788228B	Added: 5267552B	Fraction: 0.6538847883134842	Now: 1693863118684
+Total: 2788228B	Added: 5267552B	Fraction: 0.6538847883134842	Now: 1693863121778
+Total: 2788228B	Added: 5267552B	Fraction: 0.6538847883134842	Now: 1693863131245
+Total: 2811924B	Added: 5326277B	Fraction: 0.6544784283406124	Now: 1693863132306
+Total: 2811924B	Added: 5326277B	Fraction: 0.6544784283406124	Now: 1693863133446
+Total: 2811924B	Added: 5326277B	Fraction: 0.6544784283406124	Now: 1693863134658
+Total: 2811924B	Added: 5326277B	Fraction: 0.6544784283406124	Now: 1693863135840
+Total: 2811924B	Added: 5326277B	Fraction: 0.6544784283406124	Now: 1693863137285
+Total: 2811924B	Added: 5326277B	Fraction: 0.6544784283406124	Now: 1693863138445
+Total: 2811924B	Added: 5326277B	Fraction: 0.6544784283406124	Now: 1693863139684
+Total: 2811924B	Added: 5326277B	Fraction: 0.6544784283406124	Now: 1693863140707
+Total: 2811924B	Added: 5326277B	Fraction: 0.6544784283406124	Now: 1693863143704
+Total: 2811924B	Added: 5326277B	Fraction: 0.6544784283406124	Now: 1693863147654
+Total: 2811924B	Added: 5326277B	Fraction: 0.6544784283406124	Now: 1693863149491
+Total: 2812206B	Added: 5402147B	Fraction: 0.6576472912717533	Now: 1693863150653
+Total: 2812206B	Added: 5402147B	Fraction: 0.6576472912717533	Now: 1693863151676
+Total: 2812206B	Added: 5402147B	Fraction: 0.6576472912717533	Now: 1693863152677
+Total: 2812206B	Added: 5402147B	Fraction: 0.6576472912717533	Now: 1693863153833
+Total: 2812206B	Added: 5402147B	Fraction: 0.6576472912717533	Now: 1693863156153
+Total: 2812206B	Added: 5402147B	Fraction: 0.6576472912717533	Now: 1693863163584
+Total: 2812206B	Added: 5402147B	Fraction: 0.6576472912717533	Now: 1693863164722
+Total: 2812452B	Added: 5461724B	Fraction: 0.660092799573033	Now: 1693863165803
+Total: 2812452B	Added: 5461724B	Fraction: 0.660092799573033	Now: 1693863166952
+Total: 2812452B	Added: 5461724B	Fraction: 0.660092799573033	Now: 1693863168053
+Total: 2812452B	Added: 5461724B	Fraction: 0.660092799573033	Now: 1693863169080
+Total: 2812452B	Added: 5461724B	Fraction: 0.660092799573033	Now: 1693863172227
+Total: 2812452B	Added: 5461724B	Fraction: 0.660092799573033	Now: 1693863179103
+Total: 2812452B	Added: 5461724B	Fraction: 0.660092799573033	Now: 1693863180326
+Total: 2812698B	Added: 5523127B	Fraction: 0.6625771294382979	Now: 1693863181813
+Total: 2812698B	Added: 5523127B	Fraction: 0.6625771294382979	Now: 1693863182902
+Total: 2812698B	Added: 5523127B	Fraction: 0.6625771294382979	Now: 1693863184246
+Total: 2812698B	Added: 5523127B	Fraction: 0.6625771294382979	Now: 1693863185407
+Total: 2812698B	Added: 5523127B	Fraction: 0.6625771294382979	Now: 1693863186841
+Total: 2812698B	Added: 5523127B	Fraction: 0.6625771294382979	Now: 1693863187897
+Total: 2812698B	Added: 5523127B	Fraction: 0.6625771294382979	Now: 1693863196115
+Total: 2812698B	Added: 5523127B	Fraction: 0.6625771294382979	Now: 1693863197766
+Total: 2813080B	Added: 5528532B	Fraction: 0.6627654223188516	Now: 1693863201385
+Total: 2813598B	Added: 5577826B	Fraction: 0.6647055374630099	Now: 1693863202448
+Total: 2813598B	Added: 5577826B	Fraction: 0.6647055374630099	Now: 1693863203546
+Total: 2813598B	Added: 5577826B	Fraction: 0.6647055374630099	Now: 1693863204552
+Total: 2813598B	Added: 5577826B	Fraction: 0.6647055374630099	Now: 1693863205568
+Total: 2813598B	Added: 5577826B	Fraction: 0.6647055374630099	Now: 1693863206792
+Total: 2813598B	Added: 5577826B	Fraction: 0.6647055374630099	Now: 1693863208354
+Total: 2813598B	Added: 5577826B	Fraction: 0.6647055374630099	Now: 1693863214843
+Total: 2813598B	Added: 5577826B	Fraction: 0.6647055374630099	Now: 1693863215895
+Total: 2813598B	Added: 5632297B	Fraction: 0.6668679873476997	Now: 1693863217173
+Total: 2813598B	Added: 5632297B	Fraction: 0.6668679873476997	Now: 1693863218303
+Total: 2813598B	Added: 5632297B	Fraction: 0.6668679873476997	Now: 1693863219909
+Total: 2813598B	Added: 5632297B	Fraction: 0.6668679873476997	Now: 1693863223077
+Total: 2813598B	Added: 5632297B	Fraction: 0.6668679873476997	Now: 1693863230909
+violation:   script-src-elem    https://www.professormesser.com/amember/application/default/views/public/js/vendors-user.js?87053287
+Total: 2813992B	Added: 5705051B	Fraction: 0.6696821462222928	Now: 1693863232877
+violation:   script-src-elem    inline
+Total: 2814367B	Added: 5710703B	Fraction: 0.6698716843380759	Now: 1693863244191
+Total: 2814613B	Added: 5733955B	Fraction: 0.6707503525736708	Now: 1693863245383
+new:         https://partner.googleadservices.com/gampad/cookie.js?domain=www.professormesser.com&callback=_gfp_s_&client=ca-pub-0449569413228608&cookie=ID%3D5bb1ab4c98c1fb48-22de890055e0007a%3AT%3D1693861929%3ART%3D1693863150%3AS%3DALNI_MYm2Dhs2X956KlqjaUPYoavOXS3rw&gpic=UID%3D00000c9d676f31ce%3AT%3D1693861929%3ART%3D1693863150%3AS%3DALNI_MaLe66QaEBrE3gA55a0rnIjEsnATA
+warning:     frame-src    https://googleads.g.doubleclick.net
+new:         https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1059031979/?random=1693863244388&cv=11&fst=1693863244388&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.professormesser.com%2F&hn=www.googleadservices.com&frm=0&tiba=Home%20-%20Professor%20Messer%20IT%20Certification%20Training%20-%20CompTIA%20A%2B%2C%20Network%2B%2C%20Security%2B&did=dZTNiMT&gdid=dZTNiMT&auid=146748642.1693861929&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+violation:   script-src-elem    https://googleads.g.doubleclick.net/pagead/viewthroughconversion/1059031979/?random=1693863244388&cv=11&fst=1693863244388&bg=ffffff&guid=ON&async=1&gtm=45be38u0&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.professormesser.com%2F&hn=www.googleadservices.com&frm=0&tiba=Home%20-%20Professor%20Messer%20IT%20Certification%20Training%20-%20CompTIA%20A%2B%2C%20Network%2B%2C%20Security%2B&did=dZTNiMT&gdid=dZTNiMT&auid=146748642.1693861929&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+Total: 2814613B	Added: 5755938B	Fraction: 0.6715948601204287	Now: 1693863247428
+warning:     frame-src    https://td.doubleclick.net
+Total: 2814613B	Added: 5764845B	Fraction: 0.6719358029376681	Now: 1693863248651
+Total: 2814613B	Added: 5768496B	Fraction: 0.6720753517169594	Now: 1693863249734
+warning:     frame-src    https://tpc.googlesyndication.com
+warning:     frame-src    https://www.google.com
+Total: 2814613B	Added: 5773626B	Fraction: 0.6722712304583046	Now: 1693863250854
+Total: 2814613B	Added: 5775029B	Fraction: 0.6723247604498535	Now: 1693863259983
+Total: 2814613B	Added: 5775029B	Fraction: 0.6723247604498535	Now: 1693863261022
+Total: 2815245B	Added: 5825132B	Fraction: 0.6741756754363843	Now: 1693863262366
+Total: 2835151B	Added: 5832534B	Fraction: 0.6729056258966495	Now: 1693863263497
+Total: 2835151B	Added: 5832534B	Fraction: 0.6729056258966495	Now: 1693863267465
+Total: 2835151B	Added: 5832534B	Fraction: 0.6729056258966495	Now: 1693863274564
+Total: 2835397B	Added: 5880303B	Fraction: 0.674679371708526	Now: 1693863276153
+Total: 2835397B	Added: 5880303B	Fraction: 0.674679371708526	Now: 1693863277285
+Total: 2835397B	Added: 5880303B	Fraction: 0.674679371708526	Now: 1693863278663
+Total: 2835397B	Added: 5880303B	Fraction: 0.674679371708526	Now: 1693863279795
+Total: 2835397B	Added: 5880303B	Fraction: 0.674679371708526	Now: 1693863280814
+Total: 2835397B	Added: 5880303B	Fraction: 0.674679371708526	Now: 1693863282182
+Total: 2835397B	Added: 5880303B	Fraction: 0.674679371708526	Now: 1693863288661
+Total: 2835397B	Added: 5880303B	Fraction: 0.674679371708526	Now: 1693863289697
+Total: 2835397B	Added: 5880303B	Fraction: 0.674679371708526	Now: 1693863290902
+Total: 2835643B	Added: 5960302B	Fraction: 0.677619289342987	Now: 1693863291942
+Total: 2835643B	Added: 5966080B	Fraction: 0.6778309201505205	Now: 1693863293991
+Total: 2835643B	Added: 5966080B	Fraction: 0.6778309201505205	Now: 1693863295029
+Total: 2835643B	Added: 5966080B	Fraction: 0.6778309201505205	Now: 1693863296278
+Total: 2835643B	Added: 5966080B	Fraction: 0.6778309201505205	Now: 1693863297358
+Total: 2835643B	Added: 5966080B	Fraction: 0.6778309201505205	Now: 1693863298684
+Total: 2835643B	Added: 5966080B	Fraction: 0.6778309201505205	Now: 1693863300478
+Total: 2835643B	Added: 5966080B	Fraction: 0.6778309201505205	Now: 1693863306633
+Total: 2835643B	Added: 5966080B	Fraction: 0.6778309201505205	Now: 1693863307788
+Total: 2835925B	Added: 6024162B	Fraction: 0.6799213145423967	Now: 1693863308998
+Total: 2835925B	Added: 6024162B	Fraction: 0.6799213145423967	Now: 1693863310268
+Total: 2835925B	Added: 6024162B	Fraction: 0.6799213145423967	Now: 1693863311282
+Total: 2835925B	Added: 6024162B	Fraction: 0.6799213145423967	Now: 1693863312334
+Total: 2835925B	Added: 6024162B	Fraction: 0.6799213145423967	Now: 1693863314706
+Total: 2835925B	Added: 6024162B	Fraction: 0.6799213145423967	Now: 1693863321984
+Total: 2835925B	Added: 6024162B	Fraction: 0.6799213145423967	Now: 1693863323144
+Total: 2836171B	Added: 6077329B	Fraction: 0.6818117462276323	Now: 1693863324963
+Total: 2836171B	Added: 6077329B	Fraction: 0.6818117462276323	Now: 1693863325978
+Total: 2836171B	Added: 6077329B	Fraction: 0.6818117462276323	Now: 1693863327221
+Total: 2836171B	Added: 6077329B	Fraction: 0.6818117462276323	Now: 1693863328434
+Total: 2836171B	Added: 6077329B	Fraction: 0.6818117462276323	Now: 1693863330462
+Total: 2836171B	Added: 6077329B	Fraction: 0.6818117462276323	Now: 1693863337226
+Total: 2836171B	Added: 6077329B	Fraction: 0.6818117462276323	Now: 1693863338651
+Total: 2836501B	Added: 6083794B	Fraction: 0.6820171305993804	Now: 1693863341604
+Total: 2837009B	Added: 6140840B	Fraction: 0.6839990291661177	Now: 1693863344151
+Total: 2837009B	Added: 6140840B	Fraction: 0.6839990291661177	Now: 1693863345278
+Total: 2837009B	Added: 6140840B	Fraction: 0.6839990291661177	Now: 1693863346342
+Total: 2837009B	Added: 6140840B	Fraction: 0.6839990291661177	Now: 1693863347343
+Total: 2837009B	Added: 6140840B	Fraction: 0.6839990291661177	Now: 1693863349432
+Total: 2837009B	Added: 6140840B	Fraction: 0.6839990291661177	Now: 1693863351054
+Total: 2837009B	Added: 6140840B	Fraction: 0.6839990291661177	Now: 1693863355730
+Total: 2837009B	Added: 6140840B	Fraction: 0.6839990291661177	Now: 1693863357674
+Total: 2837815B	Added: 6146983B	Fraction: 0.6841537227659431	Now: 1693863361036
+Total: 2838333B	Added: 6202195B	Fraction: 0.6860434479048126	Now: 1693863362190
+Total: 2838333B	Added: 6202195B	Fraction: 0.6860434479048126	Now: 1693863363274
+Total: 2838333B	Added: 6202195B	Fraction: 0.6860434479048126	Now: 1693863364345
+Total: 2838333B	Added: 6202195B	Fraction: 0.6860434479048126	Now: 1693863365568
+Total: 2838333B	Added: 6202195B	Fraction: 0.6860434479048126	Now: 1693863368273
+Total: 2838333B	Added: 6202195B	Fraction: 0.6860434479048126	Now: 1693863375105
+Total: 2838333B	Added: 6202195B	Fraction: 0.6860434479048126	Now: 1693863376353
+Total: 2838579B	Added: 6253777B	Fraction: 0.6878059987972315	Now: 1693863377365
+Total: 2838579B	Added: 6253777B	Fraction: 0.6878059987972315	Now: 1693863378528
+Total: 2838579B	Added: 6253777B	Fraction: 0.6878059987972315	Now: 1693863391399
+Total: 2849922B	Added: 6311587B	Fraction: 0.6889243900759143	Now: 1693863392614
+Total: 2849922B	Added: 6311587B	Fraction: 0.6889243900759143	Now: 1693863393719
+Total: 2849922B	Added: 6311587B	Fraction: 0.6889243900759143	Now: 1693863395853
+Total: 2849922B	Added: 6311587B	Fraction: 0.6889243900759143	Now: 1693863397021
+Total: 2849922B	Added: 6311587B	Fraction: 0.6889243900759143	Now: 1693863398227
+Total: 2849922B	Added: 6311587B	Fraction: 0.6889243900759143	Now: 1693863407768
+Total: 2850168B	Added: 6317749B	Fraction: 0.6891149865340186	Now: 1693863408975
+Total: 2850168B	Added: 6373215B	Fraction: 0.6909845335491327	Now: 1693863410095
+Total: 2850168B	Added: 6373215B	Fraction: 0.6909845335491327	Now: 1693863411350
+Total: 2850168B	Added: 6373215B	Fraction: 0.6909845335491327	Now: 1693863412369
+Total: 2850168B	Added: 6373215B	Fraction: 0.6909845335491327	Now: 1693863413626
+Total: 2850168B	Added: 6373215B	Fraction: 0.6909845335491327	Now: 1693863414890
+Total: 2850168B	Added: 6373215B	Fraction: 0.6909845335491327	Now: 1693863415918
+Total: 2850168B	Added: 6373215B	Fraction: 0.6909845335491327	Now: 1693863419054
+Total: 2850168B	Added: 6373215B	Fraction: 0.6909845335491327	Now: 1693863424942
+Total: 2850168B	Added: 6373215B	Fraction: 0.6909845335491327	Now: 1693863426555
+Total: 2850414B	Added: 6405639B	Fraction: 0.6920486518389641	Now: 1693863427590
+warning:     frame-src    https://player.vimeo.com
+warning:     frame-src    https://player.vimeo.com
+Total: 2850414B	Added: 6426738B	Fraction: 0.692749024700684	Now: 1693863428627
+Total: 2850414B	Added: 6426738B	Fraction: 0.692749024700684	Now: 1693863429775
+Total: 2850414B	Added: 6426738B	Fraction: 0.692749024700684	Now: 1693863430873
+Total: 2850414B	Added: 6426738B	Fraction: 0.692749024700684	Now: 1693863431948
+Total: 2850414B	Added: 6426738B	Fraction: 0.692749024700684	Now: 1693863433138
+Total: 2850414B	Added: 6426738B	Fraction: 0.692749024700684	Now: 1693863434334
+Total: 2850414B	Added: 6426738B	Fraction: 0.692749024700684	Now: 1693863437938
+Total: 2850414B	Added: 6426738B	Fraction: 0.692749024700684	Now: 1693863441453
+Total: 2850414B	Added: 6426738B	Fraction: 0.692749024700684	Now: 1693863443583
+Total: 2850414B	Added: 6426738B	Fraction: 0.692749024700684	Now: 1693863444627
+Total: 2850660B	Added: 6486315B	Fraction: 0.6946912677821243	Now: 1693863445765
+Total: 2850660B	Added: 6486315B	Fraction: 0.6946912677821243	Now: 1693863446767
+Total: 2850660B	Added: 6486315B	Fraction: 0.6946912677821243	Now: 1693863447790
+Total: 2850660B	Added: 6486315B	Fraction: 0.6946912677821243	Now: 1693863449001
+Total: 2850660B	Added: 6486315B	Fraction: 0.6946912677821243	Now: 1693863451291
+Total: 2850660B	Added: 6486315B	Fraction: 0.6946912677821243	Now: 1693863458113
+Total: 2850660B	Added: 6486315B	Fraction: 0.6946912677821243	Now: 1693863459148
+Total: 2906429B	Added: 6582483B	Fraction: 0.6937026078437655	Now: 1693863460171
+Total: 3169870B	Added: 6582483B	Fraction: 0.6749635703301552	Now: 1693863461316
+Total: 3169870B	Added: 6582483B	Fraction: 0.6749635703301552	Now: 1693863462494
+Total: 3169870B	Added: 6582483B	Fraction: 0.6749635703301552	Now: 1693863463797
+Total: 3169870B	Added: 6582483B	Fraction: 0.6749635703301552	Now: 1693863466249
+Total: 3169870B	Added: 6582483B	Fraction: 0.6749635703301552	Now: 1693863473067
+Total: 3169870B	Added: 6582483B	Fraction: 0.6749635703301552	Now: 1693863475874
+Total: 3170388B	Added: 6672103B	Fraction: 0.6778876404357392	Now: 1693863477097
+Total: 3170388B	Added: 6672103B	Fraction: 0.6778876404357392	Now: 1693863478133
+Total: 3170388B	Added: 6672103B	Fraction: 0.6778876404357392	Now: 1693863479228
+Total: 3170388B	Added: 6672103B	Fraction: 0.6778876404357392	Now: 1693863480250
+Total: 3170388B	Added: 6672103B	Fraction: 0.6778876404357392	Now: 1693863481437
+Total: 3170388B	Added: 6672103B	Fraction: 0.6778876404357392	Now: 1693863483382
+Total: 3170388B	Added: 6672103B	Fraction: 0.6778876404357392	Now: 1693863489441
+Total: 3170388B	Added: 6672103B	Fraction: 0.6778876404357392	Now: 1693863491334
+Total: 3170634B	Added: 6723685B	Fraction: 0.6795500529142026	Now: 1693863492461
+Total: 3170634B	Added: 6723685B	Fraction: 0.6795500529142026	Now: 1693863496873
+Total: 3170634B	Added: 6723685B	Fraction: 0.6795500529142026	Now: 1693863505982
+Total: 3171152B	Added: 6832417B	Fraction: 0.682997938035915	Now: 1693863507840
+Total: 3171152B	Added: 6832417B	Fraction: 0.682997938035915	Now: 1693863509102
+Total: 3171152B	Added: 6832417B	Fraction: 0.682997938035915	Now: 1693863510341
+Total: 3171152B	Added: 6832417B	Fraction: 0.682997938035915	Now: 1693863511522
+Total: 3171152B	Added: 6832417B	Fraction: 0.682997938035915	Now: 1693863513060
+Total: 3171152B	Added: 6832417B	Fraction: 0.682997938035915	Now: 1693863517040
+Total: 3171152B	Added: 6832417B	Fraction: 0.682997938035915	Now: 1693863519804
+Total: 3171152B	Added: 6832417B	Fraction: 0.682997938035915	Now: 1693863521368
+Total: 3171152B	Added: 6891994B	Fraction: 0.6848746902807532	Now: 1693863522477
+Total: 3171152B	Added: 6891994B	Fraction: 0.6848746902807532	Now: 1693863523637
+Total: 3171152B	Added: 6891994B	Fraction: 0.6848746902807532	Now: 1693863524808
+Total: 3171152B	Added: 6891994B	Fraction: 0.6848746902807532	Now: 1693863525892
+Total: 3171152B	Added: 6891994B	Fraction: 0.6848746902807532	Now: 1693863527112
+Total: 3171152B	Added: 6891994B	Fraction: 0.6848746902807532	Now: 1693863528975
+Total: 3171152B	Added: 6909208B	Fraction: 0.6854128225579246	Now: 1693863536288
+Total: 3171152B	Added: 6943576B	Fraction: 0.6864817323807422	Now: 1693863537371
+Total: 3171152B	Added: 6943576B	Fraction: 0.6864817323807422	Now: 1693863541676
+Total: 3171152B	Added: 6943576B	Fraction: 0.6864817323807422	Now: 1693863548198
+Total: 3171398B	Added: 6984335B	Fraction: 0.6877233775247932	Now: 1693863549370
+Total: 3171398B	Added: 6984335B	Fraction: 0.6877233775247932	Now: 1693863553667
+Total: 3171398B	Added: 6984335B	Fraction: 0.6877233775247932	Now: 1693863560297
+Total: 3171644B	Added: 7034916B	Fraction: 0.6892543619005815	Now: 1693863561802
+Total: 3171644B	Added: 7034916B	Fraction: 0.6892543619005815	Now: 1693863562920
+Total: 3171644B	Added: 7034916B	Fraction: 0.6892543619005815	Now: 1693863564006
+Total: 3171644B	Added: 7034916B	Fraction: 0.6892543619005815	Now: 1693863566676
+Total: 3171644B	Added: 7034916B	Fraction: 0.6892543619005815	Now: 1693863569193
+Total: 3171644B	Added: 7034916B	Fraction: 0.6892543619005815	Now: 1693863574965
+Total: 3171644B	Added: 7034916B	Fraction: 0.6892543619005815	Now: 1693863578769
+Total: 3185552B	Added: 7089639B	Fraction: 0.6899763712421502	Now: 1693863579972
+Total: 3354139B	Added: 7110494B	Fraction: 0.6794785827653965	Now: 1693863581133
+Total: 3354139B	Added: 7110494B	Fraction: 0.6794785827653965	Now: 1693863582323
+Total: 3354139B	Added: 7110494B	Fraction: 0.6794785827653965	Now: 1693863583433
+Total: 3354139B	Added: 7110494B	Fraction: 0.6794785827653965	Now: 1693863584520
+Total: 3354139B	Added: 7110494B	Fraction: 0.6794785827653965	Now: 1693863586239
+Total: 3354139B	Added: 7110494B	Fraction: 0.6794785827653965	Now: 1693863587320
+Total: 3354139B	Added: 7110494B	Fraction: 0.6794785827653965	Now: 1693863594641
+Total: 3354385B	Added: 7124780B	Fraction: 0.6798995912365156	Now: 1693863595805
+warning:     frame-src    https://player.vimeo.com
+warning:     frame-src    https://player.vimeo.com
+Total: 3354385B	Added: 7160040B	Fraction: 0.6809730441750262	Now: 1693863596892
+Total: 3354385B	Added: 7160040B	Fraction: 0.6809730441750262	Now: 1693863598015
+Total: 3354385B	Added: 7160040B	Fraction: 0.6809730441750262	Now: 1693863599710
+Total: 3354385B	Added: 7160040B	Fraction: 0.6809730441750262	Now: 1693863600962
+Total: 3354385B	Added: 7160040B	Fraction: 0.6809730441750262	Now: 1693863602556
+Total: 3354385B	Added: 7160040B	Fraction: 0.6809730441750262	Now: 1693863604451
+Total: 3354385B	Added: 7160040B	Fraction: 0.6809730441750262	Now: 1693863610071
+Total: 3354385B	Added: 7160040B	Fraction: 0.6809730441750262	Now: 1693863611139
+Total: 3354631B	Added: 7243978B	Fraction: 0.683483842077767	Now: 1693863612697
+Total: 3354631B	Added: 7243978B	Fraction: 0.683483842077767	Now: 1693863613714
+Total: 3354631B	Added: 7243978B	Fraction: 0.683483842077767	Now: 1693863614818
+Total: 3354631B	Added: 7243978B	Fraction: 0.683483842077767	Now: 1693863616098
+Total: 3354631B	Added: 7243978B	Fraction: 0.683483842077767	Now: 1693863618065
+Total: 3354631B	Added: 7243978B	Fraction: 0.683483842077767	Now: 1693863619528
+Total: 3354631B	Added: 7243978B	Fraction: 0.683483842077767	Now: 1693863625870
+Total: 3354877B	Added: 7309049B	Fraction: 0.6853994485708171	Now: 1693863627064
+Total: 3354877B	Added: 7309049B	Fraction: 0.6853994485708171	Now: 1693863629176
+Total: 3354877B	Added: 7309049B	Fraction: 0.6853994485708171	Now: 1693863630281
+Total: 3354877B	Added: 7309049B	Fraction: 0.6853994485708171	Now: 1693863631304
+Total: 3354877B	Added: 7309049B	Fraction: 0.6853994485708171	Now: 1693863632629
+Total: 3354877B	Added: 7309049B	Fraction: 0.6853994485708171	Now: 1693863634408
+Total: 3354877B	Added: 7309049B	Fraction: 0.6853994485708171	Now: 1693863641619
+Total: 3354877B	Added: 7309049B	Fraction: 0.6853994485708171	Now: 1693863642966
+Total: 3355123B	Added: 7349963B	Fraction: 0.6865860769357668	Now: 1693863644117
+Total: 3355123B	Added: 7379199B	Fraction: 0.6874396911141664	Now: 1693863645125
+Total: 3355123B	Added: 7379199B	Fraction: 0.6874396911141664	Now: 1693863646137
+Total: 3355123B	Added: 7379199B	Fraction: 0.6874396911141664	Now: 1693863647228
+Total: 3355123B	Added: 7379199B	Fraction: 0.6874396911141664	Now: 1693863650786
+Total: 3355123B	Added: 7379199B	Fraction: 0.6874396911141664	Now: 1693863657585
+Total: 3355369B	Added: 7419903B	Fraction: 0.6886047052918942	Now: 1693863658664
+Total: 3355369B	Added: 7419903B	Fraction: 0.6886047052918942	Now: 1693863663083
+Total: 3355369B	Added: 7419903B	Fraction: 0.6886047052918942	Now: 1693863669804
+Total: 3355615B	Added: 7487644B	Fraction: 0.6905344601655278	Now: 1693863670964
+Total: 3355615B	Added: 7487644B	Fraction: 0.6905344601655278	Now: 1693863672551
+Total: 3355615B	Added: 7487644B	Fraction: 0.6905344601655278	Now: 1693863673697
+Total: 3355615B	Added: 7487644B	Fraction: 0.6905344601655278	Now: 1693863674798
+Total: 3355615B	Added: 7487644B	Fraction: 0.6905344601655278	Now: 1693863677056
+Total: 3355615B	Added: 7487644B	Fraction: 0.6905344601655278	Now: 1693863683839
+Total: 3355901B	Added: 7487644B	Fraction: 0.6905162472235786	Now: 1693863694995
+Total: 3356147B	Added: 7533750B	Fraction: 0.691810951012668	Now: 1693863696636
+Total: 3356147B	Added: 7533750B	Fraction: 0.691810951012668	Now: 1693863697806
+Total: 3356147B	Added: 7533750B	Fraction: 0.691810951012668	Now: 1693863698836
+Total: 3356147B	Added: 7533750B	Fraction: 0.691810951012668	Now: 1693863701938
+Total: 3356147B	Added: 7533750B	Fraction: 0.691810951012668	Now: 1693863707693
+Total: 3356147B	Added: 7533750B	Fraction: 0.691810951012668	Now: 1693863709906
+Total: 3356541B	Added: 7620806B	Fraction: 0.6942302179205959	Now: 1693863712452
+Total: 3358177B	Added: 7620806B	Fraction: 0.6941267693009453	Now: 1693863721111
+Total: 3369238B	Added: 7674029B	Fraction: 0.6949056832547832	Now: 1693863723730
+Total: 3624671B	Added: 7674029B	Fraction: 0.6791957481834193	Now: 1693863725139
+Total: 3624671B	Added: 7674029B	Fraction: 0.6791957481834193	Now: 1693863726218
+Total: 3624671B	Added: 7674029B	Fraction: 0.6791957481834193	Now: 1693863730442
+Total: 3624671B	Added: 7674029B	Fraction: 0.6791957481834193	Now: 1693863736100
+Total: 3624917B	Added: 7720631B	Fraction: 0.6804987295457213	Now: 1693863737342
+Total: 3624917B	Added: 7720631B	Fraction: 0.6804987295457213	Now: 1693863741576
+Total: 3624917B	Added: 7748607B	Fraction: 0.6812846220749171	Now: 1693863747049
+Total: 3624917B	Added: 7804569B	Fraction: 0.682845142817446	Now: 1693863748156
+Total: 3624917B	Added: 7804569B	Fraction: 0.682845142817446	Now: 1693863749203
+Total: 3624917B	Added: 7804569B	Fraction: 0.682845142817446	Now: 1693863750679
+Total: 3624917B	Added: 7804569B	Fraction: 0.682845142817446	Now: 1693863753351
+Total: 3624917B	Added: 7804569B	Fraction: 0.682845142817446	Now: 1693863759738
+Total: 3625163B	Added: 7820365B	Fraction: 0.6832681725124433	Now: 1693863760916
+Total: 3625163B	Added: 7836168B	Fraction: 0.6837048855844056	Now: 1693863761986
+Total: 3625163B	Added: 7836168B	Fraction: 0.6837048855844056	Now: 1693863763122
+Total: 3625163B	Added: 7836168B	Fraction: 0.6837048855844056	Now: 1693863764376
+Total: 3625163B	Added: 7836168B	Fraction: 0.6837048855844056	Now: 1693863765391
+Total: 3625163B	Added: 7836168B	Fraction: 0.6837048855844056	Now: 1693863766796
+Total: 3625163B	Added: 7836168B	Fraction: 0.6837048855844056	Now: 1693863770796
+Total: 3625163B	Added: 7836168B	Fraction: 0.6837048855844056	Now: 1693863774242
+Total: 3625163B	Added: 7836168B	Fraction: 0.6837048855844056	Now: 1693863775800
+Total: 3625409B	Added: 7891137B	Fraction: 0.6851999722833565	Now: 1693863777598
+Total: 3625409B	Added: 7891137B	Fraction: 0.6851999722833565	Now: 1693863778610
+Total: 3625409B	Added: 7891137B	Fraction: 0.6851999722833565	Now: 1693863779743
+Total: 3625409B	Added: 7891137B	Fraction: 0.6851999722833565	Now: 1693863780938
+Total: 3625409B	Added: 7891137B	Fraction: 0.6851999722833565	Now: 1693863782873
+Total: 3625409B	Added: 7891137B	Fraction: 0.6851999722833565	Now: 1693863785244
+Total: 3625409B	Added: 7891137B	Fraction: 0.6851999722833565	Now: 1693863789614
+Total: 3625409B	Added: 7891137B	Fraction: 0.6851999722833565	Now: 1693863790992
+Total: 3634848B	Added: 7941595B	Fraction: 0.6860133980705472	Now: 1693863792033
+Total: 3634848B	Added: 7941595B	Fraction: 0.6860133980705472	Now: 1693863793772
+Total: 3634848B	Added: 7941595B	Fraction: 0.6860133980705472	Now: 1693863794846
+Total: 3634848B	Added: 7941595B	Fraction: 0.6860133980705472	Now: 1693863795987
+Total: 3634848B	Added: 7941595B	Fraction: 0.6860133980705472	Now: 1693863796988
+Total: 3634848B	Added: 7941595B	Fraction: 0.6860133980705472	Now: 1693863798037
+Total: 3634848B	Added: 7941595B	Fraction: 0.6860133980705472	Now: 1693863800363
+Total: 3634848B	Added: 7941595B	Fraction: 0.6860133980705472	Now: 1693863807530
+Total: 3634848B	Added: 7941595B	Fraction: 0.6860133980705472	Now: 1693863808677
+Total: 3635094B	Added: 7989364B	Fraction: 0.6872891622129823	Now: 1693863810176
+Total: 3635094B	Added: 7989364B	Fraction: 0.6872891622129823	Now: 1693863811290
+Total: 3635094B	Added: 7989364B	Fraction: 0.6872891622129823	Now: 1693863812417
+Total: 3635094B	Added: 7989364B	Fraction: 0.6872891622129823	Now: 1693863813507
+Total: 3635094B	Added: 7989364B	Fraction: 0.6872891622129823	Now: 1693863814621
+Total: 3635094B	Added: 7989364B	Fraction: 0.6872891622129823	Now: 1693863816018
+Total: 3635094B	Added: 7989364B	Fraction: 0.6872891622129823	Now: 1693863823711
+Total: 3635094B	Added: 7989364B	Fraction: 0.6872891622129823	Now: 1693863827553
+Total: 3635612B	Added: 8045320B	Fraction: 0.6887566848261766	Now: 1693863828606
+Total: 3688389B	Added: 8045320B	Fraction: 0.6856587290514875	Now: 1693863829640
+Total: 3688389B	Added: 8045320B	Fraction: 0.6856587290514875	Now: 1693863830780
+Total: 3688389B	Added: 8045320B	Fraction: 0.6856587290514875	Now: 1693863833078
+Total: 3688389B	Added: 8045320B	Fraction: 0.6856587290514875	Now: 1693863839295
+Total: 3688389B	Added: 8045320B	Fraction: 0.6856587290514875	Now: 1693863840498
+Total: 3688635B	Added: 8104897B	Fraction: 0.6872323744913738	Now: 1693863841919
+Total: 3688635B	Added: 8104897B	Fraction: 0.6872323744913738	Now: 1693863843045
+Total: 3688635B	Added: 8104897B	Fraction: 0.6872323744913738	Now: 1693863844208
+Total: 3688635B	Added: 8104897B	Fraction: 0.6872323744913738	Now: 1693863847227
+Total: 3688635B	Added: 8104897B	Fraction: 0.6872323744913738	Now: 1693863854095
+Total: 3688635B	Added: 8104897B	Fraction: 0.6872323744913738	Now: 1693863857533
+Total: 3689153B	Added: 8156517B	Fraction: 0.6885652732179776	Now: 1693863858877
+Total: 3689153B	Added: 8168451B	Fraction: 0.6888787144519247	Now: 1693863860749
+Total: 3689153B	Added: 8172515B	Fraction: 0.6889853096545949	Now: 1693863861750
+Total: 3689153B	Added: 8172515B	Fraction: 0.6889853096545949	Now: 1693863862762
+Total: 3689153B	Added: 8172515B	Fraction: 0.6889853096545949	Now: 1693863863884
+Total: 3689153B	Added: 8172515B	Fraction: 0.6889853096545949	Now: 1693863864977
+Total: 3689153B	Added: 8172515B	Fraction: 0.6889853096545949	Now: 1693863866283
+Total: 3689153B	Added: 8172515B	Fraction: 0.6889853096545949	Now: 1693863867459
+Total: 3689153B	Added: 8172515B	Fraction: 0.6889853096545949	Now: 1693863874745
+Total: 3689153B	Added: 8172515B	Fraction: 0.6889853096545949	Now: 1693863876036
+warning:     frame-src    https://www.worldtimebuddy.com
+warning:     frame-src    https://calendar.google.com
+Total: 3689399B	Added: 8252042B	Fraction: 0.6910423959721445	Now: 1693863877338
+Total: 3689399B	Added: 8252042B	Fraction: 0.6910423959721445	Now: 1693863878472
+Total: 3689399B	Added: 8252042B	Fraction: 0.6910423959721445	Now: 1693863879521
+Total: 3689399B	Added: 8252042B	Fraction: 0.6910423959721445	Now: 1693863880837
+Total: 3689399B	Added: 8252042B	Fraction: 0.6910423959721445	Now: 1693863882417
+Total: 3689399B	Added: 8252042B	Fraction: 0.6910423959721445	Now: 1693863887224
+Total: 3689399B	Added: 8252042B	Fraction: 0.6910423959721445	Now: 1693863890741
+Total: 3689399B	Added: 8252042B	Fraction: 0.6910423959721445	Now: 1693863892536
+Total: 3689645B	Added: 8335980B	Fraction: 0.693184761706772	Now: 1693863893740
+Total: 3689645B	Added: 8335980B	Fraction: 0.693184761706772	Now: 1693863894964
+Total: 3689645B	Added: 8335980B	Fraction: 0.693184761706772	Now: 1693863896148
+Total: 3689645B	Added: 8335980B	Fraction: 0.693184761706772	Now: 1693863897222
+Total: 3689645B	Added: 8335980B	Fraction: 0.693184761706772	Now: 1693863899011
+Total: 3689645B	Added: 8335980B	Fraction: 0.693184761706772	Now: 1693863900185
+Total: 3689645B	Added: 8335980B	Fraction: 0.693184761706772	Now: 1693863907428
+Total: 3689645B	Added: 8335980B	Fraction: 0.693184761706772	Now: 1693863910570
+changed:     https://www.professormesser.com/wp-content/plugins/gravityformsquiz/js/gquiz.js?ver=4.1
+Total: 3690106B	Added: 8406197B	Fraction: 0.6949393546110741	Now: 1693863911606
+Total: 3690106B	Added: 8414164B	Fraction: 0.695140144758833	Now: 1693863912622
+Total: 3690106B	Added: 8414164B	Fraction: 0.695140144758833	Now: 1693863913729
+Total: 3690106B	Added: 8414164B	Fraction: 0.695140144758833	Now: 1693863914750
+Total: 3690106B	Added: 8414164B	Fraction: 0.695140144758833	Now: 1693863917274
+Total: 3690106B	Added: 8423489B	Fraction: 0.6953748247320469	Now: 1693863924114
+Total: 3690106B	Added: 8498102B	Fraction: 0.6972396598417093	Now: 1693863925423
+Total: 3690106B	Added: 8498102B	Fraction: 0.6972396598417093	Now: 1693863926448
+Total: 3690106B	Added: 8498102B	Fraction: 0.6972396598417093	Now: 1693863927492
+Total: 3690106B	Added: 8498102B	Fraction: 0.6972396598417093	Now: 1693863928535
+Total: 3690106B	Added: 8498102B	Fraction: 0.6972396598417093	Now: 1693863930873
+Total: 3690106B	Added: 8498102B	Fraction: 0.6972396598417093	Now: 1693863938231
+Total: 3690106B	Added: 8498102B	Fraction: 0.6972396598417093	Now: 1693863941016
+changed:     https://www.professormesser.com/amember/application/default/views/public/js/vendors-user.js?87053287
+violation:   script-src-elem    https://www.professormesser.com/amember/application/default/views/public/js/vendors-user.js?87053287
+changed:     https://www.professormesser.com/amember/application/default/views/public/js/vendors-admin-user.js?87053287
+Total: 3690500B	Added: 8567458B	Fraction: 0.6989302785994209	Now: 1693863943184
+violation:   script-src-elem    inline
+Total: 3690875B	Added: 8571657B	Fraction: 0.699011998500799	Now: 1693863956163
+Total: 3691393B	Added: 8622602B	Fraction: 0.7002278302045761	Now: 1693863957340
+Total: 3691393B	Added: 8622602B	Fraction: 0.7002278302045761	Now: 1693863958397
+Total: 3691393B	Added: 8622602B	Fraction: 0.7002278302045761	Now: 1693863959509
+Total: 3691393B	Added: 8622602B	Fraction: 0.7002278302045761	Now: 1693863960640
+Total: 3691393B	Added: 8622602B	Fraction: 0.7002278302045761	Now: 1693863961718
+Total: 3691393B	Added: 8622602B	Fraction: 0.7002278302045761	Now: 1693863963917
+Total: 3691393B	Added: 8622602B	Fraction: 0.7002278302045761	Now: 1693863965081
+Total: 3691393B	Added: 8622602B	Fraction: 0.7002278302045761	Now: 1693863966300
+Total: 3691393B	Added: 8622602B	Fraction: 0.7002278302045761	Now: 1693863967418
+Total: 3691393B	Added: 8622602B	Fraction: 0.7002278302045761	Now: 1693863972020
+Total: 3691393B	Added: 8622602B	Fraction: 0.7002278302045761	Now: 1693863975083
+Total: 3691639B	Added: 8641089B	Fraction: 0.7006632271465	Now: 1693863976431
+Total: 3691639B	Added: 8684230B	Fraction: 0.7017066841932473	Now: 1693863977584
+Total: 3691639B	Added: 8684230B	Fraction: 0.7017066841932473	Now: 1693863978894
+Total: 3691639B	Added: 8684230B	Fraction: 0.7017066841932473	Now: 1693863980070
+Total: 3691639B	Added: 8684230B	Fraction: 0.7017066841932473	Now: 1693863982684
+Total: 3691639B	Added: 8684230B	Fraction: 0.7017066841932473	Now: 1693863987969
+Total: 3691639B	Added: 8684230B	Fraction: 0.7017066841932473	Now: 1693863990373
+Total: 3691885B	Added: 8745633B	Fraction: 0.7031654547153218	Now: 1693863991383
+Total: 3691885B	Added: 8745633B	Fraction: 0.7031654547153218	Now: 1693863992548
+Total: 3691885B	Added: 8745633B	Fraction: 0.7031654547153218	Now: 1693863993683
+Total: 3691885B	Added: 8745633B	Fraction: 0.7031654547153218	Now: 1693863994794
+Total: 3691885B	Added: 8745633B	Fraction: 0.7031654547153218	Now: 1693863996960
+Total: 3691885B	Added: 8745633B	Fraction: 0.7031654547153218	Now: 1693864002629
+Total: 3691885B	Added: 8745633B	Fraction: 0.7031654547153218	Now: 1693864004570
+Total: 3692167B	Added: 8785289B	Fraction: 0.7040929657455814	Now: 1693864005792
+Total: 3692167B	Added: 8785289B	Fraction: 0.7040929657455814	Now: 1693864007178
+Total: 3692167B	Added: 8785289B	Fraction: 0.7040929657455814	Now: 1693864008322
+Total: 3692167B	Added: 8785289B	Fraction: 0.7040929657455814	Now: 1693864012038
+Total: 3692167B	Added: 8785289B	Fraction: 0.7040929657455814	Now: 1693864017215
+Total: 3692167B	Added: 8785289B	Fraction: 0.7040929657455814	Now: 1693864018765
+Total: 3692413B	Added: 8860358B	Fraction: 0.7058487723547255	Now: 1693864020720
+Total: 3692413B	Added: 8860358B	Fraction: 0.7058487723547255	Now: 1693864022013
+Total: 3692413B	Added: 8860358B	Fraction: 0.7058487723547255	Now: 1693864023125
+Total: 3692413B	Added: 8860358B	Fraction: 0.7058487723547255	Now: 1693864025975
+Total: 3692413B	Added: 8879011B	Fraction: 0.706285222740081	Now: 1693864031973
+Total: 3692413B	Added: 8944296B	Fraction: 0.7078026407033666	Now: 1693864034895
+Total: 3692413B	Added: 8944296B	Fraction: 0.7078026407033666	Now: 1693864036032
+Total: 3692413B	Added: 8944296B	Fraction: 0.7078026407033666	Now: 1693864037063
+Total: 3692413B	Added: 8944296B	Fraction: 0.7078026407033666	Now: 1693864040321
+Total: 3692413B	Added: 8944296B	Fraction: 0.7078026407033666	Now: 1693864046912
+Total: 3692413B	Added: 8944296B	Fraction: 0.7078026407033666	Now: 1693864048027
+Total: 3692659B	Added: 8991105B	Fraction: 0.7088672573851106	Now: 1693864049833
+Total: 3692659B	Added: 8991105B	Fraction: 0.7088672573851106	Now: 1693864051061
+Total: 3692659B	Added: 8991105B	Fraction: 0.7088672573851106	Now: 1693864052318
+Total: 3692659B	Added: 8991105B	Fraction: 0.7088672573851106	Now: 1693864053363
+Total: 3692659B	Added: 8991105B	Fraction: 0.7088672573851106	Now: 1693864054404
+Total: 3692659B	Added: 8991105B	Fraction: 0.7088672573851106	Now: 1693864055854
+Total: 3692659B	Added: 8991105B	Fraction: 0.7088672573851106	Now: 1693864057171
+Total: 3692659B	Added: 8991105B	Fraction: 0.7088672573851106	Now: 1693864059177
+Total: 3692659B	Added: 8991105B	Fraction: 0.7088672573851106	Now: 1693864061166
+Total: 3692659B	Added: 8991105B	Fraction: 0.7088672573851106	Now: 1693864063161
+Total: 3692659B	Added: 9075043B	Fraction: 0.7107812353389827	Now: 1693864064641
+Total: 3692659B	Added: 9075043B	Fraction: 0.7107812353389827	Now: 1693864065800
+Total: 3692659B	Added: 9075043B	Fraction: 0.7107812353389827	Now: 1693864066928
+Total: 3692659B	Added: 9075043B	Fraction: 0.7107812353389827	Now: 1693864067988
+Total: 3692659B	Added: 9075043B	Fraction: 0.7107812353389827	Now: 1693864070530
+Total: 3692659B	Added: 9075043B	Fraction: 0.7107812353389827	Now: 1693864078237
+warning:     frame-src    https://www.worldtimebuddy.com
+warning:     frame-src    https://calendar.google.com
+Total: 3692659B	Added: 9140065B	Fraction: 0.7122466749849837	Now: 1693864079470
+Total: 3692659B	Added: 9140065B	Fraction: 0.7122466749849837	Now: 1693864080606
+Total: 3692659B	Added: 9140065B	Fraction: 0.7122466749849837	Now: 1693864082830
+Total: 3692659B	Added: 9140065B	Fraction: 0.7122466749849837	Now: 1693864083840
+Total: 3692659B	Added: 9140065B	Fraction: 0.7122466749849837	Now: 1693864084905
+Total: 3692659B	Added: 9140065B	Fraction: 0.7122466749849837	Now: 1693864086109
+Total: 3692659B	Added: 9140065B	Fraction: 0.7122466749849837	Now: 1693864090912
+Total: 3692659B	Added: 9140065B	Fraction: 0.7122466749849837	Now: 1693864094438
+Total: 3692659B	Added: 9140065B	Fraction: 0.7122466749849837	Now: 1693864095947
+Total: 3692905B	Added: 9190646B	Fraction: 0.7133627988122219	Now: 1693864097242
+Total: 3692905B	Added: 9190646B	Fraction: 0.7133627988122219	Now: 1693864098511
+Total: 3692905B	Added: 9190646B	Fraction: 0.7133627988122219	Now: 1693864099788
+Total: 3692905B	Added: 9190646B	Fraction: 0.7133627988122219	Now: 1693864100886
+Total: 3692905B	Added: 9190646B	Fraction: 0.7133627988122219	Now: 1693864103327
+Total: 3692905B	Added: 9190646B	Fraction: 0.7133627988122219	Now: 1693864110258
+Total: 3693151B	Added: 9217000B	Fraction: 0.7139343296604355	Now: 1693864111480
+Total: 3693151B	Added: 9236752B	Fraction: 0.714371329777184	Now: 1693864112776
+Total: 3693151B	Added: 9236752B	Fraction: 0.714371329777184	Now: 1693864113966
+Total: 3693151B	Added: 9236752B	Fraction: 0.714371329777184	Now: 1693864115245
+Total: 3693151B	Added: 9236752B	Fraction: 0.714371329777184	Now: 1693864118020
+Total: 3693151B	Added: 9236752B	Fraction: 0.714371329777184	Now: 1693864123300
+Total: 3693151B	Added: 9236752B	Fraction: 0.714371329777184	Now: 1693864125149
+Total: 3693433B	Added: 9305055B	Fraction: 0.7158567211817252	Now: 1693864126291
+Total: 3693433B	Added: 9314216B	Fraction: 0.7160568370195106	Now: 1693864127654
+Total: 3693433B	Added: 9314216B	Fraction: 0.7160568370195106	Now: 1693864128687
+Total: 3693433B	Added: 9314216B	Fraction: 0.7160568370195106	Now: 1693864129892
+Total: 3693433B	Added: 9314216B	Fraction: 0.7160568370195106	Now: 1693864131133
+Total: 3693433B	Added: 9314216B	Fraction: 0.7160568370195106	Now: 1693864133447
+Total: 3693433B	Added: 9314216B	Fraction: 0.7160568370195106	Now: 1693864135196
+Total: 3693433B	Added: 9314216B	Fraction: 0.7160568370195106	Now: 1693864139996
+Total: 3693433B	Added: 9314216B	Fraction: 0.7160568370195106	Now: 1693864141275
+Total: 3693679B	Added: 9314216B	Fraction: 0.7160432952449263	Now: 1693864142487
+Total: 3693679B	Added: 9359022B	Fraction: 0.7170180332790891	Now: 1693864143539
+Total: 3693679B	Added: 9359022B	Fraction: 0.7170180332790891	Now: 1693864144772
+Total: 3693679B	Added: 9359022B	Fraction: 0.7170180332790891	Now: 1693864145888
+Total: 3693679B	Added: 9359022B	Fraction: 0.7170180332790891	Now: 1693864147388
+Total: 3693679B	Added: 9359022B	Fraction: 0.7170180332790891	Now: 1693864149256
+Total: 3693679B	Added: 9359022B	Fraction: 0.7170180332790891	Now: 1693864156410
+Total: 3693679B	Added: 9359022B	Fraction: 0.7170180332790891	Now: 1693864157656
+Total: 3693925B	Added: 9415713B	Fraction: 0.7182282989049735	Now: 1693864158724
+Total: 3693925B	Added: 9415713B	Fraction: 0.7182282989049735	Now: 1693864160206
+Total: 3693925B	Added: 9415713B	Fraction: 0.7182282989049735	Now: 1693864163354
+Total: 3693925B	Added: 9415713B	Fraction: 0.7182282989049735	Now: 1693864169208
+Total: 3693925B	Added: 9415713B	Fraction: 0.7182282989049735	Now: 1693864172352
+new:         https://d79i1fxsrar4t.cloudfront.net/jquery.liveaddress/5.1/jquery.liveaddress.min.js
+Total: 3694319B	Added: 9502190B	Fraction: 0.7200533110688592	Now: 1693864173455
+Total: 3694319B	Added: 9502190B	Fraction: 0.7200533110688592	Now: 1693864174722
+Total: 3696240B	Added: 9521115B	Fraction: 0.7203494950389091	Now: 1693864183143
+Total: 3696240B	Added: 9552632B	Fraction: 0.7210147399718255	Now: 1693864184428
+Total: 3696240B	Added: 9552632B	Fraction: 0.7210147399718255	Now: 1693864185725
+Total: 3696240B	Added: 9552632B	Fraction: 0.7210147399718255	Now: 1693864194584
+Total: 3696240B	Added: 9552632B	Fraction: 0.7210147399718255	Now: 1693864195785
+Total: 3696522B	Added: 9632309B	Fraction: 0.7226672016473162	Now: 1693864197850
+Total: 3696522B	Added: 9632309B	Fraction: 0.7226672016473162	Now: 1693864199024
+Total: 3696522B	Added: 9632309B	Fraction: 0.7226672016473162	Now: 1693864200362
+Total: 3696522B	Added: 9632309B	Fraction: 0.7226672016473162	Now: 1693864203410
+Total: 3696522B	Added: 9632309B	Fraction: 0.7226672016473162	Now: 1693864210227
+Total: 3696768B	Added: 9632309B	Fraction: 0.7226538641797928	Now: 1693864222041
+Total: 3697014B	Added: 9716247B	Fraction: 0.7243761975555385	Now: 1693864223298
+Total: 3697014B	Added: 9716247B	Fraction: 0.7243761975555385	Now: 1693864224526
+Total: 3697014B	Added: 9716247B	Fraction: 0.7243761975555385	Now: 1693864225597
+Total: 3697014B	Added: 9716247B	Fraction: 0.7243761975555385	Now: 1693864228225
+Total: 3697014B	Added: 9716247B	Fraction: 0.7243761975555385	Now: 1693864235405
+Total: 3697014B	Added: 9716247B	Fraction: 0.7243761975555385	Now: 1693864236667
+Total: 3697260B	Added: 9729045B	Fraction: 0.7246256509143804	Now: 1693864238831
+Total: 3697260B	Added: 9761053B	Fraction: 0.7252805756561019	Now: 1693864240294
+Total: 3697260B	Added: 9761053B	Fraction: 0.7252805756561019	Now: 1693864241416
+Total: 3697260B	Added: 9761053B	Fraction: 0.7252805756561019	Now: 1693864242654
+Total: 3697260B	Added: 9761053B	Fraction: 0.7252805756561019	Now: 1693864243785
+Total: 3697260B	Added: 9761053B	Fraction: 0.7252805756561019	Now: 1693864244967
+Total: 3697260B	Added: 9761053B	Fraction: 0.7252805756561019	Now: 1693864251977
+Total: 3697260B	Added: 9761053B	Fraction: 0.7252805756561019	Now: 1693864255290
+Total: 3697778B	Added: 9800793B	Fraction: 0.7260615216232889	Now: 1693864256601
+Total: 3697778B	Added: 9800793B	Fraction: 0.7260615216232889	Now: 1693864257802
+Total: 3697778B	Added: 9800793B	Fraction: 0.7260615216232889	Now: 1693864258815
+Total: 3697778B	Added: 9800793B	Fraction: 0.7260615216232889	Now: 1693864260105
+Total: 3697778B	Added: 9800793B	Fraction: 0.7260615216232889	Now: 1693864261300
+Total: 3697778B	Added: 9800793B	Fraction: 0.7260615216232889	Now: 1693864262603
+Total: 3697778B	Added: 9800793B	Fraction: 0.7260615216232889	Now: 1693864265252
+Total: 3697778B	Added: 9800793B	Fraction: 0.7260615216232889	Now: 1693864267772
+Total: 3697778B	Added: 9800793B	Fraction: 0.7260615216232889	Now: 1693864269648
+Total: 3697778B	Added: 9800793B	Fraction: 0.7260615216232889	Now: 1693864273581
+Total: 3698292B	Added: 9839359B	Fraction: 0.7268143491067985	Now: 1693864274647
+Total: 3698292B	Added: 9849205B	Fraction: 0.7270128939685316	Now: 1693864275685
+Total: 3698292B	Added: 9849205B	Fraction: 0.7270128939685316	Now: 1693864276925
+Total: 3698292B	Added: 9849205B	Fraction: 0.7270128939685316	Now: 1693864278201
+Total: 3698292B	Added: 9849205B	Fraction: 0.7270128939685316	Now: 1693864279373
+Total: 3698292B	Added: 9849205B	Fraction: 0.7270128939685316	Now: 1693864280943
+Total: 3698292B	Added: 9849205B	Fraction: 0.7270128939685316	Now: 1693864284991
+Total: 3698292B	Added: 9849205B	Fraction: 0.7270128939685316	Now: 1693864288120
+Total: 3698292B	Added: 9849205B	Fraction: 0.7270128939685316	Now: 1693864289384
+Total: 3698538B	Added: 9899592B	Fraction: 0.7280112780213162	Now: 1693864290496
+Total: 3698538B	Added: 9899592B	Fraction: 0.7280112780213162	Now: 1693864291721
+Total: 3698538B	Added: 9899592B	Fraction: 0.7280112780213162	Now: 1693864293985
+Total: 3698538B	Added: 9899592B	Fraction: 0.7280112780213162	Now: 1693864295095
+Total: 3698538B	Added: 9899592B	Fraction: 0.7280112780213162	Now: 1693864301441
+Total: 3698784B	Added: 9940726B	Fraction: 0.7288184106320535	Now: 1693864302697
+Total: 3698784B	Added: 9995495B	Fraction: 0.7299029762720622	Now: 1693864304038
+Total: 3698784B	Added: 9995495B	Fraction: 0.7299029762720622	Now: 1693864305240
+Total: 3698784B	Added: 9995495B	Fraction: 0.7299029762720622	Now: 1693864306278
+Total: 3698784B	Added: 9995495B	Fraction: 0.7299029762720622	Now: 1693864307462
+Total: 3698784B	Added: 9995495B	Fraction: 0.7299029762720622	Now: 1693864308784
+Total: 3698784B	Added: 9995495B	Fraction: 0.7299029762720622	Now: 1693864309904
+Total: 3698784B	Added: 9995495B	Fraction: 0.7299029762720622	Now: 1693864317561
+Total: 3698784B	Added: 9995495B	Fraction: 0.7299029762720622	Now: 1693864318725
+changed:     https://www.professormesser.com/wp-content/plugins/stackable-ultimate-gutenberg-blocks-premium/dist/deprecated/frontend_blocks_deprecated_v2.js?ver=3.9.0
+Total: 3699030B	Added: 10047077B	Fraction: 0.730903447790709	Now: 1693864319935
+Total: 3699030B	Added: 10047077B	Fraction: 0.730903447790709	Now: 1693864321323
+Total: 3699030B	Added: 10075053B	Fraction: 0.7314499992485888	Now: 1693864330305
+Total: 3699030B	Added: 10131015B	Fraction: 0.7325366620282147	Now: 1693864331866
+Total: 3699030B	Added: 10131015B	Fraction: 0.7325366620282147	Now: 1693864333169
+Total: 3699030B	Added: 10131015B	Fraction: 0.7325366620282147	Now: 1693864334260
+Total: 3699030B	Added: 10131015B	Fraction: 0.7325366620282147	Now: 1693864337186
+Total: 3699030B	Added: 10131015B	Fraction: 0.7325366620282147	Now: 1693864347368
+Total: 3699548B	Added: 10179051B	Fraction: 0.7334350534949529	Now: 1693864348697
+Total: 3699548B	Added: 10179051B	Fraction: 0.7334350534949529	Now: 1693864349826
+Total: 3699548B	Added: 10179051B	Fraction: 0.7334350534949529	Now: 1693864350926
+Total: 3699548B	Added: 10179051B	Fraction: 0.7334350534949529	Now: 1693864351970
+Total: 3699548B	Added: 10179051B	Fraction: 0.7334350534949529	Now: 1693864353349
+Total: 3699548B	Added: 10179051B	Fraction: 0.7334350534949529	Now: 1693864354436
+Total: 3699548B	Added: 10179051B	Fraction: 0.7334350534949529	Now: 1693864355445
+Total: 3699548B	Added: 10179051B	Fraction: 0.7334350534949529	Now: 1693864363153
+Total: 3699548B	Added: 10179051B	Fraction: 0.7334350534949529	Now: 1693864364154
+Total: 3699794B	Added: 10232760B	Fraction: 0.7344496924253802	Now: 1693864365196
+Total: 3699794B	Added: 10254251B	Fraction: 0.7348586735960791	Now: 1693864366321
+Total: 3699794B	Added: 10254251B	Fraction: 0.7348586735960791	Now: 1693864368950
+Total: 3699794B	Added: 10254251B	Fraction: 0.7348586735960791	Now: 1693864369967
+Total: 3699794B	Added: 10254251B	Fraction: 0.7348586735960791	Now: 1693864371090
+Total: 3699794B	Added: 10254251B	Fraction: 0.7348586735960791	Now: 1693864380999
+Total: 3699794B	Added: 10254251B	Fraction: 0.7348586735960791	Now: 1693864382130
+Total: 3700040B	Added: 10321992B	Fraction: 0.7361266897693572	Now: 1693864383164
+Total: 3700040B	Added: 10321992B	Fraction: 0.7361266897693572	Now: 1693864384324
+Total: 3700040B	Added: 10321992B	Fraction: 0.7361266897693572	Now: 1693864385421
+Total: 3700040B	Added: 10321992B	Fraction: 0.7361266897693572	Now: 1693864386449
+Total: 3700040B	Added: 10321992B	Fraction: 0.7361266897693572	Now: 1693864387708
+Total: 3700040B	Added: 10321992B	Fraction: 0.7361266897693572	Now: 1693864389661
+Total: 3700040B	Added: 10321992B	Fraction: 0.7361266897693572	Now: 1693864396835
+Total: 3700286B	Added: 10353591B	Fraction: 0.7367071022465901	Now: 1693864397975
+Total: 3700286B	Added: 10353591B	Fraction: 0.7367071022465901	Now: 1693864399101
+Total: 3700286B	Added: 10353591B	Fraction: 0.7367071022465901	Now: 1693864400172
+Total: 3700286B	Added: 10353591B	Fraction: 0.7367071022465901	Now: 1693864401315
+Total: 3700286B	Added: 10353591B	Fraction: 0.7367071022465901	Now: 1693864404305
+Total: 3700286B	Added: 10353591B	Fraction: 0.7367071022465901	Now: 1693864411080
+Total: 3700532B	Added: 10398397B	Fraction: 0.7375309855096086	Now: 1693864412209
+Total: 3700532B	Added: 10398397B	Fraction: 0.7375309855096086	Now: 1693864413376
+Total: 3700532B	Added: 10398397B	Fraction: 0.7375309855096086	Now: 1693864414416
+Total: 3700532B	Added: 10398397B	Fraction: 0.7375309855096086	Now: 1693864415458
+Total: 3700532B	Added: 10398397B	Fraction: 0.7375309855096086	Now: 1693864416601
+Total: 3700532B	Added: 10398397B	Fraction: 0.7375309855096086	Now: 1693864417786
+Total: 3700532B	Added: 10398397B	Fraction: 0.7375309855096086	Now: 1693864425264
+Total: 3700778B	Added: 10412683B	Fraction: 0.7377838079546895	Now: 1693864426491
+warning:     frame-src    https://player.vimeo.com
+warning:     frame-src    https://player.vimeo.com
+Total: 3700778B	Added: 10448384B	Fraction: 0.738445428782284	Now: 1693864427657
+Total: 3700778B	Added: 10451919B	Fraction: 0.7385107587620932	Now: 1693864428963
+Total: 3700778B	Added: 10451919B	Fraction: 0.7385107587620932	Now: 1693864430101
+Total: 3700778B	Added: 10451919B	Fraction: 0.7385107587620932	Now: 1693864431193
+Total: 3700778B	Added: 10451919B	Fraction: 0.7385107587620932	Now: 1693864433319
+Total: 3700778B	Added: 10451919B	Fraction: 0.7385107587620932	Now: 1693864443713
+Total: 3701239B	Added: 10516496B	Fraction: 0.7396744980828521	Now: 1693864445118
+Total: 3701239B	Added: 10516496B	Fraction: 0.7396744980828521	Now: 1693864447853
+Total: 3701239B	Added: 10516496B	Fraction: 0.7396744980828521	Now: 1693864449054
+Total: 3701239B	Added: 10516496B	Fraction: 0.7396744980828521	Now: 1693864450192
+Total: 3701239B	Added: 10522228B	Fraction: 0.7397794082132014	Now: 1693864460155
+Total: 3701239B	Added: 10568152B	Fraction: 0.7406168910782528	Now: 1693864461337
+Total: 3701239B	Added: 10568152B	Fraction: 0.7406168910782528	Now: 1693864462849
+Total: 3701239B	Added: 10568152B	Fraction: 0.7406168910782528	Now: 1693864465597
+Total: 3701239B	Added: 10596128B	Fraction: 0.7411244322118891	Now: 1693864471660
+Total: 3701239B	Added: 10652090B	Fraction: 0.7421337586562671	Now: 1693864472793
+Total: 3701239B	Added: 10652090B	Fraction: 0.7421337586562671	Now: 1693864473809
+Total: 3701239B	Added: 10652090B	Fraction: 0.7421337586562671	Now: 1693864475072
+Total: 3701239B	Added: 10652090B	Fraction: 0.7421337586562671	Now: 1693864476120
+Total: 3701239B	Added: 10652090B	Fraction: 0.7421337586562671	Now: 1693864477804
+Total: 3701239B	Added: 10652090B	Fraction: 0.7421337586562671	Now: 1693864485735
+Total: 3701239B	Added: 10652090B	Fraction: 0.7421337586562671	Now: 1693864486815
+Total: 3701485B	Added: 10691554B	Fraction: 0.7428281129509897	Now: 1693864488062
+Total: 3701485B	Added: 10723177B	Fraction: 0.7433919075538824	Now: 1693864489205
+Total: 3701485B	Added: 10723177B	Fraction: 0.7433919075538824	Now: 1693864490445
+Total: 3701485B	Added: 10723177B	Fraction: 0.7433919075538824	Now: 1693864491483
+Total: 3701485B	Added: 10723177B	Fraction: 0.7433919075538824	Now: 1693864492488
+Total: 3701485B	Added: 10723177B	Fraction: 0.7433919075538824	Now: 1693864494462
+Total: 3701485B	Added: 10723177B	Fraction: 0.7433919075538824	Now: 1693864502037
+Total: 3701485B	Added: 10723177B	Fraction: 0.7433919075538824	Now: 1693864505074
+Total: 3702426B	Added: 10795096B	Fraction: 0.7446166317250631	Now: 1693864506308
+Total: 3702426B	Added: 10799883B	Fraction: 0.7447009300381063	Now: 1693864507312
+Total: 3702426B	Added: 10799883B	Fraction: 0.7447009300381063	Now: 1693864508319
+Total: 3702426B	Added: 10799883B	Fraction: 0.7447009300381063	Now: 1693864509424
+Total: 3702426B	Added: 10799883B	Fraction: 0.7447009300381063	Now: 1693864510613
+Total: 3702426B	Added: 10799883B	Fraction: 0.7447009300381063	Now: 1693864511798
+Total: 3702426B	Added: 10799883B	Fraction: 0.7447009300381063	Now: 1693864512978
+Total: 3702426B	Added: 10799883B	Fraction: 0.7447009300381063	Now: 1693864514142
+Total: 3702426B	Added: 10799883B	Fraction: 0.7447009300381063	Now: 1693864520442
+Total: 3702426B	Added: 10799883B	Fraction: 0.7447009300381063	Now: 1693864523564
+Total: 3702426B	Added: 10799883B	Fraction: 0.7447009300381063	Now: 1693864524810
+Total: 3702672B	Added: 10868363B	Fraction: 0.7458881953135107	Now: 1693864526248
+Total: 3702672B	Added: 10868363B	Fraction: 0.7458881953135107	Now: 1693864527440
+Total: 3702672B	Added: 10868363B	Fraction: 0.7458881953135107	Now: 1693864528480
+Total: 3702672B	Added: 10868363B	Fraction: 0.7458881953135107	Now: 1693864529518
+Total: 3702672B	Added: 10868363B	Fraction: 0.7458881953135107	Now: 1693864530596
+Total: 3702672B	Added: 10868363B	Fraction: 0.7458881953135107	Now: 1693864532430
+Total: 3702672B	Added: 10868363B	Fraction: 0.7458881953135107	Now: 1693864539329
+Total: 3702672B	Added: 10868363B	Fraction: 0.7458881953135107	Now: 1693864540633
+Total: 3702918B	Added: 10928355B	Fraction: 0.7469175785319568	Now: 1693864541896
+Total: 3702918B	Added: 10928355B	Fraction: 0.7469175785319568	Now: 1693864542919
+Total: 3702918B	Added: 10928355B	Fraction: 0.7469175785319568	Now: 1693864544094
+Total: 3702918B	Added: 10928355B	Fraction: 0.7469175785319568	Now: 1693864545370
+Total: 3702918B	Added: 10928355B	Fraction: 0.7469175785319568	Now: 1693864547734
+Total: 3702918B	Added: 10928355B	Fraction: 0.7469175785319568	Now: 1693864554807
+Total: 3702918B	Added: 10928355B	Fraction: 0.7469175785319568	Now: 1693864558078
+Total: 3703436B	Added: 10968335B	Fraction: 0.7475808476018335	Now: 1693864559087
+Total: 3703436B	Added: 10968335B	Fraction: 0.7475808476018335	Now: 1693864560102
+Total: 3703436B	Added: 10968335B	Fraction: 0.7475808476018335	Now: 1693864561106
+Total: 3703436B	Added: 10968335B	Fraction: 0.7475808476018335	Now: 1693864562246
+Total: 3703436B	Added: 10968335B	Fraction: 0.7475808476018335	Now: 1693864563285
+Total: 3703436B	Added: 10968335B	Fraction: 0.7475808476018335	Now: 1693864564288
+Total: 3703436B	Added: 10968335B	Fraction: 0.7475808476018335	Now: 1693864565410
+Total: 3703436B	Added: 10968335B	Fraction: 0.7475808476018335	Now: 1693864569194
+Total: 3703436B	Added: 10968335B	Fraction: 0.7475808476018335	Now: 1693864573037

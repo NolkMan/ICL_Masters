@@ -31,7 +31,7 @@ const dryRun = false;
 const preTrain = false;
 const runClient = true;
 const longTest = true;
-const pickNum = 6;
+const pickNum = 10;
 const useTerminal = false;
 
 var picked = PICKED_HOSTS[pickNum];

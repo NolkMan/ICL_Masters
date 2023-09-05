@@ -33,3 +33,11 @@ select
 	distinct host
 	from cspro_reports
 ;
+
+select 
+	host, 
+	count(host) 
+	from cspro_reports 
+	where report->>'blocked-uri' = 'eval' 
+	group by host
+;
