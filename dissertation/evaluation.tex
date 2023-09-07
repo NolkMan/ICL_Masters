@@ -268,20 +268,24 @@ And the server had emmited the following events.
 
 \subsection{Impact estimation}
 
-To try to provide most accurate results I have tried to deploy my solution on a mixture of randomly selected hosts from top 10,000 hosts and a few which would most likely be interested in deploying such protection method.
+To try to provide most accurate results the Policy maker was deploed on a mixture of randomly selected and hand picked hosts from top 10,000 hosts.
 
-In this paper I present results gathered from 4 websites, which I believe provide a broad range of results as well as demonstrate some issues where my solution is unlikely to be beneficial.
+In this paper results are presented from 4 different websites which best demonstrate both good results as well as issues that may be encountered when trying to implement the server into the host.
 None of the sites which were used to test the policy maker have deployed their own CSP or CSPRO headers.
 This was done to avoid the policy overwritten in the proxy to be further modified by the meta tags included in the page source.
 Choosing such sites would also skew the results as those websites would already have been adjusted to work with CSP.
 
 During the tests the server is deployed seperately on all the described hosts.
-In each of the tests a set of 171 subpages are opened over a timespan of 45 minutes. 
-The first page opened is always the mainpage for the host, after which a random page is chosen out of all anchor links seen throughout the test.
-For the tests the server will remove a JavaScript link after 10 minutes.
+In each of the tests a set of 171 subpages are opened over a timespan of about 45 minutes, as depending on the time to load a page the final time total may vary. 
+The first page opened is always the mainpage for the host, after which a random page is chosen out of all links that were seen throughout the duration of the test.
+For the tests the server will remove a JavaScript sources after 10 minutes, so that a single script may be added to the policy and better simulate the real life situation.
 
 As this tests are done on real hosts it is impossible to assume maliciousness of any of the scripts returned as malicious.
 From all of the reported scripts that were analised by hand, the most common issues for those reports were dubious programming practices or unnecessary obfuscation of seemingly banign scripts.
+
+During the tests mitmproxy plugin collected network metadata to evaluate the impact of the server.
+It summed all the traffic coming from the host and all 
+% TODO
 
 % talk how data is collected in mitmproxy
 
@@ -312,12 +316,10 @@ Hopefully little to none additional scripts would be included to avoid this circ
 After this change only the script with its full path will be in the script directive, while the connect directive will include only the host from which all the data is coming from.
 This will both allow for good security and minimization of the CSPRO header.
 
-% default-src from prefetching ?
-
 \subsection{www.professormesser.com}
 
 Professor Messer is a group dedicated to providing teaching courses and resources related to technical certificates.
-This website shows good results in shoert term deployment, but due to dynamically loaded scripts performs poorly during longer tests.
+This website shows good results in short term deployment, but due to dynamically loaded scripts performs poorly during longer tests.
 
 
 \subsection{www.caixabank.es}
@@ -337,14 +339,15 @@ Due to that \texttt{unsafe-eval} is never added to the policy and through countl
 
 \subsection{Test results}
 
-All of the websites on which the automated policy maker was tested show limited value to be gained from such an automated tool.
-This comes from a fact that a security measure that aims to keep track of all the systems running on a web application is too resource intensive.
-While consuming too much resources it also may not increase the security of those sites substantially due to already very wide attack surface.
+All of the websites on which the automated policy maker was tested show high cost of using such an automated tool.
+This comes from a fact that a security measure that aims to keep track of all the systems running on a web application is very resource intensive.
+Depending on the infostructure present the Policy Maker may not be a good tool to increase the security of the website.
+Websites that use \texttt{eval} or dynamically loaded scripts greatly increase the cost of running this server.
+Although this project was developed with a goal to suit any potential host, it is apparent that in order for this solution to be viable, hosts would potentially need to modify their codebase.
 
-
-Despite poor performace on these selected hosts, the work done in this paper can still be beneficial to smaller endpoints which already put in significant amount of work to insure the security of thier website.
+Despite poor performace on selected hosts, the work done in this paper can still be beneficial to smaller endpoints which already put in significant amount of work to insure the security of thier website.
 Ceixabank was used to see what an exaple of potentially such website could be, as customers of a bank would expect utmost security, especially after logging into their online services.
-Even though they may use a different subdomain after a user is logged in, it is still disappointing to see \texttt{eval} function being commonly used.
+Even though they may use a different subdomain after a user is logged in, it is still disappointing to see \texttt{eval} function being commonly used on their front page.
 
 % TODO about traffic and what percentage of it are reports
 
@@ -353,16 +356,16 @@ Even though they may use a different subdomain after a user is logged in, it is 
 	\includegraphics[width=\textwidth]{imgs/netword_usage_plot.png}
 	\includegraphics[width=\textwidth]{imgs/netword_usage_long_plot.png}
 	\caption{Percentage of bandwidth dedicated to additional traffic generated by the Policy Maker using default settings}
-	\label{standarUsage}
+	\label{fig:standarUsage}
 \end{figure}
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=\textwidth]{imgs/netword_usage_bypass.png}
-	\includegraphics[width=\textwidth]{imgs/netword_usage_long_bypass.png}
-	\caption{Percentage of bandwidth dedicated to additional traffic generated by the Policy Maker when bypassing Google scripts}
-	\label{bypassedUsage}
-\end{figure}
+%\begin{figure}[h]
+%	\centering
+%	\includegraphics[width=\textwidth]{imgs/netword_usage_bypass.png}
+%	\includegraphics[width=\textwidth]{imgs/netword_usage_long_bypass.png}
+%	\caption{Percentage of bandwidth dedicated to additional traffic generated by the Policy Maker when bypassing Google scripts}
+%	\label{bypassedUsage}
+%\end{figure}
 
 
 \section{Discussion}
