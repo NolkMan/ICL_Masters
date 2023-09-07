@@ -1,24 +1,97 @@
-\documentclass[12]{article}   % list options between brackets
+\documentclass[12pt,twoside]{report}
 
-\usepackage{graphicx}
-\usepackage{subcaption}
-\usepackage{float}
-\usepackage[citestyle=numeric,bibstyle=numeric]{biblatex}
-\usepackage[a4paper,  margin=1in]{geometry}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\addbibresource{citations.bib}
+% Definitions for the title page
+% Edit these to provide the correct information
+% e.g. \newcommand{\reportauthor}{Timothy Kimber}
+
+\newcommand{\reporttitle}{Title}
+\newcommand{\reportauthor}{Your name}
+\newcommand{\supervisor}{Name of supervisor}
+\newcommand{\degreetype}{Type of Degree}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% load some definitions and default packages
+\input{includes}
+
+% load some macros
+\input{notation}
+
+\date{September 2015}
 
 \begin{document}
 
-\title{Content security policy masters project} 
-\author{Michal Glinski (mjg222)}    
+% load title page
+\input{titlepage}
 
-\maketitle
+
+% page numbering etc.
+\pagenumbering{roman}
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\setcounter{page}{1}
+\pagestyle{fancy}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}
+	\input{abstract}
+\end{abstract}
+
+\cleardoublepage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section*{Acknowledgments}
+%Comment this out if not needed.
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%--- table of contents
+\fancyhead[RE,LO]{\sffamily {Table of Contents}}
+\tableofcontents 
+
+
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\fancyhead[LE,RO]{\slshape \rightmark}
+\fancyhead[LO,RE]{\slshape \leftmark}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{introduction}
 
 \input{background}
+\input{contribution}
 \input{evaluation}
 \input{conclusion}
 
-\printbibliography
+
+%% bibliography
+\bibliographystyle{apa}
+
 
 \end{document}
+%\documentclass[12]{article}   % list options between brackets
+%
+%\usepackage{graphicx}
+%\usepackage{subcaption}
+%\usepackage{float}
+%\usepackage[citestyle=numeric,bibstyle=numeric]{biblatex}
+%\usepackage[a4paper,  margin=1in]{geometry}
+%
+%\addbibresource{citations.bib}
+%
+%\begin{document}
+%
+%\title{Content security policy masters project} 
+%\author{Michal Glinski (mjg222)}    
+%
+%\maketitle
+%
+%\input{background}
+%\input{evaluation}
+%\input{conclusion}
+%
+%\printbibliography
+%
+%\end{document}

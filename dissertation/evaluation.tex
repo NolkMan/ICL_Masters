@@ -58,20 +58,112 @@ As hashes are unique to the file, users will report to my server as soon as anyt
 
 \subsection{Development}
 
-The server is written in JavaScript and uses Node as runtime.
-This combination was used as it gives a lot of freedom during development, provides an extensive http server implementation with built-in modules and interfaces well with other software.
-The server functions as a module exposing functions allowing to start a new server, which allows for communication through events.
+The project is mainly written in JavaScript and uses Node as runtime.
+This combination was used as it provides high level, powerful and very customizable tools required for efficient server creation.
+It also natively supports JSON data format, which is used for Content-Security-Policy reports.
+Many tools used within this project are available in the Node Package Manager allowing for better interoperability.
+Components that are not available under Node were connected, by creating separate servers which communicated using GET and POST requests.
 
-To function it requires an oracle, which would rate scripts and provide hashes of specific resource files.
-This allows for modular design, where an oracle could be improved or developed for a specific purpose without modifying the server itself.
-An oracle is included in the source code which uses a machine learning model created by ??? to rate the maliciousness of the files.
-I have adapted the model for my use and created a server out of it to allow my JavaScript code base to communicate with natively Python code.
+The high level view of the project structure is desplayed in figure \ref{structure}.
+The project uses mutliple interdependant modules, which expose limited amount of functions to support modularity.
+The key development within this project is on the diagram denoted as the Policy Maker.
+It is designed as a separate entity, which does not require the other components used within this project to function.
+When deployed in a real environment, it may be directly connected to the server serving HTTP requets, while providing an up to date policy for the observed reports.
+The Policy maker consists of 3 other smaller modules 
+\begin{description}
+	\item[Main server] Receives reports and generates policies
+	\item[Oracle] Takes script urls from reports and aims and collects them from the internet
+	\item[Evaluator] Rates collected scripts and evaluates them
+\end{itemize}
 
+% TODO
+A set of other tools was used to support the server during the development and testing.
+To simulate the control over the host, mitmproxy was used. 
+Also Puppeteer was used to simulate the user over the extended period of time of testing, while also guaranteeing consistency between tests, 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{imgs/project_structure.png}
+	\caption{Structure of the project}
+	\label{structure}
+\end{figure}
+
+\subsubsection{Server}
+The server is the main component which exposes and open port dedicated to collecting reports.
+It is also the outermost layer of communication responsible for issuing warnings as they are encountered.
+This module exposes an \texttt{EventEmitter} interface, which allows other components to run specific code when an event occurs.
+There are 5 possible events, 2 for security, 2 for logging and 1 for CSP updates:
+\begin{description}
+	\item[\texttt{warning}]	Used to signify rarely used content which should be monitored. Practically it is used for iframes and small inline attribute scripts. 
+	\item[\texttt{violation}] Uesd to signify malicious scripts, use of \texttt{eval} function or long attribute scripts that do not fit in the 40 character report limit.
+	\item[\texttt{new}] Signifies a new script has been spotted.
+	\item[\texttt{changed}] Signifies that a previously spotted script has been changed.
+	\item[\texttt{cspro-change}] Emmitted whenever a policy is changed, notifying any module to update their CSPRO value.
+\end{description}
+
+When reports are received, they are parsed and the most important information is stored in the memory.
+The full contents of the report are stored in a database alongsite the timestamp when they arrived.
+Depending on the effective violated directive different actions are performed.
+Sources like images, fonts or styles are premanently added to the policy, as this project focuses on securing web applications from malicious scripts.
+Iframes trigger a warning event as they may be used for clickjacking attacks, after which they are added to the policy, as they are not the main focus of this paper.
+
+The most logic within the server is dedicated to scripts.
+Attribute scripts always trigger a warning or a violation event.
+Then depending whether they fit into the 40 character limit within the \texttt{script-sample} field in the report, their hash may be added to the policy for a short duration to limit the amount of duplicate reports.
+Reports signifying use of \texttt{eval} function emit a violation event, after which they are ignored.
+Lastly all reports about scripts within HTML \texttt{<script>} tags are sent to the oracle to calculate their hash and evaluate their maliciousness.
+All hashes are stored and based on them the server recognises whether a script has changed and in that case it emits a changed event.
+
+\subsubsection{Oracle}
+The oracle is the inner module of the Policy Maker which is crucial for the functionality of the server.
+Its main goal is to aid the server in collecting scripts described in reports and to provide their evaluation.
+The oracle is a separate module to allow for a redesign without affecting the core logic of the server.
+In this project scirpts are fetched from the hosts using GET requests, but this mechanism could be adjusted to instead fetch specific scripts from the inner code repository.
+
+\subsubsection{Evaluator}
+The evaluator in the Oracle Module is used to evaluate scripts from the sourcecode that was collected by the oracle.
+Compared to the oracle it is not necessary for the function of the Policy Maker, but without one only new and changed events will be emitted.
+The evaluator included in the source code uses a machine learning model created by Maria Zorkaltseva intended to find obfuscated malicious JavaScript files \cite{evaluator}.
+As the model is written in Python, downloaded scripts are passed to a python http server using POST requests.
+The server calculates the maliciousness score and returns the result in the response.
+
+
+% TODO
 The server additionally uses PostgreSQL to store reports and responses from the oracle.
 Data is logged in the database for safe-keeping, post-deployment analysis and debugging.
 Additionally the collected reports can be reused to repeat the experiments on the same data, it also reduces the strain this project exerts on websites I am using to test my algorithm.
 
-% talk about the terminal interface
+
+\subsubsection{Main Controller}
+Main Controller is the entry module for the project.
+Every other module described requires a context for its execution.
+The main controller sets up each module with a context required to run a specific test scenario.
+It collects all events emited from the server and logs them to the console for a clear view of the servers operation.
+Whenever a new policy is generated, the main controller passes it from the server to the mitmproxy so it can be injected into server responses.
+Lastly the main controller logs statistical data collected by mitmproxy.
+
+
+\subsubsection{Mitmproxy}
+Mitmproxy is an interactive https proxy which can be used to intercept, read and modify traffic coming through it.
+It supports scripting, which is used to automatically insert \texttt{content-security-policy-report-only} header before it is sent to the browser.
+In this way, the browser sees the modified response as if it was sent directly from the host.
+This behaviour directly emulates the scenario where the policy maker were to be deployed alongside the hosting server.
+As all traffic is directed through mitmproxy, it has also been used to collect statistics required to evaluate the project.
+In the code this integration works by creating a separate server to which the mitmproxy module connects periodically.
+Whenever this happens all data collected is sent away and a current CSPRO generated by the reporting server is returned.
+Due to this design there is slight latency between generation of a new policy and deployment to the user.
+Although this delay exists, it is insignificant and in real world many hosts use proxies to reduce the load on servers or clients use caching to reduce their network usage.
+In both of those cases the delay between deployment of a new CSPRO and its perceivable effects may be much larger than what is observed in this project and as such this issue is ignored throughtout the testing.
+
+
+\subsubsection{Puppeteer}
+The second tool used that does not benefit the security of the server, but was extensively used during testing was Puppeteer.
+Puppeteer is a Node.js module designed to simulate user interaction in a chromium client.
+It uses a programmable interface, which results in high precision and reproducability between executions.
+For those reasons Puppeteer was used for all impact estimation tests.
+In the code a separate module was dedicated to Puppeteer which starts it up connected to the proxy with parameters simulating a regular user.
+After that it is used to crawl the currently tested host.
+
 
 \section{Initial Content-Security-Policy}
 
@@ -121,30 +213,6 @@ It uses the prefix {\it unsafe}, but hashes in \texttt{script-src-attr} directiv
 As such I only use \texttt{unsafe-hashes} for this specific directive. 
 Also I only use it for scripts that fully fit in the 40 character limit dedicated to the script sample field in the report and I always generate a violation event for such a report.
 
-\subsection{Surrounding Environment}
-
-A set of other tools was used to support the server during the development and testing.
-To simulate the control over the host, mitmproxy was used. 
-Also Puppeteer was used to simulate the user over the extended period of time of testing, while also guaranteeing consistency between tests, 
-
-Mitmproxy is an interactive https proxy which can be used to intercept, read and modify traffic coming through it.
-It supports scripting, which is used to automatically insert \texttt{content-security-policy-report-only} header before it is sent to the browser.
-In this way, the browser sees the modified response as if it was sent directly from the host.
-This behaviour directly emulates the scenario where the policy maker were to be deployed alongside the hosting server.
-As all traffic is directed through mitmproxy, it has also been used to collect statistics required to evaluate the project.
-In the code this integration works by creating a separate server to which the mitmproxy module connects periodically.
-Whenever this happens all data collected is sent away and a current CSPRO generated by the reporting server is returned.
-Due to this design there is slight latency between generation of a new policy and deployment to the user.
-Although this delay exists, it is insignificant and in real world many hosts use proxies to reduce the load on servers or clients use caching to reduce their network usage.
-In both of those cases the delay between deployment of a new CSPRO and its perceivable effects may be much larger than what is observed in this project and as such this issue is ignored throughtout the testing.
-
-The second tool used that does not benefit the security of the server, but was extensively used during testing was Puppeteer.
-Puppeteer is a Node.js module designed to simulate user interaction in a chromium client.
-It uses a programmable interface, which results in high precision and reproducability between executions.
-For those reasons Puppeteer was used for all impact estimation tests.
-In the code a separate module was dedicated to Puppeteer which starts it up connected to the proxy with parameters simulating a regular user.
-After that it is used to crawl the currently tested host.
-
 \section{Evaluation}
 
 The automated policy maker is evaluated in this work by the methods of empirical tests, which show that the program is working correctly.
@@ -161,19 +229,17 @@ After receiving line and file information it is sometimes able to extract data f
 Ocasionally, due to formatting, encoding or other issues related to dynamic inclusion of data into the page, it may return no or a wrong hash.
 Due to security concerns my oracle does not dynamically execute scripts and change html code, which does happen within the browser.
 Most notably a script may change the inner html of a page to one with another script.
-In this case the oracle will be unable to generate the script that was included as it is not included in the retreived html.
-Throughout testing of this project, different scripts responsible for ads and user tagging were found to use this technique.
-The influence that those scripts have on the effectiveness of this project will be clearly seen when the impact of the cps server is estimated.
+In this case the oracle is unable to generate the script that was included as it is not included in the retreived html.
+Throughout testing of this project, different scripts responsible for advertisements and user tagging were found to use this technique.
+The influence that those scripts have on the effectiveness of this project will be clearly seen when the impact of the cspro server is estimated.
 
-The second role of the oracle is to pass the script extracted as just described and pass it to the evaluation server.
-The evaluation server in this case is an adapted python script of ???, which is designed to detect obfuscated scripts.
-Due to the feature selection it is also moderately helpful to detect malicious unobfuscated scripts.
-This work focuses mainly on developing the policy maker for CSPRO header and this small, but reliable evaluator is a good way to demonstrate the servers inner working.
-The oracle may work without the script grading server in which case it will only send the hash back to the policy making server.
-The policy maker server in that case will only report on new or changed scripts it encounters.
+The second role of the oracle is to pass the script extracted to the evaluation server.
+When a script is passed to the evaluator a simple binary response is returned representing whether the script was found to be malicious.
+As this work focuses mainly on developing the policy maker for CSPRO header and the evaluator is a machine learning model described in a different paper, its functioning is not thoroughly tested.
+While its results may be occasionally inaccurate, it still clearly demonstrates the inner workings of the Policy Maker server.
 
 The server which is the main outcome of this project uses the oracle extensively.
-Each script that is reported will go through the oracle, then depending on the evalutaion it is added to the policy for a specific amount of time.
+Each script that is reported are sent through the oracle, then depending on the evalutaion they are added to the policy for a specific amount of time.
 Eventually after enough time has passed the server succesfully removes the entry from its policy.
 When a new report for the same resource arrives it compares the new evaluation from the oracle to the previous one and does emit events related to the result.
 Each time the CSPRO value is changed it is communicated out of the server and subseqently embedded into html responses by mitmproxy.
@@ -182,15 +248,23 @@ During testing this result is eaily observable in the browser connected to the p
 When loading the host page on a newly created server, multiple reports are generated back to the server.
 On the server multiple new events can be seen and in a case where there is a script deemeed malicious a violation is observed too.
 Subseqeunt refreshes of the page in the browser no longer produce reports until the scripts present are removed from the policy.
-Even if there are more reports arriving the server will not generate new events unless a scripts is changed.
+Even if there are more reports arriving the server will not generate new events unless a scripts has changed.
 
-The server also keeps node of other resources loaded on the page with a lower level of detail.
+The server also keeps note of other resources loaded on the page with a lower level of detail.
 It stores only hosts of those resources, which are added to the policy of the server and they are not removed over time.
 When a new source is added only the update of the CSPRO is triggered, but no additional event is emitted.
 
 The only exception to this rule the \texttt{frame-src} directive. 
 When a report about a violation to the frame-src is received a new warning is emmited.
 As previously described iframes can be used in clickjacking attacks and due to lower amount of iframes used on pages it is important to verify that no malicious iframes are running.
+
+After testing the server on a model webiste a Content-Security-Policy-Report-Only header has been generated that encapsulates all the described behaviours.
+
+% TODO add CSPRO HEADER
+
+And the server had emmited the following events.
+
+% TODO add events
 
 \subsection{Impact estimation}
 
@@ -272,11 +346,22 @@ Despite poor performace on these selected hosts, the work done in this paper can
 Ceixabank was used to see what an exaple of potentially such website could be, as customers of a bank would expect utmost security, especially after logging into their online services.
 Even though they may use a different subdomain after a user is logged in, it is still disappointing to see \texttt{eval} function being commonly used.
 
+% TODO about traffic and what percentage of it are reports
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth]{imgs/netword_usage_plot.png}
-	\caption{Percentage of bandwidth dedicated to additional traffic generated by my policymaker}
+	\includegraphics[width=\textwidth]{imgs/netword_usage_long_plot.png}
+	\caption{Percentage of bandwidth dedicated to additional traffic generated by the Policy Maker using default settings}
+	\label{standarUsage}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=\textwidth]{imgs/netword_usage_bypass.png}
+	\includegraphics[width=\textwidth]{imgs/netword_usage_long_bypass.png}
+	\caption{Percentage of bandwidth dedicated to additional traffic generated by the Policy Maker when bypassing Google scripts}
+	\label{bypassedUsage}
 \end{figure}
 
 
