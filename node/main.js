@@ -26,6 +26,10 @@ var PICKED_HOSTS = [
 	{good:false, top: -1,	host: 'https://testing.site'}, // my own testing site
 ]
 
+function hostForMITM(uri){
+	return url.parse(uri).hostname.split('.').slice(-2).join('.')
+}
+
 const updateCspro = true;
 const dryRun = false;
 const preTrain = false;
@@ -41,7 +45,7 @@ var port = getRandomInt(2000, 65500)
 var basic_cspro = "default-src 'none'; report-uri https://reporting.project:" + String(port);
 
 mitm.set_cspro(basic_cspro)
-mitm.set_csp_host(url.parse(current_host).hostname)
+mitm.set_csp_host(hostForMITM(current_host))
 
 var serv = server.createServer(port, current_host, js_evaluator);
 serv.start(() => {
