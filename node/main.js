@@ -33,9 +33,9 @@ function hostForMITM(uri){
 const updateCspro = true;
 const dryRun = false;
 const preTrain = false;
-const runClient = true;
+const runClient = false;
 const longTest = true;
-const pickNum = 9;
+const pickNum = 11;
 const useTerminal = false;
 
 var picked = PICKED_HOSTS[pickNum];
@@ -83,6 +83,7 @@ serv.start(() => {
 if (updateCspro) {
 	serv.on('cspro-change', () => {
 		mitm.set_cspro(serv.getCspro())
+		console.log('cspro-change');
 	});
 }
 
@@ -94,10 +95,10 @@ serv.on('warning', (report, evaluation) => {
 	console.log('warning:     ' + report["effective-directive"] + '    ' + String(report['blocked-uri']));
 });
 
-serv.on('new', (uri) => {
+serv.on('new', (uri, e) => {
 	console.log('new:         ' + uri);
 });
-serv.on('changed', (uri) => {
+serv.on('changed', (uri, e) => {
 	console.log('changed:     ' + uri);
 });
 

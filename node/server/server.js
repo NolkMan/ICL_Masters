@@ -17,10 +17,10 @@ const server_options = {
 }
 
 const timeMatters = true
-const timeOut = 1000*60*10// 1000*15 // miliseconds
+const timeOut = 1000*15 // 1000*60*10// 1000*15 // miliseconds
 const timeOutMulitplier = 1 // remove later if script is good
 const allowBypass = false; // allows some hosts which very often change url to reduce load
-const addHostToInitial = true;
+const addHostToInitial = false;
 
 /*
 {
@@ -234,7 +234,7 @@ class CsproServer extends EventEmitter {
 
 		var toAdd = this.maybeAddToCsp(report, uriCount, hostCount)
 		if (toAdd) {
-			var timeout = (toAdd.length >= 3 ? Date.now() + toAdd[3] : -1);
+			var timeout = (toAdd.length >= 3 ? Date.now() + toAdd[2] : -1);
 			this.csproData[toAdd[0]] ||= {}
 			if (!(toAdd[1] in this.csproData[toAdd[0]])){
 				this.csproData[toAdd[0]][toAdd[1]] = timeout;
