@@ -11,7 +11,7 @@ const url = require('url')
 const test = require('./utils/TestUtils.js')
 
 var PICKED_HOSTS = [
-	{good: true, top: 732 , host: 'https://www.caixabank.es'}, // custom picked bank without CSP that does not have ad scripts
+	{good: true, top: 732 , host: 'https://www.caixabank.es'}, // custom picked bank without CSP that does not have ads 
 	{good: true, top: 878 , host: 'https://codepen.io'}, // cloudflare doesnt even allow access
 	{good: true, top: 2589, host: 'https://www.pcworld.com'}, // cloudflare sometimes blocks
 	{good: true, top: 2650, host: 'https://computingforgeeks.com'}, // cloudflare blocks 
@@ -33,9 +33,9 @@ function hostForMITM(uri){
 const updateCspro = true;
 const dryRun = false;
 const preTrain = false;
-const runClient = true;
+const runClient = false;
 const longTest = true;
-const pickNum = 10;
+const pickNum = 11;
 const useTerminal = false;
 
 var picked = PICKED_HOSTS[pickNum];
@@ -83,6 +83,7 @@ serv.start(() => {
 if (updateCspro) {
 	serv.on('cspro-change', () => {
 		mitm.set_cspro(serv.getCspro())
+		console.log('cspro-change');
 	});
 }
 
@@ -94,10 +95,10 @@ serv.on('warning', (report, evaluation) => {
 	console.log('warning:     ' + report["effective-directive"] + '    ' + String(report['blocked-uri']));
 });
 
-serv.on('new', (uri) => {
+serv.on('new', (uri, e) => {
 	console.log('new:         ' + uri);
 });
-serv.on('changed', (uri) => {
+serv.on('changed', (uri, e) => {
 	console.log('changed:     ' + uri);
 });
 
