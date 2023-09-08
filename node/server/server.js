@@ -19,7 +19,8 @@ const server_options = {
 const timeMatters = true
 const timeOut = 1000*60*10// 1000*15 // miliseconds
 const timeOutMulitplier = 1 // remove later if script is good
-const allowBypass = true; // allows some hosts which very often change url to reduce load
+const allowBypass = false; // allows some hosts which very often change url to reduce load
+const addHostToInitial = true;
 
 /*
 {
@@ -281,7 +282,9 @@ class CsproServer extends EventEmitter {
 			},
 			'style-src-attr': {"'unsafe-inline'": -1},
 		}
-		//this.csproData['script-src-elem']['https://' + this.host] = -1;
+		if (addHostToInitial){
+			this.csproData['script-src-elem']['https://' + this.host] = -1;
+		}
 		this.violators = new Map(
 			utils.csp_directives.map(dir => [dir, new Map()])
 		);

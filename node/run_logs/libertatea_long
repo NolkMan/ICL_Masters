@@ -1,0 +1,1378 @@
+Mitm communication server running at http://127.0.0.1:8181/
+PSQL started
+Reporting server running at http://localhost:16135/
+Total: 0B	Added: 0B	Fraction: NaN	Now: 1694100168005
+Total: 1765B	Added: 2260B	Fraction: 0.5614906832298137	Now: 1694100169251
+Total: 77397B	Added: 14771B	Fraction: 0.16026169603333043	Now: 1694100170415
+Total: 162887B	Added: 36306B	Fraction: 0.18226544105465553	Now: 1694100171642
+Total: 164556B	Added: 46745B	Fraction: 0.2212246984160037	Now: 1694100172731
+Total: 270623B	Added: 67726B	Fraction: 0.20016610068302257	Now: 1694100174115
+Total: 276938B	Added: 83859B	Fraction: 0.23242709889494648	Now: 1694100175324
+new:         https://www.libertatea.ro/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js
+new:         https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854
+violation:   script-src-attr    inline
+new:         https://www.libertatea.ro/wp-includes/js/underscore.min.js?ver=1.13.4
+new:         https://static4.libertatea.ro/wp-content/plugins/elasticpress/dist/js/facets.min.js?ver=3.1.4
+Total: 302612B	Added: 109264B	Fraction: 0.26528372617001234	Now: 1694100176513
+new:         https://static4.libertatea.ro/wp-content/themes/libertatea-nineteen/assets/scripts/autosuggest.min.js?ver=3.1.410
+new:         https://static4.libertatea.ro/wp-content/plugins/wp-polls/polls-js.js?ver=2.77.2
+new:         https://static4.libertatea.ro/wp-content/plugins/rro-openid/assets/js/openid.js?ver=1.1.2
+new:         https://static4.libertatea.ro/wp-content/themes/libertatea-nineteen/assets/scripts/onn.js?ver=1.1.6
+new:         https://static4.libertatea.ro/wp-content/plugins/rro-lynx-star/assets/js/lynx.js?ver=1.6.6
+new:         https://static4.libertatea.ro/wp-content/plugins/rro-lynx-star/assets/js/dlapi.js?ver=1.6.6
+violation:   script-src    eval
+new:         https://static4.libertatea.ro/wp-content/themes/libertatea-nineteen/assets/scripts/libertatea.min.js?v=1.2.1
+new:         https://fundingchoicesmessages.google.com/i/pub-6935241379927535?ers=1
+new:         https://ocdn.eu/aureus-js-client/2.2.0/aureusjsclient.js?ver=1.6.6
+new:         https://optiyield.opti-digital.com/pfc/?pubid=1011785
+new:         https://cdn.cookielaw.org/consent/tcf.stub.js
+new:         https://cdn.cookielaw.org/consent/cmp.stub.js
+new:         https://cookie-cdn.cookiepro.com/scripttemplates/otSDKStub.js
+new:         https://www.libertatea.ro/consent/config.js?v=2.20
+new:         https://static4.libertatea.ro/wp-content/themes/libertatea-nineteen/assets/scripts/piano-blockers.js?ver=1.1.8
+new:         https://scdn.cxense.com/cx.js
+new:         https://static4.libertatea.ro/wp-content/themes/libertatea-nineteen/assets/scripts/sw-app.js?ver=1.0.3
+new:         https://unpkg.com/mustache@latest
+Total: 302612B	Added: 154699B	Fraction: 0.33827963902027286	Now: 1694100177650
+warning:     frame-src    https://cdn.cxense.com
+new:         https://code.piano.io/api/tinypass.min.js
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxUGsIPLdqQ_GROfZlblmW2uzQLlawHH3GP-Yqkij2V5LI-QNXHZfJ-7ytii58l2Tmlh6M8A7xspvhKDadPDfzXadDb5A5lswyTGdqSLrL583YQIb16MeNopcEIJuSKpqEuh3MYWRQ==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNjk0MTAwMTcyLDE1NjAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzddXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby8iLG51bGwsW1s4LCI4c2RrTnAwd1F5WSJdLFs5LCJlbi1HQiJdLFsxNiwiWzEsMSwxXSJdLFs3LCIxMCJdLFsxMSwiW1tdLFtdLFtdXSJdLFsxOSwiMiJdLFsxNywiWzBdIl1dXQ
+new:         https://comcluster.cxense.com/public/clearid?ngc=1&callback=cXJsonpCB1
+violation:   script-src-elem    https://comcluster.cxense.com/public/clearid?ngc=1&callback=cXJsonpCB1
+new:         https://sgqcvfjvr.onet.pl/simetra/clickmap/5.0.2/clickmap.min.js?1c682b3779e466cb42609ecd3be9c2dc
+new:         https://sgqcvfjvr.onet.pl/build/dlApi/dl.aureus.min.js?4&077ac16f633bc13fc61ba37e0e5dadf0
+new:         https://sgqcvfjvr.onet.pl/YnVpbGQvezlza2x0MzE3fWRsQXBpL2RsLmxpYntOTWFzXzMxN30ubWluLmpz
+new:         https://sgqcvfjvr.onet.pl/build/dlApi/dl.cmp.min.js?4&b4680874ff5cfc54a3e7f1f313ca5da3
+new:         https://sgqcvfjvr.onet.pl/simetra/artemis/0.5.12/artemis.min.js?286f245da86c3b17a71591c8831a0cf4
+violation:   script-src    eval
+new:         https://p1cluster.cxense.com/p1.js?lm9bi40r96h2b9p7
+new:         https://api-esp.piano.io/public/sdk/v04/sdk.js?v=xxx
+new:         https://cookie-cdn.cookiepro.com/scripttemplates/6.24.0/otBannerSdk.js
+new:         https://id.cxense.com/public/user/id?json=%7B%22identities%22%3A%5B%7B%22type%22%3A%22ckp%22%2C%22id%22%3A%22lm9bi3wadgjcqyg6%22%7D%2C%7B%22type%22%3A%22cst%22%2C%22id%22%3A%227rc2a4qhfvbo14dypm5hvbpf6%22%7D%5D%2C%22siteId%22%3A%221136227972865927410%22%2C%22location%22%3A%22https%3A%2F%2Fwww.libertatea.ro%2F%22%7D&callback=cXJsonpCB2
+violation:   script-src-elem    https://id.cxense.com/public/user/id?json=%7B%22identities%22%3A%5B%7B%22type%22%3A%22ckp%22%2C%22id%22%3A%22lm9bi3wadgjcqyg6%22%7D%2C%7B%22type%22%3A%22cst%22%2C%22id%22%3A%227rc2a4qhfvbo14dypm5hvbpf6%22%7D%5D%2C%22siteId%22%3A%221136227972865927410%22%2C%22location%22%3A%22https%3A%2F%2Fwww.libertatea.ro%2F%22%7D&callback=cXJsonpCB2
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxVZT80WrszOoWav_uKWrUr-W9rB7tUO-P4vN0FY19_IfIhTl1WNddb0-wTQu8o-4vv64fsl3sa412icYZsERCp2-G5hVf1XzVNSp6HKacfNzhPbj6r3ZRISNGXlMN12ArODfaLc_OjzfufkoXGcm7CquYAmjZtiqhU-NnVqSn0cc8yw7L0IjPns-6NU/_/interad./ad.code?/adshow_/topads_/adv4.
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxVZT80WrszOoWav_uKWrUr-W9rB7tUO-P4vN0FY19_IfIhTl1WNddb0-wTQu8o-4vv64fsl3sa412icYZsERCp2-G5hVf1XzVNSp6HKacfNzhPbj6r3ZRISNGXlMN12ArODfaLc_OjzfufkoXGcm7CquYAmjZtiqhU-NnVqSn0cc8yw7L0IjPns-6NU/_/interad./ad.code?/adshow_/topads_/adv4.
+new:         https://pagead2.googlesyndication.com/pagead/js/lidar.js?fcd=true
+new:         https://cookie-cdn.cookiepro.com/scripttemplates/6.24.0/otTCF.js
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxW9Dk_1WJuJ4koyyMqqe8rEA30uPQzDW9l6cOHAcDhNGC5C9vDdG9Tx3fljxW6pNomUF06nBnofsPbTrf2l-tDnMjQMuDOuVhlAqBYFDi8uI1KMAoscFevLeMJNhxu4rpCEnhewdg==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNjk0MTAwMTc3LDI0NzAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzcsNl0sbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMV0sImh0dHBzOi8vd3d3LmxpYmVydGF0ZWEucm8vIixudWxsLFtbOCwiOHNka05wMHdReVkiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiMTAiXSxbMTEsIltbXSxbXSxbXV0iXSxbMTksIjIiXSxbMTcsIlswXSJdXV0
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxW9Dk_1WJuJ4koyyMqqe8rEA30uPQzDW9l6cOHAcDhNGC5C9vDdG9Tx3fljxW6pNomUF06nBnofsPbTrf2l-tDnMjQMuDOuVhlAqBYFDi8uI1KMAoscFevLeMJNhxu4rpCEnhewdg==?fccs=W251bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLFsxNjk0MTAwMTc3LDI0NzAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzcsNl0sbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsMV0sImh0dHBzOi8vd3d3LmxpYmVydGF0ZWEucm8vIixudWxsLFtbOCwiOHNka05wMHdReVkiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiMTAiXSxbMTEsIltbXSxbXSxbXV0iXSxbMTksIjIiXSxbMTcsIlswXSJdXV0
+Total: 302612B	Added: 190724B	Fraction: 0.38660061296965964	Now: 1694100179079
+Successfully accepted cookies
+Total: 302612B	Added: 197066B	Fraction: 0.3943859845740657	Now: 1694100181877
+new:         https://www.googletagmanager.com/gtm.js?id=GTM-5GX2FCF
+new:         https://www.googletagmanager.com/gtm.js?id=GTM-N8D28M3
+new:         https://static4.libertatea.ro/wp-content/themes/libertatea-nineteen/assets/scripts/prebid.js?ver=1.1.1
+new:         https://code3.adtlgc.com/js/sati_init.js
+new:         https://api.cxense.com/profile/user/segment?callback=cXJsonpCB3&persisted=1fddcc372e9d925847138dc1fedc5e0af235b9fa&json=%7B%22identities%22%3A%5B%7B%22id%22%3A%22lm9bi3wadgjcqyg6%22%2C%22type%22%3A%22cx%22%7D%5D%7D
+violation:   script-src-elem    https://api.cxense.com/profile/user/segment?callback=cXJsonpCB3&persisted=1fddcc372e9d925847138dc1fedc5e0af235b9fa&json=%7B%22identities%22%3A%5B%7B%22id%22%3A%22lm9bi3wadgjcqyg6%22%2C%22type%22%3A%22cx%22%7D%5D%7D
+new:         https://get.s-onetag.com/3ffa2b18-56c1-4f15-af69-de303fb67c65/tag.min.js
+new:         https://admp-tc-sati.adtlgc.com/user?nw=0&cm=1&sg=1&callback=adapt_dataRequest_sati_admp.campaignCallback&cb=1694100182267&evid=&v=2.39
+new:         https://signal-beacon.s-onetag.com/beacon.min.js
+Total: 303311B	Added: 214226B	Fraction: 0.4139336897651762	Now: 1694100183037
+violation:   script-src    eval
+violation:   script-src    eval
+new:         https://www.google-analytics.com/analytics.js
+Total: 303311B	Added: 223857B	Fraction: 0.42464072174335316	Now: 1694100184361
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+new:         https://unpkg.com/web-vitals@2.1.4/dist/web-vitals.umd.js
+new:         https://cdn.onesignal.com/sdks/OneSignalSDK.js
+Total: 303311B	Added: 230065B	Fraction: 0.43133736801055916	Now: 1694100185400
+new:         https://cdn.taboola.com/libtrc/unip/1404265/tfa.js
+new:         https://www.googletagmanager.com/gtag/js?id=AW-10963632302
+violation:   script-src    eval
+new:         https://js-eu1.hs-scripts.com/26154475.js
+new:         https://www.googletagmanager.com/gtag/js?id=G-8R97D8E29X&l=dataLayer&cx=c
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 303311B	Added: 240373B	Fraction: 0.4421189514497392	Now: 1694100186610
+new:         https://cdn.mookie1.com/containr.js
+new:         https://admp-tc-sati.adtlgc.com/user?nw=1&cm=0&sg=0&callback=adapt_dataRequest_sati_admp.validateCallback&cb=1694100182792&evid=cx:1f5hneh7o9rqi14qfzl957ekdx:14bhsa3la4gkg&v=2.39
+new:         https://cdn.brandmetrics.com/survey/script/6e02183ce1a8469498e5858d7d5e3c66.js
+violation:   script-src    eval
+new:         https://static.criteo.net/js/ld/publishertag.prebid.js
+new:         https://securepubads.g.doubleclick.net/tag/js/gpt.js
+Total: 304221B	Added: 268808B	Fraction: 0.4691001677052994	Now: 1694100187854
+new:         https://api.cxense.com/profile/user/segment?callback=cXJsonpCB4&persisted=993f7e91f41899181a61f3b6fa338bd436cdd1b7&json=%7B%22identities%22%3A%5B%7B%22id%22%3A%22lm9bi3wadgjcqyg6%22%2C%22type%22%3A%22cx%22%7D%5D%7D
+violation:   script-src-elem    https://api.cxense.com/profile/user/segment?callback=cXJsonpCB4&persisted=993f7e91f41899181a61f3b6fa338bd436cdd1b7&json=%7B%22identities%22%3A%5B%7B%22id%22%3A%22lm9bi3wadgjcqyg6%22%2C%22type%22%3A%22cx%22%7D%5D%7D
+new:         https://trc.taboola.com/1404265/trc/3/json?tim=1694100186140&data=%7B%22id%22%3A299%2C%22ii%22%3A%22%2F%22%2C%22it%22%3A%22video%22%2C%22sd%22%3Anull%2C%22ui%22%3Anull%2C%22vi%22%3A1694100186127%2C%22cv%22%3A%2220230903-6-RELEASE%22%2C%22uiv%22%3A%22default%22%2C%22u%22%3A%22https%3A%2F%2Fwww.libertatea.ro%2F%22%2C%22e%22%3Anull%2C%22cb%22%3A%22TFASC.trkCallback%22%2C%22qs%22%3A%22%22%2C%22r%22%3A%5B%7B%22li%22%3A%22rbox-tracking%22%2C%22s%22%3A0%2C%22uim%22%3A%22rbox-tracking%3Apub%3Dtdg-ringier2729adv1%3Aabp%3D0%22%2C%22uip%22%3A%22rbox-tracking%22%2C%22orig_uip%22%3A%22rbox-tracking%22%7D%5D%2C%22mpv%22%3Atrue%2C%22supv%22%3Atrue%2C%22mpvd%22%3A%7B%22en%22%3A%22page_view%22%2C%22tim%22%3A1694100186137%2C%22ref%22%3Anull%2C%22item-url%22%3A%22https%3A%2F%2Fwww.libertatea.ro%2F%22%2C%22tos%22%3A5%2C%22ssd%22%3A1%2C%22scd%22%3A0%2C%22supv%22%3Atrue%7D%7D&pubit=i
+new:         https://cdn.onesignal.com/sdks/OneSignalPageSDKES6.js?v=151604
+Total: 304509B	Added: 283448B	Fraction: 0.48208967662601176	Now: 1694100188985
+warning:     frame-src    https://gum.criteo.com
+new:         https://googleads.g.doubleclick.net/pagead/viewthroughconversion/10963632302/?random=1694100186766&cv=11&fst=1694100186766&bg=ffffff&guid=ON&async=1&gtm=45be38u0h1&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.libertatea.ro%2F&hn=www.googleadservices.com&frm=0&tiba=Ziar%20Online%20-%20Site%20cu%20%C8%98tiri%20de%20Top%20din%20Rom%C3%A2nia%20%7C%20Libertatea&auid=1160060469.1694100187&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+violation:   script-src-elem    https://googleads.g.doubleclick.net/pagead/viewthroughconversion/10963632302/?random=1694100186766&cv=11&fst=1694100186766&bg=ffffff&guid=ON&async=1&gtm=45be38u0h1&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.libertatea.ro%2F&hn=www.googleadservices.com&frm=0&tiba=Ziar%20Online%20-%20Site%20cu%20%C8%98tiri%20de%20Top%20din%20Rom%C3%A2nia%20%7C%20Libertatea&auid=1160060469.1694100187&fledge=1&uamb=0&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=4
+new:         https://www.google.com/pagead/1p-conversion/10963632302/?random=1694100186793&cv=11&fst=1694100186793&bg=ffffff&guid=ON&async=1&gtm=45be38u0h1&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.libertatea.ro%2F&label=IdugCOaBnNIDEK6B7-so&hn=www.google.com&frm=0&tiba=Ziar%20Online%20-%20Site%20cu%20%C8%98tiri%20de%20Top%20din%20Rom%C3%A2nia%20%7C%20Libertatea&auid=1160060469.1694100187&fledge=1&capi=1&uamb=0&uaw=0&data=event%3Dconversion&gcp=1&sscte=1&ct_cookie_present=1&rfmt=3&fmt=4
+new:         https://js-eu1.hs-banner.com/v2/26154475/banner.js
+warning:     frame-src    https://td.doubleclick.net
+new:         https://js-eu1.hsleadflows.net/leadflows.js
+new:         https://js-eu1.hs-analytics.net/analytics/1694100000000/26154475.js
+new:         https://cdn.brandmetrics.com/scripts/bundle/65568.js?sid=6e02183c-e1a8-4694-98e5-858d7d5e3c66&toploc=www.libertatea.ro
+new:         https://onesignal.com/api/v1/sync/b8122d1b-e931-4ee2-adbd-761dfb9a9070/web?callback=__jp0
+new:         https://js-eu1.hscollectedforms.net/collectedforms.js
+Total: 386270B	Added: 363152B	Fraction: 0.4845761133246689	Now: 1694100190103
+violation:   script-src-attr    inline
+new:         https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202308310101/pubads_impl.js
+new:         https://static4.libertatea.ro/wp-content/themes/libertatea-nineteen/assets/scripts/comment-actions.js?ver=1.1.2
+new:         https://www.libertatea.ro/wp-includes/js/comment-reply.min.js?ver=6.1.1
+violation:   script-src    eval
+new:         https://experience-eu.piano.io/xbuilder/experience/load?aid=9Y0rrOzype
+new:         https://comcluster.cxense.com/dmp/push?callback=cXJsonpCB2&ver=2.8.31&persisted=fcadb0c22bec63a3e94af5a65644fc6b869880e0&glb=cx%3A1f5hneh7o9rqi14qfzl957ekdx%3A14bhsa3la4gkg&json=%7B%22events%22%3A%5B%7B%22type%22%3A%22adBlockerDetection%22%2C%22rnd%22%3A%22lm9bih1kbjkn739e%22%2C%22siteId%22%3A%221136227972865927410%22%2C%22prnd%22%3A%22lm9bigz1ddeazqi5%22%2C%22userIds%22%3A%5B%7B%22id%22%3A%22lm9bi3wadgjcqyg6%22%2C%22type%22%3A%22cx%22%7D%5D%2C%22origin%22%3A%22brt-adblock%22%2C%22customParameters%22%3A%5B%7B%22group%22%3A%22adBlockerDetected%22%2C%22item%22%3A%22No%22%2C%22type%22%3A%22string%22%7D%5D%2C%22consent%22%3A%5B%22y%22%2C%22pv%22%2C%22segment%22%2C%22ad%22%2C%22recs%22%5D%7D%5D%7D
+violation:   script-src-elem    https://comcluster.cxense.com/dmp/push?callback=cXJsonpCB2&ver=2.8.31&persisted=fcadb0c22bec63a3e94af5a65644fc6b869880e0&glb=cx%3A1f5hneh7o9rqi14qfzl957ekdx%3A14bhsa3la4gkg&json=%7B%22events%22%3A%5B%7B%22type%22%3A%22adBlockerDetection%22%2C%22rnd%22%3A%22lm9bih1kbjkn739e%22%2C%22siteId%22%3A%221136227972865927410%22%2C%22prnd%22%3A%22lm9bigz1ddeazqi5%22%2C%22userIds%22%3A%5B%7B%22id%22%3A%22lm9bi3wadgjcqyg6%22%2C%22type%22%3A%22cx%22%7D%5D%2C%22origin%22%3A%22brt-adblock%22%2C%22customParameters%22%3A%5B%7B%22group%22%3A%22adBlockerDetected%22%2C%22item%22%3A%22No%22%2C%22type%22%3A%22string%22%7D%5D%2C%22consent%22%3A%5B%22y%22%2C%22pv%22%2C%22segment%22%2C%22ad%22%2C%22recs%22%5D%7D%5D%7D
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxW0IlhtJPb-0DmavNrF9flFCykibkxL74CGH1rFFtesL2uMXTvidjZ-2CmYP4IXAk7sHzfRVxGcUssltnChOxYbjain9RSluuyar_GlquAyPkD0PYQqMhZaefyA-3_i3UmkGKTInw==?fccs=W1siQUtzUm9sLWVuVDVhd05ncEpFRWs5RmhqZndZU3FMSHFXcVhFVjFlVWpmVXh0MS0yWjhPMzJFNmtSYTZsTkwwR3U2S3FkSFdqOVlQdFpzcFBZZ3ZWQ1pGbjVDUHJBVW01cEUyYnJLc3BlSFBES25SV1RhSlNsMGpJTGlrZ1owME51eGFZY0xWcFB3UEg2YWtXSkVrOHFielpsclQyaDI5WVlBPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDAxOTEsNTkwMDAwMDBdLG51bGwsbnVsbCxudWxsLFtudWxsLFs3XV0sImh0dHBzOi8vd3d3LmxpYmVydGF0ZWEucm8vcHVibGljaXRhdGUtYWR2ZXJ0b3JpYWwvbWVkbGlmZS1zdXN0aW5lLXBlcmZvcm1hbnRhLXNpLWV4Y2VsZW50YS1tZWRpY2FsYS1wcmluLWRlenZvbHRhcmVhLXVudWktaHViLWRlLWlub3ZhdGllLXNpLWludmF0YXJlLWNvbnRpbnVhLXBlbnRydS1tZWRpY2lpLWRpbi1jYWRydWwtZ3J1cHVsdWktNDYyMzMyOSIsbnVsbCxbWzgsIjhzZGtOcDB3UXlZIl0sWzksImVuLUdCIl0sWzE2LCJbMSwxLDFdIl0sWzcsIjEwIl0sWzExLCJbW10sW10sW11dIl0sWzE5LCIyIl0sWzE3LCJbMF0iXV1d
+Total: 419625B	Added: 521274B	Fraction: 0.5540169561238772	Now: 1694100191301
+new:         https://pahtag.tech/c/libertatea.js
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 419625B	Added: 607348B	Fraction: 0.5913962684510693	Now: 1694100192640
+Total: 419625B	Added: 607348B	Fraction: 0.5913962684510693	Now: 1694100193822
+new:         https://palibzh.tech/libs/projectagora.min.js
+Total: 419625B	Added: 615138B	Fraction: 0.5944723574383699	Now: 1694100194996
+warning:     frame-src    https://gum.criteo.com
+new:         https://www.google.com/pagead/1p-conversion/10963632302/?random=1694100191633&cv=11&fst=1694100191633&bg=ffffff&guid=ON&async=1&gtm=45be38u0h1&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.libertatea.ro%2Fpublicitate-advertorial%2Fmedlife-sustine-performanta-si-excelenta-medicala-prin-dezvoltarea-unui-hub-de-inovatie-si-invatare-continua-pentru-medicii-din-cadrul-grupului-4623329&label=IdugCOaBnNIDEK6B7-so&hn=www.google.com&frm=0&tiba=MedLife%20Sus%C8%9Bine%20Performan%C8%9Ba%20%C8%99i%20Excelen%C8%9Ba%20Medical%C4%83%20Prin%20Dezvoltarea%20Unui%20Hub%20De%20Inova%C8%9Bie%20%C8%99i%20%C3%AEnv%C4%83%C8%9Bare%20Continu%C4%83%20Pentru%20Medicii%20Din%20Cadrul%20Grupului%20%7C%20Libertatea&auid=1160060469.1694100187&fledge=1&capi=1&uamb=0&uaw=0&data=event%3Dconversion&gcp=1&sscte=1&ct_cookie_present=1&rfmt=3&fmt=4
+Total: 419625B	Added: 702519B	Fraction: 0.6260506672940371	Now: 1694100196168
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxVvSEyFMOfRTdNwmrtY20FSabHRM56dZm4NeaZ7vsUFPUMvzSxJuqSOm2N6WJmTHk5rF00ozWVA05JulUy4gOk8H-LxX6tPzdSOPjrp3BtaV-FMvWDhEgPoIJw7AO3znUymwT79ayS-XIe0Sf_BSnEk9-UtQe8Ul9wx39GixaH9rKtzjswcofmc8yhj/_/text_ads_/lazy-ads-/adsarticlescript./annonse./delivery/fl.
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxVvSEyFMOfRTdNwmrtY20FSabHRM56dZm4NeaZ7vsUFPUMvzSxJuqSOm2N6WJmTHk5rF00ozWVA05JulUy4gOk8H-LxX6tPzdSOPjrp3BtaV-FMvWDhEgPoIJw7AO3znUymwT79ayS-XIe0Sf_BSnEk9-UtQe8Ul9wx39GixaH9rKtzjswcofmc8yhj/_/text_ads_/lazy-ads-/adsarticlescript./annonse./delivery/fl.
+new:         https://pagead2.googlesyndication.com/pagead/js/rum.js?fcd=true
+warning:     frame-src    https://acdn.adnxs.com
+warning:     frame-src    https://ads.pubmatic.com
+Total: 419625B	Added: 758179B	Fraction: 0.6437225548563258	Now: 1694100197279
+violation:   script-src    eval
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxVKVdGA3TWFyIAKHILXgoN1zq8ouPbkMfN9Kyl_MQXcfW6iSU8AX4ppb7pOWm2SOokBNFpQ9Eg_dpGF8X5fPifWdWgVTKWor1mlArE7rWEouY0L6LE971lhfip0vxtjcWuEeJbxdg==?fccs=W1siQUtzUm9sLWVuVDVhd05ncEpFRWs5RmhqZndZU3FMSHFXcVhFVjFlVWpmVXh0MS0yWjhPMzJFNmtSYTZsTkwwR3U2S3FkSFdqOVlQdFpzcFBZZ3ZWQ1pGbjVDUHJBVW01cEUyYnJLc3BlSFBES25SV1RhSlNsMGpJTGlrZ1owME51eGFZY0xWcFB3UEg2YWtXSkVrOHFielpsclQyaDI5WVlBPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDAxOTcsMjg3MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9wdWJsaWNpdGF0ZS1hZHZlcnRvcmlhbC9tZWRsaWZlLXN1c3RpbmUtcGVyZm9ybWFudGEtc2ktZXhjZWxlbnRhLW1lZGljYWxhLXByaW4tZGV6dm9sdGFyZWEtdW51aS1odWItZGUtaW5vdmF0aWUtc2ktaW52YXRhcmUtY29udGludWEtcGVudHJ1LW1lZGljaWktZGluLWNhZHJ1bC1ncnVwdWx1aS00NjIzMzI5IixudWxsLFtbOCwiOHNka05wMHdReVkiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiMTAiXSxbMTEsIltbXSxbXSxbXV0iXSxbMTksIjIiXSxbMTcsIlswXSJdXV0
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxVKVdGA3TWFyIAKHILXgoN1zq8ouPbkMfN9Kyl_MQXcfW6iSU8AX4ppb7pOWm2SOokBNFpQ9Eg_dpGF8X5fPifWdWgVTKWor1mlArE7rWEouY0L6LE971lhfip0vxtjcWuEeJbxdg==?fccs=W1siQUtzUm9sLWVuVDVhd05ncEpFRWs5RmhqZndZU3FMSHFXcVhFVjFlVWpmVXh0MS0yWjhPMzJFNmtSYTZsTkwwR3U2S3FkSFdqOVlQdFpzcFBZZ3ZWQ1pGbjVDUHJBVW01cEUyYnJLc3BlSFBES25SV1RhSlNsMGpJTGlrZ1owME51eGFZY0xWcFB3UEg2YWtXSkVrOHFielpsclQyaDI5WVlBPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDAxOTcsMjg3MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9wdWJsaWNpdGF0ZS1hZHZlcnRvcmlhbC9tZWRsaWZlLXN1c3RpbmUtcGVyZm9ybWFudGEtc2ktZXhjZWxlbnRhLW1lZGljYWxhLXByaW4tZGV6dm9sdGFyZWEtdW51aS1odWItZGUtaW5vdmF0aWUtc2ktaW52YXRhcmUtY29udGludWEtcGVudHJ1LW1lZGljaWktZGluLWNhZHJ1bC1ncnVwdWx1aS00NjIzMzI5IixudWxsLFtbOCwiOHNka05wMHdReVkiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiMTAiXSxbMTEsIltbXSxbXSxbXV0iXSxbMTksIjIiXSxbMTcsIlswXSJdXV0
+new:         https://cdn.taboola.com/libtrc/impl.20230904-9_b2-PR-60661-DEV-137973-a-b-test-opening-vignette-in-a-new-tab-redirect-delay-e9b9045222e.js
+violation:   script-src    eval
+new:         https://gum.criteo.com/sync?c=72&r=2&j=TRC.getRTUS&us_privacy=&gdpr=1&gdpr_consent=CPxwywuPxwywuAcABBENDVCsAP_AAH_AAChQIPtf_X__b2_j-_79f_t0eY1P9_7_v-0zjhfdl-8N2f_X_L8X52M5vF36pqoKuR4ku3bBIQVlHOHcTUmw6okVryPsbk2Mr7NKJ7PkmlMbM2dYGH9_n93T-ZKY7___f__z_v-v___9____7-3f3__p__--2_e_V_89zfn9_____9vN___9v-iCgASYaFxAF2RIyE20YRQIgRhWEhUAoAKIBIWiAwhZXBTsrgJ9YDIAQIoAHggBDACjIAEAAAkASEQASBHAgEAgEAgABAAqEAgAY2AAeAFoIBAAKA6FiFFAEoFhBkQkRCmBCFIkFBPZUIJQfqCuEIZZYEUCj_ioQEKyBisCISFi9DgCQEvEkAIAAAAAAAAAAAAAAAQAQACAAEAACgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAGBAAQHyhgAID5RAAEB8pAACA_gkABAaEUABANCAfwA.f_gAD_gAAAAA&gdpr_pd=0
+Total: 419625B	Added: 831200B	Fraction: 0.6645214158655287	Now: 1694100198402
+new:         https://cdn.taboola.com/libtrc/google-topics-api.20230904-9_b2-PR-60661-DEV-137973-a-b-test-opening-vignette-in-a-new-tab-redirect-delay-e9b9045222e.es6.js
+Total: 419625B	Added: 846960B	Fraction: 0.6686957448572343	Now: 1694100199454
+Total: 419625B	Added: 846960B	Fraction: 0.6686957448572343	Now: 1694100200510
+Total: 419625B	Added: 846960B	Fraction: 0.6686957448572343	Now: 1694100201675
+Total: 419625B	Added: 886739B	Fraction: 0.6787840142563635	Now: 1694100202938
+Total: 419625B	Added: 886739B	Fraction: 0.6787840142563635	Now: 1694100204131
+Total: 420823B	Added: 951816B	Fraction: 0.6934204841914007	Now: 1694100205287
+Total: 420823B	Added: 1018423B	Fraction: 0.707608706225343	Now: 1694100206854
+violation:   script-src    eval
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxUE0JfV6HIOsVCOGjgpl7waBp5iqTF3f3eZHZxHra9BQJoUU4Epi4h4QfoCFiMBtbykAcvcD0YEfHVtF-hlex85M_dH77nfqvSkXLjTyBOiyzLDkICXd1aquuwgUe2-7YN4qdjp1Q==?fccs=W1siQUtzUm9sX0RMQTBVNTdtZU9tV2psajZKU1dQZFI5akNkNmVRcE01b0VYd1NUQTJoQmdhYzNZOFpDMGZtTVJVMWhGbVg1azlaaHk3bi1rbC1RMEExR0dhX0Z4SldETnF0N2JHbW1wSWZIYTR0SHFabTJCUjFDNEQ3VjhSN0FDdEtDM0xlWU54TEl6c05iYXhNLVd5SmNaaUpaUV9zSmN6WGJBPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDAyMDcsMzM3MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbN11dLCJodHRwczovL3d3dy5saWJlcnRhdGVhLnJvL3B1YmxpY2l0YXRlLWFkdmVydG9yaWFsL21lZGxpZmUtcHJvbW92ZWF6YS1zdGFyZWEtZGUtYmluZS1wcmluLWxlY3R1cmEtc2ktY3JlYXRpdml0YXRlLXNpLXN1c3RpbmUtZmVzdGl2YWx1bC1ib292aWUtNDYxNjc1OSIsbnVsbCxbWzgsIjhzZGtOcDB3UXlZIl0sWzksImVuLUdCIl0sWzE2LCJbMSwxLDFdIl0sWzcsIjEwIl0sWzExLCJbW10sW10sW11dIl0sWzE5LCIyIl0sWzE3LCJbMF0iXV1d
+new:         https://lib.onet.pl/s.csr/build/dlApi/dl.boot.min.js
+Total: 548847B	Added: 1316942B	Fraction: 0.7058365120600454	Now: 1694100207872
+new:         https://cdn.taboola.com/libtrc/libertatea/loader.js
+Total: 549776B	Added: 1349982B	Fraction: 0.7106073510415537	Now: 1694100209000
+violation:   script-src    eval
+Total: 549776B	Added: 1366541B	Fraction: 0.7131080087480307	Now: 1694100210039
+new:         https://www.google.com/pagead/1p-conversion/10963632302/?random=1694100207764&cv=11&fst=1694100207764&bg=ffffff&guid=ON&async=1&gtm=45be38u0h1&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.libertatea.ro%2Fpublicitate-advertorial%2Fmedlife-promoveaza-starea-de-bine-prin-lectura-si-creativitate-si-sustine-festivalul-boovie-4616759&label=IdugCOaBnNIDEK6B7-so&hn=www.google.com&frm=0&tiba=MedLife%20Promoveaz%C4%83%20Starea%20De%20Bine%20Prin%20Lectur%C4%83%20%C8%99i%20Creativitate%20%C8%99i%20Sus%C8%9Bine%20Festivalul%20Boovie%20%7C%20Libertatea&auid=1160060469.1694100187&fledge=1&capi=1&uamb=0&uaw=0&data=event%3Dconversion&gcp=1&sscte=1&ct_cookie_present=1&rfmt=3&fmt=4
+Total: 555222B	Added: 1419426B	Fraction: 0.7188248234622069	Now: 1694100211365
+Total: 555222B	Added: 1453567B	Fraction: 0.7236036238748819	Now: 1694100212430
+new:         https://tpc.googlesyndication.com/sodar/sodar2.js
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxWZJ0zkH3M95R-GKe_9zFbF3DxPbjePTUGV97pr5fDX7hOq0sxM3k84HhRRs6Lihj3mu2mQV_4VMS1dbb4xtz6TeX4r6LTmVehbtxVaVbtgOViQfGEpNsy9h9lVVDpjbpjGcpIELKQqFys1wc5KnWFKBQslMh7WuXwiVO-FOS7SNHRIhLYUEG7ke1gB/_/adzone4./placeholder-ad-_550x150.-bannerads//ads/leaderboard?
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxWZJ0zkH3M95R-GKe_9zFbF3DxPbjePTUGV97pr5fDX7hOq0sxM3k84HhRRs6Lihj3mu2mQV_4VMS1dbb4xtz6TeX4r6LTmVehbtxVaVbtgOViQfGEpNsy9h9lVVDpjbpjGcpIELKQqFys1wc5KnWFKBQslMh7WuXwiVO-FOS7SNHRIhLYUEG7ke1gB/_/adzone4./placeholder-ad-_550x150.-bannerads//ads/leaderboard?
+new:         https://pagead2.googlesyndication.com/pagead/osd.js?fcd=true
+Total: 555222B	Added: 1486757B	Fraction: 0.7280961263558539	Now: 1694100213444
+warning:     frame-src    https://tpc.googlesyndication.com
+Total: 555222B	Added: 1519544B	Fraction: 0.7323929541933886	Now: 1694100214650
+warning:     frame-src    https://www.google.com
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxVKauixO8bXFvEf9ETHW1Lxnl7Z1QV9Evrf4Yn42SNHS0G-iLiVRiFiByMq7dxvvwYzP3GWIdt7cpyUuLc9dn31e_G2bRhmpcuMLBV_iSStex0kA-WEEfqdF4EY6XDMhPtFuujnMA==?fccs=W1siQUtzUm9sX0RMQTBVNTdtZU9tV2psajZKU1dQZFI5akNkNmVRcE01b0VYd1NUQTJoQmdhYzNZOFpDMGZtTVJVMWhGbVg1azlaaHk3bi1rbC1RMEExR0dhX0Z4SldETnF0N2JHbW1wSWZIYTR0SHFabTJCUjFDNEQ3VjhSN0FDdEtDM0xlWU54TEl6c05iYXhNLVd5SmNaaUpaUV9zSmN6WGJBPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDAyMTMsMjc1MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9wdWJsaWNpdGF0ZS1hZHZlcnRvcmlhbC9tZWRsaWZlLXByb21vdmVhemEtc3RhcmVhLWRlLWJpbmUtcHJpbi1sZWN0dXJhLXNpLWNyZWF0aXZpdGF0ZS1zaS1zdXN0aW5lLWZlc3RpdmFsdWwtYm9vdmllLTQ2MTY3NTkiLG51bGwsW1s4LCI4c2RrTnAwd1F5WSJdLFs5LCJlbi1HQiJdLFsxNiwiWzEsMSwxXSJdLFs3LCIxMCJdLFsxMSwiW1tdLFtdLFtdXSJdLFsxOSwiMiJdLFsxNywiWzBdIl1dXQ
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxVKauixO8bXFvEf9ETHW1Lxnl7Z1QV9Evrf4Yn42SNHS0G-iLiVRiFiByMq7dxvvwYzP3GWIdt7cpyUuLc9dn31e_G2bRhmpcuMLBV_iSStex0kA-WEEfqdF4EY6XDMhPtFuujnMA==?fccs=W1siQUtzUm9sX0RMQTBVNTdtZU9tV2psajZKU1dQZFI5akNkNmVRcE01b0VYd1NUQTJoQmdhYzNZOFpDMGZtTVJVMWhGbVg1azlaaHk3bi1rbC1RMEExR0dhX0Z4SldETnF0N2JHbW1wSWZIYTR0SHFabTJCUjFDNEQ3VjhSN0FDdEtDM0xlWU54TEl6c05iYXhNLVd5SmNaaUpaUV9zSmN6WGJBPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDAyMTMsMjc1MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9wdWJsaWNpdGF0ZS1hZHZlcnRvcmlhbC9tZWRsaWZlLXByb21vdmVhemEtc3RhcmVhLWRlLWJpbmUtcHJpbi1sZWN0dXJhLXNpLWNyZWF0aXZpdGF0ZS1zaS1zdXN0aW5lLWZlc3RpdmFsdWwtYm9vdmllLTQ2MTY3NTkiLG51bGwsW1s4LCI4c2RrTnAwd1F5WSJdLFs5LCJlbi1HQiJdLFsxNiwiWzEsMSwxXSJdLFs3LCIxMCJdLFsxMSwiW1tdLFtdLFtdXSJdLFsxOSwiMiJdLFsxNywiWzBdIl1dXQ
+Total: 555222B	Added: 1536880B	Fraction: 0.7346104539836011	Now: 1694100215832
+Total: 555222B	Added: 1554484B	Fraction: 0.7368249414847376	Now: 1694100217176
+Total: 555222B	Added: 1554484B	Fraction: 0.7368249414847376	Now: 1694100218428
+Total: 557062B	Added: 1573246B	Fraction: 0.7385063568272757	Now: 1694100219647
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 595650B	Added: 1690325B	Fraction: 0.7394328459410099	Now: 1694100220844
+Total: 595650B	Added: 1690325B	Fraction: 0.7394328459410099	Now: 1694100221897
+Total: 622923B	Added: 1690325B	Fraction: 0.7307149946741551	Now: 1694100223032
+new:         https://www.google.com/pagead/1p-conversion/10963632302/?random=1694100220329&cv=11&fst=1694100220329&bg=ffffff&guid=ON&async=1&gtm=45be38u0h1&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.libertatea.ro%2Fsubiect%2Feconomiseste-inteligent&label=IdugCOaBnNIDEK6B7-so&hn=www.google.com&frm=0&tiba=Economise%C8%99te%20inteligent%20-%20Cele%20mai%20Noi%20%C8%98tiri%20%7C%20Libertatea&auid=1160060469.1694100187&fledge=1&capi=1&uamb=0&uaw=0&data=event%3Dconversion&gcp=1&sscte=1&ct_cookie_present=1&rfmt=3&fmt=4
+violation:   script-src    eval
+Total: 767933B	Added: 1749734B	Fraction: 0.6949822990887993	Now: 1694100224113
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxVB4KFKgicHvDGB8F59ShXwf1J9mqwoUeyKsl4vozNKDVX2bPl0ifPAYs9IUPggLKyTNRCFqdDpfAb1jbegQHfe4YaXkgfQS4R6dGn3qjjKg-JASbOks4tb4OI2bri4QlwQImuGLOzNMpfU72HCqHgwDqmxvZ-kiNeL0O7nqDmHC0idV-44LTOI-0D1/_=234x60_/ad-nytimes./click/zone?/cmlink/ads-_ad_logo.
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxVB4KFKgicHvDGB8F59ShXwf1J9mqwoUeyKsl4vozNKDVX2bPl0ifPAYs9IUPggLKyTNRCFqdDpfAb1jbegQHfe4YaXkgfQS4R6dGn3qjjKg-JASbOks4tb4OI2bri4QlwQImuGLOzNMpfU72HCqHgwDqmxvZ-kiNeL0O7nqDmHC0idV-44LTOI-0D1/_=234x60_/ad-nytimes./click/zone?/cmlink/ads-_ad_logo.
+Total: 767933B	Added: 1809351B	Fraction: 0.702037881739071	Now: 1694100225222
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxWnRt4LWSMOrazZrdiT9ZoYstt9VBm-6XLCEJEY0v-QO2fvbgaYHHND3LKM5iLuwzB0XRlnESFFEAjpBQ4gj7nY4OLPygiuiLBJ_ZFYayw-n8vdzyjSu2dItNOewpFeR4vtfma8vQ==?fccs=W1siQUtzUm9sX1dGVy1kUG4tLWFPdGk0S0hmSlI0VVlOVF9pRWxGSk5QYTh2bWJxN2IyR1pYMnJROEc0T2xpU09HUjlyX2ZNTnM0OW0zRkoyLURGRldwcktiWjBTM3E0ZnRZR3RJSHZOVDQtTk5tZ2cxTVRtZVEybXN3MV83d3hWekJNSUVjdVNsenFtdmszZFd6YUI0ZEJUWThaZEYwMTV3OHRBPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDAyMjUsMTM4MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9zdWJpZWN0L2Vjb25vbWlzZXN0ZS1pbnRlbGlnZW50IixudWxsLFtbOCwiOHNka05wMHdReVkiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiMTAiXSxbMTEsIltbXSxbXSxbXV0iXSxbMTksIjIiXSxbMTcsIlswXSJdXV0
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxWnRt4LWSMOrazZrdiT9ZoYstt9VBm-6XLCEJEY0v-QO2fvbgaYHHND3LKM5iLuwzB0XRlnESFFEAjpBQ4gj7nY4OLPygiuiLBJ_ZFYayw-n8vdzyjSu2dItNOewpFeR4vtfma8vQ==?fccs=W1siQUtzUm9sX1dGVy1kUG4tLWFPdGk0S0hmSlI0VVlOVF9pRWxGSk5QYTh2bWJxN2IyR1pYMnJROEc0T2xpU09HUjlyX2ZNTnM0OW0zRkoyLURGRldwcktiWjBTM3E0ZnRZR3RJSHZOVDQtTk5tZ2cxTVRtZVEybXN3MV83d3hWekJNSUVjdVNsenFtdmszZFd6YUI0ZEJUWThaZEYwMTV3OHRBPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDAyMjUsMTM4MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9zdWJpZWN0L2Vjb25vbWlzZXN0ZS1pbnRlbGlnZW50IixudWxsLFtbOCwiOHNka05wMHdReVkiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiMTAiXSxbMTEsIltbXSxbXSxbXV0iXSxbMTksIjIiXSxbMTcsIlswXSJdXV0
+Total: 767933B	Added: 1809351B	Fraction: 0.702037881739071	Now: 1694100227064
+Total: 768628B	Added: 1809351B	Fraction: 0.701848618627227	Now: 1694100230152
+Total: 769828B	Added: 1872099B	Fraction: 0.7086111766146453	Now: 1694100231420
+violation:   script-src    eval
+Total: 823059B	Added: 2085185B	Fraction: 0.716991077777518	Now: 1694100232527
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxWDerK8cZUiQGLBOeJvo6jGI5zbWcGgZ-UswKIAFpUL7GxHTLEdNzbNFus1BOPW7CRIYTPcsdm9oyPiwGqZpPP2mdX7YYN6SQ1Wur7LdnzzWYNRK4v7L4eZ8IIEVQfN4xoQbCCA3Q==?fccs=W1siQUtzUm9sLUw3VzRJOGhqd0hUV24zajFwUUJLc2h3Y25fUFZ3dGFNVEpIRS1wN1BZSzlrblVXeWdmTms3THZQSjFJdzVnejNqbkdMdUotRGZvTE1VNEl6d2Y1dm93Zlo3ZFFweGJydGZHZ0hHQlJBVG4wb3RwSzcxOTFFSElac3B5aDdldjFtVzRMbnIzbHpsU1pEVUlxaTMwUEVhSmJSRDd3PT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDAyMzIsNDQ0MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbN11dLCJodHRwczovL3d3dy5saWJlcnRhdGVhLnJvL2xpZmVzdHlsZS96b2RpaS1zZS1pbnRvcmMtZHVwYS1kZXNwYXJ0aXJlLTM5NzI0ODYiLG51bGwsW1s4LCI4c2RrTnAwd1F5WSJdLFs5LCJlbi1HQiJdLFsxNiwiWzEsMSwxXSJdLFs3LCIxMCJdLFsxMSwiW1tdLFtdLFtdXSJdLFsxOSwiMiJdLFsxNywiWzBdIl1dXQ
+violation:   script-src    eval
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 823347B	Added: 2148777B	Fraction: 0.7229769013675069	Now: 1694100233644
+Total: 823347B	Added: 2148777B	Fraction: 0.7229769013675069	Now: 1694100234751
+Total: 823347B	Added: 2148777B	Fraction: 0.7229769013675069	Now: 1694100236041
+new:         https://collector.brandmetrics.com/c.js?siteid=6e02183c-e1a8-4694-98e5-858d7d5e3c66&toploc=www.libertatea.ro&rnd=4317532
+violation:   script-src-elem    https://collector.brandmetrics.com/c.js?siteid=6e02183c-e1a8-4694-98e5-858d7d5e3c66&toploc=www.libertatea.ro&rnd=4317532
+Total: 823347B	Added: 2191291B	Fraction: 0.7268836258283747	Now: 1694100237172
+new:         https://www.google.com/pagead/1p-conversion/10963632302/?random=1694100232832&cv=11&fst=1694100232832&bg=ffffff&guid=ON&async=1&gtm=45be38u0h1&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.libertatea.ro%2Flifestyle%2Fzodii-se-intorc-dupa-despartire-3972486&label=IdugCOaBnNIDEK6B7-so&hn=www.google.com&frm=0&tiba=Top%205%20Zodii%20Care%20Se%20%C3%AEntorc%20Dup%C4%83%20Desp%C4%83r%C8%9Bire.%20%C8%98i%203%20Care%20Nu%20Se%20Mai%20%C3%AEntorc%20Niciodat%C4%83%20%7C%20Libertatea&auid=1160060469.1694100187&fledge=1&capi=1&uamb=0&uaw=0&data=event%3Dconversion&gcp=1&sscte=1&ct_cookie_present=1&rfmt=3&fmt=4
+new:         https://cdn.taboola.com/libtrc/google-topics-api.20230906-27-RELEASE.es6.js
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxURc-4VlExA_OB3gypfcbeSBbb4RzGyaDVENektS_obGMHFZ77U1v5-Zd-__vSky6EWsyHDUBR6Z_3dVD958s1PXGgyvAIgXUC8dlDCdDC7xDSVCDI1uD4JXZxCz2c2-QDUPwc1l3qBlzOUURLcWjTTp1xUo0T8qrVq6uSe864vMYvI4TMBjaNu37m2/__adbar./your-ad-/ad-strip./adgooglefull2.-160x600.
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxURc-4VlExA_OB3gypfcbeSBbb4RzGyaDVENektS_obGMHFZ77U1v5-Zd-__vSky6EWsyHDUBR6Z_3dVD958s1PXGgyvAIgXUC8dlDCdDC7xDSVCDI1uD4JXZxCz2c2-QDUPwc1l3qBlzOUURLcWjTTp1xUo0T8qrVq6uSe864vMYvI4TMBjaNu37m2/__adbar./your-ad-/ad-strip./adgooglefull2.-160x600.
+Total: 823347B	Added: 2255630B	Fraction: 0.7325907273747092	Now: 1694100238262
+Total: 823347B	Added: 2298268B	Fraction: 0.7362432586978215	Now: 1694100239267
+Total: 823347B	Added: 2362241B	Fraction: 0.741540023380299	Now: 1694100240446
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxW2y_yTZq1zVCFCyzzRMHkMxc81xO6_B801bdSUU3vQOuvaDkakSCXoesz6kHXYudCXDyJnCewo6LkKqshOG5ayx2hjwuwQNEt6fJMA8wusLe5hKxEsXby0WxbudAquvR3D_G6-OQ==?fccs=W1siQUtzUm9sLUw3VzRJOGhqd0hUV24zajFwUUJLc2h3Y25fUFZ3dGFNVEpIRS1wN1BZSzlrblVXeWdmTms3THZQSjFJdzVnejNqbkdMdUotRGZvTE1VNEl6d2Y1dm93Zlo3ZFFweGJydGZHZ0hHQlJBVG4wb3RwSzcxOTFFSElac3B5aDdldjFtVzRMbnIzbHpsU1pEVUlxaTMwUEVhSmJSRDd3PT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDAyMzgsNjIzMDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9saWZlc3R5bGUvem9kaWktc2UtaW50b3JjLWR1cGEtZGVzcGFydGlyZS0zOTcyNDg2IixudWxsLFtbOCwiOHNka05wMHdReVkiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiMTAiXSxbMTEsIltbXSxbXSxbXV0iXSxbMTksIjIiXSxbMTcsIlswXSJdXV0
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxW2y_yTZq1zVCFCyzzRMHkMxc81xO6_B801bdSUU3vQOuvaDkakSCXoesz6kHXYudCXDyJnCewo6LkKqshOG5ayx2hjwuwQNEt6fJMA8wusLe5hKxEsXby0WxbudAquvR3D_G6-OQ==?fccs=W1siQUtzUm9sLUw3VzRJOGhqd0hUV24zajFwUUJLc2h3Y25fUFZ3dGFNVEpIRS1wN1BZSzlrblVXeWdmTms3THZQSjFJdzVnejNqbkdMdUotRGZvTE1VNEl6d2Y1dm93Zlo3ZFFweGJydGZHZ0hHQlJBVG4wb3RwSzcxOTFFSElac3B5aDdldjFtVzRMbnIzbHpsU1pEVUlxaTMwUEVhSmJSRDd3PT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDAyMzgsNjIzMDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9saWZlc3R5bGUvem9kaWktc2UtaW50b3JjLWR1cGEtZGVzcGFydGlyZS0zOTcyNDg2IixudWxsLFtbOCwiOHNka05wMHdReVkiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiMTAiXSxbMTEsIltbXSxbXSxbXV0iXSxbMTksIjIiXSxbMTcsIlswXSJdXV0
+Total: 823347B	Added: 2511966B	Fraction: 0.7531425086641044	Now: 1694100241768
+Total: 823347B	Added: 2596903B	Fraction: 0.7592728601710401	Now: 1694100242858
+Total: 823347B	Added: 2596903B	Fraction: 0.7592728601710401	Now: 1694100243942
+Total: 823347B	Added: 2596903B	Fraction: 0.7592728601710401	Now: 1694100245042
+Total: 824273B	Added: 2620213B	Fraction: 0.7606978225488505	Now: 1694100246106
+violation:   script-src-attr    inline
+Total: 824561B	Added: 2644435B	Fraction: 0.7623055777521796	Now: 1694100247247
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxUKpDog55553t73qtUlGTFyp1wfP0WrHrixVVQcQfahdn7nxZCjXSIUHGd9bTQY8ULyuNPNWDgwp7dcClOP-dtf2RD_GS-GrlpJzN3vKILM_gwiYjdvTXoAUU1qGbxgEhEhT9LKUQ==?fccs=W1siQUtzUm9sLURPQWRTUHc4cGdWTUx6aGZSR2ZBb2JJMFJwZDdWQUhBY1VVR3ZDWWRmcUlsWmFmMVZFVVVRanVyZ1IyWFItalVLeWxETTJGUGVWZzVyTlpuWGYtTloyeXRJbXNINzBGdDFHSUZYVTZOODA3Q3g3M2RCQ2xySkYxc0tGRG1LTHlhQTRXVy1BcXcxVmtCVlMwT3hJMFB6Q0pvM3JRPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDAyNDcsOTA5MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbN11dLCJodHRwczovL3d3dy5saWJlcnRhdGVhLnJvL3N0aXJpL2NpbmUtY2xhdWRpYS1zaGVpbmJhdW0tcHJpbWEtZmVtZWllLWNhcmUtYXJlLXNhbnNlLXNhLWRldmluYS1wcmVzZWRpbnRlLWFsLW1leGljdWx1aS1pbi0yMDI0LTQ2NTQ2MjYiLG51bGwsW1s4LCI4c2RrTnAwd1F5WSJdLFs5LCJlbi1HQiJdLFsxNiwiWzEsMSwxXSJdLFs3LCIxMCJdLFsxMSwiW1tdLFtdLFtdXSJdLFsxOSwiMiJdLFsxNywiWzBdIl1dXQ
+warning:     frame-src    https://platform.twitter.com
+violation:   script-src    eval
+Total: 894126B	Added: 2855668B	Fraction: 0.7615533013280196	Now: 1694100248442
+violation:   script-src    eval
+Total: 894414B	Added: 2904058B	Fraction: 0.7645332123022099	Now: 1694100250013
+Total: 894414B	Added: 2904058B	Fraction: 0.7645332123022099	Now: 1694100251204
+Total: 894414B	Added: 2928234B	Fraction: 0.7660224012255379	Now: 1694100252394
+violation:   script-src    eval
+Total: 894414B	Added: 2977296B	Fraction: 0.7689873466762748	Now: 1694100253700
+new:         https://cdn.taboola.com/ui-ab-tests/em-dividers/em-dividers.js
+Total: 894414B	Added: 3171965B	Fraction: 0.7800465721468658	Now: 1694100254931
+new:         https://cdn.ampproject.org/rtv/012307272333000/v0/amp-ad-exit-0.1.mjs
+new:         https://cdn.ampproject.org/rtv/012307272333000/amp4ads-v0.mjs
+Total: 894414B	Added: 3269453B	Fraction: 0.7851963091040132	Now: 1694100256066
+Total: 894414B	Added: 3342469B	Fraction: 0.7888981121262966	Now: 1694100257213
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxVgbdrPNJHeL-Qkmy6JzRaqDfLeTYLmVVOQXzhfESDcJYLkr6sbVbuQo5jQHxPlGfdpM05FykLDC3YaWNZeSZGMJ4C8mGuaQA-FqjPNfKqUrijyNHvaVxtXWmnRQ7zHGlNAMMVFmQ==?fccs=W1siQUtzUm9sLURPQWRTUHc4cGdWTUx6aGZSR2ZBb2JJMFJwZDdWQUhBY1VVR3ZDWWRmcUlsWmFmMVZFVVVRanVyZ1IyWFItalVLeWxETTJGUGVWZzVyTlpuWGYtTloyeXRJbXNINzBGdDFHSUZYVTZOODA3Q3g3M2RCQ2xySkYxc0tGRG1LTHlhQTRXVy1BcXcxVmtCVlMwT3hJMFB6Q0pvM3JRPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDAyNTQsNzgwMDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9zdGlyaS9jaW5lLWNsYXVkaWEtc2hlaW5iYXVtLXByaW1hLWZlbWVpZS1jYXJlLWFyZS1zYW5zZS1zYS1kZXZpbmEtcHJlc2VkaW50ZS1hbC1tZXhpY3VsdWktaW4tMjAyNC00NjU0NjI2IixudWxsLFtbOCwiOHNka05wMHdReVkiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiMTAiXSxbMTEsIltbXSxbXSxbXV0iXSxbMTksIjIiXSxbMTcsIlswXSJdXV0
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxVgbdrPNJHeL-Qkmy6JzRaqDfLeTYLmVVOQXzhfESDcJYLkr6sbVbuQo5jQHxPlGfdpM05FykLDC3YaWNZeSZGMJ4C8mGuaQA-FqjPNfKqUrijyNHvaVxtXWmnRQ7zHGlNAMMVFmQ==?fccs=W1siQUtzUm9sLURPQWRTUHc4cGdWTUx6aGZSR2ZBb2JJMFJwZDdWQUhBY1VVR3ZDWWRmcUlsWmFmMVZFVVVRanVyZ1IyWFItalVLeWxETTJGUGVWZzVyTlpuWGYtTloyeXRJbXNINzBGdDFHSUZYVTZOODA3Q3g3M2RCQ2xySkYxc0tGRG1LTHlhQTRXVy1BcXcxVmtCVlMwT3hJMFB6Q0pvM3JRPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDAyNTQsNzgwMDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9zdGlyaS9jaW5lLWNsYXVkaWEtc2hlaW5iYXVtLXByaW1hLWZlbWVpZS1jYXJlLWFyZS1zYW5zZS1zYS1kZXZpbmEtcHJlc2VkaW50ZS1hbC1tZXhpY3VsdWktaW4tMjAyNC00NjU0NjI2IixudWxsLFtbOCwiOHNka05wMHdReVkiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiMTAiXSxbMTEsIltbXSxbXSxbXV0iXSxbMTksIjIiXSxbMTcsIlswXSJdXV0
+Total: 894414B	Added: 3562441B	Fraction: 0.799317231545563	Now: 1694100258330
+Total: 894414B	Added: 3683738B	Fraction: 0.8046342716449781	Now: 1694100259546
+Total: 894414B	Added: 3757329B	Fraction: 0.8077249753479502	Now: 1694100260683
+Total: 895283B	Added: 3782792B	Fraction: 0.8086214949525179	Now: 1694100261735
+Total: 895571B	Added: 3782792B	Fraction: 0.8085717162178309	Now: 1694100262736
+violation:   script-src    eval
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxWA2InV2j7MAFNLyg8JSedcaPfYnHeZFwZ3N1T3gqP1xAoCtqWpuDBRqf48bBS1WMMUJxde40Sni0LY4R4OoSRz8zlN-YQAFlypoLBtlMT1akClJvy6X6zOqUyXHSxs-Gd_v6c7mg==?fccs=W1siQUtzUm9sX2hGSmJlZ29KSEY3TEJqN0U1NVRPNDZmYjEwczF3S2VXNW4tXzBNdGIzNktOcXQ0azIxNXlzQV9yYkF5MDJJQVZHX0hBTkVaaTFvMzhSOXNybENKZmFLaXZ3Q29BQ3B5UzAzbW42ZjE2clVhSF9jc3ZZblgwbFVsS2JCQ2UyYWVQZVhHX2htelIyYjdmczdsdmVYY2VGbVA5ZEJnPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDAyNjMsNDE4MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbN11dLCJodHRwczovL3d3dy5saWJlcnRhdGVhLnJvL3RlaG5vbG9naWUiLG51bGwsW1s4LCI4c2RrTnAwd1F5WSJdLFs5LCJlbi1HQiJdLFsxNiwiWzEsMSwxXSJdLFs3LCIxMCJdLFsxMSwiW1tdLFtdLFtdXSJdLFsxOSwiMiJdLFsxNywiWzBdIl1dXQ
+Total: 896548B	Added: 4091372B	Fraction: 0.8202561388314167	Now: 1694100263748
+violation:   script-src    eval
+Total: 1005884B	Added: 4170106B	Fraction: 0.8056634576187357	Now: 1694100264922
+Total: 1005884B	Added: 4170106B	Fraction: 0.8056634576187357	Now: 1694100266084
+Total: 1005884B	Added: 4170106B	Fraction: 0.8056634576187357	Now: 1694100267475
+new:         https://www.google.com/pagead/1p-conversion/10963632302/?random=1694100263696&cv=11&fst=1694100263696&bg=ffffff&guid=ON&async=1&gtm=45be38u0h1&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.libertatea.ro%2Ftehnologie&label=IdugCOaBnNIDEK6B7-so&hn=www.google.com&frm=0&tiba=Stiri%20Tehnologie%20-%20Ultimele%20Stiri%20din%20Lumea%20Digitala%20%7C%20Libertatea&auid=1160060469.1694100187&fledge=1&capi=1&uamb=0&uaw=0&data=event%3Dconversion&gcp=1&sscte=1&ct_cookie_present=1&rfmt=3&fmt=4
+warning:     frame-src    https://232f20324c616e36d5819896f13a6e4c.safeframe.googlesyndication.com
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxVqUsPrO04M9ahpgbiLmmIfzG6KzipxBB_BRWlwkdU2OoAChURXgptPV2RpCUipHwki0fF1NN6SwYLrcTejqZsouI8vM3h4H3En036AsWv4BWGAECiB3GUPEPyr4fQlvgm8I8DjKUrAU24NgAXTeRxZ7L9ohEoH64I7DE9Lh-rdX9VpWARo38ii7Tb4/_/index-ad-/ads/square./widget-advert?/adstr3mov./topads.
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxVqUsPrO04M9ahpgbiLmmIfzG6KzipxBB_BRWlwkdU2OoAChURXgptPV2RpCUipHwki0fF1NN6SwYLrcTejqZsouI8vM3h4H3En036AsWv4BWGAECiB3GUPEPyr4fQlvgm8I8DjKUrAU24NgAXTeRxZ7L9ohEoH64I7DE9Lh-rdX9VpWARo38ii7Tb4/_/index-ad-/ads/square./widget-advert?/adstr3mov./topads.
+Total: 1005884B	Added: 4276141B	Fraction: 0.8095647029311674	Now: 1694100268564
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxVorxg7Z3CwMJTPnp_kfETL-00jgmATQ0g0nMOGeD3MgHYD7rzN4MgzlvDFdWL694P0tTgo26nDR9ZqPX-TKgVj3B8O9nWVy2UZt2QOYKOKlAfBdhwcc-ohXewkh_2QPdB-frA-FA==?fccs=W1siQUtzUm9sX2hGSmJlZ29KSEY3TEJqN0U1NVRPNDZmYjEwczF3S2VXNW4tXzBNdGIzNktOcXQ0azIxNXlzQV9yYkF5MDJJQVZHX0hBTkVaaTFvMzhSOXNybENKZmFLaXZ3Q29BQ3B5UzAzbW42ZjE2clVhSF9jc3ZZblgwbFVsS2JCQ2UyYWVQZVhHX2htelIyYjdmczdsdmVYY2VGbVA5ZEJnPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDAyNjgsNDQ3MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby90ZWhub2xvZ2llIixudWxsLFtbOCwiOHNka05wMHdReVkiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiMTAiXSxbMTEsIltbXSxbXSxbXV0iXSxbMTksIjIiXSxbMTcsIlswXSJdXV0
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxVorxg7Z3CwMJTPnp_kfETL-00jgmATQ0g0nMOGeD3MgHYD7rzN4MgzlvDFdWL694P0tTgo26nDR9ZqPX-TKgVj3B8O9nWVy2UZt2QOYKOKlAfBdhwcc-ohXewkh_2QPdB-frA-FA==?fccs=W1siQUtzUm9sX2hGSmJlZ29KSEY3TEJqN0U1NVRPNDZmYjEwczF3S2VXNW4tXzBNdGIzNktOcXQ0azIxNXlzQV9yYkF5MDJJQVZHX0hBTkVaaTFvMzhSOXNybENKZmFLaXZ3Q29BQ3B5UzAzbW42ZjE2clVhSF9jc3ZZblgwbFVsS2JCQ2UyYWVQZVhHX2htelIyYjdmczdsdmVYY2VGbVA5ZEJnPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDAyNjgsNDQ3MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby90ZWhub2xvZ2llIixudWxsLFtbOCwiOHNka05wMHdReVkiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiMTAiXSxbMTEsIltbXSxbXSxbXV0iXSxbMTksIjIiXSxbMTcsIlswXSJdXV0
+new:         https://cdn.ampproject.org/rtv/012307272333000/v0/amp-analytics-0.1.mjs
+new:         https://cdn.ampproject.org/rtv/012307272333000/v0/amp-fit-text-0.1.mjs
+Total: 1005884B	Added: 4407717B	Fraction: 0.8141931775171461	Now: 1694100270245
+Total: 1005884B	Added: 4671057B	Fraction: 0.8228123209312903	Now: 1694100271470
+Total: 1005884B	Added: 4803418B	Fraction: 0.8268494218410405	Now: 1694100272784
+Total: 1005884B	Added: 4939061B	Fraction: 0.8308001167378336	Now: 1694100274283
+Total: 1007377B	Added: 5024270B	Fraction: 0.8329847552418104	Now: 1694100275375
+Total: 1007665B	Added: 5024270B	Fraction: 0.8329449836578147	Now: 1694100276606
+Total: 1007665B	Added: 5053038B	Fraction: 0.8337379343617399	Now: 1694100278223
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxWckshdiJ9ScnEG6fCS7NeKFkSieNS-m4R_0pdH1wG8UpSibCf2eRKnHY9Fm39yIJ6apZdAaW5eXKHFAbTEUyk-LJDPAs-X_1sbs9NukyuDtzbCd-XaqE6KAqQJBMcy648jdJWbtA==?fccs=W1siQUtzUm9sOENhYVc1YVlYQkdoSWtlRnp1Y1NzcEExWGxJWDMwRGliMlZ0QVBucVFiMk51Z0FRNFJuWVc4UTA0Q2NlSVcwVXNXUkp0U2dyYWNJVU1Jdjk3XzByVjF1cG5zbkt3N2tTQWVfQk5OZHlxRGJabFlGZ3hfN182YjNBc3hXRzlsN3JoaFdJY1JxRkVVM3E0aG8yM05PWXloRHZOQjdRPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDAyNzgsODMwMDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbN11dLCJodHRwczovL3d3dy5saWJlcnRhdGVhLnJvL3RlaG5vbG9naWUiLG51bGwsW1s4LCI4c2RrTnAwd1F5WSJdLFs5LCJlbi1HQiJdLFsxNiwiWzEsMSwxXSJdLFs3LCIxMCJdLFsxMSwiW1tdLFtdLFtdXSJdLFsxOSwiMiJdLFsxNywiWzBdIl1dXQ
+Total: 1007953B	Added: 5111116B	Fraction: 0.8352767389941183	Now: 1694100279286
+new:         https://www.google.com/pagead/1p-conversion/10963632302/?random=1694100276061&cv=11&fst=1694100276061&bg=ffffff&guid=ON&async=1&gtm=45be38u0h1&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.libertatea.ro%2Ftehnologie&label=IdugCOaBnNIDEK6B7-so&hn=www.google.com&frm=0&tiba=Stiri%20Tehnologie%20-%20Ultimele%20Stiri%20din%20Lumea%20Digitala%20%7C%20Libertatea&auid=1160060469.1694100187&fledge=1&capi=1&uamb=0&uaw=0&data=event%3Dconversion&gcp=1&sscte=1&ct_cookie_present=1&rfmt=3&fmt=4
+Total: 1007953B	Added: 5197445B	Fraction: 0.8375683558089264	Now: 1694100280516
+new:         https://cdn.ampproject.org/rtv/012307272333000/v0/amp-form-0.1.mjs
+Total: 1007953B	Added: 5312635B	Fraction: 0.8405286027186079	Now: 1694100281655
+Total: 1007953B	Added: 5456710B	Fraction: 0.8440826691197979	Now: 1694100282863
+Total: 1007953B	Added: 5629495B	Fraction: 0.848141484498259	Now: 1694100283960
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxXQ-5CxDuFnlsAV1CbdPoqy2HAandguPE0qWjIWtFasbQesXU3ZlVD4gqRpi343WNPmoDhbtNIRBDALp-1RgV2vUorYYLcoix9wQJI3uSEFHEnggRYupNm4Fjt0bfXmhW8_FqHlv2lXdhFG2mCFcriu3ckt0MvSDp7t6reaG9KwbTwn1vHUqGdkjDN4/_-auto-ads-/adx_iframe_/ad-maven-/sponsored_content-.eu/ads/
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxXQ-5CxDuFnlsAV1CbdPoqy2HAandguPE0qWjIWtFasbQesXU3ZlVD4gqRpi343WNPmoDhbtNIRBDALp-1RgV2vUorYYLcoix9wQJI3uSEFHEnggRYupNm4Fjt0bfXmhW8_FqHlv2lXdhFG2mCFcriu3ckt0MvSDp7t6reaG9KwbTwn1vHUqGdkjDN4/_-auto-ads-/adx_iframe_/ad-maven-/sponsored_content-.eu/ads/
+new:         https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?fcd=true
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxXcRspV5HPDfyKuDEvxdm2_gpJyfeg3IoBFs9sFvI_mlt0H73aGh7crCsYbyrh0VPILmA7Wt1jDPvImhGXN0w4xxSVwLrPlbtWJ2_EzpRnu7JbxclIeNbqXVF3iooXex1lT00DW0g==?fccs=W1siQUtzUm9sOENhYVc1YVlYQkdoSWtlRnp1Y1NzcEExWGxJWDMwRGliMlZ0QVBucVFiMk51Z0FRNFJuWVc4UTA0Q2NlSVcwVXNXUkp0U2dyYWNJVU1Jdjk3XzByVjF1cG5zbkt3N2tTQWVfQk5OZHlxRGJabFlGZ3hfN182YjNBc3hXRzlsN3JoaFdJY1JxRkVVM3E0aG8yM05PWXloRHZOQjdRPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDAyODQsNzgzMDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby90ZWhub2xvZ2llIixudWxsLFtbOCwiOHNka05wMHdReVkiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiMTAiXSxbMTEsIltbXSxbXSxbXV0iXSxbMTksIjIiXSxbMTcsIlswXSJdXV0
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxXcRspV5HPDfyKuDEvxdm2_gpJyfeg3IoBFs9sFvI_mlt0H73aGh7crCsYbyrh0VPILmA7Wt1jDPvImhGXN0w4xxSVwLrPlbtWJ2_EzpRnu7JbxclIeNbqXVF3iooXex1lT00DW0g==?fccs=W1siQUtzUm9sOENhYVc1YVlYQkdoSWtlRnp1Y1NzcEExWGxJWDMwRGliMlZ0QVBucVFiMk51Z0FRNFJuWVc4UTA0Q2NlSVcwVXNXUkp0U2dyYWNJVU1Jdjk3XzByVjF1cG5zbkt3N2tTQWVfQk5OZHlxRGJabFlGZ3hfN182YjNBc3hXRzlsN3JoaFdJY1JxRkVVM3E0aG8yM05PWXloRHZOQjdRPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDAyODQsNzgzMDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby90ZWhub2xvZ2llIixudWxsLFtbOCwiOHNka05wMHdReVkiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiMTAiXSxbMTEsIltbXSxbXSxbXV0iXSxbMTksIjIiXSxbMTcsIlswXSJdXV0
+Total: 1007953B	Added: 5834118B	Fraction: 0.852683054589758	Now: 1694100285123
+warning:     frame-src    https://googleads.g.doubleclick.net
+Total: 1007953B	Added: 5862713B	Fraction: 0.8532961724525686	Now: 1694100286160
+Total: 1007953B	Added: 5892279B	Fraction: 0.8539247665875582	Now: 1694100287235
+Total: 1007953B	Added: 5892279B	Fraction: 0.8539247665875582	Now: 1694100288465
+violation:   script-src-attr    inline
+Total: 1009151B	Added: 5984991B	Fraction: 0.8557148253495568	Now: 1694100289672
+Total: 1009439B	Added: 5984991B	Fraction: 0.8556795907600763	Now: 1694100291260
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxVkFUoo9RPcwMKmC1MRtmZP7Htq02uzl7pSN0vpOL7KQwIgrJulGkSODmDL1IL2yKsVlyQUQ6FJzaN0Rd1qeafBPv2nkT_pgHvg4MzKv-83J2wdR7FPyUzr-TcW-K3J56RK4MW95w==?fccs=W1siQUtzUm9sX0xkV2hsSWJlcXJLQ3d4dXdlSVYyY2d6TjN1N01QN2FORmpNOGJ6VkhpR18zdjBZZEZ2bjl4QWxJeW5iZ09PcEZmRWQ4M1NEdlZGcVptVG9hNzQ5UjdaNjVDS0xZLWxveFJsNE4ycGRTdC1DbEhFbXFzNkJhMDV5SWp2eV8xZ1JjemM4bGNMSWs0STNFOHdSTWp4M18wMEZRV1RRPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDAyODksODg1MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbN11dLCJodHRwczovL3d3dy5saWJlcnRhdGVhLnJvL1B1YmxpY2l0YXRlIixudWxsLFtbOCwiOHNka05wMHdReVkiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiMTAiXSxbMTEsIltbXSxbXSxbXV0iXSxbMTksIjIiXSxbMTcsIlswXSJdXV0
+Total: 1009439B	Added: 6047937B	Fraction: 0.8569668103272378	Now: 1694100292415
+new:         https://www.google.com/pagead/1p-conversion/10963632302/?random=1694100289632&cv=11&fst=1694100289632&bg=ffffff&guid=ON&async=1&gtm=45be38u0h1&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.libertatea.ro%2FPublicitate&label=IdugCOaBnNIDEK6B7-so&hn=www.google.com&frm=0&tiba=Publicitate%20%7C%20Libertatea&auid=1160060469.1694100187&fledge=1&capi=1&uamb=0&uaw=0&data=event%3Dconversion&gcp=1&sscte=1&ct_cookie_present=1&rfmt=3&fmt=4
+violation:   script-src    eval
+Total: 1009439B	Added: 6110601B	Fraction: 0.8582256560356403	Now: 1694100293777
+new:         https://pagead2.googlesyndication.com/pagead/js/google_top_exp.js?fcd=true
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxU4edrxSL4L-Qj1w2LcI5pG_imkFH02mjRu-4SATQjmHMz7iuzhdF4PPvq-7NwAlbNAbiDDWMNAwH81PbE76YHnkQOawpmqhJDoBCs1R7rmeN_RRajBghJZtbYm3geqoalTPbHkm7xHkjJ8xDj6wCsQsmconA732UM7NYWhKSb8Jc4yH7Yg7gm2UZzX/_.aspx?ad=/ad_check.-advertise..adv.cdn./YahooAd_
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxU4edrxSL4L-Qj1w2LcI5pG_imkFH02mjRu-4SATQjmHMz7iuzhdF4PPvq-7NwAlbNAbiDDWMNAwH81PbE76YHnkQOawpmqhJDoBCs1R7rmeN_RRajBghJZtbYm3geqoalTPbHkm7xHkjJ8xDj6wCsQsmconA732UM7NYWhKSb8Jc4yH7Yg7gm2UZzX/_.aspx?ad=/ad_check.-advertise..adv.cdn./YahooAd_
+Total: 1010134B	Added: 6173095B	Fraction: 0.8593760549747196	Now: 1694100294893
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxVHP61pbi8XrdGkn1q50DprWlrBJCwiIT6nYPK2R3GnUVZ3xHhoQoKt_XD6wtrgoseH_FYZg2GAcEfgqb_dhuGlR1RCiJ7piHmqdqcYX9Z9DTVE7NShEfRr5xCmmfVU0eGQHbC2TQ==?fccs=W1siQUtzUm9sX0xkV2hsSWJlcXJLQ3d4dXdlSVYyY2d6TjN1N01QN2FORmpNOGJ6VkhpR18zdjBZZEZ2bjl4QWxJeW5iZ09PcEZmRWQ4M1NEdlZGcVptVG9hNzQ5UjdaNjVDS0xZLWxveFJsNE4ycGRTdC1DbEhFbXFzNkJhMDV5SWp2eV8xZ1JjemM4bGNMSWs0STNFOHdSTWp4M18wMEZRV1RRPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDAyOTQsODAyMDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9QdWJsaWNpdGF0ZSIsbnVsbCxbWzgsIjhzZGtOcDB3UXlZIl0sWzksImVuLUdCIl0sWzE2LCJbMSwxLDFdIl0sWzcsIjEwIl0sWzExLCJbW10sW10sW11dIl0sWzE5LCIyIl0sWzE3LCJbMF0iXV1d
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxVHP61pbi8XrdGkn1q50DprWlrBJCwiIT6nYPK2R3GnUVZ3xHhoQoKt_XD6wtrgoseH_FYZg2GAcEfgqb_dhuGlR1RCiJ7piHmqdqcYX9Z9DTVE7NShEfRr5xCmmfVU0eGQHbC2TQ==?fccs=W1siQUtzUm9sX0xkV2hsSWJlcXJLQ3d4dXdlSVYyY2d6TjN1N01QN2FORmpNOGJ6VkhpR18zdjBZZEZ2bjl4QWxJeW5iZ09PcEZmRWQ4M1NEdlZGcVptVG9hNzQ5UjdaNjVDS0xZLWxveFJsNE4ycGRTdC1DbEhFbXFzNkJhMDV5SWp2eV8xZ1JjemM4bGNMSWs0STNFOHdSTWp4M18wMEZRV1RRPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDAyOTQsODAyMDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9QdWJsaWNpdGF0ZSIsbnVsbCxbWzgsIjhzZGtOcDB3UXlZIl0sWzksImVuLUdCIl0sWzE2LCJbMSwxLDFdIl0sWzcsIjEwIl0sWzExLCJbW10sW10sW11dIl0sWzE5LCIyIl0sWzE3LCJbMF0iXV1d
+Total: 1010134B	Added: 6204933B	Fraction: 0.8599965876962751	Now: 1694100299514
+violation:   script-src-attr    inline
+Total: 1090273B	Added: 6339153B	Fraction: 0.8532493627367713	Now: 1694100300707
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxXLvpNuDQe4ruYDyEWyKnT2NCAz_K4-r2W-d2pnm48uedlEcFvE8Ryrhv84TIkZ5Odn_pBCW0eGJIMJ5o_huJ9ZJjo4tkZB8m-olWgNjGgzZ0PKTC6siUU9Yzj59aYuqeLetSjnmQ==?fccs=W1siQUtzUm9sLVpsb25LWXJIODY5SXdWYU50ajdtZF9IQU5Td1ZaaGl4ak1SRFFQY3Zzd01YTHgtOURhMmNRTVVUMGRQb0dBeWxkdlczR2ptdkFUakdXTXBuWGVWRk5ZcTlQWlU0WmxOWHZSY3REODNyZnoxN244MHlkbHhDTjBBOFo4TjhjdkdmNnN3OHQyXzNXSFZZQV9XTHp2bXQtZ0tqUVZ3PT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDAzMDAsNDcwMDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbN11dLCJodHRwczovL3d3dy5saWJlcnRhdGVhLnJvL3N0aXJpL2NvcGlpaS1yYW1hc2ktZmFyYS11bi1wYXJpbnRlLXJpc2NhLXNhLW51LW1haS1pYS1idXJzYS1zb2NpYWxhLXRyZWJ1aWUtc2EtbGUtemljLWNhLWFyLXByaW1pLWRvYXItZGFjYS1hci1yYW1hbmUtc2ktZmFyYS1taW5lLTQ2NTQxOTkiLG51bGwsW1s4LCI4c2RrTnAwd1F5WSJdLFs5LCJlbi1HQiJdLFsxNiwiWzEsMSwxXSJdLFs3LCIxMCJdLFsxMSwiW1tdLFtdLFtdXSJdLFsxOSwiMiJdLFsxNywiWzBdIl1dXQ
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 1090561B	Added: 6473518B	Fraction: 0.8558236898371897	Now: 1694100301850
+Total: 1090561B	Added: 6473518B	Fraction: 0.8558236898371897	Now: 1694100302875
+Total: 1090561B	Added: 6473518B	Fraction: 0.8558236898371897	Now: 1694100303994
+violation:   script-src    eval
+Total: 1090561B	Added: 6507120B	Fraction: 0.8564613333989674	Now: 1694100305052
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxWhhdIjaEEUr7swq723e1XNq-Wp8jMa-mQ0WSJUAaZ_2TD4jRDuhiN32QN0i9L0nsNDkusVR-dnMuj9DS8x-uVKqKLV_AW4Ch1uGXgnue0XzTmqjWEmM0McVEO_ojJTzAYyld-WLfmMZ2u101kxpwf_MFJbbm9oWWy0A1eGpHOO_3Rri6J4yyi25C8b/_/ugoads_inner./ad728f./microad.?q=ads_/localcom-ad-
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxWhhdIjaEEUr7swq723e1XNq-Wp8jMa-mQ0WSJUAaZ_2TD4jRDuhiN32QN0i9L0nsNDkusVR-dnMuj9DS8x-uVKqKLV_AW4Ch1uGXgnue0XzTmqjWEmM0McVEO_ojJTzAYyld-WLfmMZ2u101kxpwf_MFJbbm9oWWy0A1eGpHOO_3Rri6J4yyi25C8b/_/ugoads_inner./ad728f./microad.?q=ads_/localcom-ad-
+Total: 1090561B	Added: 6642156B	Fraction: 0.8589679410225409	Now: 1694100306265
+Total: 1090561B	Added: 6675919B	Fraction: 0.8595810457247041	Now: 1694100307682
+violation:   script-src    eval
+Total: 1090561B	Added: 6810860B	Fraction: 0.8619791300830573	Now: 1694100308943
+Total: 1090561B	Added: 6844522B	Fraction: 0.8625646385803399	Now: 1694100310201
+Total: 1090561B	Added: 6844522B	Fraction: 0.8625646385803399	Now: 1694100311547
+Total: 1090561B	Added: 6844522B	Fraction: 0.8625646385803399	Now: 1694100312651
+warning:     frame-src    https://tsdtocl.com
+Total: 1090561B	Added: 6877950B	Fraction: 0.8631411815833598	Now: 1694100313921
+Total: 1091486B	Added: 6911794B	Fraction: 0.8636201657320498	Now: 1694100314969
+Total: 1091774B	Added: 6980174B	Fraction: 0.8647446688209587	Now: 1694100316327
+Total: 1423505B	Added: 7084350B	Fraction: 0.8326834437117229	Now: 1694100317688
+violation:   script-src    eval
+Total: 1423793B	Added: 7153736B	Fraction: 0.8340089552597257	Now: 1694100319089
+Total: 1423793B	Added: 7153736B	Fraction: 0.8340089552597257	Now: 1694100320377
+Total: 1423793B	Added: 7188411B	Fraction: 0.8346772788939975	Now: 1694100322054
+warning:     frame-src    https://8ccd2439c223582d1d7cfdf145ac8652.safeframe.googlesyndication.com
+Total: 1423793B	Added: 7223003B	Fraction: 0.8353386618581032	Now: 1694100323111
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxUYAcvbpzBfN0vl7moKT-zqkKVZ3qB9mXOUZJq_WPXdHrfjpMwBlX9HmlgUVwTYGCYTNHgsaANSeCZD3fcs2KhBTjX0TiuisaUCdvImpezyRK5nvoFZxkCqgQ2aiqC7fo8e40ZoYd0ftfPCwStD_DjarbI-3HKYbh9_xMdek-X-44MJ6-3BBlP6eB_j/_=160x600,/adinclude./adv-banner./AdsAjaxRefresh.-ads-ns.
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxUYAcvbpzBfN0vl7moKT-zqkKVZ3qB9mXOUZJq_WPXdHrfjpMwBlX9HmlgUVwTYGCYTNHgsaANSeCZD3fcs2KhBTjX0TiuisaUCdvImpezyRK5nvoFZxkCqgQ2aiqC7fo8e40ZoYd0ftfPCwStD_DjarbI-3HKYbh9_xMdek-X-44MJ6-3BBlP6eB_j/_=160x600,/adinclude./adv-banner./AdsAjaxRefresh.-ads-ns.
+Total: 1423793B	Added: 7362306B	Fraction: 0.8379493561363239	Now: 1694100324311
+violation:   script-src-elem    inline
+violation:   script-src-elem    inline
+violation:   script-src-elem    inline
+violation:   script-src-elem    inline
+violation:   script-src-elem    inline
+Total: 1423793B	Added: 7431932B	Fraction: 0.8392234402039359	Now: 1694100325474
+Total: 1423793B	Added: 7431932B	Fraction: 0.8392234402039359	Now: 1694100326940
+Total: 1423793B	Added: 7431932B	Fraction: 0.8392234402039359	Now: 1694100328048
+Total: 1424776B	Added: 7460564B	Fraction: 0.8396486797353844	Now: 1694100329090
+Total: 1424776B	Added: 7517911B	Fraction: 0.8406769687902529	Now: 1694100330209
+Total: 1425064B	Added: 7517911B	Fraction: 0.8406498955884367	Now: 1694100331847
+new:         https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202308310101/pubads_impl_fy2021.js?cb=31076165
+Total: 1425064B	Added: 7546699B	Fraction: 0.8411612076689944	Now: 1694100333027
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxWqQxr9yaz7klEsfoIfBB69DIoaaaGCPOaHG8kzTJFATaP70sB62hW1qn0qeK9rPfg0c_cebx4SVlH5jPV8sTBwksjDf9iM4i5YWI1y_ubzm7vT5U2ltNu7yoyUPaQsue0f3G7TLg==?fccs=W1siQUtzUm9sX0lKOVdXM3FRU19uMjg0dFN4bUZGbTQ4N0NpRW5rc3pDVE0zQkRHVzFqVUdDdmUzNlM0VG1fOFhOREVZd3h2NUYxODBsSFpVMXVkbDhlRk1JbjhHcm10aGhaYks5WWx5anYtTi1aQ2J0cmZOcGcxSlRfN2hFVHZER0ZwWldkVGNfWkRtWkJzR3FUeFhCVlNUUjJaREFYNlRvQ0ZRPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDAzMzAsOTU1MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbN11dLCJodHRwczovL3d3dy5saWJlcnRhdGVhLnJvL3RlaG5vbG9naWUiLG51bGwsW1s4LCI4c2RrTnAwd1F5WSJdLFs5LCJlbi1HQiJdLFsxNiwiWzEsMSwxXSJdLFs3LCIxMCJdLFsxMSwiW1tdLFtdLFtdXSJdLFsxOSwiMiJdLFsxNywiWzBdIl1dXQ
+Total: 1425064B	Added: 7604923B	Fraction: 0.8421853763466105	Now: 1694100334268
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxXHli2qOAAKI1bAtbiuot9yzgfmyUF1r2yjSryOHww4XNySOUist82gk16i-Up-TcjwB4mMwnSPwjFwQ70KkVPNWsspFQArWJSphJe-kZL-LinmKS4DurTaHTAkk9n6ePjBVegj_bqLp1zzGpVkm5zB9SCY3X7f5yd2bl7kKkK5Ue7bm31mSd-Wdlf9/_/weeklyAdsLabel.=web&ads=-your-ads-here./adsrotator./bg-advert-
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxXHli2qOAAKI1bAtbiuot9yzgfmyUF1r2yjSryOHww4XNySOUist82gk16i-Up-TcjwB4mMwnSPwjFwQ70KkVPNWsspFQArWJSphJe-kZL-LinmKS4DurTaHTAkk9n6ePjBVegj_bqLp1zzGpVkm5zB9SCY3X7f5yd2bl7kKkK5Ue7bm31mSd-Wdlf9/_/weeklyAdsLabel.=web&ads=-your-ads-here./adsrotator./bg-advert-
+new:         https://pagead2.googlesyndication.com/pagead/show_companion_ad.js?fcd=true
+violation:   script-src-elem    inline
+violation:   script-src-elem    inline
+violation:   script-src-elem    inline
+violation:   script-src-elem    inline
+violation:   script-src-elem    inline
+violation:   script-src-elem    inline
+violation:   script-src-elem    inline
+violation:   script-src-elem    inline
+violation:   script-src-elem    inline
+violation:   script-src-elem    inline
+Total: 1425064B	Added: 7921476B	Fraction: 0.8475303160313871	Now: 1694100335409
+violation:   script-src-elem    inline
+violation:   script-src-elem    inline
+Total: 1425064B	Added: 8094190B	Fraction: 0.8502966724073125	Now: 1694100336478
+violation:   script-src-elem    inline
+violation:   script-src-elem    inline
+violation:   script-src-elem    inline
+violation:   script-src-elem    inline
+violation:   script-src-elem    inline
+Total: 1425064B	Added: 8238130B	Fraction: 0.8525266076620215	Now: 1694100338115
+violation:   script-src-elem    inline
+violation:   script-src-elem    inline
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxWbnsYYxoXqsbOzAQuhQOIU_ro-QKQpQxOx-fBKNZByxWlG7RPLM5a1rU8DOZMkXrjuoX0Yx2hti6ECR2CdRHpm-ZpX-0G8neopgMs3Gidgx0-91GcAsqAyPMuXZL7EK0nKoT0RLA==?fccs=W1siQUtzUm9sX0lKOVdXM3FRU19uMjg0dFN4bUZGbTQ4N0NpRW5rc3pDVE0zQkRHVzFqVUdDdmUzNlM0VG1fOFhOREVZd3h2NUYxODBsSFpVMXVkbDhlRk1JbjhHcm10aGhaYks5WWx5anYtTi1aQ2J0cmZOcGcxSlRfN2hFVHZER0ZwWldkVGNfWkRtWkJzR3FUeFhCVlNUUjJaREFYNlRvQ0ZRPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDAzMzUsMzQ0MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby90ZWhub2xvZ2llIixudWxsLFtbOCwiOHNka05wMHdReVkiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiMTAiXSxbMTEsIltbXSxbXSxbXV0iXSxbMTksIjIiXSxbMTcsIlswXSJdXV0
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxWbnsYYxoXqsbOzAQuhQOIU_ro-QKQpQxOx-fBKNZByxWlG7RPLM5a1rU8DOZMkXrjuoX0Yx2hti6ECR2CdRHpm-ZpX-0G8neopgMs3Gidgx0-91GcAsqAyPMuXZL7EK0nKoT0RLA==?fccs=W1siQUtzUm9sX0lKOVdXM3FRU19uMjg0dFN4bUZGbTQ4N0NpRW5rc3pDVE0zQkRHVzFqVUdDdmUzNlM0VG1fOFhOREVZd3h2NUYxODBsSFpVMXVkbDhlRk1JbjhHcm10aGhaYks5WWx5anYtTi1aQ2J0cmZOcGcxSlRfN2hFVHZER0ZwWldkVGNfWkRtWkJzR3FUeFhCVlNUUjJaREFYNlRvQ0ZRPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDAzMzUsMzQ0MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby90ZWhub2xvZ2llIixudWxsLFtbOCwiOHNka05wMHdReVkiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiMTAiXSxbMTEsIltbXSxbXSxbXV0iXSxbMTksIjIiXSxbMTcsIlswXSJdXV0
+violation:   script-src-elem    inline
+Total: 1425064B	Added: 8412997B	Fraction: 0.8551478792416514	Now: 1694100339361
+Total: 1426556B	Added: 8449242B	Fraction: 0.8555503059094567	Now: 1694100340453
+Total: 1426844B	Added: 8449242B	Fraction: 0.8555253569075847	Now: 1694100341624
+Total: 1426844B	Added: 8474117B	Fraction: 0.8558883324558091	Now: 1694100342798
+Total: 1426844B	Added: 8484067B	Fraction: 0.8560330125051068	Now: 1694100343856
+Total: 1426844B	Added: 8518892B	Fraction: 0.8565371129899285	Now: 1694100344978
+warning:     frame-src    https://securepubads.g.doubleclick.net
+warning:     frame-src    https://1942a4ad8e7896d7619caf24b6eefd22.safeframe.googlesyndication.com
+Total: 1427132B	Added: 8528808B	Fraction: 0.8566552229121509	Now: 1694100346096
+Total: 1427132B	Added: 8528808B	Fraction: 0.8566552229121509	Now: 1694100347178
+Total: 1427132B	Added: 8538950B	Fraction: 0.8568010979640746	Now: 1694100348446
+Total: 1427132B	Added: 8564317B	Fraction: 0.8571646615020504	Now: 1694100349655
+Total: 1427132B	Added: 8575305B	Fraction: 0.8573215707332124	Now: 1694100351040
+Total: 1427132B	Added: 8575305B	Fraction: 0.8573215707332124	Now: 1694100352054
+Total: 1427132B	Added: 8575305B	Fraction: 0.8573215707332124	Now: 1694100353819
+Total: 1428685B	Added: 8611646B	Fraction: 0.8577053883980518	Now: 1694100355030
+Total: 1428973B	Added: 8611646B	Fraction: 0.8576807864136663	Now: 1694100356338
+Total: 1428973B	Added: 8638541B	Fraction: 0.858060987052017	Now: 1694100357376
+Total: 1499929B	Added: 8681573B	Fraction: 0.852680969860832	Now: 1694100359199
+Total: 1500217B	Added: 8681573B	Fraction: 0.8526568511037843	Now: 1694100360432
+Total: 1500217B	Added: 8681573B	Fraction: 0.8526568511037843	Now: 1694100361489
+warning:     frame-src    https://c22d8d6d42eb9c60ca06ec54eeee8eb2.safeframe.googlesyndication.com
+Total: 1500217B	Added: 8686798B	Fraction: 0.8527324245620528	Now: 1694100362712
+Total: 1500217B	Added: 8708717B	Fraction: 0.8530486140864463	Now: 1694100363737
+Total: 1500217B	Added: 8708717B	Fraction: 0.8530486140864463	Now: 1694100364770
+Total: 1500217B	Added: 8714220B	Fraction: 0.8531277837437344	Now: 1694100365981
+warning:     frame-src    https://p.teads.tv
+Total: 1500217B	Added: 8741589B	Fraction: 0.8535202678121417	Now: 1694100367148
+warning:     frame-src    https://sync.teads.tv
+Total: 1500217B	Added: 8763619B	Fraction: 0.8538346676622658	Now: 1694100368427
+Total: 1500217B	Added: 8763619B	Fraction: 0.8538346676622658	Now: 1694100369436
+Total: 1501127B	Added: 8817281B	Fraction: 0.8545195150259614	Now: 1694100370954
+Total: 1501127B	Added: 8822524B	Fraction: 0.8545933991763185	Now: 1694100372255
+violation:   script-src-attr    inline
+Total: 1503074B	Added: 8827900B	Fraction: 0.8545080066990779	Now: 1694100373472
+Total: 1513296B	Added: 8827900B	Fraction: 0.8536633480305372	Now: 1694100374517
+Total: 1513296B	Added: 8827900B	Fraction: 0.8536633480305372	Now: 1694100375718
+Total: 1513296B	Added: 8827900B	Fraction: 0.8536633480305372	Now: 1694100377827
+Total: 1513936B	Added: 8827900B	Fraction: 0.8536105194474173	Now: 1694100383141
+Total: 1514512B	Added: 8872675B	Fraction: 0.8541942106173692	Now: 1694100384881
+Total: 1514512B	Added: 8897550B	Fraction: 0.8545425488246228	Now: 1694100386124
+Total: 1514512B	Added: 8897550B	Fraction: 0.8545425488246228	Now: 1694100387288
+warning:     frame-src    https://e3c4649bf842f5792fca8313bbab9f34.safeframe.googlesyndication.com
+Total: 1514512B	Added: 8902525B	Fraction: 0.8546120168335776	Now: 1694100388310
+Total: 1514512B	Added: 8902525B	Fraction: 0.8546120168335776	Now: 1694100389432
+Total: 1514512B	Added: 8927965B	Fraction: 0.8549662115607245	Now: 1694100390506
+Total: 1514512B	Added: 8948317B	Fraction: 0.8552483271971663	Now: 1694100392254
+Total: 1514512B	Added: 8948317B	Fraction: 0.8552483271971663	Now: 1694100393309
+Total: 1514512B	Added: 8948317B	Fraction: 0.8552483271971663	Now: 1694100394345
+Total: 1516066B	Added: 8984903B	Fraction: 0.8556260855545808	Now: 1694100395642
+Total: 1516354B	Added: 8984903B	Fraction: 0.8556026197625675	Now: 1694100397240
+Total: 1516354B	Added: 9006535B	Fraction: 0.8558994587893116	Now: 1694100398384
+violation:   script-src-attr    inline
+Total: 1587620B	Added: 9055290B	Fraction: 0.8508283918589935	Now: 1694100399507
+Total: 1587908B	Added: 9055290B	Fraction: 0.8508053688374491	Now: 1694100400954
+Total: 1587908B	Added: 9055290B	Fraction: 0.8508053688374491	Now: 1694100402011
+warning:     frame-src    https://8adfaa6dec64fdacf93cddc4b03e9248.safeframe.googlesyndication.com
+Total: 1587908B	Added: 9060652B	Fraction: 0.8508804946396508	Now: 1694100403036
+Total: 1587908B	Added: 9060652B	Fraction: 0.8508804946396508	Now: 1694100404499
+Total: 1587908B	Added: 9082692B	Fraction: 0.8511884992409049	Now: 1694100405612
+Total: 1587908B	Added: 9094661B	Fraction: 0.8513552311246481	Now: 1694100406627
+Total: 1587908B	Added: 9119573B	Fraction: 0.8517010676927654	Now: 1694100407723
+Total: 1587908B	Added: 9119573B	Fraction: 0.8517010676927654	Now: 1694100408756
+Total: 1588549B	Added: 9119573B	Fraction: 0.8516500839269482	Now: 1694100409868
+Total: 1589416B	Added: 9183179B	Fraction: 0.8524574626633601	Now: 1694100412154
+Total: 1589992B	Added: 9199352B	Fraction: 0.8526331165268249	Now: 1694100413360
+Total: 1589992B	Added: 9226307B	Fraction: 0.853000365466968	Now: 1694100414421
+Total: 1589992B	Added: 9226307B	Fraction: 0.853000365466968	Now: 1694100415559
+warning:     frame-src    https://3adec1f62d0f2854de32c5a1d33f8579.safeframe.googlesyndication.com
+Total: 1738239B	Added: 9231693B	Fraction: 0.8415451435797414	Now: 1694100416722
+Total: 1738239B	Added: 9231693B	Fraction: 0.8415451435797414	Now: 1694100417899
+Total: 1738239B	Added: 9237192B	Fraction: 0.8416245339249092	Now: 1694100419860
+Total: 1738934B	Added: 9237192B	Fraction: 0.8415712428957175	Now: 1694100421726
+Total: 1740132B	Added: 9273908B	Fraction: 0.8420078372695214	Now: 1694100422795
+violation:   script-src-attr    inline
+Total: 1740132B	Added: 9284929B	Fraction: 0.8421657712370026	Now: 1694100424621
+Total: 1740420B	Added: 9284929B	Fraction: 0.8421437725009884	Now: 1694100425671
+Total: 1740420B	Added: 9284929B	Fraction: 0.8421437725009884	Now: 1694100427082
+Total: 1741115B	Added: 9284929B	Fraction: 0.842090690006316	Now: 1694100428176
+Total: 1741115B	Added: 9284929B	Fraction: 0.842090690006316	Now: 1694100432512
+Total: 1742271B	Added: 9354261B	Fraction: 0.8429895935054303	Now: 1694100433524
+Total: 1748481B	Added: 9392313B	Fraction: 0.843055979672544	Now: 1694100435496
+Total: 1827309B	Added: 9392313B	Fraction: 0.837132748322537	Now: 1694100436687
+Total: 1827309B	Added: 9392313B	Fraction: 0.837132748322537	Now: 1694100437697
+warning:     frame-src    https://22e965fa4793c6ab07d235a8d5e52295.safeframe.googlesyndication.com
+Total: 1827309B	Added: 9403274B	Fraction: 0.8372917060494545	Now: 1694100438879
+Total: 1827309B	Added: 9419858B	Fraction: 0.8375316201848875	Now: 1694100439903
+Total: 1827309B	Added: 9425402B	Fraction: 0.8376116653133632	Now: 1694100441541
+Total: 1827309B	Added: 9437311B	Fraction: 0.8377833428912826	Now: 1694100442583
+Total: 1828819B	Added: 9474092B	Fraction: 0.8381992922000359	Now: 1694100443881
+Total: 1829107B	Added: 9518228B	Fraction: 0.8388073499196067	Now: 1694100445055
+Total: 1829395B	Added: 9545967B	Fraction: 0.8391791839239929	Now: 1694100446340
+Total: 1829395B	Added: 9564385B	Fraction: 0.8394391501327918	Now: 1694100448106
+Total: 1895794B	Added: 9564385B	Fraction: 0.8345755332442888	Now: 1694100449242
+warning:     frame-src    https://100a74a7e51ee6a18684bb8ef24e4de1.safeframe.googlesyndication.com
+Total: 1930290B	Added: 9569899B	Fraction: 0.8321514542065352	Now: 1694100450390
+Total: 1930290B	Added: 9581149B	Fraction: 0.832315490704507	Now: 1694100451484
+Total: 1930290B	Added: 9609154B	Fraction: 0.8327224431263759	Now: 1694100452753
+Total: 1930290B	Added: 9609154B	Fraction: 0.8327224431263759	Now: 1694100453825
+Total: 1930290B	Added: 9609154B	Fraction: 0.8327224431263759	Now: 1694100454925
+Total: 1930290B	Added: 9609154B	Fraction: 0.8327224431263759	Now: 1694100456090
+Total: 1931156B	Added: 9646025B	Fraction: 0.8331928990312927	Now: 1694100457118
+Total: 1932139B	Added: 9651620B	Fraction: 0.8332027625920049	Now: 1694100458374
+Total: 1932139B	Added: 9707570B	Fraction: 0.8340045270891222	Now: 1694100459599
+Total: 1932427B	Added: 9713165B	Fraction: 0.8340636525820242	Now: 1694100460762
+warning:     frame-src    https://412fbbc70d4c97153b24118930a845ac.safeframe.googlesyndication.com
+Total: 2078532B	Added: 9724358B	Fraction: 0.8238963508089968	Now: 1694100462860
+Total: 2078532B	Added: 9724358B	Fraction: 0.8238963508089968	Now: 1694100464061
+Total: 2078532B	Added: 9769862B	Fraction: 0.8245726804831102	Now: 1694100465226
+Total: 2078532B	Added: 9781268B	Fraction: 0.8247413953017757	Now: 1694100466240
+Total: 2078532B	Added: 9781268B	Fraction: 0.8247413953017757	Now: 1694100467284
+Total: 2078532B	Added: 9781268B	Fraction: 0.8247413953017757	Now: 1694100468370
+Total: 2078532B	Added: 9781268B	Fraction: 0.8247413953017757	Now: 1694100469374
+Total: 2078532B	Added: 9781268B	Fraction: 0.8247413953017757	Now: 1694100470385
+Total: 2079397B	Added: 9818229B	Fraction: 0.8252258896018416	Now: 1694100471512
+Total: 2079685B	Added: 9818229B	Fraction: 0.8252059142468167	Now: 1694100472688
+Total: 2079685B	Added: 9863709B	Fraction: 0.8258715236221797	Now: 1694100473969
+Total: 2079685B	Added: 9886449B	Fraction: 0.8262024309605759	Now: 1694100475012
+Total: 2079973B	Added: 9886449B	Fraction: 0.826182546462092	Now: 1694100476302
+warning:     frame-src    https://6e98c6793764b9b61ef202dc406fa30c.safeframe.googlesyndication.com
+Total: 2079973B	Added: 9903699B	Fraction: 0.8264327494944789	Now: 1694100477569
+Total: 2079973B	Added: 9944082B	Fraction: 0.8270156781551647	Now: 1694100479551
+Total: 2079973B	Added: 9955620B	Fraction: 0.8271815107074492	Now: 1694100480767
+Total: 2079973B	Added: 9955620B	Fraction: 0.8271815107074492	Now: 1694100481984
+Total: 2079973B	Added: 9955620B	Fraction: 0.8271815107074492	Now: 1694100483031
+Total: 2081108B	Added: 10004146B	Fraction: 0.8277977442592436	Now: 1694100484529
+Total: 2081108B	Added: 10061646B	Fraction: 0.8286131795143012	Now: 1694100486037
+Total: 2081396B	Added: 10061646B	Fraction: 0.8285935270585411	Now: 1694100488312
+warning:     frame-src    https://10a72643493d64e35829c0bdedbbb23c.safeframe.googlesyndication.com
+Total: 2081396B	Added: 10067399B	Fraction: 0.8286746957208513	Now: 1694100489472
+Total: 2081396B	Added: 10073233B	Fraction: 0.8287569287388369	Now: 1694100490862
+Total: 2081396B	Added: 10131604B	Fraction: 0.8295753705068369	Now: 1694100491896
+Total: 2081396B	Added: 10131604B	Fraction: 0.8295753705068369	Now: 1694100492988
+Total: 2081396B	Added: 10131604B	Fraction: 0.8295753705068369	Now: 1694100494165
+Total: 2082090B	Added: 10131604B	Fraction: 0.8295282328180156	Now: 1694100495401
+Total: 2082952B	Added: 10168695B	Fraction: 0.8299859602549763	Now: 1694100497159
+Total: 2116531B	Added: 10232902B	Fraction: 0.8286131031278926	Now: 1694100498289
+Total: 2154493B	Added: 10238739B	Fraction: 0.8261556791642406	Now: 1694100499362
+Total: 2195181B	Added: 10238739B	Fraction: 0.8234522178042001	Now: 1694100500450
+warning:     frame-src    https://1876a52baa459fcf2ddf3ed367833576.safeframe.googlesyndication.com
+Total: 2195181B	Added: 10244568B	Fraction: 0.8235349443143909	Now: 1694100501651
+Total: 2195181B	Added: 10256443B	Fraction: 0.8237032374250941	Now: 1694100502893
+Total: 2195181B	Added: 10256443B	Fraction: 0.8237032374250941	Now: 1694100503943
+Total: 2195181B	Added: 10256443B	Fraction: 0.8237032374250941	Now: 1694100505069
+Total: 2195822B	Added: 10256443B	Fraction: 0.8236608360005188	Now: 1694100506292
+Total: 2195822B	Added: 10256443B	Fraction: 0.8236608360005188	Now: 1694100508581
+Total: 2195822B	Added: 10256443B	Fraction: 0.8236608360005188	Now: 1694100509884
+Total: 2196732B	Added: 10293610B	Fraction: 0.8241255523667806	Now: 1694100511031
+Total: 2197020B	Added: 10341666B	Fraction: 0.8247806827605381	Now: 1694100512175
+Total: 2221777B	Added: 10359687B	Fraction: 0.823408706649719	Now: 1694100514170
+warning:     frame-src    https://intrebarea-zilei.libertatea.ro
+Total: 2293189B	Added: 10365605B	Fraction: 0.818846171286143	Now: 1694100515424
+Total: 2309337B	Added: 10402803B	Fraction: 0.8183360944734718	Now: 1694100516530
+Total: 2309337B	Added: 10402803B	Fraction: 0.8183360944734718	Now: 1694100517663
+Total: 2312205B	Added: 10402803B	Fraction: 0.8181515104040831	Now: 1694100518705
+Total: 2312205B	Added: 10402803B	Fraction: 0.8181515104040831	Now: 1694100520707
+Total: 2312205B	Added: 10402803B	Fraction: 0.8181515104040831	Now: 1694100521834
+Total: 2312205B	Added: 10402803B	Fraction: 0.8181515104040831	Now: 1694100523075
+Total: 2315080B	Added: 10402803B	Fraction: 0.8179665593715558	Now: 1694100524147
+Total: 2315080B	Added: 10458860B	Fraction: 0.8187653926666322	Now: 1694100525192
+Total: 2315080B	Added: 10483266B	Fraction: 0.8191110007496282	Now: 1694100527068
+Total: 2317953B	Added: 10519645B	Fraction: 0.8194402878170823	Now: 1694100528147
+Total: 2318863B	Added: 10593462B	Fraction: 0.8204147587673017	Now: 1694100529184
+Total: 2322297B	Added: 10675865B	Fraction: 0.8213365089618055	Now: 1694100530400
+violation:   script-src-attr    inline
+Total: 2322585B	Added: 10682002B	Fraction: 0.8214026327787265	Now: 1694100531570
+Total: 2322585B	Added: 10682002B	Fraction: 0.8214026327787265	Now: 1694100532668
+Total: 2322585B	Added: 10682002B	Fraction: 0.8214026327787265	Now: 1694100533762
+Total: 2323226B	Added: 10682002B	Fraction: 0.8213621475917223	Now: 1694100534815
+Total: 2323226B	Added: 10682002B	Fraction: 0.8213621475917223	Now: 1694100540058
+Total: 2324440B	Added: 10737920B	Fraction: 0.8220505329817889	Now: 1694100541368
+Total: 2370752B	Added: 10787568B	Fraction: 0.8198286711373488	Now: 1694100542840
+Total: 2371393B	Added: 10787568B	Fraction: 0.819788735600022	Now: 1694100544700
+Total: 2371393B	Added: 10787568B	Fraction: 0.819788735600022	Now: 1694100547999
+Total: 2371393B	Added: 10787568B	Fraction: 0.819788735600022	Now: 1694100550134
+Total: 2371681B	Added: 10787568B	Fraction: 0.8197707939108075	Now: 1694100551242
+Total: 2371681B	Added: 10787568B	Fraction: 0.8197707939108075	Now: 1694100552244
+warning:     frame-src    https://www.youtube.com
+Total: 2371681B	Added: 10793637B	Fraction: 0.8198538766781023	Now: 1694100553452
+warning:     frame-src    https://4dfa10be1946a6ab5cab76be2bf3f614.safeframe.googlesyndication.com
+Total: 2371681B	Added: 10818550B	Fraction: 0.8201941270020214	Now: 1694100554527
+Total: 2371681B	Added: 10837444B	Fraction: 0.8204513167980468	Now: 1694100555586
+Total: 2371681B	Added: 10851022B	Fraction: 0.8206356899947008	Now: 1694100556618
+warning:     frame-src    https://cs.seedtag.com
+Total: 2371681B	Added: 10869466B	Fraction: 0.8208855320464307	Now: 1694100557937
+Total: 2371681B	Added: 10869466B	Fraction: 0.8208855320464307	Now: 1694100559883
+Total: 2371681B	Added: 10869466B	Fraction: 0.8208855320464307	Now: 1694100561092
+Total: 2372532B	Added: 10906891B	Fraction: 0.8213377192668687	Now: 1694100562449
+Total: 2372532B	Added: 10906891B	Fraction: 0.8213377192668687	Now: 1694100563925
+Total: 2373108B	Added: 10906891B	Fraction: 0.8213020949775673	Now: 1694100564928
+Total: 2373108B	Added: 10969997B	Fraction: 0.8221472438386718	Now: 1694100566163
+warning:     frame-src    https://cfe02b5160ee496372a97a17aa6d3391.safeframe.googlesyndication.com
+Total: 2373108B	Added: 10988462B	Fraction: 0.8223930271667177	Now: 1694100568455
+Total: 2373108B	Added: 11038422B	Fraction: 0.8230546402983104	Now: 1694100569524
+Total: 2373108B	Added: 11038422B	Fraction: 0.8230546402983104	Now: 1694100570704
+Total: 2373108B	Added: 11038422B	Fraction: 0.8230546402983104	Now: 1694100571764
+Total: 2373108B	Added: 11045507B	Fraction: 0.823148067069515	Now: 1694100572906
+Total: 2374674B	Added: 11083018B	Fraction: 0.8235452260313284	Now: 1694100574099
+Total: 2374674B	Added: 11083018B	Fraction: 0.8235452260313284	Now: 1694100576754
+violation:   script-src-attr    inline
+Total: 2374962B	Added: 11109357B	Fraction: 0.8238723067883517	Now: 1694100577956
+Total: 2440433B	Added: 11148939B	Fraction: 0.8204160574896323	Now: 1694100578971
+Total: 2440721B	Added: 11148939B	Fraction: 0.820398670754088	Now: 1694100580471
+Total: 2440721B	Added: 11148939B	Fraction: 0.820398670754088	Now: 1694100581687
+Total: 2440721B	Added: 11148939B	Fraction: 0.820398670754088	Now: 1694100583026
+warning:     frame-src    https://eb69402d1842f8ca4aca0c0d29680190.safeframe.googlesyndication.com
+Total: 2440721B	Added: 11155358B	Fraction: 0.8204834643870487	Now: 1694100584177
+Total: 2440721B	Added: 11188763B	Fraction: 0.8209234480190153	Now: 1694100585466
+Total: 2440721B	Added: 11188763B	Fraction: 0.8209234480190153	Now: 1694100587187
+Total: 2441416B	Added: 11188763B	Fraction: 0.820881589302679	Now: 1694100588368
+Total: 2441416B	Added: 11188763B	Fraction: 0.820881589302679	Now: 1694100589506
+Total: 2442286B	Added: 11226339B	Fraction: 0.82132174962734	Now: 1694100590552
+Total: 2442862B	Added: 11264211B	Fraction: 0.8217809155900753	Now: 1694100591655
+Total: 2442862B	Added: 11289459B	Fraction: 0.8221085860139739	Now: 1694100592667
+warning:     frame-src    https://2d481ca7e39561e80abb224ede5ff948.safeframe.googlesyndication.com
+Total: 2442862B	Added: 11302080B	Fraction: 0.8222719310128773	Now: 1694100593995
+Total: 2576368B	Added: 11302080B	Fraction: 0.8143619517110271	Now: 1694100595467
+Total: 2576368B	Added: 11334108B	Fraction: 0.8147893716936789	Now: 1694100596487
+Total: 2576368B	Added: 11334108B	Fraction: 0.8147893716936789	Now: 1694100597806
+Total: 2576368B	Added: 11346900B	Fraction: 0.8149595339255123	Now: 1694100599432
+Total: 2576368B	Added: 11346900B	Fraction: 0.8149595339255123	Now: 1694100600550
+Total: 2576368B	Added: 11346900B	Fraction: 0.8149595339255123	Now: 1694100601701
+Total: 2577233B	Added: 11384541B	Fraction: 0.8154079130631967	Now: 1694100602826
+Total: 2577521B	Added: 11448311B	Fraction: 0.8162304382371042	Now: 1694100604009
+Total: 2777832B	Added: 11448311B	Fraction: 0.8047375174001836	Now: 1694100605278
+Total: 2777832B	Added: 11448311B	Fraction: 0.8047375174001836	Now: 1694100607193
+Total: 2777832B	Added: 11448311B	Fraction: 0.8047375174001836	Now: 1694100608515
+warning:     frame-src    https://edbb0eba4c05a05c43ef1c4928848beb.safeframe.googlesyndication.com
+Total: 2777832B	Added: 11454685B	Fraction: 0.8048249652538619	Now: 1694100609536
+Total: 2777832B	Added: 11486990B	Fraction: 0.8052669707340196	Now: 1694100610628
+Total: 2777832B	Added: 11506397B	Fraction: 0.8055315411143297	Now: 1694100611921
+Total: 2777832B	Added: 11506397B	Fraction: 0.8055315411143297	Now: 1694100613073
+Total: 2777832B	Added: 11506397B	Fraction: 0.8055315411143297	Now: 1694100614137
+Total: 2779689B	Added: 11544103B	Fraction: 0.8059390278775341	Now: 1694100615410
+Total: 2779689B	Added: 11589141B	Fraction: 0.8065472971703332	Now: 1694100617720
+Total: 2794506B	Added: 11608443B	Fraction: 0.8059768176642158	Now: 1694100618738
+warning:     frame-src    https://544d666a2db479a8c043abce4f84268e.safeframe.googlesyndication.com
+Total: 2807671B	Added: 11614878B	Fraction: 0.8053276851408167	Now: 1694100619976
+Total: 2807671B	Added: 11614878B	Fraction: 0.8053276851408167	Now: 1694100621075
+Total: 2807671B	Added: 11621420B	Fraction: 0.8054159475465225	Now: 1694100622330
+Total: 2807671B	Added: 11621420B	Fraction: 0.8054159475465225	Now: 1694100624005
+Total: 2808312B	Added: 11621420B	Fraction: 0.8053801692228241	Now: 1694100625365
+Total: 2809464B	Added: 11691896B	Fraction: 0.806262033354113	Now: 1694100626594
+Total: 2809464B	Added: 11724601B	Fraction: 0.8066979884842953	Now: 1694100628011
+Total: 2822802B	Added: 11724601B	Fraction: 0.8059583555910289	Now: 1694100629204
+Total: 2882747B	Added: 11724601B	Fraction: 0.8026508987120728	Now: 1694100630430
+warning:     frame-src    https://1064bc4fc5cfd24b41e3e49b5dfda9f6.safeframe.googlesyndication.com
+Total: 2882747B	Added: 11744396B	Fraction: 0.8029179724297493	Now: 1694100632837
+Total: 2882747B	Added: 11744396B	Fraction: 0.8029179724297493	Now: 1694100633936
+Total: 2882747B	Added: 11744396B	Fraction: 0.8029179724297493	Now: 1694100634948
+Total: 2883388B	Added: 11744396B	Fraction: 0.8028827879875722	Now: 1694100636419
+Total: 2884546B	Added: 11795364B	Fraction: 0.8035038361951811	Now: 1694100637563
+Total: 2884546B	Added: 11847892B	Fraction: 0.8042044364958468	Now: 1694100639233
+Total: 2884834B	Added: 11847892B	Fraction: 0.8041887156524868	Now: 1694100640334
+warning:     frame-src    https://c5188c73b98d0f2b1c35d52a2a730861.safeframe.googlesyndication.com
+Total: 2884834B	Added: 11854458B	Fraction: 0.8042759448689937	Now: 1694100641471
+Total: 2884834B	Added: 11881082B	Fraction: 0.8046288493040323	Now: 1694100642480
+Total: 2884834B	Added: 11914380B	Fraction: 0.8050684313369616	Now: 1694100643661
+Total: 2884834B	Added: 11921875B	Fraction: 0.8051671036420045	Now: 1694100645501
+Total: 2884834B	Added: 11921875B	Fraction: 0.8051671036420045	Now: 1694100646672
+Total: 2884834B	Added: 11921875B	Fraction: 0.8051671036420045	Now: 1694100647871
+Total: 2884834B	Added: 11921875B	Fraction: 0.8051671036420045	Now: 1694100649076
+Total: 2884834B	Added: 11921875B	Fraction: 0.8051671036420045	Now: 1694100650542
+Total: 2886032B	Added: 11959776B	Fraction: 0.8055995335518282	Now: 1694100651637
+Total: 2886032B	Added: 12028546B	Fraction: 0.8064958995152259	Now: 1694100652840
+Total: 2931682B	Added: 12028546B	Fraction: 0.8040349385049479	Now: 1694100653887
+Total: 2931970B	Added: 12028546B	Fraction: 0.8040194602913429	Now: 1694100655095
+Total: 2931970B	Added: 12028546B	Fraction: 0.8040194602913429	Now: 1694100656213
+Total: 2931970B	Added: 12028546B	Fraction: 0.8040194602913429	Now: 1694100658575
+warning:     frame-src    https://6509041879d179772401bd75e5fc5d5c.safeframe.googlesyndication.com
+Total: 2931970B	Added: 12035300B	Fraction: 0.8041078967640726	Now: 1694100659771
+Total: 2931970B	Added: 12035300B	Fraction: 0.8041078967640726	Now: 1694100660995
+Total: 2931970B	Added: 12049222B	Fraction: 0.8042899390115286	Now: 1694100662070
+Total: 2931970B	Added: 12063144B	Fraction: 0.8044716432299214	Now: 1694100663331
+Total: 2933825B	Added: 12128374B	Fraction: 0.8052193441342794	Now: 1694100664382
+Total: 2933825B	Added: 12169270B	Fraction: 0.8057467691224878	Now: 1694100665472
+Total: 3068075B	Added: 12169270B	Fraction: 0.7986476646686151	Now: 1694100666592
+Total: 3068075B	Added: 12169270B	Fraction: 0.7986476646686151	Now: 1694100667809
+Total: 3068075B	Added: 12169270B	Fraction: 0.7986476646686151	Now: 1694100668968
+warning:     frame-src    https://3ab2aece41a063621d60b152efde5077.safeframe.googlesyndication.com
+Total: 3068075B	Added: 12176026B	Fraction: 0.7987369015726149	Now: 1694100670216
+Total: 3068075B	Added: 12176026B	Fraction: 0.7987369015726149	Now: 1694100672039
+Total: 3068075B	Added: 12203626B	Fraction: 0.7991006371850785	Now: 1694100673128
+Total: 3068075B	Added: 12217426B	Fraction: 0.7992820124116311	Now: 1694100674272
+Total: 3068716B	Added: 12217426B	Fraction: 0.7992484957944261	Now: 1694100675467
+Total: 3069642B	Added: 12255457B	Fraction: 0.7996983902028952	Now: 1694100677074
+Total: 3069930B	Added: 12255457B	Fraction: 0.799683361992751	Now: 1694100678267
+Total: 3069930B	Added: 12310121B	Fraction: 0.8003953302885667	Now: 1694100679423
+Total: 3185272B	Added: 12323787B	Fraction: 0.7946186161262266	Now: 1694100680773
+Total: 3185560B	Added: 12323787B	Fraction: 0.7946038604978017	Now: 1694100681795
+Total: 3185560B	Added: 12323787B	Fraction: 0.7946038604978017	Now: 1694100684155
+Total: 3185560B	Added: 12323787B	Fraction: 0.7946038604978017	Now: 1694100685374
+Total: 3185560B	Added: 12353931B	Fraction: 0.7950022944766981	Now: 1694100686452
+warning:     frame-src    https://fe5e12f2af6f336d2ba92cbd397e4e6f.safeframe.googlesyndication.com
+warning:     frame-src    https://am-match.taboola.com
+warning:     frame-src    https://imprammp.taboola.com
+Total: 3185560B	Added: 12381622B	Fraction: 0.7953669456681369	Now: 1694100687565
+Total: 3185560B	Added: 12416279B	Fraction: 0.7958215054007416	Now: 1694100688809
+Total: 3185560B	Added: 12416279B	Fraction: 0.7958215054007416	Now: 1694100690004
+Total: 3185560B	Added: 12416279B	Fraction: 0.7958215054007416	Now: 1694100691182
+Total: 3185560B	Added: 12416279B	Fraction: 0.7958215054007416	Now: 1694100692293
+Total: 3186485B	Added: 12454459B	Fraction: 0.7962728464471198	Now: 1694100693540
+Total: 3186773B	Added: 12489719B	Fraction: 0.79671644651112	Now: 1694100694704
+Total: 3268701B	Added: 12517927B	Fraction: 0.7929449531590913	Now: 1694100697680
+Total: 3268989B	Added: 12517927B	Fraction: 0.7929304874999018	Now: 1694100698726
+Total: 3268989B	Added: 12517927B	Fraction: 0.7929304874999018	Now: 1694100699752
+warning:     frame-src    https://1c39bf0b78f2aa726942d768cc4f89d4.safeframe.googlesyndication.com
+Total: 3268989B	Added: 12524908B	Fraction: 0.7930220135030639	Now: 1694100700762
+Total: 3268989B	Added: 12524908B	Fraction: 0.7930220135030639	Now: 1694100702124
+Total: 3268989B	Added: 12524908B	Fraction: 0.7930220135030639	Now: 1694100703277
+Total: 3268989B	Added: 12567724B	Fraction: 0.793581597393348	Now: 1694100704364
+Total: 3268989B	Added: 12589132B	Fraction: 0.7938602562056375	Now: 1694100705448
+Total: 3268989B	Added: 12589132B	Fraction: 0.7938602562056375	Now: 1694100706649
+Total: 3268989B	Added: 12589132B	Fraction: 0.7938602562056375	Now: 1694100707829
+Total: 3268989B	Added: 12589132B	Fraction: 0.7938602562056375	Now: 1694100709069
+Total: 3270143B	Added: 12627377B	Fraction: 0.7942985446786669	Now: 1694100711366
+Total: 3270143B	Added: 12655245B	Fraction: 0.7946585037676948	Now: 1694100712501
+Total: 3287338B	Added: 12683113B	Fraction: 0.7941612293854444	Now: 1694100713684
+Total: 3370991B	Added: 12697051B	Fraction: 0.7902052409372592	Now: 1694100714949
+warning:     frame-src    https://c5aa449e5ee63714b7ae734cdd55b381.safeframe.googlesyndication.com
+Total: 3370991B	Added: 12697051B	Fraction: 0.7902052409372592	Now: 1694100716164
+Total: 3370991B	Added: 12718228B	Fraction: 0.7904813776231152	Now: 1694100717249
+Total: 3370991B	Added: 12774708B	Fraction: 0.7912143041933335	Now: 1694100718385
+Total: 3370991B	Added: 12774708B	Fraction: 0.7912143041933335	Now: 1694100719569
+Total: 3370991B	Added: 12774708B	Fraction: 0.7912143041933335	Now: 1694100720614
+Total: 3372543B	Added: 12813018B	Fraction: 0.7916326162559333	Now: 1694100721833
+Total: 3372831B	Added: 12813018B	Fraction: 0.7916185304830163	Now: 1694100722913
+Total: 3398508B	Added: 12834564B	Fraction: 0.7906429540878029	Now: 1694100725184
+Total: 3410391B	Added: 12877656B	Fraction: 0.7906200172433197	Now: 1694100726417
+Total: 3410391B	Added: 12877656B	Fraction: 0.7906200172433197	Now: 1694100727697
+Total: 3410391B	Added: 12877656B	Fraction: 0.7906200172433197	Now: 1694100728734
+warning:     frame-src    https://149c944747108422e12ad98451897dfb.safeframe.googlesyndication.com
+Total: 3410391B	Added: 12884767B	Fraction: 0.7907113880086343	Now: 1694100729919
+Total: 3410391B	Added: 12892033B	Fraction: 0.7908046680665403	Now: 1694100731163
+Total: 3410391B	Added: 12950161B	Fraction: 0.7915479257668079	Now: 1694100732584
+Total: 3410391B	Added: 12950161B	Fraction: 0.7915479257668079	Now: 1694100733815
+Total: 3411032B	Added: 12950161B	Fraction: 0.791516914445053	Now: 1694100735572
+Total: 3412232B	Added: 13032054B	Fraction: 0.7924974060898722	Now: 1694100736670
+Total: 3609061B	Added: 13053813B	Fraction: 0.7834070521087779	Now: 1694100738211
+Total: 3624393B	Added: 13053813B	Fraction: 0.7826868789125161	Now: 1694100739426
+Total: 3624393B	Added: 13053813B	Fraction: 0.7826868789125161	Now: 1694100741407
+Total: 3624393B	Added: 13053813B	Fraction: 0.7826868789125161	Now: 1694100742634
+Total: 3624393B	Added: 13077945B	Fraction: 0.7830008589216672	Now: 1694100743812
+warning:     frame-src    https://78f93f14a83575d984103b8bb512d836.safeframe.googlesyndication.com
+Total: 3626513B	Added: 13116882B	Fraction: 0.7834063521764851	Now: 1694100744866
+Total: 3627539B	Added: 13175698B	Fraction: 0.7841166556182002	Now: 1694100745905
+Total: 3628977B	Added: 13189157B	Fraction: 0.7842223756809168	Now: 1694100746981
+Total: 3630204B	Added: 13195236B	Fraction: 0.7842431460930591	Now: 1694100748041
+Total: 3631490B	Added: 13208627B	Fraction: 0.7843548236630422	Now: 1694100749159
+Total: 3631490B	Added: 13223178B	Fraction: 0.7845409948152049	Now: 1694100750271
+Total: 3660395B	Added: 13283888B	Fraction: 0.7839746302631985	Now: 1694100751541
+Total: 3708323B	Added: 13328402B	Fraction: 0.7823335764356119	Now: 1694100752817
+Total: 3708323B	Added: 13328402B	Fraction: 0.7823335764356119	Now: 1694100753862
+Total: 3709306B	Added: 13328402B	Fraction: 0.7822884392665962	Now: 1694100755080
+Total: 3709306B	Added: 13328402B	Fraction: 0.7822884392665962	Now: 1694100756958
+Total: 3709306B	Added: 13328402B	Fraction: 0.7822884392665962	Now: 1694100758029
+Total: 3709306B	Added: 13328402B	Fraction: 0.7822884392665962	Now: 1694100759265
+warning:     frame-src    https://a015629386ff3487f27bad4088eac015.safeframe.googlesyndication.com
+Total: 3709306B	Added: 13335703B	Fraction: 0.7823816930809482	Now: 1694100760360
+Total: 5003189B	Added: 13335703B	Fraction: 0.7271815003872644	Now: 1694100761376
+Total: 5003189B	Added: 13343206B	Fraction: 0.7272930731078231	Now: 1694100762499
+Total: 5003189B	Added: 13358236B	Fraction: 0.7275163011585429	Now: 1694100763738
+Total: 5003189B	Added: 13358236B	Fraction: 0.7275163011585429	Now: 1694100764954
+Total: 5003189B	Added: 13358236B	Fraction: 0.7275163011585429	Now: 1694100766017
+Total: 5003189B	Added: 13358236B	Fraction: 0.7275163011585429	Now: 1694100768854
+Total: 5004387B	Added: 13396754B	Fraction: 0.7280393101710377	Now: 1694100770101
+Total: 5043905B	Added: 13462832B	Fraction: 0.7274557367946602	Now: 1694100771361
+Total: 5043905B	Added: 13462832B	Fraction: 0.7274557367946602	Now: 1694100772368
+Total: 5044887B	Added: 13462832B	Fraction: 0.7274171387624807	Now: 1694100773618
+Total: 5044887B	Added: 13462832B	Fraction: 0.7274171387624807	Now: 1694100774724
+Total: 5044887B	Added: 13462832B	Fraction: 0.7274171387624807	Now: 1694100775756
+warning:     frame-src    https://9b6f8ebc5c26c809cd9276b312c13288.safeframe.googlesyndication.com
+Total: 5044887B	Added: 13470127B	Fraction: 0.7275245376536037	Now: 1694100777016
+Total: 5044887B	Added: 13477553B	Fraction: 0.7276337782711133	Now: 1694100778081
+Total: 5044887B	Added: 13536961B	Fraction: 0.7285045599339742	Now: 1694100779171
+Total: 5044887B	Added: 13536961B	Fraction: 0.7285045599339742	Now: 1694100780247
+Total: 5044887B	Added: 13536961B	Fraction: 0.7285045599339742	Now: 1694100781446
+Total: 5044887B	Added: 13536961B	Fraction: 0.7285045599339742	Now: 1694100782492
+Total: 5045749B	Added: 13575544B	Fraction: 0.7290333705613246	Now: 1694100783740
+violation:   script-src-attr    inline
+Total: 5046726B	Added: 13597697B	Fraction: 0.7293171260918078	Now: 1694100786565
+Total: 5046726B	Added: 13597697B	Fraction: 0.7293171260918078	Now: 1694100787922
+Total: 5119496B	Added: 13597697B	Fraction: 0.7264816364291377	Now: 1694100789123
+Total: 5119496B	Added: 13597697B	Fraction: 0.7264816364291377	Now: 1694100790241
+Total: 5119496B	Added: 13597697B	Fraction: 0.7264816364291377	Now: 1694100792167
+Total: 5120136B	Added: 13597697B	Fraction: 0.726456796574689	Now: 1694100794514
+Total: 5121289B	Added: 13662721B	Fraction: 0.7273591208692926	Now: 1694100795640
+Total: 5121289B	Added: 13691933B	Fraction: 0.7277824606545333	Now: 1694100796795
+Total: 5121577B	Added: 13691933B	Fraction: 0.7277713196527389	Now: 1694100797821
+Total: 5121577B	Added: 13691933B	Fraction: 0.7277713196527389	Now: 1694100798987
+warning:     frame-src    https://c56256ab9e06e967c5d66288cc2f5abe.safeframe.googlesyndication.com
+Total: 5121577B	Added: 13699241B	Fraction: 0.7278770242611134	Now: 1694100800192
+Total: 5121577B	Added: 13743611B	Fraction: 0.7285170441980223	Now: 1694100801234
+Total: 5121577B	Added: 13758385B	Fraction: 0.7287294857902786	Now: 1694100802372
+Total: 5121577B	Added: 13758385B	Fraction: 0.7287294857902786	Now: 1694100803434
+Total: 5121577B	Added: 13758385B	Fraction: 0.7287294857902786	Now: 1694100805635
+Total: 5121577B	Added: 13766714B	Fraction: 0.7288491055119809	Now: 1694100806848
+Total: 5121577B	Added: 13766714B	Fraction: 0.7288491055119809	Now: 1694100807895
+Total: 5121577B	Added: 13804275B	Fraction: 0.729387242381479	Now: 1694100808913
+warning:     frame-src    https://s0.2mdn.net
+violation:   script-src-attr    inline
+violation:   script-src-attr    inline
+Total: 5122487B	Added: 13878203B	Fraction: 0.7304052116002103	Now: 1694100810117
+Total: 5122775B	Added: 13943855B	Fraction: 0.7313224728229373	Now: 1694100811377
+Total: 5136548B	Added: 13989809B	Fraction: 0.7314413821722558	Now: 1694100812841
+Total: 5168089B	Added: 13989809B	Fraction: 0.7302371585859785	Now: 1694100813916
+Total: 5168377B	Added: 13989809B	Fraction: 0.7302261811217409	Now: 1694100814999
+Total: 5168377B	Added: 13989809B	Fraction: 0.7302261811217409	Now: 1694100816183
+Total: 5168377B	Added: 13989809B	Fraction: 0.7302261811217409	Now: 1694100817431
+warning:     frame-src    https://b1c76a649faf6faf2315965a60f48b8b.safeframe.googlesyndication.com
+Total: 5168377B	Added: 13997379B	Fraction: 0.7303327351136057	Now: 1694100818499
+Total: 5168377B	Added: 13997379B	Fraction: 0.7303327351136057	Now: 1694100819543
+Total: 5168377B	Added: 13997379B	Fraction: 0.7303327351136057	Now: 1694100822144
+Total: 5168377B	Added: 14052878B	Fraction: 0.7311113660372333	Now: 1694100823324
+Total: 5168377B	Added: 14052878B	Fraction: 0.7311113660372333	Now: 1694100824497
+Total: 5169251B	Added: 14074361B	Fraction: 0.7313783399914735	Now: 1694100825504
+Total: 5169539B	Added: 14097071B	Fraction: 0.7316840378250248	Now: 1694100826521
+Total: 5169827B	Added: 14134921B	Fraction: 0.7321991978346467	Now: 1694100827658
+Total: 5169827B	Added: 14142491B	Fraction: 0.7323041698049918	Now: 1694100828773
+Total: 5169827B	Added: 14142491B	Fraction: 0.7323041698049918	Now: 1694100829841
+warning:     frame-src    https://21b1365ab12e25f3622f693a33724391.safeframe.googlesyndication.com
+Total: 5169827B	Added: 14157716B	Fraction: 0.7325150434279205	Now: 1694100830983
+Total: 5169827B	Added: 14157716B	Fraction: 0.7325150434279205	Now: 1694100832087
+Total: 5169827B	Added: 14157716B	Fraction: 0.7325150434279205	Now: 1694100833484
+Total: 5170468B	Added: 14157716B	Fraction: 0.7324907502950097	Now: 1694100836302
+Total: 5171612B	Added: 14246132B	Fraction: 0.7336656616752183	Now: 1694100837491
+Total: 5171900B	Added: 14246132B	Fraction: 0.7336547802578551	Now: 1694100838568
+Total: 5171900B	Added: 14246132B	Fraction: 0.7336547802578551	Now: 1694100839570
+warning:     frame-src    https://921d6a9cf62fa373916df1c8aa770400.safeframe.googlesyndication.com
+Total: 5171900B	Added: 14253768B	Fraction: 0.7337594774089622	Now: 1694100842230
+Total: 5171900B	Added: 14253768B	Fraction: 0.7337594774089622	Now: 1694100843254
+Total: 5171900B	Added: 14261487B	Fraction: 0.7338652289485101	Now: 1694100844316
+Total: 5171900B	Added: 14261487B	Fraction: 0.7338652289485101	Now: 1694100845982
+Total: 5172541B	Added: 14261487B	Fraction: 0.7338410235901688	Now: 1694100847232
+Total: 5173741B	Added: 14303095B	Fraction: 0.7343644008708601	Now: 1694100848285
+Total: 5265278B	Added: 14350915B	Fraction: 0.7315851245957867	Now: 1694100849583
+Total: 5265566B	Added: 14350915B	Fraction: 0.731574383805128	Now: 1694100850848
+Total: 5265566B	Added: 14350915B	Fraction: 0.731574383805128	Now: 1694100852021
+Total: 5265566B	Added: 14350915B	Fraction: 0.731574383805128	Now: 1694100853209
+warning:     frame-src    https://411666b8d4430abe61da674ae4c0f482.safeframe.googlesyndication.com
+Total: 5265566B	Added: 14358751B	Fraction: 0.7316815662934919	Now: 1694100854228
+Total: 5265566B	Added: 14382937B	Fraction: 0.7320118484344583	Now: 1694100855371
+Total: 5265566B	Added: 14407147B	Fraction: 0.7323416449983284	Now: 1694100856580
+Total: 5265566B	Added: 14407147B	Fraction: 0.7323416449983284	Now: 1694100857735
+Total: 5265566B	Added: 14407147B	Fraction: 0.7323416449983284	Now: 1694100859147
+Total: 5267119B	Added: 14424014B	Fraction: 0.7325131570641465	Now: 1694100861984
+Total: 5267407B	Added: 14431857B	Fraction: 0.7326089441717213	Now: 1694100863082
+Total: 5413577B	Added: 14486758B	Fraction: 0.727965534248544	Now: 1694100864117
+Total: 5413865B	Added: 14486758B	Fraction: 0.7279549991977639	Now: 1694100865482
+Total: 5413865B	Added: 14486758B	Fraction: 0.7279549991977639	Now: 1694100866513
+Total: 5413865B	Added: 14486758B	Fraction: 0.7279549991977639	Now: 1694100867555
+Total: 5413865B	Added: 14486758B	Fraction: 0.7279549991977639	Now: 1694100868667
+Total: 5415985B	Added: 14486758B	Fraction: 0.7278774589010168	Now: 1694100869856
+Total: 5415985B	Added: 14510890B	Fraction: 0.7282070068688643	Now: 1694100871041
+Total: 5415985B	Added: 14529113B	Fraction: 0.7284553327338879	Now: 1694100872046
+Total: 5415985B	Added: 14547333B	Fraction: 0.7287031644739617	Now: 1694100873309
+warning:     frame-src    https://42c152e9be08b0d90f5dc8a1df228a13.safeframe.googlesyndication.com
+warning:     frame-src    https://csync.smartadserver.com
+Total: 5415985B	Added: 14599528B	Fraction: 0.7294106326427906	Now: 1694100874462
+Total: 5418513B	Added: 14654779B	Fraction: 0.7300635590813903	Now: 1694100875545
+Total: 5418513B	Added: 14693255B	Fraction: 0.7305799768573304	Now: 1694100878048
+Total: 5419089B	Added: 14723795B	Fraction: 0.7309675714758621	Now: 1694100879070
+warning:     frame-src    https://98a3847a3a411aa2af613240633b7be1.safeframe.googlesyndication.com
+Total: 5419089B	Added: 14731431B	Fraction: 0.7310695207865604	Now: 1694100880084
+Total: 5419089B	Added: 14731431B	Fraction: 0.7310695207865604	Now: 1694100881175
+Total: 5419089B	Added: 14739174B	Fraction: 0.7311728198009918	Now: 1694100882325
+Total: 5419089B	Added: 14739174B	Fraction: 0.7311728198009918	Now: 1694100884505
+Total: 5420930B	Added: 14751236B	Fraction: 0.7312668356982587	Now: 1694100885685
+Total: 5442044B	Added: 14815412B	Fraction: 0.731356000477059	Now: 1694100887064
+Total: 5442609B	Added: 14815412B	Fraction: 0.7313356028212232	Now: 1694100888104
+Total: 5442897B	Added: 14815412B	Fraction: 0.7313252058698483	Now: 1694100889239
+Total: 5442897B	Added: 14823409B	Fraction: 0.7314312238253977	Now: 1694100890314
+warning:     frame-src    https://3e8564bd3f44711b40bdda124e78ea8e.safeframe.googlesyndication.com
+Total: 5442897B	Added: 14857266B	Fraction: 0.7318791479654622	Now: 1694100891338
+Total: 5442897B	Added: 14914008B	Fraction: 0.7326264970043335	Now: 1694100892538
+Total: 5442897B	Added: 14938403B	Fraction: 0.7329465245102128	Now: 1694100893550
+Total: 5442897B	Added: 14946477B	Fraction: 0.7330522751703902	Now: 1694100896302
+Total: 5442897B	Added: 14946477B	Fraction: 0.7330522751703902	Now: 1694100897481
+Total: 5442897B	Added: 14954627B	Fraction: 0.7331589363493334	Now: 1694100898511
+warning:     frame-src    https://imasdk.googleapis.com
+Total: 5548782B	Added: 15037536B	Fraction: 0.7304626305685165	Now: 1694100899819
+Total: 5548782B	Added: 15094432B	Fraction: 0.7312055186755319	Now: 1694100900873
+Total: 5911120B	Added: 15094432B	Fraction: 0.7185924940225327	Now: 1694100902140
+Total: 5911408B	Added: 15094432B	Fraction: 0.7185826417796194	Now: 1694100903739
+Total: 5911408B	Added: 15094432B	Fraction: 0.7185826417796194	Now: 1694100904992
+warning:     frame-src    https://655e88abc8413781bd3db561d8372ca5.safeframe.googlesyndication.com
+Total: 5911408B	Added: 15102523B	Fraction: 0.7186909959873762	Now: 1694100906284
+Total: 5911408B	Added: 15143583B	Fraction: 0.7192395855215516	Now: 1694100907495
+Total: 5911408B	Added: 15168219B	Fraction: 0.7195677134135248	Now: 1694100908694
+Total: 5911408B	Added: 15168219B	Fraction: 0.7195677134135248	Now: 1694100909894
+Total: 5912103B	Added: 15168219B	Fraction: 0.7195439898878205	Now: 1694100911308
+Total: 5912972B	Added: 15176590B	Fraction: 0.7196256612631405	Now: 1694100912531
+Total: 5912972B	Added: 15192920B	Fraction: 0.7198425918222267	Now: 1694100915224
+Total: 5913548B	Added: 15217415B	Fraction: 0.7201477282412543	Now: 1694100916367
+warning:     frame-src    https://f78997a8514205013ef1ec6dcb02a27d.safeframe.googlesyndication.com
+Total: 5913548B	Added: 15250070B	Fraction: 0.7205795341798363	Now: 1694100917432
+Total: 6058116B	Added: 15250070B	Fraction: 0.7156906739973079	Now: 1694100918701
+Total: 6058116B	Added: 15250070B	Fraction: 0.7156906739973079	Now: 1694100919868
+Total: 6058116B	Added: 15283066B	Fraction: 0.7161302499552274	Now: 1694100921181
+Total: 6058116B	Added: 15316086B	Fraction: 0.7165687869891002	Now: 1694100922440
+Total: 6058116B	Added: 15316086B	Fraction: 0.7165687869891002	Now: 1694100923631
+Total: 6058116B	Added: 15323721B	Fraction: 0.7166699942572755	Now: 1694100924886
+Total: 6058692B	Added: 15384801B	Fraction: 0.7174577854456827	Now: 1694100926109
+warning:     frame-src    https://0b6391daec11aa592cea168872e5681f.safeframe.googlesyndication.com
+Total: 6058692B	Added: 15392437B	Fraction: 0.7175583625458595	Now: 1694100927247
+Total: 6058692B	Added: 15400180B	Fraction: 0.7176602758989382	Now: 1694100928458
+Total: 6058692B	Added: 15400180B	Fraction: 0.7176602758989382	Now: 1694100929482
+Total: 6058692B	Added: 15400180B	Fraction: 0.7176602758989382	Now: 1694100930778
+Total: 6059333B	Added: 15400180B	Fraction: 0.7176388392411328	Now: 1694100931810
+Total: 6059333B	Added: 15400180B	Fraction: 0.7176388392411328	Now: 1694100935483
+Total: 6060477B	Added: 15464908B	Fraction: 0.7184497745336494	Now: 1694100936490
+violation:   script-src    eval
+new:         https://collector.brandmetrics.com/c.js?siteid=6e02183c-e1a8-4694-98e5-858d7d5e3c66&toploc=www.libertatea.ro&rnd=6192948
+violation:   script-src-elem    https://collector.brandmetrics.com/c.js?siteid=6e02183c-e1a8-4694-98e5-858d7d5e3c66&toploc=www.libertatea.ro&rnd=6192948
+Total: 6060765B	Added: 15509065B	Fraction: 0.7190165615584361	Now: 1694100937684
+violation:   script-src    eval
+Total: 6060765B	Added: 15516455B	Fraction: 0.7191127958096548	Now: 1694100938699
+new:         https://www.google.com/pagead/1p-conversion/10963632302/?random=1694100936457&cv=11&fst=1694100936457&bg=ffffff&guid=ON&async=1&gtm=45be38u0h1&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.libertatea.ro%2Fstiri-noi&label=IdugCOaBnNIDEK6B7-so&hn=www.google.com&frm=0&tiba=Ultimele%20stiri%20-%20Stiri%20noi%20-%20Libertatea.ro&auid=1160060469.1694100187&fledge=1&capi=1&uamb=0&uaw=0&data=event%3Dconversion&gcp=1&sscte=1&ct_cookie_present=1&rfmt=3&fmt=4
+warning:     frame-src    https://ed02884daf211b65360c37003fa4d913.safeframe.googlesyndication.com
+Total: 6060765B	Added: 15568211B	Fraction: 0.7197849311035345	Now: 1694100939934
+changed:     https://securepubads.g.doubleclick.net/tag/js/gpt.js
+new:         https://tpc.googlesyndication.com/pagead/js/r20230906/r20110914/abg_lite_fy2021.js
+Total: 6060765B	Added: 15642486B	Fraction: 0.7207439106703415	Now: 1694100941112
+Total: 6060765B	Added: 15642486B	Fraction: 0.7207439106703415	Now: 1694100942303
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxWp68pGYXWixqpAhNchBXj-iBUn9tdKPajJCA6_ZWJGe9VhHelC5vBYFNj-Jr4WKKBxmVBPQleWRjdLvLGF8OTEtUsrizsk9UOmErT8yFXBGjNfeiiIv2IJFC3-K8t41EAt6JILrIVFh_MvA25VOZLMT9goaN4_kYB3TIE5dbjKQXDyNepDDOlODzzE/_/ads_event.-advertising2--ad-336x280-/ad_print./adserving_
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxWp68pGYXWixqpAhNchBXj-iBUn9tdKPajJCA6_ZWJGe9VhHelC5vBYFNj-Jr4WKKBxmVBPQleWRjdLvLGF8OTEtUsrizsk9UOmErT8yFXBGjNfeiiIv2IJFC3-K8t41EAt6JILrIVFh_MvA25VOZLMT9goaN4_kYB3TIE5dbjKQXDyNepDDOlODzzE/_/ads_event.-advertising2--ad-336x280-/ad_print./adserving_
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxUBPOxY-B5tNeBBSTrk1rTLBVXiW1EvtQhgjFwk1HXS9stQ7Qb785J42AIRVtu65luBADOBjI4zpFDYPdCjUroc2v5D1vtT5G9el-iVpkK6JkjOyYqCVMBqsoXVn7Mh4p101uwAZw==?fccs=W1siQUtzUm9sOVRLa3NocjNITGFUOURURFhuNUZNRlh5TGI4aVdBaUpwZzhxTHBvM2JMUmxCeHItYlZvMWZvbm0wOGdMVTJpZ3BQQkJmV0d3RDRmTjY2UTc5eU1sR2hFZno1djNRVGZxd3MyNGJmZl9QT3E1TGpHMlFZamtTNkswSnBBUXA3WHdNX016ZFlwSXZ6X291NjBJUDFHM0NfSGI4ZnF3PT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDA5NDIsNjQ5MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9zdGlyaS1ub2kiLG51bGwsW1s4LCI4c2RrTnAwd1F5WSJdLFs5LCJlbi1HQiJdLFsxNiwiWzEsMSwxXSJdLFs3LCIxMCJdLFsxMSwiW1tdLFtdLFtdXSJdLFsxOSwiMiJdLFsxNywiWzBdIl1dXQ
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxUBPOxY-B5tNeBBSTrk1rTLBVXiW1EvtQhgjFwk1HXS9stQ7Qb785J42AIRVtu65luBADOBjI4zpFDYPdCjUroc2v5D1vtT5G9el-iVpkK6JkjOyYqCVMBqsoXVn7Mh4p101uwAZw==?fccs=W1siQUtzUm9sOVRLa3NocjNITGFUOURURFhuNUZNRlh5TGI4aVdBaUpwZzhxTHBvM2JMUmxCeHItYlZvMWZvbm0wOGdMVTJpZ3BQQkJmV0d3RDRmTjY2UTc5eU1sR2hFZno1djNRVGZxd3MyNGJmZl9QT3E1TGpHMlFZamtTNkswSnBBUXA3WHdNX016ZFlwSXZ6X291NjBJUDFHM0NfSGI4ZnF3PT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDA5NDIsNjQ5MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9zdGlyaS1ub2kiLG51bGwsW1s4LCI4c2RrTnAwd1F5WSJdLFs5LCJlbi1HQiJdLFsxNiwiWzEsMSwxXSJdLFs3LCIxMCJdLFsxMSwiW1tdLFtdLFtdXSJdLFsxOSwiMiJdLFsxNywiWzBdIl1dXQ
+Total: 6061406B	Added: 15665349B	Fraction: 0.7210165070669781	Now: 1694100946372
+violation:   script-src-attr    inline
+Total: 6062620B	Added: 15735404B	Fraction: 0.7218729550898741	Now: 1694100947575
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxWOeAIn82slDOT0IeUvb6NaEnA9UN9_9_Cj2_KDRJ8reOk9V6GZq5JtadfjuFQBnMds1ji0R97w7O1_PFrC_FFfCaur9fl0tN766jfZ-newMcj7PALnU56sNO9Ue7YQO9jC4cQ7sg==?fccs=W1siQUtzUm9sLThiOWxSa0JCVlp6bW5POHZfYTdxd0tZZDlybEVvQ2hoTXlHT05kVjBBMmNqNy0wRndpUFdwYXVFZDN4OHlFc3pKNERkUV9xNFhQMHo5dTgzZ2VQNlBTNzFNdjg2b2puTWNMODZXdFlILV9LSU42dTRBbmNwd3h3Y0JRQ1N3aGRiV3Z2X21wQTFQNGRCZlJrQkhLOHB4Qi05WThRPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDA5NDcsNTA4MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbN11dLCJodHRwczovL3d3dy5saWJlcnRhdGVhLnJvL3N0aXJpL3ZhcmEtcGllcmR1dGEtYS1wcmVtaWVydWx1aS1tYXJjZWwtY2lvbGFjdS1uaWNpby1kZWNpemllLXNpLW11bHRlLWRlY2xhcmF0aWktZGUtYWRvcm1pdC1lbGVjdG9yYXR1bC00NjU0MzYxIixudWxsLFtbOCwiOHNka05wMHdReVkiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiMTAiXSxbMTEsIltbXSxbXSxbXV0iXSxbMTksIjIiXSxbMTcsIlswXSJdXV0
+violation:   script-src    eval
+Total: 6202110B	Added: 15932645B	Fraction: 0.7198021843928247	Now: 1694100948912
+new:         https://trc.taboola.com/1404265/trc/3/json?tim=1694100948527&data=%7B%22id%22%3A621%2C%22ii%22%3A%22%2Fstiri%2Fvara-pierduta-a-premierului-marcel-ciolacu-nicio-decizie-si-multe-declaratii-de-adormit-electoratul-4654361%22%2C%22it%22%3A%22text%22%2C%22sd%22%3Anull%2C%22ui%22%3A%226c48b969-7ef8-43fc-b104-52d73b9a65b8-tuctbf3709d%22%2C%22vi%22%3A1694100948515%2C%22cv%22%3A%2220230903-6-RELEASE%22%2C%22uiv%22%3A%22default%22%2C%22u%22%3A%22https%3A%2F%2Fwww.libertatea.ro%2Fstiri%2Fvara-pierduta-a-premierului-marcel-ciolacu-nicio-decizie-si-multe-declaratii-de-adormit-electoratul-4654361%22%2C%22e%22%3Anull%2C%22cb%22%3A%22TFASC.trkCallback%22%2C%22qs%22%3A%22%22%2C%22r%22%3A%5B%7B%22li%22%3A%22rbox-tracking%22%2C%22s%22%3A0%2C%22uim%22%3A%22rbox-tracking%3Apub%3Dtdg-ringier2729adv1%3Aabp%3D0%22%2C%22uip%22%3A%22rbox-tracking%22%2C%22orig_uip%22%3A%22rbox-tracking%22%7D%5D%2C%22mpv%22%3Atrue%2C%22supv%22%3Atrue%2C%22mpvd%22%3A%7B%22en%22%3A%22page_view%22%2C%22tim%22%3A1694100948526%2C%22ref%22%3Anull%2C%22item-url%22%3A%22https%3A%2F%2Fwww.libertatea.ro%2Fstiri%2Fvara-pierduta-a-premierului-marcel-ciolacu-nicio-decizie-si-multe-declaratii-de-adormit-electoratul-4654361%22%2C%22tos%22%3A641931%2C%22ssd%22%3A46%2C%22scd%22%3A50%2C%22supv%22%3Atrue%7D%7D&pubit=i
+Total: 6202398B	Added: 15932645B	Fraction: 0.7197928190155312	Now: 1694100950204
+Total: 6202398B	Added: 15932645B	Fraction: 0.7197928190155312	Now: 1694100951347
+Total: 6202398B	Added: 15959047B	Fraction: 0.7201266433664412	Now: 1694100952587
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxXoOsV0koXNfkQ2EgurYA4clBmXuVEoQuFZauctXnGEr33tIuuNgwuO0yaX45CHUC_7PaffsYeFTUdIHFfNVm1U2qlFkFmRMArPPxKkA6ep_FcFWa7MWFQZNmI-DuTBbqfioWe2zA==?fccs=W1siQUtzUm9sLThiOWxSa0JCVlp6bW5POHZfYTdxd0tZZDlybEVvQ2hoTXlHT05kVjBBMmNqNy0wRndpUFdwYXVFZDN4OHlFc3pKNERkUV9xNFhQMHo5dTgzZ2VQNlBTNzFNdjg2b2puTWNMODZXdFlILV9LSU42dTRBbmNwd3h3Y0JRQ1N3aGRiV3Z2X21wQTFQNGRCZlJrQkhLOHB4Qi05WThRPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDA5NTIsNzMxMDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9zdGlyaS92YXJhLXBpZXJkdXRhLWEtcHJlbWllcnVsdWktbWFyY2VsLWNpb2xhY3UtbmljaW8tZGVjaXppZS1zaS1tdWx0ZS1kZWNsYXJhdGlpLWRlLWFkb3JtaXQtZWxlY3RvcmF0dWwtNDY1NDM2MSIsbnVsbCxbWzgsIjhzZGtOcDB3UXlZIl0sWzksImVuLUdCIl0sWzE2LCJbMSwxLDFdIl0sWzcsIjEwIl0sWzExLCJbW10sW10sW11dIl0sWzE5LCIyIl0sWzE3LCJbMF0iXV1d
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxXoOsV0koXNfkQ2EgurYA4clBmXuVEoQuFZauctXnGEr33tIuuNgwuO0yaX45CHUC_7PaffsYeFTUdIHFfNVm1U2qlFkFmRMArPPxKkA6ep_FcFWa7MWFQZNmI-DuTBbqfioWe2zA==?fccs=W1siQUtzUm9sLThiOWxSa0JCVlp6bW5POHZfYTdxd0tZZDlybEVvQ2hoTXlHT05kVjBBMmNqNy0wRndpUFdwYXVFZDN4OHlFc3pKNERkUV9xNFhQMHo5dTgzZ2VQNlBTNzFNdjg2b2puTWNMODZXdFlILV9LSU42dTRBbmNwd3h3Y0JRQ1N3aGRiV3Z2X21wQTFQNGRCZlJrQkhLOHB4Qi05WThRPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDA5NTIsNzMxMDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9zdGlyaS92YXJhLXBpZXJkdXRhLWEtcHJlbWllcnVsdWktbWFyY2VsLWNpb2xhY3UtbmljaW8tZGVjaXppZS1zaS1tdWx0ZS1kZWNsYXJhdGlpLWRlLWFkb3JtaXQtZWxlY3RvcmF0dWwtNDY1NDM2MSIsbnVsbCxbWzgsIjhzZGtOcDB3UXlZIl0sWzksImVuLUdCIl0sWzE2LCJbMSwxLDFdIl0sWzcsIjEwIl0sWzExLCJbW10sW10sW11dIl0sWzE5LCIyIl0sWzE3LCJbMF0iXV1d
+changed:     https://js-eu1.hscollectedforms.net/collectedforms.js
+new:         https://js-eu1.hs-analytics.net/analytics/1694100900000/26154475.js
+Total: 6202398B	Added: 16058230B	Fraction: 0.721373628812269	Now: 1694100953768
+new:         https://www.googletagservices.com/activeview/js/current/rx_lidar.js?cache=r20110914
+Total: 6202398B	Added: 16247486B	Fraction: 0.7237224922854836	Now: 1694100954976
+Total: 6202398B	Added: 16418700B	Fraction: 0.7258135745665396	Now: 1694100956069
+Total: 6202398B	Added: 16445765B	Fraction: 0.726141232734858	Now: 1694100959040
+Total: 6204235B	Added: 16523842B	Fraction: 0.7270233200987484	Now: 1694100960182
+Total: 6204235B	Added: 16633579B	Fraction: 0.7283349886289467	Now: 1694100961215
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 6204235B	Added: 16705524B	Fraction: 0.729188115859272	Now: 1694100962222
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxW_GO-LHz9FsELIpnlK06hx0NF1zq0qxsnsutIj7BlfngfJlE7P-TQQy2T68tH6DobRWK8qKks2nGiZeSECP6g67JGY08PRfD_7Ou_giqMcz99_6n1OY48yQN53MUogVGEp-E2FqA==?fccs=W1siQUtzUm9sOTdxRTg2QlhhMDVCLVhOTlVGTUZZUEhycW1FSkM3Nlo2TWtpV3VNcHhZQVl3MjJRcDM5cC1Cd25uUnZQQ196Ul81c0RPMHBBeXFKRUVOTUIxM0lOa214WjFLZGhvZFI5dlJOMTY2ZmNDcng5ZnlmWFBXYjdKR3pWb1cyQThtNDd2OVlxY2s2UWo3eThMemFnUWYxSzFSS214M2tRPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDA5NjIsMjMwMDAwMDBdLG51bGwsbnVsbCxudWxsLFtudWxsLFs3XV0sImh0dHBzOi8vd3d3LmxpYmVydGF0ZWEucm8vZW50ZXJ0YWlubWVudC9jaGVmaS1sYS1jdXRpdGUtMjAyMy1zZXpvbnVsLTEyLWNvbmN1cmVudGktZWxpbWluYXJpLXByZW1pdS00NjQ2NzE2IixudWxsLFtbOCwiOHNka05wMHdReVkiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiMTAiXSxbMTEsIltbXSxbXSxbXV0iXSxbMTksIjIiXSxbMTcsIlswXSJdXV0
+Total: 6205593B	Added: 16732560B	Fraction: 0.7294641377620944	Now: 1694100963368
+Total: 6206643B	Added: 16738645B	Fraction: 0.7295025017772713	Now: 1694100964795
+Total: 6206643B	Added: 16757932B	Fraction: 0.7297296814767963	Now: 1694100965814
+violation:   script-src    eval
+Total: 6207669B	Added: 16771095B	Fraction: 0.7298519189282766	Now: 1694100966850
+Total: 6209235B	Added: 16784255B	Fraction: 0.7299568269105734	Now: 1694100967992
+new:         https://a.teads.tv/media/format/v3/teads-format.min.js
+warning:     frame-src    https://dabb01c81b604fdecff898dcf9947a89.safeframe.googlesyndication.com
+new:         https://cdn.taboola.com/scripts/cds-pips.js
+Total: 6209235B	Added: 16810512B	Fraction: 0.7302648460906195	Now: 1694100969288
+Total: 6209235B	Added: 16823638B	Fraction: 0.7304185630685325	Now: 1694100970378
+Total: 6210462B	Added: 16829727B	Fraction: 0.7304509090615533	Now: 1694100971695
+Total: 6210462B	Added: 16856343B	Fraction: 0.730761932569335	Now: 1694100972760
+Total: 6211372B	Added: 16883481B	Fraction: 0.7310495113348415	Now: 1694100974004
+Total: 6213034B	Added: 17043231B	Fraction: 0.7328447194766657	Now: 1694100977466
+Total: 6213034B	Added: 17149737B	Fraction: 0.7340626246775265	Now: 1694100978742
+Total: 6213034B	Added: 17176388B	Fraction: 0.7343656461455097	Now: 1694100979873
+Total: 6219152B	Added: 17243060B	Fraction: 0.7349289998743511	Now: 1694100980996
+new:         https://secure.quantserve.com/quant.js
+Total: 6219152B	Added: 17402760B	Fraction: 0.7367210579736306	Now: 1694100982209
+new:         https://rules.quantcount.com/rules-p-PFW5FesqXn206.js
+new:         https://s8t.teads.tv/vpaid-builder/performance-carousel?1231
+new:         https://s.vi-serve.com/source.m.js
+Total: 6219152B	Added: 17545174B	Fraction: 0.7382988265688663	Now: 1694100983313
+Total: 6219152B	Added: 17751645B	Fraction: 0.7405529736871077	Now: 1694100984344
+Total: 6219152B	Added: 17840353B	Fraction: 0.7415095613978758	Now: 1694100985394
+Total: 6219152B	Added: 17929063B	Fraction: 0.7424591424252269	Now: 1694100986527
+Total: 6219152B	Added: 18017832B	Fraction: 0.7434023969318955	Now: 1694100987627
+Total: 6219152B	Added: 18121234B	Fraction: 0.7444924661424843	Now: 1694100988881
+new:         https://cdn.taboola.com/scripts/fraud-detect.js
+Total: 6220062B	Added: 18253670B	Fraction: 0.7458474253129845	Now: 1694100989940
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxUMQ7G83RIUcnSq_LrIT6QJNm3Axrf64rAsY19x-ef6LQtxeUborOZcyTDsxLcnjMiop8njC0B1RdZv-wSHBPfgCkO4RbhJ3AHxLSKHs-c8cy9j-EPo9opU5Y9mns9FWtSyu_UK-ZxSGfqUYghr_pUHjAfiAEczjhZHIZ4rdCW7Xn0nP4BN4PV7clxR/_/adiframe18._advertisements//i_ads./popads_/ads_left_
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxUMQ7G83RIUcnSq_LrIT6QJNm3Axrf64rAsY19x-ef6LQtxeUborOZcyTDsxLcnjMiop8njC0B1RdZv-wSHBPfgCkO4RbhJ3AHxLSKHs-c8cy9j-EPo9opU5Y9mns9FWtSyu_UK-ZxSGfqUYghr_pUHjAfiAEczjhZHIZ4rdCW7Xn0nP4BN4PV7clxR/_/adiframe18._advertisements//i_ads./popads_/ads_left_
+Total: 6220350B	Added: 18359471B	Fraction: 0.7469326566698756	Now: 1694100991190
+Total: 6302889B	Added: 18389963B	Fraction: 0.7447484397509044	Now: 1694100992321
+violation:   script-src    eval
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxWdKudPDk1nKZ0ACB21Ib0M0Y7kUAbeC1eVeEagp_zXuvSh1t1vym6mtB2Ca1Eom27yeawn2nX1Kr4vjiUbRoNrU9cLN2p_E2xIoRtTeWw_kD7Ldpr0sa8snUSFs7pZo_W6UVVvZQ==?fccs=W1siQUtzUm9sOTdxRTg2QlhhMDVCLVhOTlVGTUZZUEhycW1FSkM3Nlo2TWtpV3VNcHhZQVl3MjJRcDM5cC1Cd25uUnZQQ196Ul81c0RPMHBBeXFKRUVOTUIxM0lOa214WjFLZGhvZFI5dlJOMTY2ZmNDcng5ZnlmWFBXYjdKR3pWb1cyQThtNDd2OVlxY2s2UWo3eThMemFnUWYxSzFSS214M2tRPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDA5OTIsNzQwMDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbN11dLCJodHRwczovL3d3dy5saWJlcnRhdGVhLnJvL2xpZmVzdHlsZS9jZS1lc3RlLXRhcm90dWwtY3VtLXNlLWV0YWxlYXphLWNhcnRpbGUtdGFyb3QtNDIyMTMxOCIsbnVsbCxbWzgsIjhzZGtOcDB3UXlZIl0sWzksImVuLUdCIl0sWzE2LCJbMSwxLDFdIl0sWzcsIjEwIl0sWzExLCJbW10sW10sW11dIl0sWzE5LCIyIl0sWzE3LCJbMF0iXV1d
+violation:   script-src    eval
+Total: 6511169B	Added: 18650711B	Fraction: 0.7412288350473017	Now: 1694100993407
+violation:   script-src    eval
+Total: 6511457B	Added: 18717977B	Fraction: 0.741910302070193	Now: 1694100994471
+Total: 6511457B	Added: 18733253B	Fraction: 0.7420664765014136	Now: 1694100995478
+Total: 6513577B	Added: 18733253B	Fraction: 0.7420041644832243	Now: 1694100996716
+Total: 6526507B	Added: 18733253B	Fraction: 0.7416243463912563	Now: 1694100998995
+Total: 6526507B	Added: 18733253B	Fraction: 0.7416243463912563	Now: 1694101000193
+new:         https://cdn.taboola.com/libtrc/feed-card-placeholder.20230906-27-RELEASE.es6.js
+new:         https://www.google.com/pagead/1p-conversion/10963632302/?random=1694100993418&cv=11&fst=1694100993418&bg=ffffff&guid=ON&async=1&gtm=45be38u0h1&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.libertatea.ro%2Flifestyle%2Fce-este-tarotul-cum-se-etaleaza-cartile-tarot-4221318&label=IdugCOaBnNIDEK6B7-so&hn=www.google.com&frm=0&tiba=Ce%20Este%20Tarotul%20%C8%99i%20Cum%20Se%20Etaleaz%C4%83%20C%C4%83r%C8%9Bile%20De%20Tarot%20%7C%20Libertatea&auid=1160060469.1694100187&fledge=1&capi=1&uamb=0&uaw=0&data=event%3Dconversion&gcp=1&sscte=1&ct_cookie_present=1&rfmt=3&fmt=4
+warning:     frame-src    https://51a6f321c3f0005537b35b1f8e2e39f0.safeframe.googlesyndication.com
+new:         https://vidstat.taboola.com/lite-unit/4.3.0/UnitFeedManagerDesktop.min.js
+Total: 6527533B	Added: 18816172B	Fraction: 0.7424396709163084	Now: 1694101001408
+Total: 6528991B	Added: 18883903B	Fraction: 0.7430835307462424	Now: 1694101002475
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxV_h3m4JIpesPZWXkacCle31kugpJwMoiAQKXjk-Gu091yFAFvfEPJrkJMni6phqmG5h_YPnA1SG3RrMQ3mof9i5sgx-WZJMO7IPI-CHnoBcHmTRm03JJoLNhPVu-AWLIQMpiMJdjdl3qfUHH2aYBkAhIy70IqgcMdzl3fPKZbImhcV0zDvif9hmpDZ/_/adload./cgi/ad_/bigad_/javascript/oas./ads/leaderboard_
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxV_h3m4JIpesPZWXkacCle31kugpJwMoiAQKXjk-Gu091yFAFvfEPJrkJMni6phqmG5h_YPnA1SG3RrMQ3mof9i5sgx-WZJMO7IPI-CHnoBcHmTRm03JJoLNhPVu-AWLIQMpiMJdjdl3qfUHH2aYBkAhIy70IqgcMdzl3fPKZbImhcV0zDvif9hmpDZ/_/adload./cgi/ad_/bigad_/javascript/oas./ads/leaderboard_
+Total: 6528991B	Added: 18991621B	Fraction: 0.744167929828642	Now: 1694101003637
+Total: 6528991B	Added: 19068652B	Fraction: 0.7449378054065369	Now: 1694101004707
+Total: 6531070B	Added: 19193536B	Fraction: 0.7461158394418169	Now: 1694101005806
+Total: 6531070B	Added: 19393800B	Fraction: 0.7480770395377103	Now: 1694101006975
+Total: 6531646B	Added: 19461511B	Fraction: 0.748716710324952	Now: 1694101008151
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxXlWelGcrfHQFofMwR8rizz8EtOtv7MtfXay2SBsBpNAsRY9-Qa7uhfqhO0jYD8I-z0zGvaOJ0SWzkCYWYIaQDNh2nw9sxY4HmwUdMr7DtvQtnhd5o-Fqa_WaTcmPZIc6ytcoC2HQ==?fccs=W1siQUtzUm9sOTdxRTg2QlhhMDVCLVhOTlVGTUZZUEhycW1FSkM3Nlo2TWtpV3VNcHhZQVl3MjJRcDM5cC1Cd25uUnZQQ196Ul81c0RPMHBBeXFKRUVOTUIxM0lOa214WjFLZGhvZFI5dlJOMTY2ZmNDcng5ZnlmWFBXYjdKR3pWb1cyQThtNDd2OVlxY2s2UWo3eThMemFnUWYxSzFSS214M2tRPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDEwMDMsNzU1MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9saWZlc3R5bGUvY2UtZXN0ZS10YXJvdHVsLWN1bS1zZS1ldGFsZWF6YS1jYXJ0aWxlLXRhcm90LTQyMjEzMTgiLG51bGwsW1s4LCI4c2RrTnAwd1F5WSJdLFs5LCJlbi1HQiJdLFsxNiwiWzEsMSwxXSJdLFs3LCIxMCJdLFsxMSwiW1tdLFtdLFtdXSJdLFsxOSwiMiJdLFsxNywiWzBdIl1dXQ
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxXlWelGcrfHQFofMwR8rizz8EtOtv7MtfXay2SBsBpNAsRY9-Qa7uhfqhO0jYD8I-z0zGvaOJ0SWzkCYWYIaQDNh2nw9sxY4HmwUdMr7DtvQtnhd5o-Fqa_WaTcmPZIc6ytcoC2HQ==?fccs=W1siQUtzUm9sOTdxRTg2QlhhMDVCLVhOTlVGTUZZUEhycW1FSkM3Nlo2TWtpV3VNcHhZQVl3MjJRcDM5cC1Cd25uUnZQQ196Ul81c0RPMHBBeXFKRUVOTUIxM0lOa214WjFLZGhvZFI5dlJOMTY2ZmNDcng5ZnlmWFBXYjdKR3pWb1cyQThtNDd2OVlxY2s2UWo3eThMemFnUWYxSzFSS214M2tRPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDEwMDMsNzU1MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9saWZlc3R5bGUvY2UtZXN0ZS10YXJvdHVsLWN1bS1zZS1ldGFsZWF6YS1jYXJ0aWxlLXRhcm90LTQyMjEzMTgiLG51bGwsW1s4LCI4c2RrTnAwd1F5WSJdLFs5LCJlbi1HQiJdLFsxNiwiWzEsMSwxXSJdLFs3LCIxMCJdLFsxMSwiW1tdLFtdLFtdXSJdLFsxOSwiMiJdLFsxNywiWzBdIl1dXQ
+Total: 6531646B	Added: 19561513B	Fraction: 0.7496797532257401	Now: 1694101009317
+new:         https://www.google.com/pagead/1p-conversion/10963632302/?random=1694101006266&cv=11&fst=1694101006266&bg=ffffff&guid=ON&async=1&gtm=45be38u0h1&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.libertatea.ro%2Ftehnologie&label=IdugCOaBnNIDEK6B7-so&hn=www.google.com&frm=0&tiba=Stiri%20Tehnologie%20-%20Ultimele%20Stiri%20din%20Lumea%20Digitala%20%7C%20Libertatea&auid=1160060469.1694100187&fledge=1&capi=1&uamb=0&uaw=0&data=event%3Dconversion&gcp=1&sscte=1&ct_cookie_present=1&rfmt=3&fmt=4
+Total: 6531646B	Added: 19579655B	Fraction: 0.7498536744683844	Now: 1694101010326
+Total: 6531646B	Added: 19722670B	Fraction: 0.7512162952559877	Now: 1694101011473
+Total: 6531646B	Added: 19794184B	Fraction: 0.7518921150824115	Now: 1694101012531
+Total: 6531646B	Added: 19937211B	Fraction: 0.753232789764968	Now: 1694101013587
+Total: 6531646B	Added: 19955100B	Fraction: 0.7533994549575852	Now: 1694101015351
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxVA2py-LKMA_3byAahaIJ_GUXX2h7RUCC3qfU0MCJB5OxHId5vXeP0NTr4EVmNui2t8kN5Lk8WEzdK3-K7jWJHXfJd03nDZQTIPpMSoo1U-4-gOlHt9aXgx9-5HMdAeftcYQwMnYIpnjw9X6aFg4_UqKynx49stT1yrVnHHkyDYy2boXYX6L34_welc/_.lk/ads//adengage1./articleSponsorDeriv_?adunitid=/displayadbanner_
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxVA2py-LKMA_3byAahaIJ_GUXX2h7RUCC3qfU0MCJB5OxHId5vXeP0NTr4EVmNui2t8kN5Lk8WEzdK3-K7jWJHXfJd03nDZQTIPpMSoo1U-4-gOlHt9aXgx9-5HMdAeftcYQwMnYIpnjw9X6aFg4_UqKynx49stT1yrVnHHkyDYy2boXYX6L34_welc/_.lk/ads//adengage1./articleSponsorDeriv_?adunitid=/displayadbanner_
+Total: 6531646B	Added: 19990872B	Fraction: 0.7537320551540393	Now: 1694101016603
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxWPLTATwGAtYBVywEpBrH6YTF_hpcU3H8OAgzHSkfigg3UEmRwDIWDlKkZBtYI88ctfuLSLTjXkq-7B7zyUGljsfhknj2s7thLf9IFJ7gQUrymB5fREmMHzsBz3K0PxyC7W7nnNSA==?fccs=W1siQUtzUm9sOTdxRTg2QlhhMDVCLVhOTlVGTUZZUEhycW1FSkM3Nlo2TWtpV3VNcHhZQVl3MjJRcDM5cC1Cd25uUnZQQ196Ul81c0RPMHBBeXFKRUVOTUIxM0lOa214WjFLZGhvZFI5dlJOMTY2ZmNDcng5ZnlmWFBXYjdKR3pWb1cyQThtNDd2OVlxY2s2UWo3eThMemFnUWYxSzFSS214M2tRPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDEwMTYsNzA5MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby90ZWhub2xvZ2llIixudWxsLFtbOCwiOHNka05wMHdReVkiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiMTAiXSxbMTEsIltbXSxbXSxbXV0iXSxbMTksIjIiXSxbMTcsIlswXSJdXV0
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxWPLTATwGAtYBVywEpBrH6YTF_hpcU3H8OAgzHSkfigg3UEmRwDIWDlKkZBtYI88ctfuLSLTjXkq-7B7zyUGljsfhknj2s7thLf9IFJ7gQUrymB5fREmMHzsBz3K0PxyC7W7nnNSA==?fccs=W1siQUtzUm9sOTdxRTg2QlhhMDVCLVhOTlVGTUZZUEhycW1FSkM3Nlo2TWtpV3VNcHhZQVl3MjJRcDM5cC1Cd25uUnZQQ196Ul81c0RPMHBBeXFKRUVOTUIxM0lOa214WjFLZGhvZFI5dlJOMTY2ZmNDcng5ZnlmWFBXYjdKR3pWb1cyQThtNDd2OVlxY2s2UWo3eThMemFnUWYxSzFSS214M2tRPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDEwMTYsNzA5MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby90ZWhub2xvZ2llIixudWxsLFtbOCwiOHNka05wMHdReVkiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiMTAiXSxbMTEsIltbXSxbXSxbXV0iXSxbMTksIjIiXSxbMTcsIlswXSJdXV0
+Total: 6531646B	Added: 20009344B	Fraction: 0.7539034527348075	Now: 1694101019854
+Total: 6533207B	Added: 20069201B	Fraction: 0.7544129463768844	Now: 1694101020960
+Total: 6533495B	Added: 20130020B	Fraction: 0.7549649774232692	Now: 1694101022396
+Total: 6533495B	Added: 20150285B	Fraction: 0.755151069301276	Now: 1694101023531
+Total: 6533783B	Added: 20150285B	Fraction: 0.7551429189882143	Now: 1694101024579
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxXqDmEb58jaBfyhoVyj2cf0DrHr9ROCHq2SSmDTi7OSt1iA-Yu5lTnsIumTlDI7RvY9nLmHkG2QH6jjd5rIi1TMt64t9YS3TSdko-8sONPBdeq4ITkOa6WcWuo1kImkxUFQ4_Vuxg==?fccs=W1siQUtzUm9sX0hzckgyWFR5akhKMTBrYV9sc0VuaWY5SlhmQ1BaNjA2M3lmUVVaY2RWZXgzNmRibEFFalJxUUdCUWZ3bW9CbFRBRGFNMHJfUlFwWjczakkyX1NUZjdqRGxWZVIwMmFSUWlpcDJTS29ZcDBsaFNsa3l3MlZqX1hvZkZyU1V2RVdXcHhmSnJIX0UtRjZ1NUhFRzE0ZUtLOHRQMzR3PT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDEwMjMsNzk5MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbN11dLCJodHRwczovL3d3dy5saWJlcnRhdGVhLnJvL3BvbGl0aWNhIixudWxsLFtbOCwiOHNka05wMHdReVkiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiMTAiXSxbMTEsIltbXSxbXSxbXV0iXSxbMTksIjIiXSxbMTcsIlswXSJdXV0
+warning:     frame-src    https://5bfee9347bc36e2f4c9aebf521cbcb03.safeframe.googlesyndication.com
+Total: 6698318B	Added: 20191328B	Fraction: 0.7508960140271091	Now: 1694101025646
+violation:   script-src    eval
+new:         https://www.google.com/pagead/1p-conversion/10963632302/?random=1694101021602&cv=11&fst=1694101021602&bg=ffffff&guid=ON&async=1&gtm=45be38u0h1&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.libertatea.ro%2Fpolitica&label=IdugCOaBnNIDEK6B7-so&hn=www.google.com&frm=0&tiba=Stiri%20Politice%20-%20Ultimele%20Stiri%20din%20Viata%20Politica%20%7C%20Libertatea&auid=1160060469.1694100187&fledge=1&capi=1&uamb=0&uaw=0&data=event%3Dconversion&gcp=1&sscte=1&ct_cookie_present=1&rfmt=3&fmt=4
+Total: 6698318B	Added: 20232226B	Fraction: 0.7512743151419444	Now: 1694101026676
+Total: 6698318B	Added: 20272882B	Fraction: 0.7516492406715312	Now: 1694101027690
+Total: 6698318B	Added: 20516904B	Fraction: 0.7538760477500422	Now: 1694101028976
+Total: 6698318B	Added: 20760847B	Fraction: 0.7560625751001533	Now: 1694101030156
+Total: 6698318B	Added: 20883673B	Fraction: 0.7571488584707319	Now: 1694101031292
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxWJL8CIldGiKTa-_r8DykDOuSqFdSCKAfQXxUj1A9M0Y2gSGwQ3l9ofD4tLTLemdQ78mOK0RdXTRfIn5bgsR-tdoBjz-fMgOlathjobFNm6FuQ8vYWgHLjVtZ-h9lSYCetUqWWZ3aq0onVccdJwQ7F9ZzkGcQ_OLdTKh5A-vXB6a0TUNNq_4JofcXSe/_/topadbg./showban.asp?/adv-1.-news-ad-/verticaladrotatorv2.
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxWJL8CIldGiKTa-_r8DykDOuSqFdSCKAfQXxUj1A9M0Y2gSGwQ3l9ofD4tLTLemdQ78mOK0RdXTRfIn5bgsR-tdoBjz-fMgOlathjobFNm6FuQ8vYWgHLjVtZ-h9lSYCetUqWWZ3aq0onVccdJwQ7F9ZzkGcQ_OLdTKh5A-vXB6a0TUNNq_4JofcXSe/_/topadbg./showban.asp?/adv-1.-news-ad-/verticaladrotatorv2.
+Total: 6698959B	Added: 20904129B	Fraction: 0.7573112472053851	Now: 1694101032305
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxWelqEs3Yp55rYwkzCK6_drfUE9-yjGkPatsd7ZN2W6ra1eXmVYmbcAKJHN3bsNhOKpQiB1ML_EGaR3iCHsLXk5Ql1ye4qUfSFmuDgKhj_Hneb-nutl75KGJdmR8CJe62kJ3I-DXQ==?fccs=W1siQUtzUm9sX0hzckgyWFR5akhKMTBrYV9sc0VuaWY5SlhmQ1BaNjA2M3lmUVVaY2RWZXgzNmRibEFFalJxUUdCUWZ3bW9CbFRBRGFNMHJfUlFwWjczakkyX1NUZjdqRGxWZVIwMmFSUWlpcDJTS29ZcDBsaFNsa3l3MlZqX1hvZkZyU1V2RVdXcHhmSnJIX0UtRjZ1NUhFRzE0ZUtLOHRQMzR3PT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDEwMzEsOTM5MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9wb2xpdGljYSIsbnVsbCxbWzgsIjhzZGtOcDB3UXlZIl0sWzksImVuLUdCIl0sWzE2LCJbMSwxLDFdIl0sWzcsIjEwIl0sWzExLCJbW10sW10sW11dIl0sWzE5LCIyIl0sWzE3LCJbMF0iXV1d
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxWelqEs3Yp55rYwkzCK6_drfUE9-yjGkPatsd7ZN2W6ra1eXmVYmbcAKJHN3bsNhOKpQiB1ML_EGaR3iCHsLXk5Ql1ye4qUfSFmuDgKhj_Hneb-nutl75KGJdmR8CJe62kJ3I-DXQ==?fccs=W1siQUtzUm9sX0hzckgyWFR5akhKMTBrYV9sc0VuaWY5SlhmQ1BaNjA2M3lmUVVaY2RWZXgzNmRibEFFalJxUUdCUWZ3bW9CbFRBRGFNMHJfUlFwWjczakkyX1NUZjdqRGxWZVIwMmFSUWlpcDJTS29ZcDBsaFNsa3l3MlZqX1hvZkZyU1V2RVdXcHhmSnJIX0UtRjZ1NUhFRzE0ZUtLOHRQMzR3PT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDEwMzEsOTM5MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9wb2xpdGljYSIsbnVsbCxbWzgsIjhzZGtOcDB3UXlZIl0sWzksImVuLUdCIl0sWzE2LCJbMSwxLDFdIl0sWzcsIjEwIl0sWzExLCJbW10sW10sW11dIl0sWzE5LCIyIl0sWzE3LCJbMF0iXV1d
+violation:   script-src-attr    inline
+Total: 6699869B	Added: 20990481B	Fraction: 0.75804318110822	Now: 1694101033646
+Total: 6700157B	Added: 21057463B	Fraction: 0.7586191827685514	Now: 1694101034900
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxXRmPNmZSRWjKzy163kniWcDv8MoLEWG2lm_iGfueKv3PR0JyJ5BjAuG459xhZTxiHTwEeXPAsOCSp4fK9aqWKqsc5wT2k1WPD9iNt7FNvlNOs7AMwVzwVJvkJwxuEluGaRNTcr_w==?fccs=W1siQUtzUm9sOFFoVGJiSW9fajNKdDRmSm9UWVdtcXMtN183aER4ZldJa3gwUzJ3Y2ZaaUJmTGVzaUxwbDAyUTR5Vjk3aVJXTHZRRFNVRzNOV2JOM094X2xqU255eHV0bDBnVzN0amw0SzRLOVlhNkRRSzNBdy1EQXlTc1FKdDBPWVhERmhqeE1zN2UzTm5RVlNTWFdya0lYYUdYaXhfdmV2ZkhRPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDEwMzQsNDQ4MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbN11dLCJodHRwczovL3d3dy5saWJlcnRhdGVhLnJvL3N0aXJpL21hcmNlbC1jaW9sYWN1LXZvaS1wcm9wdW5lLWV4Y2x1ZGVyZWEtcHJpbWFydWx1aS1kaW4tY3JldmVkaWEtNDY0NzczMCIsbnVsbCxbWzgsIjhzZGtOcDB3UXlZIl0sWzksImVuLUdCIl0sWzE2LCJbMSwxLDFdIl0sWzcsIjEwIl0sWzExLCJbW10sW10sW11dIl0sWzE5LCIyIl0sWzE3LCJbMF0iXV1d
+Total: 6742959B	Added: 21057463B	Fraction: 0.7574511998414988	Now: 1694101036083
+violation:   script-src    eval
+Total: 6742959B	Added: 21234112B	Fraction: 0.7589826683429441	Now: 1694101037131
+Total: 6743942B	Added: 21234112B	Fraction: 0.7589560017290695	Now: 1694101038136
+Total: 6743942B	Added: 21234112B	Fraction: 0.7589560017290695	Now: 1694101040920
+Total: 6743942B	Added: 21234112B	Fraction: 0.7589560017290695	Now: 1694101042127
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxXE-DT4DnoYnknGsKx278Z-1U0geONd7b-yAfiOYnqoRml38tfRbJUwGEXx4s8LWXOLDZt9s-EdpfMC29k_QteaOZqlbbxHCczhBZ223tLDx_WysuqtwRDJchbxsaSrjEBNE4V0nevsqJPvMBcXp-FSsPBHDz7w8Mz2b9hX0-w03HTlKgYNuX6HJCJq/_/adzonebelowplayer./ads/widebanner./ad-topbanner-/adline./openx-
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxXE-DT4DnoYnknGsKx278Z-1U0geONd7b-yAfiOYnqoRml38tfRbJUwGEXx4s8LWXOLDZt9s-EdpfMC29k_QteaOZqlbbxHCczhBZ223tLDx_WysuqtwRDJchbxsaSrjEBNE4V0nevsqJPvMBcXp-FSsPBHDz7w8Mz2b9hX0-w03HTlKgYNuX6HJCJq/_/adzonebelowplayer./ads/widebanner./ad-topbanner-/adline./openx-
+Total: 6743942B	Added: 21256364B	Fraction: 0.7591475607445147	Now: 1694101043328
+violation:   script-src    eval
+Total: 6743942B	Added: 21367088B	Fraction: 0.7600962326887346	Now: 1694101044433
+Total: 6743942B	Added: 21522406B	Fraction: 0.7614144565120333	Now: 1694101045750
+Total: 6743942B	Added: 21633384B	Fraction: 0.7623475164643773	Now: 1694101046966
+Total: 6743942B	Added: 21633384B	Fraction: 0.7623475164643773	Now: 1694101049067
+Total: 6745140B	Added: 21704399B	Fraction: 0.7629086362348437	Now: 1694101050248
+Total: 6790854B	Added: 21800439B	Fraction: 0.7624852433221541	Now: 1694101051458
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 6790854B	Added: 21896396B	Fraction: 0.7632797148559028	Now: 1694101052709
+Total: 6791142B	Added: 21896396B	Fraction: 0.7632720521363666	Now: 1694101053998
+Total: 6791142B	Added: 21896396B	Fraction: 0.7632720521363666	Now: 1694101055160
+Total: 6791142B	Added: 21896396B	Fraction: 0.7632720521363666	Now: 1694101056386
+Total: 6791142B	Added: 21969360B	Fraction: 0.7638726194695767	Now: 1694101057546
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxV8O1l1KZKaWVkv9yx5eyhzn2YEtqs54ZOzW-mQEoZRY7OEY0kU-hvp65wNi98sVe2x8WPm4ZlILjHIA22haFWipj-Z95lmCeHdaHZOw1JI3ecRO04jHBRlWwQBk6IYASBMkBaqBhUm-DorfEsxiEBb85dBnRF3iZ80oHFyzgn-UxxjgT4f3BDTOgtj/_/admeld.-scrollads./adkingpro-/back-ad./adrectanglebanner?
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxV8O1l1KZKaWVkv9yx5eyhzn2YEtqs54ZOzW-mQEoZRY7OEY0kU-hvp65wNi98sVe2x8WPm4ZlILjHIA22haFWipj-Z95lmCeHdaHZOw1JI3ecRO04jHBRlWwQBk6IYASBMkBaqBhUm-DorfEsxiEBb85dBnRF3iZ80oHFyzgn-UxxjgT4f3BDTOgtj/_/admeld.-scrollads./adkingpro-/back-ad./adrectanglebanner?
+Total: 6791142B	Added: 22017600B	Fraction: 0.7642680128136106	Now: 1694101058973
+Total: 6791142B	Added: 22041669B	Fraction: 0.7644647967206527	Now: 1694101060135
+Total: 6791142B	Added: 22089807B	Fraction: 0.7648573805521418	Now: 1694101063677
+Total: 6791142B	Added: 22210192B	Fraction: 0.7658334613159519	Now: 1694101064940
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxU6-w9J8N_fYcyD7Swo_ma-pOk3MTC0gOw51C6hLCMAyUc-6DOEGXIpnkLLvqJ_cZRya0SKlHwwkGbAis-KmCPXTtZG1sUHyZIx3ogePWclVE1ADlaaP2a_07-R0N6rB3VSrZVU8g==?fccs=W1siQUtzUm9sODRpYkoxRzFjQmhPN2k2M2JqRzZoUDM4dzR6UmdTM1Y2MUxGMFM1MnE3anoyTlJvemJXel9PdXV5WG51UkY5OGxCUGRkbXpEYWxxMXRDWG83U3dFdVV1Wm9COVREVkVBSk1ObWU4RGRsd1JZVElQMHkxbjhjSlMydjhKZ0hlcTVsdE4zRFBxSXNwZWlRSk1pSlV4T2JnWW5DVXRnPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDEwNjAsMjQ2MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9zcG9ydC9zaW1vbmEtaGFsZXAtY29udHJhY3QtaW5jaGVpYXQtYm13LTQ1NzI0NDYiLG51bGwsW1s4LCI4c2RrTnAwd1F5WSJdLFs5LCJlbi1HQiJdLFsxNiwiWzEsMSwxXSJdLFs3LCIxMCJdLFsxMSwiW1tdLFtdLFtdXSJdLFsxOSwiMiJdLFsxNywiWzBdIl1dXQ
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxU6-w9J8N_fYcyD7Swo_ma-pOk3MTC0gOw51C6hLCMAyUc-6DOEGXIpnkLLvqJ_cZRya0SKlHwwkGbAis-KmCPXTtZG1sUHyZIx3ogePWclVE1ADlaaP2a_07-R0N6rB3VSrZVU8g==?fccs=W1siQUtzUm9sODRpYkoxRzFjQmhPN2k2M2JqRzZoUDM4dzR6UmdTM1Y2MUxGMFM1MnE3anoyTlJvemJXel9PdXV5WG51UkY5OGxCUGRkbXpEYWxxMXRDWG83U3dFdVV1Wm9COVREVkVBSk1ObWU4RGRsd1JZVElQMHkxbjhjSlMydjhKZ0hlcTVsdE4zRFBxSXNwZWlRSk1pSlV4T2JnWW5DVXRnPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDEwNjAsMjQ2MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9zcG9ydC9zaW1vbmEtaGFsZXAtY29udHJhY3QtaW5jaGVpYXQtYm13LTQ1NzI0NDYiLG51bGwsW1s4LCI4c2RrTnAwd1F5WSJdLFs5LCJlbi1HQiJdLFsxNiwiWzEsMSwxXSJdLFs3LCIxMCJdLFsxMSwiW1tdLFtdLFtdXSJdLFsxOSwiMiJdLFsxNywiWzBdIl1dXQ
+Total: 6791142B	Added: 22355243B	Fraction: 0.766998823353222	Now: 1694101065991
+Total: 6791142B	Added: 22355243B	Fraction: 0.766998823353222	Now: 1694101067137
+Total: 6792292B	Added: 22432693B	Fraction: 0.7675861253649916	Now: 1694101068294
+Total: 6792580B	Added: 22485057B	Fraction: 0.7679942544543469	Now: 1694101069363
+Total: 6851088B	Added: 22511182B	Fraction: 0.7666703562088354	Now: 1694101070703
+Total: 6946325B	Added: 22537920B	Fraction: 0.7644055325140596	Now: 1694101071706
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxVpLZQUuMr3cDHljQ4wW2IkB3LO4SDeMPW1-CzDj55ssyUzQAF7cKlREgayh7FLhdtDWrNNdTaUhlUpnmFeaiuM9y9vq94SKIp5COpZy_rL7fLEqSnAle3r5GcezKoZei414j7Z1A==?fccs=W1siQUtzUm9sXzI1V1pCY1VmbWM5ZEdEVWJfV2F0al9JUG1VQV85TS1vbURLNHRROGlkMHlJcnZFQXhsTFpWZlN3MHBCMkQ5YWZ0aURLbHhiN1YxTGs5WlRvc2hnRmsyM2VOcExuMUpYM0x5R1ZNTlBUcGRQTXloZnI3ZHRZeUFycmxnRXpxZnhMRkdaNE9FdXBTWTdlSjlPUmE4TGtiZGt6ZzZ3PT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDEwNzAsNjU5MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbN11dLCJodHRwczovL3d3dy5saWJlcnRhdGVhLnJvL3N1YmllY3QvZnJ1Y3RlLWxlZ3VtZSIsbnVsbCxbWzgsIjhzZGtOcDB3UXlZIl0sWzksImVuLUdCIl0sWzE2LCJbMSwxLDFdIl0sWzcsIjEwIl0sWzExLCJbW10sW10sW11dIl0sWzE5LCIyIl0sWzE3LCJbMF0iXV1d
+new:         https://www.google.com/pagead/1p-conversion/10963632302/?random=1694101068515&cv=11&fst=1694101068515&bg=ffffff&guid=ON&async=1&gtm=45be38u0h1&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.libertatea.ro%2Fsubiect%2Ffructe-legume&label=IdugCOaBnNIDEK6B7-so&hn=www.google.com&frm=0&tiba=Fructe%20%C8%99i%20legume%20-%20Cele%20mai%20Noi%20%C8%98tiri%20%7C%20Libertatea&auid=1160060469.1694100187&fledge=1&capi=1&uamb=0&uaw=0&data=event%3Dconversion&gcp=1&sscte=1&ct_cookie_present=1&rfmt=3&fmt=4
+Total: 6946325B	Added: 22564387B	Fraction: 0.7646168279504744	Now: 1694101072962
+Total: 6946325B	Added: 22616789B	Fraction: 0.765034055614033	Now: 1694101074206
+Total: 6946325B	Added: 22616789B	Fraction: 0.765034055614033	Now: 1694101075248
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxWozWFG86k5uv57yVe-YRgL93AycGEAMjLemVeeBw1PjxMoN5Epy91Kjhx4SHVTk8AlAk44nsf258CwVPAP6WDMQ8meJDiDm-M-ek70yKCYyQnDX3e2WPo5NTyPb6Vwzirn0nd8gfHsCECzvhfNTHrTUD_rrO72yd1sU_PA1jhFxEOGfJWSF3pKiYxa/_/adv1./ad.valary?_valueclick./static-ad-/adfliction-
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxWozWFG86k5uv57yVe-YRgL93AycGEAMjLemVeeBw1PjxMoN5Epy91Kjhx4SHVTk8AlAk44nsf258CwVPAP6WDMQ8meJDiDm-M-ek70yKCYyQnDX3e2WPo5NTyPb6Vwzirn0nd8gfHsCECzvhfNTHrTUD_rrO72yd1sU_PA1jhFxEOGfJWSF3pKiYxa/_/adv1./ad.valary?_valueclick./static-ad-/adfliction-
+Total: 6946966B	Added: 22669902B	Fraction: 0.765438870848869	Now: 1694101076348
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxXsa-FgDy6S7CHBheap7jzuWQ6j-jmCpxdgjJea1ZZEeM319TKfX6JXCjC9lWuNcDcLRg3dQwh_QUUkPseO5XUNy8M17o5XqqdZsvH5f6LzEFekzs4TecbsZSDk2l8LEgZc5-7jXQ==?fccs=W1siQUtzUm9sXzI1V1pCY1VmbWM5ZEdEVWJfV2F0al9JUG1VQV85TS1vbURLNHRROGlkMHlJcnZFQXhsTFpWZlN3MHBCMkQ5YWZ0aURLbHhiN1YxTGs5WlRvc2hnRmsyM2VOcExuMUpYM0x5R1ZNTlBUcGRQTXloZnI3ZHRZeUFycmxnRXpxZnhMRkdaNE9FdXBTWTdlSjlPUmE4TGtiZGt6ZzZ3PT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDEwNzYsMjA0MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9zdWJpZWN0L2ZydWN0ZS1sZWd1bWUiLG51bGwsW1s4LCI4c2RrTnAwd1F5WSJdLFs5LCJlbi1HQiJdLFsxNiwiWzEsMSwxXSJdLFs3LCIxMCJdLFsxMSwiW1tdLFtdLFtdXSJdLFsxOSwiMiJdLFsxNywiWzBdIl1dXQ
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxXsa-FgDy6S7CHBheap7jzuWQ6j-jmCpxdgjJea1ZZEeM319TKfX6JXCjC9lWuNcDcLRg3dQwh_QUUkPseO5XUNy8M17o5XqqdZsvH5f6LzEFekzs4TecbsZSDk2l8LEgZc5-7jXQ==?fccs=W1siQUtzUm9sXzI1V1pCY1VmbWM5ZEdEVWJfV2F0al9JUG1VQV85TS1vbURLNHRROGlkMHlJcnZFQXhsTFpWZlN3MHBCMkQ5YWZ0aURLbHhiN1YxTGs5WlRvc2hnRmsyM2VOcExuMUpYM0x5R1ZNTlBUcGRQTXloZnI3ZHRZeUFycmxnRXpxZnhMRkdaNE9FdXBTWTdlSjlPUmE4TGtiZGt6ZzZ3PT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDEwNzYsMjA0MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9zdWJpZWN0L2ZydWN0ZS1sZWd1bWUiLG51bGwsW1s4LCI4c2RrTnAwd1F5WSJdLFs5LCJlbi1HQiJdLFsxNiwiWzEsMSwxXSJdLFs3LCIxMCJdLFsxMSwiW1tdLFtdLFtdXSJdLFsxOSwiMiJdLFsxNywiWzBdIl1dXQ
+Total: 6946966B	Added: 22669902B	Fraction: 0.765438870848869	Now: 1694101078461
+Total: 6948120B	Added: 22754610B	Fraction: 0.7660780675715666	Now: 1694101079970
+Total: 6948408B	Added: 22754610B	Fraction: 0.7660706396905527	Now: 1694101080985
+Total: 6948408B	Added: 22754610B	Fraction: 0.7660706396905527	Now: 1694101082093
+violation:   script-src    eval
+Total: 6948408B	Added: 22783200B	Fraction: 0.7662955868380883	Now: 1694101083271
+violation:   script-src    eval
+Total: 6948408B	Added: 22811787B	Fraction: 0.7665200782454551	Now: 1694101084395
+Total: 6948408B	Added: 23040675B	Fraction: 0.7683020851287784	Now: 1694101085595
+Total: 6948408B	Added: 23183735B	Fraction: 0.7694021298120084	Now: 1694101086758
+Total: 6948408B	Added: 23240957B	Fraction: 0.7698392132461216	Now: 1694101089881
+Total: 6948408B	Added: 23384007B	Fraction: 0.7709246692028973	Now: 1694101091216
+Total: 6948408B	Added: 23384007B	Fraction: 0.7709246692028973	Now: 1694101092827
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxXMN7H2siz1OHLclLSJSwj6q9XTfZf-idG7JTRvNe_xWoKEfMG2SYws2fzsdgiaNvD1-Oykdb-52F5xfewT9vM20QVFs1pPfCx2ryeCJFdvKFez0lrFiwcEA_a9NK-ACkBidGQ70HSOA4THsPR8szzI89vND6wq-iQnIP6ATVJkuY-RKyY9moPWzUUo/__custom_ad./blogad02..300x250./a7delivery_/ads12.
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxXMN7H2siz1OHLclLSJSwj6q9XTfZf-idG7JTRvNe_xWoKEfMG2SYws2fzsdgiaNvD1-Oykdb-52F5xfewT9vM20QVFs1pPfCx2ryeCJFdvKFez0lrFiwcEA_a9NK-ACkBidGQ70HSOA4THsPR8szzI89vND6wq-iQnIP6ATVJkuY-RKyY9moPWzUUo/__custom_ad./blogad02..300x250./a7delivery_/ads12.
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxWpSJh0e273aqbH2nNpErrdclbubmeIwwm7hYAxcHQripukypf1-AhYzddLbNfZpwFVQSXyDQU6c1DmleCcOGtXJ-iT_sDF1Ah6V3A6lC21aOX1uSjU7we04kU7jRhL7glSI9399A==?fccs=W1siQUtzUm9sOWlPQ0JOOVkyZTg0TEVQRUNDRndLX0ZsOHJPQ1VtTU0zSm9Td2hKaVEwaHk0c2xaa1ZBOFUtQl9uMGtSTG9zNlhpeG55QkNaTnozMHRpOExGajkxazZ3SXVWbmdnTTVCOEF2UWhLOUxxVlg1RUFJVmhjaW4wOEF2UFVFVW5UYnE5Z0dxLU13cEJ6NXUxWmdaOWNVRXRDTVBrNGlBPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDEwOTMsNTQ1MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9yZWxhdGlpIixudWxsLFtbOCwiOHNka05wMHdReVkiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiMTAiXSxbMTEsIltbXSxbXSxbXV0iXSxbMTksIjIiXSxbMTcsIlswXSJdXV0
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxWpSJh0e273aqbH2nNpErrdclbubmeIwwm7hYAxcHQripukypf1-AhYzddLbNfZpwFVQSXyDQU6c1DmleCcOGtXJ-iT_sDF1Ah6V3A6lC21aOX1uSjU7we04kU7jRhL7glSI9399A==?fccs=W1siQUtzUm9sOWlPQ0JOOVkyZTg0TEVQRUNDRndLX0ZsOHJPQ1VtTU0zSm9Td2hKaVEwaHk0c2xaa1ZBOFUtQl9uMGtSTG9zNlhpeG55QkNaTnozMHRpOExGajkxazZ3SXVWbmdnTTVCOEF2UWhLOUxxVlg1RUFJVmhjaW4wOEF2UFVFVW5UYnE5Z0dxLU13cEJ6NXUxWmdaOWNVRXRDTVBrNGlBPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDEwOTMsNTQ1MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9yZWxhdGlpIixudWxsLFtbOCwiOHNka05wMHdReVkiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiMTAiXSxbMTEsIltbXSxbXSxbXV0iXSxbMTksIjIiXSxbMTcsIlswXSJdXV0
+Total: 6948408B	Added: 23441946B	Fraction: 0.7713613997388776	Now: 1694101093850
+Total: 6948408B	Added: 23441946B	Fraction: 0.7713613997388776	Now: 1694101095128
+violation:   script-src-attr    inline
+Total: 6949606B	Added: 23530365B	Fraction: 0.7719943368712523	Now: 1694101096525
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxViEv3CYX6bwZzCLAIxc0D20P0qJZNrTPyKQryawS7Q45dqomdHynH3l4o1UFaAiIU0w0ZZGRiIz_MFHAO9MIxbWY-0tEj2rfDYRcE3_3soFPS3d6eBYhYCW9Mm3T2oKsaOuTvKrQ==?fccs=W1siQUtzUm9sXzFULUo5emFJR2tVSlg5Q3p3ZjZlVHpZSlY0TlhRQkZTRDZXNml6MU9xVktmTElnaTg1UlVLYlVFYnFkYnBLb1lWY01va1hlZ3o3TXZ5dnk1RWRYdmRQUnFwSkJqYjJKdVZLMEpLcnc1Q3c1MmlUWUlzcm5LdlMtdTJTcUJGbS1lcHZEcW5TOVJUWUFLaHFmdmMzcXkyNTJxZHF3PT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDEwOTYsMzk4MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbN11dLCJodHRwczovL3d3dy5saWJlcnRhdGVhLnJvL3N0aXJpLzE5LW1vcnRpLWludHJlLWVpLXBhdHJ1LWNvcGlpLXNpLTIxLWRlLXJhbml0aS1pbnRyLXVuLWF1dG9jYXItY3UtbWlncmFudGktY2FyZS1zLWEtcHJhYnVzaXQtaW50ci1vLXJhcGEtcGUtby1zb3NlYS1kaW4tbm9yZHVsLW1leGljdWx1aS00NjI0OTM3IixudWxsLFtbOCwiOHNka05wMHdReVkiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiMTAiXSxbMTEsIltbXSxbXSxbXV0iXSxbMTksIjIiXSxbMTcsIlswXSJdXV0
+Total: 7000473B	Added: 23590695B	Fraction: 0.7711603231364033	Now: 1694101097565
+Total: 7183737B	Added: 23709856B	Fraction: 0.7674683873772792	Now: 1694101099113
+Total: 7184025B	Added: 23709856B	Fraction: 0.7674612328570826	Now: 1694101100159
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxUTIhNGFq2eDrsPaGHYlwGxe_xIyGDnpEbcIMshufkNhVh8tEqR9MUFVjqDMshgOukSmE_PfG7G-UiX0w96ZIIuNlrHSRqqv51f2bqYrUaq-poZ80xTuqKdEHtvwT0ycyW786PetLpGeQIlqYuJBmFBIPN0geTZip3Zs7zwzk3MIhi0BjDizF5VNuXz/_/AdSpace160x60./skyscraper-ad.-search-ads.-ad2./728_200.
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxUTIhNGFq2eDrsPaGHYlwGxe_xIyGDnpEbcIMshufkNhVh8tEqR9MUFVjqDMshgOukSmE_PfG7G-UiX0w96ZIIuNlrHSRqqv51f2bqYrUaq-poZ80xTuqKdEHtvwT0ycyW786PetLpGeQIlqYuJBmFBIPN0geTZip3Zs7zwzk3MIhi0BjDizF5VNuXz/_/AdSpace160x60./skyscraper-ad.-search-ads.-ad2./728_200.
+Total: 7184025B	Added: 23739789B	Fraction: 0.7676863209693345	Now: 1694101101287
+violation:   script-src    eval
+Total: 7184025B	Added: 23769516B	Fraction: 0.7679094291667632	Now: 1694101102551
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxUeXkE1IkXudkQuX4zVBQTAG7OGcJPGhmh-qFb0FSJiOPZIpUd4RhwH7SGglfdpy2grLJm23deLbYdQE3rwa18Rk1cP-OSQwjPgT5o699RTkR6hVsMVeqkddQn2UZuYxKOMW8M0HQ==?fccs=W1siQUtzUm9sXzFULUo5emFJR2tVSlg5Q3p3ZjZlVHpZSlY0TlhRQkZTRDZXNml6MU9xVktmTElnaTg1UlVLYlVFYnFkYnBLb1lWY01va1hlZ3o3TXZ5dnk1RWRYdmRQUnFwSkJqYjJKdVZLMEpLcnc1Q3c1MmlUWUlzcm5LdlMtdTJTcUJGbS1lcHZEcW5TOVJUWUFLaHFmdmMzcXkyNTJxZHF3PT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDExMDEsNDMwMDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9zdGlyaS8xOS1tb3J0aS1pbnRyZS1laS1wYXRydS1jb3BpaS1zaS0yMS1kZS1yYW5pdGktaW50ci11bi1hdXRvY2FyLWN1LW1pZ3JhbnRpLWNhcmUtcy1hLXByYWJ1c2l0LWludHItby1yYXBhLXBlLW8tc29zZWEtZGluLW5vcmR1bC1tZXhpY3VsdWktNDYyNDkzNyIsbnVsbCxbWzgsIjhzZGtOcDB3UXlZIl0sWzksImVuLUdCIl0sWzE2LCJbMSwxLDFdIl0sWzcsIjEwIl0sWzExLCJbW10sW10sW11dIl0sWzE5LCIyIl0sWzE3LCJbMF0iXV1d
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxUeXkE1IkXudkQuX4zVBQTAG7OGcJPGhmh-qFb0FSJiOPZIpUd4RhwH7SGglfdpy2grLJm23deLbYdQE3rwa18Rk1cP-OSQwjPgT5o699RTkR6hVsMVeqkddQn2UZuYxKOMW8M0HQ==?fccs=W1siQUtzUm9sXzFULUo5emFJR2tVSlg5Q3p3ZjZlVHpZSlY0TlhRQkZTRDZXNml6MU9xVktmTElnaTg1UlVLYlVFYnFkYnBLb1lWY01va1hlZ3o3TXZ5dnk1RWRYdmRQUnFwSkJqYjJKdVZLMEpLcnc1Q3c1MmlUWUlzcm5LdlMtdTJTcUJGbS1lcHZEcW5TOVJUWUFLaHFmdmMzcXkyNTJxZHF3PT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDExMDEsNDMwMDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9zdGlyaS8xOS1tb3J0aS1pbnRyZS1laS1wYXRydS1jb3BpaS1zaS0yMS1kZS1yYW5pdGktaW50ci11bi1hdXRvY2FyLWN1LW1pZ3JhbnRpLWNhcmUtcy1hLXByYWJ1c2l0LWludHItby1yYXBhLXBlLW8tc29zZWEtZGluLW5vcmR1bC1tZXhpY3VsdWktNDYyNDkzNyIsbnVsbCxbWzgsIjhzZGtOcDB3UXlZIl0sWzksImVuLUdCIl0sWzE2LCJbMSwxLDFdIl0sWzcsIjEwIl0sWzExLCJbW10sW10sW11dIl0sWzE5LCIyIl0sWzE3LCJbMF0iXV1d
+Total: 7184025B	Added: 23859811B	Fraction: 0.7685844945192984	Now: 1694101103816
+new:         https://www.google.com/pagead/1p-conversion/10963632302/?random=1694101100877&cv=11&fst=1694101100877&bg=ffffff&guid=ON&async=1&gtm=45be38u0h1&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.libertatea.ro%2Fstiri%2F19-morti-intre-ei-patru-copii-si-21-de-raniti-intr-un-autocar-cu-migranti-care-s-a-prabusit-intr-o-rapa-pe-o-sosea-din-nordul-mexicului-4624937&label=IdugCOaBnNIDEK6B7-so&hn=www.google.com&frm=0&tiba=19%20Mor%C8%9Bi%2C%20%C3%AEntre%20Care%20Patru%20Copii%2C%20%C8%99i%2021%20De%20R%C4%83ni%C8%9Bi%2C%20%C3%AEntr-un%20Autocar%20Cu%20Migran%C8%9Bi%20Care%20S-a%20Pr%C4%83bu%C8%99it%20%C3%AEntr-o%20R%C3%A2p%C4%83%2C%20Pe%20O%20%C8%99osea%20Din%20Nordul%20Mex&auid=1160060469.1694100187&fledge=1&capi=1&uamb=0&uaw=0&data=event%3Dconversion&gcp=1&sscte=1&ct_cookie_present=1&rfmt=3&fmt=4
+Total: 7184025B	Added: 23950100B	Fraction: 0.7692555997639247	Now: 1694101105062
+Total: 7184025B	Added: 24129794B	Fraction: 0.7705797239231663	Now: 1694101106072
+Total: 7184025B	Added: 24309488B	Fraction: 0.771888737848966	Now: 1694101107079
+Total: 7184025B	Added: 24309488B	Fraction: 0.771888737848966	Now: 1694101108082
+Total: 7184720B	Added: 24309488B	Fraction: 0.771871704155888	Now: 1694101109253
+Total: 7185644B	Added: 24374408B	Fraction: 0.7723183726059767	Now: 1694101110486
+violation:   script-src-attr    inline
+Total: 7185932B	Added: 24407347B	Fraction: 0.7725487120219462	Now: 1694101114011
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxXKIQSHP8Y2rl_z3GvdOzRgqSdzag-j9NP5keoGEeeKV-6x6HcqtaO21ul5lqJKgKSPcUmxOt796R4m9eEkRMEq3ZKqcgW1e9nMgKshRy7VbvfwDWEhrmejcBdgCJe8AVjcC1GqwA==?fccs=W1siQUtzUm9sOWwzYkU4d3RiQUhSVjNiN081QXlickl3Zk9MRGdJRlhxTVhKTjdxUm03VU01ZWtVUEJCQ2NhNVRqNTFXSFdXbklEYVgwdXdsM1JrWnpqQmYxNmpJMUgxbm9vcFRlSFhnOUU3MzU0TFk0SnVlQVc5UUxKb0NvNlhmWng4dUN3OU01akFPWERpWi1VbTE3VGkxWHpzSnRJd3VVX1lBPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDExMTUsOTAwMDAwMF0sbnVsbCxudWxsLG51bGwsW251bGwsWzddXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9zdGlyaS9jaW9sYWN1LXNlLXByZWdhdGVzdGUtc2EtdGFpZS0xMC1kaW4tc3VidmVudGlhLXBhcnRpZGVsb3Itby1lY29ub21pZS1kZS0yNS1kZS1taWxpb2FuZS1kZS1sZWktYXV0b3JpdGF0ZWEtZWxlY3RvcmFsYS1vcHJlc3RlLWJhbmlpLWluLWF2YW5zLTQ2NTQ1MTciLG51bGwsW1s4LCI4c2RrTnAwd1F5WSJdLFs5LCJlbi1HQiJdLFsxNiwiWzEsMSwxXSJdLFs3LCIxMCJdLFsxMSwiW1tdLFtdLFtdXSJdLFsxOSwiMiJdLFsxNywiWzBdIl1dXQ
+Total: 7216455B	Added: 24441027B	Fraction: 0.7720458310613586	Now: 1694101115199
+violation:   script-src    eval
+violation:   script-src    eval
+Total: 7216743B	Added: 24704426B	Fraction: 0.773919839840452	Now: 1694101116441
+Total: 7216743B	Added: 24704426B	Fraction: 0.773919839840452	Now: 1694101117443
+Total: 7216743B	Added: 24704426B	Fraction: 0.773919839840452	Now: 1694101118464
+Total: 7216743B	Added: 24737319B	Fraction: 0.7741525631389211	Now: 1694101119551
+violation:   script-src    eval
+Total: 7216743B	Added: 24803328B	Fraction: 0.7746181449753812	Now: 1694101120732
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxWnVHKpnClFt8kdx1KQDdXhE5SBl5e3_D5GsgC-EGwgVJK2J4lO6OuB37kmnlXJobuY2SeD783t1kq5iozThgL3p6getNNnvWoXA5IeBciXwglhv0dhL0H_QKTXVT9BX7PSj71KHlfWy1Q68PeH665gdAngw2M_2XH0TQs2WP47o_MoKZb1wNo1MazE/_-ad2_/ad-410x300./ad_vertical._720_90./googleadsense.
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxWnVHKpnClFt8kdx1KQDdXhE5SBl5e3_D5GsgC-EGwgVJK2J4lO6OuB37kmnlXJobuY2SeD783t1kq5iozThgL3p6getNNnvWoXA5IeBciXwglhv0dhL0H_QKTXVT9BX7PSj71KHlfWy1Q68PeH665gdAngw2M_2XH0TQs2WP47o_MoKZb1wNo1MazE/_-ad2_/ad-410x300./ad_vertical._720_90./googleadsense.
+Total: 7216743B	Added: 24803328B	Fraction: 0.7746181449753812	Now: 1694101122007
+Total: 7216743B	Added: 25134338B	Fraction: 0.7769242084986279	Now: 1694101123133
+Total: 7216743B	Added: 25399146B	Fraction: 0.7787353580949457	Now: 1694101124665
+Total: 7217383B	Added: 25399146B	Fraction: 0.7787200777863273	Now: 1694101125869
+violation:   script-src    eval
+Total: 7218540B	Added: 25500292B	Fraction: 0.7793765987734526	Now: 1694101127019
+Total: 7218828B	Added: 25568338B	Fraction: 0.7798276313359929	Now: 1694101128104
+Total: 7218828B	Added: 25568338B	Fraction: 0.7798276313359929	Now: 1694101129188
+Total: 7306025B	Added: 25568338B	Fraction: 0.7777591918663185	Now: 1694101130229
+Total: 7340806B	Added: 25568338B	Fraction: 0.7769371941123719	Now: 1694101131310
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxWkkH33IGMQyGMP0IBM7zrjjz3zx4p0pJWSvc_1rlibgCLcVbaSvvQK2aQsCkQVQeoov2Z1OAA3E29fwYEa_HRHFpoMxUQhrYyiQ9PWrLUmuSAsiFdBJ8daNtZnzlWlZl_yci7pbQ==?fccs=W1siQUtzUm9sX1ZtRzlza1RJV2tMeGJ4VzY3MTVpeXo2ay1DNUNiSjhXVFh5Tkk0bXRpVUJpTWI4SXd2TEY3aHQ4V0duelBjcVYwRGFSRlRtNmVjMk5uSW1MczV5dnE1Zmt2ck9Rc0tJT05UcEg3N2NrSVo1T29sQ1g3YXdleEpuZU1BaFFLUTNBNjlNT09uQ1c5N2ViZlVmUFEtbGpnbE44NE9BPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDExMjgsMjM5MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbN11dLCJodHRwczovL3d3dy5saWJlcnRhdGVhLnJvL2xpZmVzdHlsZSIsbnVsbCxbWzgsIjhzZGtOcDB3UXlZIl0sWzksImVuLUdCIl0sWzE2LCJbMSwxLDFdIl0sWzcsIjEwIl0sWzExLCJbW10sW10sW11dIl0sWzE5LCIyIl0sWzE3LCJbMF0iXV1d
+Total: 7340806B	Added: 25602940B	Fraction: 0.7771714849914154	Now: 1694101132504
+Total: 7340806B	Added: 25637014B	Fraction: 0.7774017203077705	Now: 1694101133755
+Total: 7340806B	Added: 25875534B	Fraction: 0.7790001547431173	Now: 1694101134934
+Total: 7340806B	Added: 26046016B	Fraction: 0.7801286387784977	Now: 1694101136006
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxUMnNqAgSKhtzIWWy4txOvcXR_g4Wk8_CNMRe3LvQI55uzcIrkTK_ryZmUDuZobp3hJvLJNnPJjoAdL-j6g7la5GZ21g-E5QSQMgNGbVT18JoguiHm7AaPfPxUsRKXsqyu2ih_iXMANOabS3nwlwJ02Cv6N_RBir7dR7zFYwWyiwFOkC9oq4cE8OJRW/_/adcache.?adx=/adfootleft.-featured-ads//mjx-oas.
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxUMnNqAgSKhtzIWWy4txOvcXR_g4Wk8_CNMRe3LvQI55uzcIrkTK_ryZmUDuZobp3hJvLJNnPJjoAdL-j6g7la5GZ21g-E5QSQMgNGbVT18JoguiHm7AaPfPxUsRKXsqyu2ih_iXMANOabS3nwlwJ02Cv6N_RBir7dR7zFYwWyiwFOkC9oq4cE8OJRW/_/adcache.?adx=/adfootleft.-featured-ads//mjx-oas.
+Total: 7340806B	Added: 26046016B	Fraction: 0.7801286387784977	Now: 1694101137163
+Total: 7340806B	Added: 26046016B	Fraction: 0.7801286387784977	Now: 1694101138183
+Total: 7342006B	Added: 26080243B	Fraction: 0.7803257943533363	Now: 1694101139417
+Total: 7342006B	Added: 26080243B	Fraction: 0.7803257943533363	Now: 1694101142354
+Total: 7426774B	Added: 26256324B	Fraction: 0.7795103645157581	Now: 1694101143607
+Total: 7444914B	Added: 26361909B	Fraction: 0.7797807265119233	Now: 1694101144767
+Total: 7444914B	Added: 26361909B	Fraction: 0.7797807265119233	Now: 1694101145791
+Total: 7444914B	Added: 26361909B	Fraction: 0.7797807265119233	Now: 1694101146871
+Total: 7444914B	Added: 26397069B	Fraction: 0.7800095224916341	Now: 1694101148121
+new:         https://cdn.taboola.com/libtrc/feed-card-placeholder.20230904-9_b2-PR-60661-DEV-137973-a-b-test-opening-vignette-in-a-new-tab-redirect-delay-e9b9045222e.es6.js
+Total: 7444914B	Added: 26467611B	Fraction: 0.7804671282955191	Now: 1694101149311
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxXJUjL23RwGmd4mYcytnt5yBT83Hx9AvuHPVmy2bo-EZDvxUQC9LDiJiNd35IN8uZuY2HsV5eYfEe2NOBsV-Zq1h8qgkK1pWdDvL3Es6tBpvbrzlBVXf6nZ-O1s6IpTzp_wIIGdRRMrByYKDFQXjuJcMlGH3UMLyDZ7HRzmTwX64unXTQw_7nFUaWMs/_/pagepeel--ad-340x400-/adrobot./bottom_ad._300x160_
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxXJUjL23RwGmd4mYcytnt5yBT83Hx9AvuHPVmy2bo-EZDvxUQC9LDiJiNd35IN8uZuY2HsV5eYfEe2NOBsV-Zq1h8qgkK1pWdDvL3Es6tBpvbrzlBVXf6nZ-O1s6IpTzp_wIIGdRRMrByYKDFQXjuJcMlGH3UMLyDZ7HRzmTwX64unXTQw_7nFUaWMs/_/pagepeel--ad-340x400-/adrobot./bottom_ad._300x160_
+Total: 7444914B	Added: 26538348B	Fraction: 0.7809240913953464	Now: 1694101150553
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxVKvsF656qcSgP9qTv0o4AfvIildO_qXpjAHp4n62CyIWRfnZHLwdA9zG_XkiUlAIjTX8uFBLdnCiLKfG9Mbya9ONv4gkLcGNTB8qMXaIWjaPMGiS1pgkv6MAYHY6Ye0Dhm1tWpFQ==?fccs=W1siQUtzUm9sOTRWRkxmTktRNjNzU05uRlJXS0VrVHBzRktfckFGdDlPOXJoMEFIS2VKWHc2M1JzQ3EyUng2eVJNUjc0ZHZMc0VtV190LVNhNlJFX01Fdmc5STNrTXBmNzAxWlNEb0kxamFsQ2RhMXVOOVR5eWtfT3pCaXlWZmZTRzlkWnJoSkRsaDcxMHNnSndzZllNaExhYnBnN19jZC1kQUVnPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDExNTAsNDcwMDAwMDBdLG51bGwsbnVsbCxudWxsLFtudWxsLFs3LDZdLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLDFdLCJodHRwczovL3d3dy5saWJlcnRhdGVhLnJvL2xpYmVydGF0ZWEtcGVudHJ1LWZlbWVpL2FuZHJhLWEtaW1wbGluaXQtMzctZGUtYW5pLXNpLTE1LWFuaS1kZS1jYXNuaWNpZS1jdS1tYXJ1dGEtaW1hZ2luaS1kZS1jb2xlY3RpZS1kZS1sYS1udW50YS1wZS1jYXJlLWF1LWF2dXQtby1sYS10YXJnaXUtaml1LWN1LTgwMC1kZS1pbnZpdGF0aS00NjQyMDYxIixudWxsLFtbOCwiOHNka05wMHdReVkiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiMTAiXSxbMTEsIltbXSxbXSxbXV0iXSxbMTksIjIiXSxbMTcsIlswXSJdXV0
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxVKvsF656qcSgP9qTv0o4AfvIildO_qXpjAHp4n62CyIWRfnZHLwdA9zG_XkiUlAIjTX8uFBLdnCiLKfG9Mbya9ONv4gkLcGNTB8qMXaIWjaPMGiS1pgkv6MAYHY6Ye0Dhm1tWpFQ==?fccs=W1siQUtzUm9sOTRWRkxmTktRNjNzU05uRlJXS0VrVHBzRktfckFGdDlPOXJoMEFIS2VKWHc2M1JzQ3EyUng2eVJNUjc0ZHZMc0VtV190LVNhNlJFX01Fdmc5STNrTXBmNzAxWlNEb0kxamFsQ2RhMXVOOVR5eWtfT3pCaXlWZmZTRzlkWnJoSkRsaDcxMHNnSndzZllNaExhYnBnN19jZC1kQUVnPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDExNTAsNDcwMDAwMDBdLG51bGwsbnVsbCxudWxsLFtudWxsLFs3LDZdLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLDFdLCJodHRwczovL3d3dy5saWJlcnRhdGVhLnJvL2xpYmVydGF0ZWEtcGVudHJ1LWZlbWVpL2FuZHJhLWEtaW1wbGluaXQtMzctZGUtYW5pLXNpLTE1LWFuaS1kZS1jYXNuaWNpZS1jdS1tYXJ1dGEtaW1hZ2luaS1kZS1jb2xlY3RpZS1kZS1sYS1udW50YS1wZS1jYXJlLWF1LWF2dXQtby1sYS10YXJnaXUtaml1LWN1LTgwMC1kZS1pbnZpdGF0aS00NjQyMDYxIixudWxsLFtbOCwiOHNka05wMHdReVkiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiMTAiXSxbMTEsIltbXSxbXSxbXV0iXSxbMTksIjIiXSxbMTcsIlswXSJdXV0
+Total: 7444914B	Added: 26645175B	Fraction: 0.781610602424652	Now: 1694101151748
+Total: 7444914B	Added: 26645175B	Fraction: 0.781610602424652	Now: 1694101152942
+Total: 7444914B	Added: 26645175B	Fraction: 0.781610602424652	Now: 1694101154013
+Total: 7445609B	Added: 26645175B	Fraction: 0.7815946679313682	Now: 1694101155208
+Total: 7445609B	Added: 26645175B	Fraction: 0.7815946679313682	Now: 1694101157653
+Total: 7446807B	Added: 26680903B	Fraction: 0.7817958778951181	Now: 1694101158963
+Total: 7461002B	Added: 26717478B	Fraction: 0.7817046866917429	Now: 1694101160049
+Total: 7496923B	Added: 26900469B	Fraction: 0.782049668184146	Now: 1694101161297
+Total: 7496923B	Added: 26900469B	Fraction: 0.782049668184146	Now: 1694101163274
+Total: 7497564B	Added: 26937066B	Fraction: 0.7822667471670234	Now: 1694101167156
+violation:   script-src    eval
+Total: 7497852B	Added: 26937066B	Fraction: 0.782260204598135	Now: 1694101168323
+Total: 7497852B	Added: 26937066B	Fraction: 0.782260204598135	Now: 1694101169386
+Total: 7497852B	Added: 26937066B	Fraction: 0.782260204598135	Now: 1694101170683
+Total: 7497852B	Added: 26937066B	Fraction: 0.782260204598135	Now: 1694101171832
+Total: 7497852B	Added: 26973644B	Fraction: 0.7824912501621629	Now: 1694101173094
+Total: 7497852B	Added: 27010240B	Fraction: 0.7827219192530263	Now: 1694101174190
+Total: 7497852B	Added: 27010240B	Fraction: 0.7827219192530263	Now: 1694101177084
+Total: 7497852B	Added: 27010240B	Fraction: 0.7827219192530263	Now: 1694101178286
+Total: 7498714B	Added: 27192880B	Fraction: 0.7838463692386115	Now: 1694101179641
+Total: 7499002B	Added: 27265853B	Fraction: 0.7842935919048131	Now: 1694101180646
+Total: 7499290B	Added: 27265853B	Fraction: 0.7842870946913695	Now: 1694101181928
+Total: 7499290B	Added: 27265853B	Fraction: 0.7842870946913695	Now: 1694101183096
+Total: 7499290B	Added: 27302372B	Fraction: 0.7845134522598375	Now: 1694101184183
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxUs372JXu8PzM1qXR61FWpa5CRolCIaca9lBWVoMVtIfSampWrxCZa5Mi3Jq_LivUqiaa2r8H-zD8Yvl6tgzdnSsUMuP145eRXMXmpMVLpDoPebr7VnZS9pY_LhP8Kb8CW3ubaKU6n4y646tlElpkm-iotytKHXRYA5E7iD-JmTRPsEXCjgyZuwn6L3/_/OAS/show?/convertjsontoad./seo-ads..ads.css/adaptvexchangevastvideo.
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxUs372JXu8PzM1qXR61FWpa5CRolCIaca9lBWVoMVtIfSampWrxCZa5Mi3Jq_LivUqiaa2r8H-zD8Yvl6tgzdnSsUMuP145eRXMXmpMVLpDoPebr7VnZS9pY_LhP8Kb8CW3ubaKU6n4y646tlElpkm-iotytKHXRYA5E7iD-JmTRPsEXCjgyZuwn6L3/_/OAS/show?/convertjsontoad./seo-ads..ads.css/adaptvexchangevastvideo.
+Total: 7499290B	Added: 27376303B	Fraction: 0.7849702512585234	Now: 1694101185362
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxX753YkRDb-nDuHNwSGbmyhm7ch_tac5Zs2i-Zkwc5oj-4Q5enaZtq-qvmwYv2_T16StgeHuF2LpJ1M9Abj3VVvtRNCKC9ajl4Fb-3lVpOV1l9Tadf8x2LTL0CdPbNNjDRzhLYsjg==?fccs=W1siQUtzUm9sLWVveklvMF9mX004U0FtekhJUHZST0ZoRTlfRjI4ZlZIWFV3akk2OWFNOUtMaXNyTWNETm4xdzhMVnAxN2w5VF9NOUstU1RSbkJFVWpERnFDenJUY3dCNTVjdlNFaTZBaGR2MXhKZjhwRGdZNjJwSlZISEcwZHM2WEI1VGFsVWpOVTVGcUgzczdKdEhBaTFBMFhNbEZ3cGtsRUpnPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDExODUsMjUzMDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9zdWJpZWN0L2Vjb25vbWlzZXN0ZS1pbnRlbGlnZW50IixudWxsLFtbOCwiOHNka05wMHdReVkiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiMTAiXSxbMTEsIltbXSxbXSxbXV0iXSxbMTksIjIiXSxbMTcsIlswXSJdXV0
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxX753YkRDb-nDuHNwSGbmyhm7ch_tac5Zs2i-Zkwc5oj-4Q5enaZtq-qvmwYv2_T16StgeHuF2LpJ1M9Abj3VVvtRNCKC9ajl4Fb-3lVpOV1l9Tadf8x2LTL0CdPbNNjDRzhLYsjg==?fccs=W1siQUtzUm9sLWVveklvMF9mX004U0FtekhJUHZST0ZoRTlfRjI4ZlZIWFV3akk2OWFNOUtMaXNyTWNETm4xdzhMVnAxN2w5VF9NOUstU1RSbkJFVWpERnFDenJUY3dCNTVjdlNFaTZBaGR2MXhKZjhwRGdZNjJwSlZISEcwZHM2WEI1VGFsVWpOVTVGcUgzczdKdEhBaTFBMFhNbEZ3cGtsRUpnPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDExODUsMjUzMDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9zdWJpZWN0L2Vjb25vbWlzZXN0ZS1pbnRlbGlnZW50IixudWxsLFtbOCwiOHNka05wMHdReVkiXSxbOSwiZW4tR0IiXSxbMTYsIlsxLDEsMV0iXSxbNywiMTAiXSxbMTEsIltbXSxbXSxbXV0iXSxbMTksIjIiXSxbMTcsIlswXSJdXV0
+Total: 7499290B	Added: 27376303B	Fraction: 0.7849702512585234	Now: 1694101187221
+Total: 7499984B	Added: 27376303B	Fraction: 0.784954631208305	Now: 1694101189922
+Total: 7501136B	Added: 27564064B	Fraction: 0.7860803303560225	Now: 1694101191369
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxV2tdTWoly95dvSov634gvLr-bupwhNE6bWxH5uK1imQo3gpieN8-UHPOfxM_04-zu3VonNNJT84IWBYhOBsJch9lJSCtb9w7nTCnbmGxvbk8FcDm9rUUFbPTbrfgIbsklZYbRJog==?fccs=W1siQUtzUm9sOGhGSHhMOTZXX0Z2Q3JLbnZJak9hNms2X2gzMllTN3JydWhRNDNieVJWT0JaNlVjLTBlY0lPejg1dmw0b1N1bVFoWDZfMlpfaEprRTloZEQxcFVIVTMtWC1IRU1Qd2hYWTMzQ1R2SHdXYndhbFpXcGlUVHplQk5ZczV0akVtQUx0Ny1zZmNDYUFTX3lDWG1DQ2cxTnlSWTcyc3l3PT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDExOTEsMjgwMDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbN11dLCJodHRwczovL3d3dy5saWJlcnRhdGVhLnJvL3N1YmllY3QvRXF1YWxWb2ljZSIsbnVsbCxbWzgsIjhzZGtOcDB3UXlZIl0sWzksImVuLUdCIl0sWzE2LCJbMSwxLDFdIl0sWzcsIjEwIl0sWzExLCJbW10sW10sW11dIl0sWzE5LCIyIl0sWzE3LCJbMF0iXV1d
+Total: 7501424B	Added: 27601673B	Fraction: 0.786303071777399	Now: 1694101192624
+Total: 7501424B	Added: 27601673B	Fraction: 0.786303071777399	Now: 1694101193894
+Total: 7501424B	Added: 27639285B	Fraction: 0.7865317970676118	Now: 1694101194995
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxXvwQqWHquNA0Hu2cgiD7q0TkjK4fIeuDtpO5CNIdWTHLiUz0bdX1NZZLM2rkyf2XHfc_jfuywolkrxkzfGXyWpybJNqnCWKktTZ3cWLyZvw6eeSjk5w7Sza1EuABf2_RNMvIGvxw==?fccs=W1siQUtzUm9sOGhGSHhMOTZXX0Z2Q3JLbnZJak9hNms2X2gzMllTN3JydWhRNDNieVJWT0JaNlVjLTBlY0lPejg1dmw0b1N1bVFoWDZfMlpfaEprRTloZEQxcFVIVTMtWC1IRU1Qd2hYWTMzQ1R2SHdXYndhbFpXcGlUVHplQk5ZczV0akVtQUx0Ny1zZmNDYUFTX3lDWG1DQ2cxTnlSWTcyc3l3PT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDExOTUsMzk2MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9zdWJpZWN0L0VxdWFsVm9pY2UiLG51bGwsW1s4LCI4c2RrTnAwd1F5WSJdLFs5LCJlbi1HQiJdLFsxNiwiWzEsMSwxXSJdLFs3LCIxMCJdLFsxMSwiW1tdLFtdLFtdXSJdLFsxOSwiMiJdLFsxNywiWzBdIl1dXQ
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxXvwQqWHquNA0Hu2cgiD7q0TkjK4fIeuDtpO5CNIdWTHLiUz0bdX1NZZLM2rkyf2XHfc_jfuywolkrxkzfGXyWpybJNqnCWKktTZ3cWLyZvw6eeSjk5w7Sza1EuABf2_RNMvIGvxw==?fccs=W1siQUtzUm9sOGhGSHhMOTZXX0Z2Q3JLbnZJak9hNms2X2gzMllTN3JydWhRNDNieVJWT0JaNlVjLTBlY0lPejg1dmw0b1N1bVFoWDZfMlpfaEprRTloZEQxcFVIVTMtWC1IRU1Qd2hYWTMzQ1R2SHdXYndhbFpXcGlUVHplQk5ZczV0akVtQUx0Ny1zZmNDYUFTX3lDWG1DQ2cxTnlSWTcyc3l3PT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDExOTUsMzk2MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9zdWJpZWN0L0VxdWFsVm9pY2UiLG51bGwsW1s4LCI4c2RrTnAwd1F5WSJdLFs5LCJlbi1HQiJdLFsxNiwiWzEsMSwxXSJdLFs3LCIxMCJdLFsxMSwiW1tdLFtdLFtdXSJdLFsxOSwiMiJdLFsxNywiWzBdIl1dXQ
+Total: 7501424B	Added: 27715263B	Fraction: 0.7869923425789598	Now: 1694101196319
+Total: 7501424B	Added: 27752953B	Fraction: 0.7872200663197083	Now: 1694101197357
+Total: 7502065B	Added: 27752953B	Fraction: 0.7872057532349012	Now: 1694101198360
+Total: 7502065B	Added: 27752953B	Fraction: 0.7872057532349012	Now: 1694101200956
+Total: 7503279B	Added: 27791283B	Fraction: 0.7874097715109767	Now: 1694101202151
+warning:     frame-src    https://t.me
+Total: 7731319B	Added: 27869611B	Fraction: 0.7828337911397258	Now: 1694101203486
+Total: 7731319B	Added: 27869611B	Fraction: 0.7828337911397258	Now: 1694101204514
+Total: 7731960B	Added: 27909022B	Fraction: 0.7830598494732833	Now: 1694101205575
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxU1d6H5GPyqk1lCO_LMvVDYFMxvc4GOaeHKins21Z7vEO1-l0ftv-31z9OychBmSLA7Xu64KgzLnlXBkGHZPFTM1_7gjPTgb9mo-Q2T2rsPnmGksnJ-bGakcVVCvctvAJZtYBA03CH5XHTPM2ueZ_BHhj_BcBkJT-4IOuGttqxrGIyKh-QcarXDn7Rf/_/forads./footertextads._vertical_ad./display-ads-/banner.cgi?
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxU1d6H5GPyqk1lCO_LMvVDYFMxvc4GOaeHKins21Z7vEO1-l0ftv-31z9OychBmSLA7Xu64KgzLnlXBkGHZPFTM1_7gjPTgb9mo-Q2T2rsPnmGksnJ-bGakcVVCvctvAJZtYBA03CH5XHTPM2ueZ_BHhj_BcBkJT-4IOuGttqxrGIyKh-QcarXDn7Rf/_/forads./footertextads._vertical_ad./display-ads-/banner.cgi?
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxV2lbMIjifoKoqH_O7bqlyM701NXcvEz8rpI9yBLi8QYD35b-AK6eBSJTN3wYwJE3GpnjMJ9lmFIeT3ssvzBX-sbHOvnedFise2VmVgE_iZ6PnBtgUQfJmcv8ti-HesSJ8CX7PShA==?fccs=W1siQUtzUm9sOEMxd3U5aHR6OXpqNWY0T25UY3hFRUxEcGdiMTFNM3FteVNsSENLZUVqWTZ3OVZ5OUJrMG5EdnM2ZU5PSFlWMmpEaGQwLVM2ODhHUldPc25ldVJtUHBVSGFDOUtqSnlMX0FsQnU5R0pPcWsydUNYQlNKQXFuU2V1TER6UUNEUVdsQmQzamVXbGJ1Q21ZSkM2UEtJMWo4akxsdjVRPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDEyMDUsNjY2MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9zdGlyaS9zZWZhLXVuZWktZ3JhZGluaXRlLWRpbi1ydXNpYS12YS1maS1kYXRhLWFmYXJhLWR1cGEtY2UtYXUtYXBhcnV0LXBvemUtY3UtZWEtaW4taXBvc3RhemUtaW50aW1lLXBlLXJldGVsZWxlLXNvY2lhbGUtNDY1NDMxOCIsbnVsbCxbWzgsIjhzZGtOcDB3UXlZIl0sWzksImVuLUdCIl0sWzE2LCJbMSwxLDFdIl0sWzcsIjEwIl0sWzExLCJbW10sW10sW11dIl0sWzE5LCIyIl0sWzE3LCJbMF0iXV1d
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxV2lbMIjifoKoqH_O7bqlyM701NXcvEz8rpI9yBLi8QYD35b-AK6eBSJTN3wYwJE3GpnjMJ9lmFIeT3ssvzBX-sbHOvnedFise2VmVgE_iZ6PnBtgUQfJmcv8ti-HesSJ8CX7PShA==?fccs=W1siQUtzUm9sOEMxd3U5aHR6OXpqNWY0T25UY3hFRUxEcGdiMTFNM3FteVNsSENLZUVqWTZ3OVZ5OUJrMG5EdnM2ZU5PSFlWMmpEaGQwLVM2ODhHUldPc25ldVJtUHBVSGFDOUtqSnlMX0FsQnU5R0pPcWsydUNYQlNKQXFuU2V1TER6UUNEUVdsQmQzamVXbGJ1Q21ZSkM2UEtJMWo4akxsdjVRPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDEyMDUsNjY2MDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9zdGlyaS9zZWZhLXVuZWktZ3JhZGluaXRlLWRpbi1ydXNpYS12YS1maS1kYXRhLWFmYXJhLWR1cGEtY2UtYXUtYXBhcnV0LXBvemUtY3UtZWEtaW4taXBvc3RhemUtaW50aW1lLXBlLXJldGVsZWxlLXNvY2lhbGUtNDY1NDMxOCIsbnVsbCxbWzgsIjhzZGtOcDB3UXlZIl0sWzksImVuLUdCIl0sWzE2LCJbMSwxLDFdIl0sWzcsIjEwIl0sWzExLCJbW10sW10sW11dIl0sWzE5LCIyIl0sWzE3LCJbMF0iXV1d
+Total: 7731960B	Added: 27988326B	Fraction: 0.7835414867618921	Now: 1694101207356
+violation:   script-src    eval
+Total: 7731960B	Added: 28066836B	Fraction: 0.7840161998744315	Now: 1694101208736
+Total: 7732248B	Added: 28066836B	Fraction: 0.7840098925436193	Now: 1694101210999
+Total: 7732248B	Added: 28066836B	Fraction: 0.7840098925436193	Now: 1694101213362
+violation:   script-src    eval
+Total: 7732248B	Added: 28106037B	Fraction: 0.7842461490554026	Now: 1694101214372
+Total: 7732248B	Added: 28106037B	Fraction: 0.7842461490554026	Now: 1694101215610
+new:         https://www.google.com/pagead/1p-conversion/10963632302/?random=1694101213449&cv=11&fst=1694101213449&bg=ffffff&guid=ON&async=1&gtm=45be38u0h1&u_w=1920&u_h=969&url=https%3A%2F%2Fwww.libertatea.ro%2Fstiri%2Fsefa-unei-gradinite-din-rusia-va-fi-data-afara-dupa-ce-au-aparut-poze-cu-ea-in-ipostaze-intime-pe-retelele-sociale-4654318&label=IdugCOaBnNIDEK6B7-so&hn=www.google.com&frm=0&tiba=%C8%98efa%20Unei%20Gr%C4%83dini%C8%9Be%20Din%20Rusia%2C%20Dat%C4%83%20Afar%C4%83%2C%20Dup%C4%83%20Ce%20Au%20Ap%C4%83rut%20Poze%20Cu%20Ea%20%C3%AEn%20Ipostaze%20Intime.%20Educatoarea%20Nu%20Renun%C8%9B%C4%83%3A%20%E2%80%9ENu%20M%C4%83%20Iau%20Dup%C4%83%20Fi&auid=1160060469.1694100187&fledge=1&capi=1&uamb=0&uaw=0&data=event%3Dconversion&gcp=1&sscte=1&ct_cookie_present=1&rfmt=3&fmt=4
+Total: 7732248B	Added: 28145880B	Fraction: 0.7844857457445941	Now: 1694101216995
+Total: 7732248B	Added: 28145880B	Fraction: 0.7844857457445941	Now: 1694101220885
+Total: 7862999B	Added: 28145880B	Fraction: 0.7816372178650716	Now: 1694101222102
+Total: 7863863B	Added: 28186211B	Fraction: 0.7818627778683617	Now: 1694101223293
+violation:   script-src-attr    inline
+Total: 7863863B	Added: 28264937B	Fraction: 0.7823381069949735	Now: 1694101224480
+Total: 7864151B	Added: 28501427B	Fraction: 0.783747394307881	Now: 1694101225516
+Total: 7880503B	Added: 28664208B	Fraction: 0.7843599584082085	Now: 1694101226553
+Total: 7910234B	Added: 28746520B	Fraction: 0.7842080070701296	Now: 1694101227786
+violation:   script-src    eval
+Total: 8025734B	Added: 28787675B	Fraction: 0.7819888399903415	Now: 1694101229103
+Total: 8025734B	Added: 28787675B	Fraction: 0.7819888399903415	Now: 1694101230315
+warning:     frame-src    https://8ffff4b4e1e62198385600443c63b560.safeframe.googlesyndication.com
+Total: 8025734B	Added: 28870005B	Fraction: 0.7824753151034595	Now: 1694101231404
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxXd9mrWeIZAUTOzvsw-sXG1m9lP9aDRlKRFM00BDkHXOluLOiHKKku5akaXoWPMYSt8Pl0YIGWklZO7VYBi7eOwVro-IT9gaMolCS5_qONTD2sfY7DOEVwFFxB4dId7IFNoC8wBekb_5KqjnYaQfHvvRFQF2T3JSX-00U_VV4GDcs_Vii370a3VwYkw/_/adpanelcontent./nativeads./adsdm./galleryad./MTA-Ad-
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxXd9mrWeIZAUTOzvsw-sXG1m9lP9aDRlKRFM00BDkHXOluLOiHKKku5akaXoWPMYSt8Pl0YIGWklZO7VYBi7eOwVro-IT9gaMolCS5_qONTD2sfY7DOEVwFFxB4dId7IFNoC8wBekb_5KqjnYaQfHvvRFQF2T3JSX-00U_VV4GDcs_Vii370a3VwYkw/_/adpanelcontent./nativeads./adsdm./galleryad./MTA-Ad-
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxVFDIOOSeagnOJAxfFJAcO3tDhQpABhsc6lKjDSDCVBbwtXb53RSt9TG512UfpJPQ8iyU4_opZ6-QhORuravcz7ItJ0gFwbgQ-QBlI1VRPEk0YkzmCjPct9Fit_WAKPvcHPRdVvfg==?fccs=W1siQUtzUm9sXzRrZy1ob0E1QmxZZ0VycWVxU0RsOEE3V2s2YU9WVjM0NUt2MzRjUExNaTY3RmN5YTVwTjVTQXhqaVRnN09UekNMQ3pHQ01XaUhnMERweFVQSWtWQlh2eFlJMDY0V0xSQUZxYjk3MXFlMTRuMV9LUC1CcVZnVjQyWEZFblNzNmoyZkZjbFg1dUJiTDE2Q0lVaDVROThOalBtRnN3PT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDEyMzEsNzYxMDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9zdWJpZWN0L3JvbWFpbmUtbWVkbGlmZSIsbnVsbCxbWzgsIjhzZGtOcDB3UXlZIl0sWzksImVuLUdCIl0sWzE2LCJbMSwxLDFdIl0sWzcsIjEwIl0sWzExLCJbW10sW10sW11dIl0sWzE5LCIyIl0sWzE3LCJbMF0iXV1d
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxVFDIOOSeagnOJAxfFJAcO3tDhQpABhsc6lKjDSDCVBbwtXb53RSt9TG512UfpJPQ8iyU4_opZ6-QhORuravcz7ItJ0gFwbgQ-QBlI1VRPEk0YkzmCjPct9Fit_WAKPvcHPRdVvfg==?fccs=W1siQUtzUm9sXzRrZy1ob0E1QmxZZ0VycWVxU0RsOEE3V2s2YU9WVjM0NUt2MzRjUExNaTY3RmN5YTVwTjVTQXhqaVRnN09UekNMQ3pHQ01XaUhnMERweFVQSWtWQlh2eFlJMDY0V0xSQUZxYjk3MXFlMTRuMV9LUC1CcVZnVjQyWEZFblNzNmoyZkZjbFg1dUJiTDE2Q0lVaDVROThOalBtRnN3PT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDEyMzEsNzYxMDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9zdWJpZWN0L3JvbWFpbmUtbWVkbGlmZSIsbnVsbCxbWzgsIjhzZGtOcDB3UXlZIl0sWzksImVuLUdCIl0sWzE2LCJbMSwxLDFdIl0sWzcsIjEwIl0sWzExLCJbW10sW10sW11dIl0sWzE5LCIyIl0sWzE3LCJbMF0iXV1d
+Total: 8025734B	Added: 28952997B	Fraction: 0.7829635094833297	Now: 1694101232620
+Total: 8025734B	Added: 28952997B	Fraction: 0.7829635094833297	Now: 1694101233850
+Total: 8026375B	Added: 28952997B	Fraction: 0.7829499376030506	Now: 1694101236882
+Total: 8026375B	Added: 28952997B	Fraction: 0.7829499376030506	Now: 1694101238557
+Total: 8027573B	Added: 29036788B	Fraction: 0.7834153137025619	Now: 1694101239691
+Total: 8027573B	Added: 29036788B	Fraction: 0.7834153137025619	Now: 1694101241563
+Total: 8222761B	Added: 29290874B	Fraction: 0.7808060722454648	Now: 1694101242591
+violation:   script-src    eval
+Total: 8223049B	Added: 29375560B	Fraction: 0.7812937973317045	Now: 1694101243644
+violation:   script-src    eval
+Total: 8223049B	Added: 29417882B	Fraction: 0.7815397020865398	Now: 1694101245009
+Total: 8223049B	Added: 29417882B	Fraction: 0.7815397020865398	Now: 1694101246144
+violation:   script-src    eval
+Total: 8223049B	Added: 29460242B	Fraction: 0.7817852745398485	Now: 1694101247201
+Total: 8223049B	Added: 29502745B	Fraction: 0.7820311217306652	Now: 1694101248264
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxW62C_-n8SovLeeMgrd5qP_1cUrWFQZcfdlb3cTWFjj0lm67LI49TxLRpx_rf-cavr2jXjy0siOSDM5bBBSZO3Wi8JL3rGgq0P6cXTH5ItDTvGEstO0iiDuMgr7OWWRMDfYOyhRAMjQ85aZ8zm-ft7L0SVq9ZoEE__zKZn3eCYtgayVTUQzJgsofiSs/_=336x280,/rightad./ad_flat_/adstracking._700_200_
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxW62C_-n8SovLeeMgrd5qP_1cUrWFQZcfdlb3cTWFjj0lm67LI49TxLRpx_rf-cavr2jXjy0siOSDM5bBBSZO3Wi8JL3rGgq0P6cXTH5ItDTvGEstO0iiDuMgr7OWWRMDfYOyhRAMjQ85aZ8zm-ft7L0SVq9ZoEE__zKZn3eCYtgayVTUQzJgsofiSs/_=336x280,/rightad./ad_flat_/adstracking._700_200_
+Total: 8223049B	Added: 29502745B	Fraction: 0.7820311217306652	Now: 1694101249278
+new:         https://fundingchoicesmessages.google.com/f/AGSKWxXsLhOq3m5j54XWnV-zMVKi5Kf2W7rVzC7KODunJlZ-XsjEWJvgbaaUnOK_gMczdyffcZaBS0Ttj1MxzJlh9F9kpHT-oUnv1jV6dTrL9tIyozksMTAs91EQFswuG_bkz0lFwSY4jw==?fccs=W1siQUtzUm9sOUo5SGctb0ZCRVpfZTlrOGpkeGcwLUpSQ1ZYZWpnQmx1a3hqai1lNGJPV0huQlBmS3UzUjVGUmhhd2IxM3pfS1dhQWZ1VnlJbE8yY2pvRVhXSko5MExmaVdudHhDbHU5VXotbGVBVWNNTjUzcDVWcEpub05CT2pjYTkwaVRqSXZXMEJ1aE5MYVdMSDFrRFI3M2lPU3ZLc09LbGZBPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDEyNDgsODYzMDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9saWZlc3R5bGUvcHVibGljaXRhdGUtNS1hY3Rpdml0YXRpLXBlcmZlY3RlLXBlbnRydS1hbml2ZXJzYXJlYS1yZWxhdGllaS12b2FzdHJlLTM1NzczNDUiLG51bGwsW1s4LCI4c2RrTnAwd1F5WSJdLFs5LCJlbi1HQiJdLFsxNiwiWzEsMSwxXSJdLFs3LCIxMCJdLFsxMSwiW1tdLFtdLFtdXSJdLFsxOSwiMiJdLFsxNywiWzBdIl1dXQ
+violation:   script-src-elem    https://fundingchoicesmessages.google.com/f/AGSKWxXsLhOq3m5j54XWnV-zMVKi5Kf2W7rVzC7KODunJlZ-XsjEWJvgbaaUnOK_gMczdyffcZaBS0Ttj1MxzJlh9F9kpHT-oUnv1jV6dTrL9tIyozksMTAs91EQFswuG_bkz0lFwSY4jw==?fccs=W1siQUtzUm9sOUo5SGctb0ZCRVpfZTlrOGpkeGcwLUpSQ1ZYZWpnQmx1a3hqai1lNGJPV0huQlBmS3UzUjVGUmhhd2IxM3pfS1dhQWZ1VnlJbE8yY2pvRVhXSko5MExmaVdudHhDbHU5VXotbGVBVWNNTjUzcDVWcEpub05CT2pjYTkwaVRqSXZXMEJ1aE5MYVdMSDFrRFI3M2lPU3ZLc09LbGZBPT0iXSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsWzE2OTQxMDEyNDgsODYzMDAwMDAwXSxudWxsLG51bGwsbnVsbCxbbnVsbCxbNyw2XSxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCxudWxsLG51bGwsbnVsbCwxXSwiaHR0cHM6Ly93d3cubGliZXJ0YXRlYS5yby9saWZlc3R5bGUvcHVibGljaXRhdGUtNS1hY3Rpdml0YXRpLXBlcmZlY3RlLXBlbnRydS1hbml2ZXJzYXJlYS1yZWxhdGllaS12b2FzdHJlLTM1NzczNDUiLG51bGwsW1s4LCI4c2RrTnAwd1F5WSJdLFs5LCJlbi1HQiJdLFsxNiwiWzEsMSwxXSJdLFs3LCIxMCJdLFsxMSwiW1tdLFtdLFtdXSJdLFsxOSwiMiJdLFsxNywiWzBdIl1dXQ
+Total: 8223049B	Added: 29630772B	Fraction: 0.7827683234408489	Now: 1694101250746
+Total: 8223049B	Added: 29673241B	Fraction: 0.7830117671149339	Now: 1694101252476
+Total: 8223049B	Added: 29715710B	Fraction: 0.7832546657627889	Now: 1694101253653
+Total: 8223049B	Added: 29758179B	Fraction: 0.7834970212126896	Now: 1694101254947
+Total: 8223049B	Added: 29843117B	Fraction: 0.7839801097909361	Now: 1694101256342
+Total: 8223049B	Added: 29885586B	Fraction: 0.784220846535175	Now: 1694101257489
+Total: 8223049B	Added: 29885586B	Fraction: 0.784220846535175	Now: 1694101258522
+Total: 8223049B	Added: 29885586B	Fraction: 0.784220846535175	Now: 1694101259873
+Total: 8223049B	Added: 29885586B	Fraction: 0.784220846535175	Now: 1694101261633
+Total: 8223049B	Added: 29885586B	Fraction: 0.784220846535175	Now: 1694101263481
+Total: 8223049B	Added: 29885586B	Fraction: 0.784220846535175	Now: 1694101264597
+Total: 8223816B	Added: 29928222B	Fraction: 0.7844462201468766	Now: 1694101266020
+Total: 8224104B	Added: 29928222B	Fraction: 0.7844402986072199	Now: 1694101267485
+Total: 8228244B	Added: 29928222B	Fraction: 0.78435518635295	Now: 1694101271157
+Total: 8232384B	Added: 29980456B	Fraction: 0.784564978682558	Now: 1694101272400
+Total: 8232384B	Added: 29995380B	Fraction: 0.7846490838438785	Now: 1694101274441
+Total: 8336295B	Added: 29995380B	Fraction: 0.7825220264963636	Now: 1694101276249
+Total: 8382233B	Added: 29995380B	Fraction: 0.7815853476869444	Now: 1694101277360
+Total: 8382233B	Added: 29995380B	Fraction: 0.7815853476869444	Now: 1694101278367
+Total: 8382233B	Added: 29995380B	Fraction: 0.7815853476869444	Now: 1694101280073
+warning:     frame-src    https://4e2e206066e5d096256c28955175158f.safeframe.googlesyndication.com
+Total: 8427632B	Added: 30002844B	Fraction: 0.7807044596585273	Now: 1694101281207
+Total: 8427632B	Added: 30002844B	Fraction: 0.7807044596585273	Now: 1694101282313
+Total: 8427632B	Added: 30025482B	Fraction: 0.7808335626602309	Now: 1694101283329
+Total: 8427632B	Added: 30025482B	Fraction: 0.7808335626602309	Now: 1694101284536
+Total: 8427632B	Added: 30025482B	Fraction: 0.7808335626602309	Now: 1694101286549
+Total: 8427632B	Added: 30025482B	Fraction: 0.7808335626602309	Now: 1694101293576
+Total: 8427632B	Added: 30025482B	Fraction: 0.7808335626602309	Now: 1694101294777
+Total: 8427632B	Added: 30034605B	Fraction: 0.7808855475566853	Now: 1694101297201
+Total: 8427632B	Added: 30034605B	Fraction: 0.7808855475566853	Now: 1694101298396
+Total: 8427632B	Added: 30034605B	Fraction: 0.7808855475566853	Now: 1694101299627
+Total: 8427632B	Added: 30042184B	Fraction: 0.7809287156455337	Now: 1694101301469
+Total: 8427632B	Added: 30042184B	Fraction: 0.7809287156455337	Now: 1694101303372
+Total: 8427632B	Added: 30049576B	Fraction: 0.780970802247398	Now: 1694101305161
+Total: 8429183B	Added: 30092306B	Fraction: 0.7811823161872066	Now: 1694101306572
+Total: 8429183B	Added: 30092306B	Fraction: 0.7811823161872066	Now: 1694101307846
+Total: 8429183B	Added: 30092306B	Fraction: 0.7811823161872066	Now: 1694101308882
+Total: 8429183B	Added: 30092306B	Fraction: 0.7811823161872066	Now: 1694101310011
+Total: 8429471B	Added: 30092306B	Fraction: 0.7811764758411845	Now: 1694101311675
+Total: 8429471B	Added: 30092306B	Fraction: 0.7811764758411845	Now: 1694101313399
+Total: 8444008B	Added: 30115934B	Fraction: 0.7810160606569377	Now: 1694101314667
+Total: 8470291B	Added: 30163190B	Fraction: 0.7807525809025596	Now: 1694101319989
+Total: 8470291B	Added: 30163190B	Fraction: 0.7807525809025596	Now: 1694101321529
+Total: 8470291B	Added: 30163190B	Fraction: 0.7807525809025596	Now: 1694101322587
+Total: 8470291B	Added: 30163190B	Fraction: 0.7807525809025596	Now: 1694101323793
+Total: 8470579B	Added: 30163190B	Fraction: 0.7807467606901103	Now: 1694101325013
+Total: 8470579B	Added: 30163190B	Fraction: 0.7807467606901103	Now: 1694101327437
+Total: 8470579B	Added: 30163190B	Fraction: 0.7807467606901103	Now: 1694101332374
+Total: 8470579B	Added: 30163190B	Fraction: 0.7807467606901103	Now: 1694101353188
+Total: 8470579B	Added: 30163190B	Fraction: 0.7807467606901103	Now: 1694101354367
+Total: 8470579B	Added: 30163190B	Fraction: 0.7807467606901103	Now: 1694101355603
+Total: 8470579B	Added: 30163190B	Fraction: 0.7807467606901103	Now: 1694101356870
+Total: 8470579B	Added: 30163190B	Fraction: 0.7807467606901103	Now: 1694101360091
+Total: 8470579B	Added: 30163190B	Fraction: 0.7807467606901103	Now: 1694101361961
+Total: 8470579B	Added: 30163190B	Fraction: 0.7807467606901103	Now: 1694101363368
+Total: 8470579B	Added: 30163190B	Fraction: 0.7807467606901103	Now: 1694101364701
+Total: 8470579B	Added: 30163190B	Fraction: 0.7807467606901103	Now: 1694101366519
+Total: 8470579B	Added: 30163190B	Fraction: 0.7807467606901103	Now: 1694101367650
+Total: 8470579B	Added: 30163190B	Fraction: 0.7807467606901103	Now: 1694101368836
+Total: 8470579B	Added: 30163190B	Fraction: 0.7807467606901103	Now: 1694101371826
+Total: 8470579B	Added: 30163190B	Fraction: 0.7807467606901103	Now: 1694101373395
+Total: 8470579B	Added: 30163190B	Fraction: 0.7807467606901103	Now: 1694101375049
+Total: 8470579B	Added: 30163190B	Fraction: 0.7807467606901103	Now: 1694101378030
+Total: 8470579B	Added: 30163190B	Fraction: 0.7807467606901103	Now: 1694101379160
+Total: 8470579B	Added: 30163190B	Fraction: 0.7807467606901103	Now: 1694101386714
+Total: 8470579B	Added: 30163190B	Fraction: 0.7807467606901103	Now: 1694101392982
+warning:     frame-src    https://e1a51997d8aef65ad432fa21d9f8c070.safeframe.googlesyndication.com
+Total: 8470579B	Added: 30170908B	Fraction: 0.7807905529101403	Now: 1694101399264
+Total: 8470579B	Added: 30170908B	Fraction: 0.7807905529101403	Now: 1694101400480
+Total: 8470579B	Added: 30170908B	Fraction: 0.7807905529101403	Now: 1694101401641
+Total: 8470579B	Added: 30170908B	Fraction: 0.7807905529101403	Now: 1694101404528
+Total: 8470579B	Added: 30170908B	Fraction: 0.7807905529101403	Now: 1694101406421
+Total: 8470579B	Added: 30178868B	Fraction: 0.7808356999260558	Now: 1694101411559
+Total: 8470579B	Added: 30178868B	Fraction: 0.7808356999260558	Now: 1694101412924
+Total: 8470579B	Added: 30186828B	Fraction: 0.7808808283494028	Now: 1694101416337
+Total: 8470579B	Added: 30194788B	Fraction: 0.7809259381916639	Now: 1694101420998
+Total: 8470579B	Added: 30202748B	Fraction: 0.7809710294643127	Now: 1694101425966
+Total: 8470579B	Added: 30202748B	Fraction: 0.7809710294643127	Now: 1694101427051
+Total: 8470579B	Added: 30210708B	Fraction: 0.7810161021788132	Now: 1694101432488
+Total: 8470579B	Added: 30210708B	Fraction: 0.7810161021788132	Now: 1694101433615
+Total: 8470579B	Added: 30218692B	Fraction: 0.7810612921602994	Now: 1694101437439
+Total: 8470579B	Added: 30218692B	Fraction: 0.7810612921602994	Now: 1694101438995
+Total: 8470579B	Added: 30226652B	Fraction: 0.7811063277369897	Now: 1694101442711
+Total: 8470579B	Added: 30226652B	Fraction: 0.7811063277369897	Now: 1694101443731
+Total: 8470579B	Added: 30234612B	Fraction: 0.7811513447899017	Now: 1694101448988
+Total: 8470579B	Added: 30234612B	Fraction: 0.7811513447899017	Now: 1694101450122
+Total: 8470579B	Added: 30242572B	Fraction: 0.7811963433304615	Now: 1694101456398
+Total: 8470579B	Added: 30242572B	Fraction: 0.7811963433304615	Now: 1694101457597
+Total: 8470579B	Added: 30242572B	Fraction: 0.7811963433304615	Now: 1694101461952
+Total: 8470579B	Added: 30242572B	Fraction: 0.7811963433304615	Now: 1694101463309
+Total: 8470579B	Added: 30242572B	Fraction: 0.7811963433304615	Now: 1694101464703
+Total: 8470579B	Added: 30242572B	Fraction: 0.7811963433304615	Now: 1694101466171
+Total: 8470579B	Added: 30242572B	Fraction: 0.7811963433304615	Now: 1694101469838
+Total: 8470579B	Added: 30242572B	Fraction: 0.7811963433304615	Now: 1694101471723
+Total: 8470579B	Added: 30242572B	Fraction: 0.7811963433304615	Now: 1694101473998
+Total: 8470579B	Added: 30242572B	Fraction: 0.7811963433304615	Now: 1694101475256
+Total: 8470579B	Added: 30242572B	Fraction: 0.7811963433304615	Now: 1694101480915
+Total: 8470579B	Added: 30242572B	Fraction: 0.7811963433304615	Now: 1694101485479
+Total: 8470579B	Added: 30242572B	Fraction: 0.7811963433304615	Now: 1694101488887
+Total: 8470579B	Added: 30242572B	Fraction: 0.7811963433304615	Now: 1694101493090
+Total: 8470579B	Added: 30242572B	Fraction: 0.7811963433304615	Now: 1694101520265
+Total: 8470579B	Added: 30242572B	Fraction: 0.7811963433304615	Now: 1694101524785
+Total: 8470579B	Added: 30242572B	Fraction: 0.7811963433304615	Now: 1694101529922
+Total: 8470579B	Added: 30242572B	Fraction: 0.7811963433304615	Now: 1694101565249
+Total: 8470579B	Added: 30242572B	Fraction: 0.7811963433304615	Now: 1694101586545
+Total: 8470579B	Added: 30242572B	Fraction: 0.7811963433304615	Now: 1694101619468
+Total: 8470579B	Added: 30242572B	Fraction: 0.7811963433304615	Now: 1694101758134
+Total: 8470579B	Added: 30242572B	Fraction: 0.7811963433304615	Now: 1694101903976
+Total: 8470579B	Added: 30242572B	Fraction: 0.7811963433304615	Now: 1694101937736
+Total: 8470579B	Added: 30242572B	Fraction: 0.7811963433304615	Now: 1694102009116
+Total: 8470579B	Added: 30242572B	Fraction: 0.7811963433304615	Now: 1694102031079
+Total: 8470579B	Added: 30242572B	Fraction: 0.7811963433304615	Now: 1694102152595
+Total: 8470579B	Added: 30242572B	Fraction: 0.7811963433304615	Now: 1694102182898
+Total: 8470579B	Added: 30242572B	Fraction: 0.7811963433304615	Now: 1694102448228
+Total: 8470579B	Added: 30242572B	Fraction: 0.7811963433304615	Now: 1694102468079

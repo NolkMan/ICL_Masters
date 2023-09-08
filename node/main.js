@@ -11,7 +11,7 @@ const url = require('url')
 const test = require('./utils/TestUtils.js')
 
 var PICKED_HOSTS = [
-	{good: true, top: 732 , host: 'https://www.caixabank.es'}, // custom picked bank without CSP that does not have ad scripts
+	{good: true, top: 732 , host: 'https://www.caixabank.es'}, // custom picked bank without CSP that does not have ads 
 	{good: true, top: 878 , host: 'https://codepen.io'}, // cloudflare doesnt even allow access
 	{good: true, top: 2589, host: 'https://www.pcworld.com'}, // cloudflare sometimes blocks
 	{good: true, top: 2650, host: 'https://computingforgeeks.com'}, // cloudflare blocks 
@@ -35,7 +35,7 @@ const dryRun = false;
 const preTrain = false;
 const runClient = true;
 const longTest = true;
-const pickNum = 10;
+const pickNum = 9;
 const useTerminal = false;
 
 var picked = PICKED_HOSTS[pickNum];
