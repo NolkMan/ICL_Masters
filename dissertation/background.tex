@@ -8,9 +8,25 @@ In year 2021 OWASP Top 10 team has moveed XSS to position 3 and they have merged
 \subsection{XSS Attack goals}
 Cross site scripting is a very serious risk for hosts, as a successful attack may lead to confidential information disclosure.
 Through XSS attackers gain control of the scripting engine and through the programmable interface they may try to achieve different goals.
+
 \subsubsection{Steal session cookies}
+If session cookies are not HttpOnly, which prevents them from being accessible by scripts, the attackers may retreive them in many different ways.
+By doing that they will be able to authenticate themselves as the victim and perform any actions they could do, untill the cookie expires.
+This gives the attackers total control over the account, where they can extorn money or sensitive information.
+Banks additionally protect their clients by requiring additional 2 factor authentication before transfers.
+
 \subsubsection{Impersonate the user}
+When session cookie is unavailable, the attacker may still retrieve compromised users data and perform actions within the browser.
+They may perform requests in the name of the user to the host even when HttoOnly flag is set.
+The browser will attach the session cookie to the request automatically.
+In this way attackers' script may retreive or even change the users data.
+
 \subsubsection{Deface or modify the application}
+The attacker may also change the website to trick the user into inputing their credentials if the attack is only available on a specific part of the website.
+As in other goals, the attacker eventually obtaines the full access to the account.
+In the end if the website does not have any authentication process, the attacker may be interested in causing financial or reputation loss to the host.
+To achieve this goal they may remove all content from the site and insert offensive imagery.
+
 
 \section{Content Security Policy}
 Content Security Policy(CSP) was introduced as a protection layer, which allows web hosts to control origin and type of resources loaded in the client browser. 
