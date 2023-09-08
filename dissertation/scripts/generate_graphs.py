@@ -7,10 +7,10 @@ OUTPUT_DIR = '../imgs'
 OUTPUT_FILE = '/netword_usage_plot.png'
 
 files = {
-    'caixabank_fixed_long': 'www.caixabank.es',
-    'professormesser_fixed_long': 'www.professormesser.com',
-    'quran_fixed_long': 'quran.com',
-    'libertatea_fixed_long': 'www.libertatea.ro',
+    'caixabank_long': 'www.caixabank.es',
+    'quran_long': 'quran.com',
+    'professormesser_long': 'www.professormesser.com',
+    'libertatea_long': 'www.libertatea.ro',
 }
 
 fig, ax = plt.subplots()
