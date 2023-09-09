@@ -14,14 +14,17 @@ select
 	order by host, viol
 ;
 
+-- + 15 beacuse {"csp-report":} has been removed before adding to the database
+
 select 
 	host,
 	sum(total) as total, 
+	max(policy) as biggestPolicy,
 	sum(policy) as justPolicy ,
 	(sum(policy)*100) / sum(total) as percentage
 	from (
 		select 
-			length(report::varchar) as total, 
+			length(report::varchar) + 15 as total, 
 			length(report->>'original-policy'::varchar) as policy,
 			host
 			from cspro_reports
