@@ -7,10 +7,10 @@ OUTPUT_DIR = '../imgs'
 OUTPUT_FILE = '/netword_usage_bypass.png'
 
 files = {
-    'caixabank_fixed_long_bypass': 'www.caixabank.es',
-    'professormesser_fixed_long_bypass': 'www.professormesser.com',
-    'quran_fixed_long_bypass': 'quran.com',
-    'libertatea_fixed_long_bypass': 'www.libertatea.ro',
+    'caixabank_long_bypass': 'www.caixabank.es',
+    'quran_long_bypass': 'quran.com',
+    'professormesser_long_bypass': 'www.professormesser.com',
+    'libertatea_long_bypass': 'www.libertatea.ro',
 }
 
 fig, ax = plt.subplots()

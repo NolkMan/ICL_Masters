@@ -213,6 +213,19 @@ It uses the prefix {\it unsafe}, but hashes in \texttt{script-src-attr} directiv
 As such I only use \texttt{unsafe-hashes} for this specific directive. 
 Also I only use it for scripts that fully fit in the 40 character limit dedicated to the script sample field in the report and I always generate a violation event for such a report.
 
+\\
+With all those considerations in mind the initial the initial CSP for the server is displayed in figure \ref{code:initial}
+It allows for capture of all necessary reports for scripts running on the host.
+By using \texttt{default-src 'none'} the CSP will also capture non script resources hosted on the webiste.
+Styles compared to other sources can be used inline and as such \texttt{unsafe-inline} is used in thier directives to prevent reports which are not easily preventable otherwise.
+This work focuses on preventing from malicious JavaScript files, but as CSS attacks were described earlier, similar approach can be taken to secure the webapp from malicious stylesheets.
+
+
+\begin{figure}
+\input{code/initialCSP}
+	\label{code:initial}
+\end{figure}
+
 \section{Evaluation}
 
 The automated policy maker is evaluated in this work by the methods of empirical tests, which show that the program is working correctly.
@@ -259,10 +272,13 @@ When a report about a violation to the frame-src is received a new warning is em
 As previously described iframes can be used in clickjacking attacks and due to lower amount of iframes used on pages it is important to verify that no malicious iframes are running.
 
 After testing the server on a model webiste a Content-Security-Policy-Report-Only header has been generated that encapsulates all the described behaviours.
+It includes 2 different hashes for 2 different types of inline scripts and one url for 1 script on the site.
+Additionally it has 1 frames source, as the website contains an iframe.
 
-% TODO add CSPRO HEADER
+\input{code/testCSP}
 
 And the server had emmited the following events.
+They show a new script which later changed into a malicious script, alongside many \texttt{cspro-change} events.
 
 % TODO add events
 
@@ -283,12 +299,16 @@ For the tests the server will remove a JavaScript sources after 10 minutes, so t
 As this tests are done on real hosts it is impossible to assume maliciousness of any of the scripts returned as malicious.
 From all of the reported scripts that were analised by hand, the most common issues for those reports were dubious programming practices or unnecessary obfuscation of seemingly banign scripts.
 
+The Policy Maker can create additional traffic between server and client in two ways, by adding the policy to the response header and by users generating reports.
+It also generates server to server traffic when retreiving scripts for hash calculation and analisys.
+As most of the scripts retreived from by the oracle are inlined or hosted on the host, the impact of this communication can be grately reduced by having servers virtually close together.
+It is also not on a critical line to the client, where additional traffic may hinder user experience.
+For those two reasons this traffic is not accounted for in this impact estimation.
+
 During the tests mitmproxy plugin collected network metadata to evaluate the impact of the server.
-It summed all the traffic coming from the host and all 
-% TODO
-
-% talk how data is collected in mitmproxy
-
+It summed all the traffic coming from the host domain and all its subdomains before anything was added to the response.
+Sepratelly it summed up all occurances where the server would be adding bytes to the responses and all the lenghts of all reports coming through the proxy.
+As all reports are stored in an SQL database, the lenght of all reports can be calculated with and SQL querry.
 
 \subsection{www.libertatea.ro}
 
@@ -339,19 +359,25 @@ Due to that \texttt{unsafe-eval} is never added to the policy and through countl
 
 \subsection{Test results}
 
-All of the websites on which the automated policy maker was tested show high cost of using such an automated tool.
-This comes from a fact that a security measure that aims to keep track of all the systems running on a web application is very resource intensive.
-Depending on the infostructure present the Policy Maker may not be a good tool to increase the security of the website.
-Websites that use \texttt{eval} or dynamically loaded scripts greatly increase the cost of running this server.
-Although this project was developed with a goal to suit any potential host, it is apparent that in order for this solution to be viable, hosts would potentially need to modify their codebase.
+The results of the impact estimation are mixed. 
+Some websites show very high costs of running the Policy Maker, while other show more optimistic results.
+Table \ref{tab:percentage} displays the final data usage statistics for tested hosts.
+Percentage added signifies the amount of additional network traffic that would be generated by using the Policy Maker when compared to the already existing traffic.
+The figure \ref{fig:standarUsage} shows how this percentage changed over the duration of the experiment.
+It increased when there more reports than content sent to the browser and decreased otherwise.
 
-Despite poor performace on selected hosts, the work done in this paper can still be beneficial to smaller endpoints which already put in significant amount of work to insure the security of thier website.
-Ceixabank was used to see what an exaple of potentially such website could be, as customers of a bank would expect utmost security, especially after logging into their online services.
-Even though they may use a different subdomain after a user is logged in, it is still disappointing to see \texttt{eval} function being commonly used on their front page.
+Quran.com and caixabank.es see a 12 to 14 percent increase in traffic, which may be an acceptable compromise between cost and security.
+The figure is reinforced by the article by Deloitte \cite{secSpend}, which details that companies they questioned spend an average of 10.9\% of their it budget on cybersecurity.
+This traffic also happens mostely after the website is already loaded, which will not compromise the user experience by increasing the websites' load time.
+When deployed on a compliant website the results may be even better as Caixabank generates unavoidable reports by using the eval function.
+\input{tables/percentageResults.tex}
 
-% TODO about traffic and what percentage of it are reports
+The other two hosts show when the Policy Maker is a bad tool to improve the sites security.
+In those cases the reports generate much more traffic than what was needed to load the site.
+Both of those hosts use dynamically loaded scripts which are impossible to be fetched by the oracle, resulting in many duplicate reports.
+For the Policy Maker to be applicable, the sites would need significant restructuring.
 
-\begin{figure}[h]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{imgs/netword_usage_plot.png}
 	\includegraphics[width=\textwidth]{imgs/netword_usage_long_plot.png}
@@ -359,14 +385,23 @@ Even though they may use a different subdomain after a user is logged in, it is 
 	\label{fig:standarUsage}
 \end{figure}
 
-%\begin{figure}[h]
-%	\centering
-%	\includegraphics[width=\textwidth]{imgs/netword_usage_bypass.png}
-%	\includegraphics[width=\textwidth]{imgs/netword_usage_long_bypass.png}
-%	\caption{Percentage of bandwidth dedicated to additional traffic generated by the Policy Maker when bypassing Google scripts}
-%	\label{bypassedUsage}
-%\end{figure}
+Table \ref{tab:optimistic} shows many reports and policy related statistics.
+Percentage traffic added to header signifies the unavoidable increase in data transferred which is on the critical path to the user.
+As the policies, sizes of which are also displayed in this table, need to be sent in the header of the response.
+This means that they will be received by the user before any other content, increasing the time before the site is responsive.
 
+The Policy Maker was also tested with the host added to the csp from the start.
+This scenario ignores scripts loaded from the host, but still checks all inline and external scripts.
+When adding this source, the site is no longer protected from insider threats or reflected attack where a malicious script is saved to the host.
+The server still protects from many common DOM injections and depency hosts turning malicious.
+The restults of this test are shown in table \ref{tab:percentageBypass}.
+As shown the results are much better where additional traffic to Caixabank has reduced from 12\% to 8\%, making the Policy Maker even more viable.
+Quran.com uses no sources outside of itself and in this example the 4\% is the minimal load increase that is required for the system to function.
+\input{tables/percentageBypassResults.tex}
+
+The costs detailed in both tables should be carefully examined by the potential users of the Policy Maker.
+The automated tool provied a significant boost to security by reducing the time to detect any attacks.
+It also has not insignificant monetary and experience costs associated to running the server.
 
 \section{Discussion}
 
@@ -374,15 +409,25 @@ Even though they may use a different subdomain after a user is logged in, it is 
 
 \section{Things to improve}
 
-My approach shows to be a promising and new way to improve the security of particular websites.
+The approach shown in this paper proves to be a new and promising way to improve the security of particular websites.
 Main applicability issues stem from the quickly expanding and untamed environment of front end development.
+Websites may quickly grow to sizes which prove to be unmenagable by the Policy Maker.
 
-Things that could dramatically improve the performance of my policy maker would require changing the CSP standard.
-Allowing for more control over the report template could reduce the data transferred back to the CSP reporting endpoint by at least 90\%.
+Things that could dramatically improve the performance of the Policy Maker would require changing the CSP standard.
+Allowing for more control over the report template could reduce the data transferred back to the CSP reporting endpoint by about 90\%.
 This comes from each report containing the current policy used when loading the page, which is responsible for most of the traffic.
+For each host this percentage is displayed in table \ref{tab:reduction}.
+With significant reduction in report sizes, the project would operate much lower overheads.
+This idea could be implemented by creating a new directive \texttt{report-fields} where each source of type \texttt{'no-original-policy'} or \texttt{'no-violated-directive'} would prevent the specific field from being included in the report.
+This solution will work with CSP idea of backwards compatibility as older browser will ignore this directive and send full reports.
 
-I would like to have more control over the report where I could specify the browser to pass the script hash back to me.
-I believe it could be implemented in a similar way to \texttt{report-sample} source, where \texttt{report-hash} would send the hash of the script as received by the browser.
+Another useful addition to the CSP reports specification would be the possibility to ask the browser to pass the hash of the loaded scripts.
+It would allow the oracle to check whether the retreived script is identical to the one that the user has loaded.
+Currently, even if the oracle succesfully retreives a scripts there is no such guarantee and the script may have changed in between.
+The loss of privacy incured by adding hash is either very negligible or non existent as reports are already passing full url of blocked resources and sites on which said violation happened.
+This feature could be implemented in a similar way to \texttt{report-sample} source, where \texttt{report-hash} would send the hash of the script as received by the browser.
+
+%TODO  below
 This would speed up the recognition of changes resources. 
 Currently my server caches the resources and it would recheck and reevaluate the source only after a certain period of time has passed.
 If a hash were to be passed alongside the \texttt{blocked-uri} field I could immediately recognise any changes.
@@ -403,3 +448,4 @@ Although all browsers available to my Linux testing environment have functionall
 Testing my solution in the wild would also resurface many issues related to the complexity of end environments.k
 
 % talk about malicious iframe detection
+% talk about malicious style detection
