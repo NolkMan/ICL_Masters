@@ -62,7 +62,7 @@ The project is mainly written in JavaScript and uses Node as runtime.
 This combination was used as it provides high level, powerful and very customizable tools required for efficient server creation.
 It also natively supports JSON data format, which is used for Content-Security-Policy reports.
 Many tools used within this project are available in the Node Package Manager allowing for better interoperability.
-Components that are not available under Node were connected, by creating separate servers which communicated using GET and POST requests.
+Components that are not available under Node were connected by creating separate servers which communicated using GET and POST requests.
 
 The high level view of the project structure is desplayed in figure \ref{structure}.
 The project uses mutliple interdependant modules, which expose limited amount of functions to support modularity.
@@ -71,15 +71,17 @@ It is designed as a separate entity, which does not require the other components
 When deployed in a real environment, it may be directly connected to the server serving HTTP requets, while providing an up to date policy for the observed reports.
 The Policy maker consists of 3 other smaller modules 
 \begin{description}
-	\item[Main server] Receives reports and generates policies
+	\item[Policy Engine] Receives reports and generates policies
 	\item[Oracle] Takes script urls from reports and aims and collects them from the internet
 	\item[Evaluator] Rates collected scripts and evaluates them
 \end{itemize}
 
-% TODO
-A set of other tools was used to support the server during the development and testing.
-To simulate the control over the host, mitmproxy was used. 
-Also Puppeteer was used to simulate the user over the extended period of time of testing, while also guaranteeing consistency between tests, 
+Other modules displayed in the structure were used to automate and test the Policy Maker.
+\begin{description}
+	\item[Main Controller] Initiates all other components, connects Policy Maker and proxy, and compiles statistics
+	\item[Mitmproxy] Injects policies to simulate deployment alongside tested host and collects network metadata
+	\item[Puppeteer] Simulates the user for autonomous testing
+\end{description}
 
 \begin{figure}[H]
 	\centering
@@ -106,6 +108,8 @@ The full contents of the report are stored in a database alongsite the timestamp
 Depending on the effective violated directive different actions are performed.
 Sources like images, fonts or styles are premanently added to the policy, as this project focuses on securing web applications from malicious scripts.
 Iframes trigger a warning event as they may be used for clickjacking attacks, after which they are added to the policy, as they are not the main focus of this paper.
+The database mentioned is a PostgreSQL client, the data stored is used for statistical analisys within the impact estimation section.
+It was also used to repeat experiments on the same data, which allowed to remove bugs, while reducing the strain of the project on tested hosts.
 
 The most logic within the server is dedicated to scripts.
 Attribute scripts always trigger a warning or a violation event.
@@ -126,12 +130,6 @@ Compared to the oracle it is not necessary for the function of the Policy Maker,
 The evaluator included in the source code uses a machine learning model created by Maria Zorkaltseva intended to find obfuscated malicious JavaScript files \cite{evaluator}.
 As the model is written in Python, downloaded scripts are passed to a python http server using POST requests.
 The server calculates the maliciousness score and returns the result in the response.
-
-
-% TODO
-The server additionally uses PostgreSQL to store reports and responses from the oracle.
-Data is logged in the database for safe-keeping, post-deployment analysis and debugging.
-Additionally the collected reports can be reused to repeat the experiments on the same data, it also reduces the strain this project exerts on websites I am using to test my algorithm.
 
 
 \subsubsection{Main Controller}
@@ -278,9 +276,8 @@ Additionally it has 1 frames source, as the website contains an iframe.
 \input{code/testCSP}
 
 And the server had emmited the following events.
-They show a new script which later changed into a malicious script, alongside many \texttt{cspro-change} events.
-
-% TODO add events
+\input{code/testEvents.tex}
+Between many \texttt{cspro-change} events it may be seen that at some point a newly detected script changed changed and became malicious.
 
 \subsection{Impact estimation}
 
@@ -372,8 +369,10 @@ This traffic also happens mostely after the website is already loaded, which wil
 When deployed on a compliant website the results may be even better as Caixabank generates unavoidable reports by using the eval function.
 \input{tables/percentageResults.tex}
 
-The other two hosts show when the Policy Maker is a bad tool to improve the sites security.
-In those cases the reports generate much more traffic than what was needed to load the site.
+The other two hosts show that in a long term the Policy Maker is a bad tool to improve the sites security.
+Even though professormesser.com had good results in the beggining of the experiment, as shown in the figure \ref{fig:standarUsage}.
+As the policy size increased the additional network usage did not settle, but continued to grow.
+In both sites, professormesser.com and libertatea.ro, the reports generate much more traffic than what was needed to load the site.
 Both of those hosts use dynamically loaded scripts which are impossible to be fetched by the oracle, resulting in many duplicate reports.
 For the Policy Maker to be applicable, the sites would need significant restructuring.
 
@@ -413,6 +412,13 @@ The approach shown in this paper proves to be a new and promising way to improve
 Main applicability issues stem from the quickly expanding and untamed environment of front end development.
 Websites may quickly grow to sizes which prove to be unmenagable by the Policy Maker.
 
+\subsection{Content-Security-Policy Specificaiton Changes}
+
+During the development of the Policy Maker, it had to comply with the Content-Security-Policy specification.
+This results in issues and small insecurities, which could be solved if the specification was more robust.
+
+\subsubsection{Variable reports}
+
 Things that could dramatically improve the performance of the Policy Maker would require changing the CSP standard.
 Allowing for more control over the report template could reduce the data transferred back to the CSP reporting endpoint by about 90\%.
 This comes from each report containing the current policy used when loading the page, which is responsible for most of the traffic.
@@ -421,31 +427,66 @@ With significant reduction in report sizes, the project would operate much lower
 This idea could be implemented by creating a new directive \texttt{report-fields} where each source of type \texttt{'no-original-policy'} or \texttt{'no-violated-directive'} would prevent the specific field from being included in the report.
 This solution will work with CSP idea of backwards compatibility as older browser will ignore this directive and send full reports.
 
+\input{tables/reductionPotential}
+
+\subsubsection{Script hash in reports}
+
 Another useful addition to the CSP reports specification would be the possibility to ask the browser to pass the hash of the loaded scripts.
 It would allow the oracle to check whether the retreived script is identical to the one that the user has loaded.
 Currently, even if the oracle succesfully retreives a scripts there is no such guarantee and the script may have changed in between.
 The loss of privacy incured by adding hash is either very negligible or non existent as reports are already passing full url of blocked resources and sites on which said violation happened.
 This feature could be implemented in a similar way to \texttt{report-sample} source, where \texttt{report-hash} would send the hash of the script as received by the browser.
 
-%TODO  below
-This would speed up the recognition of changes resources. 
-Currently my server caches the resources and it would recheck and reevaluate the source only after a certain period of time has passed.
-If a hash were to be passed alongside the \texttt{blocked-uri} field I could immediately recognise any changes.
-This would further improve the security as timeouts may be troublesome to adjust between possibly not seeing every change and unnecessarily retrieving the same file over and over again.
+\subsubsection{Looser integration checks}
 
-Within my own approach, further development of an oracle to judge scripts is crucial to reap full benefits of this system.
-I do not introduce new breakthroughs in script detection, but merely use what I have found to be fit for my purpose.
-The oracle that I am using very often tags ad scripts as malicious, as they do load variable content onto the website and due to that use many functions commonly found in malicious scripts.
+The project initially intended to use hashes for each type of script. 
+This would potentially allow for scripts to be checked before timeout by receiving a significant amount of reports when it no longer has the previously calculated hash.
+Unfortunately, the CSP standard required integration attribute for \texttt{<script>} elements which are loaded from a file \cite{externalHash}.
+The integration attribute needs to contain the expected hash, which also needs to match a hash in the CSP for the script to be loaded.
+Adding such attribute nullifies the idea of a automatic tool, that could work independeently from the rest of the codebase.
+Due to this reason the server uses a mixture of url and hash based allowlists, lowering the security slightly.
 
-Within my work I try to show that improving the defence of websites is feasible by introducing an automatically generated policy, but I never implement it on any website with real users.
-The next big step in proving the functionality of this approach would be to test it on a real host.
-There many issues would need to be resolved similar to the issues that relate to deploying a standard CSP.
-Users may embed or block scripts by using external plugins. 
-My server could detect those by knowing from the development environment which scripts are expected to be loaded by the end users. 
+To make the described approach work, the specification would need to make a way to ingore the integration attribute and check the hashes after the script is loaded.
+This would not change the behaviour of the browser when using the report only policy as the non enforcing nature allows all scripts to be laoded.
+When used with the enforcing policy it would allow for data to be sent out of and received by the browser, before potentially blocking the script.
+As CSP is not particularly good at preventing exfiltration attacks \cite{CSPexfil}, such addition would allow to balance security and usability of CSPs.
 
-Through my tests I have also used only a single browser.
-Although all browsers available to my Linux testing environment have functionally identical reporting, I have not tested on outdated and mobile browsers.
-Testing my solution in the wild would also resurface many issues related to the complexity of end environments.k
+Unfortunately, this specification change would break the backwards compatibility the most out of all proposed changes within this paper.
+When used in enforcing mode, older browsers which are not updated to use this feature, would block otherwise allowed cources from executing.
+In report only mode, it would result in many bogus reports, which would either be ignored or significantly strain the system.
+Although this change would severely increase the security of the Policy Maker, it is unlikely to be added, due to issues described above.
 
-% talk about malicious iframe detection
-% talk about malicious style detection
+\subsection{Other improvements}
+
+This paper focuses on creating and later proving the potential utility of the Policy Maker.
+%TODO 
+Yet, throughout the development some parts of the project are left 
+
+\subsubsection{Real life deployment}
+
+Within the impact estimation, the server is tested on existing codebases of real hosts.
+This is the closest this set of tests can go, without being actually integrated into the server itself.
+The next logical step for the Policy Maker is to be tested alongside a willing host.
+This would allow to calculate the real impact of the server by receiving reports from the website's users.
+It would also show any issues with the Policy Maker logic, when reports received are old, invalid or from a varying set of browsers.
+
+\subsubsection{Evaluator Improvements}
+
+The evaluator in this project is a rather simple machine learning model which functions great for testing and development purposes.
+It could be expanded by using more data when deciding the maliciousness of the script.
+It could include hostnames and IP adresses and compare those agains a set of known compromised endpoints.
+It could also benefit from more training data or from more elaborate lignuistic models.
+The possibilities to improve the evaluator are many and they should be seriously considered when trying to run the Policy Maker on a real host.
+
+\subsubsection{Securing other Frames and Styles}
+
+This work focues on protecting against JavaScript based attacks, while giving some insight into iframes that are embedded within the site.
+Protecting against attacks using either of those elements is much harder because of prectical reasons.
+As sites are moving away from using inline attribute scripts, styles can still be commonly found in attributes of many html elements.
+Attacks using styles are also much harder to detect as they often retreive single characters at a time.
+This would result in big policies with potentially little benefit to them.
+
+IFrames on the other hand require more context to be considered malicious.
+A payment IFrame is to be expected on a shopping site, but the same iframe may be considered malicious when injected into the landing page of a IT solutions provider, which does not work with individual clients.
+For this reason the server implemented in this work displays the iframes encountered as warnings, as each frame should be reviewed manually.
+
