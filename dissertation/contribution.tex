@@ -1,1 +1,468 @@
-\chapter{Contribution}
+\chapter{Design and implementation}
+
+\section{Analysis of CSP reporting}
+% TODO this section
+
+Part of my work was to evaluate the use of reporting within websites policies.
+
+To aid me in my task NetCraft has provided me with a list of top 1 million sites.
+I have requested their main pages and stored their CSP and CSPRO headers.
+Later, I have scanned all policies for inclusion of reporting sources.
+\texttt{report-to} and \texttt{report-uri} allow for CSP violations to be sent to the dedicated server.
+Crucially their declaration is not supported in \texttt{<meta>} HTML tags within the source code of sites using CSP.
+
+\subsection{Analysis Results}
+
+From my analysis I observed that 14\% of websites that responded with a 200 OK response code were using some form of a CSP policy.
+This shows a steady increase of CSP adoption by hosts compared to other studies and reports.
+Unfortunately, through my analysis of the policies for reporting sources, I have observed that only 4\% of all policies allow for any form of reporting.
+
+Similarly I have checked report only headers. 
+Only 1\% of websites used a CSPRO header and out of those only 50\% included reporting endpoints.
+Reporting only header does not change any behaviours of browsers. 
+Knowing this, 50\% of hosts using a CSPRO header have it without getting any benefits of such header.
+
+Out of 1 million sites tested, only 2881 sites reported using both active and reporting policies at the same time.
+Many of those sites were various endpoints of the biggest hosts on the internet.
+Through manual analysis, polices used here can be roughly split into 3 groups.
+
+Similar, but with small changes.
+For example, \texttt{instagram.com} report only policy disallows images to be loaded from \texttt{*.whatsapp.com}, which is allowed in the enforcement policy.
+This method allows for sites to function as expected by users, but all occurrences of a specific media will be reported.
+Using reporting only header in this way may allow for eventual removal of a dependency from the site.
+
+There were significant number of host using enforcement mode for \texttt{frame-src} and \texttt{upgrade-insecure-requests} sources and report-only header for other uses of CSP like scripts, styles or images.
+This approach allows for quick deployment of low cost directives which prevent data leaks through insecure connections and click jacking, two big attack vectors that CSP can help prevent.
+While those basic security measures are in place, developers can focus on much more advanced and harder to properly create policy that included all the other directives.
+
+Last group, most disappointing, had identical policies for both enforcement and report only modes.
+Here I have observed this behaviour in 11\% of all servers running both headers.
+This may be due to developers keeping the old report only header when moving to enforcement mode after creating a policy for their website.
+
+\section{Automated Policy Maker}
+
+With such low usage of \texttt{content-security-policy-report-only} header this project aimed to create a fully automated policy creation and reporting tool.
+It would help increase the security of websites by alerting the developers early about any potential breaches and attacks that are deployed.
+
+
+\subsection{Ideology}
+
+Although the report only header does not limit any resources from being loaded, it can be used for monitoring purposes.
+When using the standard \texttt{content-security-policy} header any attack bypassing the policy will never be reported as enforcing and reporting go hand in hand, leading to untraceable attacks.
+The approach taken in this paper tries to make a report only policy that forces a report for each new source file.
+This results in a system where every attack leaves a trace and can be acted upon.
+
+The Policy Maker takes advantage of the \texttt{report-only} part in \texttt{Content-Security-Policy-Report-Only} header, as developing a policy that is never intended to be in the enforcement mode allows for new behaviours.
+When using the report only header the policy does not need to contain all the loaded resources, that are used by the web application.
+With that in mind the Policy Maker may periodically remove certain sources, as it does not risk breaking the application.
+In this way the server may check whether a source is still in use, ensuting that the policy is as tight as possible. 
+When querried the server may also provide an up to date website map from the point of view of all the users.
+
+Additionally, by using report only the policies do not need to be made future proof. 
+Contrarily, it is beneficial for the Policy Maker server to be informed of all changes within the site.
+This allows for maximum survelience of the site where no attack would go unnoticed.
+The server accomplishes that by using the using hashes for every inline script and exact url matches for standard script elements.
+If a script was added by an attack would be performed it would not match any hash or url signatures present in the report only policy.
+When user loads the compromised site a report will be generated allowing for quick response, minimizing the attack spread.
+
+The requirement for a user to be compromised is unavoidable by the nature of the CSP deployment.
+As such the solution should be used as a defence in depth tool, which does not replace other measures necessary to secure the application.
+
+\subsection{Development}
+
+The project is mainly written in JavaScript and uses Node as runtime.
+This combination was used as it provides high level, powerful and very customizable tools required for efficient server creation.
+It also natively supports JSON data format, which is used for Content-Security-Policy reports.
+Many tools used within this project are available in the Node Package Manager allowing for better interoperability.
+Components that are not available under Node were connected by creating separate servers which communicated using GET and POST requests.
+
+The high level view of the project structure is desplayed in figure \ref{structure}.
+The project uses mutliple interdependant modules, which expose limited amount of functions to support modularity.
+The key development within this project is on the diagram denoted as the Policy Maker.
+It is designed as a separate entity, which does not require the other components used within this project to function.
+When deployed in a real environment, it may be directly connected to the server serving HTTP requets, while providing an up to date policy for the observed reports.
+The Policy maker consists of 3 other smaller modules 
+\begin{description}
+	\item[Policy Engine] Receives reports and generates policies
+	\item[Oracle] Takes script urls from reports and aims and collects them from the internet
+	\item[Evaluator] Rates collected scripts and evaluates them
+\end{itemize}
+
+Other modules displayed in the structure were used to automate and test the Policy Maker.
+\begin{description}
+	\item[Main Controller] Initiates all other components, connects Policy Maker and proxy, and compiles statistics
+	\item[Mitmproxy] Injects policies to simulate deployment alongside tested host and collects network metadata
+	\item[Puppeteer] Simulates the user for autonomous testing
+\end{description}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{imgs/project_structure.png}
+	\caption{Structure of the project}
+	\label{structure}
+\end{figure}
+
+\subsubsection{Server}
+The server is the main component which exposes and open port dedicated to collecting reports.
+It is also the outermost layer of communication responsible for issuing warnings as they are encountered.
+This module exposes an \texttt{EventEmitter} interface, which allows other components to run specific code when an event occurs.
+There are 5 possible events, 2 for security, 2 for logging and 1 for CSP updates:
+\begin{description}
+	\item[\texttt{warning}]	Used to signify rarely used content which should be monitored. Practically it is used for iframes and small inline attribute scripts. 
+	\item[\texttt{violation}] Uesd to signify malicious scripts, use of \texttt{eval} function or long attribute scripts that do not fit in the 40 character report limit.
+	\item[\texttt{new}] Signifies a new script has been spotted.
+	\item[\texttt{changed}] Signifies that a previously spotted script has been changed.
+	\item[\texttt{cspro-change}] Emmitted whenever a policy is changed, notifying any module to update their CSPRO value.
+\end{description}
+
+When reports are received, they are parsed and the most important information is stored in the memory.
+The full contents of the report are stored in a database alongsite the timestamp when they arrived.
+Depending on the effective violated directive different actions are performed.
+Sources like images, fonts or styles are premanently added to the policy, as this project focuses on securing web applications from malicious scripts.
+Iframes trigger a warning event as they may be used for clickjacking attacks, after which they are added to the policy, as they are not the main focus of this paper.
+The database mentioned is a PostgreSQL client, the data stored is used for statistical analisys within the impact estimation section.
+It was also used to repeat experiments on the same data, which allowed to remove bugs, while reducing the strain of the project on tested hosts.
+
+The most logic within the server is dedicated to scripts.
+Attribute scripts always trigger a warning or a violation event.
+Then depending whether they fit into the 40 character limit within the \texttt{script-sample} field in the report, their hash may be added to the policy for a short duration to limit the amount of duplicate reports.
+Reports signifying use of \texttt{eval} function emit a violation event, after which they are ignored.
+Lastly all reports about scripts within HTML \texttt{<script>} tags are sent to the oracle to calculate their hash and evaluate their maliciousness.
+All hashes are stored and based on them the server recognises whether a script has changed and in that case it emits a changed event.
+
+\subsubsection{Oracle}
+The oracle is the inner module of the Policy Maker which is crucial for the functionality of the server.
+Its main goal is to aid the server in collecting scripts described in reports and to provide their evaluation.
+The oracle is a separate module to allow for a redesign without affecting the core logic of the server.
+In this project scirpts are fetched from the hosts using GET requests, but this mechanism could be adjusted to instead fetch specific scripts from the inner code repository.
+
+\subsubsection{Evaluator}
+The evaluator in the Oracle Module is used to evaluate scripts from the sourcecode that was collected by the oracle.
+Compared to the oracle it is not necessary for the function of the Policy Maker, but without one only new and changed events will be emitted.
+The evaluator included in the source code uses a machine learning model created by Maria Zorkaltseva intended to find obfuscated malicious JavaScript files \cite{evaluator}.
+As the model is written in Python, downloaded scripts are passed to a python http server using POST requests.
+The server calculates the maliciousness score and returns the result in the response.
+
+\subsubsection{Main Controller}
+Main Controller is the entry module for the project.
+Every other module described requires a context for its execution.
+The main controller sets up each module with a context required to run a specific test scenario.
+It collects all events emited from the server and logs them to the console for a clear view of the servers operation.
+Whenever a new policy is generated, the main controller passes it from the server to the mitmproxy so it can be injected into server responses.
+Lastly the main controller logs statistical data collected by mitmproxy.
+
+\subsubsection{Mitmproxy}
+Mitmproxy is an interactive https proxy which can be used to intercept, read and modify traffic coming through it.
+It supports scripting, which is used to automatically insert \texttt{content-security-policy-report-only} header before it is sent to the browser.
+In this way, the browser sees the modified response as if it was sent directly from the host.
+This behaviour directly emulates the scenario where the policy maker were to be deployed alongside the hosting server.
+As all traffic is directed through mitmproxy, it has also been used to collect statistics required to evaluate the project.
+In the code this integration works by creating a separate server to which the mitmproxy module connects periodically.
+Whenever this happens all data collected is sent away and a current CSPRO generated by the reporting server is returned.
+Due to this design there is slight latency between generation of a new policy and deployment to the user.
+Although this delay exists, it is insignificant and in real world many hosts use proxies to reduce the load on servers or clients use caching to reduce their network usage.
+In both of those cases the delay between deployment of a new CSPRO and its perceivable effects may be much larger than what is observed in this project and as such this issue is ignored throughtout the testing.
+
+\subsubsection{Puppeteer}
+The second tool used that does not benefit the security of the server, but was extensively used during testing was Puppeteer.
+Puppeteer is a Node.js module designed to simulate user interaction in a chromium client.
+It uses a programmable interface, which results in high precision and reproducability between executions.
+For those reasons Puppeteer was used for all impact estimation tests.
+In the code a separate module was dedicated to Puppeteer which starts it up connected to the proxy with parameters simulating a regular user.
+After that it is used to crawl the currently tested host.
+
+
+\section{Initial Content-Security-Policy}
+
+During development of the server I have faces multiple choices relating to the initial CSPRO header, which is set before any report is even received.
+There are a few sources which dramatically change the behaviour of browsers enforcing the security policy, which impact security or the threat surface that I may protect against.
+
+\subsection{unsafe-inline}
+
+\texttt{unsafe-inline} allows all inline scripts to execute. 
+This source is disincentivized by Mozilla Docs \cite{unsafeinlinebad2} and CSP Quick Reference Guide \cite{unsafeinlinebad1}.
+It is also shown to be insecure in multiple papers \cite{weichselbaum2016csp} \cite{osti_10173479}.
+
+This is largely due to the fact that it allows for dynamic execution of scripts, by inserting them directly into the website code.
+It also prevents any reports to be generated in case of a DOM injection attack.
+
+I was considering using \texttt{unsafe-inline}, as my oracle uses a best effort approach to extracting inline scripts.
+This leads to many scripts being unable to be extracted without executing the loader script.
+I have decided that executing unknown scripts is very unsafe and consequently my server will never be able to know the source code or the hash.
+It means that the browser will always send a report to my server whenever a script is loaded in this way, impacting the performance.
+
+In the end I believe that although there are practical implications to including \texttt{unsafe-inline} source into the CSP, it has too severe negative implications.
+The CSP becomes easily bypassable and 
+
+\subsection{self}
+
+Adding \texttt{'self'} to the source list of scripts would allow for all scripts coming from the host to be executed without sending the report.
+It still sends a report for every inline script and it  may be a good option for a host that employs many security measures towards its own code.
+When used it reduces the amount of reports and reduces the average size of the report as none of sites own scripts will need a hash to execute.
+This method successfully changes the threat surface from all scripts used on a web application to monitoring changes only in external scripts.
+
+In my experiments I do not use \texttt{'self'} source as I my aim was to develop a policy maker that is as secure as possible.
+The change is the threat surface is big enough where a fully automatic system should be able to protect agains insider threat.
+
+\subsection{strict-dynamic}
+
+\texttt{strict-dynamic} is a successor to \texttt{unsafe-inline}, where it will allow dynamically loaded scripts as long as they are loaded from a script that is allowed by a nonce of a hash.
+It also changes the behaviour of the policy where it instructs the browser to ignore \texttt{unsafe-inline}, \texttt{'self'}, \texttt{unsafe-eval} or many other wildcard statements.
+
+When using \texttt{strict-dynamic} I am still unable to gather hashes for dynamically loaded scripts, but in this case, those scripts will not send reports about an inline script being used, partially mitigating the issue.
+Similarly, non-inline dynamically added scripts will also not generate a report, which I would be able to retrieve, evaluate and generate a hash for.
+For this reason I do not use \texttt{strict-dynamic} source as it still undermines the security of my solution.
+
+\subsection{unsafe-hashes}
+
+Adding \texttt{unsafe-hashes} to the source list allow for hashes to be used for inline scritp attributes such as \texttt{onClick} or \texttt{onLoad}.
+It uses the prefix {\it unsafe}, but hashes in \texttt{script-src-attr} directive by default are ignored as they will never have a valid target to allow.
+As such I only use \texttt{unsafe-hashes} for this specific directive. 
+Also I only use it for scripts that fully fit in the 40 character limit dedicated to the script sample field in the report and I always generate a violation event for such a report.
+
+\\
+With all those considerations in mind the initial the initial CSP for the server is displayed in figure \ref{code:initial}
+It allows for capture of all necessary reports for scripts running on the host.
+By using \texttt{default-src 'none'} the CSP will also capture non script resources hosted on the webiste.
+Styles compared to other sources can be used inline and as such \texttt{unsafe-inline} is used in thier directives to prevent reports which are not easily preventable otherwise.
+This work focuses on preventing from malicious JavaScript files, but as CSS attacks were described earlier, similar approach can be taken to secure the webapp from malicious stylesheets.
+
+
+\begin{figure}
+\input{code/initialCSP}
+	\label{code:initial}
+\end{figure}
+
+\section{Analysis of CSP reporting}
+% TODO this section
+
+Part of my work was to evaluate the use of reporting within websites policies.
+
+To aid me in my task NetCraft has provided me with a list of top 1 million sites.
+I have requested their main pages and stored their CSP and CSPRO headers.
+Later, I have scanned all policies for inclusion of reporting sources.
+\texttt{report-to} and \texttt{report-uri} allow for CSP violations to be sent to the dedicated server.
+Crucially their declaration is not supported in \texttt{<meta>} HTML tags within the source code of sites using CSP.
+
+\subsection{Analysis Results}
+
+From my analysis I observed that 14\% of websites that responded with a 200 OK response code were using some form of a CSP policy.
+This shows a steady increase of CSP adoption by hosts compared to other studies and reports.
+Unfortunately, through my analysis of the policies for reporting sources, I have observed that only 4\% of all policies allow for any form of reporting.
+
+Similarly I have checked report only headers. 
+Only 1\% of websites used a CSPRO header and out of those only 50\% included reporting endpoints.
+Reporting only header does not change any behaviours of browsers. 
+Knowing this, 50\% of hosts using a CSPRO header have it without getting any benefits of such header.
+
+Out of 1 million sites tested, only 2881 sites reported using both active and reporting policies at the same time.
+Many of those sites were various endpoints of the biggest hosts on the internet.
+Through manual analysis, polices used here can be roughly split into 3 groups.
+
+Similar, but with small changes.
+For example, \texttt{instagram.com} report only policy disallows images to be loaded from \texttt{*.whatsapp.com}, which is allowed in the enforcement policy.
+This method allows for sites to function as expected by users, but all occurrences of a specific media will be reported.
+Using reporting only header in this way may allow for eventual removal of a dependency from the site.
+
+There were significant number of host using enforcement mode for \texttt{frame-src} and \texttt{upgrade-insecure-requests} sources and report-only header for other uses of CSP like scripts, styles or images.
+This approach allows for quick deployment of low cost directives which prevent data leaks through insecure connections and click jacking, two big attack vectors that CSP can help prevent.
+While those basic security measures are in place, developers can focus on much more advanced and harder to properly create policy that included all the other directives.
+
+Last group, most disappointing, had identical policies for both enforcement and report only modes.
+Here I have observed this behaviour in 11\% of all servers running both headers.
+This may be due to developers keeping the old report only header when moving to enforcement mode after creating a policy for their website.
+
+\section{Automated Policy Maker}
+
+With such low usage of \texttt{content-security-policy-report-only} header this project aimed to create a fully automated policy creation and reporting tool.
+It would help increase the security of websites by alerting the developers early about any potential breaches and attacks that are deployed.
+
+
+\subsection{Ideology}
+
+Although the report only header does not limit any resources from being loaded, it can be used for monitoring purposes.
+When using the standard \texttt{content-security-policy} header any attack bypassing the policy will never be reported as enforcing and reporting go hand in hand, leading to untraceable attacks.
+The approach taken in this paper tries to make a report only policy that forces a report for each new source file.
+This results in a system where every attack leaves a trace and can be acted upon.
+
+The Policy Maker takes advantage of the \texttt{report-only} part in \texttt{Content-Security-Policy-Report-Only} header, as developing a policy that is never intended to be in the enforcement mode allows for new behaviours.
+When using the report only header the policy does not need to contain all the loaded resources, that are used by the web application.
+With that in mind the Policy Maker may periodically remove certain sources, as it does not risk breaking the application.
+In this way the server may check whether a source is still in use, ensuting that the policy is as tight as possible. 
+When querried the server may also provide an up to date website map from the point of view of all the users.
+
+Additionally, by using report only the policies do not need to be made future proof. 
+Contrarily, it is beneficial for the Policy Maker server to be informed of all changes within the site.
+This allows for maximum survelience of the site where no attack would go unnoticed.
+The server accomplishes that by using the using hashes for every inline script and exact url matches for standard script elements.
+If a script was added by an attack would be performed it would not match any hash or url signatures present in the report only policy.
+When user loads the compromised site a report will be generated allowing for quick response, minimizing the attack spread.
+
+The requirement for a user to be compromised is unavoidable by the nature of the CSP deployment.
+As such the solution should be used as a defence in depth tool, which does not replace other measures necessary to secure the application.
+
+\subsection{Development}
+
+The project is mainly written in JavaScript and uses Node as runtime.
+This combination was used as it provides high level, powerful and very customizable tools required for efficient server creation.
+It also natively supports JSON data format, which is used for Content-Security-Policy reports.
+Many tools used within this project are available in the Node Package Manager allowing for better interoperability.
+Components that are not available under Node were connected by creating separate servers which communicated using GET and POST requests.
+
+The high level view of the project structure is desplayed in figure \ref{structure}.
+The project uses mutliple interdependant modules, which expose limited amount of functions to support modularity.
+The key development within this project is on the diagram denoted as the Policy Maker.
+It is designed as a separate entity, which does not require the other components used within this project to function.
+When deployed in a real environment, it may be directly connected to the server serving HTTP requets, while providing an up to date policy for the observed reports.
+The Policy maker consists of 3 other smaller modules 
+\begin{description}
+	\item[Policy Engine] Receives reports and generates policies
+	\item[Oracle] Takes script urls from reports and aims and collects them from the internet
+	\item[Evaluator] Rates collected scripts and evaluates them
+\end{itemize}
+
+Other modules displayed in the structure were used to automate and test the Policy Maker.
+\begin{description}
+	\item[Main Controller] Initiates all other components, connects Policy Maker and proxy, and compiles statistics
+	\item[Mitmproxy] Injects policies to simulate deployment alongside tested host and collects network metadata
+	\item[Puppeteer] Simulates the user for autonomous testing
+\end{description}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=\textwidth]{imgs/project_structure.png}
+	\caption{Structure of the project}
+	\label{structure}
+\end{figure}
+
+\subsubsection{Server}
+The server is the main component which exposes and open port dedicated to collecting reports.
+It is also the outermost layer of communication responsible for issuing warnings as they are encountered.
+This module exposes an \texttt{EventEmitter} interface, which allows other components to run specific code when an event occurs.
+There are 5 possible events, 2 for security, 2 for logging and 1 for CSP updates:
+\begin{description}
+	\item[\texttt{warning}]	Used to signify rarely used content which should be monitored. Practically it is used for iframes and small inline attribute scripts. 
+	\item[\texttt{violation}] Uesd to signify malicious scripts, use of \texttt{eval} function or long attribute scripts that do not fit in the 40 character report limit.
+	\item[\texttt{new}] Signifies a new script has been spotted.
+	\item[\texttt{changed}] Signifies that a previously spotted script has been changed.
+	\item[\texttt{cspro-change}] Emmitted whenever a policy is changed, notifying any module to update their CSPRO value.
+\end{description}
+
+When reports are received, they are parsed and the most important information is stored in the memory.
+The full contents of the report are stored in a database alongsite the timestamp when they arrived.
+Depending on the effective violated directive different actions are performed.
+Sources like images, fonts or styles are premanently added to the policy, as this project focuses on securing web applications from malicious scripts.
+Iframes trigger a warning event as they may be used for clickjacking attacks, after which they are added to the policy, as they are not the main focus of this paper.
+The database mentioned is a PostgreSQL client, the data stored is used for statistical analisys within the impact estimation section.
+It was also used to repeat experiments on the same data, which allowed to remove bugs, while reducing the strain of the project on tested hosts.
+
+The most logic within the server is dedicated to scripts.
+Attribute scripts always trigger a warning or a violation event.
+Then depending whether they fit into the 40 character limit within the \texttt{script-sample} field in the report, their hash may be added to the policy for a short duration to limit the amount of duplicate reports.
+Reports signifying use of \texttt{eval} function emit a violation event, after which they are ignored.
+Lastly all reports about scripts within HTML \texttt{<script>} tags are sent to the oracle to calculate their hash and evaluate their maliciousness.
+All hashes are stored and based on them the server recognises whether a script has changed and in that case it emits a changed event.
+
+\subsubsection{Oracle}
+The oracle is the inner module of the Policy Maker which is crucial for the functionality of the server.
+Its main goal is to aid the server in collecting scripts described in reports and to provide their evaluation.
+The oracle is a separate module to allow for a redesign without affecting the core logic of the server.
+In this project scirpts are fetched from the hosts using GET requests, but this mechanism could be adjusted to instead fetch specific scripts from the inner code repository.
+
+\subsubsection{Evaluator}
+The evaluator in the Oracle Module is used to evaluate scripts from the sourcecode that was collected by the oracle.
+Compared to the oracle it is not necessary for the function of the Policy Maker, but without one only new and changed events will be emitted.
+The evaluator included in the source code uses a machine learning model created by Maria Zorkaltseva intended to find obfuscated malicious JavaScript files \cite{evaluator}.
+As the model is written in Python, downloaded scripts are passed to a python http server using POST requests.
+The server calculates the maliciousness score and returns the result in the response.
+
+\subsubsection{Main Controller}
+Main Controller is the entry module for the project.
+Every other module described requires a context for its execution.
+The main controller sets up each module with a context required to run a specific test scenario.
+It collects all events emited from the server and logs them to the console for a clear view of the servers operation.
+Whenever a new policy is generated, the main controller passes it from the server to the mitmproxy so it can be injected into server responses.
+Lastly the main controller logs statistical data collected by mitmproxy.
+
+\subsubsection{Mitmproxy}
+Mitmproxy is an interactive https proxy which can be used to intercept, read and modify traffic coming through it.
+It supports scripting, which is used to automatically insert \texttt{content-security-policy-report-only} header before it is sent to the browser.
+In this way, the browser sees the modified response as if it was sent directly from the host.
+This behaviour directly emulates the scenario where the policy maker were to be deployed alongside the hosting server.
+As all traffic is directed through mitmproxy, it has also been used to collect statistics required to evaluate the project.
+In the code this integration works by creating a separate server to which the mitmproxy module connects periodically.
+Whenever this happens all data collected is sent away and a current CSPRO generated by the reporting server is returned.
+Due to this design there is slight latency between generation of a new policy and deployment to the user.
+Although this delay exists, it is insignificant and in real world many hosts use proxies to reduce the load on servers or clients use caching to reduce their network usage.
+In both of those cases the delay between deployment of a new CSPRO and its perceivable effects may be much larger than what is observed in this project and as such this issue is ignored throughtout the testing.
+
+\subsubsection{Puppeteer}
+The second tool used that does not benefit the security of the server, but was extensively used during testing was Puppeteer.
+Puppeteer is a Node.js module designed to simulate user interaction in a chromium client.
+It uses a programmable interface, which results in high precision and reproducability between executions.
+For those reasons Puppeteer was used for all impact estimation tests.
+In the code a separate module was dedicated to Puppeteer which starts it up connected to the proxy with parameters simulating a regular user.
+After that it is used to crawl the currently tested host.
+
+
+\section{Initial Content-Security-Policy}
+
+During development of the server I have faces multiple choices relating to the initial CSPRO header, which is set before any report is even received.
+There are a few sources which dramatically change the behaviour of browsers enforcing the security policy, which impact security or the threat surface that I may protect against.
+
+\subsection{unsafe-inline}
+
+\texttt{unsafe-inline} allows all inline scripts to execute. 
+This source is disincentivized by Mozilla Docs \cite{unsafeinlinebad2} and CSP Quick Reference Guide \cite{unsafeinlinebad1}.
+It is also shown to be insecure in multiple papers \cite{weichselbaum2016csp} \cite{osti_10173479}.
+
+This is largely due to the fact that it allows for dynamic execution of scripts, by inserting them directly into the website code.
+It also prevents any reports to be generated in case of a DOM injection attack.
+
+I was considering using \texttt{unsafe-inline}, as my oracle uses a best effort approach to extracting inline scripts.
+This leads to many scripts being unable to be extracted without executing the loader script.
+I have decided that executing unknown scripts is very unsafe and consequently my server will never be able to know the source code or the hash.
+It means that the browser will always send a report to my server whenever a script is loaded in this way, impacting the performance.
+
+In the end I believe that although there are practical implications to including \texttt{unsafe-inline} source into the CSP, it has too severe negative implications.
+The CSP becomes easily bypassable and 
+
+\subsection{self}
+
+Adding \texttt{'self'} to the source list of scripts would allow for all scripts coming from the host to be executed without sending the report.
+It still sends a report for every inline script and it  may be a good option for a host that employs many security measures towards its own code.
+When used it reduces the amount of reports and reduces the average size of the report as none of sites own scripts will need a hash to execute.
+This method successfully changes the threat surface from all scripts used on a web application to monitoring changes only in external scripts.
+
+In my experiments I do not use \texttt{'self'} source as I my aim was to develop a policy maker that is as secure as possible.
+The change is the threat surface is big enough where a fully automatic system should be able to protect agains insider threat.
+
+\subsection{strict-dynamic}
+
+\texttt{strict-dynamic} is a successor to \texttt{unsafe-inline}, where it will allow dynamically loaded scripts as long as they are loaded from a script that is allowed by a nonce of a hash.
+It also changes the behaviour of the policy where it instructs the browser to ignore \texttt{unsafe-inline}, \texttt{'self'}, \texttt{unsafe-eval} or many other wildcard statements.
+
+When using \texttt{strict-dynamic} I am still unable to gather hashes for dynamically loaded scripts, but in this case, those scripts will not send reports about an inline script being used, partially mitigating the issue.
+Similarly, non-inline dynamically added scripts will also not generate a report, which I would be able to retrieve, evaluate and generate a hash for.
+For this reason I do not use \texttt{strict-dynamic} source as it still undermines the security of my solution.
+
+\subsection{unsafe-hashes}
+
+Adding \texttt{unsafe-hashes} to the source list allow for hashes to be used for inline scritp attributes such as \texttt{onClick} or \texttt{onLoad}.
+It uses the prefix {\it unsafe}, but hashes in \texttt{script-src-attr} directive by default are ignored as they will never have a valid target to allow.
+As such I only use \texttt{unsafe-hashes} for this specific directive. 
+Also I only use it for scripts that fully fit in the 40 character limit dedicated to the script sample field in the report and I always generate a violation event for such a report.
+
+\\
+With all those considerations in mind the initial the initial CSP for the server is displayed in figure \ref{code:initial}
+It allows for capture of all necessary reports for scripts running on the host.
+By using \texttt{default-src 'none'} the CSP will also capture non script resources hosted on the webiste.
+Styles compared to other sources can be used inline and as such \texttt{unsafe-inline} is used in thier directives to prevent reports which are not easily preventable otherwise.
+This work focuses on preventing from malicious JavaScript files, but as CSS attacks were described earlier, similar approach can be taken to secure the webapp from malicious stylesheets.
+
+
+\begin{figure}
+\input{code/initialCSP}
+	\label{code:initial}
+\end{figure}
+
