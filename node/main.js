@@ -88,7 +88,7 @@ if (updateCspro) {
 }
 
 serv.on('violation', (report, evaluation) => {
-	console.log('violation:   ' + report["effective-directive"] + '    ' + String(report['blocked-uri']));
+	console.log('violation:   ' + report["effective-directive"] + '    ' + String(report['blocked-uri']) + '    Hash: ' + evaluation.eval.hash );
 });
 
 serv.on('warning', (report, evaluation) => {

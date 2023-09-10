@@ -214,9 +214,11 @@ class CsproServer extends EventEmitter {
 			var source = report['source-file'] || ( 'https://' + this.host );
 			var line   = report['line-number']
 			this.getInlineJsEvaluation(String(line) + ':' + source, (evaluation) => {
-				this.addScriptToCspro(evaluation, evaluation.eval.hash);
+				if (evaluation.eval.hash){
+					this.addScriptToCspro(evaluation, evaluation.eval.hash);
+				}
 				this.emit('cspro-change')
-				if (evaluation.eval.obfuscated) {
+				if (evaluation.eval.obfuscated !== false) {
 					this.emit('violation', report, evaluation)
 					return;
 				}

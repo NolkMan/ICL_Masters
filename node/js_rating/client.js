@@ -146,18 +146,27 @@ function extractJs(js, lineNumber){
 	} 
 	const jsStartTag = '<script>'
 	const jsEndTag = '</script>'
+	const correctLine = '\n'
 	var s = js.indexOf(jsStartTag, i)
+	var v = js.indexOf(correctLine, i)
 	var e = js.indexOf(jsEndTag, i)
-	return js.slice(s+jsStartTag.length, e)
+	if (s < v)
+		return js.slice(s+jsStartTag.length, e)
+	return ""
 }
 
 function evaluateInline(source, lineNumber, callback){
 	fetchUri(source, (page, err) => {
 		if (err) {
+			callback({'eval': {'error': err, 'error_msg': 'Failed to fetch the page'}}); 
 			return;
 		}
 		var js = extractJs(page, lineNumber)
 		var sha = "'sha256-" + crypto.createHash('sha256').update(js).digest('base64') + "'";
+		if (js === ""){
+			callback({'eval': {}}); 
+			return;
+		}
 		detect_obfuscation(js, (message, error) => {
 			if (error){
 				callback({'eval': {'hash': sha}});
