@@ -1,4 +1,5 @@
-\section{CSP reporting analysis}
+\section{Analysis of CSP reporting}
+% TODO this section
 
 Part of my work was to evaluate the use of reporting within websites policies.
 
@@ -36,25 +37,34 @@ Last group, most disappointing, had identical policies for both enforcement and 
 Here I have observed this behaviour in 11\% of all servers running both headers.
 This may be due to developers keeping the old report only header when moving to enforcement mode after creating a policy for their website.
 
-\section{Automated policy maker}
+\section{Automated Policy Maker}
 
-With such low usage of \texttt{content-security-policy-report-only} header I decided to create an automated policy maker which would allow for increased utilization of this header leading to an increase in security.
+With such low usage of \texttt{content-security-policy-report-only} header this project aimed to create a fully automated policy creation and reporting tool.
+It would help increase the security of websites by alerting the developers early about any potential breaches and attacks that are deployed.
+
 
 \subsection{Ideology}
 
-Although report only header does not limit any resources from being loaded, it can be used very well for monitoring purposes.
+Although the report only header does not limit any resources from being loaded, it can be used for monitoring purposes.
 When using the standard \texttt{content-security-policy} header any attack bypassing the policy will never be reported as enforcing and reporting go hand in hand, leading to untraceable attacks.
-In my approach I make a tool that is \"bypassable\" by default as it is not enforced, but instead it will always report on any potentially malicious script.
-To help me develop my policy maker, which will be using the report only mode, it is critical to realize that I do not need to adhere to constraints of standard enforcing policies.
+The approach taken in this paper tries to make a report only policy that forces a report for each new source file.
+This results in a system where every attack leaves a trace and can be acted upon.
 
-When using report only header I do not need the policy to contain all the loaded resources, that are used by the web application.
-As the policy is not enforced and I do not risk breaking the application I may periodically remove certain sources to check whether they are still used.
-In this way I always keep an up to date list of all resources used by the website.
+The Policy Maker takes advantage of the \texttt{report-only} part in \texttt{Content-Security-Policy-Report-Only} header, as developing a policy that is never intended to be in the enforcement mode allows for new behaviours.
+When using the report only header the policy does not need to contain all the loaded resources, that are used by the web application.
+With that in mind the Policy Maker may periodically remove certain sources, as it does not risk breaking the application.
+In this way the server may check whether a source is still in use, ensuting that the policy is as tight as possible. 
+When querried the server may also provide an up to date website map from the point of view of all the users.
 
-Additionally, by using report only I do not need to make the policy work with possible updates.
-Contrarily, I would like to get informed about any changes to scripts used as soon as possible.
-I can accomplish this by using hashes as sources instead of standard url style allow lists.
-As hashes are unique to the file, users will report to my server as soon as anything changes, allowing me to be immediately notified about potential threats.
+Additionally, by using report only the policies do not need to be made future proof. 
+Contrarily, it is beneficial for the Policy Maker server to be informed of all changes within the site.
+This allows for maximum survelience of the site where no attack would go unnoticed.
+The server accomplishes that by using the using hashes for every inline script and exact url matches for standard script elements.
+If a script was added by an attack would be performed it would not match any hash or url signatures present in the report only policy.
+When user loads the compromised site a report will be generated allowing for quick response, minimizing the attack spread.
+
+The requirement for a user to be compromised is unavoidable by the nature of the CSP deployment.
+As such the solution should be used as a defence in depth tool, which does not replace other measures necessary to secure the application.
 
 \subsection{Development}
 
@@ -131,7 +141,6 @@ The evaluator included in the source code uses a machine learning model created 
 As the model is written in Python, downloaded scripts are passed to a python http server using POST requests.
 The server calculates the maliciousness score and returns the result in the response.
 
-
 \subsubsection{Main Controller}
 Main Controller is the entry module for the project.
 Every other module described requires a context for its execution.
@@ -139,7 +148,6 @@ The main controller sets up each module with a context required to run a specifi
 It collects all events emited from the server and logs them to the console for a clear view of the servers operation.
 Whenever a new policy is generated, the main controller passes it from the server to the mitmproxy so it can be injected into server responses.
 Lastly the main controller logs statistical data collected by mitmproxy.
-
 
 \subsubsection{Mitmproxy}
 Mitmproxy is an interactive https proxy which can be used to intercept, read and modify traffic coming through it.
@@ -152,7 +160,6 @@ Whenever this happens all data collected is sent away and a current CSPRO genera
 Due to this design there is slight latency between generation of a new policy and deployment to the user.
 Although this delay exists, it is insignificant and in real world many hosts use proxies to reduce the load on servers or clients use caching to reduce their network usage.
 In both of those cases the delay between deployment of a new CSPRO and its perceivable effects may be much larger than what is observed in this project and as such this issue is ignored throughtout the testing.
-
 
 \subsubsection{Puppeteer}
 The second tool used that does not benefit the security of the server, but was extensively used during testing was Puppeteer.
@@ -276,7 +283,9 @@ Additionally it has 1 frames source, as the website contains an iframe.
 \input{code/testCSP}
 
 And the server had emmited the following events.
-\input{code/testEvents.tex}
+
+\input{code/testEvents}
+
 Between many \texttt{cspro-change} events it may be seen that at some point a newly detected script changed changed and became malicious.
 
 \subsection{Impact estimation}
@@ -457,10 +466,6 @@ In report only mode, it would result in many bogus reports, which would either b
 Although this change would severely increase the security of the Policy Maker, it is unlikely to be added, due to issues described above.
 
 \subsection{Other improvements}
-
-This paper focuses on creating and later proving the potential utility of the Policy Maker.
-%TODO 
-Yet, throughout the development some parts of the project are left 
 
 \subsubsection{Real life deployment}
 
