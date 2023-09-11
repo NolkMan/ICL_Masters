@@ -1,14 +1,18 @@
-function getRandomInt(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
-}
 
 const mitm = require('./mitmprox_setup/server.js')
 const server = require('./server/server.js')
 const js_evaluator = require('./js_rating/client.js')
 const url = require('url')
 const test = require('./utils/TestUtils.js')
+
+const updateCspro = true;
+const dryRun = false;
+const preTrain = false; // use already existing reports to setup the policy maker
+const runClient = false; // true to open Puppeteer
+const longTest = true;
+const pickNum = 11; // chose host from PICKED_HOSTS
+const useTerminal = false; // enables terminal interface (may cause crashes)
+
 
 var PICKED_HOSTS = [
 	{good: true, top: 732 , host: 'https://www.caixabank.es'}, // custom picked bank without CSP that does not have ads 
@@ -26,17 +30,15 @@ var PICKED_HOSTS = [
 	{good:false, top: -1,	host: 'https://testing.site'}, // my own testing site
 ]
 
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
+}
+
 function hostForMITM(uri){
 	return url.parse(uri).hostname.split('.').slice(-2).join('.')
 }
-
-const updateCspro = true;
-const dryRun = false;
-const preTrain = false;
-const runClient = false;
-const longTest = true;
-const pickNum = 11;
-const useTerminal = false;
 
 var picked = PICKED_HOSTS[pickNum];
 var current_host = picked.host;
