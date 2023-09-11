@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>CSP tests</title>
+	</head>
+	<body>
+		<main>
+			<script>
+
+			document.write("Your value is: " + decodeURIComponent(document.location.href.substring(document.location.href.indexOf("value=")+6))+"</OPTION>");
+
+			</script>
+		</main>
+		<a href="/index2.html#value=<script>document.write('XSS injection')</script>">  https://testing.site/index2.html#option=&lt;script&gt;document&period;write&lpar;&apos;XSS injection&apos;&rpar;&lt;&sol;script&gt; </a>
+	</body>
+</html>

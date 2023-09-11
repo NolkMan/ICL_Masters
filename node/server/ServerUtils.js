@@ -51,17 +51,21 @@ const csp_source_directives = [
 ]
 
 function getMaliciousUrls(){
-	var data = fs.readFileSync('../netcraft-data/malicious_js.json').toString().split("\n");
 	var urls = []
-	for (const line of data){
-		try {
-			var j = JSON.parse(line)
-			if (j['hostname']){
-				urls.push(j['hostname'])
+	try {
+		var data = fs.readFileSync('../netcraft-data/malicious_js.json').toString().split("\n");
+		for (const line of data){
+			try {
+				var j = JSON.parse(line)
+				if (j['hostname']){
+					urls.push(j['hostname'])
+				}
+			} catch {
+				// ignore
 			}
-		} catch {
-			// ignore
 		}
+	} catch (e) {
+		// ignore, probably no file
 	}
 	return urls
 }
