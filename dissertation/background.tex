@@ -167,7 +167,7 @@ When deploying a Content Security Policy it is important to remember that mainta
 Unupdated CSP can make the web page misbehave or be completely unusable when required sources are blocked from loading.
 This is a risk that may negatively impact user experience, which may make some opt out of using a CSP.
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\input{code/exampleCSP}
 	\caption{Exmaple Content-Security-Policy, it upgrades all requests, allows for couple of scripts and demonstrates how CSP sources are organized}
 \end{figure}
@@ -208,7 +208,8 @@ The Dropbox team used the report only feature extensively when deploying their o
 Report only violations can give a valuable insight into attacks that are currently ongoing 
 With careful monitoring attacks may be detected quicker, allowing developers to patch the issue and limit the impact of the adversary.
 Additionally reports provide many insights into the violation, the type of the resource, the URL and even the line in which a rule was broken.
-With the \texttt{report-sample} source, the report may include the first 40 characters of inlined script or style-sheet.
+With the \texttt{report-sample} source, the report may include the first 40 characters of inlined script or style-sheet. 
+An example report which showcases all those features can be seen in figure \ref{exReport}.
 
 In literature CSP reporting seems to be an underutilized tool, as less than one in five websites that deploy CSP ever deployed CSPRO header. \cite{osti_10173479}
 This may correspond to the poor effectiveness of deployed CSPs as developers may have never tried more strict policies in report only mode.
@@ -219,7 +220,7 @@ This may lead to overall increase to the security by solving security issues qui
 It can also be deployed alongside an existing CSP to more strictly monitor sources which are known to be temporary or problematic.
 Those may include external APIs or libraries, which may update and add new features which compromise security.
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\input{code/exampleReport}
 	\caption{Example report, they provide necessary information to classify the violation. Reports may also include line and column numbers of the violation alongside the scipt sample.  }
 	\label{exReport}
@@ -232,7 +233,11 @@ When the reporting endpoint is controlled by a third party, the reports sent wil
 Usually reports only provide banign information for loaded resources, but occasionally sensitive data may be sent using GET queries.
 In the report, this query will be included within blocked-uri field, which may look like this:
 \begin{verbatim}
-https://id.cxense.com/public/user/id?json=%7B%22identities%22%3A%5B%7B%22type%22%3A%22ckp%22%2C%22id%22%3A%22lm9kdx9144wtgfya%22%7D%2C%7B%22type%22%3A%22cst%22%2C%22id%22%3A%223dmijrrz7kkn62ie7ib1yw5z6l%22%7D%5D%2C%22siteId%22%3A%221136227972865927410%22%2C%22location%22%3A%22https%3A%2F%2Fwww.libertatea.ro%2F%22%7D&callback=cXJsonpCB2
+https://id.cxense.com/public/user/id?json=%7B%22identities%22%3A%5B%7B
+%22type%22%3A%22ckp%22%2C%22id%22%3A%22lm9kdx9144wtgfya%22%7D%2C%7B%22
+type%22%3A%22cst%22%2C%22id%22%3A%223dmijrrz7kkn62ie7ib1yw5z6l%22%7D%5
+D%2C%22siteId%22%3A%221136227972865927410%22%2C%22location%22%3A%22htt
+ps%3A%2F%2Fwww.libertatea.ro%2F%22%7D&callback=cXJsonpCB2
 \end{verbatim}
 Sensitive data exposure through GET querries is a known vulnerabilty, which was ranked as the third most critical vulnerabilty by OWASP top 10 in 2017 \cite{owaspTop102017}
 In 2021 OWASP classified it in position 2 as cryptographic failures \cite{owaspTop10}, which is a broader category that encompasses many security vulnerabilities of the previous sensitive data exposure category. 

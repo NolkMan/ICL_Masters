@@ -1,4 +1,4 @@
-\chapter{Design and implementation of The Automated Policy Maker}
+\chapter{The Automated Policy Maker}
 
 With very low usage of \texttt{content-security-policy-report-only} header this project aimed to create a fully automated policy creation and reporting tool.
 It would help increase the security of websites by alerting the developers early about any potential breaches and attacks that are deployed.
@@ -6,11 +6,11 @@ It would help increase the security of websites by alerting the developers early
 \section{Ideology}
 
 Although the report only header does not limit any resources from being loaded, it can be used for monitoring purposes.
-When using the standard \texttt{content-security-policy} header any attack bypassing the policy will never be reported as enforcing and reporting go hand in hand, leading to untraceable attacks.
+When using the standard content-security-policy header any attack bypassing the policy will never be reported as enforcing and reporting go hand in hand, leading to untraceable attacks.
 The approach taken in this paper tries to make a report only policy that forces a report for each new source file.
 This results in a system where every attack leaves a trace and can be acted upon.
 
-The Policy Maker takes advantage of the \texttt{report-only} part in \texttt{Content-Security-Policy-Report-Only} header, as developing a policy that is never intended to be in the enforcement mode allows for new behaviours.
+The Policy Maker takes advantage of the \texttt{report-only} part in Content-Security-Policy-Report-Only header, as developing a policy that is never intended to be in the enforcement mode allows for new behaviours.
 When using the report only header the policy does not need to contain all the loaded resources, that are used by the web application.
 With that in mind the Policy Maker may periodically remove certain sources, as it does not risk breaking the application.
 In this way the server may check whether a source is still in use, ensuring that the policy is always as tight as possible. 
@@ -44,7 +44,7 @@ The Policy maker consists of 3 other smaller modules
 	\item[Policy Engine] Receives reports and generates policies
 	\item[Oracle] Takes script urls from reports and aims and collects them from the internet
 	\item[Evaluator] Rates collected scripts and evaluates them
-\end{itemize}
+\end{description}
 
 Other modules displayed in the structure were used to automate and test the Policy Maker.
 \begin{description}
@@ -53,7 +53,7 @@ Other modules displayed in the structure were used to automate and test the Poli
 	\item[Puppeteer] Simulates the user for autonomous testing
 \end{description}
 
-\begin{figure}[H]
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=\textwidth]{imgs/project_structure.png}
 	\caption{Structure of the project}
@@ -178,15 +178,17 @@ It uses the prefix {\it unsafe}, but hashes in \texttt{script-src-attr} directiv
 As such I only use \texttt{unsafe-hashes} for this specific directive. 
 Also I only use it for scripts that fully fit in the 40 character limit dedicated to the script sample field in the report and I always generate a violation event for such a report.
 
-\\
-With all those considerations in mind the initial the initial CSP for the server is displayed in figure \ref{code:initial}
+\vspace{10pt}
+
+With all those considerations in mind the initial the initial CSP for the server is displayed in figure \ref{code:initial}.
 It allows for capture of all necessary reports for scripts running on the host.
 By using \texttt{default-src 'none'} the CSP will also capture non script resources hosted on the webiste.
 Styles compared to other sources can be used inline and as such \texttt{unsafe-inline} is used in thier directives to prevent reports which are not easily preventable otherwise.
 This work focuses on preventing from malicious JavaScript files, but as CSS attacks were described earlier, similar approach can be taken to secure the webapp from malicious stylesheets.
 
 
-\begin{figure}[H]
+\begin{figure}[h]
 \input{code/initialCSP}
+\caption{Initial policy for the Policy Maker}
 	\label{code:initial}
 \end{figure}
