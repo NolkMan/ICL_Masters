@@ -10,13 +10,13 @@ This project consists of multiple modules which all work together to achieve a b
 
 Oracle is a module that is used to generate hashes of loaded resources and communicate to the python evaluation server.
 When tested on a local server, it can successfully fetch files from it and generate hashes equal to the ones that are generated with system tools on file data.
-After receiving line and file information it is sometimes able to extract data from inline scripts embeded in the html of the page.
-Ocasionally, due to formatting, encoding or other issues related to dynamic inclusion of data into the page, it may return no or a wrong hash.
-Due to security concerns my oracle does not dynamically execute scripts and change html code, which does happen within the browser.
+After receiving line and file information it is sometimes able to extract data from inline scripts embedded in the HTML of the page.
+Occasionally, due to formatting, encoding or other issues related to dynamic inclusion of data into the page, it may return no or a wrong hash.
+Due to security concerns my oracle does not dynamically execute scripts and change HTML code, which does happen within the browser.
 Most notably a script may change the inner html of a page to one with another script.
-In this case the oracle is unable to generate the script that was included as it is not retreived in html response.
+In this case the oracle is unable to generate the script that was included as it is not retrieved in HTML response.
 Throughout testing of this project, different scripts responsible for advertisements and user tagging were found to use this technique.
-The influence that those scripts have on the effectiveness of this project will be clearly seen when the impact of the cspro server is estimated.
+The influence that those scripts have on the effectiveness of this project will be clearly seen when the impact of the CSPRO server is estimated.
 
 The second role of the oracle is to pass the script extracted to the evaluation server.
 When a script is passed to the evaluator a simple binary response is returned representing whether the script was found to be malicious.
@@ -24,15 +24,15 @@ As this work focuses mainly on developing the policy maker for CSPRO header and 
 While its results may be occasionally inaccurate, it still clearly demonstrates the inner workings of the Policy Maker server.
 
 The server which is the main outcome of this project uses the oracle extensively.
-Each script that is reported are sent through the oracle, then depending on the evalutaion they are added to the policy for a specific amount of time.
-Eventually after enough time has passed the server succesfully removes the entry from its policy.
+Each script that is reported are sent through the oracle, then depending on the evaluation they are added to the policy for a specific amount of time.
+Eventually after enough time has passed the server successfully removes the entry from its policy.
 When a new report for the same resource arrives it compares the new evaluation from the oracle to the previous one and does emit events related to the result.
-Each time the CSPRO value is changed it is communicated out of the server and subseqently embedded into html responses by mitmproxy.
+Each time the CSPRO value is changed it is communicated out of the server and subsequently embedded into HTML responses by mitmproxy.
 
-During testing this result is eaily observable in the browser connected to the proxy.
+During testing this result is easily observable in the browser connected to the proxy.
 When loading the host page on a newly created server, multiple reports are generated back to the server.
-On the server multiple new events can be seen and in a case where there is a script deemeed malicious a violation is observed too.
-Subseqeunt refreshes of the page in the browser no longer produce reports until the scripts present are removed from the policy.
+On the server multiple new events can be seen and in a case where there is a script deemed malicious a violation is observed too.
+Subsequent refreshes of the page in the browser no longer produce reports until the scripts present are removed from the policy.
 Even if there are more reports arriving the server will not generate new events unless a scripts has changed.
 
 The server also keeps note of other resources loaded on the page with a lower level of detail.
@@ -40,11 +40,11 @@ It stores only hosts of those resources, which are added to the policy of the se
 When a new source is added only the update of the CSPRO is triggered, but no additional event is emitted.
 
 The only exception to this rule the \texttt{frame-src} directive. 
-When a report about a violation to the frame-src is received a new warning is emmited.
+When a report about a violation to the frame-src is received a new warning is emitted.
 As previously described iframes can be used in clickjacking attacks and due to lower amount of iframes used on pages it is important to verify that no malicious iframes are running.
 
-After testing the server on a model webiste a Content-Security-Policy-Report-Only header has been generated that encapsulates all the described behaviours.
-It includes 2 different hashes for 2 different types of inline scripts and one url for 1 script on the site.
+After testing the server on a model website a Content-Security-Policy-Report-Only header has been generated that encapsulates all the described behaviours.
+It includes 2 different hashes for 2 different types of inline scripts and one URL for 1 script on the site.
 Additionally it has 1 frames source, as the website contains an iframe.
 
 \input{code/testCSP}
@@ -55,13 +55,13 @@ And the server had emmited the following events.
 
 Between many \texttt{cspro-change} events it may be seen that at some point a newly detected script changed changed and became malicious.
 
-The Policy Maker is also able to detect client side scipts.
+The Policy Maker is also able to detect client side scripts.
 On the second page a link is embedded which results in reflected script execution.
 \begin{verbatim}
 /index2.html#value=<script>document.write('XSS injection')</script>
 \end{verbatim}
-When clickcked only the request of \texttt{/index2.html} is seen by the server, but the payload produces no trace in the logs.
-The Policy Maker on the other hand receives the report from the user and after it is unsuccessful in retreiving the script, produces a violation with an undefined hash:
+When clicked only the request of \texttt{/index2.html} is seen by the server, but the payload produces no trace in the logs.
+The Policy Maker on the other hand receives the report from the user and after it is unsuccessful in retrieving the script, produces a violation with an undefined hash:
 \begin{verbatim}
 violation:   script-src-elem    inline    Hash: undefined
 \end{verbatim}
@@ -70,31 +70,31 @@ In this way the server can notify the maintainers of the server and reduce the r
 
 \section{Impact estimation}
 
-To try to provide most accurate results the Policy maker was deploed on a mixture of randomly selected and hand picked hosts from top 10,000 hosts.
+To try to provide most accurate results the Policy maker was deployed on a mixture of randomly selected and hand picked hosts from top 10,000 hosts.
 
 In this paper results are presented from 4 different websites which best demonstrate both good results as well as issues that may be encountered when trying to implement the server into the host.
 None of the sites which were used to test the policy maker have deployed their own CSP or CSPRO headers.
 This was done to avoid the policy overwritten in the proxy to be further modified by the meta tags included in the page source.
 Choosing such sites would also skew the results as those websites would already have been adjusted to work with CSP.
 
-During the tests the server is deployed seperately on all the described hosts.
-In each of the tests a set of 171 subpages are opened over a timespan of about 45 minutes, as depending on the time to load a page the final time total may vary. 
-The first page opened is always the mainpage for the host, after which a random page is chosen out of all links that were seen throughout the duration of the test.
+During the tests the server is deployed separately on all the described hosts.
+In each of the tests a set of 171 sub pages are opened over a time span of about 45 minutes, as depending on the time to load a page the final time total may vary. 
+The first page opened is always the main page for the host, after which a random page is chosen out of all links that were seen throughout the duration of the test.
 For the tests the server will remove a JavaScript sources after 10 minutes, so that a single script may be added to the policy and better simulate the real life situation.
 
 As this tests are done on real hosts it is impossible to assume maliciousness of any of the scripts returned as malicious.
-From all of the reported scripts that were analised by hand, the most common issues for those reports were dubious programming practices or unnecessary obfuscation of seemingly banign scripts.
+From all of the reported scripts that were analysed by hand, the most common issues for those reports were dubious programming practices or unnecessary obfuscation of seemingly benign scripts.
 
 The Policy Maker can create additional traffic between server and client in two ways, by adding the policy to the response header and by users generating reports.
-It also generates server to server traffic when retreiving scripts for hash calculation and analisys.
-As most of the scripts retreived from by the oracle are inlined or hosted on the host, the impact of this communication can be grately reduced by having servers virtually close together.
+It also generates server to server traffic when retrieving scripts for hash calculation and analysis.
+As most of the scripts retrieved from by the oracle are inlined or hosted on the host, the impact of this communication can be greatly reduced by having servers virtually close together.
 It is also not on a critical line to the client, where additional traffic may hinder user experience.
 For those two reasons this traffic is not accounted for in this impact estimation.
 
 During the tests mitmproxy plugin collected network metadata to evaluate the impact of the server.
 It summed all the traffic coming from the host domain and all its subdomains before anything was added to the response.
-Sepratelly it summed up all occurances where the server would be adding bytes to the responses and all the lenghts of all reports coming through the proxy.
-As all reports are stored in an SQL database, the lenght of all reports can be calculated with and SQL querry.
+Separately it summed up all occurrences where the server would be adding bytes to the responses and all the lengths of all reports coming through the proxy.
+As all reports are stored in an SQL database, the length of all reports can be calculated with and SQL query.
 
 \subsection{www.libertatea.ro}
 
@@ -115,7 +115,7 @@ This website is another example of a host that would prove impossible to impleme
 The application sends a unique JavaScript file for each verse of Quran, as those files contain the data that is shown to the user.
 As each of those files has a unique path the policy generated by the server will grow to and unmaintainable size.
 
-In the case of this site, the best solution would be to seperate the data part of the scripts into their own fetchable json files.
+In the case of this site, the best solution would be to separate the data part of the scripts into their own fetchable JSON files.
 When a file is retrieved from the web by a script it falls under \texttt{connect-src} directive. 
 Only after including the data into the website more reports will be generated depending on the data included.
 Hopefully little to none additional scripts would be included to avoid this circular dependency.
@@ -137,7 +137,7 @@ Towards the end of the experiment an extensive policy was created, yet the site 
 
 Eval is a notoriously unsafe function used very often in malicious scripts. 
 It allows for execution of any string of characters to be executed as a JavaScript code. 
-In Content-Security-Policy this function is seperately recognised with its own source directive for scripts: \texttt{unsafe-eval}.
+In Content-Security-Policy this function is separately recognised with its own source directive for scripts: \texttt{unsafe-eval}.
 The reports also use a unique value of \texttt{eval} in their \texttt{blocked-uri} field.
 The only way to stop those reports without changing the pages source is to add \texttt{unsafe-eval} to the script sources.
 Unfortunately in that way all malicious uses of \texttt{eval} function are also omitted.
@@ -153,13 +153,13 @@ The figure \ref{fig:standarUsage} shows how this percentage changed over the dur
 It increased when there more reports than content sent to the browser and decreased otherwise.
 
 Quran.com and caixabank.es see a 12 to 14 percent increase in traffic, which may be an acceptable compromise between cost and security.
-The figure is reinforced by the article by Deloitte \cite{secSpend}, which details that companies they questioned spend an average of 10.9\% of their it budget on cybersecurity.
-This traffic also happens mostely after the website is already loaded, which will not compromise the user experience by increasing the websites' load time.
+The figure is reinforced by the article by Deloitte \cite{secSpend}, which details that companies they questioned spend an average of 10.9\% of their it budget on cyber security.
+This traffic also happens mostly after the website is already loaded, which will not compromise the user experience by increasing the websites' load time.
 When deployed on a compliant website the results may be even better as Caixabank generates unavoidable reports by using the eval function.
 \input{tables/percentageResults.tex}
 
 The other two hosts show that in a long term the Policy Maker is a bad tool to improve the sites security.
-Even though professormesser.com had good results in the beggining of the experiment, as shown in the figure \ref{fig:standarUsage}.
+Even though professormesser.com had good results in the beginning of the experiment, as shown in the figure \ref{fig:standarUsage}.
 As the policy size increased the additional network usage did not settle, but continued to grow.
 In both sites, professormesser.com and libertatea.ro, the reports generate much more traffic than what was needed to load the site.
 Both of those hosts use dynamically loaded scripts which are impossible to be fetched by the oracle, resulting in many duplicate reports.
@@ -178,11 +178,11 @@ Percentage traffic added to header signifies the unavoidable increase in data tr
 As the policies, sizes of which are also displayed in this table, need to be sent in the header of the response.
 This means that they will be received by the user before any other content, increasing the time before the site is responsive.
 
-The Policy Maker was also tested with the host added to the csp from the start.
+The Policy Maker was also tested with the host added to the CSP from the start.
 This scenario ignores scripts loaded from the host, but still checks all inline and external scripts.
 When adding this source, the site is no longer protected from insider threats or reflected attack where a malicious script is saved to the host.
-The server still protects from many common DOM injections and depency hosts turning malicious.
-The restults of this test are shown in table \ref{tab:percentageBypass}.
+The server still protects from many common DOM injections and from depended upon hosts turning malicious.
+The results of this test are shown in table \ref{tab:percentageBypass}.
 As shown the results are much better where additional traffic to Caixabank has reduced from 12\% to 8\%, making the Policy Maker even more viable.
 Quran.com uses no sources outside of itself and in this example the 4\% is the minimal load increase that is required for the system to function.
 \input{tables/percentageBypassResults.tex}
@@ -199,9 +199,9 @@ It also has not insignificant monetary and experience costs associated to runnin
 
 The approach shown in this paper proves to be a new and promising way to improve the security of particular websites.
 Main applicability issues stem from the quickly expanding and untamed environment of front end development.
-Websites may quickly grow to sizes which prove to be unmenagable by the Policy Maker.
+Websites may quickly grow to sizes which prove to be unmanageable by the Policy Maker.
 
-\subsection{Content-Security-Policy Specificaiton Changes}
+\subsection{Content-Security-Policy Specification Changes}
 
 During the development of the Policy Maker, it had to comply with the Content-Security-Policy specification.
 This results in issues and small insecurities, which could be solved if the specification was more robust.
@@ -221,9 +221,9 @@ This solution will work with CSP idea of backwards compatibility as older browse
 \subsubsection{Script hash in reports}
 
 Another useful addition to the CSP reports specification would be the possibility to ask the browser to pass the hash of the loaded scripts.
-It would allow the oracle to check whether the retreived script is identical to the one that the user has loaded.
-Currently, even if the oracle succesfully retreives a scripts there is no such guarantee and the script may have changed in between.
-The loss of privacy incured by adding hash is either very negligible or non existent as reports are already passing full url of blocked resources and sites on which said violation happened.
+It would allow the oracle to check whether the retrieved script is identical to the one that the user has loaded.
+Currently, even if the oracle successfully retrieves a scripts there is no such guarantee and the script may have changed in between.
+The loss of privacy incurred by adding hash is either very negligible or non existent as reports are already passing full URL of blocked resources and sites on which said violation happened.
 This feature could be implemented in a similar way to \texttt{report-sample} source, where \texttt{report-hash} would send the hash of the script as received by the browser.
 
 \subsubsection{Looser integration checks}
@@ -232,16 +232,16 @@ The project initially intended to use hashes for each type of script.
 This would potentially allow for scripts to be checked before timeout by receiving a significant amount of reports when it no longer has the previously calculated hash.
 Unfortunately, the CSP standard required integration attribute for \texttt{<script>} elements which are loaded from a file \cite{externalHash}.
 The integration attribute needs to contain the expected hash, which also needs to match a hash in the CSP for the script to be loaded.
-Adding such attribute nullifies the idea of a automatic tool, that could work independeently from the rest of the codebase.
-Due to this reason the server uses a mixture of url and hash based allowlists, lowering the security slightly.
+Adding such attribute nullifies the idea of a automatic tool, that could work independently from the rest of the codebase.
+Due to this reason the server uses a mixture of URL and hash based allowlists, lowering the security slightly.
 
-To make the described approach work, the specification would need to make a way to ingore the integration attribute and check the hashes after the script is loaded.
-This would not change the behaviour of the browser when using the report only policy as the non enforcing nature allows all scripts to be laoded.
+To make the described approach work, the specification would need to make a way to ignore the integration attribute and check the hashes after the script is loaded.
+This would not change the behaviour of the browser when using the report only policy as the non enforcing nature allows all scripts to be loaded.
 When used with the enforcing policy it would allow for data to be sent out of and received by the browser, before potentially blocking the script.
 As CSP is not particularly good at preventing exfiltration attacks \cite{CSPexfil}, such addition would allow to balance security and usability of CSPs.
 
 Unfortunately, this specification change would break the backwards compatibility the most out of all proposed changes within this paper.
-When used in enforcing mode, older browsers which are not updated to use this feature, would block otherwise allowed cources from executing.
+When used in enforcing mode, older browsers which are not updated to use this feature, would block otherwise allowed sources from executing.
 In report only mode, it would result in many bogus reports, which would either be ignored or significantly strain the system.
 Although this change would severely increase the security of the Policy Maker, it is unlikely to be added, due to issues described above.
 
@@ -249,7 +249,7 @@ Although this change would severely increase the security of the Policy Maker, i
 
 \subsubsection{Real life deployment}
 
-Within the impact estimation, the server is tested on existing codebases of real hosts.
+Within the impact estimation, the server is tested on existing code bases of real hosts.
 This is the closest this set of tests can go, without being actually integrated into the server itself.
 The next logical step for the Policy Maker is to be tested alongside a willing host.
 This would allow to calculate the real impact of the server by receiving reports from the website's users.
@@ -259,16 +259,16 @@ It would also show any issues with the Policy Maker logic, when reports received
 
 The evaluator in this project is a rather simple machine learning model which functions great for testing and development purposes.
 It could be expanded by using more data when deciding the maliciousness of the script.
-It could include hostnames and IP adresses and compare those agains a set of known compromised endpoints.
-It could also benefit from more training data or from more elaborate lignuistic models.
+It could include host names and IP addresses and compare those against a set of known compromised endpoints.
+It could also benefit from more training data or from more elaborate linguistic models.
 The possibilities to improve the evaluator are many and they should be seriously considered when trying to run the Policy Maker on a real host.
 
 \subsubsection{Securing other Frames and Styles}
 
-This work focues on protecting against JavaScript based attacks, while giving some insight into iframes that are embedded within the site.
-Protecting against attacks using either of those elements is much harder because of prectical reasons.
-As sites are moving away from using inline attribute scripts, styles can still be commonly found in attributes of many html elements.
-Attacks using styles are also much harder to detect as they often retreive single characters at a time.
+This work focuses on protecting against JavaScript based attacks, while giving some insight into iframes that are embedded within the site.
+Protecting against attacks using either of those elements is much harder because of practical reasons.
+As sites are moving away from using inline attribute scripts, styles can still be commonly found in attributes of many HTML elements.
+Attacks using styles are also much harder to detect as they often retrieve single characters at a time.
 This would result in big policies with potentially little benefit to them.
 
 IFrames on the other hand require more context to be considered malicious.

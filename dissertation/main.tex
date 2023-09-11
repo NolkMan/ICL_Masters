@@ -6,10 +6,10 @@
 % Edit these to provide the correct information
 % e.g. \newcommand{\reportauthor}{Timothy Kimber}
 
-\newcommand{\reporttitle}{Title}
-\newcommand{\reportauthor}{Your name}
-\newcommand{\supervisor}{Name of supervisor}
-\newcommand{\degreetype}{Type of Degree}
+\newcommand{\reporttitle}{Using Content Security Policy Report Only to Detect Malicious JavaScript}
+\newcommand{\reportauthor}{Michal Glinski}
+\newcommand{\supervisor}{Dr. Sergio Maffeis}
+\newcommand{\degreetype}{Computing (Security and Reliability)}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -19,7 +19,9 @@
 % load some macros
 \input{notation}
 
-\date{September 2015}
+\date{September 2023}
+\addbibresource{citations.bib}
+%\bibliographystyle{apa}
 
 \begin{document}
 
@@ -57,7 +59,9 @@
 \fancyhead[LE,RO]{\slshape \rightmark}
 \fancyhead[LO,RE]{\slshape \leftmark}
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \input{introduction}
 
 \input{background}
@@ -67,8 +71,9 @@
 
 
 %% bibliography
-\bibliographystyle{apa}
 
+%\bibliography{citations}
+\printbibliography
 
 \end{document}
 %\documentclass[12]{article}   % list options between brackets
