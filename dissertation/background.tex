@@ -1,32 +1,65 @@
 \chapter{Background}
 
 \section{Cross Site Scripting}
-This project focuses on protecting users from script based attacks.
-OWASP fundation classified Cross Site Scripting as the sevents most critical security risk in their OWASP Top 10 report for year 2017 \cite{owaspTop102017}.
+Cross Site Scripting is a injection type attack, where the malicious user exploits a vulnerabilty to execute JavaScript code in the unsuspecting client browser.
+XSS one of the oldest vulnerabilities with many different ways an attackr can abuse the web infostructure.
+Even after the code that allows for the attack is fixed, the impact if the it needs to be examined as each breach can have a different motive.
+OWASP fundation classified Cross Site Scripting as the seventh most critical security risk in their OWASP Top 10 report for year 2017 \cite{owaspTop102017}.
 In year 2021 OWASP Top 10 team has moveed XSS to position 3 and they have merged in with other injection type attacks \cite{owaspTop10}.
+
+\subsection{Types of Cross Site Scripting}
+As the Cross Site Scripting is rather a result of malicious behaviour, the attack types are grouped by their root cause.
+Types of XSS are grouped by whether they target the server or the client infostructure.
+They are also grouped by the way the payload is delivered to the user, as it can be sent in a one-off request or stored in a database.
+Depending on the type there are different ways to protect and detect such attacks.
+
+\subsubsection{Reflected XSS}
+Reflected XSS happens when the server sends the content of the request back to the user without proper sanitazation.
+This form of an attack is often performed in combination with a phishing campain.
+In this case the attacker would try to convince the user to click a carefully crafted link, which due to the reflated nature, executes the script encoded in the request.
+As they payload almost always needs to be included in a GET querry the attack leaves a significant trace in the server logs.
+The best way to detect reflected XSS is to monitor the server logs either manually or with one of many automatic tools.
+
+\subsubsection{Stored XSS}
+Stored Cross Site Scripting attacks happen most often on forums, message boards or in the comment sections of articles.
+They are possible when the server does not sanitize the input of the malicious user before it is displayed to the victim.
+This attack is particularly dangerous as it can affect any passerby and when executed may go unnoticed, while slowly collecting sensitive user data.
+A good way to detect it is to routinely perform database audits to check for any unexpected values.
+
+A more dangerous type of Stored XSS is when the payload is saved directly in the users browser.
+This can be accomplished by using a HTML5 database, localStorage or browser cache.
+This attack can be untracable from the servers perspective as all data is stored and executed on the client side.
+The approach to client protection in this paper allows for detection of this form of attacks, but it is unable to retreive the exact payload.
+
+\subsubsection{DOM Based XSS}
+DOM Based XSS attack happens when the website tries to display parts of the request query itself.
+Compared to reflected XSS where the server is explotable, in DOM based XSS the client side code is to blame.
+With more advanced techniques, the payload in the request can be hidden from the server \cite{domxss}, resulting in hard to detect attacks.
+Similarly to stored XSS the defence techniques described in this paper may help detecting such attacks as they focus on client side protection.
 
 \subsection{XSS Attack goals}
 Cross site scripting is a very serious risk for hosts, as a successful attack may lead to confidential information disclosure.
-Through XSS attackers gain control of the scripting engine and through the programmable interface they may try to achieve different goals.
+Through XSS attackers gain control of the JavaScript engine.
+With this control they may accomplish multiple goals to eventually compromise the user.
 
 \subsubsection{Steal session cookies}
-If session cookies are not HttpOnly, which prevents them from being accessible by scripts, the attackers may retreive them in many different ways.
-By doing that they will be able to authenticate themselves as the victim and perform any actions they could do, untill the cookie expires.
-This gives the attackers total control over the account, where they can extorn money or sensitive information.
-Banks additionally protect their clients by requiring additional 2 factor authentication before transfers.
+If session cookies are not HttpOnly, which prevents them from being accessible by scripts, the attackers may try to retreive them.
+By doing so, they will be able to authenticate themselves as the victim and perform any actions they could do.
+This gives the attackers total control over the account, from which they can extort money or sensitive information.
+Oftentimes banks and other institutions protect their clients by requiring additional 2 factor authentication method before any data is presented ot before tranfered are executed.
 
 \subsubsection{Impersonate the user}
 When session cookie is unavailable, the attacker may still retrieve compromised users data and perform actions within the browser.
-They may perform requests in the name of the user to the host even when HttoOnly flag is set.
-The browser will attach the session cookie to the request automatically.
+They may perform requests in the name of the user and the browser will automatically include the HttpOnly cookie to the request.
 In this way attackers' script may retreive or even change the users data.
+They may interact with the site by clicking buttons or filling out forms and deoending on the attack type even persist between sessions.
 
 \subsubsection{Deface or modify the application}
-The attacker may also change the website to trick the user into inputing their credentials if the attack is only available on a specific part of the website.
-As in other goals, the attacker eventually obtaines the full access to the account.
+The attacker may also change the website to trick the user into inputing their credentials.
+this is especially prevelant if the attack is only available on a specific part of the website, where the user may be unathenticated.
+As in other goals, the attacker eventually tries to obtain the full access to the account.
 In the end if the website does not have any authentication process, the attacker may be interested in causing financial or reputation loss to the host.
-To achieve this goal they may remove all content from the site and insert offensive imagery.
-
+To achieve this goal they may remove all content from the site or insert offensive imagery.
 
 \section{Content Security Policy}
 Content Security Policy(CSP) was introduced as a protection layer, which allows web hosts to control origin and type of resources loaded in the client browser. 
@@ -112,7 +145,6 @@ When deploying CSP it is important to remember that maintaining it requires cons
 Unupdated CSP can make the web page misbehave or be completely unusable when required sources are blocked from loading.
 This is a risk that may negatively impact user experience, which may make some opt out of using a CSP.
 
-% angular js problemsk
 
 \subsection{Bypassing CSP}
 Even though CSP can prevent many basic attacks it may be unsuccessful at blocking more advanced exploits.
@@ -156,4 +188,30 @@ The CSP report-only header can be added to any website without consequences to t
 This may lead to overall increase to the security by solving security issues quicker.
 It can also be deployed alongside an existing CSP to more strictly monitor sources which are known to be temporary or problematic.
 Those may include external APIs or libraries, which may update and add new features which compromise security.
+
+
+\section{Ethics}
+The project focuses on a server which is designed to collect and act on reports potentially sent by genuine users of the web applications. 
+When the reporting endpoint is controlled by a third party, the reports sent will expose it to the queries performed by said users of the applications.
+Usually reports only provide banign information for loaded resources, but occasionally sensitive data may be sent using GET queries.
+In the report, this query will be included within blocked-uri field, which may look like this:
+\begin{verbatim}
+https://id.cxense.com/public/user/id?json=%7B%22identities%22%3A%5B%7B%22type%22%3A%22ckp%22%2C%22id%22%3A%22lm9kdx9144wtgfya%22%7D%2C%7B%22type%22%3A%22cst%22%2C%22id%22%3A%223dmijrrz7kkn62ie7ib1yw5z6l%22%7D%5D%2C%22siteId%22%3A%221136227972865927410%22%2C%22location%22%3A%22https%3A%2F%2Fwww.libertatea.ro%2F%22%7D&callback=cXJsonpCB2
+\end{verbatim}
+Sensitive data exposure through GET querries is a known vulnerabilty, which was ranked as the third most critical vulnerabilty by OWASP top 10 in 2017 \cite{owaspTop102017}
+In 2021 OWASP classified it in position 2 as cryptographic failures \cite{owaspTop10}, which is a broader category that encompasses many security vulnerabilities of the previous sensitive data exposure category. 
+In the case of this project it may be better suited under position 4: insecure design, as the websites design is at fault to send sensitive information in GET requests. 
+
+The reports may also expose the browsing habits of specific users. 
+As all reports are sent from the browser, a third party may collect reports coming from the same IP address to estimate the users interests by knowing which sites have they visited. 
+This issue becomes more prevelant when there is a single compant controling many reporting endpoints for different sites.
+In that case the same user can be tracked across multiple websites.
+
+Both of those information breaches are most threatening when a third party is responsible for maintaing the Policy Maker.
+The hosts already posses the information about the users browsing habits by serving their requests, and the query informations are often included in the logs of the server.
+When the reporting endpoint is run by the host itself, the only additional information that may be gathered is the knowledge of the resources loaded in the client. 
+This additional information is the main incentive behind deploying a Content Security Policy as it allows for finding resources that should not be loaded in the users browser.
+
+During the development and testing of this project no data was collected from genuine users avoiding the issues described.
+When the Policy Maker is to be deployed on real hosts the ethical issues should be revisited and accounted for.
 

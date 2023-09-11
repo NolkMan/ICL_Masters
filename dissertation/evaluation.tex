@@ -14,7 +14,7 @@ After receiving line and file information it is sometimes able to extract data f
 Ocasionally, due to formatting, encoding or other issues related to dynamic inclusion of data into the page, it may return no or a wrong hash.
 Due to security concerns my oracle does not dynamically execute scripts and change html code, which does happen within the browser.
 Most notably a script may change the inner html of a page to one with another script.
-In this case the oracle is unable to generate the script that was included as it is not included in the retreived html.
+In this case the oracle is unable to generate the script that was included as it is not retreived in html response.
 Throughout testing of this project, different scripts responsible for advertisements and user tagging were found to use this technique.
 The influence that those scripts have on the effectiveness of this project will be clearly seen when the impact of the cspro server is estimated.
 
@@ -54,6 +54,19 @@ And the server had emmited the following events.
 \input{code/testEvents}
 
 Between many \texttt{cspro-change} events it may be seen that at some point a newly detected script changed changed and became malicious.
+
+The Policy Maker is also able to detect client side scipts.
+On the second page a link is embedded which results in reflected script execution.
+\begin{verbatim}
+/index2.html#value=<script>document.write('XSS injection')</script>
+\end{verbatim}
+When clickcked only the request of \texttt{/index2.html} is seen by the server, but the payload produces no trace in the logs.
+The Policy Maker on the other hand receives the report from the user and after it is unsuccessful in retreiving the script, produces a violation with an undefined hash:
+\begin{verbatim}
+violation:   script-src-elem    inline    Hash: undefined
+\end{verbatim}
+The report, which is passed with an violation event, includes the file uri and line and column numbers of the specific function that resulted in the violation.
+In this way the server can notify the maintainers of the server and reduce the response time for incidents.
 
 \section{Impact estimation}
 
