@@ -1,19 +1,19 @@
 \chapter{Conclusion}
 
-Cross Site Scripting is a very old and still relatively common vulnerability that affects websites.
+Cross Site Scripting is a very old and still relatively common vulnerability that affects many sites.
 It has very serious consequences to the privacy of users and the reputation of web hosts.
-Among many tools that help detect vulnerable pieces of code the are Content Security Policy headers which may protect and even prevent the attacks before they even happen.
-Unfortunatelly, due to high barrier of entry and the consistently increasing size of websites, most of the hosts use those headers incorrectly.
-This leads to policies that are easily bypassable and as a result do not give any proteciton to the users.
+Among many tools that help detect vulnerable pieces of code there are Content Security Policy headers which may protect and even prevent the attacks before they even happen.
+Unfortunately, due to high barrier of entry and the consistently increasing size of websites, most of the hosts use those headers incorrectly.
+This leads to policies that are easily bypassable and as a result do not give any protection to the users.
 
-This paper presents a new way of using the Content-Security-Policy-Report-Only header to monitor the site for JavaScribt based attacks.
+This paper presents a new way of using the Content-Security-Policy-Report-Only header to monitor the site for JavaScript based attacks.
 It avoid pitfalls related to deploying policies in enforcing mode by abusing the liberties given to it by running exclusively in reporting mode.
 It can create the strictest possible policy, which would be impractical otherwise, to cast an unbypassable net for each new and possibly malicious script to fall into.
-In this way the newly created server can report on any breaches very quickly or even isntantly as they happen.
+In this way the newly created server can report on any breaches very quickly or even instantly as they happen.
 
 The work is also evaluated in tests that simulate real world deployment as closely as possible.
 The results of said evaluation may prove to be satisfactory for the Policy Maker to be deployed on real hosts which are already putting in significant effort to secure their applications.
-As the server is reliant on the Content Security Policy Standard, its performace may significantly increase as new features are added.
+As the server is reliant on the Content Security Policy Standard, its performance may significantly increase as new features are added.
 
 We hope that the ideas presented in this paper inspire others to create or improve other policy creating servers.
 This report shows that there is still work to be done in the Content Security Policy domain to improve the security of users on the web.

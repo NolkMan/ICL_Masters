@@ -1,23 +1,23 @@
 \chapter{Background}
 
 \section{Cross Site Scripting}
-Cross Site Scripting is a injection type attack, where the malicious user exploits a vulnerabilty to execute JavaScript code in the unsuspecting client browser.
-XSS one of the oldest vulnerabilities with many different ways an attackr can abuse the web infostructure.
+Cross Site Scripting is an injection type attack, where the malicious user exploits a vulnerability to execute JavaScript code in the unsuspecting client's browser.
+XSS is one of the oldest vulnerabilities with many different ways an attacker can abuse the web infostructure.
 Even after the code that allows for the attack is fixed, the impact if the it needs to be examined as each breach can have a different motive.
-OWASP fundation classified Cross Site Scripting as the seventh most critical security risk in their OWASP Top 10 report for year 2017 \cite{owaspTop102017}.
-In year 2021 OWASP Top 10 team has moveed XSS to position 3 and they have merged in with other injection type attacks \cite{owaspTop10}.
+OWASP foundation classified Cross Site Scripting as the seventh most critical security risk in their OWASP Top 10 report for year 2017 \cite{owaspTop102017}.
+In year 2021 OWASP Top 10 team has moved XSS to position 3 and they have merged in with other injection type attacks \cite{owaspTop10}.
 
 \subsection{Types of Cross Site Scripting}
-As the Cross Site Scripting is rather a result of malicious behaviour, the attack types are grouped by their root cause.
+As Cross Site Scripting is rather a result of malicious behaviour, the attack types are grouped by their root cause.
 Types of XSS are grouped by whether they target the server or the client infostructure.
 They are also grouped by the way the payload is delivered to the user, as it can be sent in a one-off request or stored in a database.
 Depending on the type there are different ways to protect and detect such attacks.
 
 \subsubsection{Reflected XSS}
-Reflected XSS happens when the server sends the content of the request back to the user without proper sanitazation.
-This form of an attack is often performed in combination with a phishing campain.
+Reflected XSS happens when the server sends the content of the request back to the user without proper sanitization.
+This form of an attack is often performed in combination with a phishing campaign.
 In this case the attacker would try to convince the user to click a carefully crafted link, which due to the reflated nature, executes the script encoded in the request.
-As they payload almost always needs to be included in a GET querry the attack leaves a significant trace in the server logs.
+As they payload almost always needs to be included in a GET query the attack leaves a significant trace in the server logs.
 The best way to detect reflected XSS is to monitor the server logs either manually or with one of many automatic tools.
 
 \subsubsection{Stored XSS}
@@ -28,12 +28,12 @@ A good way to detect it is to routinely perform database audits to check for any
 
 A more dangerous type of Stored XSS is when the payload is saved directly in the users browser.
 This can be accomplished by using a HTML5 database, localStorage or browser cache.
-This attack can be untracable from the servers perspective as all data is stored and executed on the client side.
-The approach to client protection in this paper allows for detection of this form of attacks, but it is unable to retreive the exact payload.
+This attack can be untraceable from the servers perspective as all data is stored and executed on the client side.
+The approach to client protection in this paper allows for detection of this form of attacks, but it is unable to retrieve the exact payload.
 
 \subsubsection{DOM Based XSS}
 DOM Based XSS attack happens when the website tries to display parts of the request query itself.
-Compared to reflected XSS where the server is explotable, in DOM based XSS the client side code is to blame.
+Compared to reflected XSS where the server is exploitable, in DOM based XSS the client side code is to blame.
 With more advanced techniques, the payload in the request can be hidden from the server \cite{domxss}, resulting in hard to detect attacks.
 Similarly to stored XSS the defence techniques described in this paper may help detecting such attacks as they focus on client side protection.
 
@@ -43,20 +43,20 @@ Through XSS attackers gain control of the JavaScript engine.
 With this control they may accomplish multiple goals to eventually compromise the user.
 
 \subsubsection{Steal session cookies}
-If session cookies are not HttpOnly, which prevents them from being accessible by scripts, the attackers may try to retreive them.
+If session cookies are not HttpOnly, which prevents them from being accessible by scripts, the attackers may try to retrieve them.
 By doing so, they will be able to authenticate themselves as the victim and perform any actions they could do.
 This gives the attackers total control over the account, from which they can extort money or sensitive information.
-Oftentimes banks and other institutions protect their clients by requiring additional 2 factor authentication method before any data is presented ot before tranfered are executed.
+Oftentimes banks and other institutions protect their clients by requiring additional 2 factor authentication method before any data is presented or before any transfers are executed.
 
 \subsubsection{Impersonate the user}
 When session cookie is unavailable, the attacker may still retrieve compromised users data and perform actions within the browser.
 They may perform requests in the name of the user and the browser will automatically include the HttpOnly cookie to the request.
-In this way attackers' script may retreive or even change the users data.
-They may interact with the site by clicking buttons or filling out forms and deoending on the attack type even persist between sessions.
+In this way attackers' script may retrieve or even change the users data.
+They may interact with the site by clicking buttons or filling out forms and depending on the attack type even persist between sessions.
 
 \subsubsection{Deface or modify the application}
-The attacker may also change the website to trick the user into inputing their credentials.
-this is especially prevelant if the attack is only available on a specific part of the website, where the user may be unathenticated.
+The attacker may also change the website to trick the user into inputting their credentials.
+this is especially prevalent if the attack is only available on a specific part of the website, where the user may be unauthenticated.
 As in other goals, the attacker eventually tries to obtain the full access to the account.
 In the end if the website does not have any authentication process, the attacker may be interested in causing financial or reputation loss to the host.
 To achieve this goal they may remove all content from the site or insert offensive imagery.
@@ -64,7 +64,7 @@ To achieve this goal they may remove all content from the site or insert offensi
 \section{Content Security Policy}
 Content Security Policy(CSP) was introduced as a protection layer, which allows web hosts to control origin and type of resources loaded in the client browser. 
 W3 organization recommends using CSP as a defence-in-depth tool, which can help reduce the harm caused by malicious users, but it should not be the sole security measure taken to prevent attacks. \cite{CSPLevel3}
-CSP works by providing the user browser a list of directives, where each resource type, like scripts, stylesheets and images, have its own set of rules.
+CSP works by providing the user browser a list of directives, where each resource type, like scripts, style sheets and images, have its own set of rules.
 Those can include allowed URL endpoints, hashes of expected objects or nonces which may allow for otherwise unsafe inline scripts.
 
 \subsection{CSP Use Cases}
@@ -72,25 +72,25 @@ Content Security Policy is currently used to protect against three major attack 
 
 \subsubsection{Cross Site Scripting}
 The most common usage of CSP in literature is to limit the resources loaded to prevent attacks such as XSS.
-By using allowlists which include only the trusted hosts, the site can prevent scripts from being loaded from malicious urls.
-If the site were to remove all instances of inlnie scripts, they may block all inline scripts from executing, blocking many DOM based and reflected XSS attacks.
+By using allowlists which include only the trusted hosts, the site can prevent scripts from being loaded from malicious URLs.
+If the site were to remove all instances of inline scripts, they may block all inline scripts from executing, blocking many DOM based and reflected XSS attacks.
 
 Cascading Style Sheets attacks can be bundled together with XSS as CSP provides very similar set of mechanisms to block both of them.
 Both of them distinguish inline scripts or styles and in newer CSP version they both get \texttt{-elem} and \texttt{-attr} suffixes.
 CSS attacks are very new and currently mostly seen in theoretical examples, as They require big carefully crafted payloads.
-Still, CSP is theoretically capabale of stopping these kind of attacks.
+Still, CSP is theoretically capable of stopping these kind of attacks.
 
 \subsubsection{Packet Sniffing}
 To protect users from packet sniffing, developers can use \texttt{upgrade-insecure-requests}.
-Using this directive will instruct the browser to send all requests via https, which will encrypt all data transfered.
+Using this directive will instruct the browser to send all requests via https, which will encrypt all data transferred.
 If the browser failes to upgrade the request the resource will fail to load.
 This directive prevents any 3rd party from reading confidential information that is sent in unencrypted requests.
 
 Using CSP with \texttt{default-src https:} will drop all insecure requests without trying to upgrade them.
 If this is combined with a reporting directive, the host is able to find all insecure endpoints which should be promptly upgraded.
 
-\subsubsection{Clickjacking}
-CSPs can also protect from clickjacking and phishing attacks with specialized frame directives. 
+\subsubsection{Click jacking}
+CSPs can also protect from click jacking and phishing attacks with specialized frame directives. 
 \texttt{frame-src}, \texttt{frame-ancestors}, \texttt{sandbox} all control what behaviours the application may allow.
 \begin{enumerate}
 	\item \texttt{frame-src} controls which URLs can be included as frames in the website.
@@ -107,19 +107,19 @@ Major parts of it are already implemented into all modern browsers with computer
 With CSP3 \texttt{scirpt-src} directive has been further split into \texttt{script-src-elem} and \texttt{script-src-attr} directives.
 These directives allow hosts to have separate rules for JavaScript coming from \texttt{<script>} markup tags and attributes such as \texttt{onClick} event handlers.
 Additionally it allows to specify hashes as sources to allow only matching scripts to run.
-This new feature is heavily used within this project to achieve the highest possible secutiy.
+This new feature is heavily used within this project to achieve the highest possible security.
 CSPv3 has also brought enhancements to the \texttt{sandbox} directive, which allows for more control over potentially untrusted content running in its isolated environment.
 
-The newest experimental feature of CSP3 are \texttt{require-trusted-types-for} and \texttt{trusted-types} directives. \cite{TTwebdev} \cite{TTmozdev}
+The newest experimental feature of CSP3 are \texttt{require-trusted-types-for} and \\ \texttt{trusted-types} directives. \cite{TTwebdev} \cite{TTmozdev}
 To further prevent DOM based XSS attacks, they allow developers to control data that comes into unsafe sinks.
 By using specially designed parsers and filters all elements can be checked before they are dynamically added to the website.
 In this way trusted types reduce the attack surface even further and require the attacker to work much harder when creating an exploit.
 
-CSP3 is designed to be backwards compatible with CSP2, which is to ensure that new features do not prevent webpages from displaying correctly on older clients.
+CSP3 is designed to be backwards compatible with CSP2, which is to ensure that new features do not prevent web pages from displaying correctly on older clients.
 For example when \texttt{strict-dynamic} source is included, the \texttt{unsafe-inline} rule is ignored by the browsers.
 \texttt{strict-dynamic} forces the browser to only use nonce and hash based sources. 
 It also permits any dynamically loaded inline script, as long as it was loaded from another nonce or hash allowed script.
-In that case \texttt{unsafe-inline} may be necesarry for users using older browsers that do not support \texttt{strict-dynamic} source.
+In that case \texttt{unsafe-inline} may be necessary for users using older browsers that do not support \texttt{strict-dynamic} source.
 Otherwise all dynamically loaded scripts would be blocked, leading to poor user experience.
 This behaviour allows for new features to be deployed sooner, but it sacrifices the security of older clients.
 
@@ -152,7 +152,7 @@ Users may also inject their own code in form of plugins into browsers, which wil
 This behaviour is well highlighted by a blog post by Dropbox when they were developing a CSP for their own application. \cite{dropboxcsp}
 The Dropbox team had to create a list of strings, some of which included endpoints of other APIs, to filter those reports.
 
-While deploying a csp developers may also use tools already available on the web. \\ 
+While deploying a CSP developers may also use tools already available on the web. \\ 
 \texttt{csp-evaluator.withgoogle.com} allows for checking the CSP or the website itself against a big set of vulnerabilities, described in a paper by Weichselbaum Et Al. \cite{weichselbaum2016csp}
 Those were collected in a comprehensive research aggregating CSP usage and vulnerabilities which can result in the attacker bypassing the policies.
 
@@ -169,21 +169,21 @@ This is a risk that may negatively impact user experience, which may make some o
 
 \begin{figure}[h]
 	\input{code/exampleCSP}
-	\caption{Exmaple Content-Security-Policy, it upgrades all requests, allows for couple of scripts and demonstrates how CSP sources are organized}
+	\caption{Example Content-Security-Policy, it upgrades all requests, allows for couple of scripts and demonstrates how CSP sources are organized}
 \end{figure}
 
 
 \subsection{Content Security Policy Issues}
 Even though CSP can prevent many basic attacks it may be unsuccessful at blocking more advanced exploits.
 A study by Weichselbaum Et Al. done in 2016 showcases many ways in which CSP may be ineffective. \cite{weichselbaum2016csp}
-It also performs a comprahensive analisys on CSP directives which concludes that most of them are trivially bypassable through methods they have introduced.
+It also performs a comprehensive analysis on CSP directives which concludes that most of them are trivially bypassable through methods they have introduced.
 A lot of the insecure CSPs in the paper are using directives that allow the execution of inline scripts.
 Inline JavaScript in event handler attributes is a big part of DOM injection based XSS attacks.
 
 Another issue within currently deployed policies is the lack of \texttt{report-uri} directive.
 Without it the host will never be aware of any CSP violations, as the browser is unable to send reports.
 It is reported that only 22\% of websites from top 10,000 that use CSP have a \texttt{report-uri} directive.
-In our own tests done on top 1 milion sites provided by NetCraft, only 4\% of policies have a \texttt{report-uri} directive.
+In our own tests done on top 1 million sites provided by NetCraft, only 4\% of policies have a \texttt{report-uri} directive.
 Additionally only 50\% of \texttt{report-only} policies have a \texttt{report-uri} directive.
 
 Although Content Security Policy was never intended to protect against data exfiltration attacks, 
@@ -191,7 +191,7 @@ the paper by Acker et. Al shows how even with very strict policies data can stil
 
 
 \subsection{Report-Only Header}
-Content Security Policy offers many benefits to protect users from attacks by selectively allowing safe recources to be loaded.
+Content Security Policy offers many benefits to protect users from attacks by selectively allowing safe resources to be loaded.
 But as established it takes a lot of team effort to implement and maintain, where small errors can lead to loss of security or user experience.
 Thankfully CSP provides one more tool in form of the report only header.
 It simulates the browser enforcing the CSP and allows for all the violations to be reported to the specified endpoints.
@@ -213,7 +213,7 @@ An example report which showcases all those features can be seen in figure \ref{
 
 In literature CSP reporting seems to be an underutilized tool, as less than one in five websites that deploy CSP ever deployed CSPRO header. \cite{osti_10173479}
 This may correspond to the poor effectiveness of deployed CSPs as developers may have never tried more strict policies in report only mode.
-Even less websites use the report-only header alongside CSP header, which may be one of the very few ways to progresively try and remove old dependencies from the already deployed CSP.
+Even less websites use the report-only header alongside CSP header, which may be one of the very few ways to progressively try and remove old dependencies from the already deployed CSP.
 
 The CSP report-only header can be added to any website without consequences to the user experience and without modifying large pieces of code.
 This may lead to overall increase to the security by solving security issues quicker.
@@ -230,7 +230,7 @@ Those may include external APIs or libraries, which may update and add new featu
 \section{Ethics}
 The project focuses on a server which is designed to collect and act on reports potentially sent by genuine users of the web applications. 
 When the reporting endpoint is controlled by a third party, the reports sent will expose it to the queries performed by said users of the applications.
-Usually reports only provide banign information for loaded resources, but occasionally sensitive data may be sent using GET queries.
+Usually reports only provide benign information for loaded resources, but occasionally sensitive data may be sent using GET queries.
 In the report, this query will be included within blocked-uri field, which may look like this:
 \begin{verbatim}
 https://id.cxense.com/public/user/id?json=%7B%22identities%22%3A%5B%7B
@@ -239,17 +239,17 @@ type%22%3A%22cst%22%2C%22id%22%3A%223dmijrrz7kkn62ie7ib1yw5z6l%22%7D%5
 D%2C%22siteId%22%3A%221136227972865927410%22%2C%22location%22%3A%22htt
 ps%3A%2F%2Fwww.libertatea.ro%2F%22%7D&callback=cXJsonpCB2
 \end{verbatim}
-Sensitive data exposure through GET querries is a known vulnerabilty, which was ranked as the third most critical vulnerabilty by OWASP top 10 in 2017 \cite{owaspTop102017}
+Sensitive data exposure through GET queries is a known vulnerability, which was ranked as the third most critical vulnerability by OWASP top 10 in 2017 \cite{owaspTop102017}
 In 2021 OWASP classified it in position 2 as cryptographic failures \cite{owaspTop10}, which is a broader category that encompasses many security vulnerabilities of the previous sensitive data exposure category. 
 In the case of this project it may be better suited under position 4: insecure design, as the websites design is at fault to send sensitive information in GET requests. 
 
 The reports may also expose the browsing habits of specific users. 
 As all reports are sent from the browser, a third party may collect reports coming from the same IP address to estimate the users interests by knowing which sites have they visited. 
-This issue becomes more prevelant when there is a single compant controling many reporting endpoints for different sites.
+This issue becomes more prevalent when there is a single company controlling many reporting endpoints for different sites.
 In that case the same user can be tracked across multiple websites.
 
 Both of those information breaches are most threatening when a third party is responsible for maintaing the Policy Maker.
-The hosts already posses the information about the users browsing habits by serving their requests, and the query informations are often included in the logs of the server.
+The hosts already posses the information about the users browsing habits by serving their requests, and the query parameters are often included in the logs of the server.
 When the reporting endpoint is run by the host itself, the only additional information that may be gathered is the knowledge of the resources loaded in the client. 
 This additional information is the main incentive behind deploying a Content Security Policy as it allows for finding resources that should not be loaded in the users browser.
 

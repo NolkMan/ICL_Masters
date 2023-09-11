@@ -10,15 +10,15 @@ When using the standard content-security-policy header any attack bypassing the 
 The approach taken in this paper tries to make a report only policy that forces a report for each new source file.
 This results in a system where every attack leaves a trace and can be acted upon.
 
-The Policy Maker takes advantage of the \texttt{report-only} part in Content-Security-Policy-Report-Only header, as developing a policy that is never intended to be in the enforcement mode allows for new behaviours.
+The Policy Maker takes advantage of the \texttt{report-only} part in Content-Security-Policy-Report-Only header, as developing a policy that is never intended to be in the enforcement mode allows to explore new behaviours.
 When using the report only header the policy does not need to contain all the loaded resources, that are used by the web application.
 With that in mind the Policy Maker may periodically remove certain sources, as it does not risk breaking the application.
 In this way the server may check whether a source is still in use, ensuring that the policy is always as tight as possible. 
-When querried the server may also provide an up to date website map from the point of view of all the users.
+When queried the server may also provide an up to date website map from the point of view of all the users.
 
 Additionally, by using report only the policies do not need to be made future proof. 
 Contrarily, it is beneficial for the Policy Maker server to be informed of all changes within the site.
-This allows for maximum survelience of the site where no attack would go unnoticed.
+This allows for maximum surveillance of the site where no attack would go unnoticed.
 The server accomplishes that by using the using hashes for every inline script and exact url matches for standard script elements.
 If a script is added by an attack it would not match any hash or url signatures present in the report only policy.
 When user loads the compromised site a report will be generated allowing for quick response, minimizing the attack spread.
@@ -35,21 +35,21 @@ Many tools used within this project are available in the Node Package Manager al
 Components that are not available under Node were connected by creating separate servers which communicated using GET and POST requests.
 
 The high level view of the project structure is desplayed in figure \ref{structure}.
-The project uses mutliple interdependant modules, which expose limited amount of functions to support modularity.
+The project uses multiple interdependent modules, which expose limited amount of functions to support modularity.
 The key development within this project is on the diagram denoted as the Policy Maker.
 It is designed as a separate entity, which does not require the other components used within this project to function.
-When deployed in a real environment, it may be directly connected to the server serving HTTP requets, while providing an up to date policy for the observed reports.
+When deployed in a real environment, it may be directly connected to the server serving HTTP requests, while providing an up to date policy for the observed reports.
 The Policy maker consists of 3 other smaller modules 
 \begin{description}
 	\item[Policy Engine] Receives reports and generates policies
-	\item[Oracle] Takes script urls from reports and aims and collects them from the internet
+	\item[Oracle] Takes script URLs from reports and aims and collects them from the internet
 	\item[Evaluator] Rates collected scripts and evaluates them
 \end{description}
 
 Other modules displayed in the structure were used to automate and test the Policy Maker.
 \begin{description}
 	\item[Main Controller] Initiates all other components, connects Policy Maker and proxy, and compiles statistics
-	\item[Mitmproxy] Injects policies to simulate deployment alongside tested host and collects network metadata
+	\item[MITMProxy] Injects policies to simulate deployment alongside tested host and collects network metadata
 	\item[Puppeteer] Simulates the user for autonomous testing
 \end{description}
 
@@ -60,57 +60,59 @@ Other modules displayed in the structure were used to automate and test the Poli
 	\label{structure}
 \end{figure}
 
-\subsubsection{Server}
+\subsubsection{Policy Engine}
 The server is the main component which exposes an open port dedicated to collecting reports.
 It is also the outermost layer of communication responsible for issuing warnings as they are encountered.
 This module exposes an \texttt{EventEmitter} interface, which allows other components to run specific code when an event occurs.
 There are 5 possible events, 2 for security, 2 for logging and 1 for CSP updates:
 \begin{description}
 	\item[\texttt{warning}]	Used to signify rarely used content which should be monitored. Practically it is used for iframes and small inline attribute scripts. 
-	\item[\texttt{violation}] Uesd to signify malicious scripts, use of \texttt{eval} function or long attribute scripts that do not fit in the 40 character report limit.
-	\item[\texttt{new}] Signifies a new script has been spotted.
+	\item[\texttt{violation}] Used to signify a malicious script, use of \texttt{eval} or a long attribute script that does not fit in the 40 character report limit.
+	\item[\texttt{new}] Signifies that a new script has been spotted.
 	\item[\texttt{changed}] Signifies that a previously spotted script has been changed.
-	\item[\texttt{cspro-change}] Emmitted whenever a policy is changed, notifying any module to update their CSPRO value.
+	\item[\texttt{cspro-change}] Emitted whenever a policy is changed, notifying any module to update their CSPRO value.
 \end{description}
 
 When reports are received, they are parsed and the most important information is stored in the memory.
-The full contents of the report are stored in a database alongsite the timestamp when they arrived.
 Depending on the effective violated directive different actions are performed.
-Sources like images, fonts or styles are premanently added to the policy, as this project focuses on securing web applications from malicious scripts.
-Iframes trigger a warning event as they may be used for clickjacking attacks, after which they are added to the policy, as they are not the main focus of this paper.
-The database mentioned is a PostgreSQL client, the data stored is used for statistical analisys within the impact estimation section.
-It was also used to repeat experiments on the same data, which allowed to remove bugs, while reducing the strain of the project on tested hosts.
+Sources like images, fonts or styles are permanently added to the policy, as this project focuses on securing web applications from malicious scripts.
+IFrames trigger a warning event as they may be used for clickjacking attacks, after which they are added to the policy, as they are not the main focus of this paper.
+
+The full contents of the reports are stored in an SQL database alongside the timestamp when they arrived.
+The server uses a PostgreSQL client and the reports stored were used for statistical analysis within the impact estimation section.
+The server also allows to be run on old reports stored in the database. 
+This allowed to remove bugs during the development process, while reducing the strain of the project on the selected hosts.
 
 The most logic within the server is dedicated to scripts.
 Attribute scripts always trigger a warning or a violation event.
 Then depending whether they fit into the 40 character limit within the \texttt{script-sample} field in the report, their hash may be added to the policy for a short duration to limit the amount of duplicate reports.
 Reports signifying use of \texttt{eval} function emit a violation event, after which they are ignored.
 Lastly all reports about scripts within HTML \texttt{<script>} tags are sent to the oracle to calculate their hash and evaluate their maliciousness.
-All hashes are stored and based on them the server recognises whether a script has changed and in that case it emits a changed event.
+All hashes are stored and based on them the server recognises whether a script has changed, in which case it emits a \texttt{changed} event.
 
 \subsection{Oracle}
 The oracle is the inner module of the Policy Maker which is crucial for the functionality of the server.
 Its main goal is to aid the server in collecting scripts described in reports and to provide their evaluation.
 The oracle is a separate module to allow for a redesign without affecting the core logic of the server.
-In this project scirpts are fetched from the hosts using GET requests, but this mechanism could be adjusted to instead fetch specific scripts from the inner code repository.
+In this project scripts are fetched from the hosts using GET requests, but this mechanism could be adjusted to instead fetch specific scripts from the inner code repository.
 
 \subsection{Evaluator}
-The evaluator in the Oracle Module is used to evaluate scripts from the sourcecode that was collected by the oracle.
+The evaluator in the Oracle Module is used to evaluate scripts from the source code that was collected by the oracle.
 Compared to the oracle it is not necessary for the function of the Policy Maker, but without one only new and changed events will be emitted.
 The evaluator included in the source code uses a machine learning model created by Maria Zorkaltseva intended to find obfuscated malicious JavaScript files \cite{evaluator}.
 As the model is written in Python, downloaded scripts are passed to a python http server using POST requests.
 The server calculates the maliciousness score and returns the result in the response.
 
 \subsection{Main Controller}
-Main Controller is the entry module for the project.
-Every other module described requires a context for its execution.
-The main controller sets up each module with a context required to run a specific test scenario.
-It collects all events emited from the server and logs them to the console for a clear view of the servers operation.
+Main Controller is the entry module of the project.
+Every other module described requires some form of a context to run properly.
+The main controller sets up each module with a context of a specific test scenario.
+It collects all events emitted from the server and logs them to the console for a clear view of the servers operation.
 Whenever a new policy is generated, the main controller passes it from the server to the mitmproxy so it can be injected into server responses.
 Lastly the main controller logs statistical data collected by mitmproxy.
 
-\subsection{Mitmproxy}
-Mitmproxy is an interactive https proxy which can be used to intercept, read and modify traffic coming through it.
+\subsection{MITMProxy}
+MITMProxy is an interactive https proxy which can be used to intercept, read and modify traffic coming through it.
 It supports scripting, which is used to automatically insert \texttt{content-security-policy-report-only} header before it is sent to the browser.
 In this way, the browser sees the modified response as if it was sent directly from the host.
 This behaviour directly emulates the scenario where the policy maker were to be deployed alongside the hosting server.
@@ -119,21 +121,20 @@ In the code this integration works by creating a separate server to which the mi
 Whenever this happens all data collected is sent away and a current CSPRO generated by the reporting server is returned.
 Due to this design there is slight latency between generation of a new policy and deployment to the user.
 Although this delay exists, it is insignificant and in real world many hosts use proxies to reduce the load on servers or clients use caching to reduce their network usage.
-In both of those cases the delay between deployment of a new CSPRO and its perceivable effects may be much larger than what is observed in this project and as such this issue is ignored throughtout the testing.
+In both of those cases the delay between deployment of a new CSPRO and its perceivable effects may be much larger than what is observed in this project.
 
 \subsection{Puppeteer}
 The second tool used that does not benefit the security of the server, but was extensively used during testing was Puppeteer.
 Puppeteer is a Node.js module designed to simulate user interaction in a chromium client.
-It uses a programmable interface, which results in high precision and reproducability between executions.
+It uses a programmable interface, which results in high precision and reproducibility between executions.
 For those reasons Puppeteer was used for all impact estimation tests.
 In the code a separate module was dedicated to Puppeteer which starts it up connected to the proxy with parameters simulating a regular user.
 After that it is used to crawl the currently tested host.
 
 
 \section{Initial Content-Security-Policy}
-
-During development of the server I have faces multiple choices relating to the initial CSPRO header, which is set before any report is even received.
-There are a few sources which dramatically change the behaviour of browsers enforcing the security policy, which impact security or the threat surface that I may protect against.
+Before the server can be started there are multiple choices that need to be made relating to the initial CSPRO header.
+Those decision dictate which parts of the site are protected and they heavily impact both the security and the performance of the project.
 
 \subsection{unsafe-inline}
 
@@ -146,7 +147,7 @@ It also prevents any reports to be generated in case of a DOM injection attack.
 
 This directive may be considered as the oracle uses a best effort approach to extract inline scripts.
 This leads to many scripts being unable to be extracted without executing the loader script.
-Executing unknown scripts, even in an insolated environment, is very unsafe and consequently the server may never be able to know the source code of all possible scripts.
+Executing unknown scripts, even in an isolated environment, is very unsafe and consequently the server may never be able to know the source code of all possible scripts.
 It means that the browser will always send a report to the server whenever a script is loaded in this way, heavily impacting the performance.
 
 In the end, even though there are practical implications to including \texttt{unsafe-inline} source into the CSP, it has too severe negative security implications.
@@ -168,13 +169,13 @@ As this source improves the performance the most while compromising the security
 It also changes the behaviour of the policy where it instructs the browser to ignore \texttt{unsafe-inline}, \texttt{'self'}, \texttt{unsafe-eval} or many other wildcard statements.
 
 By using \texttt{strict-dynamic} the server can prevent the dynamically loaded scripts from generating reports.
-Unfortunatelly it also prevents non-inline dynamically added scripts from generating a report, which the server would be able to retreive.
-It also prevents the browser from honouring url based allowlists which fully undermines the policies generated by the server.
+Unfortunately it also prevents non-inline dynamically added scripts from generating a report, which the server would be able to retrieve.
+It also prevents the browser from honouring URL based allowlists which fully undermines the policies generated by the server.
 Due to those issues \texttt{strict-dynamic} source is not used.
 
 \subsection{unsafe-hashes}
 
-Adding \texttt{unsafe-hashes} to the source list allow for hashes to be used for inline script attributes such as \texttt{onClick} or \texttt{onLoad}.
+Adding \texttt{unsafe-hashes} to the source list does allow hashes to be used for inline script attributes such as \texttt{onClick} or \texttt{onLoad}.
 It uses the prefix {\it unsafe}, but hashes in \texttt{script-src-attr} directive by default are ignored as they will never have a valid target.
 As such the server uses \texttt{unsafe-hashes} for this specific directive. 
 When an attribute script fully fits in the 40 character limit of the script sample field in the report, the hash is added to the policy to prevent further reports.
@@ -182,11 +183,11 @@ In either case, whether it fits or not, an event is generated to allow for the s
 
 \vspace{10pt}
 
-With all those considerations in mind the initial the initial CSP for the server is displayed in figure \ref{code:initial}.
+With all those considerations in mind the initial CSP for the server is displayed in figure \ref{code:initial}.
 It allows for capture of all necessary reports for scripts running on the host.
-By using \texttt{default-src 'none'} the CSP will also capture non script resources hosted on the webiste.
-Styles compared to other sources can be used inline and as such \texttt{unsafe-inline} is used in thier directives to prevent reports which are not easily preventable otherwise.
-This work focuses on preventing from malicious JavaScript files, but as CSS attacks were described earlier, similar approach can be taken to secure the webapp from malicious stylesheets.
+By using \texttt{default-src 'none'} the CSP will also capture non script resources hosted on the website.
+Styles compared to other sources can be used inlined and as such \texttt{unsafe-inline} is used in their directives to prevent reports which are not easily preventable otherwise.
+This work focuses on preventing from malicious JavaScript files, but as CSS attacks were described earlier, similar approach can be taken to secure the web app from malicious style sheets.
 
 
 \begin{figure}[h]
