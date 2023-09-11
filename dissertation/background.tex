@@ -67,53 +67,75 @@ W3 organization recommends using CSP as a defence-in-depth tool, which can help 
 CSP works by providing the user browser a list of directives, where each resource type, like scripts, stylesheets and images, have its own set of rules.
 Those can include allowed URL endpoints, hashes of expected objects or nonces which may allow for otherwise unsafe inline scripts.
 
-The most common usage of CSP in literature it to limit the resources loaded to prevent attacks such as XSS.
-This method can also help with other exfiltration attacks based on CSS.
-CSP has many ways to protect browser users from malicious content.
+\subsection{CSP Use Cases}
+Content Security Policy is currently used to protect against three major attack vectors within browsers.
 
+\subsubsection{Cross Site Scripting}
+The most common usage of CSP in literature is to limit the resources loaded to prevent attacks such as XSS.
+By using allowlists which include only the trusted hosts, the site can prevent scripts from being loaded from malicious urls.
+If the site were to remove all instances of inlnie scripts, they may block all inline scripts from executing, blocking many DOM based and reflected XSS attacks.
+
+Cascading Style Sheets attacks can be bundled together with XSS as CSP provides very similar set of mechanisms to block both of them.
+Both of them distinguish inline scripts or styles and in newer CSP version they both get \texttt{-elem} and \texttt{-attr} suffixes.
+CSS attacks are very new and currently mostly seen in theoretical examples, as They require big carefully crafted payloads.
+Still, CSP is theoretically capabale of stopping these kind of attacks.
+
+\subsubsection{Packet Sniffing}
 To protect users from packet sniffing, developers can use \texttt{upgrade-insecure-requests}.
-Using this directive will instruct the browser to try and send all requests by https, otherwise the resource will fail to load.
-Using CSP with \texttt{default-src https:} will instead immediately drop all insecure requests.
+Using this directive will instruct the browser to send all requests via https, which will encrypt all data transfered.
+If the browser failes to upgrade the request the resource will fail to load.
+This directive prevents any 3rd party from reading confidential information that is sent in unencrypted requests.
 
-CSPs can also protect from clickjacking and phishing attacks with specialized frame controls. 
+Using CSP with \texttt{default-src https:} will drop all insecure requests without trying to upgrade them.
+If this is combined with a reporting directive, the host is able to find all insecure endpoints which should be promptly upgraded.
+
+\subsubsection{Clickjacking}
+CSPs can also protect from clickjacking and phishing attacks with specialized frame directives. 
 \texttt{frame-src}, \texttt{frame-ancestors}, \texttt{sandbox} all control what behaviours the application may allow.
 \begin{enumerate}
-	\item \texttt{frame-src} controls which URLs can be included as frames in the website
-	\item \texttt{frame-ancestors} controls what websites can include this page in a frame. 
+	\item \texttt{frame-src} controls which URLs can be included as frames in the website.
+	\item \texttt{frame-ancestors} controls what websites can include this page in a frame.
 	\item \texttt{sandbox} controls what the loaded website can perform as if it was loaded into an sandbox iframe. With this it is possible to forbid downloads or scripts all together.
 \end{enumerate}
 Paper by Roth Et Al. analyzes tendencies in CSP deployment between 2012 and 2018 and shows increased interest in deploying CSP to limit framing options of websites. \cite{osti_10173479}
 It is theorised this may be due to the limited control that \texttt{X-Frame-Options} provide, as CSP allows to specify frame origins and is better supported by browsers.
-Developing a CSP with framing options is also relatively easier, as there are fewer directives and the attack surface is smaller.
+Developing a CSP with framing options is also relatively easier, as there are fewer directives, fewer sources and the attack surface is smaller.
 
-
-CSP is constantly being developed with currently 3rd version being in draft, while major parts of it are already being implemented into modern browsers.
-With CSP3 \texttt{scirpt-src} directive has been further split into \texttt{script-src-elem} and \texttt{script-src-attr} directives which separate rules for JavaScript coming from \texttt{<script>} markup tags and attributes such as \texttt{onClick} event handlers.
-Additionally it allows to specify hashes of sources allowed to load and enhancements to \texttt{sandbox} directive, which allows for more control over potentially untrusted content running in its isolated environment.
+\subsection{Content Security Policy version 3}
+CSP is constantly being developed with currently 3rd version being in draft.
+Major parts of it are already implemented into all modern browsers with computer based browsers often implementing many features before mobile ones.
+With CSP3 \texttt{scirpt-src} directive has been further split into \texttt{script-src-elem} and \texttt{script-src-attr} directives.
+These directives allow hosts to have separate rules for JavaScript coming from \texttt{<script>} markup tags and attributes such as \texttt{onClick} event handlers.
+Additionally it allows to specify hashes as sources to allow only matching scripts to run.
+This new feature is heavily used within this project to achieve the highest possible secutiy.
+CSPv3 has also brought enhancements to the \texttt{sandbox} directive, which allows for more control over potentially untrusted content running in its isolated environment.
 
 The newest experimental feature of CSP3 are \texttt{require-trusted-types-for} and \texttt{trusted-types} directives. \cite{TTwebdev} \cite{TTmozdev}
-To further prevent DOM based XSS attacks, they allow developers to control data data that comes into unsafe sinks.
+To further prevent DOM based XSS attacks, they allow developers to control data that comes into unsafe sinks.
 By using specially designed parsers and filters all elements can be checked before they are dynamically added to the website.
-%% talk about already designed filters
 In this way trusted types reduce the attack surface even further and require the attacker to work much harder when creating an exploit.
 
 CSP3 is designed to be backwards compatible with CSP2, which is to ensure that new features do not prevent webpages from displaying correctly on older clients.
-For example when nonces or hashes are included, the \texttt{unsafe-inline} rule is ignored by the browsers.
-This allows for new features to be deployed sooner, but it may sacrifice the security of older clients.
+For example when \texttt{strict-dynamic} source is included, the \texttt{unsafe-inline} rule is ignored by the browsers.
+\texttt{strict-dynamic} forces the browser to only use nonce and hash based sources. 
+It also permits any dynamically loaded inline script, as long as it was loaded from another nonce or hash allowed script.
+In that case \texttt{unsafe-inline} may be necesarry for users using older browsers that do not support \texttt{strict-dynamic} source.
+Otherwise all dynamically loaded scripts would be blocked, leading to poor user experience.
+This behaviour allows for new features to be deployed sooner, but it sacrifices the security of older clients.
 
 % talk about css exfil attacks
 
 \subsection{Implementing CSP}
 Implementing CSP, although potential security benefits, comes with its own fair share of problems. 
-They span multiple layers and are especially noticeable when trying to add CSP to a big, long lasting project.
+They span multiple layers and are especially noticeable when trying to add CSP to a big and long lasting project.
 
-One of the hardest problems to overcome is when the web application uses inline scripts or event attributes that allow for scripting, like \texttt{onClick} event handler.
+One of the hardest problems to overcome is when the web application uses inline scripts or event attributes that allow for scripting, like the \texttt{onClick} event handler.
 While it is possible to still use inline scripts with hashes or nonces, CSP disincentives the usage of inline JavaScript as it is a common entry point for XSS attacks. 
 
 Strong cryptographic security of hashes ensures that only allowed scripts will execute. 
-Attacker in this situation can execute the same script multiple times and abuse the side effects it may have.
+Attacker in this situation can execute the same script multiple times and abuse the side effects that it may have.
 When using \texttt{unsafe-hashes}, hashes can also be used for event handlers, which still may prove to be better than nothing.
-The biggest downside of CSP hashes is when using them to secure 3rd party sources, as the CSP needs to be updated with every source code change.
+The biggest downside of CSP hashes is when using them to secure 3rd party sources, as the CSP will need to be updated with every source code change.
 
 The other option requires that every script is accompanied with a random nonce value.
 In theory when nonce is regenerated with every response, the attacker will be unable to execute scripts as they will be unable to predict the value.
@@ -122,12 +144,12 @@ Those attacks oftentimes rely on confusing the browser, which despite invalid ht
 
 All the issues and methods can also be applied to style-sheets, as those may also be DOM injected in similar manner to JavaScript. \cite{cssinjection} \cite{cssexfil}
 With more modern attacks that may use pure style-sheets to exfiltrate data about users, it is important to secure CSS sources too.
-While those attacks are usually more complex in execution and the payload size, they can still be mitigated by a well designed CSP.
+While those attacks are usually more complex in execution and the payload size, they can still be mitigated by a well designed Content Security Policy.
 
 Another big problem when developing a CSP is enumerating legitimate dependencies of the website.
-Addition of new dependencies may go unnoticed in a quick developing environments of many web apps.
+Addition of new dependencies may go unnoticed in a quick developing environments of many web applications.
 Users may also inject their own code in form of plugins into browsers, which will generate false reports.
-This behaviour is well highlighted by a blog post by Dropbox when they were developing a CSP for their own applications. \cite{dropboxcsp}
+This behaviour is well highlighted by a blog post by Dropbox when they were developing a CSP for their own application. \cite{dropboxcsp}
 The Dropbox team had to create a list of strings, some of which included endpoints of other APIs, to filter those reports.
 
 While deploying a csp developers may also use tools already available on the web. \\ 
@@ -138,33 +160,41 @@ Hosts may also use one of many commercially available CSP generation tools.
 \texttt{csper.io} helps in deploying and maintaining a CSP header by automatically gathering, filtering and sorting reports. 
 Tools like that can increase the overall security of the website, but automation may not be perfect too. 
 It may help create a CSP with holes created by plugins loaded by users.
-This can later lead to a CSP bypasses where the malicious user leverages small misconfigurations to gain access.
+This can later lead to a CSP bypasses where the malicious user leverages small misconfigurations to gain control.
 Additionally when an attack is already ongoing it may be difficult to differentiate its reports from genuine traffic.
 
-When deploying CSP it is important to remember that maintaining it requires constant effort from the developers.
+When deploying a Content Security Policy it is important to remember that maintaining it requires constant effort from the developers.
 Unupdated CSP can make the web page misbehave or be completely unusable when required sources are blocked from loading.
 This is a risk that may negatively impact user experience, which may make some opt out of using a CSP.
 
+\begin{figure}[H]
+	\input{code/exampleCSP}
+	\caption{Exmaple Content-Security-Policy, it upgrades all requests, allows for couple of scripts and demonstrates how CSP sources are organized}
+\end{figure}
 
-\subsection{Bypassing CSP}
+
+\subsection{Content Security Policy Issues}
 Even though CSP can prevent many basic attacks it may be unsuccessful at blocking more advanced exploits.
 A study by Weichselbaum Et Al. done in 2016 showcases many ways in which CSP may be ineffective. \cite{weichselbaum2016csp}
 It also performs a comprahensive analisys on CSP directives which concludes that most of them are trivially bypassable through methods they have introduced.
-
 A lot of the insecure CSPs in the paper are using directives that allow the execution of inline scripts.
 Inline JavaScript in event handler attributes is a big part of DOM injection based XSS attacks.
-% CSP allows to bolster the security of inline scripts by adding hash and nonce based source values.
-% Nonce is supposed to be a unique, random value, which would mean that the malicious script will be blocked.
-% Both solutions have their problems, hashes may allow a specific script to be loaded multiple times, which is especially problematic if the script has side effects.
-% Nonces on the other hand have been shown to be bypassable with carefully crafted payloads \cite{???}.
 
+Another issue within currently deployed policies is the lack of \texttt{report-uri} directive.
+Without it the host will never be aware of any CSP violations, as the browser is unable to send reports.
+It is reported that only 22\% of websites from top 10,000 that use CSP have a \texttt{report-uri} directive.
+In our own tests done on top 1 milion sites provided by NetCraft, only 4\% of policies have a \texttt{report-uri} directive.
+Additionally only 50\% of \texttt{report-only} policies have a \texttt{report-uri} directive.
+
+Although Content Security Policy was never intended to protect against data exfiltration attacks, 
+the paper by Acker et. Al shows how even with very strict policies data can still be exfiltrated from user's browser by using DNS prefetching.
 
 
 \subsection{Report-Only Header}
 Content Security Policy offers many benefits to protect users from attacks by selectively allowing safe recources to be loaded.
 But as established it takes a lot of team effort to implement and maintain, where small errors can lead to loss of security or user experience.
 Thankfully CSP provides one more tool in form of the report only header.
-It simulates the browser enforcing the CSP and allows for all the to be violations to be reported to the specified endpoints.
+It simulates the browser enforcing the CSP and allows for all the violations to be reported to the specified endpoints.
 
 This tool is of major help when starting to create a new policy for a website.
 It allows for testing and fine tuning of the policy before enabling it. 
@@ -182,12 +212,18 @@ With the \texttt{report-sample} source, the report may include the first 40 char
 
 In literature CSP reporting seems to be an underutilized tool, as less than one in five websites that deploy CSP ever deployed CSPRO header. \cite{osti_10173479}
 This may correspond to the poor effectiveness of deployed CSPs as developers may have never tried more strict policies in report only mode.
-Even less websites use the RO header alongside CSP header, which may be one of the very few ways to progresively try and remove old dependencies from the already deployed CSP.
+Even less websites use the report-only header alongside CSP header, which may be one of the very few ways to progresively try and remove old dependencies from the already deployed CSP.
 
 The CSP report-only header can be added to any website without consequences to the user experience and without modifying large pieces of code.
 This may lead to overall increase to the security by solving security issues quicker.
 It can also be deployed alongside an existing CSP to more strictly monitor sources which are known to be temporary or problematic.
 Those may include external APIs or libraries, which may update and add new features which compromise security.
+
+\begin{figure}[H]
+	\input{code/exampleReport}
+	\caption{Example report, they provide necessary information to classify the violation. Reports may also include line and column numbers of the violation alongside the scipt sample.  }
+	\label{exReport}
+\end{figure}
 
 
 \section{Ethics}

@@ -1,0 +1,15 @@
+\begin{verbatim}
+upgrade-insecure-requests ;
+default-src 'none' ;
+script-src 'report-sample' ; 
+script-src-elem 
+	'report-sample' 
+	https://testing.site/index.js 
+	'sha256-f2KDabOBheatnkXlUGlWthbaCaKmlDSpV5682oXCFAw=' 
+	'nonce-OEdqEL1Z'; 
+script-src-attr 'report-sample' ; 
+frame-src testing.site ; 
+font-src *;
+img-src https: ;
+report-uri https://reporting.project
+\end{verbatim}
