@@ -11,7 +11,7 @@ const preTrain = false; // use already existing reports to setup the policy make
 const runClient = false; // true to open Puppeteer
 const longTest = true;
 const pickNum = 11; // chose host from PICKED_HOSTS
-const useTerminal = false; // enables terminal interface (may cause crashes)
+const useTerminal = true; // enables terminal interface (may cause crashes)
 
 
 var PICKED_HOSTS = [

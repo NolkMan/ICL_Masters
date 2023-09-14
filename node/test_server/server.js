@@ -39,6 +39,12 @@ function requestHandler(req, res) {
 	let ext = path.parse(pathname).ext;
 
 	fs.exists(pathname, function (exist) {
+		if (pathname === './mal'){
+			malicious = true;
+		}
+		if (pathname === './safe'){
+			malicious = false;
+		}
 		if(!exist) {
 			res.statusCode = 404;
 			res.end(`File ${pathname} not found!`);
@@ -71,8 +77,5 @@ function requestHandler(req, res) {
 
 https.createServer(serverOptions, requestHandler).listen(port, () => {
 	console.log(`Server listening on testing.site:${port}`);
-	setTimeout(() => {
-		malicious = true;
-	}, 10000);
 });
 
